@@ -1139,7 +1139,10 @@ body.open-mode .sb-label:has(+ [data-act="ideas"]) { display: none !important; }
 .sb-inner { flex: 1; min-height: 0; height: auto; }
 .music-dock { width: var(--sb-w); flex: none; border-top: 1px solid var(--line); padding: 6px 10px; transition: opacity 0.3s var(--ease); }
 .app.sb-collapsed .music-dock { opacity: 0; pointer-events: none; }
-.music-row { width: 100%; display: flex; align-items: center; gap: 9px; border: 0; background: transparent; color: var(--text-dim); font-size: 13px; padding: 7px 6px; border-radius: 8px; text-align: left; }
+.music-top { display: flex; align-items: center; gap: 2px; }
+.music-ctl { flex: none; width: 30px; height: 30px; border: 0; border-radius: 8px; background: transparent; color: var(--text-dim); font-size: 12px; line-height: 1; }
+.music-ctl:hover { background: var(--surface); color: var(--white); }
+.music-row { flex: 1; min-width: 0; width: 100%; display: flex; align-items: center; gap: 9px; border: 0; background: transparent; color: var(--text-dim); font-size: 13px; padding: 7px 6px; border-radius: 8px; text-align: left; }
 .music-row:hover { background: var(--surface); color: var(--text-2); }
 .music-lbl { flex: none; }
 .music-now { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text-faint); }

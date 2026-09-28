@@ -237,7 +237,7 @@ window.__startApp = function () {
     musicDock.classList.toggle('open', !!st.open);
     musicDock.classList.toggle('playing', music.playing);
     if (!musicDock.querySelector('.music-row')) {
-      musicDock.innerHTML = `<button class="music-row" data-m="toggle" aria-expanded="false"><span class="m-eq" aria-hidden="true"><i></i><i></i><i></i></span><span class="music-lbl">Study music</span><span class="music-now"></span>${icon('chev', 'sb-chev')}</button>
+      musicDock.innerHTML = `<div class="music-top"><button class="music-row" data-m="toggle" aria-expanded="false"><span class="m-eq" aria-hidden="true"><i></i><i></i><i></i></span><span class="music-lbl">Study music</span><span class="music-now"></span>${icon('chev', 'sb-chev')}</button><button class="music-ctl" data-m="pp" hidden></button><button class="music-ctl" data-m="stop" title="Stop and close the player" aria-label="Stop and close the player" hidden>✕</button></div>
         <div class="music-body" hidden>
           <div class="music-chips">${MUSIC.map(([id, n]) => `<button class="music-chip" data-m="pick" data-ref="playlist/${id}" data-label="${esc(n)}">${esc(n)}</button>`).join('')}</div>
           <form class="music-paste" data-m="paste"><input type="url" inputmode="url" placeholder="Paste a Spotify link" aria-label="Spotify playlist, album or song link"><button class="btn small" type="submit">Play</button></form>
@@ -253,6 +253,10 @@ window.__startApp = function () {
     $$('.music-chip', musicDock).forEach((b) => b.classList.toggle('on', b.dataset.ref === st.ref));
     const op = $('[data-mopen]', musicDock); if (op) { op.href = 'https://open.spotify.com/' + (st.ref || 'playlist/' + MUSIC[0][0]); }
     const hint = $('.music-hint', musicDock); if (hint) hint.hidden = !st.ref;
+    // our own pause and stop buttons stay in the top row (also when the strip is folded), so sound can always be stopped
+    const pp = $('[data-m=pp]', musicDock), stop = $('[data-m=stop]', musicDock);
+    pp.hidden = !music.playing; stop.hidden = !music.ctrl;
+    pp.textContent = '❚❚'; pp.title = 'Pause'; pp.setAttribute('aria-label', 'Pause');
   }
   function playMusic(ref, label) {
     const auto = false; // browsers block sound the site starts itself: the student taps ▶ in Spotify's player
@@ -264,7 +268,7 @@ window.__startApp = function () {
     const start = (API) => {
       const slot = $('[data-mslot]', musicDock);
       API.createController(slot, { uri, width: '100%', height: 152 }, (ctrl) => {
-        music.ctrl = ctrl; music.loading = false;
+        music.ctrl = ctrl; music.loading = false; paintMusic();
         ctrl.addListener('playback_update', (e) => { const p = !!(e && e.data && !e.data.isPaused); if (p !== music.playing) { music.playing = p; paintMusic(); } });
         if (auto) ctrl.addListener('ready', () => { try { ctrl.play(); } catch (err) { /* the student taps play */ } });
       });
@@ -275,8 +279,17 @@ window.__startApp = function () {
     s.onerror = () => { music.loading = false; const m = $('[data-mmsg]', musicDock); if (m) m.textContent = 'Spotify could not load. Check your connection or ad blocker.'; };
     document.head.appendChild(s);
   }
+  function stopMusic() {
+    const c = music.ctrl; music.ctrl = null; music.playing = false; music.loading = false;
+    try { c.pause(); } catch (err) { /* already gone */ }
+    try { c.destroy(); } catch (err) { /* removed below */ }
+    const box = $('.music-player', musicDock); box.innerHTML = '<div data-mslot></div>';
+    const st = mState(); st.ref = null; st.label = ''; save(); paintMusic();
+  }
   musicDock.addEventListener('click', (e) => {
     const t = e.target.closest('[data-m]'); if (!t) return;
+    if (t.dataset.m === 'pp' && music.ctrl) { music.ctrl.pause(); return; }
+    if (t.dataset.m === 'stop' && music.ctrl) { stopMusic(); return; }
     if (t.dataset.m === 'toggle') { const st = mState(); st.open = !st.open; save(); paintMusic(); if (st.open && st.ref && !music.ctrl) playMusic(st.ref, st.label); }
     else if (t.dataset.m === 'pick') playMusic(t.dataset.ref, t.dataset.label);
   });
