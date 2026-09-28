@@ -5,12 +5,7 @@ PAPERS({
     { id: 'model-02', kind: 'model', title: 'Model paper 2', sub: 'Same pattern as CAT-2 · Passage: microplastics' },
     { id: 'model-03', kind: 'model', title: 'Model paper 3', sub: 'Same pattern as CAT-2 · Passage: remote work' },
     { id: 'model-04', kind: 'model', title: 'Model paper 4', sub: 'Same pattern as CAT-2 · Passage: gene editing' },
-    { id: 'model-05', kind: 'model', title: 'Model paper 5', sub: 'Same pattern as CAT-2 · Passage: space debris' },
-    { id: 'model-06', kind: 'model', title: 'Model paper 6', sub: 'Same pattern as CAT-2 · Passage: deepfakes' },
-    { id: 'model-07', kind: 'model', title: 'Model paper 7', sub: 'Same pattern as CAT-2 · Passage: groundwater' },
-    { id: 'model-08', kind: 'model', title: 'Model paper 8', sub: 'Same pattern as CAT-2 · Passage: online learning' },
-    { id: 'model-09', kind: 'model', title: 'Model paper 9', sub: 'Same pattern as CAT-2 · Passage: sleep and screens' },
-    { id: 'model-10', kind: 'model', title: 'Model paper 10', sub: 'Same pattern as CAT-2 · Passage: antibiotic resistance' }
+    { id: 'model-05', kind: 'model', title: 'Model paper 5', sub: 'Same pattern as CAT-2 · Passage: space debris' }
   ],
 
   asked: {
