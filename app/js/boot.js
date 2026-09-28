@@ -6,3 +6,10 @@ window.QUESTIONS = function (d) {
 };
 window.SUMMARY = function (d) { window.DATA.summaries[d.module] = d; };
 window.FIGDIMS = function (d) { Object.assign(window.DATA.figs, d); };
+// CAT-2 question papers: papers-free.js (actual papers, the index of every model paper, which topics were asked)
+// for everyone signed in; papers-paid.js (the other model papers) after payment.
+window.PAPERS = function (d) {
+  window.DATA.papers = (window.DATA.papers || []).concat(d.papers || []);
+  if (d.index) window.DATA.paperIndex = d.index;
+  if (d.asked) window.DATA.asked = d.asked;
+};

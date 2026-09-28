@@ -1104,3 +1104,20 @@ a.syl-name:hover { text-decoration: underline; }
 .ew-foot { display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; align-items: center; border-top: 1px solid var(--line); padding-top: 12px; }
 @media (max-width: 520px) { .ew-opts.two { grid-template-columns: 1fr; } .ew-slot { grid-template-columns: 1fr; gap: 4px; } }
 .viz [hidden] { display: none !important; }
+
+/* CAT-2 question papers */
+.paper-list { display: grid; gap: 10px; }
+.paper-list .next-topic, .paper-list .lock-card { margin: 0; }
+.paper-meta { margin: 18px 0 8px; }
+.paper-q { border: 1px solid var(--line); border-radius: 14px; background: var(--bg-2); padding: 16px 18px; margin-top: 18px; }
+.paper-qhead { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+.paper-qn { font-family: var(--mono); font-size: 13px; letter-spacing: 0.08em; color: var(--white); }
+.paper-prompt { color: var(--white); font-weight: 600; }
+.paper-prompt p { margin: 0 0 6px; }
+.paper-passage { border-left: 3px solid var(--line-2); padding: 4px 0 4px 14px; margin: 12px 0; font-family: var(--serif); font-size: 16.5px; line-height: 1.7; color: var(--text-2); }
+.paper-passage p { margin: 0 0 10px; }
+.paper-parts { margin: 10px 0 0; }
+.paper-ans { margin-top: 12px; }
+.paper-rev { font-size: 14px; color: var(--text-dim); margin: 12px 0 0; }
+.cat2-asked { margin: 14px 0 4px; }
+.cat2-asked a { white-space: nowrap; }

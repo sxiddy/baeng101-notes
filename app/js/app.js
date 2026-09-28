@@ -271,6 +271,7 @@ window.__startApp = function () {
         <div class="sb-label">Exams</div>
         <a class="sb-link" href="#syllabus.cat1" data-key="syllabus.cat1">${icon('list')}<span>CAT-1 syllabus</span></a>
         <a class="sb-link" href="#syllabus.cat2" data-key="syllabus.cat2">${icon('list')}<span>CAT-2 syllabus</span><span class="count" data-sylcount></span></a>
+        <a class="sb-link" href="#papers" data-key="papers">${icon('exam')}<span>CAT-2 question papers</span></a>
         <div class="sb-label">Talk to us</div>
         <button class="sb-link" data-act="ideas">${icon('bulb')}<span>Any ideas?</span></button>
         <button class="sb-link" data-act="help">${icon('help')}<span>Help?</span></button>
@@ -412,7 +413,7 @@ window.__startApp = function () {
     let m = raw.match(/^(m[0-9]+)-summary$/);
     if (m && MOD[m[1]] && MOD[m[1]].locked) return { view: 'unlock' };
     if (m && MOD[m[1]]) return { view: 'summary', mod: m[1] };
-    m = raw.match(/^(questions|cards|quiz|formulas|lab|mine|guide|syllabus|battle)(?:\.([a-z0-9-]+))?$/);
+    m = raw.match(/^(questions|cards|quiz|formulas|lab|mine|guide|syllabus|battle|papers)(?:\.([a-z0-9-]+))?$/);
     if (m) return { view: m[1], arg: m[2] || null };
     m = raw.match(/^([a-z0-9-]+?)(?:\.(\d+))?$/);
     if (m && TOPIC[m[1]]) return { view: 'topic', id: m[1], tab: m[2] != null ? +m[2] : null };
@@ -471,6 +472,7 @@ window.__startApp = function () {
         case 'mine': view = viewMine(r); break;
         case 'guide': view = viewGuide(r); break;
         case 'syllabus': view = viewSyllabus(r); break;
+        case 'papers': view = viewPapers(r); break;
         case 'battle': view = viewBattle(r); break;
         default: view = viewHome(r);
       }
@@ -723,6 +725,7 @@ window.__startApp = function () {
           <a class="tile" href="#lab"><span class="tt">${icon('puzzle')}Practice lab</span>${nViz ? `<span class="big">${nViz}</span>` : ''}<p>Every interactive exercise in one place: definition builder, summary trimmer, conflict-style grid, SoP builder and more.</p></a>
           <a class="tile" href="#mine"><span class="tt">${icon('pen')}Highlights & notes</span><p>Your highlighted lines, personal notes, tagged topics and questions to revisit.</p></a>
           <a class="tile" href="#battle"><span class="tt">${icon('swords')}1v1 Quiz battle</span><p>Challenge a friend with a link: 10 questions, 10 seconds each, live scores.</p></a>
+          <a class="tile" href="#papers"><span class="tt">${icon('exam')}CAT-2 question papers</span><p>The real CAT-2 paper and model papers in the same pattern, with model answers.</p></a>
           <a class="tile" href="#syllabus.cat2"><span class="tt">${icon('list')}CAT syllabus</span><p>The CAT-2 syllabus as a checklist, each line linked to its notes.</p></a>
         </div>
       </section>
@@ -779,6 +782,7 @@ window.__startApp = function () {
       <div class="eyebrow"><span class="code">M${+m.num}</span><a href="#${m.id}" style="text-decoration:none">${esc(m.title)}</a><span class="dot">·</span><span>${esc(t.source)}</span></div>
       <h1 class="h-display">${rt(t.title)}</h1>
       <p class="blurb">${rt(t.blurb)}</p>
+      ${askedBadge(t.id)}
       <div class="t-actions">
         <button class="btn" data-act="done"></button>
         <button class="btn" data-act="tagtopic" title="Colour-tag this topic"></button>
@@ -1957,6 +1961,55 @@ window.__startApp = function () {
       if (e.target.closest('[data-clear]') && confirm(`Clear all ${label} ticks?`)) { sylItems(cat).forEach((x) => delete S.syl[cat + ':' + x.id]); save(); paint(); updateSidebar(); }
     });
     paint();
+    return { el };
+  }
+
+  // ================================================================ CAT-2 question papers
+  // papers-free.js: the actual CAT-2 papers, one model paper, the index of all papers and which topics were asked.
+  // papers-paid.js: the other model papers (loaded only with full access). Locked ones are listed from the index.
+  const PAPERS = (D.papers || []).slice(), PAPER = {};
+  PAPERS.forEach((p) => { PAPER[p.id] = p; });
+  const PINDEX = D.paperIndex || PAPERS.map((p) => ({ id: p.id, kind: p.kind, title: p.title, sub: p.sub }));
+  const ASKED = D.asked || {};
+  const CAT2_UNTIL = Date.parse('2026-10-04T23:59:59+05:30'); // the "asked in CAT-2" note shows until CAT-2 ends
+  function askedBadge(id) {
+    const a = ASKED[id];
+    if (!a || Date.now() > CAT2_UNTIL) return '';
+    return `<div class="note exam cat2-asked"><p><b>This topic was asked in CAT-2</b> (${esc(a.where)}): ${esc(a.what)}. <a href="#papers.${esc(a.paper)}">See the question paper ${icon('right')}</a></p></div>`;
+  }
+  function viewPapers(r) {
+    const p = r.arg && PAPER[r.arg];
+    const el = h('div', { class: 'view papers' });
+    if (!p) {
+      setCrumbs([{ t: 'Home', href: '#home' }, { t: 'CAT-2 question papers' }]); setActive('papers'); document.title = 'CAT-2 question papers · BAENG101 Notes';
+      const row = (x) => { const open = !!PAPER[x.id];
+        return open ? `<a class="next-topic" href="#papers.${x.id}"><div><small>${esc(x.sub || '')}</small><strong>${esc(x.title)}</strong></div><span class="arrow">${icon('right')}</span></a>`
+          : `<a class="lock-card" href="#unlock"><span class="lock-ico">${icon('lock')}</span><div><strong>${esc(x.title)}</strong><p>${esc(x.sub || '')} · unlock with full access for ₹${PRICE_RS}</p></div><span class="arrow">${icon('right')}</span></a>`; };
+      const actual = PINDEX.filter((x) => x.kind === 'actual'), model = PINDEX.filter((x) => x.kind === 'model');
+      el.innerHTML = `<div class="eyebrow"><span class="code">Exams</span><span>CAT-2</span><span class="dot">·</span><span>${actual.length} actual · ${model.length} model</span></div>
+        <h1 class="h-display">CAT-2 question papers</h1>
+        <p class="blurb">The real CAT-2 paper, typed out cleanly, and model papers in the same pattern (5 questions, 10 marks each, 90 minutes). Try each question on paper first, then open the model answer.</p>
+        <section class="sum-sec"><h2 class="h-sec">Actual papers <small>${actual.length}</small></h2><div class="paper-list">${actual.map(row).join('')}</div></section>
+        <section class="sum-sec"><h2 class="h-sec">Model papers <small>${model.length}</small></h2><div class="paper-list">${model.map(row).join('')}</div></section>`;
+      stagger(el);
+      return { el };
+    }
+    setCrumbs([{ t: 'Home', href: '#home' }, { t: 'CAT-2 papers', href: '#papers', hideSm: true }, { t: p.short || p.title }]); setActive('papers');
+    document.title = `${p.title} · BAENG101 Notes`;
+    const topicLinks = (ids) => (ids || []).filter((id) => TOPIC[id]).map((id) => `<a href="#${id}">${rt(TOPIC[id].short || TOPIC[id].title)}</a>`).join(' · ');
+    el.innerHTML = `<div class="eyebrow"><span class="code">${p.kind === 'actual' ? 'Actual paper' : 'Model paper'}</span><span>${esc(p.sub || '')}</span></div>
+      <h1 class="h-display">${esc(p.title)}</h1>
+      ${p.meta ? `<div class="kv paper-meta">${p.meta.map(([k, v]) => `<div><span>${esc(k)}</span><b>${esc(v)}</b></div>`).join('')}</div>` : ''}
+      ${p.instructions ? `<div class="note heads-up"><p>${p.instructions}</p></div>` : ''}
+      ${(p.questions || []).map((q) => `<section class="paper-q prose">
+        <div class="paper-qhead"><span class="paper-qn">Q${esc(q.n)}</span><span class="ew-score">${q.marks} marks${q.co ? ' · CO' + esc(q.co) : ''}${q.bl ? ' · BL' + esc(q.bl) : ''}</span></div>
+        <div class="paper-prompt">${q.prompt}</div>
+        ${q.passage ? `<div class="paper-passage">${q.passage}</div>` : ''}
+        ${q.parts ? `<ol class="paper-parts">${q.parts.map((x) => `<li>${x.text}${x.marks ? ` <span class="ew-score">(${x.marks} marks)</span>` : ''}</li>`).join('')}</ol>` : ''}
+        ${q.answer ? `<details class="more paper-ans"><summary>Model answer</summary>${q.answer}</details>` : ''}
+        ${q.topics && q.topics.length ? `<p class="paper-rev">Revise: ${topicLinks(q.topics)}</p>` : ''}
+      </section>`).join('')}
+      <p style="margin-top:32px"><a class="btn" href="#papers">${icon('left')}All CAT-2 papers</a></p>`;
     return { el };
   }
 
