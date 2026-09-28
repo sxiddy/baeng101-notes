@@ -36,6 +36,7 @@ function load(file) {
   global.CHUNK = (d) => { out.chunk = d; };
   global.QUESTIONS = (d) => { out.questions = d; };
   global.SUMMARY = (d) => { out.summary = d; };
+  global.PAPERS = (d) => { out.papers = d; };
   delete require.cache[abs];
   try { require(abs); } catch (e) { err(file, `does not load: ${e.message}`); return null; }
   return out;
@@ -232,7 +233,26 @@ for (const f of files) {
   } else if (d.summary) {
     checkSummary(f, d.summary, allTopicIds, seenQ);
     console.log(`\n${base}: summary ok-ish (${(d.summary.bigIdeas || []).length} big ideas, ${(d.summary.questions || []).length} questions)`);
-  } else err(base, 'no CHUNK/QUESTIONS/SUMMARY call found');
+  } else if (d.papers) {
+    // CAT-2 question papers (papers-free.js / papers-paid.js): HTML and style checks, topic links, asked map
+    const ctx = { figRefs: [], vizRefs: [] };
+    const ps = d.papers.papers || [];
+    let nq = 0;
+    for (const p of ps) {
+      if (!p.id || !p.title) err(base, 'paper without id/title');
+      if (p.instructions) checkHtml(`${base} › ${p.id} instructions`, p.instructions, ctx);
+      for (const q of p.questions || []) {
+        nq++;
+        const w = `${base} › ${p.id} Q${q.n}`;
+        for (const k of ['prompt', 'passage', 'answer']) if (q[k] != null) checkHtml(`${w} ${k}`, q[k], ctx);
+        (q.parts || []).forEach((x, i) => checkHtml(`${w} part ${i + 1}`, x.text, ctx));
+        for (const id of q.topics || []) if (!allTopicIds.has(id)) err(w, `unknown topic "${id}"`);
+      }
+    }
+    for (const id of Object.keys(d.papers.asked || {})) if (!allTopicIds.has(id)) err(`${base} › asked`, `unknown topic "${id}"`);
+    if (ctx.figRefs.length || ctx.vizRefs.length) err(base, 'no figures/viz inside papers');
+    console.log(`\n${base}: ${ps.length} papers, ${nq} questions${d.papers.index ? `, index of ${d.papers.index.length}` : ''}${d.papers.asked ? `, ${Object.keys(d.papers.asked).length} asked topics` : ''}`);
+  } else err(base, 'no CHUNK/QUESTIONS/SUMMARY/PAPERS call found');
 }
 console.log(`\n${errors} error(s), ${warnings} warning(s)`);
 process.exit(errors ? 1 : 0);
