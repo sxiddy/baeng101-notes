@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 660">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 10 5 0 10z" class="dfd"/></marker></defs>
+  <g>
+    <rect x="10" y="10" width="580" height="124" rx="14" class="df"/>
+    <rect x="10" y="10" width="580" height="124" rx="14" class="dsb" fill="none" stroke-width="2"/>
+    <text x="30" y="50" font-size="28" class="dtb">1  Aim</text>
+    <text x="30" y="86" font-size="24" class="dt2">what was studied, and why</text>
+    <text x="30" y="118" font-size="22" class="dt3">"The study aimed to investigate…"</text>
+    <path d="M300 138v18" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+    <rect x="10" y="166" width="580" height="124" rx="14" class="df"/>
+    <rect x="10" y="166" width="580" height="124" rx="14" class="dso" fill="none" stroke-width="2"/>
+    <text x="30" y="206" font-size="28" class="dto">2  Method</text>
+    <text x="30" y="242" font-size="24" class="dt2">who, where, when and how</text>
+    <text x="30" y="274" font-size="22" class="dt3">"Data were collected through…"</text>
+    <path d="M300 294v18" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+    <rect x="10" y="322" width="580" height="124" rx="14" class="df"/>
+    <rect x="10" y="322" width="580" height="124" rx="14" class="dsg" fill="none" stroke-width="2"/>
+    <text x="30" y="362" font-size="28" class="dtg">3  Findings</text>
+    <text x="30" y="398" font-size="24" class="dt2">what the data showed (numbers)</text>
+    <text x="30" y="430" font-size="22" class="dt3">"The findings showed that…"</text>
+    <path d="M300 450v18" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+    <rect x="10" y="478" width="580" height="124" rx="14" class="df"/>
+    <rect x="10" y="478" width="580" height="124" rx="14" class="dsp" fill="none" stroke-width="2"/>
+    <text x="30" y="518" font-size="28" class="dtp">4  Conclusion</text>
+    <text x="30" y="554" font-size="24" class="dt2">what the results mean</text>
+    <text x="30" y="586" font-size="22" class="dt3">"The study concluded that…"</text>
+
+    <text x="300" y="644" font-size="22" text-anchor="middle" class="dt2">one paragraph · past tense · about 100 words</text>
+  </g>
+</svg>

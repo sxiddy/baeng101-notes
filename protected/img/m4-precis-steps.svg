@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 690">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 10 5 0 10z" class="dfd"/></marker></defs>
+  <g>
+    <rect x="10" y="10" width="580" height="88" rx="14" class="df"/>
+    <circle cx="52" cy="54" r="24" class="dfw"/><text x="52" y="63" font-size="24" text-anchor="middle" class="mono" style="fill:var(--bg)">1</text>
+    <text x="94" y="48" font-size="25" class="dt">Identify reader and purpose</text>
+    <text x="94" y="82" font-size="22" class="dt2">who reads it, and what for?</text>
+    <path d="M300 102v14" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+    <rect x="10" y="126" width="580" height="88" rx="14" class="df"/>
+    <circle cx="52" cy="170" r="24" class="dfw"/><text x="52" y="179" font-size="24" text-anchor="middle" class="mono" style="fill:var(--bg)">2</text>
+    <text x="94" y="164" font-size="25" class="dt">Read the original</text>
+    <text x="94" y="198" font-size="22" class="dt2">the whole text, for its theme</text>
+    <path d="M300 218v14" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+    <rect x="10" y="242" width="580" height="88" rx="14" class="df"/>
+    <circle cx="52" cy="286" r="24" class="dfw"/><text x="52" y="295" font-size="24" text-anchor="middle" class="mono" style="fill:var(--bg)">3</text>
+    <text x="94" y="280" font-size="25" class="dt">Underline key ideas</text>
+    <text x="94" y="314" font-size="22" class="dt2">main points and concepts, not examples</text>
+    <path d="M300 334v14" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+    <rect x="10" y="358" width="580" height="88" rx="14" class="df"/>
+    <circle cx="52" cy="402" r="24" class="dfw"/><text x="52" y="411" font-size="24" text-anchor="middle" class="mono" style="fill:var(--bg)">4</text>
+    <text x="94" y="396" font-size="25" class="dt">Notes for each paragraph</text>
+    <text x="94" y="430" font-size="22" class="dt2">a few words each, in your own words</text>
+    <path d="M300 450v14" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+    <rect x="10" y="474" width="580" height="88" rx="14" class="df"/>
+    <circle cx="52" cy="518" r="24" class="dfw"/><text x="52" y="527" font-size="24" text-anchor="middle" class="mono" style="fill:var(--bg)">5</text>
+    <text x="94" y="512" font-size="25" class="dt">Write the summary</text>
+    <text x="94" y="546" font-size="22" class="dt2">prose, third person, within one-third</text>
+    <path d="M300 566v14" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+    <rect x="10" y="590" width="580" height="88" rx="14" class="df"/>
+    <circle cx="52" cy="634" r="24" class="dfw"/><text x="52" y="643" font-size="24" text-anchor="middle" class="mono" style="fill:var(--bg)">6</text>
+    <text x="94" y="628" font-size="25" class="dt">Review and edit</text>
+    <text x="94" y="662" font-size="22" class="dt2">ideas, accuracy, word count</text>
+  </g>
+</svg>

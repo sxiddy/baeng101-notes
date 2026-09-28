@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 620">
+  <g>
+    <text x="20" y="40" font-size="25" class="dt">Original passage</text>
+    <text x="580" y="40" font-size="22" text-anchor="end" class="dtb">100%</text>
+    <rect x="20" y="54" width="560" height="40" rx="8" class="dfb" fill-opacity=".3"/>
+    <rect x="20" y="54" width="560" height="40" rx="8" class="dsb" fill="none" stroke-width="2"/>
+    <path d="M207 48v52" class="ds" stroke-width="2.5" stroke-dasharray="6 5"/>
+    <text x="20" y="126" font-size="22" class="dt3">all ideas and details, author's words</text>
+
+    <text x="20" y="180" font-size="25" class="dt">Paraphrase</text>
+    <text x="580" y="180" font-size="22" text-anchor="end" class="dtp">≈ same length</text>
+    <rect x="20" y="194" width="520" height="40" rx="8" class="dfp" fill-opacity=".3"/>
+    <rect x="20" y="194" width="520" height="40" rx="8" class="dsp" fill="none" stroke-width="2"/>
+    <path d="M207 188v52" class="ds" stroke-width="2.5" stroke-dasharray="6 5"/>
+    <text x="20" y="266" font-size="22" class="dt3">all ideas, new sentences, cited</text>
+
+    <text x="20" y="320" font-size="25" class="dt">Summary (précis)</text>
+    <text x="580" y="320" font-size="22" text-anchor="end" class="dtg">≈ one-third</text>
+    <rect x="20" y="334" width="187" height="40" rx="8" class="dfg" fill-opacity=".3"/>
+    <rect x="20" y="334" width="187" height="40" rx="8" class="dsg" fill="none" stroke-width="2"/>
+    <path d="M207 328v52" class="ds" stroke-width="2.5" stroke-dasharray="6 5"/>
+    <text x="20" y="406" font-size="22" class="dt3">main ideas only, own words, as prose</text>
+
+    <text x="20" y="460" font-size="25" class="dt">Plagiarised version</text>
+    <text x="580" y="460" font-size="22" text-anchor="end" class="dtr">same length</text>
+    <rect x="20" y="474" width="560" height="40" rx="8" class="dfr" fill-opacity=".22"/>
+    <rect x="20" y="474" width="560" height="40" rx="8" class="dsr" fill="none" stroke-width="2" stroke-dasharray="10 6"/>
+    <path d="M207 468v52" class="ds" stroke-width="2.5" stroke-dasharray="6 5"/>
+    <text x="20" y="546" font-size="22" class="dt3">author's structure, swapped words, no credit</text>
+
+    <path d="M150 598h44" class="ds" stroke-width="2.5" stroke-dasharray="6 5"/>
+    <text x="206" y="606" font-size="22" class="dt2">= one-third of the original</text>
+  </g>
+</svg>
