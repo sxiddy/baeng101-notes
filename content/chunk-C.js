@@ -12,7 +12,7 @@ CHUNK({
         { title: 'What a summary is', html: `
           <p class="lead">A <b>summary</b> (also called a <b>précis</b>) is a short version of a text that keeps its <b>main ideas</b>, in <b>your own words</b>, at about <b>one-third</b> of the original length.</p>
           <p>The course's objective: to <b>condense any given text</b> with <b>effectiveness and efficiency</b>. Effective means the reader still gets the whole point. Efficient means you use no more words than that takes.</p>
-          <p>The slides' reference is the chapter "The Art of Condensation" (chapter 12, from page 274). Condensing is the right picture: you boil a text down, you don't retell it.</p>
+          <p>Think of it as condensing: you boil a text down, you don't retell it.</p>
           <h3>Why the course teaches it</h3>
           <ul>
             <li>Writing <b>abstracts, summaries and synopses</b> is a necessary part of academic and professional work.</li>
@@ -336,7 +336,7 @@ CHUNK({
       source: 'Summarising slides 15–23',
       tabs: [
         { title: 'Redundancy and wordiness', html: `
-          <p class="lead"><b>Redundancy</b> says the same thing twice. <b>Wordiness</b> uses many words where a few would do. The slides give one sentence for each (from the reference chapter, page 276).</p>
+          <p class="lead"><b>Redundancy</b> says the same thing twice. <b>Wordiness</b> uses many words where a few would do. Here is one sentence for each.</p>
           <h3>Redundancy: the Chairman</h3>
           <div class="vs">
             <div class="side"><h4>Before (23 words)</h4><p>The Chairman wants to meet those employees who are working in the production department, so that he can discuss the difficult crisis immediately.</p></div>

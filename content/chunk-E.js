@@ -126,7 +126,7 @@ CHUNK({
               </ul></li>
           </ol>
           <p>Part 4 needs enough detail to convince the faculty that you understand the <b>scope of research</b> in their discipline and follow <b>current research themes</b>.</p>
-          <div class="note heads-up"><p>A slip in the first slide deck: Part 4 appears <b>before</b> Part 3, and the Part 4 slide carries the caption "Academic Background and Professional Experience", which belongs to Part 2. The second deck puts them in order 1, 2, 3, 4. Learn that order.</p></div>
+          <div class="note heads-up"><p>Keep the parts in the order 1, 2, 3, 4. They run through time: who you are, what you did before, what you are doing now, and what you want to study next, which ends on the positive close (4c).</p></div>
         ` },
         { title: 'The paragraph map', html: `
           <p class="lead">Besides the four parts, the slides give three headings (<b>Why this course?</b>, <b>Career goals</b>, <b>Why this university?</b>) and a <b>closing paragraph</b>. Fitted together with the four parts, they make six paragraphs.</p>
@@ -191,7 +191,7 @@ CHUNK({
         { front: 'Part 4 asks you to pose a…', back: '<b>Question</b>, problem or theme from current research.' },
         { front: 'Part 4b: research what?', back: 'The <b>department</b> and <b>professors</b> whose work parallels yours.' },
         { front: 'The three headings on the slides after Part 4?', back: 'Why this <b>course</b>, career <b>goals</b>, why this <b>university</b>.' },
-        { front: 'Slide order slip in deck 1?', back: '<b>Part 4 comes before Part 3</b>; deck 2 fixes it.' },
+        { front: 'Why does Part 4 come last?', back: 'The parts run <b>past → present → future</b>, and Part 4 holds the positive ending (4c).' },
         { front: 'Worksheet: what should a hobby do?', back: '<b>Link</b> to skills the course needs.' },
         { front: 'Tip 5?', back: 'Link everything with <b>continuity and focus</b>.' },
       ],
@@ -201,11 +201,11 @@ CHUNK({
         'Part 2: research (whom, title, role, outcome), papers or thesis, work experience in a similar area.',
         'Part 4: a question or problem, the department and its professors, a positive end.',
         'Paragraph map: opening, academic background, recent activities, why this course and university, career goals, closing.',
-        'Deck 1 shows Part 4 before Part 3; the correct order is 1, 2, 3, 4.',
+        'The parts run past → present → future: 1, 2, 3, 4, ending on Part 4c.',
         'The worksheet sections (course, skills, hobbies, work, future plans) each feed a paragraph.',
       ],
       formulas: [
-        { name: 'The four parts', html: `<b>1</b> Introduce yourself · <b>2</b> Summarise your career · <b>3</b> Recent activities · <b>4</b> Academic interests (area, department, positive end)`, note: 'Deck 1 swaps 3 and 4; use this order.' },
+        { name: 'The four parts', html: `<b>1</b> Introduce yourself · <b>2</b> Summarise your career · <b>3</b> Recent activities · <b>4</b> Academic interests (area, department, positive end)`, note: 'Past → present → future.' },
         { name: 'Paragraph map', html: `Opening → Academic background → Recent activities → <b>Why this course and university</b> → <b>Career goals</b> → Closing` },
         { name: 'Research sentence', html: `Under <b>[whom]</b>, I <b>[responsibility]</b> on <b>[project title]</b>, which <b>[outcome]</b>.`, note: 'The four details Part 2 asks for, in one sentence.' },
       ],

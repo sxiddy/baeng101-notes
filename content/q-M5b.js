@@ -75,11 +75,11 @@ QUESTIONS({
     // ---------------------------------------------------------------- m5-sop-structure
     {
       id: 'm5-sq-09', module: 'm5', topic: 'm5-sop-structure', type: 'decide', level: 1,
-      q: `<p>Which order of the four parts matches the slides (and the second deck)?</p>`,
+      q: `<p>Which order of the four parts is right?</p>`,
       options: ['Academic interests → introduce yourself → recent activities → previous career', 'Introduce yourself → summarise your previous career → recent activities → academic interests', 'Introduce yourself → academic interests → recent activities → previous career', 'Previous career → introduce yourself → academic interests → recent activities'],
       correct: 1,
       answer: `<p><b>Introduce yourself → previous career → recent activities → academic interests.</b></p>`,
-      explain: `<p>Parts 1 to 4 in order. The first deck shows Part 4 before Part 3 by mistake; the second deck has the right order.</p>`,
+      explain: `<p>Parts 1 to 4 in order: past, then present, then future, ending on the positive close in Part 4c.</p>`,
       points: ['Part 1 introduce', 'Part 2 previous career', 'Part 3 recent activities', 'Part 4 academic interests'],
     },
     {
@@ -137,11 +137,11 @@ QUESTIONS({
     },
     {
       id: 'm5-sq-16', module: 'm5', topic: 'm5-sop-structure', type: 'explain', level: 3,
-      q: `<p>A classmate studied from the first slide deck and wrote the SoP in the order Part 1, Part 2, Part 4, Part 3. Explain what went wrong and why the order 1, 2, 3, 4 makes more sense.</p>`,
+      q: `<p>A classmate wrote the SoP in the order Part 1, Part 2, Part 4, Part 3. Explain why the order 1, 2, 3, 4 makes more sense.</p>`,
       options: null, correct: null,
-      answer: `<p><b>Model answer.</b> The first deck shows the Part 4 slide (academic interests) before the Part 3 slide (recent and current activities), and even gives Part 4 the caption meant for Part 2. The second deck corrects this to 1, 2, 3, 4. The order matters because the SoP moves through time: who you are (Part 1), what you did before (Part 2), what you are doing now (Part 3), then what you want to study next (Part 4), which leads naturally into career goals and the closing. Putting academic interests before recent activities breaks that line: the reader hears the plan, then jumps back to the past. Part 4 also contains the positive ending (4c), so it has to come last.</p>`,
-      explain: `<p>Name the slip, give the corrected order, and explain the time line (past → present → future) and the ending in 4c.</p>`,
-      points: ['deck 1 swaps Parts 3 and 4', 'deck 2 corrects it', 'past → present → future', 'Part 4c is the ending'],
+      answer: `<p><b>Model answer.</b> The order matters because the SoP moves through time: who you are (Part 1), what you did before (Part 2), what you are doing now (Part 3), then what you want to study next (Part 4), which leads naturally into career goals and the closing. Putting academic interests before recent activities breaks that line: the reader hears the plan, then jumps back to the past. Part 4 also contains the positive ending (4c), so it has to come last.</p>`,
+      explain: `<p>Give the correct order and explain the time line (past → present → future) and the ending in 4c.</p>`,
+      points: ['correct order 1, 2, 3, 4', 'past → present → future', 'Part 4c is the ending'],
     },
 
     // ---------------------------------------------------------------- m5-sop-writing

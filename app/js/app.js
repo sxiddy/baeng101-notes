@@ -751,7 +751,7 @@ window.__startApp = function () {
     return `<a class="trow" href="#${t.id}">
       <span class="tick${isDone(t.id) ? ' done' : ''}" style="--p:${Math.round(f * 100)}%"></span>
       <div><h3>${rt(t.title)}</h3><p>${rt(t.blurb)}</p></div>
-      <span class="meta">${esc(t.source)} · ${t.tabs.length} tabs <span class="arrow">→</span></span>
+      <span class="meta">${t.tabs.length} tabs <span class="arrow">→</span></span>
     </a>`;
   }
   function summaryRow(m) {
@@ -872,7 +872,7 @@ window.__startApp = function () {
     const nq = (QBY[t.id] || []).length, nc = (t.flashcards || []).length;
     const el = h('article', { class: 'view topic' });
     el.innerHTML = `
-      <div class="eyebrow"><span class="code">M${+m.num}</span><a href="#${m.id}" style="text-decoration:none">${esc(m.title)}</a><span class="dot">·</span><span>${esc(t.source)}</span></div>
+      <div class="eyebrow"><span class="code">M${+m.num}</span><a href="#${m.id}" style="text-decoration:none">${esc(m.title)}</a></div>
       <h1 class="h-display">${rt(t.title)}</h1>
       <p class="blurb">${rt(t.blurb)}</p>
       ${askedBadge(t.id)}
@@ -988,7 +988,12 @@ window.__startApp = function () {
     }
     tabsEl.addEventListener('click', (e) => { const b = e.target.closest('.tab'); if (b) setTab(+b.dataset.i, { scroll: true }); });
     tabsEl.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); e.stopPropagation(); setTab(i + (e.key === 'ArrowRight' ? 1 : -1), { scroll: true }); $(`.tab[data-i="${i}"]`, tabsEl).focus(); }
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        e.preventDefault(); e.stopPropagation();
+        const r = e.key === 'ArrowRight';
+        if ((r && i === n - 1) || (!r && i === 0)) { (r ? goNext : goPrev)(); return; }
+        setTab(i + (r ? 1 : -1), { scroll: true }); $(`.tab[data-i="${i}"]`, tabsEl).focus();
+      }
     });
     nav.addEventListener('click', (e) => { const b = e.target.closest('[data-go]'); if (b) setTab(+b.dataset.go, { scroll: true }); });
     panel.addEventListener('click', (e) => {
@@ -999,13 +1004,21 @@ window.__startApp = function () {
         showSelBar(mk.getBoundingClientRect(), [{ html: icon('trash') + 'Remove highlight', title: 'Remove highlight', fn: () => { S.hl[t.id] = (S.hl[t.id] || []).filter((x) => x.id !== hid); save(); fill(false); } }]);
       }
     });
+    // arrow keys run on past the ends of a topic: last tab → the next topic, first tab → the previous topic's last tab
+    function goNext() { if (i < n - 1) setTab(i + 1, { scroll: true }); else if (nx) navigate('#' + nx.key); }
+    function goPrev() {
+      if (i > 0) { setTab(i - 1, { scroll: true }); return; }
+      const pv = ORDER[oi - 1]; if (!pv) return;
+      const pt = TOPIC[pv.key];
+      navigate('#' + pv.key + (pt && pt.tabs && pt.tabs.length ? '.' + (pt.tabs.length - 1) : ''));
+    }
     const onResize = () => moveInk();
     window.addEventListener('resize', onResize);
     return {
       el,
       after() { setTab(i, { animate: false }); requestAnimationFrame(moveInk); if (document.fonts && document.fonts.ready) document.fonts.ready.then(moveInk); },
       cleanup() { window.removeEventListener('resize', onResize); },
-      api: { setTab, tab: () => i, next: () => setTab(i + 1, { scroll: true }), prev: () => setTab(i - 1, { scroll: true }), refresh: () => fill(false), topic: t },
+      api: { setTab, tab: () => i, next: goNext, prev: goPrev, refresh: () => fill(false), topic: t },
     };
   }
 
@@ -1634,7 +1647,7 @@ window.__startApp = function () {
       m.innerHTML = `<div class="modal-head"><h2>Keyboard shortcuts</h2><button class="icon-btn" data-x aria-label="Close">${icon('x')}</button></div>
         <div class="modal-body"><div class="keys">
           <span>${k(isMac ? '⌘ K' : 'Ctrl K')}${k('/')}</span><span>Search everything</span>
-          <span>${k('←')}${k('→')}</span><span>Previous / next tab (flashcards: still learning / know it)</span>
+          <span>${k('←')}${k('→')}</span><span>Previous / next tab, running on to the next or previous topic at the ends (flashcards: still learning / know it)</span>
           <span>${k('N')}${k('P')}</span><span>Next / previous topic</span>
           <span>${k('R')}</span><span>Recall mode: blank every key term</span>
           <span>${k('F')}</span><span>Focus mode with a 25-minute timer</span>
@@ -2443,6 +2456,11 @@ window.__startApp = function () {
     else if (current && current.view === 'topic' && current.api) {
       if (k === 'ArrowRight') { e.preventDefault(); current.api.next(); }
       else if (k === 'ArrowLeft') { e.preventDefault(); current.api.prev(); }
+    }
+    else if (current && current.view === 'summary' && (k === 'ArrowRight' || k === 'ArrowLeft')) {
+      // a module summary sits between topics in the reading order, so the arrows carry on through it
+      const o = ORDER[orderIdx(current.mod + '-summary') + (k === 'ArrowRight' ? 1 : -1)];
+      if (o) { e.preventDefault(); const pt = TOPIC[o.key]; navigate('#' + o.key + (k === 'ArrowLeft' && pt ? '.' + (pt.tabs.length - 1) : '')); }
     }
     if ((k === 'n' || k === 'p') && current && (current.view === 'topic' || current.view === 'summary')) {
       const key = current.view === 'topic' ? current.id : current.mod + '-summary';
