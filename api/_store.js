@@ -9,17 +9,26 @@ function creds() {
   return url && token ? { url: url.replace(/\/$/, ''), token } : null;
 }
 
+// Every key this site uses starts with "baeng101:", so it can share one database with the chemistry site
+// (whose keys have no prefix) without the two sites' lists ever mixing. KEYS results come back without it.
+const PREFIX = process.env.STORE_PREFIX == null ? 'baeng101:' : process.env.STORE_PREFIX;
+const MULTI = new Set(['DEL', 'EXISTS', 'MGET', 'UNLINK']);
+const withPrefix = (cmd) => cmd.map((a, i) => (i >= 1 && (i === 1 || MULTI.has(String(cmd[0]).toUpperCase())) ? PREFIX + a : a));
+
 async function pipeline(cmds) {
   const c = creds();
   if (!c) return null;
   const r = await fetch(c.url + '/pipeline', {
     method: 'POST',
     headers: { Authorization: 'Bearer ' + c.token, 'Content-Type': 'application/json' },
-    body: JSON.stringify(cmds),
+    body: JSON.stringify(cmds.map(withPrefix)),
   });
   if (!r.ok) throw Object.assign(new Error('Store request failed (' + r.status + ')'), { status: 500 });
   const j = await r.json();
-  return j.map((x) => (x && 'result' in x ? x.result : null));
+  return j.map((x, i) => {
+    const v = x && 'result' in x ? x.result : null;
+    return String(cmds[i][0]).toUpperCase() === 'KEYS' && Array.isArray(v) ? v.map((k) => (k.startsWith(PREFIX) ? k.slice(PREFIX.length) : k)) : v;
+  });
 }
 
 // HGETALL returns a flat [k, v, k, v] list
