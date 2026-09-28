@@ -219,6 +219,71 @@ window.__startApp = function () {
   }
   function closeDrawer() { app.classList.remove('sb-open'); }
 
+  // ---------------------------------------------------------------- study music (Spotify's embedded player)
+  // A quiet strip at the bottom of the sidebar: collapsed to one row until opened; the player (Spotify's own embed,
+  // no account or approval needed, full songs for people signed in to Spotify, previews otherwise) loads only when a
+  // student picks a playlist. A tiny equaliser moves while music plays (still under reduced motion).
+  const MUSIC = [['37i9dQZF1DWWQRwui0ExPn', 'lofi beats'], ['37i9dQZF1DX4sWSpwq3LiO', 'Peaceful Piano'], ['37i9dQZF1DWZeKCadgRdKQ', 'Deep Focus'],
+    ['37i9dQZF1DX9sIqqvKsjG8', 'Instrumental Study'], ['37i9dQZF1DX8NTLI2TtZa6', 'Intense Studying'], ['37i9dQZF1DXc8kgYqQLMfH', 'slow living']];
+  const musicDock = h('div', { class: 'music-dock' });
+  const music = { ctrl: null, playing: false, loading: false };
+  const mState = () => S.ui.music || (S.ui.music = { open: false, ref: null, label: '' });
+  function spotifyRef(txt) {
+    const m = String(txt || '').trim().match(/(?:open\.spotify\.com\/(?:intl-[a-z-]+\/)?|spotify:)(playlist|album|track|artist|episode|show)[/:]([A-Za-z0-9]{10,40})/);
+    return m ? m[1] + '/' + m[2] : null;
+  }
+  function paintMusic() {
+    const st = mState();
+    musicDock.classList.toggle('open', !!st.open);
+    musicDock.classList.toggle('playing', music.playing);
+    if (!musicDock.querySelector('.music-row')) {
+      musicDock.innerHTML = `<button class="music-row" data-m="toggle" aria-expanded="false"><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span class="music-lbl">Study music</span><span class="music-now"></span>${icon('chev', 'sb-chev')}</button>
+        <div class="music-body" hidden>
+          <div class="music-chips">${MUSIC.map(([id, n]) => `<button class="music-chip" data-m="pick" data-ref="playlist/${id}" data-label="${esc(n)}">${esc(n)}</button>`).join('')}</div>
+          <form class="music-paste" data-m="paste"><input type="url" inputmode="url" placeholder="Paste a Spotify link" aria-label="Spotify playlist, album or song link"><button class="btn small" type="submit">Play</button></form>
+          <p class="music-msg" data-mmsg></p>
+          <div class="music-player"><div data-mslot></div></div>
+          <p class="music-note">Spotify's own player. Signed in to Spotify in this browser: full songs. Otherwise 30-second previews.</p>
+        </div>`;
+    }
+    $('.music-row', musicDock).setAttribute('aria-expanded', String(!!st.open));
+    $('.music-body', musicDock).hidden = !st.open;
+    $('.music-now', musicDock).textContent = st.label ? '· ' + st.label : '';
+    $$('.music-chip', musicDock).forEach((b) => b.classList.toggle('on', b.dataset.ref === st.ref));
+  }
+  function playMusic(ref, label, auto) {
+    if (auto == null) auto = true;
+    const st = mState(); st.ref = ref; st.label = label; save(); paintMusic();
+    const uri = 'spotify:' + ref.replace('/', ':');
+    if (music.ctrl) { music.ctrl.loadUri(uri); if (auto) music.ctrl.play(); return; }
+    if (music.loading) return;
+    music.loading = true;
+    const start = (API) => {
+      const slot = $('[data-mslot]', musicDock);
+      API.createController(slot, { uri, width: '100%', height: 152 }, (ctrl) => {
+        music.ctrl = ctrl; music.loading = false;
+        ctrl.addListener('playback_update', (e) => { const p = !!(e && e.data && !e.data.isPaused); if (p !== music.playing) { music.playing = p; paintMusic(); } });
+        if (auto) ctrl.addListener('ready', () => { try { ctrl.play(); } catch (err) { /* the student taps play */ } });
+      });
+    };
+    if (window.__spotifyAPI) return start(window.__spotifyAPI);
+    window.onSpotifyIframeApiReady = (API) => { window.__spotifyAPI = API; start(API); };
+    const s = document.createElement('script'); s.src = 'https://open.spotify.com/embed/iframe-api/v1'; s.async = true;
+    s.onerror = () => { music.loading = false; const m = $('[data-mmsg]', musicDock); if (m) m.textContent = 'Spotify could not load. Check your connection or ad blocker.'; };
+    document.head.appendChild(s);
+  }
+  musicDock.addEventListener('click', (e) => {
+    const t = e.target.closest('[data-m]'); if (!t) return;
+    if (t.dataset.m === 'toggle') { const st = mState(); st.open = !st.open; save(); paintMusic(); if (st.open && st.ref && !music.ctrl) playMusic(st.ref, st.label, false); }
+    else if (t.dataset.m === 'pick') playMusic(t.dataset.ref, t.dataset.label);
+  });
+  musicDock.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const inp = $('.music-paste input', musicDock), ref = spotifyRef(inp.value), m = $('[data-mmsg]', musicDock);
+    if (!ref) { m.textContent = 'That is not a Spotify link. Copy it from Spotify: Share → Copy link.'; return; }
+    m.textContent = ''; inp.value = ''; playMusic(ref, ref.split('/')[0] === 'playlist' ? 'Your playlist' : 'Your pick');
+  });
+
   function buildSidebar() {
     const nQ = QS.length;
     const inner = h('div', { class: 'sb-inner' });
@@ -283,8 +348,10 @@ window.__startApp = function () {
         <button data-act="theme" data-label>${themeLabel()}</button>
         ${window.SIGNED_IN_AS ? `<button data-act="devices" title="Request a device reset">${icon('phone')}Devices</button><button data-act="signout" title="Signed in as ${esc(window.SIGNED_IN_AS)}">${icon('x')}Sign out</button>` : ''}
       </div>`;
-    sidebar.innerHTML = '';
-    sidebar.appendChild(inner);
+    // the study-music strip lives outside .sb-inner, so rebuilding the sidebar never restarts the music
+    const old = $('.sb-inner', sidebar); if (old) old.remove();
+    sidebar.insertBefore(inner, musicDock.parentNode === sidebar ? musicDock : null);
+    if (musicDock.parentNode !== sidebar) { sidebar.appendChild(musicDock); paintMusic(); }
     updateSidebar();
   }
   function updateSidebar() {
