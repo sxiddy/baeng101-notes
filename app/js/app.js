@@ -237,7 +237,7 @@ window.__startApp = function () {
     musicDock.classList.toggle('open', !!st.open);
     musicDock.classList.toggle('playing', music.playing);
     if (!musicDock.querySelector('.music-row')) {
-      musicDock.innerHTML = `<div class="music-top"><button class="music-row" data-m="toggle" aria-expanded="false"><span class="m-eq" aria-hidden="true"><i></i><i></i><i></i></span><span class="music-lbl">Study music</span><span class="music-now"></span>${icon('chev', 'sb-chev')}</button><button class="music-ctl" data-m="pp" hidden></button><button class="music-ctl" data-m="stop" title="Stop and close the player" aria-label="Stop and close the player" hidden>✕</button></div>
+      musicDock.innerHTML = `<div class="music-top"><button class="music-row" data-m="toggle" aria-expanded="false"><span class="m-eq" aria-hidden="true"><i></i><i></i><i></i></span><span class="music-lbl">Study music</span><span class="music-now"></span>${icon('chev', 'sb-chev')}</button><button class="music-ctl" data-m="pp" hidden></button><button class="music-ctl" data-m="stop" title="Stop the music" aria-label="Stop the music" hidden><span class="m-stop"></span></button></div>
         <div class="music-body" hidden>
           <div class="music-chips">${MUSIC.map(([id, n]) => `<button class="music-chip" data-m="pick" data-ref="playlist/${id}" data-label="${esc(n)}">${esc(n)}</button>`).join('')}</div>
           <form class="music-paste" data-m="paste"><input type="url" inputmode="url" placeholder="Paste a Spotify link" aria-label="Spotify playlist, album or song link"><button class="btn small" type="submit">Play</button></form>
