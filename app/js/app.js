@@ -182,6 +182,8 @@ window.__startApp = function () {
   const sidebar = h('aside', { class: 'sidebar', 'aria-label': 'Contents' });
   const scrim = h('div', { class: 'scrim', onclick: () => closeDrawer() });
   const main = h('main', { class: 'main', id: 'main' });
+  // whichever box actually scrolls the page: <main> when it has its own scrollbar, otherwise the window
+  const pageScroller = () => (main.scrollHeight > main.clientHeight + 1 && /(auto|scroll)/.test(getComputedStyle(main).overflowY) ? main : (document.scrollingElement || document.documentElement));
   const topbar = h('header', { class: 'topbar' });
   const host = h('div', { class: 'view-host' });
   main.append(topbar, host);
@@ -408,7 +410,10 @@ window.__startApp = function () {
   const themeLabel = () => (S.ui.theme === 'light' ? `${icon('moon')}Dark mode` : `${icon('sun')}Light mode`);
 
   // ---------------------------------------------------------------- top bar
-  let timerState = { left: 25 * 60, running: false, iv: 0 };
+  const FOCUS_LENS = [30, 60, 120, 180];
+  const focusMin = () => (FOCUS_LENS.includes(+S.ui.focusMin) ? +S.ui.focusMin : 30);
+  const lenLabel = (m) => (m < 60 ? m + ' minutes' : m / 60 + (m === 60 ? ' hour' : ' hours'));
+  let timerState = { left: focusMin() * 60, running: false, iv: 0 };
   function buildTopbar() {
     topbar.innerHTML = `
       <button class="icon-btn" data-act="sidebar" title="Toggle sidebar ( [ )" aria-label="Toggle sidebar">${icon('side')}</button>
@@ -453,12 +458,17 @@ window.__startApp = function () {
       focusPrevCollapsed = app.classList.contains('sb-collapsed');
       if (!narrow()) app.classList.add('sb-collapsed');
       closeDrawer();
-      tEl.hidden = false; timerState.left = 25 * 60; startTimer(true);
+      tEl.hidden = false; timerState.left = focusMin() * 60; startTimer(true);
       // phones have no Esc key: a bar with Pause and Exit stays on screen during focus mode
       const fb = h('div', { class: 'focus-bar', role: 'group', 'aria-label': 'Focus timer' });
-      fb.innerHTML = `${icon('timer')}<span class="timer" data-ftime></span><button class="btn small" data-act="focuspause">${icon('pause')}Pause</button><button class="btn small primary" data-act="focusexit">${icon('x')}Exit focus</button>`;
+      fb.innerHTML = `${icon('timer')}<span class="timer" data-ftime></span><select class="focus-len" data-focuslen aria-label="Timer length" title="Timer length">${FOCUS_LENS.map((m) => `<option value="${m}"${m === focusMin() ? ' selected' : ''}>${m < 60 ? m + ' min' : m / 60 + ' h'}</option>`).join('')}</select><button class="btn small" data-act="focuspause">${icon('pause')}Pause</button><button class="btn small primary" data-act="focusexit">${icon('x')}Exit focus</button>`;
       document.body.appendChild(fb);
-      toast(touchUI() ? 'Focus: 25 minutes. Tap Exit focus to leave' : 'Focus: 25 minutes. Esc or Exit focus to leave', 'timer');
+      toast(`Focus: ${lenLabel(focusMin())}. ${touchUI() ? 'Tap Exit focus to leave' : 'Esc or Exit focus to leave'}`, 'timer');
+      fb.querySelector('[data-focuslen]').addEventListener('change', (ev) => {
+        S.ui.focusMin = +ev.target.value; save();
+        timerState.left = focusMin() * 60; startTimer(true); paintTimer();
+        toast(`Timer set to ${lenLabel(focusMin())}`, 'timer');
+      });
     } else {
       if (!narrow() && focusPrevCollapsed === false) app.classList.remove('sb-collapsed');
       tEl.hidden = true; startTimer(false);
@@ -470,12 +480,12 @@ window.__startApp = function () {
     clearInterval(timerState.iv); timerState.running = run;
     if (run) timerState.iv = setInterval(() => {
       timerState.left--; paintTimer();
-      if (timerState.left <= 0) { startTimer(false); toast('25 minutes done. Take five.', 'timer'); timerState.left = 25 * 60; }
+      if (timerState.left <= 0) { startTimer(false); toast(`${lenLabel(focusMin())} done. Take a break.`, 'timer'); timerState.left = focusMin() * 60; }
     }, 1000);
   }
   function paintTimer() {
-    const m = Math.floor(timerState.left / 60), s = timerState.left % 60;
-    $$('.topbar .timer, [data-ftime]').forEach((tEl) => { tEl.textContent = `${m}:${String(s).padStart(2, '0')}`; });
+    const L = timerState.left, hh = Math.floor(L / 3600), m = Math.floor((L % 3600) / 60), s = L % 60, p2 = (x) => String(x).padStart(2, '0');
+    $$('.topbar .timer, [data-ftime]').forEach((tEl) => { tEl.textContent = hh ? `${hh}:${p2(m)}:${p2(s)}` : `${m}:${p2(s)}`; });
     const pb = $('[data-act="focuspause"]'); if (pb) pb.innerHTML = timerState.running ? `${icon('pause')}Pause` : `${icon('play')}Resume`;
   }
   const touchUI = () => !!(window.matchMedia && matchMedia('(hover: none) and (pointer: coarse)').matches);
@@ -563,7 +573,7 @@ window.__startApp = function () {
       host.appendChild(view.el);
       current = Object.assign({}, r, { api: view.api, cleanup: view.cleanup });
       main.style.scrollBehavior = 'auto';
-      main.scrollTop = 0;
+      main.scrollTop = 0; window.scrollTo(0, 0);
       main.style.scrollBehavior = '';
       if (view.after) view.after();
       stagger(view.el);
@@ -981,9 +991,11 @@ window.__startApp = function () {
       } else fill(opts.animate !== false && changed);
       if (opts.scroll) {
         const wrap = $('.tabs-wrap', el);
-        const panelTop = main.scrollTop + panel.getBoundingClientRect().top - main.getBoundingClientRect().top;
+        // bring the start of the new tab to the top of the screen, just under the top bar and the tab strip
+        const sc = pageScroller(), origin = sc === main ? main.getBoundingClientRect().top : 0;
+        const panelTop = sc.scrollTop + panel.getBoundingClientRect().top - origin;
         const top = Math.max(0, panelTop - topbar.offsetHeight - wrap.offsetHeight - 6);
-        if (main.scrollTop > top + 4) main.scrollTo({ top, behavior: reduced ? 'auto' : 'smooth' });
+        if (Math.abs(sc.scrollTop - top) > 4) sc.scrollTo({ top, behavior: reduced ? 'auto' : 'smooth' });
       }
     }
     tabsEl.addEventListener('click', (e) => { const b = e.target.closest('.tab'); if (b) setTab(+b.dataset.i, { scroll: true }); });
@@ -1316,7 +1328,7 @@ window.__startApp = function () {
         });
       }
       holder.appendChild(card);
-      next.addEventListener('click', () => { run.i++; step(); main.scrollTo({ top: 0 }); });
+      next.addEventListener('click', () => { run.i++; step(); pageScroller().scrollTo({ top: 0 }); });
       $('[data-quit]', el).addEventListener('click', finish);
       if (keyHandler) document.removeEventListener('keydown', keyHandler);
       keyHandler = (e) => {
@@ -1650,7 +1662,7 @@ window.__startApp = function () {
           <span>${k('←')}${k('→')}</span><span>Previous / next tab, running on to the next or previous topic at the ends (flashcards: still learning / know it)</span>
           <span>${k('N')}${k('P')}</span><span>Next / previous topic</span>
           <span>${k('R')}</span><span>Recall mode: blank every key term</span>
-          <span>${k('F')}</span><span>Focus mode with a 25-minute timer</span>
+          <span>${k('F')}</span><span>Focus mode with a timer (30 min, 1, 2 or 3 hours)</span>
           <span>${k('[')}</span><span>Show or hide the sidebar</span>
           <span>${k('Space')}</span><span>Flip a flashcard</span>
           <span>${k('1')}${k('2')}${k('3')}${k('4')}</span><span>Pick an option in the quiz, <kbd>Enter</kbd> for next</span>
@@ -2141,7 +2153,7 @@ window.__startApp = function () {
       ${sec('rules', 'Rules &amp; templates and the Practice lab', `<p>The <a href="#formulas">Rules &amp; templates</a> sheet has the rules to remember, the answer layouts to copy (sentence definition, abstract, case-study answer, SoP) and the classic traps, per module. The <a href="#lab">Practice lab</a> collects every interactive exercise (definition builder, summary trimmer, conflict-style grid, SoP builder and more), each linked to the tab that explains it.</p>`)}
       ${sec('book', 'Module summaries', `<p>Every module ends with a one-page summary: how it fits together, the key points of every topic, all its diagrams, side-by-side comparisons, rules, templates and traps. Best the night before an exam.</p><p class="g-ex">Try it: <a href="#m3-summary">Module 3 summary</a>.</p>`)}
       ${sec('list', 'CAT syllabus checklists', `<p>The <a href="#syllabus.cat2">CAT-2 syllabus</a> lists every syllabus line with links to the topics that cover it. Tick a topic when you can explain it without looking, and watch the percentage climb.</p>`)}
-      ${sec('timer', 'Focus mode', `<p>Tap <b>Focus</b> in the top bar (or press <kbd>F</kbd>) for a 25-minute timer with fewer distractions. A bar at the bottom lets you <b>Pause</b> or <b>Exit focus</b> at any time (on a computer, <kbd>Esc</kbd> works too).</p>`)}
+      ${sec('timer', 'Focus mode', `<p>Tap <b>Focus</b> in the top bar (or press <kbd>F</kbd>) for a focus timer with fewer distractions. Pick <b>30 minutes, 1, 2 or 3 hours</b> in the bar at the bottom, which also lets you <b>Pause</b> or <b>Exit focus</b> at any time (on a computer, <kbd>Esc</kbd> works too).</p>`)}
       ${sec('fire', 'Study time, streaks and share cards', `<p>The site counts the time you actually study here each day. Study at least a minute a day to keep your streak going (the flame in the top bar). Tap <b>Share progress</b> on the home page for a picture with today's time, your total, your streak and the modules you've finished.</p>`)}
       ${sec('help', 'Help? and Any ideas?', `<p>Found a mistake, have a suggestion, or something isn't working? Tap <b>Help?</b> (at the bottom of any tab, or in the sidebar). Want a new feature? Tap <b>Any ideas?</b> in the sidebar. Both go straight to the owner. When the owner replies, you get a note when you open the site and the reply appears under <b>Messages</b> in the sidebar.</p>`)}
       ${sec('phone', 'Your account and devices', `<p>Your student account works on <b>1 phone + 1 laptop/PC</b>. Signing in on a new one signs out the old one of the same kind. If something looks wrong, tap <b>Devices</b> at the bottom of the sidebar to request a device reset (once a week; the owner approves it).</p>`)}
@@ -2471,10 +2483,11 @@ window.__startApp = function () {
   function onScroll() {
     const bar = $('.read-bar', topbar); if (!bar) return;
     const show = current && (current.view === 'topic' || current.view === 'summary');
-    const max = main.scrollHeight - main.clientHeight;
-    bar.style.width = show && max > 40 ? (main.scrollTop / max) * 100 + '%' : '0';
+    const sc = pageScroller(), max = sc.scrollHeight - sc.clientHeight;
+    bar.style.width = show && max > 40 ? (sc.scrollTop / max) * 100 + '%' : '0';
   }
   main.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('scroll', onScroll, { passive: true });
   main.addEventListener('scroll', () => { if (selBar) hideSelBar(); }, { passive: true });
   function onHistory() {
     const r = parse(location.hash);

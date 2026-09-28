@@ -26,7 +26,7 @@
       const foot = api.el('div', { class: 'ew-foot' }, wrap);
       const score = api.el('span', { class: 'ew-score' }, foot);
       const btns = api.el('div', { class: 'ew-row' }, foot);
-      const next = api.button('Next term', () => { i = (i + 1) % BUILD.length; stage = 0; paint(); }, btns, { primary: true });
+      const next = api.button('Next term', () => { i++; stage = 0; paint(); }, btns, { primary: true });
       api.button('Reset', () => { i = 0; stage = 0; good = 0; tries = 0; paint(); }, btns);
       let i = 0, stage = 0, good = 0, tries = 0, pickC = null, pickF = null;
       function sentence() {
@@ -34,9 +34,18 @@
         return `<b>${t.term}</b> is <span class="ew-tok ${stage > 0 ? 'hit' : 'pick'}">${stage > 0 ? pickC : '[class]'}</span> <span class="ew-tok ${stage > 1 ? 'hit' : 'pick'}">${stage > 1 ? pickF : '[distinguishing features]'}</span>.`;
       }
       function paint(msg) {
+        // after the last term: a finish screen instead of starting over
+        if (i >= BUILD.length) {
+          next.hidden = true;
+          const all = good === tries;
+          box.innerHTML = `<p class="ew-q">All ${BUILD.length} definitions built.</p><div class="ew-fb ${all ? 'ok' : 'no'}"><span class="tag">${all ? 'Perfect' : 'Done'}</span>${good} of ${tries} picks right first time.${all ? '' : ' Tap Reset to try again.'}</div>`;
+          score.innerHTML = `Done · first-try picks <b>${good}</b>/${tries}`;
+          return;
+        }
         const t = BUILD[i];
         const list = stage === 0 ? t.classes : t.feats;
         next.hidden = stage < 2;
+        next.innerHTML = i === BUILD.length - 1 ? 'Finish' : 'Next term';
         box.innerHTML = `<p class="ew-q">${sentence()}</p>
           ${stage < 2 ? `<span class="ew-score">Step ${stage + 1} of 2 · choose the ${stage === 0 ? 'class' : 'distinguishing feature'}</span>
           <div class="ew-opts">${EW.shuffle(list.map((x, k) => k)).map((k) => `<button type="button" class="ew-opt" data-k="${k}">${list[k][0]}</button>`).join('')}</div>` : ''}

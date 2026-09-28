@@ -870,6 +870,7 @@ button.sb-link { width: 100%; border: 0; background: transparent; text-align: le
 .focus-bar { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 60; display: flex; align-items: center; gap: 8px; padding: 6px 6px 6px 14px; border-radius: 999px; border: 1px solid var(--line-2); background: var(--bg-2); box-shadow: 0 16px 40px -16px rgba(0, 0, 0, 0.7); animation: fade 0.3s; white-space: nowrap; }
 .focus-bar .timer { font-family: var(--mono); font-size: 14px; color: var(--white); min-width: 44px; }
 .focus-bar .btn { border-radius: 999px; }
+.focus-len { height: 30px; border-radius: 999px; border: 1px solid var(--line-2); background: var(--surface); color: var(--text-2); font: inherit; font-size: 12.5px; padding: 0 8px; }
 @media (max-width: 640px) and (hover: none) and (pointer: coarse) { .focus-bar { bottom: calc(80px + env(safe-area-inset-bottom, 0px)); } }
 
 /* module summary: body font with bold headings, key points and the module's diagrams */
@@ -1171,3 +1172,4 @@ body.open-mode .sb-label:has(+ [data-act="ideas"]) { display: none !important; }
 .music-hint b { color: var(--white); font-weight: 600; }
 .music-hint a { color: var(--text-2); }
 .music-ctl .m-stop { display: inline-block; width: 9px; height: 9px; border-radius: 1.5px; background: currentColor; vertical-align: middle; }
+@media (max-width: 420px) { .focus-bar { gap: 6px; padding-left: 10px; } .focus-bar > svg { display: none; } .focus-len { padding: 0 5px; } }
