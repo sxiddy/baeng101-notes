@@ -94,7 +94,8 @@
       const FM = window.FILE_MODULE || {};
       const paidFiles = !paid ? [] : (window.PAID_FILES || []).filter((f) => !modules || modules.includes(FM[f]));
       const files = (window.FREE_FILES || []).concat(paidFiles);
-      for (const f of files) await loadScript('data/' + f);
+      // all at once: every file only registers data (the app sorts chunks, questions and papers itself)
+      await Promise.all(files.map((f) => loadScript('data/' + f)));
       const allPaid = CFG.filter((m) => !m.free).every((m) => !modules || modules.includes(m.id));
       window.APP_LOCKED = !paid || !allPaid;
       window.__showPaywall = paywall;
