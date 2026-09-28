@@ -72,7 +72,7 @@ QUESTIONS({
     },
     {
       id: 'm4-q-07', module: 'm4', topic: 'm4-paraphrase', type: 'rewrite', level: 2,
-      q: `<p>Lester's passage is 51 words. The slides' "acceptable summary" is 25 words, about half. Rewrite it as a summary within one-third of the original, keeping the core advice.</p>`,
+      q: `<p>Lester's passage is 51 words. The slides' "acceptable summary" is 24 words, about half. Rewrite it as a summary within one-third of the original, keeping the core advice.</p>`,
       options: null, correct: null,
       answer: `<p><b>Model (15 words + citation):</b> "Students should take few verbatim notes, so that little of their research paper is quoted (Lester 46-47)."</p>`,
       explain: `<p>51 ÷ 3 = 17 words. The core advice is cause and effect: quote little in notes, and little of the paper will be quoted. "Just", "from sources" and "to help minimize the amount of" can go; "verbatim" replaces "in direct quotation". The 10% figure is a statistic you may drop at your discretion.</p>`,
@@ -82,7 +82,7 @@ QUESTIONS({
       id: 'm4-q-08', module: 'm4', topic: 'm4-paraphrase', type: 'explain', level: 2,
       q: `<p>Your friend says: "A paraphrase and a summary are the same thing, both in your own words." Using the Lester example, explain why that is wrong.</p>`,
       options: null, correct: null,
-      answer: `<p><b>They differ in length and selection.</b> Lester's passage is 51 words. The paraphrase (35 words) keeps every idea (overquoting in notes, overquoting in the paper, the need to minimise verbatim notes) in new sentences. The summary (25 words) keeps only the core advice: take few notes in direct quotation to keep quoted material down. A paraphrase restates <em>everything</em> at about the same length; a summary <em>selects</em> the main idea and condenses it, a précis to about one-third. Both are in your own words and both are cited when used in a paper, and the plagiarised version shows what neither may do: keep the author's structure with swapped words.</p>`,
+      answer: `<p><b>They differ in length and selection.</b> Lester's passage is 51 words. The paraphrase (34 words) keeps every idea (overquoting in notes, overquoting in the paper, the need to minimise verbatim notes) in new sentences. The summary (25 words) keeps only the core advice: take few notes in direct quotation to keep quoted material down. A paraphrase restates <em>everything</em> at about the same length; a summary <em>selects</em> the main idea and condenses it, a précis to about one-third. Both are in your own words and both are cited when used in a paper, and the plagiarised version shows what neither may do: keep the author's structure with swapped words.</p>`,
       explain: `<p>Examiners want the two differences (length, selection), the shared features (own words, citation), and the example numbers.</p>`,
       points: ['paraphrase keeps all ideas, similar length', 'summary keeps main ideas, much shorter', 'both own words and cited', 'uses the Lester figures', 'contrast with plagiarism'],
     },
@@ -256,7 +256,7 @@ QUESTIONS({
       ],
       correct: 0,
       answer: `<p><b>Two small changes to the source.</b> People saw fiery dragons; some concluded the heavens were on fire. And the unknown is the <em>cause</em>.</p>`,
-      explain: `<p>The model is 39 words against a 41-word limit, so length is fine; the colours are minor detail; the third person is correct. The issue is accuracy: a précis must not change the original.</p>`,
+      explain: `<p>The model is 34 words against a 41-word limit, so length is fine; the colours are minor detail; the third person is correct. The issue is accuracy: a précis must not change the original.</p>`,
       points: ['"dragon on fire" merges two beliefs', 'cause vs what they are', 'length is fine'],
     },
     {

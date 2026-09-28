@@ -73,7 +73,7 @@ CHUNK({
               <tr><td><b>Expanded</b></td><td>a paragraph or more</td><td>most formal</td><td>the reader needs a complete understanding</td></tr>
             </tbody>
           </table>
-          <div class="mnemonic"><p><b>P-S-E</b>: brackets, a sentence, an essay. The more the reader depends on the term, the further right you go.</p></div>
+          <div class="mnemonic"><p><b>P-S-E</b>: brackets, a sentence, an essay. The more the reader depends on the term, the further down the list you go.</p></div>
         ` },
       ],
       flashcards: [
@@ -110,12 +110,7 @@ CHUNK({
       tabs: [
         { title: 'What it is', html: `
           <p class="lead">A <b>parenthetical definition</b> clarifies a word with a more familiar <b>synonym</b> or a short <b>clarifying phrase</b> placed in <b>parentheses</b>, inside the same sentence.</p>
-          <div class="kv">
-            <div><span>Formality</span><b>least formal</b> of the three types</div>
-            <div><span>Where</span><b>in-line</b>, within the sentence</div>
-            <div><span>Job</span>a quick <b>clarification</b> or brief explanation</div>
-          </div>
-          <p>The slides' two textbook examples:</p>
+          <p>It is the <b>least formal</b> of the three types, used <b>in-line</b> for a quick <b>clarification</b> or brief explanation. The slides give two textbook examples:</p>
           <ul>
             <li>The <b>leaching field</b> (sieve-like drainage area) requires crushed stone.</li>
             <li>The trees on the site are mostly <b>deciduous</b> (shedding foliage at season's end).</li>
@@ -124,14 +119,11 @@ CHUNK({
         ` },
         { title: 'More examples', html: `
           <p class="lead">Anything short can go in the brackets: an <b>acronym's full form</b>, a <b>simpler word</b>, or an <b>example</b>.</p>
-          <table class="tbl">
-            <thead><tr><th>Sentence</th><th>What the brackets do</th></tr></thead>
-            <tbody>
-              <tr><td>RAM (random access memory) is a form of computer data storage…</td><td>expand an <b>acronym</b></td></tr>
-              <tr><td>…when a charged particle (such as an electron) passes through a dielectric medium…</td><td>give an <b>example</b> of the class</td></tr>
-              <tr><td>Voltaire was imprisoned twice in the Bastille (French fortress), in 1717 and 1726.</td><td>give a <b>simpler description</b></td></tr>
-            </tbody>
-          </table>
+          <ul>
+            <li><b>Expands an acronym:</b> RAM (random access memory) is a form of computer data storage…</li>
+            <li><b>Gives an example of the class:</b> …when a charged particle (such as an electron) passes through a dielectric medium…</li>
+            <li><b>Gives a simpler description:</b> Voltaire was imprisoned twice in the Bastille (French fortress), in 1717 and 1726.</li>
+          </ul>
           <h3>Online</h3>
           <p>On a <b>web page</b>, social media post or online help system, a short definition can be <b>linked</b> to the word. A reader who taps "leaching field" gets a small window with the brief definition.</p>
           <div class="note trap"><p>"RAM (random access memory) <b>is a form of computer data storage which stores frequently used program instructions</b>" contains both types. The brackets are parenthetical, but the whole sentence (term, class, features) is a <b>sentence definition</b>. The course MCQ worksheet treats it as a sentence definition. Read what the question points at.</p></div>
@@ -143,7 +135,7 @@ CHUNK({
             <div class="side"><h4>Right</h4><p>The pump uses an <b>impeller</b> (a spinning rotor with vanes) to push water up.</p></div>
           </div>
           <div class="vs">
-            <div class="side"><h4>Wrong</h4><p>The site is <b>deciduous</b> (caducous).</p><p><small>The "explanation" is harder than the word.</small></p></div>
+            <div class="side"><h4>Wrong</h4><p>The trees are mostly <b>deciduous</b> (caducous).</p><p><small>The "explanation" is harder than the word.</small></p></div>
             <div class="side"><h4>Right</h4><p>The trees are mostly deciduous (shedding their leaves each autumn).</p></div>
           </div>
           <div class="note heads-up"><p>Not on the slides: in normal writing the same job is often done with commas or dashes ("an impeller, a spinning rotor with vanes, pushes water up"). In a CAT answer, use brackets so the examiner sees a parenthetical definition clearly.</p></div>
@@ -219,7 +211,7 @@ CHUNK({
             <div class="side"><h4>No real feature</h4><p>RAM is fast and useful.</p><p><small>No class, and "fast and useful" fits a hundred things.</small></p></div>
             <div class="side"><h4>Right</h4><p>RAM is <b>a form of computer data storage</b> which stores frequently used program instructions.</p></div>
           </div>
-          <div class="note heads-up"><p>Not on the slides, but standard in technical writing: avoid <b>circular</b> definitions, avoid "is when" / "is where" ("Corrosion is when metal rusts"), and never explain a term with words harder than the term.</p></div>
+          <div class="note heads-up"><p>Not on the slides, but standard in technical writing: besides avoiding <b>circular</b> definitions, don't write "is when" or "is where" ("Corrosion is when metal rusts"), and never explain a term with words harder than the term.</p></div>
           <div data-viz="def-builder"></div>
         ` },
         { title: 'Sentences and working definitions', html: `
@@ -236,32 +228,27 @@ CHUNK({
           <p class="lead">The slides end with an exercise: define a <b>pen</b>, a <b>laptop</b>, a <b>university</b> and a <b>chair</b>. Build each one part by part.</p>
           <div class="worked">
             <div class="given"><p><b>Pen</b>. Class? Not "a thing": a <b>handheld writing instrument</b>. What sets it apart from a pencil or chalk? It uses ink.</p></div>
-            <div class="solve"><p>Term + class + features: pen + a handheld writing instrument + that applies ink to a surface through a nib or a rolling ball.</p></div>
+            <div class="solve"><p>Term: pen. Class: a handheld writing instrument. Features: applies ink to a surface through a nib or a rolling ball.</p></div>
             <div class="result"><p>A <b>pen</b> is a handheld writing instrument that applies ink to paper or another surface through a nib or a rolling ball.</p></div>
           </div>
-          <table class="tbl">
-            <thead><tr><th>Term</th><th>Class</th><th>Distinguishing features</th></tr></thead>
-            <tbody>
-              <tr><td>Laptop</td><td><b>a portable personal computer</b></td><td>with a built-in screen, keyboard and battery in a single folding case</td></tr>
-              <tr><td>University</td><td><b>an institution of higher education</b></td><td>that teaches undergraduate and postgraduate courses, carries out research and awards degrees</td></tr>
-              <tr><td>Chair</td><td><b>a piece of furniture</b></td><td>for one person to sit on, with a seat, a back and usually four legs</td></tr>
-            </tbody>
-          </table>
+          <p>The other three, built the same way (the class is in italics):</p>
+          <ul>
+            <li><b>A laptop</b> is <em>a portable personal computer</em> with a built-in screen, keyboard and battery in a single folding case.</li>
+            <li><b>A university</b> is <em>an institution of higher education</em> that teaches undergraduate and postgraduate courses, carries out research and awards degrees.</li>
+            <li><b>A chair</b> is <em>a piece of furniture</em> for one person to sit on, with a seat, a back and usually four legs.</li>
+          </ul>
           <div class="note trap"><p>"A chair is a piece of furniture <b>used for sitting</b>." A sofa and a bench are also for sitting. The features must separate the term from its neighbours: <b>one person</b>, <b>a back</b>.</p></div>
         ` },
         { title: 'Reading dictionary definitions', html: `
-          <p class="lead">The slides show short dictionary-style definitions. Read each one for its <b>class</b> and <b>features</b>: that is exactly what you're asked to produce.</p>
-          <table class="tbl">
-            <thead><tr><th>Term</th><th>Class</th><th>What sets it apart</th></tr></thead>
-            <tbody>
-              <tr><td>Apple (noun)</td><td>a rounded edible fruit</td><td>usually red, yellow or green, grows on a tree</td></tr>
-              <tr><td>Book (noun)</td><td>a set of written or printed sheets</td><td>bound together for reading</td></tr>
-              <tr><td>Mobile phone</td><td>a portable telephone</td><td>uses a radio link; not tied to one place like a landline</td></tr>
-              <tr><td>Cat</td><td>a small carnivorous mammal (family Felidae)</td><td>kept as a pet, hunts pests</td></tr>
-              <tr><td>Data science</td><td>a multidisciplinary field</td><td>uses scientific methods and algorithms to extract insight from data</td></tr>
-              <tr><td>Community</td><td>a group of people</td><td>living in the same place or sharing a characteristic</td></tr>
-            </tbody>
-          </table>
+          <p class="lead">The slides show short dictionary-style definitions. Read each one for its <b>class</b> (in italics below) and its <b>features</b>, because that is exactly what you're asked to produce.</p>
+          <ul>
+            <li><b>An apple</b> (noun) is <em>a rounded edible fruit</em>, usually red, yellow or green, that grows on a tree.</li>
+            <li><b>A book</b> (noun) is <em>a set of written or printed sheets</em> bound together for reading.</li>
+            <li><b>A mobile phone</b> is <em>a portable telephone</em> that uses a radio link and, unlike a landline, is not tied to one place.</li>
+            <li><b>A cat</b> is <em>a small carnivorous mammal</em> (family Felidae) that is kept as a pet and hunts pests.</li>
+            <li><b>Data science</b> is <em>a multidisciplinary field</em> that uses scientific methods and algorithms to extract insight from data.</li>
+            <li><b>A community</b> is <em>a group of people</em> living in the same place or sharing a characteristic.</li>
+          </ul>
           <p>Some slide examples go further than one sentence. "Podium" adds the word's Latin and Greek roots, "television" adds what it is used for, "zoo" adds its modern purposes. Those extra sentences are <b>expansion methods</b>, the next topic.</p>
           <div class="note example"><p>The slides also have a matching exercise: pick the right meaning for <b>bicycle</b> (a vehicle with two wheels and handlebars, not a plane with two engines), <b>erase</b> (to remove by rubbing away), <b>natural</b> (made by nature), <b>success</b> (doing well at something), <b>net</b> (a mesh for catching insects) and <b>change</b> (to make things different).</p></div>
         ` },
@@ -302,32 +289,25 @@ CHUNK({
       tabs: [
         { title: 'When to expand', html: `
           <p class="lead">An <b>expanded definition</b> is the <b>most formal</b> type: a <b>paragraph or longer</b>, with a very <b>flexible structure</b>, written when the reader needs a <b>complete understanding</b>.</p>
-          <p>Brief definitions are fine when your audience needs only a general idea. A document that depends on the term needs more.</p>
-          <div class="vs">
-            <div class="side"><h4>Brief is enough</h4><p>"Leaching field (sieve-like drainage area)" in a progress report to a house owner.</p></div>
-            <div class="side"><h4>Expand</h4><p>A <b>public health report</b> on groundwater contamination from leaching fields.</p></div>
-          </div>
+          <p>Brief definitions are fine when your audience needs only a general idea, as with "leaching field (sieve-like drainage area)" in a progress report to a house owner. A document that depends on the term, such as a <b>public health report</b> on groundwater contamination from leaching fields, needs more.</p>
           <div class="note example"><p>A health web page defines <b>allergenics</b> as two kinds of product, <b>patch tests</b> and <b>extracts</b>, then defines each in short sentences. Technical phrases are restated in plain words: <b>allergic rhinitis</b> becomes "hay fever". Because it is online, readers of any level can search for more and follow links to related definitions.</p></div>
           <p>Every expanded definition starts from a sentence definition. The running example on the slides is:</p>
           <p>"A <b>laser</b> is an electronic device that emits a highly concentrated beam of light."</p>
         ` },
         { title: 'The questions readers ask', html: `
-          <p class="lead">Each method of expanding a definition answers a <b>question your reader might ask</b>. Ask how many of these questions your audience will have.</p>
+          <p class="lead">Each method of expanding a definition answers a <b>question your reader might ask</b>. Decide which of these questions your audience will actually have.</p>
           <figure data-fig="m3-expansion-questions"></figure>
-          <table class="tbl">
-            <thead><tr><th>The reader asks</th><th>Method</th></tr></thead>
-            <tbody>
-              <tr><td>How did its name originate?</td><td><b>Etymology</b></td></tr>
-              <tr><td>What is its history?</td><td><b>History</b></td></tr>
-              <tr><td>What does it not mean?</td><td><b>Negation</b></td></tr>
-              <tr><td>How does it work?</td><td><b>Operating principle</b></td></tr>
-              <tr><td>What are its parts?</td><td><b>Analysis of parts</b></td></tr>
-              <tr><td>What does it look like?</td><td><b>Visuals</b></td></tr>
-              <tr><td>How does it resemble or differ from something else?</td><td><b>Comparison and contrast</b></td></tr>
-              <tr><td>What is needed to make it work?</td><td><b>Required conditions</b></td></tr>
-              <tr><td>How is it used or applied?</td><td><b>Examples</b></td></tr>
-            </tbody>
-          </table>
+          <ul>
+            <li><b>Etymology</b>: how did its name originate?</li>
+            <li><b>History</b>: what is its history?</li>
+            <li><b>Negation</b>: what does it not mean?</li>
+            <li><b>Operating principle</b>: how does it work?</li>
+            <li><b>Analysis of parts</b>: what are its parts?</li>
+            <li><b>Visuals</b>: what does it look like?</li>
+            <li><b>Comparison and contrast</b>: how does it resemble or differ from something else?</li>
+            <li><b>Required conditions</b>: what is needed to make it work?</li>
+            <li><b>Examples</b>: how is it used or applied?</li>
+          </ul>
           <div class="mnemonic"><p>Nine methods, <b>"E-H-N, O-P-V, C-R-E"</b>: Etymology, History, Negation · Operating principle, Parts, Visuals · Comparison, Required conditions, Examples.</p></div>
         ` },
         { title: 'Etymology, history, negation', html: `
@@ -373,8 +353,17 @@ CHUNK({
         { title: 'Several methods together', html: `
           <p class="lead">A complex term often needs <b>several methods at once</b>. Choose them by asking what your particular readers need.</p>
           <figure data-fig="m3-solenoid-plan"></figure>
-          <div class="note example"><p><b>Solenoid, for semitechnical readers</b> (beginning student mechanics). Before they can repair one, they need where the word comes from, what it looks like, how it works, how its parts operate and how it is used. So the definition runs: <b>formal sentence definition</b> (an electrically energised coil that forms an electromagnet and performs mechanical functions) → <b>etymology</b> ("sole", meaning contained inside; Greek <em>solenoides</em>, "shaped like a pipe") → <b>description and parts</b> (coil, plunger, return spring) with a labelled diagram → <b>operating principle and special conditions</b> (current turns the coil into a magnet that pulls the rod in) → <b>example</b> (the starter motor of a car).</p></div>
-          <div class="note example"><p><b>Nanotechnology, for nontechnical readers</b>. They need an overview of what it is and how it developed, its potential uses, present applications, health risks and impact on jobs. The document uses <b>question-type headings</b> ("What is nanotechnology?") phrased the way readers would ask, and <b>parenthetical definitions</b> of nanometer and micrometer to give a sense of scale.</p></div>
+          <h3>Solenoid, for semitechnical readers</h3>
+          <p>The readers are beginning student mechanics. Before they can repair a solenoid, they need to know where the word comes from, what a solenoid looks like, how it works, how its parts operate and how it is used. So the definition runs in this order:</p>
+          <ol>
+            <li><b>Formal sentence definition</b>: an electrically energised coil that forms an electromagnet and performs mechanical functions.</li>
+            <li><b>Etymology</b>: "sole", meaning contained inside; Greek <em>solenoides</em>, "shaped like a pipe".</li>
+            <li><b>Description and parts</b>: coil, plunger and return spring, with a labelled diagram.</li>
+            <li><b>Operating principle and special conditions</b>: current turns the coil into a magnet that pulls the rod in.</li>
+            <li><b>Example</b>: the starter motor of a car.</li>
+          </ol>
+          <h3>Nanotechnology, for nontechnical readers</h3>
+          <p>These readers need an overview: what nanotechnology is and how it developed, its potential uses, present applications, health risks and impact on jobs. The document uses <b>question-type headings</b> phrased the way readers would ask ("What is nanotechnology?"), and <b>parenthetical definitions</b> of nanometer and micrometer to give a sense of scale.</p>
           <div class="note exam"><p>For "write an expanded definition of X", open with a sentence definition, then use <b>at least three</b> clearly different methods, one short paragraph each. Examiners look for a correct sentence definition and methods that suit the stated reader.</p></div>
         ` },
       ],
@@ -414,14 +403,11 @@ CHUNK({
       tabs: [
         { title: 'Where definitions go', html: `
           <p class="lead">Define an unfamiliar term <b>the first time</b> the reader meets it. Where you put the definition depends on its type.</p>
-          <table class="tbl">
-            <thead><tr><th>Type</th><th>Where it goes</th></tr></thead>
-            <tbody>
-              <tr><td><b>Brief</b> (parenthetical)</td><td>in <b>parentheses</b>, or in the document's <b>margin</b> beside the term</td></tr>
-              <tr><td><b>Sentence</b></td><td>in the <b>running text</b>; if there are many, in a <b>glossary</b></td></tr>
-              <tr><td><b>Expanded</b></td><td>near the <b>beginning</b> of a long document if it is essential to the whole; in an <b>appendix</b> if it is only for reference</td></tr>
-            </tbody>
-          </table>
+          <ul>
+            <li><b>Brief</b> (parenthetical) definitions go in <b>parentheses</b>, or in the document's <b>margin</b> beside the term.</li>
+            <li><b>Sentence</b> definitions go in the <b>running text</b>; if there are many, put them in a <b>glossary</b>.</li>
+            <li><b>Expanded</b> definitions go near the <b>beginning</b> of a long document if they are essential to the whole, or in an <b>appendix</b> if they are only for reference.</li>
+          </ul>
           <div class="note why"><p>An essential expanded definition goes up front because readers need it before anything else makes sense. A reference-only one goes to the appendix so it doesn't block readers who already know the term.</p></div>
         ` },
         { title: 'Glossaries', html: `
@@ -433,15 +419,12 @@ CHUNK({
         ` },
         { title: 'Choosing the type', html: `
           <p class="lead">Put it all together: read the situation, decide how much the reader depends on the term, then choose <b>parenthetical</b>, <b>sentence</b> or <b>expanded</b>.</p>
-          <table class="tbl">
-            <thead><tr><th>Situation</th><th>Best choice</th></tr></thead>
-            <tbody>
-              <tr><td>A passing mention the reader just needs to follow</td><td><b>Parenthetical</b></td></tr>
-              <tr><td>A term used often in one report</td><td><b>Sentence</b> (working definition)</td></tr>
-              <tr><td>Many terms, mixed readers</td><td><b>Glossary</b> of sentence definitions</td></tr>
-              <tr><td>The whole document depends on the term</td><td><b>Expanded</b>, near the start</td></tr>
-            </tbody>
-          </table>
+          <ul>
+            <li>A passing mention the reader just needs to follow → <b>parenthetical</b>.</li>
+            <li>A term used often in one report → <b>sentence</b> (a working definition).</li>
+            <li>Many terms and mixed readers → a <b>glossary</b> of sentence definitions.</li>
+            <li>The whole document depends on the term → <b>expanded</b>, near the start.</li>
+          </ul>
           <div data-viz="def-type-sort"></div>
         ` },
         { title: 'Checking a definition', html: `

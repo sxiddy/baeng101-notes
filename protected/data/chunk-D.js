@@ -11,37 +11,29 @@ CHUNK({
       tabs: [
         { title: 'What it is', html: `
           <p class="lead"><b>Conflict management</b> is the process by which <b>disputes are resolved</b>, where <b>negative results are minimised</b> and <b>positive results are prioritised</b>.</p>
-          <p>Read the definition closely. It does not promise that conflict disappears. It says you steer a dispute so the damage is small and the gains are big.</p>
-          <div class="kv">
-            <div><span>Negative results</span><b>anger, resentment</b>, lost time, broken teams</div>
-            <div><span>Positive results</span><b>a better solution</b>, clearer roles, people who feel heard</div>
-          </div>
+          <p>Read the definition closely. It does not promise that conflict disappears. It says you steer a dispute so the damage is small and the gains are big. The damage is things like <b>anger, resentment</b>, lost time and broken teams. The gains are things like <b>a better solution</b>, clearer roles and people who feel heard.</p>
           <p>The slides are blunt about why you need it: <b>conflict is an unavoidable reality</b> in the workplace. <b>Smart organisations</b> know this and prepare their managers with proper conflict management skills, so that workplace conflicts are handled and resolved <b>quickly and peacefully</b>.</p>
           <div class="note example"><p>Two lab partners disagree on who writes the discussion section. Handled badly, it ends with one of them doing everything and never working with the other again. Handled well, they split the work sensibly and still like each other at the end of the semester. Same dispute, very different results.</p></div>
           <div class="note exam"><p>The CAT-2 heading is "Conflict Management (Interpersonal Skills) (Application level: analysing a case study)". The theory (the five Thomas-Kilmann modes) is the toolkit; the marks come from <b>applying</b> it to a case. Learn the definition word for word, then practise using it.</p></div>
         ` },
         { title: 'Connected skills', html: `
           <p class="lead">The first slide lists six keywords and then asks whether they are connected. They are: each one is a part of handling a disagreement well.</p>
-          <div class="chips"><span class="chip">communication</span><span class="chip">empathy</span><span class="chip">problem solving skills</span><span class="chip">negotiation skills</span><span class="chip">emotional intelligence</span><span class="chip">conflict management skills</span></div>
-          <table class="tbl">
-            <thead><tr><th>Skill</th><th>What it does in a conflict</th></tr></thead>
-            <tbody>
-              <tr><td><b>Communication</b></td><td>say clearly what you need, and listen to what the other side needs</td></tr>
-              <tr><td><b>Empathy</b></td><td>see the problem from the other person's side (the "cooperativeness" half of the model)</td></tr>
-              <tr><td><b>Problem solving</b></td><td>turn "you versus me" into "us versus the problem" and find options</td></tr>
-              <tr><td><b>Negotiation</b></td><td>trade concessions until both sides can accept a deal</td></tr>
-              <tr><td><b>Emotional intelligence</b></td><td>notice and manage your own anger, and read other people's feelings</td></tr>
-              <tr><td><b>Conflict management</b></td><td>pull the rest together: pick the right approach for this dispute</td></tr>
-            </tbody>
-          </table>
-          <div class="note heads-up"><p>Not on the slides: the slides only list the six words and ask "Do you think these keywords are connected?". The explanations in the table are ours, so use them as reasoning in an answer, not as a quotation.</p></div>
+          <ul>
+            <li><b>Communication</b>: say clearly what you need, and listen to what the other side needs.</li>
+            <li><b>Empathy</b>: see the problem from the other person's side (the "cooperativeness" half of the model).</li>
+            <li><b>Problem solving skills</b>: turn "you versus me" into "us versus the problem", and find options.</li>
+            <li><b>Negotiation skills</b>: trade concessions until both sides can accept a deal.</li>
+            <li><b>Emotional intelligence</b>: notice and manage your own anger, and read other people's feelings.</li>
+            <li><b>Conflict management skills</b>: pull the rest together and pick the right approach for this dispute.</li>
+          </ul>
+          <div class="note heads-up"><p>Not on the slides: the slides only list the six words and ask "Do you think these keywords are connected?". The explanations above are ours, so use them as reasoning in an answer, not as a quotation.</p></div>
           <div class="note example"><p>In the course case study, a doctor shouts "idiot" at a staff member who interrupts him. That is a failure of <b>emotional intelligence</b> and <b>communication</b> in one second, and it grows into a fight between two whole groups.</p></div>
         ` },
         { title: 'Your own pattern', html: `
           <p class="lead">Before the model, the slides ask three questions: Have you ever got into a <b>disagreement</b>? <b>How did you handle it</b>? Do you have a <b>pattern</b> when it comes to resolving an issue?</p>
           <p>Most people do have a pattern. Some always push until they win, some go quiet and hope it passes, some give in to keep the peace. The Thomas-Kilmann model (next topic) gives each pattern a name, so you can see your habit and decide whether it fits the situation in front of you.</p>
           <div class="vs">
-            <div class="side"><h4>Habit</h4><p>"I always give in. Arguing isn't worth it."</p><p><small>Fine for the poster colour, bad when your marks or safety are at stake.</small></p></div>
+            <div class="side"><h4>Habit</h4><p>"I always give in. Arguing isn't worth it."</p><p><small>Fine over something small like a poster colour, bad when your marks or safety are at stake.</small></p></div>
             <div class="side"><h4>Choice</h4><p>"This matters to me and to the team, so I'll say what I need and ask what they need."</p><p><small>The style is picked for the situation.</small></p></div>
           </div>
           <h3>Where conflicts come from</h3>
@@ -50,12 +42,13 @@ CHUNK({
         ` },
         { title: 'How it ends matters', html: `
           <p class="lead">In every example on the slides a solution is found, but there are <b>lasting effects</b> on <b>morale</b>, <b>productivity</b> and the <b>overall happiness</b> of employees, depending on <b>how</b> that solution was reached.</p>
-          <p>So the slides define skill this way: skilled conflict management is <b>minimising the lasting effects</b> of conflicts by using the <b>right tactic at the right time</b>.</p>
+          <p>That is why the slides define skilled conflict management as <b>minimising the lasting effects</b> of conflicts by using the <b>right tactic at the right time</b>.</p>
+          <p>Take one of the slides' examples: two staff members, Cecile and Eduardo, each say a difficult client is the other's job, and their head of department settles it.</p>
           <div class="vs">
-            <div class="side"><h4>Same outcome, bad route</h4><p>The HOD decides, without listening, that Cecile must handle the difficult client.</p><p><small>Solved today. Cecile is resentful for months.</small></p></div>
-            <div class="side"><h4>Same outcome, better route</h4><p>The HOD hears both, explains why Cecile is better placed, and gives her support or credit for taking it on.</p><p><small>Solved, and the relationship survives.</small></p></div>
+            <div class="side"><h4>Same outcome, bad route</h4><p>The head decides, without listening, that Cecile must handle the client.</p><p><small>Solved today. Cecile is resentful for months.</small></p></div>
+            <div class="side"><h4>Same outcome, better route</h4><p>The head hears both, explains why Cecile is better placed, and gives her support or credit for taking it on.</p><p><small>Solved, and the relationship survives.</small></p></div>
           </div>
-          <p>Each style is useful depending on the situation, but <b>some are weaker than others</b> and should <b>not be relied upon too heavily</b>. A manager who only ever uses one style pays for it later (see "Overuse and its costs" in Choosing a style).</p>
+          <p>Each style is useful in the right situation, but some are weaker than others, and a manager who leans on one style for everything pays for it later (see "Overuse and its costs" in Choosing a style).</p>
           <div class="note why"><p>People remember how they were treated long after they forget what the dispute was about. That memory is what shows up as low morale and slow work in the next project.</p></div>
         ` },
         { title: 'Nine best-practice steps', html: `
@@ -110,14 +103,9 @@ CHUNK({
       tabs: [
         { title: 'What the TKI is', html: `
           <p class="lead">The <b>Thomas-Kilmann Conflict Mode Instrument (TKI)</b> is a widely recognised framework designed to <b>measure an individual's response</b> to conflict situations.</p>
-          <div class="kv">
-            <div><span>Developed by</span><b>Kenneth Thomas and Ralph Kilmann</b>, psychologists</div>
-            <div><span>When</span><b>early 1970s</b> (the slide picture's source line says <b>1974</b>)</div>
-            <div><span>Identifies</span><b>five primary modes</b> of dealing with conflict</div>
-            <div><span>Sorted by</span><b>two dimensions</b>: assertiveness and cooperativeness</div>
-          </div>
-          <p>The five modes: <b>competing</b>, <b>collaborating</b>, <b>compromising</b>, <b>avoiding</b>, <b>accommodating</b>. None is "the good one". Each is right for some situations and wrong for others, and everyone can use all five.</p>
-          <div class="note heads-up"><p>Two naming habits appear on the slides. Some slides use nouns (<b>competition, collaboration, compromise, avoidance, accommodation</b>); others use -ing forms (<b>competing, collaborating</b>…). They mean the same modes. The slide picture of the grid also spells one mode "Accomodating"; the correct spelling is <b>accommodating</b> (double c, double m). "Early 1970s" and "1974" agree: the model grew in the early 1970s and the instrument itself is dated 1974.</p></div>
+          <p>It was developed by two psychologists, <b>Kenneth Thomas and Ralph Kilmann</b>, in the <b>early 1970s</b>; the source line on the slide picture dates the instrument <b>1974</b>. The two dates agree: the model grew in the early 1970s and the instrument was published in 1974.</p>
+          <p>The TKI identifies <b>five primary modes</b> of dealing with conflict, placed on <b>two dimensions</b>, assertiveness and cooperativeness. The five modes are <b>competing</b>, <b>collaborating</b>, <b>compromising</b>, <b>avoiding</b> and <b>accommodating</b>. None is "the good one". Each is right for some situations and wrong for others, and everyone can use all five.</p>
+          <div class="note heads-up"><p>The slides name the modes in two ways. Some use nouns (<b>competition, collaboration, compromise, avoidance, accommodation</b>); others use -ing forms (<b>competing, collaborating</b>…). They mean the same modes.</p><p>The slide picture of the grid spells one mode "Accomodating". The correct spelling is <b>accommodating</b> (double c, double m).</p></div>
           <div class="note exam"><p>Name the two authors and the two dimensions correctly in any answer on this topic. "Thomas-Kilmann" has two l's and two n's in Kilmann.</p></div>
         ` },
         { title: 'Two dimensions', html: `
@@ -131,35 +119,31 @@ CHUNK({
           <div class="note example"><p>A hostel mess committee wants to change the menu. A member who says "I want paneer on Fridays, and I also want to know what the vegans need" is high on both. A member who says "Whatever, I'll eat outside" is low on both.</p></div>
         ` },
         { title: 'The grid', html: `
-          <p class="lead">Put assertiveness on the vertical axis and cooperativeness on the horizontal one. The four corners give four modes, and <b>compromising</b> sits in the <b>centre</b>.</p>
+          <p class="lead">Put assertiveness on the vertical axis and cooperativeness on the horizontal one. The four corners give four modes, and <b>compromising</b> sits in the <b>centre</b>. The last column is the slides' label for who wins (see the next tab).</p>
           <figure data-fig="m5-tki-grid"></figure>
           <table class="tbl">
-            <thead><tr><th>Assertiveness</th><th>Cooperativeness</th><th>Mode</th></tr></thead>
+            <thead><tr><th>Mode</th><th>Assertive</th><th>Cooperative</th><th>Who wins</th></tr></thead>
             <tbody>
-              <tr><td>high</td><td>high</td><td><b>Collaboration</b></td></tr>
-              <tr><td>high</td><td>low</td><td><b>Competition</b></td></tr>
-              <tr><td>low</td><td>high</td><td><b>Accommodation</b></td></tr>
-              <tr><td>low</td><td>low</td><td><b>Avoidance</b></td></tr>
-              <tr><td>medium</td><td>medium</td><td><b>Compromise</b></td></tr>
+              <tr><td><b>Collaboration</b></td><td>high</td><td>high</td><td>I win, you win</td></tr>
+              <tr><td><b>Competition</b></td><td>high</td><td>low</td><td>I win, you lose</td></tr>
+              <tr><td><b>Accommodation</b></td><td>low</td><td>high</td><td>I lose, you win</td></tr>
+              <tr><td><b>Avoidance</b></td><td>low</td><td>low</td><td>I lose, you lose</td></tr>
+              <tr><td><b>Compromise</b></td><td>medium</td><td>medium</td><td>both win some, lose some</td></tr>
             </tbody>
           </table>
           <div class="mnemonic"><p>Top row = <b>you push</b> (compete, collaborate). Right column = <b>you care about them</b> (collaborate, accommodate). Collaborating is the only mode in both.</p></div>
           <div data-viz="tki-grid"></div>
         ` },
         { title: 'Win and lose', html: `
-          <p class="lead">The slides also label each mode by <b>who wins</b>: you ("I") or the other party ("you").</p>
+          <p class="lead">The slides also label each mode by <b>who wins</b>: you ("I") or the other party ("you"). The labels follow from what each mode does with the two sides' concerns.</p>
           <figure data-fig="m5-style-outcomes"></figure>
-          <table class="tbl">
-            <thead><tr><th>Mode</th><th>Label on the slides</th></tr></thead>
-            <tbody>
-              <tr><td>Compete</td><td><b>I win, you lose</b></td></tr>
-              <tr><td>Accommodate</td><td><b>I lose, you win</b></td></tr>
-              <tr><td>Avoid</td><td><b>I lose, you lose</b></td></tr>
-              <tr><td>Compromise</td><td><b>I win some / lose some, you win some / lose some</b></td></tr>
-              <tr><td>Collaborate</td><td><b>I win, you win</b></td></tr>
-            </tbody>
-          </table>
-          <div class="note why"><p>Avoiding is "lose-lose" because <b>nobody's concern is dealt with</b>: the issue is left where it was. Compromise gives each side <b>part</b> of what it wanted. Collaboration looks for a solution that meets <b>both</b> sides' needs in full, which is why it takes the longest.</p></div>
+          <ul>
+            <li><b>Compete: I win, you lose.</b> You stand firm until you get your way; the other side's concern is set aside.</li>
+            <li><b>Accommodate: I lose, you win.</b> You set your own concern aside and let the other side have its way.</li>
+            <li><b>Avoid: I lose, you lose.</b> <b>Nobody's concern is dealt with</b>: the issue is left where it was.</li>
+            <li><b>Compromise: I win some and lose some, you win some and lose some.</b> Each side gets <b>part</b> of what it wanted.</li>
+            <li><b>Collaborate: I win, you win.</b> The solution meets <b>both</b> sides' needs in full, which is why it takes the longest to find.</li>
+          </ul>
           <div class="note heads-up"><p>The sources are not consistent here. The win/lose slide gives compromise as "win some, lose some", and the styles handout says "everyone loses and wins", but a later slide says compromise "is sometimes known as lose-lose", because both parties give up a few things. The same slide set calls avoidance "I lose, you lose". In an exam, use <b>win some / lose some</b> for compromise and <b>lose-lose</b> for avoiding, and if you mention the other label, explain it (both sides give something up).</p></div>
         ` },
         { title: 'Measuring a style', html: `
@@ -218,7 +202,7 @@ CHUNK({
             <div><span>Typical line</span>"OK, whatever you say. We'll do it your way!"</div>
             <div><span>Power comes from</span><b>relationships</b> and the <b>approval of others</b></div>
           </div>
-          <p>The handout: low emphasis on the goal, high emphasis on the relationship. The accommodator is protective and "soft" on relationships, sets aside their own needs, yields to the other view, and can come across as a <b>"yes" person</b>. The aim is to build <b>good faith</b> and relationships for the future.</p>
+          <p>In the handout's terms it puts low emphasis on the goal and high emphasis on the relationship. The accommodator is protective and "soft" on relationships, sets aside their own needs, yields to the other view, and can come across as a <b>"yes" person</b>. The aim is to build <b>good faith</b> and relationships for the future.</p>
           <h3>Use it when</h3>
           <ul>
             <li>you <b>don't care as strongly</b> about the issue as the other person</li>
@@ -228,7 +212,7 @@ CHUNK({
           <p>It is about keeping the peace, not putting in more effort than the issue is worth, and <b>knowing when to pick battles</b>.</p>
           <div class="vs">
             <div class="side"><h4>Pros</h4><ul><li>small disagreements handled <b>quickly</b>, with little effort</li><li>the manager builds a reputation as <b>easygoing</b></li><li>employees can speak their mind <b>without reprisal</b></li><li>the other person may learn from the experience; the risk is low</li></ul></div>
-            <div class="side"><h4>Cons</h4><ul><li>seen as <b>weak</b> if used too often</li><li>on larger or more important issues it solves nothing meaningful and should absolutely be avoided</li><li>no healthy confrontation; you may feel <b>taken advantage of</b></li><li>can frustrate others who want to collaborate</li></ul></div>
+            <div class="side"><h4>Cons</h4><ul><li>seen as <b>weak</b> if used too often</li><li>should absolutely be avoided on larger or more important issues, where it solves nothing meaningful</li><li>no healthy confrontation; you may feel <b>taken advantage of</b></li><li>can frustrate others who want to collaborate</li></ul></div>
           </div>
           <div class="note example"><p><b>Raymond and Gina</b>: in a marketing meeting about colours for the new spring campaign, Raymond is adamant that choice A is best. Gina thinks B is slightly better but lets Raymond choose, to avoid arguing over two options she thinks are both fine. A small issue she cares about less: a good use of accommodating.</p></div>
           <div class="note trap"><p>Accommodating is not avoiding. When you accommodate, the issue <b>is settled</b> (their way). When you avoid, it is <b>left unsettled</b>.</p></div>
@@ -249,7 +233,7 @@ CHUNK({
             <li>you need <b>time to think</b> things over, or people need time to calm down</li>
           </ul>
           <div class="vs">
-            <div class="side"><h4>Pros</h4><ul><li>time to calm down solves a <b>surprising amount</b> of issues</li><li>time and space give much-needed <b>perspective</b>; some issues resolve themselves</li><li>managers show they <b>trust employees</b> to act like adults</li></ul></div>
+            <div class="side"><h4>Pros</h4><ul><li>time to calm down solves a <b>surprising number</b> of issues</li><li>time and space give much-needed <b>perspective</b>; some issues resolve themselves</li><li>managers show they <b>trust employees</b> to act like adults</li></ul></div>
             <div class="side"><h4>Cons</h4><ul><li>in the wrong situation it makes conflicts <b>worse</b></li><li>overused, managers seem <b>incompetent</b>, as if they can't handle disagreement</li><li>disputes can <b>grow and explode</b>; issues go <b>underground</b> and draw in others</li><li>very little is accomplished</li></ul></div>
           </div>
           <div class="note example"><p><b>Jake and Amy</b> have collaborated on a new UX design for weeks. The deadline is looming and they increasingly can't agree on changes. The deadline is <b>pushed back</b> and both get the day to work on other projects. The break from each other and the extra time let them cool down and come back in a more <b>collaborative mindset</b>.</p></div>
@@ -263,7 +247,7 @@ CHUNK({
             <div><span>Typical line</span>"OK, I'll meet you half way!"</div>
             <div><span>Power comes from</span><b>moderation</b> and <b>reasonableness</b></div>
           </div>
-          <p>The handout: moderate emphasis on both the goal and the relationship. The compromiser listens to and understands both sides, brings in several issues so everyone gets a share, and <b>splits the difference</b>, so everyone loses and wins a little. One slide notes that it is sometimes called <b>lose-lose</b>, because both sides give up a few things to agree on the larger issue.</p>
+          <p>In the handout's terms it puts moderate emphasis on both the goal and the relationship. The compromiser listens to and understands both sides, brings in several issues so everyone gets a share, and <b>splits the difference</b>, so everyone loses and wins a little. One slide notes that it is sometimes called <b>lose-lose</b>, because both sides give up a few things to agree on the larger issue.</p>
           <h3>Use it when</h3>
           <ul>
             <li>there is a <b>time crunch</b></li>
@@ -284,20 +268,15 @@ CHUNK({
             <div><span>Typical line</span>"It's my way or the highway!"</div>
             <div><span>Power comes from</span>a <b>position of strength</b></div>
           </div>
-          <p>The handout: high emphasis on the goal, at the <b>cost of the relationship</b>. The goal is asserted aggressively, using <b>authority</b>, <b>position</b> and <b>pressure tactics</b> such as threats and force of persuasion.</p>
+          <p>In the handout's terms it puts high emphasis on the goal, at the <b>cost of the relationship</b>. The goal is asserted aggressively, using <b>authority</b>, <b>position</b> and <b>pressure tactics</b> such as threats and force of persuasion.</p>
           <div class="vs">
             <div class="side"><h4>Pros</h4><ul><li>shows the manager is <b>strong</b> and won't drop their principles</li><li>disputes solved <b>quickly</b>: no room for disagreement or discussion</li><li>a quick response, and you are <b>responsible</b> for the decision</li></ul></div>
             <div class="side"><h4>Cons</h4><ul><li>seen as <b>unreasonable and authoritarian</b></li><li>crushing dissent does not give happy, productive staff or, usually, the best solution</li><li><b>stress</b> (even health problems); lower <b>trust and morale</b></li><li>puts others in a <b>fight-or-flight</b> position; the real issue is often <b>disguised</b></li></ul></div>
           </div>
-          <div class="note example"><p><b>Sophia</b>, head of her department, uses competing on three conflicts:</p>
-          <table class="tbl">
-            <thead><tr><th>Conflict</th><th>What Sophia does</th><th>Verdict</th></tr></thead>
-            <tbody>
-              <tr><td>Paul and Kevin can't agree where to hold the annual team-building activity</td><td>decides: an escape room</td><td><b>Appropriate</b>: a quick decision stops a small conflict escalating or wasting time</td></tr>
-              <tr><td>Cecile and Eduardo each say the difficult client is the other's job</td><td>decides it is Cecile's job, though it could arguably be either's</td><td><b>Mixed</b>: solves one issue, creates another; Cecile is resentful, worse if the boss seems to favour someone</td></tr>
-              <tr><td>Alex keeps asking to change how he manages his project, sure it will succeed more</td><td>won't budge; tells him to do it the way she ordered</td><td><b>Wrong</b>: Alex feels unheard, and Sophia misses a chance to improve the project</td></tr>
-            </tbody>
-          </table></div>
+          <div class="note example"><p><b>Sophia</b>, head of her department, uses competing on three conflicts.</p>
+          <p>Paul and Kevin can't agree where to hold the annual team-building activity. Sophia decides: an escape room. A quick decision stops a small conflict from escalating or wasting time. <b>Appropriate.</b></p>
+          <p>Cecile and Eduardo each say the difficult client is the other's job. Sophia decides it is Cecile's, though it could arguably be either's. That solves one issue and creates another: Cecile is resentful, and it is worse if the boss seems to favour someone. <b>Mixed.</b></p>
+          <p>Alex keeps asking to change how he manages his project, sure it will be more successful. Sophia won't budge and tells him to do it the way she ordered. Alex feels unheard, and Sophia misses a chance to improve the project. <b>Wrong.</b></p></div>
           <div class="note exam"><p>Sophia is the model for "Is this the right style here?" questions. Small, low-stakes and time-wasting: competing is fine. A good idea from someone who knows the work: competing throws it away.</p></div>
         ` },
         { title: 'Collaborating', html: `
@@ -308,7 +287,7 @@ CHUNK({
             <div><span>Typical line</span>"Let's do it our way! This is what I prefer... What do you want?"</div>
             <div><span>Power comes from</span><b>openness</b>, <b>clarity</b> and <b>cooperation</b></div>
           </div>
-          <p>It usually means all parties <b>sitting down together</b>, talking through the conflict and <b>negotiating a solution together</b>. The handout: high emphasis on the goal and the relationship; people listen and communicate to understand <b>needs and values</b>, use information and resources most effectively, and keep problem solving. <b>Trust and balance</b> matter, and everyone's satisfaction with the work and <b>commitment to the solution</b> is essential.</p>
+          <p>It usually means all parties <b>sitting down together</b>, talking through the conflict and <b>negotiating a solution together</b>. In the handout's terms it puts high emphasis on both the goal and the relationship: people listen and communicate to understand <b>needs and values</b>, use information and resources most effectively, and keep problem solving. <b>Trust and balance</b> matter, and everyone's satisfaction with the work and <b>commitment to the solution</b> is essential.</p>
           <h3>Use it when</h3>
           <ul>
             <li>it is vital to <b>preserve the relationship</b> between all parties</li>
@@ -322,7 +301,9 @@ CHUNK({
           <div class="note why"><p>The new features are the sign of real collaboration. Talking about <b>why</b> each person wanted something uncovered needs that neither side's first list met.</p></div>
         ` },
         { title: 'Side by side', html: `
-          <p class="lead">All five on one page. Learn the rows across: <b>position, outcome, power, use when, main risk</b>.</p>
+          <p class="lead">All five on one page: each style's <b>position</b> on the grid, its <b>outcome</b>, where its <b>power</b> comes from, <b>when to use</b> it and its <b>main risk</b>.</p>
+          <h3>Position, outcome, power</h3>
+          <p><small>A / C = assertiveness / cooperativeness.</small></p>
           <table class="tbl">
             <thead><tr><th>Style</th><th>A / C</th><th>Outcome</th><th>Power from</th></tr></thead>
             <tbody>
@@ -333,6 +314,7 @@ CHUNK({
               <tr><td><b>Collaborating</b></td><td>high / high</td><td>win-win</td><td>openness, clarity, cooperation</td></tr>
             </tbody>
           </table>
+          <h3>When to use it, and the risk</h3>
           <table class="tbl">
             <thead><tr><th>Style</th><th>Use when</th><th>Main risk</th></tr></thead>
             <tbody>
@@ -407,36 +389,33 @@ CHUNK({
           <div class="note heads-up"><p>Not on the slides: turning the "use it when" lines into five check questions is our study aid. The answers it gives match the slides and the handout.</p></div>
         ` },
         { title: 'When each style fits', html: `
-          <p class="lead">The slides and the handout give each style its own "use it when". Here they are together, with the misuse to avoid.</p>
-          <table class="tbl">
-            <thead><tr><th>Style</th><th>Fits when (source)</th><th>Misuse</th></tr></thead>
-            <tbody>
-              <tr><td><b>Accommodating</b></td><td>you care less than the other person; prolonging isn't worth it; you might be wrong</td><td>larger or important issues</td></tr>
-              <tr><td><b>Avoiding</b></td><td>issue unimportant; risk of harm; time to think or calm down</td><td>serious issues that grow if left</td></tr>
-              <tr><td><b>Compromising</b></td><td>time crunch; a solution must happen, not be perfect</td><td>as the default for everything</td></tr>
-              <tr><td><b>Competing</b></td><td>a quick decision to stop a small conflict escalating</td><td>overruling a good idea (Alex)</td></tr>
-              <tr><td><b>Collaborating</b></td><td>relationship vital to preserve; solution has significant impact</td><td>trivial issues, or no time at all</td></tr>
-            </tbody>
-          </table>
+          <p class="lead">Each style's own tab says when it fits. Here each one is set against the situations where it is the <b>wrong</b> choice, using the slides' examples.</p>
+          <ul>
+            <li><b>Accommodating</b> fits when you care less than the other person, prolonging the conflict isn't worth it, or you might be wrong. Gina letting Raymond pick the campaign colours is the right use. It is the wrong choice on <b>larger or more important issues</b>, where giving way settles nothing meaningful.</li>
+            <li><b>Avoiding</b> fits when the issue is unimportant, there is a risk of harm, or people need time to think or calm down. Jake and Amy's day apart worked because they came back to the problem. It is the wrong choice for <b>serious issues</b>, which grow if left and go underground.</li>
+            <li><b>Compromising</b> fits a time crunch, when a solution must happen rather than be perfect, as with Rosa and Charles's budget. It is the wrong choice when the <b>underlying issue</b> has to be solved: each side only gives something up, and the root cause stays.</li>
+            <li><b>Competing</b> fits a quick decision that stops a small conflict escalating, like Sophia choosing the escape room. It is the wrong choice when it <b>overrules a good idea</b>, as when she refuses to hear Alex's plan for his own project.</li>
+            <li><b>Collaborating</b> fits when the relationship is vital to preserve or the solution will have a significant impact, as with Terry and Janet's new prototype. It is the wrong choice for <b>trivial issues</b>, or when there is <b>no time at all</b>.</li>
+          </ul>
+          <p>The next tab covers a different mistake: using a style in the right kind of situation, but <b>too often</b>.</p>
           <div class="note heads-up"><p>Not on the slides: Thomas and Kilmann's own guidance adds a few more uses. <b>Competing</b> also suits emergencies and safety rules, and unpopular decisions that must be made. <b>Collaborating</b> suits merging insights from people with different views and gaining their commitment. <b>Compromising</b> is a backup when collaboration fails. <b>Avoiding</b> suits cases where others can resolve the conflict better. <b>Accommodating</b> builds goodwill you can draw on later.</p></div>
         ` },
         { title: 'Overuse and its costs', html: `
           <p class="lead">Each style is useful in the right place, but some are <b>weaker than others</b> and should <b>not be relied upon too heavily</b>. The slides name the cost of leaning on each one.</p>
-          <table class="tbl">
-            <thead><tr><th>A manager who always…</th><th>…is seen as / ends up with</th></tr></thead>
-            <tbody>
-              <tr><td>accommodates</td><td><b>weak</b>; big issues never really solved</td></tr>
-              <tr><td>avoids</td><td><b>incompetent</b>, unable to handle disagreement; conflicts get worse</td></tr>
-              <tr><td>compromises</td><td>burnt-up <b>goodwill</b>; unable to collaborate; people refuse to give ground again</td></tr>
-              <tr><td>competes</td><td><b>unreasonable and authoritarian</b>; unhappy, unproductive staff; worse solutions</td></tr>
-              <tr><td>collaborates</td><td><b>delays</b>, missed deadlines, fatigue, losses</td></tr>
-            </tbody>
-          </table>
+          <p>A manager who always…</p>
+          <ul>
+            <li><b>Accommodates</b> → seen as <b>weak</b>; big issues never really solved.</li>
+            <li><b>Avoids</b> → seen as <b>incompetent</b>, unable to handle disagreement; conflicts get worse.</li>
+            <li><b>Compromises</b> → burns up <b>goodwill</b> and seems unable to collaborate; people refuse to give ground again.</li>
+            <li><b>Competes</b> → seen as <b>unreasonable and authoritarian</b>; unhappy, unproductive staff and worse solutions.</li>
+            <li><b>Collaborates</b> → <b>delays</b>, missed deadlines, fatigue and losses.</li>
+          </ul>
+          <div class="note trap"><p>Writing "collaborating is always the best style" is the most common mistake on this topic. The slides say it gives the <b>best long-term results</b>, but it is also the <b>most time-consuming</b>. Always weigh both.</p></div>
+          <p>So even collaborating needs a reason every time you recommend it. Two justifications for the course case study (the CMO's office):</p>
           <div class="vs">
             <div class="side"><h4>Weak justification</h4><p>"Collaboration is the best style, so the manager should collaborate."</p><p><small>A slogan. Collaboration is not always best.</small></p></div>
             <div class="side"><h4>Strong justification</h4><p>"Collaboration fits here because both groups must keep working together across the district, and the outcome decides whether the paramedical staff feel respected. The cost, time, is acceptable because the meeting can be moved."</p></div>
           </div>
-          <div class="note trap"><p>Writing "collaborating is always the best style" is the most common mistake on this topic. The slides say it gives the <b>best long-term results</b>, but it is also the <b>most time-consuming</b>. Always weigh both.</p></div>
         ` },
         { title: 'Styles in sequence', html: `
           <p class="lead">Real conflicts are rarely handled with one style from start to finish. The slides' own examples show styles <b>working in sequence</b>.</p>
@@ -497,29 +476,22 @@ CHUNK({
       tabs: [
         { title: 'What the question wants', html: `
           <p class="lead">A case-study question gives you a real-looking conflict and asks you to <b>analyse</b> it: find the issues, see whose problem it is, lay out the options and <b>recommend</b> one, using the Thomas-Kilmann modes as your toolkit.</p>
-          <p>The course material gives one full case (the <b>CMO's office</b> in district Badgam) and <b>seven questions</b> for analysing it:</p>
-          <ol class="steps">
-            <li><b>What are the main issues here?</b></li>
-            <li><b>Why are these issues important?</b></li>
-            <li><b>Whose problem is this?</b></li>
-            <li><b>What precisely are his objectives?</b></li>
-            <li><b>What possible courses of action are open?</b></li>
-            <li><b>How realistic is each of the actions/solutions proposed?</b></li>
-            <li><b>What are their possible effects?</b></li>
-          </ol>
+          <p>The course material gives one full case (the <b>CMO's office</b> in district Badgam) and <b>seven questions</b> for analysing it: the main issues, why they are important, whose problem it is, his objectives, the possible courses of action, how realistic each one is, and their possible effects. "The seven questions" tab gives them word for word, with what a good answer to each does.</p>
           <p>The case can also be turned into a <b>role play</b>, with three objectives: to <b>develop conflict management skills</b> in managers; to <b>clarify concepts and explore new ideas</b> on conflict and conflict management; and to <b>identify ways of dealing with conflicts</b> in organisations.</p>
           <div class="note exam"><p>"Application level" means the examiner wants the theory <b>used</b> on the facts. An answer that explains all five styles but never mentions Dr Kapoor or Mr Kumar is a theory answer and scores low. Every point should name a person, an event or a quoted line from the case.</p></div>
         ` },
         { title: 'The CMO office case', html: `
           <p class="lead">A small insult in a PA's office turns into a fight between two professional groups on the morning of a monthly meeting.</p>
-          <div class="kv">
-            <div><span>Mr Kumar</span>a <b>BEE</b> from one of the PHCs; had a <b>prior appointment</b> with the CMO's PA</div>
-            <div><span>Dr Kapoor</span>a <b>BMO</b> from a different PHC, chatting with the PA</div>
-            <div><span>The PA</span>the CMO's personal assistant, in <b>Room No. 10</b></div>
-            <div><span>Dr (Mr) Sharma</span>the <b>CMO</b>, who is to chair the monthly meeting</div>
-            <div><span>Medical group</span>Dy. CMOs, MOs, specialists</div>
-            <div><span>Paramedical group</span>BEEs, Supervisors, LHVs</div>
-          </div>
+          <h3>Who is involved</h3>
+          <ul>
+            <li><b>Mr Kumar</b>: a <b>BEE</b> from one of the PHCs, with a <b>prior appointment</b> with the CMO's PA.</li>
+            <li><b>Dr Kapoor</b>: a <b>BMO</b> from a different PHC, chatting with the PA.</li>
+            <li><b>The PA</b>: the CMO's personal assistant, in <b>Room No. 10</b>.</li>
+            <li><b>Dr (Mr) Sharma</b>: the <b>CMO</b>, who is to chair the monthly meeting.</li>
+            <li><b>Medical group</b>: Dy. CMOs, MOs, specialists.</li>
+            <li><b>Paramedical group</b>: BEEs, Supervisors, LHVs.</li>
+          </ul>
+          <h3>What happens</h3>
           <ol class="steps">
             <li><b>Waiting</b> Kumar arrives for his appointment, sees Kapoor chatting with the PA, and waits outside.</li>
             <li><b>Interruption</b> as the meeting time nears, he goes in and reminds the PA of his appointment.</li>
@@ -531,23 +503,20 @@ CHUNK({
             <li><b>Demand</b> Kumar's group asks for immediate justice: a <b>written apology</b> from Kapoor. Kapoor's group, told of it, <b>refuses</b>.</li>
             <li><b>Decision</b> wondering how to hold the meeting and end the conflict, the CMO decides to arrange a <b>direct confrontation meeting</b> between the two groups.</li>
           </ol>
-          <div class="note heads-up"><p>The case calls the CMO both "Mr. Sharma" and "Dr. Sharma"; either is accepted, but pick one and stick to it (as a CMO he is a doctor, so Dr Sharma). Not on the slides, standard Indian health-service terms: <b>CMO</b> Chief Medical Officer, <b>Dy. CMO</b> Deputy CMO, <b>MO</b> Medical Officer, <b>BMO</b> Block Medical Officer, <b>BEE</b> Block Extension Educator, <b>LHV</b> Lady Health Visitor, <b>PHC</b> Primary Health Centre, <b>CHC</b> Community Health Centre, <b>PA</b> Personal Assistant.</p></div>
+          <div class="note heads-up"><p>The case calls the CMO both "Mr. Sharma" and "Dr. Sharma". Either is accepted, but pick one and stick to it (as a CMO he is a doctor, so Dr Sharma).</p><p>Not on the slides, the standard Indian health-service abbreviations: <b>CMO</b> Chief Medical Officer, <b>Dy. CMO</b> Deputy CMO, <b>MO</b> Medical Officer, <b>BMO</b> Block Medical Officer, <b>BEE</b> Block Extension Educator, <b>LHV</b> Lady Health Visitor, <b>PHC</b> Primary Health Centre, <b>CHC</b> Community Health Centre, <b>PA</b> Personal Assistant.</p></div>
         ` },
         { title: 'The seven questions', html: `
           <p class="lead">The seven questions move from <b>understanding</b> the case (1 to 4) to <b>weighing options</b> (5 to 7). Finish with a recommendation.</p>
           <figure data-fig="m5-case-steps"></figure>
-          <table class="tbl">
-            <thead><tr><th>Question</th><th>What a good answer does</th></tr></thead>
-            <tbody>
-              <tr><td>1 Main issues</td><td>separates the <b>trigger</b> (the incident) from the <b>underlying issue</b> (what has been building)</td></tr>
-              <tr><td>2 Why important</td><td>names what is <b>at stake</b>: people, work, discipline, relationships, the leader's credibility</td></tr>
-              <tr><td>3 Whose problem</td><td>names the <b>decision-maker</b> and says why it lands on them</td></tr>
-              <tr><td>4 Objectives</td><td>lists <b>precise</b> short-term and long-term aims ("hold the meeting today", "rebuild trust")</td></tr>
-              <tr><td>5 Courses of action</td><td>gives 3 to 5 <b>distinct options</b>, each tagged with a Thomas-Kilmann mode</td></tr>
-              <tr><td>6 Realistic?</td><td>tests each option against <b>time, power, willingness and cost</b></td></tr>
-              <tr><td>7 Effects</td><td>traces each option's <b>short- and long-term effects</b>, then leads to the choice</td></tr>
-            </tbody>
-          </table>
+          <ol class="steps">
+            <li><b>What are the main issues here?</b> Separate the <b>trigger</b> (the incident) from the <b>underlying issue</b> (what has been building).</li>
+            <li><b>Why are these issues important?</b> Name what is <b>at stake</b>: people, work, discipline, relationships, the leader's credibility.</li>
+            <li><b>Whose problem is this?</b> Name the <b>decision-maker</b> and say why it lands on them.</li>
+            <li><b>What precisely are his objectives?</b> List <b>precise</b> short-term and long-term aims ("hold the meeting today", "rebuild trust").</li>
+            <li><b>What possible courses of action are open?</b> Give 3 to 5 <b>distinct options</b>, each tagged with a Thomas-Kilmann mode.</li>
+            <li><b>How realistic is each of the actions/solutions proposed?</b> Test each option against <b>time, power, willingness and cost</b>.</li>
+            <li><b>What are their possible effects?</b> Trace each option's <b>short- and long-term effects</b>, and let them lead to your choice.</li>
+          </ol>
           <div class="note why"><p>Questions 3 and 4 decide the rest. Once you know whose problem it is and what exactly they want, the options and their effects are judged against those objectives, not against your personal feelings about who was rude.</p></div>
           <div class="note heads-up"><p>Not on the slides: the "recommend and justify" step and the four realism tests (time, power, willingness, cost) are standard case-analysis practice. The seven questions stop at effects; a CAT answer should still end with a clear choice.</p></div>
         ` },
@@ -573,16 +542,14 @@ CHUNK({
         ` },
         { title: 'Model answer: Q5 to Q7', html: `
           <p class="lead">Questions 5 to 7 lay out the CMO's options as Thomas-Kilmann modes, test each one, and lead to a recommendation.</p>
-          <table class="tbl">
-            <thead><tr><th>5. Option (mode)</th><th>6. How realistic?</th><th>7. Likely effects</th></tr></thead>
-            <tbody>
-              <tr><td><b>Order</b> Kapoor to write the apology; threaten action (<b>competing</b>)</td><td>possible: the CMO has position power. But Kapoor's group has already refused</td><td>quick; doctors resent it; CMO seen as authoritarian; grievance untouched</td></tr>
-              <tr><td>Carry on with the meeting; <b>let it blow over</b> (<b>avoiding</b>)</td><td>unrealistic as a solution after slogans and attacks; fine only as a short cool-off</td><td>issue goes underground and explodes later; CMO seen as incompetent</td></tr>
-              <tr><td>Tell Kumar to <b>forget it</b>, or give one group everything (<b>accommodating</b>)</td><td>unrealistic: "forget it" is exactly what caused the escalation</td><td>the losing group feels betrayed; conflict returns</td></tr>
-              <tr><td>Kapoor expresses <b>regret in person</b>; the group drops the <b>written</b> demand (<b>compromising</b>)</td><td>realistic and quick, if both sides accept</td><td>meeting can go ahead; each side feels it lost something; root grievance stays</td></tr>
-              <tr><td>A <b>facilitated confrontation meeting</b> of both groups (<b>collaborating</b>), the CMO's plan</td><td>realistic if prepared: after tempers cool, small delegations, ground rules; takes time</td><td>slower, but settles the incident and the grievance; CMO seen as skilled</td></tr>
-            </tbody>
-          </table>
+          <p>Each option below answers <b>Q5</b> (a course of action, with its mode), <b>Q6</b> (how realistic it is) and <b>Q7</b> (its likely effects).</p>
+          <ol>
+            <li><b>Order Kapoor to write the apology, and threaten action (competing)</b><br>Realistic? Possible, since the CMO has position power, but Kapoor's group has already refused.<br>Effects: quick; the doctors resent it; the CMO is seen as authoritarian; the grievance is untouched.</li>
+            <li><b>Carry on with the meeting and let it blow over (avoiding)</b><br>Realistic? Not as a solution after slogans and attacks; fine only as a short cool-off.<br>Effects: the issue goes underground and explodes later; the CMO is seen as incompetent.</li>
+            <li><b>Tell Kumar to forget it, or give one group everything (accommodating)</b><br>Realistic? No: "forget it" is exactly what caused the escalation.<br>Effects: the losing group feels betrayed; the conflict returns.</li>
+            <li><b>Kapoor expresses regret in person, and the group drops the written demand (compromising)</b><br>Realistic? Yes, and quick, if both sides accept.<br>Effects: the meeting can go ahead; each side feels it lost something; the root grievance stays.</li>
+            <li><b>A facilitated confrontation meeting of both groups, the CMO's own plan (collaborating)</b><br>Realistic? Yes, if prepared: after tempers cool, with small delegations and ground rules. It takes time.<br>Effects: slower, but it settles both the incident and the grievance; the CMO is seen as skilled.</li>
+          </ol>
           <div class="worked">
             <div class="given"><p><b>Recommendation</b></p></div>
             <div class="solve"><ol><li><b>Now</b>: firmly stop the shouting and fighting (competing on behaviour, which is non-negotiable) and postpone the meeting by a few hours.</li><li><b>Cool off and investigate</b>: meet Kumar and Kapoor <b>separately</b> to hear both versions (best-practice steps 2, 3 and 5).</li><li><b>Confrontation meeting</b>: representatives of both groups, the CMO as a neutral chair, ground rules. Kapoor apologises for the word "idiot"; the form (spoken or written) is agreed in the room, with compromise as the fallback.</li><li><b>Root cause</b>: agree on an appointment system, a joint staff forum for grievances, and a respect code.</li><li><b>Follow up</b>: implement, review at the next monthly meeting, prevent (steps 7 to 9).</li></ol></div>
@@ -594,7 +561,7 @@ CHUNK({
           <ol class="steps">
             <li><b>One-line summary</b> of the conflict: who, what, and the stage it has reached.</li>
             <li><b>Q1 to Q4</b> as short headed paragraphs or bullets: issues (trigger + underlying), importance, whose problem, objectives.</li>
-            <li><b>Q5 to Q7</b> as a small table: option, Thomas-Kilmann mode, realistic?, effects.</li>
+            <li><b>Q5 to Q7</b> as a small table (option, Thomas-Kilmann mode, realistic?, effects) or one short block per option.</li>
             <li><b>Recommendation</b>: the chosen course, in steps, with the mode named.</li>
             <li><b>Justification</b>: why this mode fits (the slides' "use it when"), its cost, why the cost is acceptable.</li>
           </ol>

@@ -34,11 +34,8 @@ CHUNK({
               <tr><td>Ravi checked the bus app three times and kept glancing at the clock.</td><td>what Ravi did</td><td>he is <b>worried about being late</b></td></tr>
             </tbody>
           </table>
-          <div class="vs">
-            <div class="side"><h4>Stated</h4><p>You can <b>underline</b> it. One line of the text says it.</p></div>
-            <div class="side"><h4>Implied</h4><p>You have to <b>build</b> it from two or more clues plus common knowledge.</p></div>
-          </div>
-          <div class="note trap"><p>In an "infer" question, one wrong option is usually a <b>stated fact</b> copied from the passage. It is true, but it is not an inference. If you can point to one sentence that says it word for word, it is stated.</p></div>
+          <p>A quick test: if you can <b>underline</b> one line of the text that says it, it is stated. If you have to <b>build</b> it from two or more clues plus common knowledge, it is implied.</p>
+          <div class="note trap"><p>In an "infer" question, one wrong option is usually a <b>stated fact</b> copied from the passage. It is true, but it is not an inference.</p></div>
         ` },
         { title: 'Everyday inference', html: `
           <p class="lead">You infer all day without calling it that. The slides list two groups: reading <b>people</b>, and reading <b>situations</b>.</p>
@@ -46,22 +43,20 @@ CHUNK({
           <div class="chips"><span class="chip">reading body language</span><span class="chip">interpreting tone of voice</span><span class="chip">predicting reactions</span><span class="chip">understanding underlying motives</span></div>
           <p>A friend says "Fine" in a flat voice with arms crossed: you infer it is not fine. A classmate who hates crowds is invited to a packed concert: you predict they will say no.</p>
           <h3>Reading situations</h3>
-          <table class="tbl">
-            <thead><tr><th>Situation</th><th>Clue</th><th>Inference</th></tr></thead>
-            <tbody>
-              <tr><td><b>Weather prediction</b></td><td>dark clouds, heavy air</td><td>rain is likely</td></tr>
-              <tr><td><b>Traffic management</b></td><td>a long line of brake lights</td><td>a jam ahead; take another road</td></tr>
-              <tr><td><b>Problem-solving at home</b></td><td>fan and lights stop together</td><td>a power cut, not a broken fan</td></tr>
-              <tr><td><b>Shopping</b></td><td>shelf nearly empty</td><td>the item is selling fast</td></tr>
-              <tr><td><b>Cooking</b></td><td>the aroma</td><td>the food is <b>ready</b></td></tr>
-              <tr><td><b>Reading a news article</b></td><td>police at the scene</td><td>the <b>reason for police presence</b>: an accident or a crime</td></tr>
-              <tr><td><b>Watching a movie</b></td><td>a character lies about where he was</td><td>he was <b>involved</b></td></tr>
-              <tr><td><b>Understanding advertisements</b></td><td>athletes drinking a brand</td><td>the ad wants you to link it with fitness</td></tr>
-              <tr><td><b>Deducing cause and effect</b></td><td>leaves yellow after daily watering</td><td>overwatering</td></tr>
-              <tr><td><b>A puzzle or riddle</b></td><td>the hints given</td><td>the one answer that fits them all</td></tr>
-              <tr><td><b>Diagnosing a minor ailment</b></td><td>sneezing, runny nose, no fever</td><td>a cold or an allergy</td></tr>
-            </tbody>
-          </table>
+          <p>Each one runs from a clue to a conclusion:</p>
+          <ul>
+            <li><b>Weather prediction:</b> dark clouds and heavy air → rain is likely.</li>
+            <li><b>Traffic management:</b> a long line of brake lights → a jam ahead, so take another road.</li>
+            <li><b>Problem-solving at home:</b> the fan and lights stop together → a power cut, not a broken fan.</li>
+            <li><b>Shopping:</b> a nearly empty shelf → the item is selling fast.</li>
+            <li><b>Cooking:</b> the aroma → the food is <b>ready</b>.</li>
+            <li><b>Reading a news article:</b> police at the scene → the <b>reason for police presence</b>, such as an accident or a crime.</li>
+            <li><b>Watching a movie:</b> a character lies about where he was → he was <b>involved</b>.</li>
+            <li><b>Understanding advertisements:</b> athletes drinking a brand → the ad wants you to link it with fitness.</li>
+            <li><b>Deducing cause and effect:</b> leaves turn yellow after daily watering → overwatering.</li>
+            <li><b>A puzzle or riddle:</b> the hints given → the one answer that fits them all.</li>
+            <li><b>Diagnosing a minor ailment:</b> sneezing, a runny nose and no fever → a cold or an allergy.</li>
+          </ul>
           <div class="note why"><p>Reading a passage uses the same process: clue + experience → conclusion. Everyday inferences can also be wrong (the police might be there for a film shoot), which is why a good reader checks an inference against <b>all</b> the clues before trusting it.</p></div>
         ` },
         { title: 'Inference, guess or opinion?', html: `
@@ -102,13 +97,10 @@ CHUNK({
         ` },
         { title: 'Answering inference questions', html: `
           <p class="lead">First decide whether the question wants a <b>stated</b> fact or an <b>inference</b>. The question stem tells you.</p>
-          <table class="tbl">
-            <thead><tr><th>Stem</th><th>It wants</th></tr></thead>
-            <tbody>
-              <tr><td>According to the passage… · The passage states… · Which detail…</td><td><b>stated</b> information</td></tr>
-              <tr><td>The passage suggests / implies… · It can be inferred… · Most likely… · The author would probably agree…</td><td>an <b>inference</b></td></tr>
-            </tbody>
-          </table>
+          <ul>
+            <li>"According to the passage…", "The passage states…" and "Which detail…" want <b>stated</b> information.</li>
+            <li>"The passage suggests / implies…", "It can be inferred…", "Most likely…" and "The author would probably agree…" want an <b>inference</b>.</li>
+          </ul>
           <div class="worked">
             <div class="given"><p>Passage: "Executive offices are usually on the top floors; the juniors work below." Question: What does the passage suggest about office buildings?</p></div>
             <div class="solve"><p>Clue: executives up, juniors down. Common knowledge: "higher" is linked with "more important". Smallest step: position in the building reflects position in the company.</p></div>
@@ -156,14 +148,11 @@ CHUNK({
         { title: 'Stated, inferred, not supported', html: `
           <p class="lead">Every statement about a passage falls into one of three boxes: <b>stated</b>, <b>can be inferred</b>, or <b>not supported</b>. Most inference questions are really asking you to sort statements into these boxes.</p>
           <figure data-fig="m3-stated-implied-unsupported"></figure>
-          <table class="tbl">
-            <thead><tr><th>Label</th><th>Test</th></tr></thead>
-            <tbody>
-              <tr><td><b>Stated</b></td><td>You can point to <b>one line</b> that says it (maybe in other words).</td></tr>
-              <tr><td><b>Can be inferred</b></td><td>No single line says it, but you can <b>name the clues</b> and explain how they lead there, using only common knowledge.</td></tr>
-              <tr><td><b>Not supported</b></td><td>It needs facts the passage <b>doesn't give</b>, adds your own opinion, or <b>contradicts</b> the text.</td></tr>
-            </tbody>
-          </table>
+          <ul>
+            <li><b>Stated:</b> you can point to <b>one line</b> that says it (maybe in other words).</li>
+            <li><b>Can be inferred:</b> no single line says it, but you can <b>name the clues</b> and explain how they lead there, using only common knowledge.</li>
+            <li><b>Not supported:</b> it needs facts the passage <b>doesn't give</b>, adds your own opinion, or <b>contradicts</b> the text.</li>
+          </ul>
           <div class="note why"><p>Examiners build MCQs this way: one inferable option, one stated option, and two unsupported ones. If you can label all four, the right answer is the only one left in the middle box.</p></div>
           <div data-viz="inference-detective"></div>
         ` },
@@ -247,17 +236,14 @@ CHUNK({
         ` },
         { title: 'Common traps', html: `
           <p class="lead">Wrong inference answers fail in a few predictable ways. Learn the patterns and you can reject most wrong options on sight.</p>
-          <table class="tbl">
-            <thead><tr><th>Trap</th><th>What it looks like</th></tr></thead>
-            <tbody>
-              <tr><td><b>Over-reaching</b></td><td>extreme words: all, never, always, only, proves</td></tr>
-              <tr><td><b>Outside opinion</b></td><td>your own view or what "should" happen</td></tr>
-              <tr><td><b>Stated fact</b></td><td>a true line copied from the text, when an inference was asked</td></tr>
-              <tr><td><b>Scope shift</b></td><td>the text is about men, the option is about everyone</td></tr>
-              <tr><td><b>Link → cause</b></td><td>"taller men earn more" turned into "height causes pay"</td></tr>
-              <tr><td><b>Contradiction</b></td><td>the option says the opposite of a line ("tutorials are useless")</td></tr>
-            </tbody>
-          </table>
+          <ul>
+            <li><b>Over-reaching:</b> extreme words such as all, never, always, only, proves.</li>
+            <li><b>Outside opinion:</b> your own view, or what "should" happen.</li>
+            <li><b>Stated fact:</b> a true line copied from the text, when an inference was asked for. This is the most common slip in the CAT: the option is true, but it is not inferred, so it is still wrong.</li>
+            <li><b>Scope shift:</b> the text is about men, but the option is about everyone.</li>
+            <li><b>Link → cause:</b> "taller men earn more" turned into "height causes pay".</li>
+            <li><b>Contradiction:</b> the option says the opposite of a line ("tutorials are useless").</li>
+          </ul>
           <div class="vs">
             <div class="side"><h4>Wrong</h4><p>"The passage proves that pesticides are destroying all insect life."</p><p><small>"Proves" and "all" over-reach; pesticides are one of three drivers.</small></p></div>
             <div class="side"><h4>Right</h4><p>"The passage suggests that pesticide use is one reason insect numbers are falling."</p></div>
@@ -266,7 +252,6 @@ CHUNK({
             <div class="side"><h4>Wrong</h4><p>"Universities should make plagiarism rules simpler."</p><p><small>A sensible idea, but it is your opinion, not the author's point.</small></p></div>
             <div class="side"><h4>Right</h4><p>"The author implies that off-campus students need more individual help with academic writing."</p></div>
           </div>
-          <div class="note trap"><p>The most common slip in the CAT: choosing the option that is <b>true</b> instead of the one that is <b>inferred</b>. A stated fact is true, but in an "infer" question it is still the wrong answer.</p></div>
         ` },
       ],
       flashcards: [
@@ -350,17 +335,13 @@ CHUNK({
         ` },
         { title: 'Wikipedia', html: `
           <p class="lead">Most online searches quickly lead to <b>Wikipedia</b>, the popular online encyclopedia. Treat it as a <b>place to start</b> your research, <b>not your final destination</b>.</p>
-          <div class="kv">
-            <div><span>Who writes it</span><b>countless people worldwide</b> provide and edit the content</div>
-            <div><span>The risk</span>content <b>may not be completely accurate</b></div>
-            <div><span>Use it for</span>an <b>overview</b> of the topic and to <b>locate other sources</b></div>
-          </div>
+          <p><b>Countless people worldwide</b> provide and edit its content, so it <b>may not be completely accurate</b>. Use it for an <b>overview</b> of the topic and to <b>locate other sources</b>.</p>
           <p>The Wikipedia page on electromagnetic radiation has <b>footnotes</b> to other sources. Track those down through <b>Google Scholar</b> or a <b>library</b> site, read the originals, and cite them.</p>
           <div class="vs">
             <div class="side"><h4>Wrong</h4><p>Copy the definition and a statistic from Wikipedia straight into your report and cite Wikipedia.</p></div>
             <div class="side"><h4>Right</h4><p>Read the Wikipedia overview, follow footnote 12 to the journal article, check the statistic there, and <b>cite the article</b>.</p></div>
           </div>
-          <div class="note why"><p>Because anyone can edit a page, an error can sit there until someone fixes it. The footnoted original has an author, a publisher and (for journals) peer review behind it.</p></div>
+          <div class="note why"><p>An error on a Wikipedia page can sit there until someone fixes it. The footnoted original has an author, a publisher and (for journals) peer review behind it.</p></div>
         ` },
         { title: 'Libraries and databases', html: `
           <p class="lead">For deeper digging, go to <b>digital libraries</b> and your <b>library's</b> catalogue and databases. Many give full texts that a normal search can't reach.</p>
@@ -368,17 +349,15 @@ CHUNK({
           <div class="chips"><span class="chip">Project Gutenberg</span><span class="chip">HathiTrust Digital Library</span><span class="chip">Google Books</span><span class="chip">Internet Archive</span><span class="chip">Digital Public Library of America</span><span class="chip">National Digital Library of India</span></div>
           <h3>Your library</h3>
           <p>Libraries offer a general search tool of all their holdings, the <b>online public access catalog (OPAC)</b>. Use it to see whether the library has a book or journal and where it is.</p>
-          <table class="tbl">
-            <thead><tr><th>Database</th><th>Covers</th></tr></thead>
-            <tbody>
-              <tr><td><b>EBSCOHost</b>, <b>JSTOR</b>, <b>InfoTrac</b></td><td>general periodicals: magazines, newspapers and more general information</td></tr>
-              <tr><td><b>APA PsycINFO</b></td><td>articles in <b>psychology</b></td></tr>
-              <tr><td><b>Business Source Premier</b></td><td>articles on <b>business</b></td></tr>
-              <tr><td><b>PubMed</b></td><td>articles on the <b>health sciences</b></td></tr>
-              <tr><td>indexes and other resources</td><td><b>engineering</b>, the <b>humanities</b>, <b>world affairs</b> and other areas</td></tr>
-              <tr><td><b>LexisNexis</b>, <b>Factiva</b>, <b>Dialog</b></td><td>legal cases and articles; business news (from the Casamonte example)</td></tr>
-            </tbody>
-          </table>
+          <p>Libraries also subscribe to databases:</p>
+          <ul>
+            <li><b>EBSCOHost</b>, <b>JSTOR</b> and <b>InfoTrac</b>: general periodicals (magazines, newspapers) and more general information.</li>
+            <li><b>APA PsycINFO</b>: articles in <b>psychology</b>.</li>
+            <li><b>Business Source Premier</b>: articles on <b>business</b>.</li>
+            <li><b>PubMed</b>: articles on the <b>health sciences</b>.</li>
+            <li>Indexes and other resources for <b>engineering</b>, the <b>humanities</b>, <b>world affairs</b> and other areas.</li>
+            <li><b>LexisNexis</b>, <b>Factiva</b> and <b>Dialog</b> (from the Casamonte example): legal cases and articles, and business news.</li>
+          </ul>
           <div class="note heads-up"><p>Source slip: the slide spells it "APA PsychINFO"; the database is <b>APA PsycINFO</b>. Not on the slides: for engineering, common databases include IEEE Xplore, ScienceDirect and Scopus; check which ones your library subscribes to.</p></div>
         ` },
         { title: 'Types of secondary sources', html: `

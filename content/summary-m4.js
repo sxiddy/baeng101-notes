@@ -21,7 +21,7 @@ SUMMARY({
       <tr><td>Content</td><td>all ideas and details</td><td><b>main ideas only</b></td><td>all, in the author's order</td></tr>
       <tr><td>Wording</td><td>own words, <b>new structure</b></td><td>own words, new structure</td><td>author's structure, <b>swapped words</b></td></tr>
       <tr><td>Credit</td><td>cited</td><td>cited when used in a paper</td><td><b>none</b></td></tr>
-      <tr><td>Lester example</td><td>35 words</td><td>25 words</td><td>53 words</td></tr>
+      <tr><td>Lester example</td><td>34 words</td><td>24 words</td><td>53 words</td></tr>
     </tbody></table>` },
     { title: 'Précis vs abstract', html: `<table class="tbl"><thead><tr><th></th><th>Précis</th><th>Abstract</th></tr></thead><tbody>
       <tr><td>Condenses</td><td>any passage</td><td>a study or report</td></tr>
@@ -88,10 +88,10 @@ SUMMARY({
     },
     {
       id: 'm4-s-03', module: 'm4', topic: 'summary', type: 'design', level: 3,
-      q: `<p>The Eurozone passage (159 words): despite positive news on private consumption and corporate investment, economic sentiment is declining (the Purchasing Managers' Index peaked in summer; composite at a five-month low, manufacturing at a seven-month low in August). The main cause is shortages of materials and upstream products, from rapidly rising demand plus reduced production capacity during the pandemic. Over 70% of German firms (over 90% in automotive, over 80% in engineering) report hampered production, a historical high against at most 20% in thirty years. Interrupted supply chains threaten recovery just as industrial orders have surged. Write a précis that avoids the slide model's "recession" slip, with the word count.</p>`,
+      q: `<p>The Eurozone passage (about 160 words): despite positive news on private consumption and corporate investment, economic sentiment is declining (the Purchasing Managers' Index peaked in summer; composite at a five-month low, manufacturing at a seven-month low in August). The main cause is shortages of materials and upstream products, from rapidly rising demand plus reduced production capacity during the pandemic. Over 70% of German firms (over 90% in automotive, over 80% in engineering) report hampered production, a historical high against at most 20% in thirty years. Interrupted supply chains threaten recovery just as industrial orders have surged. Write a précis that avoids the slide model's "recession" slip, with the word count.</p>`,
       options: null, correct: null,
       answer: `<p><b>Model:</b> "Economic sentiment in the Eurozone is falling, despite good news on consumption and investment. The main cause is a shortage of materials and parts, created by rising demand and pandemic cuts to production capacity. These shortages, at record levels in German industry, threaten the recovery just as orders surge." <b>(Words: 47)</b></p>`,
-      explain: `<p>Limit 159 ÷ 3 = 53. The index readings are minor detail; the survey figures are summed up as "record levels" (statistics at discretion). It says <em>sentiment</em> is falling, not that the economy is in recession, and gives both causes of the shortages. Third person, no opinion, own words.</p>`,
+      explain: `<p>Limit 160 ÷ 3 ≈ 53. The index readings are minor detail; the survey figures are summed up as "record levels" (statistics at discretion). It says <em>sentiment</em> is falling, not that the economy is in recession, and gives both causes of the shortages. Third person, no opinion, own words.</p>`,
       points: ['limit worked out (53)', 'sentiment, not recession', 'both causes of shortages', 'statistics summed up', 'threat to recovery kept', 'word count shown'],
     },
     {

@@ -12,12 +12,7 @@ CHUNK({
         { title: 'What it is', html: `
           <p class="lead">A <b>statement of purpose</b> (SoP) is a short essay you send with an application. It shows the <b>admission committee</b> your <b>personality</b> and your <b>academic credentials</b>, and argues that you are ready for the course.</p>
           <p>The slides call it your chance to <b>present your profile strongly</b>, through the <b>personality traits</b> that your <b>academic documents</b> (mark sheets, certificates) cannot show. They pitch it at <b>universities abroad</b>, but Indian colleges, MBA programmes, scholarships and research internships ask for the same essay.</p>
-          <h3>What it has to answer</h3>
-          <div class="kv">
-            <div><span>Who you are</span><b>your background</b>, in brief</div>
-            <div><span>Who you want to become</span><b>your goal</b></div>
-            <div><span>How ready you are</span><b>your preparation</b> for this course at this institution</div>
-          </div>
+          <p>It gives the reader a gist of three things: <b>who you are</b> (your background, in brief), <b>who you want to become</b> (your goal), and <b>how ready you are</b> for this course at this institution.</p>
           <p>The committee wants to understand your <b>life</b>, the <b>motivations</b> behind your chosen career path, and your <b>goals</b>. So you write about the <b>past incidents</b> that pushed you towards a specific field, the one you now want to grow in by joining the course.</p>
           <div class="note example"><p>A mark sheet says you scored 96 in Physics. An SoP can say that you spent a summer repairing radios with your grandfather, which is why you chose electronics. Only the second one tells the committee who you are.</p></div>
           <div class="note exam"><p>SoP writing sits in Module 5 and again in the lab (Writing). In the CAT you write an SoP, or part of one, to a given format, usually for a <b>B.Tech</b> programme. Marks go to structure, specific details and clean, positive English.</p></div>
@@ -48,11 +43,7 @@ CHUNK({
             <div class="side"><h4>Written for nobody</h4><p>"I have always had a keen interest in technology and I am a very hardworking student."</p><p><small>Any applicant could sign this. Nothing a professor can check.</small></p></div>
             <div class="side"><h4>Written for the committee</h4><p>"My Class 12 project, a Bluetooth-controlled irrigation valve, taught me to read datasheets and to debug a circuit one stage at a time."</p><p><small>A specific achievement that points at the course.</small></p></div>
           </div>
-          <div class="vs">
-            <div class="side"><h4>Vague</h4><p>"I did a project on AI."</p></div>
-            <div class="side"><h4>In the style of the discipline</h4><p>"I trained a CNN to classify tomato leaf diseases and reached 91% accuracy on 4,000 field images."</p></div>
-          </div>
-          <div class="note why"><p>A professor reads "a project on AI" and learns nothing. The second version names the method, the data and the result, which is exactly what they would ask you in an interview.</p></div>
+          <p>Writing in the style of your discipline means naming the method, the data and the result. A professor reads "I did a project on AI" and learns nothing. "I trained a CNN to classify tomato leaf diseases and reached 91% accuracy on 4,000 field images" names all three, which is exactly what they would ask you about in an interview.</p>
         ` },
         { title: 'Instructions first', html: `
           <p class="lead">Before you write a word, go through the programme's <b>specific instructions</b> thoroughly, and check the <b>departmental website</b> for any additional or specific information the statement should include.</p>
@@ -118,20 +109,27 @@ CHUNK({
       tabs: [
         { title: 'The four parts', html: `
           <p class="lead">The slides say to think of the SoP as a <b>composition with four parts</b>. Each part answers one thing the committee wants to know.</p>
-          <table class="tbl">
-            <thead><tr><th>Part</th><th>What goes in</th></tr></thead>
-            <tbody>
-              <tr><td><b>1. Introduce yourself</b>, your interests and motivations</td><td>What you are interested in and what <b>sparked</b> your desire for the course. <b>Short and to the point</b>: not an autobiography.</td></tr>
-              <tr><td><b>2. Summarise</b> your undergraduate and previous career</td><td>(a) <b>Research</b>: with whom, project title, your responsibilities, the outcome, written technically. (b) An important <b>paper or thesis</b>, and anything scholarly <b>beyond the curriculum</b>. (c) <b>Work experience</b>, especially testing, designing, researching or interning in a similar area.</td></tr>
-              <tr><td><b>3. Relevance</b> of recent and current activities</td><td>If you worked before applying: the company or non-profit, your work or design team, responsibilities, <b>what you learned</b>, and how it <b>focused</b> your plans.</td></tr>
-              <tr><td><b>4. Academic interests</b></td><td>(a) The <b>area</b> you want to study: pose a <b>question</b>, define a <b>problem</b> or name a <b>theme</b> from current research, in an ample paragraph. (b) <b>Research the department</b> and its professors; say whose work parallels yours, and name them if the programme asks. (c) <b>End positively</b>, showing excitement and readiness.</td></tr>
-            </tbody>
-          </table>
-          <p>Part 4 has to show enough detail to convince the faculty that you understand the <b>scope of research</b> in their discipline and follow <b>current research themes</b>.</p>
+          <ol class="steps">
+            <li><b>Introduce yourself, your interests and motivations</b> Say what you are interested in and what <b>sparked</b> your desire for the course. Keep it <b>short and to the point</b>: this is not an autobiography.</li>
+            <li><b>Summarise your undergraduate and previous career</b>
+              <ul>
+                <li>(a) <b>Research</b>: with whom, the project title, your responsibilities and the outcome, written technically.</li>
+                <li>(b) An important <b>paper or thesis</b>, and anything scholarly <b>beyond the curriculum</b>.</li>
+                <li>(c) <b>Work experience</b>, especially testing, designing, researching or interning in a similar area.</li>
+              </ul></li>
+            <li><b>The relevance of recent and current activities</b> If you worked before applying: the company or non-profit, your work or design team, your responsibilities, <b>what you learned</b>, and how it <b>focused</b> your plans.</li>
+            <li><b>Elaborate on your academic interests</b>
+              <ul>
+                <li>(a) The <b>area</b> you want to study: pose a <b>question</b>, define a <b>problem</b> or name a <b>theme</b> from current research, in an ample paragraph.</li>
+                <li>(b) <b>Research the department</b> and its professors. Say whose work parallels yours, and name them if the programme asks.</li>
+                <li>(c) <b>End positively</b>, showing excitement and readiness.</li>
+              </ul></li>
+          </ol>
+          <p>Part 4 needs enough detail to convince the faculty that you understand the <b>scope of research</b> in their discipline and follow <b>current research themes</b>.</p>
           <div class="note heads-up"><p>A slip in the first slide deck: Part 4 appears <b>before</b> Part 3, and the Part 4 slide carries the caption "Academic Background and Professional Experience", which belongs to Part 2. The second deck puts them in order 1, 2, 3, 4. Learn that order.</p></div>
         ` },
         { title: 'The paragraph map', html: `
-          <p class="lead">The slides add three headings, <b>Why this course?</b>, <b>Career goals</b> and <b>Why this university?</b>, and a <b>closing paragraph</b>. Put them together with the four parts and you get six paragraphs.</p>
+          <p class="lead">Besides the four parts, the slides give three headings (<b>Why this course?</b>, <b>Career goals</b>, <b>Why this university?</b>) and a <b>closing paragraph</b>. Fitted together with the four parts, they make six paragraphs.</p>
           <figure data-fig="m5-sop-structure-map"></figure>
           <ol class="steps">
             <li><b>Opening</b> anecdote, 2–3 lines of background, long-term goal (Part 1).</li>
@@ -141,34 +139,31 @@ CHUNK({
             <li><b>Career goals</b> what you will do with the degree and how you will contribute.</li>
             <li><b>Closing</b> your desire and readiness to join, ending on a positive note (Part 4c).</li>
           </ol>
-          <div class="note exam"><p>The CAT format uses only the first part of this map: <b>Opening</b>, <b>Academic Background and Achievements</b>, and <b>Reasons for Choosing B.Tech and Specific Program</b>. See "The CAT answer format" in the next topic.</p></div>
+          <div class="note exam"><p>The CAT format uses only three blocks, roughly the first, second and fourth paragraphs of this map: <b>Opening</b>, <b>Academic Background and Achievements</b>, and <b>Reasons for Choosing B.Tech and Specific Program</b>. See "The CAT answer format" in the next topic.</p></div>
         ` },
         { title: 'B.Tech, MS or MBA', html: `
           <p class="lead">The six paragraphs stay the same, but the <b>weight</b> shifts with the programme. Spend your words where your strongest evidence lies.</p>
           <table class="tbl">
             <thead><tr><th>Paragraph</th><th>B.Tech (from school)</th><th>MS / PhD</th><th>MBA</th></tr></thead>
             <tbody>
-              <tr><td>Academic background</td><td><b>Class 12</b> marks, science fairs, Olympiads, school projects</td><td><b>research</b>, thesis, papers, CGPA</td><td>degree, scholarships, short</td></tr>
-              <tr><td>Recent activities</td><td>clubs, coding, self-study (often merged)</td><td>internships, research assistant work</td><td><b>work experience</b>: the longest paragraph</td></tr>
-              <tr><td>Why this course</td><td>branch, curriculum, labs</td><td>research area, a <b>question</b> to explore, named professors</td><td>courses that fill your skill gap</td></tr>
-              <tr><td>Career goals</td><td>the engineer you want to become</td><td>research or industry role</td><td>short- and long-term business goal</td></tr>
+              <tr><td>Academic background</td><td><b>Class 12</b> marks, science fairs, Olympiads, projects</td><td><b>research</b>, thesis, papers, CGPA</td><td>degree, scholarships (keep short)</td></tr>
+              <tr><td>Recent activities</td><td>clubs, coding, self-study (often merged)</td><td>internships, research assistantships</td><td><b>work experience</b> (longest paragraph)</td></tr>
+              <tr><td>Why this course</td><td>branch, curriculum, labs</td><td>research area, a <b>question</b>, named professors</td><td>courses that fill a skill gap</td></tr>
+              <tr><td>Career goals</td><td>the engineer you want to become</td><td>research or industry role</td><td>short- and long-term business goals</td></tr>
             </tbody>
           </table>
-          <div class="note heads-up"><p>Not on the slides as a table: it combines the slides' four parts with what the course's samples do (the CAT format and the slide samples are for B.Tech; the other samples are for MS, engineering graduate study and MBA).</p></div>
+          <div class="note heads-up"><p>Not on the slides: this table combines the slides' four parts with what the course's samples do. The CAT format and the slide samples are for B.Tech; the other samples are for MS, engineering graduate study and MBA.</p></div>
           <div class="note example"><p>The course's MBA sample spends most of its words on work: telecom projects abroad, two team awards and a lab set up in one month instead of three. That is the right weight for an MBA. A B.Tech applicant has no such record, so the school project and the Class 12 results carry the load.</p></div>
         ` },
         { title: 'Gathering material', html: `
           <p class="lead">The course <b>SoP Worksheet</b> is a set of questions to answer <b>before</b> you draft. Each section feeds one paragraph.</p>
-          <table class="tbl">
-            <thead><tr><th>Worksheet section</th><th>Questions it asks</th><th>Feeds</th></tr></thead>
-            <tbody>
-              <tr><td><b>Writing about the course</b></td><td>Why this course? Why does the subject interest you, with <b>evidence you understand what it requires</b>? Why are you suitable? Do your studies relate to it? What other activities show your interest?</td><td>opening, why this course</td></tr>
-              <tr><td><b>Skills and achievements</b></td><td>Skills that help on the course or in university life, accredited or non-accredited; achievements you are proud of; <b>positions of responsibility</b> in and out of school; what makes you interesting, special or unique</td><td>academic background</td></tr>
-              <tr><td><b>Hobbies and interests</b></td><td>List them, then ask what they show about your <b>personality, skills and abilities</b>, and link them to the course</td><td>background (one line)</td></tr>
-              <tr><td><b>Work experience</b></td><td>Jobs or <b>voluntary work</b>, linked to skills the course needs</td><td>recent activities</td></tr>
-              <tr><td><b>Future plans</b></td><td>How you will use what you learn; how the course relates to what you want to do</td><td>career goals</td></tr>
-            </tbody>
-          </table>
+          <ul>
+            <li><b>Writing about the course</b>: Why this course? Why does the subject interest you, with <b>evidence that you understand what it requires</b>? Why are you suitable? Do your studies relate to it? What other activities show your interest? <em>Feeds the opening and "why this course".</em></li>
+            <li><b>Skills and achievements</b>: skills that will help on the course or in university life, accredited or not; achievements you are proud of; <b>positions of responsibility</b> in and out of school; what makes you interesting, special or unique. <em>Feeds the academic background.</em></li>
+            <li><b>Hobbies and interests</b>: list them, then ask what they show about your <b>personality, skills and abilities</b>, and link them to the course. <em>Feeds one line of the background.</em></li>
+            <li><b>Work experience</b>: jobs or <b>voluntary work</b>, linked to skills the course needs. <em>Feeds recent activities.</em></li>
+            <li><b>Future plans</b>: how you will use what you learn, and how the course relates to what you want to do. <em>Feeds career goals.</em></li>
+          </ul>
           <div class="note example"><p>The worksheet's own example: someone applying for psychology should show they know <b>how scientific</b> the subject is. For you: an ECE applicant should show they know the branch is maths and circuits, far more than phones and gadgets.</p></div>
           <div class="note trap"><p>A hobby earns a place only if you link it to the course. "I play chess" is filler; "Chess taught me to plan six moves ahead, which is how I now approach debugging" is evidence.</p></div>
         ` },
@@ -226,10 +221,7 @@ CHUNK({
         { title: 'The opening', html: `
           <p class="lead">The first paragraph does three jobs the slides list: connect your <b>long-term goal</b> to the course, give your <b>background in 2–3 lines</b>, and tell the <b>anecdote</b> that made you realise your interest.</p>
           <p>The slides' sample opening says the writer has been fascinated since childhood by how technology shapes life, that curiosity and a flair for science and maths led to engineering, and that a B.Tech at "your esteemed institution" is the ideal stepping stone. It has the right skeleton (interest, background, course), but no anecdote and no detail: any applicant could sign it. Use it as a frame, not as your text.</p>
-          <div class="vs">
-            <div class="side"><h4>Weak</h4><p>"From my childhood I have been passionate about technology. I am a hardworking student with a keen interest in science. I believe your esteemed institution is the best place for me."</p><p><small>Tells, no anecdote, no goal, no named course.</small></p></div>
-            <div class="side"><h4>Strong</h4><p>"When I was fourteen, our water pump kept burning out. I opened the starter box with my uncle, an electrician, and found a relay clicking on and off. Tracing that one fault showed me that every machine has a logic you can read."</p><p><small>A real moment, and it leads somewhere.</small></p></div>
-          </div>
+          <p>Copy that frame too closely and you get a typical weak opening: "From my childhood I have been passionate about technology. I am a hardworking student with a keen interest in science. I believe your esteemed institution is the best place for me." It tells instead of showing, with no anecdote, no goal and no named course. Meera's opening below starts from a real moment that leads somewhere.</p>
           <div class="worked">
             <div class="given"><p><b>Task</b>: the opening paragraph for Meera, applying for <b>B.Tech ECE at VIT</b>. Her notes: the pump story; Physics, Chemistry, Maths and Computer Science in Class 12; school electronics club; wants to design low-cost sensors for farms.</p></div>
             <div class="solve"><p>Anecdote first (2–3 sentences) → what it taught her → background in two lines → goal → the course.</p></div>
@@ -240,10 +232,7 @@ CHUNK({
         { title: 'Academic background', html: `
           <p class="lead">This paragraph (Part 2) highlights your <b>academic journey</b>: relevant coursework, achievements and projects, with any <b>awards, scholarships or competitions</b>.</p>
           <p>The slides' B.Tech sample fills blanks: Class 12 marks and specialisation, ranking among the top of the class, <b>science fairs</b> and <b>engineering Olympiads</b>, a project that earned an award, and how it deepened interest in a field and built <b>problem-solving</b> and <b>teamwork</b>. For a graduate applicant, Part 2 adds <b>research</b> (with whom, title, responsibilities, outcome), a <b>paper or thesis</b>, and <b>work experience</b> in a similar area.</p>
-          <div class="vs">
-            <div class="side"><h4>Weak</h4><p>"I have always been a topper. I took part in many competitions and won many prizes, which improved my skills a lot."</p><p><small>Which competitions? Which skills? No numbers.</small></p></div>
-            <div class="side"><h4>Strong</h4><p>"In the CBSE Class 12 examinations I scored 94%, with 98 in Physics. My Arduino soil-moisture alarm won first prize at the district science exhibition."</p><p><small>Marks, a named project, a named result.</small></p></div>
-          </div>
+          <p>A typical weak version: "I have always been a topper. I took part in many competitions and won many prizes, which improved my skills a lot." Which competitions? Which skills? There are no numbers. Meera's paragraph below gives marks, a named project and a named result.</p>
           <div class="worked">
             <div class="given"><p><b>Task</b>: Meera's academic paragraph. Facts: 94% in Class 12 (98 in Physics), in the top five of her class; soil-moisture alarm, first prize at the district exhibition; National Science Olympiad participant.</p></div>
             <div class="solve"><p>Result with numbers → the project, what it did, what it won → what it taught her → link to the branch.</p></div>
@@ -254,10 +243,7 @@ CHUNK({
         { title: 'Reasons for the programme', html: `
           <p class="lead">Why this course, and why this university? Name what in the <b>curriculum</b>, the <b>courses</b>, the <b>faculty</b> or the <b>research</b> matches your interest, and show you have <b>researched the department</b>.</p>
           <p>The slides' sample says the programme's curriculum focus aligns with what the writer wants to study in depth, names courses on the latest advances, and names a professor whose expertise adds to the writer's enthusiasm. Part 4 asks for more: pose a <b>question</b> or <b>problem</b> you want to address.</p>
-          <div class="vs">
-            <div class="side"><h4>Weak</h4><p>"VIT is a reputed university with excellent infrastructure and placements. That is why I want to study there."</p><p><small>True of many universities, and all about what you get.</small></p></div>
-            <div class="side"><h4>Strong</h4><p>"The ECE curriculum's mix of circuit theory and embedded systems, and the chance to choose my own electives, fit my plan to build farm sensors."</p><p><small>Named features linked to your goal.</small></p></div>
-          </div>
+          <p>A typical weak version: "VIT is a reputed university with excellent infrastructure and placements. That is why I want to study there." That is true of many universities, and it is all about what you get. A strong version names features of the programme and links them to your goal, as Meera's paragraph below does.</p>
           <div class="worked">
             <div class="given"><p><b>Task</b>: Meera's reasons paragraph. From the department website: VIT's flexible credit system lets students choose courses and faculty; ECE offers embedded systems and IoT electives; there are student technical clubs.</p></div>
             <div class="solve"><p>Name the programme → two features tied to her interest → a question she wants to explore → people or labs she wants to learn from.</p></div>
@@ -267,29 +253,23 @@ CHUNK({
         ` },
         { title: 'Future goals and contribution', html: `
           <p class="lead">State your <b>long-term vision</b>, how the programme will <b>equip</b> you to reach it, and how you will <b>contribute</b> to the field and to society.</p>
-          <p>The slides' sample: an ultimate goal to become a certain professional and contribute to a certain development; the programme's rigorous foundation and practical exposure will give the skills; a wish to explore how one technology can address one problem. Its second half praises the writer (dedication, analytical skills, collaborative spirit, a valuable asset) and promises ethical values and social responsibility. Keep the first half. Replace the self-praise with <b>one piece of evidence</b>, as tip 3 (show, don't tell) asks.</p>
-          <div class="vs">
-            <div class="side"><h4>Weak</h4><p>"My goal is to become a successful engineer and make my parents and my country proud."</p><p><small>Successful at what? Every applicant wants this.</small></p></div>
-            <div class="side"><h4>Strong</h4><p>"I want to design sensors that cost under ₹500 per acre, and to start with the millet farms around my home town in Tamil Nadu."</p><p><small>A specific goal with a place and a number.</small></p></div>
-          </div>
+          <p>The slides' sample states an ultimate goal (to become a certain professional and contribute to a certain development), says the programme's rigorous foundation and practical exposure will give the skills, and names a wish to explore how one technology can address one problem. Its second half praises the writer (dedication, analytical skills, collaborative spirit, a valuable asset) and promises ethical values and social responsibility. Keep the first half, and replace the self-praise with <b>one piece of evidence</b>, as tip 3 (show, don't tell) asks.</p>
+          <p>A typical weak version: "My goal is to become a successful engineer and make my parents and my country proud." Successful at what? Every applicant wants this. Meera's goal below has a place and a number.</p>
           <div class="worked">
             <div class="given"><p><b>Task</b>: Meera's goals paragraph, linking the degree to her plan.</p></div>
             <div class="solve"><p>Short-term goal → long-term goal → what the course gives → who benefits.</p></div>
-            <div class="result"><p>After my degree I want to work as a hardware design engineer on sensor products, so that I learn how a device goes from a prototype to ten thousand units. In the long run I plan to build soil and weather sensors that cost less than ₹500 per acre, starting with the millet farms around my home town. A strong base in circuits, communication systems and embedded programming is exactly what that needs, and farmers who cannot afford today's imported systems are the people it would serve.</p></div>
+            <div class="result"><p>After my degree I want to work as a hardware design engineer on sensor products, so that I learn how a device goes from a prototype to ten thousand units. In the long run I plan to build soil and weather sensors that cost less than ₹500 per acre, starting with the millet farms around my home town in Tamil Nadu. A strong base in circuits, communication systems and embedded programming is exactly what that needs, and farmers who cannot afford today's imported systems are the people it would serve.</p></div>
           </div>
           <div class="note why"><p>A specific goal makes the rest of the SoP believable. Once the reader knows you want farm sensors, the soil-moisture project and the embedded systems electives stop looking like random facts.</p></div>
         ` },
         { title: 'The conclusion', html: `
           <p class="lead">The closing paragraph concludes your <b>desire and readiness</b> to join. You should sound <b>focused</b> and <b>prepared for the challenges</b> ahead, with the <b>zest to succeed</b>, and show that with this course and university you will <b>make a difference</b> in your industry, globally.</p>
           <p>Part 4c says the same thing: <b>end positively</b>, with excitement and readiness. The slides' sample conclusion thanks the committee for considering the application, says the writer's background, passion and commitment make a strong candidate, and says they eagerly await the chance to join.</p>
-          <div class="vs">
-            <div class="side"><h4>Weak</h4><p>"I hope I will get admission. I would be grateful if you give me a seat with financial assistance."</p><p><small>Pleading, and money is not the subject of an SoP.</small></p></div>
-            <div class="side"><h4>Strong</h4><p>"I know the first year will be demanding, and I have already started learning C to be ready for it. I look forward to joining VIT."</p><p><small>Readiness, backed by an action, then a forward-looking end.</small></p></div>
-          </div>
+          <p>A typical weak version: "I hope I will get admission. I would be grateful if you give me a seat with financial assistance." It pleads, and money is not the subject of an SoP. A strong closing shows readiness, backs it with an action, and ends looking forward, as Meera's does below.</p>
           <div class="worked">
             <div class="given"><p><b>Task</b>: Meera's closing, three or four sentences.</p></div>
             <div class="solve"><p>Readiness (with proof) → return to the goal from the opening → a positive last line.</p></div>
-            <div class="result"><p>I know an engineering degree will be demanding, and I have already started teaching myself C and circuit simulation to be ready for the first semester. The boy who helped me fix a water pump now runs his own electrical shop; I want to build the kind of device he could sell to every farmer who walks in. I look forward to joining the ECE programme at VIT and to starting that work.</p></div>
+            <div class="result"><p>I know an engineering degree will be demanding, and I have already started teaching myself C and circuit simulation to be ready for the first semester. My uncle, who helped me fix that water pump, runs an electrical shop; I want to build the kind of device he could sell to every farmer who walks in. I look forward to joining the ECE programme at VIT and to starting that work.</p></div>
           </div>
           <div class="note heads-up"><p>Not on the slides: requests for financial aid belong in the scholarship form, not in the SoP's last line. Two course samples (MS and engineering) end on "I hope I will get admission" or a request for financial assistance; neither sounds ready.</p></div>
         ` },
@@ -359,44 +339,32 @@ CHUNK({
             <li><b>Continuity and focus</b> everything linked.</li>
             <li><b>Concise</b> about 500–1000 well-selected words.</li>
           </ol>
-          <table class="tbl">
-            <thead><tr><th>They look for</th><th>What shows it</th><th>Example</th></tr></thead>
-            <tbody>
-              <tr><td><b>Self-motivation</b></td><td>things you did that nobody asked you to do</td><td>taught yourself Python from free videos and built a quiz app</td></tr>
-              <tr><td><b>Competence</b></td><td>results you can name</td><td>98 in Physics; first prize at the district exhibition</td></tr>
-              <tr><td><b>Potential</b></td><td>a clear question or goal the course will grow</td><td>"how cheap can a reliable sensor network get?"</td></tr>
-            </tbody>
-          </table>
+          <p>What shows each of the three:</p>
+          <ul>
+            <li><b>Self-motivation</b>: things you did that nobody asked you to do, such as teaching yourself Python from free videos and building a quiz app.</li>
+            <li><b>Competence</b>: results you can name, such as 98 in Physics or first prize at the district exhibition.</li>
+            <li><b>Potential</b>: a clear question or goal that the course will develop, such as "how cheap can a reliable sensor network get?"</li>
+          </ul>
           <div class="note why"><p>No one writes "I am self-motivated" and gets believed. Tips 2 to 6 are the ways you let the reader reach that conclusion alone.</p></div>
         ` },
         { title: 'Positive, active voice', html: `
           <p class="lead">Tip 2: emphasise everything from a <b>positive perspective</b> and write in the <b>active voice</b>. The active voice puts <b>you</b> at the front of the sentence, doing the action.</p>
-          <div class="vs">
-            <div class="side"><h4>Passive</h4><p>"I was given the responsibility of organising the tech fest."</p></div>
-            <div class="side"><h4>Active</h4><p>"I organised the school tech fest for 600 students."</p></div>
-          </div>
-          <div class="vs">
-            <div class="side"><h4>Passive</h4><p>"The project was completed by our team in two weeks."</p></div>
-            <div class="side"><h4>Active</h4><p>"Our team of four completed the project in two weeks."</p></div>
-          </div>
-          <div class="vs">
-            <div class="side"><h4>Negative</h4><p>"I could not get a good JEE rank, so I am applying here."</p><p><small>Makes VIT sound like a fallback.</small></p></div>
-            <div class="side"><h4>Positive</h4><p>"I am applying to VIT because its flexible credit system lets me shape my own ECE degree."</p></div>
-          </div>
+          <ul>
+            <li><em>Passive</em>: "I was given the responsibility of organising the tech fest."<br><em>Active</em>: "I organised the school tech fest for 600 students."</li>
+            <li><em>Passive</em>: "The project was completed by our team in two weeks."<br><em>Active</em>: "Our team of four completed the project in two weeks."</li>
+            <li><em>Negative</em>: "I could not get a good JEE rank, so I am applying here." This makes VIT sound like a fallback.<br><em>Positive</em>: "I am applying to VIT because its flexible credit system lets me shape my own ECE degree."</li>
+          </ul>
           <div class="note heads-up"><p>Not on the slides: a quick test from Module 2 (voice). A passive has a form of <b>be</b> plus a past participle (was given, were selected, is being done). Ask "who did it?" If the answer is you, rewrite with "I" as the subject.</p></div>
           <div class="note trap"><p>Some passives are fine when someone else really acted: "I was selected for the state team" is honest, since the selectors chose you. The problem is hiding your own work behind "was done".</p></div>
         ` },
         { title: 'Show, don\'t tell', html: `
           <p class="lead">Tip 3: <b>demonstrate everything by example</b>. Don't say directly that you are a persistent person; <b>show it</b>, and let the reader draw the conclusion.</p>
           <figure data-fig="m5-sop-show-tell"></figure>
-          <table class="tbl">
-            <thead><tr><th>Tells</th><th>Shows</th></tr></thead>
-            <tbody>
-              <tr><td>I am a natural leader.</td><td>I captained the school quiz team and trained two juniors who won the next year.</td></tr>
-              <tr><td>I am passionate about coding.</td><td>I have solved 300 problems on an online judge since Class 10.</td></tr>
-              <tr><td>I am good at teamwork.</td><td>Our five-member team split the robot into drive, sensors and code, and met every Friday to merge.</td></tr>
-            </tbody>
-          </table>
+          <ul>
+            <li><em>Tells</em>: "I am a natural leader."<br><em>Shows</em>: "I captained the school quiz team and trained two juniors who won the next year."</li>
+            <li><em>Tells</em>: "I am passionate about coding."<br><em>Shows</em>: "I have solved 300 problems on an online judge since Class 10."</li>
+            <li><em>Tells</em>: "I am good at teamwork."<br><em>Shows</em>: "Our five-member team split the robot into drive, sensors and code, and met every Friday to merge."</li>
+          </ul>
           <div class="note example"><p>The course's UG sample calls its writer "a natural leader" who "delivered exceptional results". The MBA sample shows instead: a team of five engineers, a lab promised in three months, finished in one. Only the second convinces.</p></div>
           <div data-viz="show-dont-tell"></div>
         ` },
@@ -422,8 +390,7 @@ CHUNK({
             <div><span>Fixed limits some universities set</span><b>500 words</b>, even <b>200</b></div>
             <div><span>Page format</span><b>single-spaced</b>, <b>12-point</b> font</div>
           </div>
-          <p>The length slide adds that the length varies with <b>university-specific requirements</b>, and that most universities accept the generic 800–1000 words.</p>
-          <div class="note heads-up"><p>The two slides differ a little: tip 6 says roughly 500–1000 words, the length slide says ideally 800–1000. They agree on the rule that matters: the <b>programme's own limit</b> comes first. When there is none, 800–1000 words on 1–2 pages is safe.</p></div>
+          <p>The length slide adds that the length varies with <b>university-specific requirements</b>, and that most universities accept the generic 800–1000 words. So the two slides differ a little (tip 6 says roughly 500–1000, the length slide ideally 800–1000), but they agree on the rule that matters: the <b>programme's own limit</b> comes first. When there is none, 800–1000 words on 1–2 pages is safe.</p>
           <div class="note heads-up"><p>Not on the slides: the CAT sets its own length. Written out with real details, the three-block CAT format comes to about 200–350 words. If the paper gives a limit, stay inside it; going over is the same mistake as ignoring a university's limit.</p></div>
           <div class="note why"><p>A limit is a test. Cutting to 500 words forces you to keep only the evidence that serves your thread, and the committee sees that you can choose.</p></div>
         ` },
@@ -495,15 +462,13 @@ CHUNK({
             <li><b>Continuity</b> one thread, or a list?</li>
             <li><b>Correctness</b> grammar, spelling, and nothing that is not part of an SoP.</li>
           </ol>
-          <table class="tbl">
-            <thead><tr><th>Sample</th><th>Best feature</th><th>Biggest problem</th></tr></thead>
-            <tbody>
-              <tr><td>MS Computer Science</td><td>a concrete final-year project with numbers</td><td>two paragraphs about <b>Steve Jobs</b>, not the writer</td></tr>
-              <tr><td>Engineering graduate</td><td>named research interest; leadership record</td><td><b>repeated sentence</b>; asks for financial aid</td></tr>
-              <tr><td>UG, car design</td><td>vivid anecdote, clear goal</td><td><b>run-on sentences</b> and errors; telling</td></tr>
-              <tr><td>MBA, rural telecom</td><td>goal-first opening; the WIMAX lab story</td><td><b>website text</b> pasted in; no closing</td></tr>
-            </tbody>
-          </table>
+          <h3>The four samples at a glance</h3>
+          <ul>
+            <li><b>MS Computer Science.</b> Best feature: a concrete final-year project with numbers. Biggest problem: two paragraphs about <b>Steve Jobs</b> instead of the writer.</li>
+            <li><b>Engineering graduate.</b> Best feature: a named research interest and a leadership record. Biggest problem: a <b>repeated sentence</b>, and a request for financial aid.</li>
+            <li><b>UG, car design.</b> Best feature: a vivid anecdote and a clear goal. Biggest problem: <b>run-on sentences</b>, errors and telling.</li>
+            <li><b>MBA, rural telecom.</b> Best feature: a goal-first opening and the WIMAX lab story. Biggest problem: <b>website text</b> pasted in, and no closing.</li>
+          </ul>
         ` },
         { title: 'MS: Computer Science', html: `
           <p class="lead">An applicant for the <b>MS in Computer Science</b> at the <b>University of Melbourne</b> (the sample names her Narmada Rao).</p>
