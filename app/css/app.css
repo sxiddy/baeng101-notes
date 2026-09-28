@@ -1126,3 +1126,9 @@ a.syl-name:hover { text-decoration: underline; }
 body.open-mode [href="#battle"], body.open-mode [data-act="help"], body.open-mode [data-act="ideas"],
 body.open-mode .sb-label:has(+ [data-act="ideas"]) { display: none !important; }
 .continue .btn { max-width: 100%; white-space: normal; text-align: left; height: auto; min-height: 44px; padding-top: 10px; padding-bottom: 10px; }
+
+/* owner's temporary offer: FREE ~~₹30~~ / ₹10 ~~₹30~~ */
+.offer-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; margin: 18px 0 4px; padding: 10px 14px; border: 1px solid color-mix(in srgb, var(--warn) 55%, transparent); border-radius: 12px; background: color-mix(in srgb, var(--warn) 9%, var(--bg-2)); }
+.offer-price { font-family: var(--mono); font-weight: 600; font-size: 18px; letter-spacing: 0.04em; color: var(--white); }
+.offer-line .was, .lock-card .was { color: var(--text-dim); font-size: 15px; }
+.offer-text { font-size: 14px; color: var(--text); }

@@ -65,7 +65,7 @@ module.exports = handle(async (req, res) => {
     }
     if (a === 'set-sale') {
       const rs = Number(b.rupees), hours = Number(b.hours);
-      if (!Number.isInteger(rs) || rs < 1 || rs > 5000) return send(res, 400, { error: 'Enter a whole number of rupees, from 1 to 5000.' });
+      if (!Number.isInteger(rs) || rs < 0 || rs > 5000) return send(res, 400, { error: 'Enter a whole number of rupees, from 0 (free) to 5000.' });
       if (!(hours > 0 && hours <= 24 * 60)) return send(res, 400, { error: 'Pick how long the offer lasts (up to 60 days).' });
       const until = Date.now() + Math.round(hours * 3600e3);
       const text = String(b.text || '').split('').filter((ch) => ch.charCodeAt(0) >= 32).join('').trim().slice(0, 140);

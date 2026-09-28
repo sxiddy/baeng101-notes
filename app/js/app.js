@@ -679,6 +679,15 @@ window.__startApp = function () {
     </a>`;
   }
 
+  // ---------------------------------------------------------------- offer (owner's temporary price; ₹0 = FREE)
+  const SALE = window.SITE_SALE && window.SITE_SALE.until > Date.now() ? window.SITE_SALE : null;
+  const endsIST = (ms) => { const x = new Date(ms + 5.5 * 3600e3), hh = x.getUTCHours(); return String(x.getUTCDate()).padStart(2, '0') + '-' + String(x.getUTCMonth() + 1).padStart(2, '0') + '-' + x.getUTCFullYear() + ' ' + String(hh % 12 || 12).padStart(2, '0') + ':' + String(x.getUTCMinutes()).padStart(2, '0') + (hh < 12 ? ' AM' : ' PM'); };
+  const priceTag = () => (SALE ? `${SALE.rs === 0 ? 'FREE' : '₹' + SALE.rs} <s class="was">₹${SALE.was}</s>` : `₹${PRICE_RS}`);
+  function offerLine() {
+    if (!SALE) return '';
+    return `<div class="offer-line"><span class="offer-price">${SALE.rs === 0 ? 'FREE' : '₹' + SALE.rs}</span><s class="was">₹${SALE.was}</s><span class="offer-text">${SALE.text ? esc(SALE.text) + ' · ' : ''}${SALE.rs === 0 ? 'Everything is open' : 'Full access'} until ${endsIST(SALE.until)} IST</span></div>`;
+  }
+
   // ---------------------------------------------------------------- home
   function viewHome() {
     setCrumbs([{ t: 'Home' }]); setActive('home'); document.title = 'BAENG101 Notes';
@@ -693,6 +702,7 @@ window.__startApp = function () {
         <h1 class="h-display">${words.map((w, i) => `<span class="w" style="--i:${i}">${w}</span>`).join(' ')}</h1>
         <p class="blurb">The CAT-2 portion, rebuilt as short tabbed notes with clear diagrams${nViz ? `, ${nViz} interactive exercises` : ''} and ${QS.length} questions that make you use what you read. White text is what you must remember. Everything else is there so it makes sense.</p>
         <p class="credit">Based on the BAENG101 Technical English Communication course material taught at VIT (textbook: Lannon &amp; Gurak, <em>Technical Communication</em>). The notes, diagrams, questions and interactive exercises are written and drawn for this site; short quoted examples are credited to their sources. <a href="privacy.html">Privacy</a></p>
+        ${offerLine()}
         <div class="stat-line"><span class="stat-big">${d}/${n}</span><span class="muted">topics done</span><div class="bar"><i style="width:${n ? (d / n) * 100 : 0}%"></i></div><button class="btn small" data-act="share">${icon('share')}Share progress</button></div>
         <div class="study-line">${icon('fire')}<span><b>${streakDays()}</b> day${streakDays() === 1 ? '' : 's'} in a row</span><span class="dot">·</span><span><b>${fmtDur(todaySecs())}</b> today</span><span class="dot">·</span><span><b>${fmtDur(totalSecs())}</b> in total</span></div>
         ${last ? `<div class="continue"><a class="btn primary" href="${last.hash}">Continue: ${rt(last.title)} ${icon('right')}</a></div>` : (TOPICS[0] ? `<div class="continue"><a class="btn primary" href="#${TOPICS[0].id}">Start with ${rt(TOPICS[0].title)} ${icon('right')}</a></div>` : '')}
@@ -712,7 +722,7 @@ window.__startApp = function () {
         <section class="mod-sec">
           <div class="mod-head"><span class="mod-num">Module ${m.num}</span><h2 class="h-sec">${esc(m.title)}</h2><span class="count">${icon('lock')} locked</span></div>
           <p class="mod-syl">${esc(m.syllabus)}</p>
-          <a class="lock-card" href="#unlock"><span class="lock-ico">${icon('lock')}</span><div><strong>Unlock ${lockedNames()} for ₹${PRICE_RS}</strong><p>Notes, diagrams, interactive exercises, questions, quiz, flashcards and summary. One-time UPI payment.</p></div><span class="arrow">${icon('right')}</span></a>
+          <a class="lock-card" href="#unlock"><span class="lock-ico">${icon('lock')}</span><div><strong>Unlock ${lockedNames()} for ${priceTag()}</strong><p>Notes, diagrams, interactive exercises, questions, quiz, flashcards and summary. One-time UPI payment.</p></div><span class="arrow">${icon('right')}</span></a>
         </section>`).join('')}
       <section class="mod-sec">
         <div class="mod-head"><h2 class="h-sec">Practice</h2></div>

@@ -238,6 +238,7 @@
       price = S.price || price;
       window.PRICE_RS = Math.round(price / 100);
       window.SITE_BANNER = S.banner || null;
+      window.SITE_SALE = S.sale && S.normalPrice ? { rs: Math.round(S.sale.price / 100), was: Math.round(S.normalPrice / 100), until: S.sale.until, text: S.sale.text || '' } : null;
       window.SIGNED_IN_AS = S.user || null;
       // Google sign-in switched off by the owner (/stats.html): no sign-in; paid modules stay locked unless the site is free
       if (S.open && !S.user) { document.body.classList.add('open-mode'); return start(!!S.paid, Array.isArray(S.modules) ? S.modules : null); }
