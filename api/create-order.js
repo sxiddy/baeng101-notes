@@ -9,7 +9,7 @@ module.exports = handle(async (req, res) => {
   if (!Number.isInteger(price) || price < 100) return send(res, 500, { error: 'The price must be at least ₹1.' });
   const order = await razorpay('POST', '/orders', {
     amount: price, currency: 'INR', receipt: 'bn_' + Date.now().toString(36),
-    notes: { product: 'bachy105-notes', email: u.e },
+    notes: { product: 'baeng101-notes', email: u.e },
   });
   send(res, 200, { order_id: order.id, orderId: order.id, amount: order.amount, currency: order.currency, keyId: env('RAZORPAY_KEY_ID'), email: u.e });
 });

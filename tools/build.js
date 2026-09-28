@@ -12,7 +12,7 @@ const PDATA = path.join(ROOT, 'protected', 'data');
 const PIMG = path.join(ROOT, 'protected', 'img');
 const CONTENT = path.join(ROOT, 'content');
 
-const TITLE = 'BACHY105 Notes';
+const TITLE = 'BAENG101 Notes';
 const FONTS = 'https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap';
 
 fs.mkdirSync(PDATA, { recursive: true });
@@ -23,18 +23,16 @@ const order = (f) => (f.startsWith('chunk-') ? 0 : f.startsWith('q-') ? 1 : f.st
 const contentFiles = fs.readdirSync(CONTENT).filter((f) => /^(chunk|q|summary)-[A-Za-z0-9]+\.js$/.test(f)).sort((a, b) => order(a) - order(b) || a.localeCompare(b));
 for (const f of contentFiles) fs.copyFileSync(path.join(CONTENT, f), path.join(PDATA, f));
 
+// Every figure is the site's own drawing (figs-svg/<id>.svg, no slide images), copied to protected/img and
+// served by api/img.js; the app inlines each SVG so it follows dark and light mode.
 const dims = {};
-for (const f of fs.readdirSync(PIMG).filter((f) => /^manifest-.*\.json$/.test(f))) Object.assign(dims, JSON.parse(fs.readFileSync(path.join(PIMG, f), 'utf8')));
-// The site's own redrawn diagrams (figs-svg/<id>.svg) replace the cropped slide images, but only once every figure
-// is redrawn (figs-svg/READY), so a half-finished set is never served. They are copied next to the slide crops, and
-// api/img.js stops serving a crop once its drawing exists.
 const SVGSRC = path.join(ROOT, 'figs-svg');
 for (const f of fs.readdirSync(PIMG).filter((f) => /\.svg$/.test(f))) fs.unlinkSync(path.join(PIMG, f));
-if (fs.existsSync(path.join(SVGSRC, 'READY'))) {
+{
   for (const f of fs.readdirSync(SVGSRC).filter((f) => /^m\d+-[a-z0-9-]+\.svg$/.test(f))) {
     const id = f.slice(0, -4), svg = fs.readFileSync(path.join(SVGSRC, f), 'utf8');
     const vb = (svg.match(/viewBox="([^"]+)"/) || [])[1];
-    if (!vb || !dims[id]) continue;
+    if (!vb) continue;
     const [, , w, h] = vb.trim().split(/[\s,]+/).map(Number);
     dims[id] = { w: Math.round(w), h: Math.round(h), svg: 1 };
     fs.copyFileSync(path.join(SVGSRC, f), path.join(PIMG, f));
@@ -48,7 +46,7 @@ for (const f of paidViz) fs.copyFileSync(path.join(ROOT, 'viz-paid', f), path.jo
 
 // Modules (names, chunks, free or paid) come from content/modules.json — the one place to add a module.
 const MODULES = JSON.parse(fs.readFileSync(path.join(CONTENT, 'modules.json'), 'utf8'));
-const filesOf = (m) => [...m.chunks.map((c) => `chunk-${c}.js`), m.questions, `summary-${m.id}.js`].filter(Boolean);
+const filesOf = (m) => [...m.chunks.map((c) => `chunk-${c}.js`), ...[].concat(m.questions || []), `summary-${m.id}.js`].filter(Boolean);
 const FREE = MODULES.filter((m) => m.free).flatMap(filesOf);
 fs.writeFileSync(path.join(APP, 'js', 'modules.js'), `window.MODULES_CONFIG = ${JSON.stringify(MODULES.map(({ id, num, title, free, chunks, syllabus }) => ({ id, num, title, free, chunks, syllabus })))};\n`);
 // which module each paid file belongs to, so the owner can unlock a single module for someone
@@ -71,7 +69,7 @@ global.CHUNK = (c) => (c.topics || []).forEach((t) => {
   battle.topics[t.id] = [m.id, t.short || t.title];
   battle.cards[t.id] = (t.flashcards || []).map((f) => [f.front, f.back]);
 });
-for (const m of MODULES) for (const ch of m.chunks) { const p = path.join(CONTENT, `chunk-${ch}.js`); delete require.cache[p]; require(p); }
+for (const m of MODULES) for (const ch of m.chunks) { const p = path.join(CONTENT, `chunk-${ch}.js`); if (!fs.existsSync(p)) continue; delete require.cache[p]; require(p); }
 delete global.CHUNK;
 fs.writeFileSync(path.join(ROOT, 'api', '_battle.json'), JSON.stringify(battle) + '\n');
 
@@ -84,7 +82,7 @@ const html = `<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>${TITLE}</title>
-<meta name="description" content="Applied Chemistry (BACHY105) modules 2–4 as tabbed study notes with slide diagrams, interactive models and scenario questions.">
+<meta name="description" content="Technical English (BAENG101) CAT-2 topics as short tabbed study notes with diagrams, interactive exercises and scenario questions.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="${FONTS}">

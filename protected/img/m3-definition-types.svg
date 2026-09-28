@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 720">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 10 5 0 10z" class="dfd"/></marker></defs>
+  <rect x="10" y="10" width="580" height="150" rx="16" class="df" />
+  <rect x="10" y="10" width="8" height="150" rx="4" class="dfb"/>
+  <text x="38" y="50" font-size="22" class="dtb mono">1 · PARENTHETICAL</text>
+  <text x="572" y="50" font-size="22" text-anchor="end" class="dt3">least formal</text>
+  <text x="38" y="94" font-size="25" class="dt">The surgeon used a laser</text>
+  <text x="38" y="130" font-size="25" class="dt2">(a beam of intense light).</text>
+  <path d="M300 170v26" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+  <rect x="10" y="206" width="580" height="190" rx="16" class="df" />
+  <rect x="10" y="206" width="8" height="190" rx="4" class="dfo"/>
+  <text x="38" y="246" font-size="22" class="dto mono">2 · SENTENCE</text>
+  <text x="572" y="246" font-size="22" text-anchor="end" class="dt3">more formal</text>
+  <text x="38" y="292" font-size="25" class="dt">A laser is an electronic device</text>
+  <text x="38" y="328" font-size="25" class="dt">that emits a highly concentrated</text>
+  <text x="38" y="364" font-size="25" class="dt">beam of light.</text>
+  <path d="M300 406v26" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+  <rect x="10" y="442" width="580" height="268" rx="16" class="df" />
+  <rect x="10" y="442" width="8" height="268" rx="4" class="dfg"/>
+  <text x="38" y="482" font-size="22" class="dtg mono">3 · EXPANDED</text>
+  <text x="572" y="482" font-size="22" text-anchor="end" class="dt3">most formal</text>
+  <text x="38" y="528" font-size="25" class="dt">The sentence definition, then</text>
+  <text x="38" y="564" font-size="25" class="dt">a paragraph or more using</text>
+  <text x="38" y="600" font-size="25" class="dt">several methods:</text>
+  <rect x="38" y="626" width="150" height="46" rx="23" class="df3"/><text x="113" y="657" font-size="22" text-anchor="middle" class="dt2">etymology</text>
+  <rect x="200" y="626" width="112" height="46" rx="23" class="df3"/><text x="256" y="657" font-size="22" text-anchor="middle" class="dt2">parts</text>
+  <rect x="324" y="626" width="130" height="46" rx="23" class="df3"/><text x="389" y="657" font-size="22" text-anchor="middle" class="dt2">history</text>
+  <rect x="466" y="626" width="104" height="46" rx="23" class="df3"/><text x="518" y="657" font-size="22" text-anchor="middle" class="dt2">uses</text>
+</svg>

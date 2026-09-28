@@ -1,4 +1,4 @@
-/* BACHY105 Notes — app shell. Vanilla JS, no build step. Started by gate.js once the notes are unlocked. */
+/* BAENG101 Notes — app shell. Vanilla JS, no build step. Started by gate.js once the notes are unlocked. */
 window.__startApp = function () {
   'use strict';
   const D = window.DATA || { chunks: [], questions: [], summaries: {}, figs: {} };
@@ -49,6 +49,8 @@ window.__startApp = function () {
     q: '<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6v.6"/><path d="M12 17.2v.1"/>',
     quiz: '<path d="M10 6h10M10 12h10M10 18h10"/><path d="m3.5 6 1.5 1.5L7.5 5M3.5 12l1.5 1.5 2.5-2.5M3.5 18l1.5 1.5 2.5-2.5"/>',
     sigma: '<path d="M18 5H6l6 7-6 7h12"/>',
+    rules: '<path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 12h7M9 16h7"/>',
+    puzzle: '<path d="M4 8h3.5a2 2 0 1 1 4 0H15v3.5a2 2 0 1 1 0 4V20H4z"/>',
     flask: '<path d="M9 3h6M10 3v6L4.5 18.5A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-2.5L14 9V3"/><path d="M7.5 15h9"/>',
     pen: '<path d="m4 20 4-1 11-11-3-3L5 16z"/><path d="m14 7 3 3"/>',
     x: '<path d="M6 6l12 12M18 6 6 18"/>',
@@ -85,7 +87,7 @@ window.__startApp = function () {
   const icon = (n, cls) => `<svg class="i${cls ? ' ' + cls : ''}" viewBox="0 0 24 24" aria-hidden="true">${P[n] || ''}</svg>`;
 
   // ================================================================ store
-  const KEY = 'bachy105-notes:v1';
+  const KEY = 'baeng101-notes:v1';
   function blank() { return { visited: {}, done: {}, tags: {}, notes: {}, hl: {}, q: {}, cards: {}, confusing: {}, study: {}, syl: {}, last: null, ui: { closed: {}, lastTab: {} } }; }
   function normalize(s) {
     const b = blank();
@@ -222,7 +224,7 @@ window.__startApp = function () {
     const inner = h('div', { class: 'sb-inner' });
     inner.innerHTML = `
       <div class="sb-head">
-        <a class="brand" href="#home"><span class="brand-code">BACHY105</span><span class="brand-title">Applied Chemistry</span></a>
+        <a class="brand" href="#home"><span class="brand-code">BAENG101</span><span class="brand-title">Technical English</span></a>
         <button class="icon-btn" data-act="sidebar" title="Collapse sidebar ( [ )" aria-label="Collapse sidebar">${icon('side')}</button>
       </div>
       <button class="sb-search" data-act="search">${icon('search')}<span>Search notes</span><kbd>${isMac ? '⌘' : 'Ctrl'} K</kbd></button>
@@ -262,8 +264,8 @@ window.__startApp = function () {
         </div>
         <a class="sb-link" href="#quiz" data-key="quiz">${icon('quiz')}<span>Quiz</span><span class="count">${QS.filter((q) => q.options).length}</span></a>
         <a class="sb-link" href="#cards" data-key="cards">${icon('cards')}<span>Flashcards</span><span class="count">${CARDS.length}</span></a>
-        <a class="sb-link" href="#formulas" data-key="formulas">${icon('sigma')}<span>Formula sheet</span></a>
-        <a class="sb-link" href="#lab" data-key="lab">${icon('flask')}<span>Lab bench</span><span class="count" data-labcount></span></a>
+        <a class="sb-link" href="#formulas" data-key="formulas">${icon('rules')}<span>Rules & templates</span></a>
+        <a class="sb-link" href="#lab" data-key="lab">${icon('puzzle')}<span>Practice lab</span><span class="count" data-labcount></span></a>
         <a class="sb-link" href="#mine" data-key="mine">${icon('pen')}<span>Highlights & notes</span></a>
         <a class="sb-link" href="#battle" data-key="battle">${icon('swords')}<span>1v1 Quiz battle</span></a>
         <div class="sb-label">Exams</div>
@@ -493,11 +495,11 @@ window.__startApp = function () {
   }
 
   // ================================================================ content hydration
-  const NOTE_LABEL = { why: ['bulb', 'Why it works'], exam: ['exam', 'Exam angle'], trap: ['warn', 'Common trap'], 'heads-up': ['info', 'Heads-up: slide vs textbook'], example: ['ex', 'Example'] };
+  const NOTE_LABEL = { why: ['bulb', 'Why it works'], exam: ['exam', 'Exam angle'], trap: ['warn', 'Common trap'], 'heads-up': ['info', 'Heads-up'], example: ['ex', 'Example'] };
   function srcLabel(src) {
     const m = String(src || '').match(/\/(?:slides|images|hi)\/s(\d+)/) || String(src || '').match(/\/(?:pages|images)\/p(\d+)/);
     if (!m) return '';
-    return 'BACHY105 course ' + (/\/p\d+/.test(src) || /m4\//.test(src) ? 'notes, VIT · Page ' : 'slides, VIT · Slide ') + parseInt(m[1], 10);
+    return 'BAENG101 course ' + (/\/p\d+/.test(src) || /m4\//.test(src) ? 'notes, VIT · Page ' : 'slides, VIT · Slide ') + parseInt(m[1], 10);
   }
   const svgCache = {};
   function loadSvg(id) {
@@ -670,25 +672,25 @@ window.__startApp = function () {
   function summaryRow(m) {
     return `<a class="trow summary" href="#${m.id}-summary">
       <span class="tick" style="--p:0%;box-shadow:none;background:none">${icon('book')}</span>
-      <div><h3>Module ${+m.num} summary</h3><p>Big ideas, comparison tables, every equation, the numbers to remember and the classic traps, on one page.</p></div>
+      <div><h3>Module ${+m.num} summary</h3><p>Big ideas, comparison tables, the rules and templates to remember and the classic traps, on one page.</p></div>
       <span class="meta">final recap <span class="arrow">→</span></span>
     </a>`;
   }
 
   // ---------------------------------------------------------------- home
   function viewHome() {
-    setCrumbs([{ t: 'Home' }]); setActive('home'); document.title = 'BACHY105 Notes';
+    setCrumbs([{ t: 'Home' }]); setActive('home'); document.title = 'BAENG101 Notes';
     const d = doneIn(TOPICS), n = TOPICS.length;
     const nViz = allViz().length;
     const el = h('div', { class: 'view' });
     const last = S.last && S.last.hash ? S.last : null;
-    const words = ['Applied', 'Chemistry'];
+    const words = ['Technical', 'English'];
     el.innerHTML = `
       <section class="hero">
-        <div class="eyebrow"><span class="code">BACHY105</span><span>Applied Chemistry</span><span class="dot">·</span><span>Fall semester 2026–27</span></div>
+        <div class="eyebrow"><span class="code">BAENG101</span><span>Technical English</span><span class="dot">·</span><span>Fall semester 2026–27</span></div>
         <h1 class="h-display">${words.map((w, i) => `<span class="w" style="--i:${i}">${w}</span>`).join(' ')}</h1>
-        <p class="blurb">Modules 2, 3 and 4, rebuilt as short tabbed notes with every diagram from the slides${nViz ? `, ${nViz} interactive models` : ''} and ${QS.length} questions that make you use what you read. White text is what you must remember. Everything else is there so it makes sense.</p>
-        <p class="credit">Based on the BACHY105 Applied Chemistry course material taught at VIT. Slide diagrams are reproduced from the course slides and credited to their authors; the notes, questions and interactive models are written for this site. <a href="privacy.html">Privacy</a></p>
+        <p class="blurb">The CAT-2 portion, rebuilt as short tabbed notes with clear diagrams${nViz ? `, ${nViz} interactive exercises` : ''} and ${QS.length} questions that make you use what you read. White text is what you must remember. Everything else is there so it makes sense.</p>
+        <p class="credit">Based on the BAENG101 Technical English Communication course material taught at VIT (textbook: Lannon &amp; Gurak, <em>Technical Communication</em>).The notes, diagrams, questions and interactive exercises are written and drawn for this site; short quoted examples are credited to their sources. <a href="privacy.html">Privacy</a></p>
         <div class="stat-line"><span class="stat-big">${d}/${n}</span><span class="muted">topics done</span><div class="bar"><i style="width:${n ? (d / n) * 100 : 0}%"></i></div><button class="btn small" data-act="share">${icon('share')}Share progress</button></div>
         <div class="study-line">${icon('fire')}<span><b>${streakDays()}</b> day${streakDays() === 1 ? '' : 's'} in a row</span><span class="dot">·</span><span><b>${fmtDur(todaySecs())}</b> today</span><span class="dot">·</span><span><b>${fmtDur(totalSecs())}</b> in total</span></div>
         ${last ? `<div class="continue"><a class="btn primary" href="${last.hash}">Continue: ${rt(last.title)} ${icon('right')}</a></div>` : (TOPICS[0] ? `<div class="continue"><a class="btn primary" href="#${TOPICS[0].id}">Start with ${rt(TOPICS[0].title)} ${icon('right')}</a></div>` : '')}
@@ -708,7 +710,7 @@ window.__startApp = function () {
         <section class="mod-sec">
           <div class="mod-head"><span class="mod-num">Module ${m.num}</span><h2 class="h-sec">${esc(m.title)}</h2><span class="count">${icon('lock')} locked</span></div>
           <p class="mod-syl">${esc(m.syllabus)}</p>
-          <a class="lock-card" href="#unlock"><span class="lock-ico">${icon('lock')}</span><div><strong>Unlock ${lockedNames()} for ₹${PRICE_RS}</strong><p>Notes, slide diagrams, interactive models, questions, quiz, flashcards and summary. One-time UPI payment.</p></div><span class="arrow">${icon('right')}</span></a>
+          <a class="lock-card" href="#unlock"><span class="lock-ico">${icon('lock')}</span><div><strong>Unlock ${lockedNames()} for ₹${PRICE_RS}</strong><p>Notes, diagrams, interactive exercises, questions, quiz, flashcards and summary. One-time UPI payment.</p></div><span class="arrow">${icon('right')}</span></a>
         </section>`).join('')}
       <section class="mod-sec">
         <div class="mod-head"><h2 class="h-sec">Practice</h2></div>
@@ -717,8 +719,8 @@ window.__startApp = function () {
           <a class="tile" href="#questions"><span class="tt">${icon('q')}Question bank</span><span class="big">${QS.length}</span><p>Scenario questions with full answers and the points an examiner looks for, sorted by module and topic.</p></a>
           <a class="tile" href="#quiz"><span class="tt">${icon('quiz')}Quiz</span><span class="big">${QS.filter((q) => q.options).length}</span><p>Multiple choice or open, 10 to 30 at a time, weighted toward what you haven't seen or got wrong.</p></a>
           <a class="tile" href="#cards"><span class="tt">${icon('cards')}Flashcards</span><span class="big">${CARDS.length}</span><p>Flip, then sort into "know it" and "still learning". The deck remembers.</p></a>
-          <a class="tile" href="#formulas"><span class="tt">${icon('sigma')}Formula sheet</span><p>Every equation, the numbers worth memorising and the classic traps, per module.</p></a>
-          <a class="tile" href="#lab"><span class="tt">${icon('flask')}Lab bench</span>${nViz ? `<span class="big">${nViz}</span>` : ''}<p>All the interactive models and calculators in one place: Nernst, Beer–Lambert, Bragg, Scherrer and more.</p></a>
+          <a class="tile" href="#formulas"><span class="tt">${icon('rules')}Rules & templates</span><p>The rules to remember, ready-to-copy answer templates and the classic traps, per module.</p></a>
+          <a class="tile" href="#lab"><span class="tt">${icon('puzzle')}Practice lab</span>${nViz ? `<span class="big">${nViz}</span>` : ''}<p>Every interactive exercise in one place: definition builder, summary trimmer, conflict-style grid, SoP builder and more.</p></a>
           <a class="tile" href="#mine"><span class="tt">${icon('pen')}Highlights & notes</span><p>Your highlighted lines, personal notes, tagged topics and questions to revisit.</p></a>
           <a class="tile" href="#battle"><span class="tt">${icon('swords')}1v1 Quiz battle</span><p>Challenge a friend with a link: 10 questions, 10 seconds each, live scores.</p></a>
           <a class="tile" href="#syllabus.cat2"><span class="tt">${icon('list')}CAT syllabus</span><p>The CAT-2 syllabus as a checklist, each line linked to its notes.</p></a>
@@ -726,7 +728,7 @@ window.__startApp = function () {
       </section>
       <section class="data-box">
         <h2 class="h-sub">Your data</h2>
-        <p class="muted">Progress, tags, highlights and notes are saved in this browser only. Back them up to move them to another device.</p>
+        <p class="muted">Progress, tags, highlights and notes follow your student account, so they show up on your phone and your laptop. A backup makes a copy you can keep.</p>
         <div class="btn-row"><button class="btn" data-act="backup">${icon('db')}Back up or restore</button></div>
       </section>`;
     return { el };
@@ -735,7 +737,7 @@ window.__startApp = function () {
   // ---------------------------------------------------------------- module
   function viewModule(r) {
     const m = MOD[r.mod];
-    setCrumbs([{ t: 'Home', href: '#home' }, { t: `Module ${+m.num}` }]); setActive(null); document.title = `${m.title} · BACHY105 Notes`;
+    setCrumbs([{ t: 'Home', href: '#home' }, { t: `Module ${+m.num}` }]); setActive(null); document.title = `${m.title} · BAENG101 Notes`;
     const d = doneIn(m.topics), n = m.topics.length;
     const nq = QS.filter((q) => q.module === m.id && q.topic !== 'mixed').length;
     const nc = CARDS.filter((c) => c.module === m.id).length;
@@ -768,7 +770,7 @@ window.__startApp = function () {
     let i = r.tab != null && r.tab < n ? r.tab : (S.ui.lastTab[t.id] != null && S.ui.lastTab[t.id] < n ? S.ui.lastTab[t.id] : 0);
     setActive(t.id);
     trackTopic(t.id);
-    document.title = `${plain(t.title)} · BACHY105 Notes`;
+    document.title = `${plain(t.title)} · BAENG101 Notes`;
     const oi = orderIdx(t.id);
     const nx = ORDER[oi + 1];
     const nq = (QBY[t.id] || []).length, nc = (t.flashcards || []).length;
@@ -926,7 +928,7 @@ window.__startApp = function () {
   function viewSummary(r) {
     const m = MOD[r.mod], s = SUM[m.id];
     setCrumbs([{ t: 'Home', href: '#home' }, { t: `Module ${+m.num}`, href: '#' + m.id }, { t: 'Summary' }]);
-    setActive(m.id + '-summary'); document.title = `Module ${+m.num} summary · BACHY105 Notes`;
+    setActive(m.id + '-summary'); document.title = `Module ${+m.num} summary · BAENG101 Notes`;
     S.last = { hash: `#${m.id}-summary`, title: `Module ${+m.num} summary` }; save();
     const el = h('div', { class: 'view sumpage' });
     const mqs = QS.filter((q) => q.module === m.id && q.topic === 'summary');
@@ -950,8 +952,9 @@ window.__startApp = function () {
         <div class="kps">${m.topics.filter((t) => (t.oneLiners || []).length).map((t) => `<div class="kp"><h3><a href="#${t.id}">${rt(t.title)}</a></h3><ul class="prose recallable">${t.oneLiners.map((x) => `<li>${x}</li>`).join('')}</ul></div>`).join('')}</div></section>
       ${figs.length ? `<section class="sum-sec"><h2 class="h-sec">Diagrams <small>${figs.length}</small></h2><div class="sum-figs">${figs.map((f) => `<div class="sum-fig"><figure data-fig="${f.id}"></figure><a href="#${f.t.id}.${f.k}">${rt(f.t.short || f.t.title)} › ${rt(f.t.tabs[f.k].title)} ${icon('right')}</a></div>`).join('')}</div></section>` : ''}
       ${s && s.compare && s.compare.length ? `<section class="sum-sec"><h2 class="h-sec">Side by side</h2>${s.compare.map((c) => `<div class="cmp prose"><h3>${rt(c.title)}</h3>${c.html}</div>`).join('')}</section>` : ''}
-      ${forms.length ? `<section class="sum-sec"><h2 class="h-sec">Equations to write from memory <small>${forms.length}</small></h2><div class="forms">${forms.map((f) => `<div class="form"><div class="fname">${rt(f.name)}</div><div class="fbody">${f.html}</div>${f.note ? `<div class="fnote">${f.note}</div>` : ''}</div>`).join('')}</div></section>` : ''}
+      ${forms.length ? `<section class="sum-sec"><h2 class="h-sec">Rules to remember <small>${forms.length}</small></h2><div class="forms">${forms.map((f) => `<div class="form recallable"><div class="fname">${rt(f.name)}</div><div class="fbody">${f.html}</div>${f.note ? `<div class="fnote">${f.note}</div>` : ''}</div>`).join('')}</div></section>` : ''}
       ${s && s.numbers && s.numbers.length ? `<section class="sum-sec"><h2 class="h-sec">Numbers to remember <small>${s.numbers.length}</small></h2><div class="nums">${s.numbers.map((x) => `<div><div class="nv">${x.value}</div><div class="nw">${x.what}</div></div>`).join('')}</div></section>` : ''}
+      ${s && s.templates && s.templates.length ? `<section class="sum-sec"><h2 class="h-sec">Templates <small>${s.templates.length}</small></h2><div class="tpls">${s.templates.map(tplHTML).join('')}</div></section>` : ''}
       ${s && s.traps && s.traps.length ? `<section class="sum-sec"><h2 class="h-sec">Traps <small>${s.traps.length}</small></h2><ul class="traps prose">${s.traps.map((x) => `<li>${x}</li>`).join('')}</ul></section>` : ''}
       ${mqs.length ? `<section class="sum-sec"><h2 class="h-sec">Put it together <small>${mqs.length} questions</small></h2><div data-qs></div></section>` : ''}
       ${nx ? `<a class="next-topic" style="margin-top:56px" href="#${nx.key}"><div><small>Up next</small><strong>${rt(nx.title)}</strong></div><span class="arrow">${icon('right')}</span></a>` : ''}`;
@@ -962,7 +965,8 @@ window.__startApp = function () {
   }
 
   // ---------------------------------------------------------------- question card
-  const TYPE_LABEL = { decide: 'Decide', predict: 'Predict', explain: 'Explain', troubleshoot: 'Troubleshoot', design: 'Design', numerical: 'Numerical', interpret: 'Interpret' };
+  const TYPE_LABEL = { decide: 'Decide', predict: 'Predict', explain: 'Explain', troubleshoot: 'Troubleshoot', design: 'Write', numerical: 'Numerical', interpret: 'Interpret', rewrite: 'Rewrite', spot: 'Spot the error', analyse: 'Analyse' };
+  const tplHTML = (t) => `<div class="tpl"><div class="tpl-name">${rt(t.name)}</div>${t.note ? `<p class="tpl-note">${t.note}</p>` : ''}<div class="tpl-body">${t.html}</div></div>`;
   function qState(id) { return S.q[id] || (S.q[id] = { seen: 0, right: 0, wrong: 0 }); }
   function levelDots(l) { return `<span class="qlevel" title="Level ${l} of 3">${[1, 2, 3].map((k) => `<i class="${k <= l ? 'on' : ''}"></i>`).join('')}</span>`; }
   function statusTag(id) { const st = S.q[id] && S.q[id].status; return st === 'got' ? '<span class="qstatus got">Got it</span>' : st === 'revisit' ? '<span class="qstatus revisit">Revisit</span>' : ''; }
@@ -1020,7 +1024,7 @@ window.__startApp = function () {
       else { const mm = r.arg.match(/^(m[0-9]+)-summary$/); if (mm) { bankUI.mod = mm[1]; bankUI.topic = 'summary'; } }
     } else { bankUI.mod = 'all'; bankUI.topic = 'all'; }
     setCrumbs([{ t: 'Home', href: '#home' }, { t: 'Question bank' }]);
-    setActive(r.arg ? 'questions.' + r.arg : 'questions'); document.title = 'Question bank · BACHY105 Notes';
+    setActive(r.arg ? 'questions.' + r.arg : 'questions'); document.title = 'Question bank · BAENG101 Notes';
     const el = h('div', { class: 'view' });
     const types = Array.from(new Set(QS.map((q) => q.type))).filter(Boolean);
     const got = QS.filter((q) => S.q[q.id] && S.q[q.id].status === 'got').length;
@@ -1105,7 +1109,7 @@ window.__startApp = function () {
   // ---------------------------------------------------------------- quiz
   const quizUI = { mods: null, format: 'mcq', count: 10, smart: true, run: null, preset: null };
   function viewQuiz(r) {
-    setCrumbs([{ t: 'Home', href: '#home' }, { t: 'Quiz' }]); setActive('quiz'); document.title = 'Quiz · BACHY105 Notes';
+    setCrumbs([{ t: 'Home', href: '#home' }, { t: 'Quiz' }]); setActive('quiz'); document.title = 'Quiz · BAENG101 Notes';
     const el = h('div', { class: 'view' });
     if (r.arg && MOD[r.arg]) quizUI.mods = [r.arg];
     if (!quizUI.mods) quizUI.mods = MODULES.filter((m) => m.topics.length).map((m) => m.id);
@@ -1253,7 +1257,7 @@ window.__startApp = function () {
 
   // ---------------------------------------------------------------- flashcards
   function viewCards(r) {
-    setCrumbs([{ t: 'Home', href: '#home' }, { t: 'Flashcards' }]); setActive('cards'); document.title = 'Flashcards · BACHY105 Notes';
+    setCrumbs([{ t: 'Home', href: '#home' }, { t: 'Flashcards' }]); setActive('cards'); document.title = 'Flashcards · BAENG101 Notes';
     const el = h('div', { class: 'view' });
     const state = { mod: 'all', topic: 'all', learning: false, deck: [], i: 0, flipped: false };
     if (r.arg) { if (MOD[r.arg]) state.mod = r.arg; else if (TOPIC[r.arg]) { state.mod = TOPIC[r.arg].module; state.topic = r.arg; } }
@@ -1327,14 +1331,14 @@ window.__startApp = function () {
 
   // ---------------------------------------------------------------- formula sheet
   function viewFormulas() {
-    setCrumbs([{ t: 'Home', href: '#home' }, { t: 'Formula sheet' }]); setActive('formulas'); document.title = 'Formula sheet · BACHY105 Notes';
+    setCrumbs([{ t: 'Home', href: '#home' }, { t: 'Rules & templates' }]); setActive('formulas'); document.title = 'Rules & templates · BAENG101 Notes';
     const el = h('div', { class: 'view' });
     let tab = 'f';
     el.innerHTML = `
-      <div class="eyebrow"><span class="code">Practice</span><span>Formula sheet</span></div>
-      <h1 class="h-display">Formula sheet</h1>
-      <p class="blurb">Everything you should be able to write from memory, grouped by module. Turn on Recall to test the key values.</p>
-      <div class="vseg" style="margin-bottom:10px"><button class="vseg-btn" data-t="f">Equations</button><button class="vseg-btn" data-t="n">Numbers</button><button class="vseg-btn" data-t="x">Traps</button></div>
+      <div class="eyebrow"><span class="code">Practice</span><span>Rules &amp; templates</span></div>
+      <h1 class="h-display">Rules &amp; templates</h1>
+      <p class="blurb">Everything you should know by heart, grouped by module: the rules, the answer layouts to copy, and the mistakes that cost marks. Turn on Recall to test yourself.</p>
+      <div class="vseg" style="margin-bottom:10px"><button class="vseg-btn" data-t="f">Rules</button><button class="vseg-btn" data-t="n">Templates</button><button class="vseg-btn" data-t="x">Traps</button></div>
       <div data-body></div>`;
     const body = $('[data-body]', el);
     function paint() {
@@ -1347,8 +1351,7 @@ window.__startApp = function () {
           inner = sumF ? `<div class="forms">${s.formulas.map((f) => `<div class="form recallable"><div class="fname">${rt(f.name)}</div><div class="fbody">${f.html}</div>${f.note ? `<div class="fnote">${f.note}</div>` : ''}</div>`).join('')}</div>`
             : m.topics.filter((t) => (t.formulas || []).length).map((t) => `<h3 class="h-sub" style="font-size:18px;margin-top:22px"><a href="#${t.id}" style="text-decoration:none">${rt(t.title)}</a></h3><div class="forms">${t.formulas.map((f) => `<div class="form recallable"><div class="fname">${rt(f.name)}</div><div class="fbody">${f.html}</div>${f.note ? `<div class="fnote">${f.note}</div>` : ''}</div>`).join('')}</div>`).join('');
         } else if (tab === 'n') {
-          inner = s.numbers && s.numbers.length ? `<div class="nums recallable">${s.numbers.map((x) => `<div><div class="nv"><b>${x.value}</b></div><div class="nw">${x.what}</div></div>`).join('')}</div>`
-            : `<ul class="prose">${[].concat(...m.topics.map((t) => t.oneLiners || [])).map((x) => `<li>${x}</li>`).join('')}</ul>`;
+          inner = s.templates && s.templates.length ? `<div class="tpls recallable">${s.templates.map(tplHTML).join('')}</div>` : '';
         } else {
           inner = s.traps && s.traps.length ? `<ul class="traps prose">${s.traps.map((x) => `<li>${x}</li>`).join('')}</ul>` : '<p class="muted">No traps listed yet.</p>';
         }
@@ -1363,14 +1366,14 @@ window.__startApp = function () {
 
   // ---------------------------------------------------------------- lab bench
   function viewLab() {
-    setCrumbs([{ t: 'Home', href: '#home' }, { t: 'Lab bench' }]); setActive('lab'); document.title = 'Lab bench · BACHY105 Notes';
+    setCrumbs([{ t: 'Home', href: '#home' }, { t: 'Practice lab' }]); setActive('lab'); document.title = 'Practice lab · BAENG101 Notes';
     const el = h('div', { class: 'view' });
     const ids = allViz();
     el.innerHTML = `
-      <div class="eyebrow"><span class="code">Practice</span><span>${ids.length} interactive models</span></div>
-      <h1 class="h-display">Lab bench</h1>
-      <p class="blurb">Every animation, model and calculator from the notes, in one place. Open one, play with it, then jump to the tab where it's explained.</p>
-      ${ids.length ? '' : '<div class="empty">Interactive models are still loading.</div>'}
+      <div class="eyebrow"><span class="code">Practice</span><span>${ids.length} interactive exercises</span></div>
+      <h1 class="h-display">Practice lab</h1>
+      <p class="blurb">Every interactive exercise from the notes, in one place. Open one, try it, then jump to the tab where it's explained.</p>
+      ${ids.length ? '' : '<div class="empty">Interactive exercises are still loading.</div>'}
       ${MODULES.map((m) => {
         const mine = allViz().filter((id) => vizModule(id) === m.id);
         if (!mine.length) return '';
@@ -1398,7 +1401,7 @@ window.__startApp = function () {
 
   // ---------------------------------------------------------------- mine
   function viewMine() {
-    setCrumbs([{ t: 'Home', href: '#home' }, { t: 'Highlights & notes' }]); setActive('mine'); document.title = 'Highlights & notes · BACHY105 Notes';
+    setCrumbs([{ t: 'Home', href: '#home' }, { t: 'Highlights & notes' }]); setActive('mine'); document.title = 'Highlights & notes · BAENG101 Notes';
     const el = h('div', { class: 'view' });
     const hl = [];
     TOPICS.forEach((t) => (S.hl[t.id] || []).forEach((x) => hl.push({ t, x })));
@@ -1462,7 +1465,7 @@ window.__startApp = function () {
     MODULES.forEach((m) => {
       const s = SUM[m.id]; if (!s) return;
       INDEX.push({ k: 'Summary', title: `Module ${+m.num} summary`, text: plain([s.tldr].concat((s.bigIdeas || []).map((b) => b.html), (s.traps || [])).join(' ')), href: `#${m.id}-summary`, w: 2 });
-      (s.formulas || []).forEach((f) => INDEX.push({ k: 'Formula', title: f.name, text: plain(f.html + ' ' + (f.note || '')), href: '#formulas', w: 2 }));
+      (s.formulas || []).forEach((f) => INDEX.push({ k: 'Rule', title: f.name, text: plain(f.html + ' ' + (f.note || '')), href: '#formulas', w: 2 }));
     });
     QS.forEach((q) => INDEX.push({ k: 'Question', title: plain(q.q).slice(0, 110), text: plain(q.q + ' ' + q.answer + ' ' + (q.explain || '')), href: '#questions' + (TOPIC[q.topic] ? '.' + q.topic : q.topic === 'mixed' ? '.mixed' : '.' + q.module), qid: q.id, w: 1 }));
     INDEX.forEach((e) => { e.lt = e.title.toLowerCase(); e.lx = e.text.toLowerCase(); });
@@ -1498,7 +1501,7 @@ window.__startApp = function () {
     let results = [], sel = 0;
     overlay((close) => {
       const box = h('div', { class: 'modal' });
-      box.innerHTML = `<div class="modal-head">${icon('search')}<input class="search-in" id="search-input" type="search" placeholder="Search topics, sections, questions, formulas" autocomplete="off" aria-label="Search"><kbd>Esc</kbd></div><ul class="sres" role="listbox"></ul><div class="search-foot"><span>↑↓ to move</span><span>Enter to open</span><span>${TOPICS.length} topics · ${QS.length} questions indexed</span></div>`;
+      box.innerHTML = `<div class="modal-head">${icon('search')}<input class="search-in" id="search-input" type="search" placeholder="Search topics, sections, questions, rules" autocomplete="off" aria-label="Search"><kbd>Esc</kbd></div><ul class="sres" role="listbox"></ul><div class="search-foot"><span>↑↓ to move</span><span>Enter to open</span><span>${TOPICS.length} topics · ${QS.length} questions indexed</span></div>`;
       const inp = $('input', box), ul = $('.sres', box);
       const paint = () => {
         const words = inp.value.toLowerCase().split(/\s+/).filter(Boolean);
@@ -1605,7 +1608,7 @@ window.__startApp = function () {
           ${idea ? `<p class="muted" style="margin-top:0;font-size:14.5px">A feature you want, a topic that needs more, a better way to explain something: anything that would make this site better for you. The owner reads every one.</p>`
             : `<div class="kind-row" role="radiogroup" aria-label="What is it about?">${kinds.map(([k, l]) => `<button type="button" class="fchip${k === kind ? ' on' : ''}" data-kind="${k}" role="radio" aria-checked="${k === kind}">${l}</button>`).join('')}</div>
           ${t ? `<p class="muted" style="margin:0;font-size:14px">About: <b style="color:var(--white)">${rt(t.title)}${tabTitle ? ' › ' + rt(tabTitle) : ''}</b></p>` : ''}`}
-          <label>${idea ? 'Your idea' : 'Tell us more'}<textarea id="rep-text" required minlength="5" maxlength="1500" placeholder="${idea ? 'e.g. A timer that shows how long I spend on each module' : 'e.g. The SOFC temperature says 80 °C but the slide says 800–1000 °C'}"></textarea></label>
+          <label>${idea ? 'Your idea' : 'Tell us more'}<textarea id="rep-text" required minlength="5" maxlength="1500" placeholder="${idea ? 'e.g. A timer that shows how long I spend on each module' : 'e.g. The sentence definition example is missing its class'}"></textarea></label>
           <input id="rep-web" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
           <p class="muted" style="margin:0;font-size:13px">Sent with your student email${window.SIGNED_IN_AS ? ` (${esc(window.SIGNED_IN_AS)})` : ''} so the owner can reply.</p>
           <div class="btn-row"><button class="btn primary" type="submit">${idea ? 'Send idea' : 'Send'}</button></div>
@@ -1751,7 +1754,7 @@ window.__startApp = function () {
     const w = String(window.SIGNED_IN_AS || '').split('@')[0].split('.')[0].replace(/[^a-z]/gi, '');
     return w ? w[0].toUpperCase() + w.slice(1).toLowerCase() : '';
   }
-  const SITE_URL = /bachy105\.vercel\.app/.test(location.host) ? 'https://bachy105.vercel.app' : location.origin;
+  const SITE_URL = /baeng101\.vercel\.app/.test(location.host) ? 'https://baeng101.vercel.app' : location.origin;
   const modsDone = () => MODULES.filter((m) => m.topics.length && doneIn(m.topics) === m.topics.length).length;
 
   // ================================================================ progress sync (follows the account)
@@ -1831,7 +1834,7 @@ window.__startApp = function () {
     g.fillStyle = bg; g.fillRect(0, 0, W, H);
     const glow = g.createRadialGradient(W - 120, 90, 10, W - 120, 90, 620); glow.addColorStop(0, 'rgba(255,181,107,0.30)'); glow.addColorStop(1, 'rgba(255,181,107,0)');
     g.fillStyle = glow; g.fillRect(0, 0, W, H);
-    g.fillStyle = '#8a8a94'; g.font = F(500, 28, true); g.fillText('BACHY105 · APPLIED CHEMISTRY', 80, 118);
+    g.fillStyle = '#8a8a94'; g.font = F(500, 28, true); g.fillText('BAENG101 · TECHNICAL ENGLISH', 80, 118);
     g.textAlign = 'right'; g.fillText(o.date, W - 80, 118); g.textAlign = 'left';
     g.fillStyle = '#f4f4f6'; fit(o.name, 700, 132, W - 160); g.fillText(o.name, 80, 290);
     g.fillStyle = '#ffb56b'; fit(o.subtitle, 600, 44, W - 160); g.fillText(o.subtitle, 80, 368);
@@ -1852,7 +1855,7 @@ window.__startApp = function () {
     } else if (o.line) { g.fillStyle = '#cfcfd6'; fit(o.line, 500, 40, W - 160); g.fillText(o.line, 80, 1010); }
     g.fillStyle = '#ffb56b'; g.fillRect(80, H - 178, 64, 6);
     g.fillStyle = '#f4f4f6'; g.font = F(700, 46); g.fillText(SITE_URL.replace(/^https?:\/\//, ''), 80, H - 104);
-    g.fillStyle = '#8a8a94'; g.font = F(500, 30); g.fillText('Applied Chemistry study notes for VIT students', 80, H - 58);
+    g.fillStyle = '#8a8a94'; g.font = F(500, 30); g.fillText('Technical English study notes for VIT students', 80, H - 58);
     return c;
   }
   async function openShareCard(o) {
@@ -1864,16 +1867,16 @@ window.__startApp = function () {
     if (o.kind === 'mastery') {
       spec = { name: name || 'Mastered', date, subtitle: 'Mastered ' + o.label, line: o.rounds === 1 ? 'Every question right on the first try.' : `Every question right after ${o.rounds} rounds of weak-spot practice.`,
         stats: [['Time to master', fmtDur(o.secs, true)], ['Rounds', String(o.rounds)], ['Questions', String(o.total)], ['Streak', `${streak} day${streak === 1 ? '' : 's'}`]] };
-      text = `I mastered ${o.label} on BACHY105 Notes in ${fmtDur(o.secs, true)}. ${SITE_URL}`;
+      text = `I mastered ${o.label} on BAENG101 Notes in ${fmtDur(o.secs, true)}. ${SITE_URL}`;
     } else {
       const week = Array.from({ length: 7 }, (_, i) => { const t = Date.now() - (6 - i) * DAYMS; return { v: Math.round((+S.study[dayKey(t)] || 0) / 60), l: 'SMTWTFS'[new Date(t + ISTMS).getUTCDay()] }; });
       spec = { name: name || 'My study day', date, subtitle: `${doneIn(TOPICS)} of ${TOPICS.length} topics done`, week,
         stats: [['Today', fmtDur(todaySecs())], ['Total study', fmtDur(totalSecs())], ['Streak', `${streak} day${streak === 1 ? '' : 's'}`], ['Modules done', `${modsDone()}/${MODULES.length}`]] };
-      text = `${fmtDur(todaySecs())} of Applied Chemistry today on BACHY105 Notes. ${streak} day${streak === 1 ? '' : 's'} in a row, ${fmtDur(totalSecs())} in total, ${modsDone()}/${MODULES.length} modules done. ${SITE_URL}`;
+      text = `${fmtDur(todaySecs())} of Technical English today on BAENG101 Notes. ${streak} day${streak === 1 ? '' : 's'} in a row, ${fmtDur(totalSecs())} in total, ${modsDone()}/${MODULES.length} modules done. ${SITE_URL}`;
     }
     const canvas = await drawCard(spec);
     const blob = await new Promise((ok) => canvas.toBlob(ok, 'image/png'));
-    const file = new File([blob], `bachy105-${o.kind}.png`, { type: 'image/png' });
+    const file = new File([blob], `baeng101-${o.kind}.png`, { type: 'image/png' });
     const src = URL.createObjectURL(blob);
     overlay((close) => {
       const m = h('div', { class: 'modal share-modal' });
@@ -1888,8 +1891,8 @@ window.__startApp = function () {
       $('[data-cp]', m).addEventListener('click', copy);
       $('[data-sh]', m).addEventListener('click', async () => {
         try {
-          if (navigator.canShare && navigator.canShare({ files: [file] })) await navigator.share({ files: [file], text, title: 'BACHY105 Notes' });
-          else if (navigator.share) await navigator.share({ text, url: SITE_URL, title: 'BACHY105 Notes' });
+          if (navigator.canShare && navigator.canShare({ files: [file] })) await navigator.share({ files: [file], text, title: 'BAENG101 Notes' });
+          else if (navigator.share) await navigator.share({ text, url: SITE_URL, title: 'BAENG101 Notes' });
           else { copy(); msg.textContent = 'Text copied. Save the picture to post it too.'; }
         } catch (e) { /* closed the share sheet */ }
       });
@@ -1902,34 +1905,30 @@ window.__startApp = function () {
   const SYL = {
     cat1: null, // not given yet
     cat2: [
-      { mod: 'm2', title: 'Energy devices', lines: [
-        ['Electrochemical and electrolytic cells', [['m2-electrochemical-cells', 'Electrochemical cells']]],
-        ['Electrode materials, including semiconductors', [['m2-semiconductors', 'Semiconductors as electrode materials'], ['m2-semiconductor-purification', 'Making ultra-pure Si & Ge']]],
-        ['Classification of batteries', [['m2-batteries', 'Batteries: parts & classification']]],
-        ['Lithium-ion battery chemistry', [['m2-li-ion', 'Lithium-ion batteries']]],
-        ['H₂–O₂ fuel cell and solid oxide fuel cell', [['m2-fuel-cells', 'Fuel cells: principle & types'], ['m2-pemfc', 'PEM fuel cell'], ['m2-sofc', 'Solid oxide fuel cell']]],
-        ['Silicon photovoltaic cells', [['m2-solar-energy', 'Solar energy & conversion routes'], ['m2-photovoltaics', 'Photovoltaic cells']]],
-        ['Photoelectrochemical cells', [['m2-pec-cells', 'Photoelectrochemical cells']]],
-        ['Dye-sensitized solar cells', [['m2-dssc', 'Dye-sensitized solar cells']]],
+      { mod: 'm3', title: 'Reading', lines: [
+        ['Analysing definitions: why and when we define', [['m3-why-define', 'Why define?']]],
+        ['Types of definitions: parenthetical, sentence, expanded', [['m3-parenthetical', 'Parenthetical definitions'], ['m3-sentence-def', 'Sentence definitions']]],
+        ['Methods for expanding definitions', [['m3-expanded', 'Expanded definitions'], ['m3-placing', 'Placing definitions & glossaries']]],
+        ['Reading comprehension: drawing inferences', [['m3-inference', 'What an inference is'], ['m3-inference-practice', 'Inferring from a passage']]],
+        ['Finding and reading secondary sources', [['m3-sources', 'Secondary sources']]],
       ] },
-      { mod: 'm3', title: 'Nanomaterials', lines: [
-        ['Introduction to nanomaterials', [['m3-nanomaterials', 'What nanomaterials are'], ['m3-nano-classes', 'Classifying nanomaterials'], ['m3-why-nano', 'Why nano is different']]],
-        ['Top-down and bottom-up approaches for synthesis', [['m3-synthesis', 'Top-down vs bottom-up'], ['m3-milling', 'Mechanical milling'], ['m3-sol-gel', 'Sol–gel method']]],
-        ['Bulk vs nano: gold', [['m3-nano-gold', 'Bulk gold vs nano gold']]],
-        ['Quantum dots', [['m3-quantum-dots', 'Quantum dots'], ['m3-qd-uses', 'QD synthesis & applications']]],
+      { mod: 'm4', title: 'Writing', lines: [
+        ['Summary writing: paraphrase, summary and plagiarism', [['m4-paraphrase', 'Paraphrase vs summary']]],
+        ['Qualities, steps and guidelines of a summary (précis)', [['m4-qualities', 'Qualities of a summary'], ['m4-steps', 'Steps & guidelines'], ['m4-errors', 'Common errors']]],
+        ['Abstract writing', [['m4-abstract', 'Writing an abstract']]],
       ] },
-      { mod: 'm4', title: 'Spectroscopic and diffraction techniques', lines: [
-        ['Fundamental concepts of spectroscopy', [['m4-spectroscopy', 'Spectroscopy & EMR'], ['m4-emr-regions', 'EMR regions & energy']]],
-        ['UV-Visible: principle, instrumentation and applications', [['m4-uv-vis', 'UV-Vis: absorption & transitions'], ['m4-beer-lambert', 'Beer–Lambert law'], ['m4-uv-vis-instrument', 'UV-Vis instruments & uses']]],
-        ['Powder XRD: principle, instrumentation and applications', [['m4-xrays', 'X-rays: nature & production'], ['m4-bragg', "Diffraction & Bragg's law"], ['m4-xrd-patterns', 'Diffractometer & patterns']]],
-        ['Powder XRD: determination of crystallite size', [['m4-scherrer', 'Crystallite size & Scherrer']]],
+      { mod: 'm5', title: 'Interpersonal Communication', lines: [
+        ['Conflict management as an interpersonal skill', [['m5-conflict-basics', 'What conflict management is']]],
+        ['Thomas-Kilmann modes of conflict management', [['m5-tki', 'The Thomas-Kilmann model'], ['m5-styles', 'The five styles'], ['m5-choosing', 'Choosing the right style']]],
+        ['Activity: case study analysis (application level)', [['m5-case-study', 'Analysing a case study']]],
+        ['Statement of Purpose', [['m5-sop-what', 'What an SoP is'], ['m5-sop-structure', 'SoP structure'], ['m5-sop-writing', 'Writing each paragraph'], ['m5-sop-tips', 'Tips & word limits'], ['m5-sop-samples', 'Sample SoPs, analysed']]],
       ] },
     ],
   };
   const sylItems = (cat) => (SYL[cat] || []).flatMap((g) => g.lines.flatMap(([, tl]) => tl.map(([id]) => ({ id, mod: g.mod }))));
   function viewSyllabus(r) {
     const cat = r.arg === 'cat1' ? 'cat1' : 'cat2', label = cat === 'cat1' ? 'CAT-1' : 'CAT-2';
-    setCrumbs([{ t: 'Home', href: '#home' }, { t: label + ' syllabus' }]); setActive('syllabus.' + cat); document.title = `${label} syllabus · BACHY105 Notes`;
+    setCrumbs([{ t: 'Home', href: '#home' }, { t: label + ' syllabus' }]); setActive('syllabus.' + cat); document.title = `${label} syllabus · BAENG101 Notes`;
     const el = h('div', { class: 'view syl' });
     const groups = SYL[cat];
     if (!groups) {
@@ -1963,7 +1962,7 @@ window.__startApp = function () {
 
   // ================================================================ how to use
   function viewGuide() {
-    setCrumbs([{ t: 'Home', href: '#home' }, { t: 'How to use' }]); setActive('guide'); document.title = 'How to use · BACHY105 Notes';
+    setCrumbs([{ t: 'Home', href: '#home' }, { t: 'How to use' }]); setActive('guide'); document.title = 'How to use · BAENG101 Notes';
     const el = h('div', { class: 'view guide' });
     const ex = (id, tab, text) => (TOPIC[id] ? `<a href="#${id}${tab != null ? '.' + tab : ''}">${text}</a>` : `<b>${text}</b>`);
     const sec = (ic, title, body) => `<section class="g-sec"><h2>${icon(ic)}${title}</h2>${body}</section>`;
@@ -1971,17 +1970,17 @@ window.__startApp = function () {
       <div class="eyebrow"><span class="code">Guide</span><span>Every feature, with examples from the notes</span></div>
       <h1 class="h-display">How to use this site</h1>
       <p class="blurb">A quick tour. Every example below is a real link: tap it to try the feature, then come back here from the sidebar.</p>
-      ${sec('book', 'Read a topic tab by tab', `<p>Each topic is split into short tabs. Read one, then tap <b>Next</b> (or press <kbd>→</kbd>). A topic ticks itself in the sidebar once every tab is opened. You can also tap <b>Mark as done</b>.</p><p class="g-ex">Try it: ${ex('m2-electrochemical-cells', 2, 'Electrochemical cells › Daniell cell')}, then the next tab, EMF &amp; Nernst.</p>`)}
-      ${sec('eye', 'Recall mode: test yourself while you read', `<p>Turn on <b>Recall</b> in the top bar (or press <kbd>R</kbd>). Every white key term turns into a blank. Say the word in your head, then tap the blank to check.</p><p class="g-ex">Try it: open ${ex('m2-sofc', 2, 'Solid oxide fuel cell › Reactions')} with Recall on and fill in the half-reactions.</p>`)}
+      ${sec('book', 'Read a topic tab by tab', `<p>Each topic is split into short tabs. Read one, then tap <b>Next</b> (or press <kbd>→</kbd>). A topic ticks itself in the sidebar once every tab is opened. You can also tap <b>Mark as done</b>.</p><p class="g-ex">Try it: ${ex('m3-sentence-def', 1, 'Sentence definitions › Term, class, features')}, then the next tab.</p>`)}
+      ${sec('eye', 'Recall mode: test yourself while you read', `<p>Turn on <b>Recall</b> in the top bar (or press <kbd>R</kbd>). Every white key term turns into a blank. Say the word in your head, then tap the blank to check.</p><p class="g-ex">Try it: open ${ex('m5-tki', 1, 'The Thomas-Kilmann model › Two dimensions')} with Recall on and fill in the blanks.</p>`)}
       ${sec('pen', 'Highlights, notes and colour tags', `<p><b>Select any line</b> in a topic and pick a colour to highlight it. Each topic has a <b>My notes</b> box at the bottom, saved as you type. The dot next to each topic in the sidebar sets a colour tag (tap again to change it). Everything you mark is collected in ${'<a href="#mine">Highlights &amp; notes</a>'}.</p>`)}
       ${sec('flag', '"Confusing?" and your weak spots', `<p>At the bottom of every tab there is a <b>Confusing?</b> button. Tap it on anything that didn't click. Those tabs are listed under <b>My weak spots</b> in ${'<a href="#mine">Highlights &amp; notes</a>'}, and the quiz asks about them first.</p>`)}
-      ${sec('search', 'Search everything', `<p>Tap <b>Search</b> (or press <kbd>Ctrl</kbd> <kbd>K</kbd>). It looks through every tab, question, flashcard, formula and summary.</p><p class="g-ex">Try searching <b>Nafion</b>, <b>zone refining</b> or <b>Bragg</b>.</p>`)}
-      ${sec('q', 'Question bank', `<p>Scenario questions with full model answers and the points an examiner looks for. Filter by module, topic, type and level. Mark each one <b>Got it</b> or <b>Revisit</b>.</p><p class="g-ex">Try it: <a href="#questions.m2">Module 2 questions</a>.</p>`)}
-      ${sec('quiz', 'Quiz, then focus on your weak spots', `<p>Pick modules and a length and go. At the end, tap <b>Focus on weak spots</b> for a quick round of only the questions you missed. Keep going until you get every one right: you'll see how long it took you to master it, and you can share that as a picture.</p><p class="g-ex">Try it: <a href="#quiz.m2">a Module 2 quiz</a>.</p>`)}
-      ${sec('swords', '1v1 Quiz battle', `<p>Pick one or more topics and tap <b>Create battle link</b>. Send the link to one friend: when they join, you both see the rules and tap <b>Understood</b> (tick <b>Never ask again</b> to skip them next time), then you get the same 10 questions at the same time, 10 seconds each. Faster right answers score more. Switching tabs or apps during a question counts as wrong. Full access gets unlimited battles; free accounts get one preview battle on one Module 2 topic.</p><p class="g-ex">Try it: <a href="#battle">start a battle</a>.</p>`)}
-      ${sec('cards', 'Flashcards', `<p>Say the answer out loud, then flip. Sort each card into <b>Know it</b> or <b>Still learning</b>; the deck remembers, and "Still learning only" gives you just the hard ones.</p><p class="g-ex">Try it: ${TOPIC['m2-li-ion'] ? '<a href="#cards.m2-li-ion">Lithium-ion flashcards</a>' : '<a href="#cards">flashcards</a>'}.</p>`)}
-      ${sec('sigma', 'Formula sheet and Lab bench', `<p>The <a href="#formulas">Formula sheet</a> has every equation, the numbers worth memorising and the classic traps, per module. The <a href="#lab">Lab bench</a> collects every interactive model and calculator (Nernst, Beer–Lambert, Bragg, Scherrer and more), each linked to the tab that explains it.</p>`)}
-      ${sec('book', 'Module summaries', `<p>Every module ends with a one-page summary: how it fits together, the key points of every topic, all its diagrams, side-by-side comparisons, equations, numbers and traps. Best the night before an exam.</p><p class="g-ex">Try it: <a href="#m2-summary">Module 2 summary</a>.</p>`)}
+      ${sec('search', 'Search everything', `<p>Tap <b>Search</b> (or press <kbd>Ctrl</kbd> <kbd>K</kbd>). It looks through every tab, question, flashcard, rule and summary.</p><p class="g-ex">Try searching <b>etymology</b>, <b>one-third</b> or <b>collaborating</b>.</p>`)}
+      ${sec('q', 'Question bank', `<p>Scenario questions with full model answers and the points an examiner looks for. Filter by module, topic, type and level. Mark each one <b>Got it</b> or <b>Revisit</b>.</p><p class="g-ex">Try it: <a href="#questions.m3">Module 3 questions</a>.</p>`)}
+      ${sec('quiz', 'Quiz, then focus on your weak spots', `<p>Pick modules and a length and go. At the end, tap <b>Focus on weak spots</b> for a quick round of only the questions you missed. Keep going until you get every one right: you'll see how long it took you to master it, and you can share that as a picture.</p><p class="g-ex">Try it: <a href="#quiz.m3">a Module 3 quiz</a>.</p>`)}
+      ${sec('swords', '1v1 Quiz battle', `<p>Pick one or more topics and tap <b>Create battle link</b>. Send the link to one friend: when they join, you both see the rules and tap <b>Understood</b> (tick <b>Never ask again</b> to skip them next time), then you get the same 10 questions at the same time, 10 seconds each. Faster right answers score more. Switching tabs or apps during a question counts as wrong. Full access gets unlimited battles; free accounts get one preview battle on one Module 3 topic.</p><p class="g-ex">Try it: <a href="#battle">start a battle</a>.</p>`)}
+      ${sec('cards', 'Flashcards', `<p>Say the answer out loud, then flip. Sort each card into <b>Know it</b> or <b>Still learning</b>; the deck remembers, and "Still learning only" gives you just the hard ones.</p><p class="g-ex">Try it: ${TOPIC['m3-expanded'] ? '<a href="#cards.m3-expanded">Expanded definition flashcards</a>' : '<a href="#cards">flashcards</a>'}.</p>`)}
+      ${sec('rules', 'Rules &amp; templates and the Practice lab', `<p>The <a href="#formulas">Rules &amp; templates</a> sheet has the rules to remember, the answer layouts to copy (sentence definition, abstract, case-study answer, SoP) and the classic traps, per module. The <a href="#lab">Practice lab</a> collects every interactive exercise (definition builder, summary trimmer, conflict-style grid, SoP builder and more), each linked to the tab that explains it.</p>`)}
+      ${sec('book', 'Module summaries', `<p>Every module ends with a one-page summary: how it fits together, the key points of every topic, all its diagrams, side-by-side comparisons, rules, templates and traps. Best the night before an exam.</p><p class="g-ex">Try it: <a href="#m3-summary">Module 3 summary</a>.</p>`)}
       ${sec('list', 'CAT syllabus checklists', `<p>The <a href="#syllabus.cat2">CAT-2 syllabus</a> lists every syllabus line with links to the topics that cover it. Tick a topic when you can explain it without looking, and watch the percentage climb.</p>`)}
       ${sec('timer', 'Focus mode', `<p>Tap <b>Focus</b> in the top bar (or press <kbd>F</kbd>) for a 25-minute timer with fewer distractions. A bar at the bottom lets you <b>Pause</b> or <b>Exit focus</b> at any time (on a computer, <kbd>Esc</kbd> works too).</p>`)}
       ${sec('fire', 'Study time, streaks and share cards', `<p>The site counts the time you actually study here each day. Study at least a minute a day to keep your streak going (the flame in the top bar). Tap <b>Share progress</b> on the home page for a picture with today's time, your total, your streak and the modules you've finished.</p>`)}
@@ -1993,7 +1992,7 @@ window.__startApp = function () {
 
   // ================================================================ 1v1 quiz battle
   function viewBattle(r) {
-    setCrumbs([{ t: 'Home', href: '#home' }, { t: '1v1 Quiz battle' }]); setActive('battle'); document.title = '1v1 Quiz battle · BACHY105 Notes';
+    setCrumbs([{ t: 'Home', href: '#home' }, { t: '1v1 Quiz battle' }]); setActive('battle'); document.title = '1v1 Quiz battle · BAENG101 Notes';
     const el = h('div', { class: 'view battle' });
     const id = r.arg && /^[a-f0-9]{10}$/.test(r.arg) ? r.arg : null;
     let alive = true, tmr = 0, raf = 0, off = 0, st = null, shown = '', picked = {}, switchedAt = -1, wall = null;
@@ -2024,7 +2023,7 @@ window.__startApp = function () {
       const preview = acc.access !== 'full';
       const mods = MODULES.filter((m) => m.topics.length && (!preview || m.free));
       const chosen = new Set();
-      pick.innerHTML = `${preview ? `<div class="bt-note">${icon('info')}<p><b>Free preview:</b> one battle on a single Module 2 topic. <a href="#unlock">Unlock full access</a> for unlimited battles on every topic.</p></div>` : ''}
+      pick.innerHTML = `${preview ? `<div class="bt-note">${icon('info')}<p><b>Free preview:</b> one battle on a single Module 3 topic. <a href="#unlock">Unlock full access</a> for unlimited battles on every topic.</p></div>` : ''}
         ${mods.map((m) => `<div class="bt-mod"><div class="bt-mhead"><b>Module ${+m.num} · ${esc(m.title)}</b>${preview ? '' : `<button class="btn small ghost" data-all="${m.id}">Select all</button>`}</div>
           <div class="bt-topics">${m.topics.filter((t) => (t.flashcards || []).length >= 4).map((t) => `<button class="fchip" data-t="${t.id}" aria-pressed="false">${rt(t.short || t.title)}</button>`).join('')}</div></div>`).join('')}
         <div class="bt-go"><button class="btn primary" data-create disabled>${icon('swords')}Create battle link</button><span class="muted" data-info>Pick ${preview ? 'one topic' : 'one or more topics'}</span></div><p class="gate-msg" data-msg role="alert"></p>`;
@@ -2107,7 +2106,7 @@ window.__startApp = function () {
         el.innerHTML = `${head(topics)}<h1 class="h-display">Send this link to one friend</h1><p class="blurb">When they join, you both see the rules, and the battle starts once you both tap Understood. Topics: <b style="color:var(--white)">${topics}</b>.</p>
           <div class="bt-link"><code>${esc(link)}</code><div class="btn-row"><button class="btn primary" data-share>${icon('share')}Share link</button><button class="btn" data-copy>${icon('copy')}Copy</button></div></div>
           <p class="bt-wait"><span class="bt-dot"></span>Waiting for your opponent…</p>${rules}`;
-        const text = `${firstName() || 'I'} challenged you to a 1v1 Applied Chemistry quiz battle on BACHY105 Notes (${plain(s.topics.join(', '))}). Join here: ${link}`;
+        const text = `${firstName() || 'I'} challenged you to a 1v1 Technical English quiz battle on BAENG101 Notes (${plain(s.topics.join(', '))}). Join here: ${link}`;
         const copy = () => { try { navigator.clipboard.writeText(link).then(() => toast('Link copied', 'copy'), () => toast(link)); } catch (e) { toast(link); } };
         $('[data-copy]', el).addEventListener('click', copy);
         $('[data-share]', el).addEventListener('click', () => { if (navigator.share) navigator.share({ title: 'Quiz battle', text, url: link }).catch(() => {}); else copy(); });
@@ -2165,7 +2164,7 @@ window.__startApp = function () {
         ${s.preview ? `<a class="lock-card" href="#unlock"><span class="lock-ico">${icon('lock')}</span><div><strong>That was your free preview battle</strong><p>Unlock full access for unlimited battles on every topic, plus Modules 3 and 4.</p></div><span class="arrow">${icon('right')}</span></a>` : ''}
         <section class="sum-sec" style="margin-top:36px"><h2 class="h-sec">Answers</h2>${s.results.map((x) => `<div class="bt-rev"><div class="prose">${x.front}</div><p class="bt-ans">${x.answer}</p><p class="bt-who"><span class="${x[me].ok ? 'ok' : 'bad'}">You ${x[me].ok ? '✓ +' + x[me].pts : x[me].switched ? '✗ tab switch' : '✗'}</span><span class="${x[o].ok ? 'ok' : 'bad'}">${esc(on)} ${x[o].ok ? '✓ +' + x[o].pts : x[o].switched ? '✗ tab switch' : '✗'}</span></p></div>`).join('')}</section>`;
       $('[data-sharer]', el).addEventListener('click', () => {
-        const text = `${a > b ? 'I beat ' + on : a < b ? on + ' beat me' : 'I drew with ' + on} ${Math.max(a, b)}–${Math.min(a, b)} in a 1v1 Applied Chemistry quiz battle on BACHY105 Notes. ${SITE_URL}`;
+        const text = `${a > b ? 'I beat ' + on : a < b ? on + ' beat me' : 'I drew with ' + on} ${Math.max(a, b)}–${Math.min(a, b)} in a 1v1 Technical English quiz battle on BAENG101 Notes. ${SITE_URL}`;
         if (navigator.share) navigator.share({ text, title: 'Quiz battle' }).catch(() => {}); else { try { navigator.clipboard.writeText(text).then(() => toast('Copied', 'copy')); } catch (e) { toast(text); } }
       });
       stagger(el);

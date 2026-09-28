@@ -1,7 +1,7 @@
 // Shared helpers for the sign-in, payment and content functions (files starting with _ are not deployed as endpoints).
 const crypto = require('crypto');
 
-const PRICE = parseInt(process.env.PRICE_PAISE || '5000', 10); // ₹50 default; the owner can change it on /stats.html
+const PRICE = parseInt(process.env.PRICE_PAISE || '3000', 10); // ₹30 default; the owner can change it on /stats.html
 const DOMAIN = (process.env.STUDENT_DOMAIN || 'vitstudent.ac.in').toLowerCase(); // only these Google accounts get in
 const USER_COOKIE = 'bn_user';   // signed-in student: { e: email, d: device id }
 const OWNER_COOKIE = 'bn_access'; // owner unlock from /stats.html: { p: 'owner' }
@@ -147,7 +147,7 @@ async function checkPayment(paymentId, orderId) {
   // (older payments at an earlier price keep working after the owner changes it)
   if (p.currency !== 'INR' || !(p.amount >= 100)) return { ok: false, why: 'Payment amount does not match.' };
   const order = p.order_id ? await razorpay('GET', '/orders/' + p.order_id) : null;
-  if (!order || (order.notes || {}).product !== 'bachy105-notes') return { ok: false, why: 'Payment was not for these notes.' };
+  if (!order || (order.notes || {}).product !== 'baeng101-notes') return { ok: false, why: 'Payment was not for these notes.' };
   if (p.status === 'authorized') p = await razorpay('POST', `/payments/${paymentId}/capture`, { amount: p.amount, currency: 'INR' });
   if (p.status !== 'captured') return { ok: false, why: `Payment is ${p.status}, not completed.` };
   return { ok: true, payment: p, order, email: normEmail((order.notes || {}).email) };
@@ -155,7 +155,7 @@ async function checkPayment(paymentId, orderId) {
 
 // A completed payment for these notes, as seen in Razorpay's payment list (any price the owner has used).
 const isOurs = (p) => p.status === 'captured' && p.method === 'upi' && p.currency === 'INR'
-  && ((p.notes || {}).product === 'bachy105-notes' || p.amount === PRICE);
+  && (p.notes || {}).product === 'baeng101-notes';
 
 // Records a verified payment against the student's email, so every device they sign in on has access.
 async function recordPaid(email, p) {

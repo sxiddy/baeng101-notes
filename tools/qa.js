@@ -22,6 +22,13 @@ w.matchMedia = () => ({ matches: false, addEventListener() {}, removeEventListen
 w.IntersectionObserver = class { constructor(cb) { this.cb = cb; } observe(el) { this.cb([{ isIntersecting: true, target: el }]); } unobserve() {} disconnect() {} };
 w.Element.prototype.scrollTo = function () {};
 w.Element.prototype.scrollIntoView = function () {};
+// figures (img/<id>.svg) come from protected/img; any other request (sync, inbox, track) answers 404
+w.fetch = async (url) => {
+  const m = String(url).match(/img\/(m\d+-[a-z0-9-]+\.svg)/);
+  const p = m && path.join(ROOT, 'protected', 'img', m[1]);
+  const ok = !!(p && fs.existsSync(p));
+  return { ok, status: ok ? 200 : 404, text: async () => (ok ? fs.readFileSync(p, 'utf8') : ''), json: async () => ({}) };
+};
 w.SVGElement.prototype.getBBox = function () { return { x: 0, y: 0, width: 0, height: 0 }; };
 w.SVGElement.prototype.getTotalLength = function () { return 0; };
 w.SVGElement.prototype.getPointAtLength = function () { return { x: 0, y: 0 }; };
@@ -39,7 +46,7 @@ const go = async (hash) => { const e0 = errors.length; w.history.pushState(null,
 const report = { routes: 0, tabs: 0, figs: 0, figMissing: [], vizMounted: 0, vizMissing: [], vizFailed: [], emptyPanels: [] };
 
 (async () => {
-  const base = ['#home', '#m2', '#m3', '#m4', '#m2-summary', '#m3-summary', '#m4-summary', '#questions', '#questions.m2', '#questions.m3', '#questions.m4', '#questions.mixed', '#quiz', '#cards', '#formulas', '#lab', '#mine', '#guide', '#syllabus.cat1', '#syllabus.cat2', '#battle'];
+  const base = ['#home', '#m3', '#m4', '#m5', '#m3-summary', '#m4-summary', '#m5-summary', '#questions', '#questions.m3', '#questions.m4', '#questions.m5', '#quiz', '#cards', '#formulas', '#lab', '#mine', '#guide', '#syllabus.cat1', '#syllabus.cat2', '#battle'];
   for (const r of base) { const n = await go(r); report.routes++; if (n) console.log(`errors on ${r}`); }
   const doc = w.document;
   for (const t of N.TOPICS) {
@@ -52,7 +59,7 @@ const report = { routes: 0, tabs: 0, figs: 0, figMissing: [], vizMounted: 0, viz
       doc.querySelectorAll('.panel figure[data-fig]').forEach((f) => {
         report.figs++;
         const id = f.getAttribute('data-fig');
-        if (f.classList.contains('missing') || !fs.existsSync(path.join(ROOT, 'protected', 'img', id + '.webp'))) report.figMissing.push(`${t.id}.${i} ${id}`);
+        if (f.classList.contains('missing') || !fs.existsSync(path.join(ROOT, 'protected', 'img', id + '.svg'))) report.figMissing.push(`${t.id}.${i} ${id}`);
       });
       (t.tabs[i].html.match(/data-viz="([a-z0-9-]+)"/g) || []).forEach((m) => {
         const id = m.slice(10, -1);

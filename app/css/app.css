@@ -1,4 +1,4 @@
-/* BACHY105 Notes — single dark theme: graphite greys, white is the highlight. */
+/* BAENG101 Notes — graphite greys, white is the highlight; light mode below. */
 :root {
   color-scheme: dark;
   --bg: #151517;
@@ -791,13 +791,8 @@ body.focus .t-actions:hover, body.focus .mynotes:hover, body.focus .next-topic:h
 :root[data-mode="light"] .btn.primary, :root[data-mode="light"] .pill.on, :root[data-mode="light"] .fchip.on,
 :root[data-mode="light"] .vseg-btn.on, :root[data-mode="light"] .vbtn.on, :root[data-mode="light"] .vbtn.primary { color: #f7f7f5; }
 :root[data-mode="light"] .toast { color: #f7f7f5; }
-/* diagrams keep their dark palette so their colours stay correct */
-:root[data-mode="light"] .viz {
-  --bg: #151517; --bg-2: #1b1b1e; --surface: #202024; --surface-2: #27272c; --surface-3: #2e2e34;
-  --line: #2f2f35; --line-2: #3a3a41; --text: #b3b3bb; --text-2: #cfcfd6; --text-dim: #80808a; --text-faint: #5c5c66; --white: #f4f4f6;
-  color: var(--text);
-}
-:root[data-mode="light"] .viz .vbtn.on, :root[data-mode="light"] .viz .vseg-btn.on, :root[data-mode="light"] .viz .vbtn.primary { color: #151517; }
+/* accents get darker shades on the light background (text contrast 4.5:1) */
+:root[data-mode="light"] { --e: #1f6fb8; --cat: #b85a14; --an: #7b4fc9; --hole: #b8235a; --photon: #8a6a00; --good: #1f7a4a; --warn: #856200; --bad: #b3312f; }
 
 /* "Confusing?" flag on each tab */
 .conf-btn { margin-left: 10px; height: 26px; font-size: 12px; padding: 0 9px; color: var(--text-dim); vertical-align: middle; }
@@ -1039,3 +1034,73 @@ a.syl-name:hover { text-decoration: underline; }
 .inbox-item small { display: block; font-family: var(--mono); font-size: 11.5px; color: var(--text-faint); }
 .inbox-item .you { margin: 4px 0 10px; color: var(--text-dim); font-size: 14px; white-space: pre-wrap; overflow-wrap: anywhere; }
 .inbox-item .owner { margin: 4px 0 0; color: var(--text-2); font-size: 15px; white-space: pre-wrap; overflow-wrap: anywhere; }
+
+/* ---------------------------------------------------------------- English site: templates + practice widgets */
+.tpls { display: grid; gap: 12px; }
+.tpl { border: 1px solid var(--line); border-radius: 12px; background: var(--bg-2); padding: 14px 16px 16px; }
+.tpl-name { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 6px; }
+.tpl-note { font-size: 14px; color: var(--text-dim); margin: 0 0 10px; line-height: 1.55; }
+.tpl-body { font-size: 15.5px; line-height: 1.65; color: var(--text); }
+.tpl-body p { margin: 0 0 8px; }
+.tpl-body > :last-child { margin-bottom: 0; }
+.tpl-body .kv, .tpl-body ol, .tpl-body ul { margin: 0; }
+.form .fbody { font-family: var(--sans); font-size: 16px; }
+
+.ew { display: grid; gap: 14px; font-size: 15.5px; line-height: 1.6; color: var(--text); }
+.ew-instr { font-size: 14px; color: var(--text-dim); margin: 0; }
+.ew-q { font-family: var(--serif); font-size: 18.5px; line-height: 1.5; color: var(--white); margin: 0; }
+.ew-q small { display: block; font-family: var(--sans); font-size: 13px; color: var(--text-dim); margin-top: 4px; }
+.ew-opts { display: grid; gap: 8px; }
+.ew-opts.two { grid-template-columns: 1fr 1fr; }
+.ew-opt { text-align: left; min-height: 46px; padding: 10px 14px; border-radius: 11px; border: 1px solid var(--line-2); background: var(--surface); color: var(--text-2); font-size: 15px; line-height: 1.45; transition: background 0.2s var(--ease), border-color 0.2s, color 0.2s; }
+.ew-opt:hover:not(:disabled) { border-color: var(--text-faint); color: var(--white); }
+.ew-opt:disabled { cursor: default; }
+.ew-opt.right { border-color: var(--good); color: var(--white); background: color-mix(in srgb, var(--good) 14%, var(--surface)); }
+.ew-opt.wrong { border-color: var(--bad); color: var(--white); background: color-mix(in srgb, var(--bad) 12%, var(--surface)); }
+.ew-opt.dim { opacity: 0.55; }
+.ew-opt.on { border-color: var(--white); color: var(--white); background: var(--surface-3); }
+.ew-fb { border-radius: 11px; padding: 11px 14px; border: 1px solid var(--line); background: var(--bg); font-size: 14.5px; line-height: 1.6; }
+.ew-fb:empty { display: none; }
+.ew-fb b { color: var(--white); }
+.ew-fb.ok { border-color: color-mix(in srgb, var(--good) 55%, transparent); }
+.ew-fb.no { border-color: color-mix(in srgb, var(--bad) 55%, transparent); }
+.ew-fb .tag { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; margin-right: 6px; }
+.ew-fb.ok .tag { color: var(--good); }
+.ew-fb.no .tag { color: var(--bad); }
+.ew-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.ew-chip { min-height: 40px; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--line-2); background: var(--surface); color: var(--text-2); font-size: 14.5px; line-height: 1.35; text-align: left; transition: all 0.2s var(--ease); }
+.ew-chip:hover:not(:disabled) { color: var(--white); border-color: var(--text-faint); }
+.ew-chip.on { background: var(--white); color: var(--bg); border-color: var(--white); }
+.ew-chip.used { opacity: 0.35; }
+.ew-chip.right { border-color: var(--good); }
+.ew-chip.wrong { border-color: var(--bad); }
+.ew-slots { display: grid; gap: 8px; }
+.ew-slot { display: grid; grid-template-columns: minmax(92px, 30%) 1fr; gap: 10px; align-items: start; border: 1px dashed var(--line-2); border-radius: 11px; padding: 9px 12px; min-height: 46px; background: var(--bg); }
+.ew-slot.filled { border-style: solid; }
+.ew-slot.right { border-color: var(--good); }
+.ew-slot.wrong { border-color: var(--bad); }
+.ew-slot-k { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-dim); padding-top: 3px; }
+.ew-slot-v { color: var(--white); min-width: 0; overflow-wrap: anywhere; }
+.ew-slot-v:empty::before { content: "tap a piece, then tap here"; color: var(--text-faint); font-size: 13.5px; }
+.ew-text { font-family: var(--serif); font-size: 17px; line-height: 1.75; color: var(--text-2); }
+.ew-tok { border-radius: 5px; padding: 1px 2px; cursor: pointer; transition: background 0.15s, color 0.15s, opacity 0.15s; -webkit-tap-highlight-color: transparent; }
+.ew-tok:hover { background: var(--surface-2); }
+.ew-tok.cut { text-decoration: line-through; color: var(--text-faint); }
+.ew-tok.pick { background: color-mix(in srgb, var(--e) 22%, transparent); color: var(--white); }
+.ew-tok.hit { background: color-mix(in srgb, var(--good) 24%, transparent); color: var(--white); }
+.ew-tok.miss { background: color-mix(in srgb, var(--bad) 22%, transparent); color: var(--white); }
+.ew-score { font-family: var(--mono); font-size: 12.5px; color: var(--text-dim); letter-spacing: 0.04em; }
+.ew-score b { color: var(--white); font-weight: 500; }
+.ew-meter { height: 8px; border-radius: 99px; background: var(--surface-2); overflow: hidden; }
+.ew-meter > i { display: block; height: 100%; width: 0; background: var(--white); border-radius: inherit; transition: width 0.35s var(--ease), background 0.35s; }
+.ew-meter.ok > i { background: var(--good); }
+.ew-meter.over > i { background: var(--bad); }
+.ew-card { border: 1px solid var(--line); border-radius: 12px; background: var(--bg); padding: 12px 14px; }
+.ew-card h4 { margin: 0 0 4px; font-size: 15px; color: var(--white); }
+.ew-card p { margin: 0; font-size: 14.5px; }
+.ew-grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+.ew-textarea { width: 100%; min-height: 120px; resize: vertical; border-radius: 11px; border: 1px solid var(--line-2); background: var(--bg); color: var(--white); padding: 11px 13px; font: inherit; font-size: 15px; line-height: 1.6; }
+.ew-textarea:focus { outline: none; border-color: var(--text-faint); }
+.ew-foot { display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; align-items: center; border-top: 1px solid var(--line); padding-top: 12px; }
+@media (max-width: 520px) { .ew-opts.two { grid-template-columns: 1fr; } .ew-slot { grid-template-columns: 1fr; gap: 4px; } }
+.viz [hidden] { display: none !important; }

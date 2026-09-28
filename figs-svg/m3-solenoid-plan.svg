@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 690">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 10 5 0 10z" class="dfd"/></marker></defs>
+  <g>
+    <rect x="10" y="10" width="580" height="112" rx="14" class="df"/>
+    <circle cx="52" cy="66" r="24" class="dfw"/><text x="52" y="75" font-size="24" text-anchor="middle" class="mono" style="fill:var(--bg)">1</text>
+    <text x="94" y="56" font-size="25" class="dt">Sentence definition</text>
+    <text x="94" y="94" font-size="22" class="dt2">coil that forms an electromagnet</text>
+    <path d="M300 128v20" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+    <rect x="10" y="154" width="580" height="112" rx="14" class="df"/>
+    <circle cx="52" cy="210" r="24" class="dfw"/><text x="52" y="219" font-size="24" text-anchor="middle" class="mono" style="fill:var(--bg)">2</text>
+    <text x="94" y="200" font-size="25" class="dt">Etymology</text>
+    <text x="94" y="238" font-size="22" class="dt2">"sole" + Greek: shaped like a pipe</text>
+    <path d="M300 272v20" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+    <rect x="10" y="298" width="580" height="112" rx="14" class="df"/>
+    <circle cx="52" cy="354" r="24" class="dfw"/><text x="52" y="363" font-size="24" text-anchor="middle" class="mono" style="fill:var(--bg)">3</text>
+    <text x="94" y="344" font-size="25" class="dt">Parts + labelled diagram</text>
+    <text x="94" y="382" font-size="22" class="dt2">coil, plunger, return spring</text>
+    <path d="M300 416v20" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+    <rect x="10" y="442" width="580" height="112" rx="14" class="df"/>
+    <circle cx="52" cy="498" r="24" class="dfw"/><text x="52" y="507" font-size="24" text-anchor="middle" class="mono" style="fill:var(--bg)">4</text>
+    <text x="94" y="488" font-size="25" class="dt">Operating principle</text>
+    <text x="94" y="526" font-size="22" class="dt2">current makes a magnet, pulls rod in</text>
+    <path d="M300 560v20" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+    <rect x="10" y="586" width="580" height="96" rx="14" class="df"/>
+    <circle cx="52" cy="634" r="24" class="dfw"/><text x="52" y="643" font-size="24" text-anchor="middle" class="mono" style="fill:var(--bg)">5</text>
+    <text x="94" y="626" font-size="25" class="dt">Example</text>
+    <text x="94" y="662" font-size="22" class="dt2">a car's starter motor</text>
+  </g>
+</svg>

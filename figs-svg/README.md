@@ -1,12 +1,8 @@
-# Redrawn diagrams
+# Diagrams
 
-One file per figure: `figs-svg/<figure id>.svg`, the site's own drawing of the same information as the cropped
-course-slide image `protected/img/<figure id>.webp` (figure list, captions and alt text: `content/chunk-*.js`).
-
-They switch on only when **all** of them exist and the file `figs-svg/READY` is created. Then `tools/build.js`
-copies them next to the slide crops, marks them `svg` in the figure sizes, `api/img.js` stops serving the crops,
-and the app inlines each SVG so it follows dark and light mode. The caption says "Redrawn from BACHY105 course
-slides, VIT · Slide N".
+One file per figure: `figs-svg/<figure id>.svg`, our own drawing (never a copy of a slide image). The figure list,
+captions and alt text live in `content/chunk-*.js`. `tools/build.js` copies every file here to `protected/img/` and the app
+inlines each SVG so it follows dark and light mode.
 
 ## Rules for every file
 
@@ -34,28 +30,7 @@ slides, VIT · Slide N".
 
 ## Tools
 
-- `node tools/figs/phone-preview.js <repo folder> <out.html> <id> <id> ...` builds the phone preview described
-  above (slide picture, dark, light, each 375 px wide). Screenshot it with headless Chrome:
-  `chrome --headless=new --allow-file-access-from-files --window-size=1210,<height> --force-device-scale-factor=1
-  --screenshot=<png> file:///<out.html>` and look at it with the Read tool.
-- `node tools/figs/lattice.js figs-svg` regenerates the three silicon-lattice figures (a pattern for other
-  repetitive figures: write a small generator instead of hand-placing dozens of shapes).
-- `node tools/figs/table.js figs-svg [id ...]` writes the slide text tables from `tools/figs/tables/<id>.js` as
-  stacked phone tables (one block per slide row, one line per column).
-
-## Progress
-
-Module 2 batch 1 done (8): daniell-cell, band-diagrams, resistivity-temp, bands-temperature, semiconductor-types,
-intrinsic-lattice, n-type-doping, p-type-doping.
-
-Module 2 batch 2 done (8): zone-refining-fig, czochralski-steps, czochralski-puller, si-boule-photo,
-cell-differences-table (generated: `node tools/figs/table.js figs-svg`, specs in `tools/figs/tables/`; fuel-cell
-"reaction is reversible" corrected), nobel-2019 (text card, no portraits), liion-devices, liion-cutaway.
-
-Module 2 batch 3 done (6): liion-charge-discharge (charging panel's swapped +/− fixed: graphite always −),
-liion-variants-table (generated), fuel-cell-stack, fcv-layout (numbered key), nafion-structure, pemfc-diagram.
-
-Module 2 batch 4 done (3): sofc-diagram, solar-panels, solar-methods-tree.
-Next up (Module 2): pv-si-structures, pv-mono-cell, pv-poly-cell, pv-amorphous-film, pv-pn-depletion, pv-cell-circuit,
-pv-inside-eia, pv-gap-table, pv-tco-gap-table, pec-band-diagram, pec-liquid-junction, dssc-schematic, dssc-ru-dyes,
-dssc-natural-dyes, dssc-hibiscus-cell, dssc-pros-cons; then m3-…, m4-….
+- `node tools/figs/phone-preview.js <repo folder> <out.html> <id> <id> ...` puts each figure in a 375 px wide "phone", dark and
+  light mode side by side. Screenshot it with headless Chrome:
+  `"/c/Program Files/Google/Chrome/Application/chrome.exe" --headless=new --allow-file-access-from-files --window-size=800,<height>
+  --force-device-scale-factor=1 --screenshot=<png> file:///<out.html>` and look at the PNG with the Read tool.

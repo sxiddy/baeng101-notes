@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
-<title>Owner stats · BACHY105 Notes</title>
+<title>Owner stats · BAENG101 Notes</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,500&display=swap">
 <link rel="stylesheet" href="css/app.css">
 <style>
@@ -68,7 +68,7 @@
 </head>
 <body>
 <div class="wrap">
-  <div class="eyebrow"><span class="code">Owner</span><span>BACHY105 Notes</span><span class="dot">·</span><a href="./" style="color:inherit">Back to the site</a></div>
+  <div class="eyebrow"><span class="code">Owner</span><span>BAENG101 Notes</span><span class="dot">·</span><a href="./" style="color:inherit">Back to the site</a></div>
   <h1 class="h-display" style="font-size:40px">Stats</h1>
   <div id="login">
     <p class="muted">Enter your admin key (the <code>ADMIN_KEY</code> you set in Vercel). It stays in this tab only.</p>
@@ -162,7 +162,7 @@
     const head = ['email', 'access', 'paid_amount', 'payment_id', 'paid_at_ist', 'free_modules', 'first_sign_in_ist', 'last_used_ist', 'study_total_min', 'study_today_min', 'streak_days', 'topics_done', 'modules_done', 'visits', 'sign_ins', 'phones', 'pcs'];
     const lines = (s.students || []).map((x) => [x.email, accessLabel(s, x), x.paid ? x.paid.amount : '', x.paid ? x.paid.id : '', x.paid ? ist(x.paid.at) : '', x.free ? (x.free.modules || ['all']).join(' ') : '', ist(x.first), ist(x.lastSeen), ...(x.progress ? [Math.round(x.progress.total / 60), Math.round(x.progress.today / 60), x.progress.streak, x.progress.topics, x.progress.mods] : ['', '', '', '', '']), x.visits, x.logins, x.phones, x.pcs].map(q).join(','));
     const blob = new Blob([[head.join(','), ...lines].join('\n')], { type: 'text/csv' });
-    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'bachy105-students-' + new Date().toISOString().slice(0, 10) + '.csv'; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'baeng101-students-' + new Date().toISOString().slice(0, 10) + '.csv'; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
   }
   function lookupHTML(s, r) {
     const d = r.devices, l = r.limits, st = (s.students || []).find((x) => x.email === r.email), p = st && st.progress;

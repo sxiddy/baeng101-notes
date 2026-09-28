@@ -10,14 +10,9 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const MODULE_IDS = new Set(JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'modules.json'), 'utf8')).map((m) => m.id));
 
-const VIZ_IDS = new Set([
-  'cell-galvanic', 'nernst', 'bands', 'doping', 'zone-refining', 'czochralski',
-  'cell-types', 'liion', 'fuelcell', 'pn-junction', 'dssc', 'solar-routes',
-  'nano-scale', 'nano-dims', 'sa-volume', 'gold-color', 'topdown-bottomup',
-  'ball-mill', 'sol-gel', 'confinement', 'qd-size', 'coolant-picker',
-  'em-spectrum', 'wave-calc', 'transitions', 'color-wheel', 'beer-lambert', 'spectrophotometer',
-  'xray-tube', 'interference', 'bragg', 'xrd-pattern', 'xrd-calc', 'size-hierarchy',
-]);
+// every VIZ.register('<id>', …) in app/js/viz/ (free modules) and viz-paid/ (paid modules)
+const VIZ_IDS = new Set([path.join(ROOT, 'app', 'js', 'viz'), path.join(ROOT, 'viz-paid')].flatMap((d) => fs.readdirSync(d)
+  .filter((f) => f.endsWith('.js')).flatMap((f) => Array.from(fs.readFileSync(path.join(d, f), 'utf8').matchAll(/VIZ\.register\('([a-z0-9-]+)'/g), (m) => m[1]))));
 const TAGS = new Set('p h3 h4 b em sub sup br ul ol li table thead tbody tr th td div span figure details summary small code'.split(' '));
 const VOID = new Set(['br']);
 const CLASSES = new Set('lead eq frac tbl kv vs side steps chips chip note why exam trap heads-up example worked given solve result mnemonic more'.split(' '));
@@ -28,7 +23,7 @@ const BANNED = [
   'it is important to note', "it's important to note", "let's dive", 'moreover', 'furthermore', 'additionally', 'not only',
   "isn't just", 'is not just', 'imagine ', 'tapestry', 'testament', 'showcase', 'embark', 'elevate', 'navigate the',
 ];
-const QTYPES = new Set(['decide', 'predict', 'explain', 'troubleshoot', 'design', 'numerical', 'interpret']);
+const QTYPES = new Set(['decide', 'predict', 'explain', 'troubleshoot', 'design', 'numerical', 'interpret', 'rewrite', 'spot', 'analyse']);
 const RECALL_OPENERS = /^\s*(<p[^>]*>)?\s*(define|list|state|what is|what are|differentiate|distinguish between|write (short )?notes?|give (the )?(definition|examples?)|name the|mention)\b/i;
 
 let errors = 0, warnings = 0;
@@ -82,7 +77,8 @@ function checkHtml(where, html, ctx) {
   for (const b of BANNED) if (lower.includes(b)) warn(where, `banned/AI-ish phrase "${b.trim()}"`);
   const dashes = (text.match(/—/g) || []).length;
   if (dashes) warn(where, `${dashes} em dash(es) — rewrite with commas/periods`);
-  if (/!/.test(text.replace(/!=/g, ''))) warn(where, 'exclamation mark');
+  // exclamation marks only inside quoted speech (e.g. “It's my way or the highway!”)
+  if (/!/.test(text.replace(/!=/g, '').replace(/[“"][^”"]*[”"]/g, ''))) warn(where, 'exclamation mark');
   // unicode emoji
   if (/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/u.test(text)) warn(where, 'emoji-like character');
 }
@@ -123,9 +119,9 @@ function checkChunk(file, d, globalCtx) {
     if (!/^m[0-9]+-[a-z0-9-]+$/.test(f.id || '')) err(w, 'bad id');
     if (figIds.has(f.id) || globalCtx.figIds.has(f.id)) err(w, 'duplicate figure id');
     figIds.add(f.id); globalCtx.figIds.add(f.id);
-    if (!f.src || !fs.existsSync(path.join(ROOT, 'src', f.src))) err(w, `src not found: ${f.src}`);
-    if (/\.wmf$/i.test(f.src || '')) err(w, 'wmf equations cannot be shown; transcribe as text');
-    if (f.crop !== null && f.crop !== undefined && (!Array.isArray(f.crop) || f.crop.length !== 4)) err(w, 'crop must be null or [x,y,w,h]');
+    // every figure is our own drawing: figs-svg/<id>.svg (never a copied slide image)
+    if (!fs.existsSync(path.join(ROOT, 'figs-svg', f.id + '.svg'))) err(w, `figs-svg/${f.id}.svg not drawn yet`);
+    if (f.src) err(w, 'no src: figures are drawn as SVG, not copied from the slides');
     if (!f.caption) err(w, 'caption required');
     if (!f.alt) warn(w, 'alt text missing');
   }
@@ -175,6 +171,8 @@ function checkSummary(file, s, topicIds, seenQ) {
   (s.compare || []).forEach((c, i) => { if (!c.title || !c.html) err(`${w} compare ${i + 1}`, 'title/html required'); else checkHtml(`${w} compare ${c.title}`, c.html, ctx); });
   (s.formulas || []).forEach((f, i) => { if (!f.name || !f.html) err(`${w} formula ${i + 1}`, 'name/html required'); else checkHtml(`${w} formula ${f.name}`, f.html, ctx); });
   (s.numbers || []).forEach((n, i) => { if (!n.value || !n.what) err(`${w} number ${i + 1}`, 'value/what required'); });
+  (s.templates || []).forEach((t, i) => { if (!t.name || !t.html) err(`${w} template ${i + 1}`, 'name/html required'); else checkHtml(`${w} template ${t.name}`, t.html, ctx); });
+  if (!Array.isArray(s.templates) || !s.templates.length) warn(w, 'no templates[] (shown on the Rules & templates sheet)');
   (s.traps || []).forEach((t, i) => checkHtml(`${w} trap ${i + 1}`, t, ctx));
   (s.storyline || []).forEach((t, i) => { if (!t.title || !t.html) err(`${w} storyline ${i + 1}`, 'title/html required'); else checkHtml(`${w} storyline ${t.title}`, t.html, ctx); });
   (s.questions || []).forEach((q) => checkQuestion(w, q, topicIds, seenQ));

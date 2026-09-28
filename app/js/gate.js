@@ -49,8 +49,8 @@
     root.innerHTML = `
       <div class="gate">
         <div class="gate-card">
-          <div class="gate-eyebrow">BACHY105 · Applied Chemistry</div>
-          <h1 class="gate-title">Applied Chemistry</h1>
+          <div class="gate-eyebrow">BAENG101 · Technical English</div>
+          <h1 class="gate-title">Technical English</h1>
           <p class="gate-lead">Study notes for VIT students. Sign in with your <b>VIT student Google account</b> (…@${esc(domain)}) to continue.</p>
           <div id="gsi" class="gate-gsi"></div>
           ${S.devLogin ? `<form id="dev-login" class="gate-dev"><label>Local test only: sign in as<input id="dev-email" value="test@${esc(domain)}"></label><button class="btn" type="submit">Sign in (dev)</button></form>` : ''}
@@ -115,9 +115,9 @@
     root.innerHTML = `
       <div class="gate">
         <div class="gate-card">
-          <div class="gate-eyebrow">BACHY105 · Applied Chemistry</div>
-          <h1 class="gate-title">Applied Chemistry</h1>
-          <p class="gate-lead">${freeNames()} ${freeCount() === 1 ? 'is' : 'are'} free. Unlock ${paidNames()}: their notes, slide diagrams, interactive models, questions, quiz, flashcards and summaries.</p>
+          <div class="gate-eyebrow">BAENG101 · Technical English</div>
+          <h1 class="gate-title">Technical English</h1>
+          <p class="gate-lead">${freeNames()} ${freeCount() === 1 ? 'is' : 'are'} free. Unlock ${paidNames()}: their notes, diagrams, interactive exercises, questions, quiz, flashcards and summaries.</p>
           ${S.sale && S.sale.text && S.normalPrice > price ? `<div class="gate-offer-note" role="note">${esc(S.sale.text)}</div>` : ''}
           <div class="gate-price"><span class="gate-rs">₹${rs}</span>${S.sale && S.normalPrice > price ? `<s class="gate-was">₹${(S.normalPrice / 100).toFixed(0)}</s><span class="gate-offer">Offer ends ${offerEnds(S.sale.until)}</span>` : ''}<span class="gate-muted">one-time · pay with any UPI app</span></div>
           <div class="gate-devices" role="note">
@@ -168,9 +168,9 @@
         }
         const rzp = new window.Razorpay({
           key: o.keyId, order_id: o.orderId, amount: o.amount, currency: o.currency,
-          name: 'BACHY105 Notes', description: 'Full access to the notes',
+          name: 'BAENG101 Notes', description: 'Full access to the notes',
           prefill: { email: o.email },
-          notes: { product: 'bachy105-notes', email: o.email },
+          notes: { product: 'baeng101-notes', email: o.email },
           theme: { color: '#151517' },
           config: { display: {
             blocks: { upi: { name: 'Pay using UPI', instruments: [{ method: 'upi' }] } },

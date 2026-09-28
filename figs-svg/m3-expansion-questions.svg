@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 830">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" class="dfd"/></marker></defs>
+  <text x="10" y="34" font-size="22" class="dt3 mono">THE READER ASKS</text>
+  <text x="590" y="34" font-size="22" text-anchor="end" class="dt3 mono">YOU ADD</text>
+  <g font-size="22">
+    <text x="10" y="96" class="dt2">How did its name start?</text>
+    <path d="M292 89h32" class="ds3" stroke-width="2" marker-end="url(#a)"/>
+    <rect x="334" y="64" width="256" height="48" rx="24" class="dfb" fill-opacity=".18"/><text x="462" y="96" text-anchor="middle" class="dt">Etymology</text>
+
+    <text x="10" y="180" class="dt2">What is its history?</text>
+    <path d="M292 173h32" class="ds3" stroke-width="2" marker-end="url(#a)"/>
+    <rect x="334" y="148" width="256" height="48" rx="24" class="dfb" fill-opacity=".18"/><text x="462" y="180" text-anchor="middle" class="dt">History</text>
+
+    <text x="10" y="264" class="dt2">What does it not mean?</text>
+    <path d="M292 257h32" class="ds3" stroke-width="2" marker-end="url(#a)"/>
+    <rect x="334" y="232" width="256" height="48" rx="24" class="dfb" fill-opacity=".18"/><text x="462" y="264" text-anchor="middle" class="dt">Negation</text>
+
+    <text x="10" y="348" class="dt2">How does it work?</text>
+    <path d="M292 341h32" class="ds3" stroke-width="2" marker-end="url(#a)"/>
+    <rect x="334" y="316" width="256" height="48" rx="24" class="dfo" fill-opacity=".18"/><text x="462" y="348" text-anchor="middle" class="dt">Operating principle</text>
+
+    <text x="10" y="432" class="dt2">What are its parts?</text>
+    <path d="M292 425h32" class="ds3" stroke-width="2" marker-end="url(#a)"/>
+    <rect x="334" y="400" width="256" height="48" rx="24" class="dfo" fill-opacity=".18"/><text x="462" y="432" text-anchor="middle" class="dt">Analysis of parts</text>
+
+    <text x="10" y="516" class="dt2">What does it look like?</text>
+    <path d="M292 509h32" class="ds3" stroke-width="2" marker-end="url(#a)"/>
+    <rect x="334" y="484" width="256" height="48" rx="24" class="dfo" fill-opacity=".18"/><text x="462" y="516" text-anchor="middle" class="dt">Visuals</text>
+
+    <text x="10" y="590" class="dt2">How is it like or unlike</text>
+    <text x="10" y="618" class="dt2">something else?</text>
+    <path d="M292 597h32" class="ds3" stroke-width="2" marker-end="url(#a)"/>
+    <rect x="334" y="560" width="256" height="74" rx="24" class="dfg" fill-opacity=".18"/><text x="462" y="592" text-anchor="middle" class="dt">Comparison</text><text x="462" y="620" text-anchor="middle" class="dt">and contrast</text>
+
+    <text x="10" y="686" class="dt2">What is needed to</text>
+    <text x="10" y="714" class="dt2">make it work?</text>
+    <path d="M292 693h32" class="ds3" stroke-width="2" marker-end="url(#a)"/>
+    <rect x="334" y="668" width="256" height="48" rx="24" class="dfg" fill-opacity=".18"/><text x="462" y="700" text-anchor="middle" class="dt">Required conditions</text>
+
+    <text x="10" y="786" class="dt2">How is it used?</text>
+    <path d="M292 779h32" class="ds3" stroke-width="2" marker-end="url(#a)"/>
+    <rect x="334" y="754" width="256" height="48" rx="24" class="dfg" fill-opacity=".18"/><text x="462" y="786" text-anchor="middle" class="dt">Examples</text>
+  </g>
+</svg>

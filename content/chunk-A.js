@@ -1,475 +1,490 @@
 CHUNK({
   chunk: 'A',
-  module: 'm2',
+  module: 'm3',
   topics: [
-    // ------------------------------------------------------------------
     {
-      id: 'm2-electrochemical-cells',
-      title: 'Electrochemical cells',
-      short: 'Electrochemical cells',
-      blurb: 'What a cell is made of, galvanic vs electrolytic, how to write a cell, the Daniell cell and its salt bridge, EMF and the Nernst equation with a worked Cd/Cu problem.',
-      source: 'Slides 2–7',
+      id: 'm3-why-define',
+      title: 'Why define? Purpose, audience and responsibility',
+      short: 'Why define?',
+      blurb: 'What a definition is, why technical writers define terms at all, how purpose and audience decide the kind of definition, and the legal and ethical weight a definition can carry.',
+      source: 'Technical Definitions slides 2–13',
       tabs: [
-        { title: 'What a cell is', html: `
-          <p class="lead">An electrochemical cell either makes electricity from a <b>spontaneous</b> redox reaction or uses electricity to drive a <b>non-spontaneous</b> one. Same basic hardware, opposite direction of energy flow.</p>
-          <h3>What's inside</h3>
+        { title: 'What a definition is', html: `
+          <p class="lead">A <b>definition</b> is a statement of the <b>essential nature</b> of something, or of what a word or symbol <b>means</b>. Defining is the act of stating that meaning.</p>
+          <p>The dictionary gives three senses, and all three show up in technical writing:</p>
           <ul>
-            <li><b>Two electronic conductors</b> (electrodes): the anode and the cathode.</li>
-            <li>An ionic conductor, the <b>electrolyte</b>.</li>
-            <li>An outer path linking the electrodes, usually a <b>metal wire</b> such as copper wiring.</li>
+            <li>a statement of the <b>essential nature</b> of a thing (what a transformer really is)</li>
+            <li>a statement of the <b>meaning of a word</b>, phrase, sign or symbol (what "Ω" stands for)</li>
+            <li>the <b>action</b> of stating that meaning (you, defining a term in your report)</li>
           </ul>
-          <div class="note why"><p>The electrolyte carries ions, not electrons. So the electrons released at one electrode have only one way to reach the other: out through the wire. That trip through the wire is the current you use, while ions move inside to keep both sides neutral.</p></div>
-          <h3>Two kinds of cell</h3>
-          <div class="vs">
-            <div class="side"><h4>Galvanic (voltaic) cell</h4><p>Converts the energy released by a <b>spontaneous</b> chemical reaction into electrical energy.</p><p><b>ΔG &lt; 0</b>, chemical → electrical.</p><p>Example: the Daniell cell.</p></div>
-            <div class="side"><h4>Electrolytic cell</h4><p>Consumes electrical energy from an <b>external source</b> to drive a <b>non-spontaneous</b> reaction.</p><p><b>ΔG &gt; 0</b>, electrical → chemical.</p><p>Example: electrolysis, electroplating.</p></div>
-          </div>
-          <p>The galvanic cell is also called a <b>voltaic cell</b>, after its inventor, the Italian physicist <b>Alessandro Volta</b>.</p>
-          <details class="more"><summary>Where this sits in Module 2</summary>
-            <p>The module runs: electrochemical and electrolytic cells → electrode materials with examples (semiconductors) → classification of batteries and the chemistry of Li-ion secondary batteries → fuel cells (H<sub>2</sub>–O<sub>2</sub> and solid oxide fuel cell, SOFC) → solar cells (silicon photovoltaic cell, photoelectrochemical cells and dye-sensitized cells).</p>
-          </details>
+          <h3>Why bother defining?</h3>
+          <div class="chips"><span class="chip">increase reader understanding</span><span class="chip">explain technical terms</span><span class="chip">establish common ground</span></div>
+          <p>A definition puts everyone <b>on the same page</b>: writer, reader, client and examiner all mean the same thing by the same word. A term that is left <b>improperly defined</b> can mislead readers, cause wrong decisions and even create legal trouble.</p>
+          <div class="note example"><p>The slides quote the philosopher Ludwig Wittgenstein: "The limits of my language mean the limits of my world." If a reader doesn't have the word, they can't think clearly about the thing.</p></div>
+          <div class="note exam"><p>CAT questions on this topic are about <b>applying</b> definitions: which type fits a reader, what is wrong with a given definition, or writing one yourself. Know the purpose first, then the three types.</p></div>
         ` },
-        { title: 'Cell notation', html: `
-          <p class="lead">A cell is written on one line in a fixed order: <b>anode on the left</b>, <b>cathode on the right</b>. Learn the order once and you can read any cell you're given.</p>
+        { title: 'Purpose and audience', html: `
+          <p class="lead">No single type of definition works everywhere. Two things decide what you write: your <b>purpose</b> and your <b>audience</b>.</p>
           <ul>
-            <li>Left-hand electrode = anode, where <b>oxidation</b> occurs.</li>
-            <li>Right-hand electrode = cathode, where <b>reduction</b> occurs.</li>
+            <li><b>Purpose</b>: why does the reader need the term? A quick mention in passing needs a few words; a term the whole report depends on needs a full paragraph.</li>
+            <li><b>Audience</b>: what does the reader already know? An engineer and a house owner need different definitions of the same word.</li>
+            <li><b>Analogies</b> help nonexperts: "a firewall works like a security guard at a building entrance".</li>
           </ul>
+          <div class="vs">
+            <div class="side"><h4>Client's progress report</h4><p>The <b>leaching field</b> (sieve-like drainage area) needs crushed stone.</p><p><small>A general idea is enough.</small></p></div>
+            <div class="side"><h4>Public health report</h4><p>A full paragraph on what a leaching field is, how waste water filters through it and how it can <b>contaminate groundwater</b>.</p><p><small>The whole report depends on the term.</small></p></div>
+          </div>
+          <p>Clear definitions also help us judge <b>complex technical and social issues</b>. Before anyone can debate <b>genetic engineering</b>, they need at least a basic definition: a technique through which genes are <b>isolated</b> in a laboratory, <b>manipulated</b>, and then <b>inserted stably</b> into another organism (by mechanical, chemical or biological means such as viruses).</p>
+          <div class="note example"><p>The slides also show a dictionary entry for <b>meme</b>: "an idea, behaviour, style, or usage that spreads from person to person within a culture". Notice how it names what a meme is (an idea or behaviour) and then what makes it special (it spreads within a culture).</p></div>
+        ` },
+        { title: 'Legal weight', html: `
+          <p class="lead">A precise definition matters legally because <b>you</b>, or the organisation you write for, are <b>legally responsible</b> for the document.</p>
+          <ul>
+            <li><b>Contracts</b> are detailed, legally binding definitions of the specific terms of an agreement.</li>
+            <li>A <b>lease</b> for an apartment or a car defines the responsibilities of the <b>lessee</b> (the person renting) and the <b>lessor</b> (the owner).</li>
+            <li>An <b>employment contract</b> or <b>employee handbook</b> spells out what both employer and employee must do.</li>
+          </ul>
+          <div class="vs">
+            <div class="side"><h4>Vague</h4><p>"The tenant must keep the flat in good condition."</p><p><small>What counts as good? Who pays for a broken geyser?</small></p></div>
+            <div class="side"><h4>Precise</h4><p>"The tenant pays for damage caused by misuse. The owner pays for repairs caused by normal wear, including the water heater and wiring."</p></div>
+          </div>
+          <div class="note why"><p>A court reads the words, not what you meant. If a term can be read two ways, the other side will pick the reading that suits them.</p></div>
+        ` },
+        { title: 'Ethical weight: Challenger', html: `
+          <p class="lead">Definitions have <b>ethical implications</b> too. The slides use the <b>Challenger</b> disaster to show how one badly defined phrase, <b>acceptable risk</b>, cost seven lives.</p>
+          <div class="kv">
+            <div><span>Date</span><b>28 January 1986</b></div>
+            <div><span>What happened</span><b>exploded 73 seconds after launch</b></div>
+            <div><span>Crew lost</span><b>all seven</b></div>
+            <div><span>Cause</span><b>two rubber O-ring seals</b> in a booster rocket failed</div>
+          </div>
+          <p>The failed O-rings let hot exhaust gases escape and ignite the adjacent fuel tank. Hours before launch, the engineers objected strongly. <b>Management</b> still decided the launch was "a risk worth taking".</p>
+          <p>Management's definition of acceptable risk was based on <b>bureaucratic pressure</b> to launch on schedule, not on the <b>engineering facts</b>.</p>
+          <div class="note exam"><p>The lesson the slides draw: agreeing on meaning is rarely easy, but you are <b>ethically bound</b> to give an <b>accurate interpretation of the facts</b> as you understand them. If a question asks why definitions have ethical weight, Challenger is your example.</p></div>
+        ` },
+        { title: 'Three types at a glance', html: `
+          <p class="lead">Technical writing uses three types of definition. They differ in <b>how much detail</b> your audience needs to grasp your exact meaning.</p>
+          <figure data-fig="m3-definition-types"></figure>
           <table class="tbl">
-            <thead><tr><th></th><th>Electrode on the left</th><th>Electrode on the right</th></tr></thead>
+            <thead><tr><th>Type</th><th>Length</th><th>Formality</th><th>Use it when</th></tr></thead>
             <tbody>
-              <tr><td>Written as</td><td>Metal (or solid phase) | Electrolyte (whole formula or ion)</td><td>Electrolyte (whole formula or ion) | Metal (or solid phase)</td></tr>
-              <tr><td>Example</td><td>Zn | Zn(NO<sub>3</sub>)<sub>2</sub> (1 M)</td><td>Cu(NO<sub>3</sub>)<sub>2</sub> (1 M) | Cu</td></tr>
-              <tr><td>Half-reaction</td><td>Oxidation: M<sub>1</sub> → M<sub>1</sub><sup>n+</sup> + n e<sup>−</sup></td><td>Reduction: M<sub>2</sub><sup>n+</sup> + n e<sup>−</sup> → M<sub>2</sub></td></tr>
+              <tr><td><b>Parenthetical</b></td><td>a word or phrase in brackets</td><td>least formal</td><td>the reader needs only a quick clarification</td></tr>
+              <tr><td><b>Sentence</b></td><td>one or two sentences</td><td>more formal</td><td>the reader needs more than a synonym, or you want a working definition</td></tr>
+              <tr><td><b>Expanded</b></td><td>a paragraph or more</td><td>most formal</td><td>the reader needs a complete understanding</td></tr>
             </tbody>
           </table>
-          <p>Join the two halves with a double line and you have the overall representation of a galvanic cell:</p>
-          <div class="eq" data-label="Galvanic cell">M<sub>1</sub> | M<sub>1</sub><sup>n+</sup> (C<sub>1</sub>) ‖ M<sub>2</sub><sup>n+</sup> (C<sub>2</sub>) | M<sub>2</sub></div>
-          <div class="kv">
-            <div><span>Single line |</span><b>phase boundary</b></div>
-            <div><span>Double line ‖</span><b>salt bridge</b></div>
-            <div><span>C<sub>1</sub>, C<sub>2</sub></span><b>ion concentrations</b></div>
-          </div>
-          <p>Notice the metal sits on the outside at both ends: metal first on the left, metal last on the right.</p>
-          <div class="mnemonic"><b>An Ox, Red Cat</b>: the ANode does OXidation, REDuction happens at the CAThode. Alphabetical order helps too: anode comes before cathode, so it goes on the left.</div>
-          <div class="note exam"><p>Given a cell such as Cd | Cd<sup>2+</sup> ‖ Cu<sup>2+</sup> | Cu, treat the left metal as the anode: write its oxidation, write the right-hand reduction, then add them for the net reaction.</p></div>
+          <div class="mnemonic"><p><b>P-S-E</b>: brackets, a sentence, an essay. The more the reader depends on the term, the further right you go.</p></div>
         ` },
-        { title: 'Daniell cell', html: `
-          <p class="lead">The textbook galvanic cell: zinc gives up electrons, copper ions take them, and a salt bridge keeps the two beakers connected. It was invented by the British chemist <b>John Frederic Daniell</b>.</p>
-          <figure data-fig="m2-daniell-cell"></figure>
-          <div class="kv">
-            <div><span>Anode (−)</span><b>Zn rod in ZnSO<sub>4</sub></b></div>
-            <div><span>Cathode (+)</span><b>Cu rod in CuSO<sub>4</sub></b></div>
-            <div><span>Salt bridge</span><b>KCl or NH<sub>4</sub>Cl in gelatine</b></div>
-            <div><span>Cell emf</span><b>1.1 V</b></div>
-          </div>
-          <div class="eq" data-label="Anode, oxidation">Zn → Zn<sup>2+</sup> + 2e<sup>−</sup></div>
-          <div class="eq" data-label="Cathode, reduction">Cu<sup>2+</sup> + 2e<sup>−</sup> → Cu</div>
-          <div class="eq" data-label="Net">Zn + Cu<sup>2+</sup> → Zn<sup>2+</sup> + Cu</div>
-          <div class="note heads-up"><p>The figure writes the zinc half-reaction as Zn(s) + 2e<sup>−</sup> → Zn<sup>2+</sup>, with the electrons on the wrong side. Zinc is oxidised, so it loses electrons: Zn → Zn<sup>2+</sup> + 2e<sup>−</sup>. The slide title's "Daniel" is a misspelling of Daniell.</p></div>
-          <div class="eq" data-label="Notation">Zn(s) | ZnSO<sub>4</sub>(aq) ‖ CuSO<sub>4</sub>(aq) | Cu(s)</div>
-          <p>Each electrode in its solution is a <b>half cell</b>. The two half cells are connected through a <b>salt bridge</b>, which:</p>
-          <ul>
-            <li>maintains the <b>charge balance</b> in the two half cells</li>
-            <li>minimises or eliminates the <b>liquid junction potential</b></li>
-          </ul>
-          <div class="note why"><p>Without the bridge, the zinc beaker fills up with new Zn<sup>2+</sup> and turns positive, while the copper beaker is left with spare SO<sub>4</sub><sup>2−</sup> and turns negative. That charge build-up stops the reaction almost at once. The bridge sends Cl<sup>−</sup> into the zinc side and K<sup>+</sup> into the copper side, so current keeps flowing. KCl is a good choice because K<sup>+</sup> and Cl<sup>−</sup> move at nearly the same speed, so they add almost no extra potential where the two solutions meet.</p></div>
-          <p>Try it: follow the electrons and the bridge ions, then switch to Electrolytic and watch the electrode signs flip while oxidation stays at the anode.</p>
-          <div data-viz="cell-galvanic"></div>
-          <div class="note trap"><p>The anode is <b>negative</b> in a galvanic cell but <b>positive</b> in an electrolytic cell. What never changes is <b>oxidation at the anode</b>, reduction at the cathode.</p></div>
-        ` },
-        { title: 'EMF & Nernst', html: `
-          <p class="lead">EMF is the <b>maximum potential difference between the two electrodes</b> of a galvanic cell. The Nernst equation tells you how it shifts when the solutions aren't at standard concentration.</p>
-          <ul>
-            <li>It reflects the tendency of an element, compound or ion to <b>gain or lose electrons</b>.</li>
-            <li>A cell reaction is <b>feasible when E<sub>cell</sub> is positive</b>.</li>
-          </ul>
-          <div class="note why"><p>Voltage and free energy measure the same drive: ΔG = −nFE. A positive E<sub>cell</sub> means ΔG &lt; 0, which is exactly the spontaneous case a galvanic cell runs on.</p></div>
-          <h3>Nernst equation, as on the slide</h3>
-          <div class="eq">E<sub>cell</sub> = E°<sub>M1</sub> − E°<sub>M2</sub> + <span class="frac"><span>0.059</span><span>n</span></span> log<sub>10</sub> <span class="frac"><span>[M<sub>1</sub><sup>n+</sup>]</span><span>[M<sub>2</sub><sup>n+</sup>]</span></span></div>
-          <div class="kv">
-            <div><span>E°<sub>M1</sub></span><b>standard reduction potential of the cathode</b></div>
-            <div><span>E°<sub>M2</sub></span><b>standard reduction potential of the anode</b></div>
-            <div><span>n</span><b>electrons transferred</b></div>
-            <div><span>0.059</span><b>2.303RT/F at 298 K</b></div>
-          </div>
-          <p>In words: E<sub>cell</sub> = E°<sub>cathode</sub> − E°<sub>anode</sub> + (0.059/n) log([cathode ion]/[anode ion]). Flip the fraction and the sign and you get the form most books print, often with the constant written 0.0591 (the same 2.303RT/F at 298 K, rounded to one more digit):</p>
-          <div class="eq" data-label="Same equation, textbook form">E<sub>cell</sub> = E°<sub>cell</sub> − <span class="frac"><span>0.0591</span><span>n</span></span> log <span class="frac"><span>[anode ion]</span><span>[cathode ion]</span></span></div>
-          <div class="note heads-up"><p>The slide labels both E° values "standard reduction potential of cathode". The second one, E°<sub>M2</sub>, belongs to the anode. The numbering also swaps between slides: here M<sub>1</sub> is the cathode, but in the cell-notation slide M<sub>1</sub> was the left-hand anode. Go by cathode and anode rather than by the subscript. The worked example (Cu cathode on top of the fraction) confirms this reading.</p></div>
-          <h3>Equimolar solutions</h3>
-          <p>If the electrolytes for M<sub>1</sub> and M<sub>2</sub> have the same concentration, the ratio is 1, log 1 = 0, and the log term disappears:</p>
-          <div class="eq" data-label="Equimolar">E<sub>cell</sub> = E°<sub>M1</sub> − E°<sub>M2</sub></div>
-          <div class="note why"><p>Reading the log term: more cathode ions, or fewer anode ions, pushes the reaction forward, so E<sub>cell</sub> rises above E°<sub>cell</sub>. Dilute the cathode side and it drops.</p></div>
-        ` },
-        { title: 'Worked example', html: `
-          <p class="lead">The slide problem: write the half-cell reactions, the net reaction and the EMF of Cd | Cd<sup>2+</sup> (0.01 M) ‖ Cu<sup>2+</sup> (0.5 M) | Cu. Standard reduction potentials are −0.40 V and 0.34 V respectively.</p>
-          <div class="worked">
-            <div class="given"><p>Cd | Cd<sup>2+</sup> (0.01 M) ‖ Cu<sup>2+</sup> (0.5 M) | Cu</p><p>E°(Cd<sup>2+</sup>/Cd) = −0.40 V, E°(Cu<sup>2+</sup>/Cu) = 0.34 V, n = 2</p></div>
-            <div class="solve">
-              <div class="eq" data-label="At anode">Cd → Cd<sup>2+</sup> + 2e<sup>−</sup> (E° = −0.40 V)</div>
-              <div class="eq" data-label="At cathode">Cu<sup>2+</sup> + 2e<sup>−</sup> → Cu (E° = 0.34 V)</div>
-              <div class="eq" data-label="Net reaction">Cd + Cu<sup>2+</sup> → Cu + Cd<sup>2+</sup></div>
-              <div class="eq" data-label="Cell EMF">E<sub>cell</sub> = 0.34 − (−0.40) + <span class="frac"><span>0.059</span><span>2</span></span> log<sub>10</sub> <span class="frac"><span>[0.5]</span><span>[0.01]</span></span></div>
-              <div class="eq">= 0.74 + <span class="frac"><span>0.059</span><span>2</span></span> log<sub>10</sub> 50</div>
-              <div class="eq">= 0.74 + <span class="frac"><span>0.059</span><span>2</span></span> × 1.7</div>
-              <div class="eq">= 0.74 + 0.05</div>
-            </div>
-            <div class="result"><p>E<sub>cell</sub> = <b>0.79 V</b>. Positive, so the reaction is feasible.</p></div>
-          </div>
-          <div class="note why"><p>E°<sub>cell</sub> on its own is <b>0.74 V</b>. The answer comes out higher because the cathode solution is concentrated (0.5 M Cu<sup>2+</sup>) and the anode solution is dilute (0.01 M Cd<sup>2+</sup>). Both favour the forward reaction.</p></div>
-          <div class="note exam"><p>The electrode with the <b>lower (more negative) reduction potential</b> is the one oxidised. Cd (−0.40 V) has the lower reduction potential, so Cd is the one oxidised. That is why it sits on the left as the anode. Keep log 50 = 1.699 ≈ 1.7 handy.</p></div>
-          <p>Try it: load the Cd/Cu preset to get 0.79 V, then lower [Cu<sup>2+</sup>] to 0.01 M and watch E<sub>cell</sub> fall back to E°<sub>cell</sub> = 0.74 V.</p>
-          <div data-viz="nernst"></div>
-        ` }
       ],
       flashcards: [
-        { front: 'Sign of ΔG in a galvanic cell vs an electrolytic cell?', back: 'Galvanic: <b>ΔG &lt; 0</b>, spontaneous, makes electricity. Electrolytic: <b>ΔG &gt; 0</b>, needs an external source.' },
-        { front: 'The three parts of an electrochemical cell?', back: '<b>Two electrodes</b> (anode and cathode), an <b>electrolyte</b> (ionic conductor), and an outer electron path such as a <b>copper wire</b>.' },
-        { front: 'In cell notation, which electrode is written on the left and what happens there?', back: 'The <b>anode</b>. <b>Oxidation</b> happens there. The cathode (reduction) goes on the right.' },
-        { front: 'Daniell cell: anode, cathode and EMF?', back: 'Zn in ZnSO<sub>4</sub> is the anode (−), Cu in CuSO<sub>4</sub> is the cathode (+). EMF = <b>1.1 V</b>.' },
-        { front: 'What is the salt bridge made of, and what are its two jobs?', back: '<b>KCl or NH<sub>4</sub>Cl in gelatine</b>. It keeps the <b>charge balance</b> in both half cells and minimises the <b>liquid junction potential</b>.' },
-        { front: 'Define EMF of a cell.', back: 'The <b>maximum potential difference</b> between the two electrodes of a galvanic (voltaic) cell.' },
-        { front: 'When is a cell reaction feasible?', back: 'When <b>E<sub>cell</sub> is positive</b> (which means ΔG &lt; 0).' },
-        { front: 'Nernst equation when both solutions are equimolar?', back: '<b>E<sub>cell</sub> = E°<sub>cathode</sub> − E°<sub>anode</sub></b>. The log term vanishes because log 1 = 0.' },
-        { front: 'EMF of Cd | Cd<sup>2+</sup> (0.01 M) ‖ Cu<sup>2+</sup> (0.5 M) | Cu?', back: '<b>0.79 V</b>: E°<sub>cell</sub> = 0.74 V plus (0.059/2) × log 50 ≈ 0.05 V.' },
-        { front: 'Who gave their names to the voltaic cell and the Daniell cell?', back: '<b>Alessandro Volta</b>, Italian physicist; <b>John Frederic Daniell</b>, British chemist.' }
+        { front: 'Two things that decide which kind of definition you write?', back: 'Your <b>purpose</b> and your <b>audience</b>.' },
+        { front: 'What does a definition establish between writer and reader?', back: '<b>Common ground</b>: everyone means the same thing by the term.' },
+        { front: 'Why is precise definition a legal matter?', back: 'You or your organisation are <b>legally responsible</b> for the document.' },
+        { front: 'A contract is a detailed, legally binding…', back: '<b>Definition</b> of the terms of an agreement.' },
+        { front: 'In a lease, who is the lessee?', back: 'The person <b>renting</b> the flat or car.' },
+        { front: 'Which phrase was badly defined before the Challenger launch?', back: '<b>Acceptable risk</b>.' },
+        { front: 'Challenger: what failed?', back: 'Two rubber <b>O-ring seals</b> in a booster rocket.' },
+        { front: 'Challenger: management defined the risk based on…', back: '<b>Bureaucratic pressure</b> to launch on schedule, not engineering facts.' },
+        { front: 'The three types of technical definition?', back: '<b>Parenthetical</b>, <b>sentence</b>, <b>expanded</b>.' },
+        { front: 'Which type is the most formal?', back: 'The <b>expanded</b> definition.' },
       ],
       oneLiners: [
-        'Galvanic cell: chemical → electrical, ΔG &lt; 0. Electrolytic cell: electrical → chemical, ΔG &gt; 0.',
-        'Anode on the left (oxidation), cathode on the right (reduction): M<sub>1</sub> | M<sub>1</sub><sup>n+</sup> (C<sub>1</sub>) ‖ M<sub>2</sub><sup>n+</sup> (C<sub>2</sub>) | M<sub>2</sub>.',
-        'Daniell cell Zn | ZnSO<sub>4</sub> ‖ CuSO<sub>4</sub> | Cu gives 1.1 V; salt bridge is KCl or NH<sub>4</sub>Cl in gelatine.',
-        'A salt bridge maintains charge balance and minimises the liquid junction potential.',
-        'EMF is the maximum potential difference between the electrodes; the reaction is feasible when E<sub>cell</sub> &gt; 0.',
-        'E<sub>cell</sub> = E°<sub>cathode</sub> − E°<sub>anode</sub> + (0.059/n) log([cathode ion]/[anode ion]); equimolar case drops the log term.',
-        'Cd/Cu example: 0.74 V + 0.05 V = 0.79 V.'
+        'A definition states the <b>essential nature</b> of a thing or the <b>meaning</b> of a word, phrase or symbol.',
+        'Define to increase reader understanding, explain technical terms and establish <b>common ground</b>.',
+        'The right kind of definition depends on <b>purpose</b> and <b>audience</b>; analogies help nonexperts.',
+        'Legal weight: you are <b>legally responsible</b> for your document; contracts are binding definitions.',
+        'Ethical weight: Challenger (28 Jan 1986) and management\'s definition of <b>acceptable risk</b>.',
+        'Three types by detail: <b>parenthetical</b> → <b>sentence</b> → <b>expanded</b>.',
       ],
       formulas: [
-        { name: 'Nernst equation (slide form)', html: `E<sub>cell</sub> = E°<sub>M1</sub> − E°<sub>M2</sub> + <span class="frac"><span>0.059</span><span>n</span></span> log<sub>10</sub> <span class="frac"><span>[M<sub>1</sub><sup>n+</sup>]</span><span>[M<sub>2</sub><sup>n+</sup>]</span></span>`, note: 'Careful: here M<sub>1</sub> = cathode and M<sub>2</sub> = anode, the reverse of M<sub>1</sub>/M<sub>2</sub> in the cell-notation formula. Both E° are standard reduction potentials; 298 K.' },
-        { name: 'Nernst equation (textbook form)', html: `E<sub>cell</sub> = E°<sub>cell</sub> − <span class="frac"><span>0.0591</span><span>n</span></span> log <span class="frac"><span>[anode ion]</span><span>[cathode ion]</span></span>`, note: 'Same equation with the fraction flipped and the sign changed; 0.059 and 0.0591 are both 2.303RT/F at 298 K, rounded.' },
-        { name: 'Equimolar solutions', html: `E<sub>cell</sub> = E°<sub>cathode</sub> − E°<sub>anode</sub>`, note: 'log 1 = 0, so the concentration term drops out.' },
-        { name: 'Free energy and EMF', html: `ΔG = −nFE<sub>cell</sub>`, note: 'Standard link behind the rule: E > 0 means ΔG < 0 (spontaneous).' },
-        { name: 'Daniell cell', html: `Zn + Cu<sup>2+</sup> → Zn<sup>2+</sup> + Cu`, note: 'Anode Zn → Zn²⁺ + 2e⁻; cathode Cu²⁺ + 2e⁻ → Cu; EMF 1.1 V.' },
-        { name: 'Cell representation', html: `M<sub>1</sub> | M<sub>1</sub><sup>n+</sup> (C<sub>1</sub>) ‖ M<sub>2</sub><sup>n+</sup> (C<sub>2</sub>) | M<sub>2</sub>`, note: 'Anode left, cathode right; ‖ is the salt bridge.' }
-      ]
+        { name: 'Choosing a definition', html: `How much the reader depends on the term → <b>parenthetical</b> (a little) · <b>sentence</b> (more) · <b>expanded</b> (a lot)`, note: 'Decide by purpose and audience, never by habit.' },
+      ],
     },
-    // ------------------------------------------------------------------
+
     {
-      id: 'm2-semiconductors',
-      title: 'Semiconductors as electrode materials',
-      short: 'Semiconductors',
-      blurb: 'Band gaps, why heat makes semiconductors conduct better, intrinsic vs extrinsic, how phosphorus and boron create n-type and p-type silicon, and the common elemental and compound semiconductors.',
-      source: 'Slides 8–14',
+      id: 'm3-parenthetical',
+      title: 'Parenthetical definitions',
+      short: 'Parenthetical',
+      blurb: 'The quickest kind of definition: a familiar synonym or a short clarifying phrase in brackets, right inside the sentence.',
+      source: 'Technical Definitions slides 14–16',
       tabs: [
         { title: 'What it is', html: `
-          <p class="lead">A semiconductor is a substance, usually a solid element or compound, that <b>conducts electricity under some conditions but not others</b>. That switchability makes it a good medium for controlling electrical current.</p>
-          <h3>The band picture</h3>
-          <ul>
-            <li><b>Almost filled valence band</b></li>
-            <li><b>Empty conduction band</b></li>
-            <li><b>Very narrow energy gap</b>, of the order of <b>1 eV</b></li>
-          </ul>
+          <p class="lead">A <b>parenthetical definition</b> clarifies a word with a more familiar <b>synonym</b> or a short <b>clarifying phrase</b> placed in <b>parentheses</b>, inside the same sentence.</p>
           <div class="kv">
-            <div><span>Energy gap, Si</span><b>1.0 eV</b></div>
-            <div><span>Energy gap, Ge</span><b>0.7 eV</b></div>
+            <div><span>Formality</span><b>least formal</b> of the three types</div>
+            <div><span>Where</span><b>in-line</b>, within the sentence</div>
+            <div><span>Job</span>a quick <b>clarification</b> or brief explanation</div>
           </div>
-          <p>Both gaps sit around 1 eV, which is why Si and Ge are semiconductors. They appear under electrode materials because semiconductor electrodes do the light-absorbing work in the solar and photoelectrochemical cells later in this module.</p>
-          <figure data-fig="m2-band-diagrams"></figure>
+          <p>The slides' two textbook examples:</p>
+          <ul>
+            <li>The <b>leaching field</b> (sieve-like drainage area) requires crushed stone.</li>
+            <li>The trees on the site are mostly <b>deciduous</b> (shedding foliage at season's end).</li>
+          </ul>
+          <div class="note why"><p>The reader never leaves the sentence. They get just enough to keep reading, and an expert can skip the brackets in a second.</p></div>
+        ` },
+        { title: 'More examples', html: `
+          <p class="lead">Anything short can go in the brackets: an <b>acronym's full form</b>, a <b>simpler word</b>, or an <b>example</b>.</p>
           <table class="tbl">
-            <thead><tr><th></th><th>Insulator</th><th>Semiconductor</th><th>Conductor</th></tr></thead>
+            <thead><tr><th>Sentence</th><th>What the brackets do</th></tr></thead>
             <tbody>
-              <tr><td>Forbidden band (gap)</td><td>Wide</td><td>Narrow, ≈ 1 eV</td><td>None, bands overlap</td></tr>
-              <tr><td>Electrons in conduction band</td><td>Practically none</td><td>A few, more when warm</td><td>Plenty</td></tr>
-              <tr><td>Conducts</td><td>No</td><td>Under some conditions</td><td>Yes</td></tr>
+              <tr><td>RAM (random access memory) is a form of computer data storage…</td><td>expand an <b>acronym</b></td></tr>
+              <tr><td>…when a charged particle (such as an electron) passes through a dielectric medium…</td><td>give an <b>example</b> of the class</td></tr>
+              <tr><td>Voltaire was imprisoned twice in the Bastille (French fortress), in 1717 and 1726.</td><td>give a <b>simpler description</b></td></tr>
             </tbody>
           </table>
-          <div class="note why"><p>The gap is the energy an electron needs to leave its bond and move freely. Around 1 eV is small enough that heat or light can lift some electrons across, but large enough that only a few make it at room temperature. So the number of carriers stays low and easy to control, by temperature, light or doping. That control is what makes them useful.</p></div>
-          <div class="note heads-up"><p>This slide gives Si = 1.0 eV and Ge = 0.7 eV. Slide 47 later quotes Si as 1.23 eV at 300 K, and the table on slide 53 uses 1.12 eV, the standard value for Si. The standard value for Ge is about 0.66 eV. Write 1.0 eV when a question is based on this slide.</p></div>
+          <h3>Online</h3>
+          <p>On a <b>web page</b>, social media post or online help system, a short definition can be <b>linked</b> to the word. A reader who taps "leaching field" gets a small window with the brief definition.</p>
+          <div class="note trap"><p>"RAM (random access memory) <b>is a form of computer data storage which stores frequently used program instructions</b>" contains both types. The brackets are parenthetical, but the whole sentence (term, class, features) is a <b>sentence definition</b>. The course MCQ worksheet treats it as a sentence definition. Read what the question points at.</p></div>
         ` },
-        { title: 'Temperature', html: `
-          <p class="lead">At <b>0 K</b> electrons are frozen in the valence band, so all semiconductors are <b>insulators</b>. Warm one up and it conducts better and better.</p>
-          <ul>
-            <li>Electrical conductivity <b>increases with temperature</b>, as resistivity decreases.</li>
-            <li>Higher temperature makes the <b>valence → conduction band transition</b> easier, giving higher conductivity and lower resistivity.</li>
-          </ul>
-          <figure data-fig="m2-resistivity-temp"></figure>
-          <figure data-fig="m2-bands-temperature"></figure>
-          <div class="note why"><p>Each electron that jumps the gap counts twice. It can move in the conduction band, and the empty spot it leaves in the valence band (a <b>hole</b>) lets neighbouring electrons shuffle along too. More heat, more jumps, more carriers.</p></div>
-          <p>Try it: drag the temperature up from 0 K and watch the semiconductor's conductivity climb as electrons hop the gap, while the metal's dips slightly.</p>
-          <div data-viz="bands"></div>
-          <div class="note trap"><p>Metals go the other way: their resistance <b>rises</b> with temperature, because hotter atoms vibrate more and scatter electrons. Resistance falling on heating is the signature of a semiconductor.</p></div>
-        ` },
-        { title: 'Types', html: `
-          <p class="lead">Two families: <b>intrinsic</b> (the pure element) and <b>extrinsic</b> (deliberately doped). Extrinsic splits again into <b>n-type</b> and <b>p-type</b>.</p>
-          <figure data-fig="m2-semiconductor-types"></figure>
-          <table class="tbl">
-            <thead><tr><th></th><th>Intrinsic</th><th>n-type</th><th>p-type</th></tr></thead>
-            <tbody>
-              <tr><td>Composition</td><td>Pure Ge, Si</td><td>Si/Ge + pentavalent impurity</td><td>Si/Ge + trivalent impurity</td></tr>
-              <tr><td>Dopants</td><td>None</td><td>P, As, Sb</td><td>B, Al, Ga, In</td></tr>
-              <tr><td>Impurity</td><td>None</td><td>Donor, N<sub>D</sub></td><td>Acceptor, N<sub>A</sub></td></tr>
-              <tr><td>Carriers</td><td>n<sub>e</sub> = n<sub>h</sub> = n<sub>i</sub></td><td>n<sub>e</sub> ≫ n<sub>h</sub></td><td>n<sub>h</sub> ≫ n<sub>e</sub></td></tr>
-              <tr><td>Called</td><td>–</td><td>Negative charge conductor</td><td>Positive charge conductor</td></tr>
-            </tbody>
-          </table>
-          <p>Here n<sub>e</sub> is the electron concentration, n<sub>h</sub> the hole concentration and n<sub>i</sub> the intrinsic carrier concentration.</p>
-          <div class="note heads-up"><p>The chart labels the p-type side "Donar impurity – N<sub>D</sub>", copied from the n-type side. Trivalent atoms take electrons, so the right label is <b>acceptor impurity, N<sub>A</sub></b>. "Donar" is also a misspelling of donor.</p></div>
-          <h3>Elements or compounds</h3>
-          <p>Semiconductors come as either elements or compounds. <b>Silicon and germanium</b> are the most common elemental ones. Compound semiconductors include:</p>
-          <div class="chips"><span class="chip">InSb</span><span class="chip">InAs</span><span class="chip">GaP</span><span class="chip">GaSb</span><span class="chip">GaAs</span><span class="chip">SiC</span><span class="chip">GaN</span></div>
-          <div class="note why"><p>Most of these pair a group 13 element (In, Ga) with a group 15 one (Sb, As, P, N), and SiC pairs two group 14 atoms. Either way the average is four valence electrons per atom, the same as Si, so they bond in the same tetrahedral way and behave as semiconductors. Their gaps differ a lot, though: InSb's is tiny, while SiC and GaN have wide gaps of about 3 eV or more.</p></div>
-        ` },
-        { title: 'Intrinsic', html: `
-          <p class="lead">An intrinsic semiconductor is <b>chemically very pure</b> and has <b>poor conductivity</b>. Its only carriers come from heat breaking a few bonds.</p>
-          <ul>
-            <li>Each broken Si–Si bond frees one electron and leaves one hole, so it has <b>equal numbers</b> of electrons (negative carriers) and holes (positive carriers).</li>
-            <li>Examples: pure Si and pure Ge.</li>
-          </ul>
-          <figure data-fig="m2-intrinsic-lattice"></figure>
+        { title: 'Writing a good one', html: `
+          <p class="lead">A parenthetical definition must be <b>shorter and simpler</b> than the term it explains. If it needs a full sentence, you need a sentence definition instead.</p>
           <div class="vs">
-            <div class="side"><h4>No electric field</h4><p>Electron–hole pairs form and wander at random. <b>No net current</b>.</p></div>
-            <div class="side"><h4>Electric field applied</h4><p>Electrons and holes drift in <b>opposite directions</b>, and both add to the current.</p></div>
+            <div class="side"><h4>Wrong</h4><p>The pump uses an <b>impeller</b> (a rotor used to increase the pressure and flow of a fluid by transferring mechanical energy from the motor through vanes arranged around a central hub).</p><p><small>Too long: the reader loses the main sentence.</small></p></div>
+            <div class="side"><h4>Right</h4><p>The pump uses an <b>impeller</b> (a spinning rotor with vanes) to push water up.</p></div>
           </div>
-          <div class="note why"><p>A hole moves because a neighbouring bond electron hops into it, leaving a fresh gap one step back. The electron goes one way, the gap goes the other, so the hole behaves like a positive charge.</p></div>
-          <div class="note heads-up"><p>This figure's legend is swapped. The small blue dots are the bonding electrons, and the yellow ring at a broken bond marks the hole. Check the right panel: the yellow "hole movement" arrows start at the rings, the green "electron movement" arrows at the blue dots.</p></div>
-        ` },
-        { title: 'Doping', html: `
-          <p class="lead">An extrinsic semiconductor is an <b>improved intrinsic semiconductor</b> with a small amount of impurity added by a process called <b>doping</b>. Doping alters the electrical properties and <b>improves conductivity</b>.</p>
-          <p>Introducing impurities lets you <b>control the conductivity</b>. Doping produces two groups:</p>
           <div class="vs">
-            <div class="side"><h4>n-type</h4><p>The <b>negative charge conductor</b>. Pentavalent dopant, extra electrons.</p></div>
-            <div class="side"><h4>p-type</h4><p>The <b>positive charge conductor</b>. Trivalent dopant, extra holes.</p></div>
+            <div class="side"><h4>Wrong</h4><p>The site is <b>deciduous</b> (caducous).</p><p><small>The "explanation" is harder than the word.</small></p></div>
+            <div class="side"><h4>Right</h4><p>The trees are mostly deciduous (shedding their leaves each autumn).</p></div>
           </div>
-          <div class="note why"><p>In pure Si, carriers appear only when heat breaks bonds, and at room temperature very few do. A dopant atom brings its own carrier (a spare electron, or one missing) at almost no energy cost, so a tiny amount of impurity raises conductivity by a huge factor.</p></div>
-          <p>Try it: switch between Intrinsic, n-type and p-type and see which carrier there is more of in each.</p>
-          <div data-viz="doping"></div>
-          <div class="note trap"><p>"n" and "p" name the <b>majority carrier</b>, not the charge of the crystal. Both types are electrically <b>neutral</b> overall: each free electron in n-type Si is balanced by a fixed P<sup>+</sup> ion left in the lattice.</p></div>
+          <div class="note heads-up"><p>Not on the slides: in normal writing the same job is often done with commas or dashes ("an impeller, a spinning rotor with vanes, pushes water up"). In a CAT answer, use brackets so the examiner sees a parenthetical definition clearly.</p></div>
+          <div class="note exam"><p>If a question asks for a parenthetical definition, write the full sentence around it. The brackets on their own ("(sieve-like drainage area)") are not an answer.</p></div>
         ` },
-        { title: 'n-type', html: `
-          <p class="lead">n-type = an intrinsic semiconductor doped with a <b>pentavalent impurity</b> such as <b>P, As or Sb</b>.</p>
-          <figure data-fig="m2-n-type-doping"></figure>
-          <ul>
-            <li>Silicon has <b>four</b> valence electrons; phosphorus has <b>five</b>.</li>
-            <li>Add a small amount of P to a pure Si crystal: four of its electrons bond with the four Si neighbours.</li>
-            <li>The fifth has no bond to join. It becomes a <b>free electron</b>, a surplus electron that can move around the crystal.</li>
-          </ul>
-          <div class="kv">
-            <div><span>Dopant role</span><b>donor (N<sub>D</sub>)</b></div>
-            <div><span>Majority carrier</span><b>electrons</b></div>
-            <div><span>Minority carrier</span><b>holes</b></div>
-            <div><span>Carrier balance</span><b>n<sub>e</sub> ≫ n<sub>h</sub></b></div>
-          </div>
-          <p>It's called a donor because every P atom donates one electron to the conduction band.</p>
-          <div class="note heads-up"><p>The figure labels the phosphorus atom "Phosphorus: (B)". It should read (P). B is boron, the p-type dopant on the next slide.</p></div>
-        ` },
-        { title: 'p-type', html: `
-          <p class="lead">p-type = an intrinsic semiconductor doped with a <b>trivalent impurity</b> such as <b>B, Al or In</b> (the types chart adds Ga).</p>
-          <figure data-fig="m2-p-type-doping"></figure>
-          <ul>
-            <li>Boron has only <b>three</b> valence electrons for four Si neighbours.</li>
-            <li>Dope a single crystal of Si with a little boron and, at one position, there aren't enough valence electrons to bond Si and B.</li>
-            <li>That missing electron is a <b>hole</b>. A neighbouring electron can hop in, so the hole travels like a positive charge.</li>
-          </ul>
-          <div class="kv">
-            <div><span>Dopant role</span><b>acceptor (N<sub>A</sub>)</b></div>
-            <div><span>Majority carrier</span><b>holes</b></div>
-            <div><span>Minority carrier</span><b>electrons</b></div>
-            <div><span>Carrier balance</span><b>n<sub>h</sub> ≫ n<sub>e</sub></b></div>
-          </div>
-          <div class="note exam"><p>If asked what happens when Si is doped with a given element, check its group. Group 15 (P, As, Sb) gives n-type with electrons as majority carriers. Group 13 (B, Al, Ga, In) gives p-type with holes as majority carriers. Draw the lattice with the spare electron or the missing bond.</p></div>
-        ` }
       ],
       flashcards: [
-        { front: 'Band gaps of Si and Ge as given in the slides?', back: '<b>Si 1.0 eV</b>, <b>Ge 0.7 eV</b>. (Standard values: 1.12 eV and about 0.66 eV.)' },
-        { front: 'Describe the bands of a semiconductor.', back: '<b>Almost filled valence band</b>, <b>empty conduction band</b>, and a very narrow gap of the order of <b>1 eV</b>.' },
-        { front: 'Why is every semiconductor an insulator at 0 K?', back: 'Electrons are <b>frozen in the valence band</b>; there is no thermal energy to lift any across the gap.' },
-        { front: 'What happens to a semiconductor\'s resistivity as temperature rises?', back: 'It <b>decreases</b>, so conductivity increases. Metals do the opposite.' },
-        { front: 'Carrier relation in an intrinsic semiconductor?', back: '<b>n<sub>e</sub> = n<sub>h</sub> = n<sub>i</sub></b>: electrons and holes are made in pairs.' },
-        { front: 'n-type: dopant type, examples, majority carrier?', back: '<b>Pentavalent</b> donor (P, As, Sb); majority carriers are <b>electrons</b>; n<sub>e</sub> ≫ n<sub>h</sub>.' },
-        { front: 'p-type: dopant type, examples, majority carrier?', back: '<b>Trivalent</b> acceptor (B, Al, Ga, In); majority carriers are <b>holes</b>; n<sub>h</sub> ≫ n<sub>e</sub>.' },
-        { front: 'What is an extrinsic semiconductor?', back: 'An intrinsic semiconductor with a <b>small amount of impurity</b> added (<b>doping</b>), which alters its electrical properties and improves conductivity.' },
-        { front: 'Compound semiconductors listed in the slides?', back: '<b>InSb, InAs, GaP, GaSb, GaAs, SiC, GaN</b>. Most common elemental ones: Si and Ge.' },
-        { front: 'Is n-type silicon negatively charged?', back: 'No. It is <b>electrically neutral</b>; "n" names the majority carrier. Each free electron is balanced by a fixed P<sup>+</sup> ion.' }
+        { front: 'A parenthetical definition uses a synonym or phrase placed in…', back: '<b>Parentheses</b> (brackets), inside the sentence.' },
+        { front: 'How formal is a parenthetical definition?', back: 'The <b>least formal</b> of the three types.' },
+        { front: 'Leaching field (…)', back: '(<b>sieve-like drainage area</b>)' },
+        { front: 'Deciduous (…)', back: '(<b>shedding foliage at season\'s end</b>)' },
+        { front: 'Voltaire was imprisoned in the Bastille (…)', back: '(<b>French fortress</b>)' },
+        { front: 'How does a web page often show a parenthetical definition?', back: 'As a <b>link</b> that opens a small window with the definition.' },
+        { front: 'The rule for what goes inside the brackets?', back: 'It must be <b>shorter and simpler</b> than the term.' },
+        { front: 'When is a parenthetical definition enough?', back: 'When the reader needs only a <b>general idea</b> of the term.' },
       ],
       oneLiners: [
-        'Semiconductor: almost filled valence band, empty conduction band, gap ≈ 1 eV (Si 1.0 eV, Ge 0.7 eV per slides).',
-        'At 0 K all semiconductors are insulators.',
-        'A semiconductor\'s conductivity rises with temperature because resistivity falls.',
-        'Intrinsic: chemically very pure, poor conductivity, equal electrons and holes (n<sub>e</sub> = n<sub>h</sub> = n<sub>i</sub>).',
-        'Doping = adding a small amount of impurity to control and improve conductivity.',
-        'n-type: pentavalent donors P, As, Sb; n<sub>e</sub> ≫ n<sub>h</sub>. p-type: trivalent acceptors B, Al, Ga, In; n<sub>h</sub> ≫ n<sub>e</sub>.',
-        'Compound semiconductors: InSb, InAs, GaP, GaSb, GaAs, SiC, GaN.'
+        'Parenthetical definition: a familiar <b>synonym</b> or clarifying phrase in <b>parentheses</b>, in-line.',
+        'It is the <b>least formal</b> type, used for quick clarification.',
+        'Examples: leaching field (sieve-like drainage area); deciduous (shedding foliage at season\'s end); Bastille (French fortress).',
+        'Online, short definitions can be <b>linked</b> to the term in a pop-up window.',
+        'What goes in the brackets must be <b>simpler and shorter</b> than the term.',
       ],
       formulas: [
-        { name: 'Intrinsic carriers', html: `n<sub>e</sub> = n<sub>h</sub> = n<sub>i</sub>`, note: 'Electrons and holes are created in pairs.' },
-        { name: 'n-type carriers', html: `n<sub>e</sub> ≫ n<sub>h</sub>`, note: 'Pentavalent donor impurity, N<sub>D</sub>.' },
-        { name: 'p-type carriers', html: `n<sub>h</sub> ≫ n<sub>e</sub>`, note: 'Trivalent acceptor impurity, N<sub>A</sub>.' }
-      ]
+        { name: 'Parenthetical definition', html: `…<b>term</b> (<b>simpler synonym or short phrase</b>)…`, note: 'e.g. The leaching field (sieve-like drainage area) requires crushed stone.' },
+      ],
     },
-    // ------------------------------------------------------------------
+
     {
-      id: 'm2-semiconductor-purification',
-      title: 'Making ultra-pure Si & Ge',
-      short: 'Purifying Si & Ge',
-      blurb: 'How Si and Ge reach 99.9999% purity: distillation of GeCl₄ and SiHCl₃, zone refining, and growing a single crystal by Czochralski pulling.',
-      source: 'Slides 15–18',
+      id: 'm3-sentence-def',
+      title: 'Sentence definitions: term, class, features',
+      short: 'Sentence definitions',
+      blurb: 'The formal one-sentence definition: name the term, put it in its broader class, then give the features that set it apart from everything else in that class.',
+      source: 'Technical Definitions slides 17–18, 22–25, 59–68; MCQ worksheet',
       tabs: [
-        { title: 'Distillation', html: `
-          <p class="lead">Semiconductor Si and Ge must be about <b>99.9999% pure</b>. The first clean-up is distillation: turn the element into a volatile chloride and separate by the <b>difference in boiling points</b>.</p>
-          <div class="note why"><p>Six nines means roughly one foreign atom per million. Stray atoms act as unplanned dopants, and the previous topic showed how few it takes to change conductivity. You have to remove them before you can add the dopants you actually want.</p></div>
-          <div class="kv">
-            <div><span>Distilled for Ge</span><b>GeCl<sub>4</sub></b></div>
-            <div><span>Distilled for Si</span><b>SiHCl<sub>3</sub>, trichlorosilane</b></div>
-            <div><span>b.p. of GeCl<sub>4</sub></span><b>83.1 °C</b></div>
-          </div>
-          <h3>Germanium route</h3>
-          <ol class="steps">
-            <li><b>Remove arsenic</b> from GeCl<sub>4</sub> with the help of HCl.</li>
-            <li><b>Fractional distillation</b> in the presence of chlorine gives pure GeCl<sub>4</sub>.</li>
-            <li><b>Hydrolysis</b>: after cooling, pure GeCl<sub>4</sub> is treated with extra-pure water to give germanium oxide.</li>
-            <li><b>Reduction</b> of GeO<sub>2</sub> with pure hydrogen gives highly pure elemental Ge.</li>
-          </ol>
-          <div class="eq" data-label="Hydrolysis">GeCl<sub>4</sub> + 2H<sub>2</sub>O → GeO<sub>2</sub> + 4HCl</div>
-          <div class="eq" data-label="Reduction">GeO<sub>2</sub> + 2H<sub>2</sub> → Ge + 2H<sub>2</sub>O</div>
-          <p>The water is extra pure and the hydrogen is pure for the same reason as everything else here: whatever the reagents carry ends up in the germanium.</p>
-          <h3>Silicon route</h3>
-          <p>Similarly, distilled <b>trichlorosilane (SiHCl<sub>3</sub>)</b> is used to get silicon of high purity.</p>
-          <details class="more"><summary>How SiHCl<sub>3</sub> becomes silicon (beyond the slides)</summary>
-            <p>In industry the distilled SiHCl<sub>3</sub> is reduced by hydrogen on hot silicon rods at about 1100 °C (the Siemens process):</p>
-            <div class="eq">SiHCl<sub>3</sub> + H<sub>2</sub> → Si + 3HCl</div>
-          </details>
-          <div class="note heads-up"><p>The slide gives the boiling point of GeCl<sub>4</sub> as 83.1 °C. Most data tables list about 86.5 °C. Use the slide's value in this course.</p></div>
+        { title: 'What it is', html: `
+          <p class="lead">When a term needs more than a parenthetical definition can give, use a <b>sentence definition</b>: one or two formal sentences in a fixed pattern.</p>
+          <ul>
+            <li><b>More formal</b> than a parenthetical definition</li>
+            <li>Gives <b>more information</b> than brackets can hold</li>
+            <li>Can set up a <b>working definition</b> for a whole document</li>
+            <li>Follows a <b>standard pattern</b>: <b>term</b>, <b>class</b>, <b>distinguishing features</b></li>
+          </ul>
+          <div class="note example"><p>"An <b>electron microscope</b> is a microscope that uses electrons rather than visible light to produce magnified images." Term: electron microscope. Class: a microscope. Feature: uses electrons, not light.</p></div>
+          <div class="note exam"><p>This is the CAT-2 heading "Technical definitions (sentence definitions)". Expect to write several sentence definitions of everyday or technical objects, and to spot what is wrong with weak ones.</p></div>
         ` },
-        { title: 'Zone refining', html: `
-          <p class="lead">Zone refining uses the fact that impurities are <b>more soluble in the molten phase than in the solid</b>. A narrow molten band is swept along the ingot and carries the impurities to the <b>end section</b>.</p>
-          <p>The principle: when an impure metal in the molten state is allowed to cool, <b>only the metal crystallises</b>, while the impurities stay in the melt.</p>
-          <figure data-fig="m2-zone-refining-fig"></figure>
-          <ol class="steps">
-            <li><b>Melt a band</b>: a circular heater (H) melts a narrow zone (Y) of the impure Ge rod.</li>
-            <li><b>Move the heater</b> slowly along the rod toward Z. The rod melts just ahead of it and refreezes just behind it.</li>
-            <li><b>Pure metal freezes out</b> behind the zone as recrystallised pure germanium (X); the impurities stay in the moving melt.</li>
-            <li><b>Impurities collect at the far end</b> of the ingot, which is cut away. More passes give higher purity.</li>
-          </ol>
-          <p>Used for the purification of:</p>
-          <div class="chips"><span class="chip">Germanium</span><span class="chip">Silicon</span><span class="chip">Gallium</span></div>
-          <p>Try it: run several passes and watch the impurity dots ride the molten zone to the far end as the purity bar climbs.</p>
-          <div data-viz="zone-refining"></div>
-          <div class="note exam"><p>Draw the rod with the ring heater; label the recrystallised pure end, the molten zone with impurities and the impure end; show the direction of travel. Always state the principle in one line: impurities are more soluble in the melt than in the solid.</p></div>
-        ` },
-        { title: 'Czochralski', html: `
-          <p class="lead">Zone-refined Ge or Si is <b>polycrystalline</b>: no regularity in the crystal structure, and crystals of different sizes. The <b>Czochralski crystal pulling technique</b> turns it into one single crystal.</p>
-          <p>The key is a <b>single-crystal seed</b>. Atoms from the melt freeze onto it and reproduce its <b>identical atomic arrangement</b>, so the whole ingot grows as one continuous crystal.</p>
-          <figure data-fig="m2-czochralski-steps"></figure>
-          <ol class="steps">
-            <li><b>Melting</b> the charge in the crucible.</li>
-            <li><b>Introducing the seed</b> to the melt surface, rotating.</li>
-            <li><b>Beginning of crystal growth</b> as melt freezes onto the seed.</li>
-            <li><b>Crystal pulling</b>: the seed is raised slowly while rotating and the crystal grows longer and wider.</li>
-            <li><b>Boule cooling</b>: the finished single-crystal ingot (boule) is lifted clear and cooled.</li>
-          </ol>
-          <div class="note why"><p>Polycrystalline material is full of grain boundaries where the small crystals meet. These scatter and trap charge carriers, so the properties vary from spot to spot. A single crystal behaves the same everywhere, which is what device makers need.</p></div>
-          <p>Try it: dip the seed into the melt and start pulling; watch the single crystal grow at the melt surface as the rod rises and turns.</p>
-          <div data-viz="czochralski"></div>
-          <div class="note heads-up"><p>The step figure is a general Czochralski diagram, so its first label reads "melting of oxide material" (the same method grows oxide crystals). For Si and Ge the crucible holds the purified polycrystalline element.</p></div>
-        ` },
-        { title: 'Puller & boule', html: `
-          <p class="lead">A real silicon puller wraps controls around the same idea: <b>pull slowly, rotate, and hold the temperature steady</b>.</p>
-          <figure data-fig="m2-czochralski-puller"></figure>
+        { title: 'Term, class, features', html: `
+          <p class="lead">Begin by stating the <b>term</b>. Then name the broader <b>class</b> it belongs to. Then give the <b>distinguishing features</b> that separate it from the other members of that class.</p>
+          <figure data-fig="m3-term-class-features"></figure>
           <table class="tbl">
-            <thead><tr><th>Part or setting</th><th>What it does</th></tr></thead>
+            <thead><tr><th>Term</th><th>Class</th><th>Distinguishing features</th></tr></thead>
             <tbody>
-              <tr><td>Seed holder, seed, crystal neck</td><td>Holds the seed; a thin neck is grown first, then the crystal widens.</td></tr>
-              <tr><td>Pulling speed v, crystal rotation rate ν<sub>1</sub></td><td>How fast the crystal rises and turns; with the temperature they set the diameter.</td></tr>
-              <tr><td>SiO<sub>2</sub> crucible in a crucible susceptor</td><td>Holds the Si melt; the susceptor supports it and passes on the heat.</td></tr>
-              <tr><td>Heater, thermal shield</td><td>Keep the melt just at T<sub>melt</sub> at the growth front and shape the temperature gradient.</td></tr>
-              <tr><td>Crucible shaft: lift rate, rotation rate ν<sub>2</sub></td><td>Raises the crucible as melt is used up and turns it to keep the melt uniform.</td></tr>
-              <tr><td>Magnetic field</td><td>Calms convection currents in the melt.</td></tr>
-              <tr><td>Ar flow</td><td>Sweeps SiO away from the melt surface; the exhaust leaves as Ar + SiO + CO.</td></tr>
+              <tr><td>Carburettor</td><td><b>a mixing device</b></td><td>in petrol engines that blends air and fuel into a vapour for combustion in the cylinders</td></tr>
+              <tr><td>Diabetes</td><td><b>a metabolic disease</b></td><td>caused by a disorder of the pituitary gland or pancreas, with excessive urination, persistent thirst and inability to metabolise sugar</td></tr>
+              <tr><td>Stress</td><td><b>an applied force</b></td><td>that strains or deforms a body</td></tr>
+              <tr><td>Bunsen burner</td><td><b>a small laboratory burner</b></td><td>consisting of a vertical metal tube connected to a gas source</td></tr>
+              <tr><td>Neodymium magnet</td><td><b>a permanent magnet</b></td><td>made of a neodymium, boron and iron alloy</td></tr>
             </tbody>
           </table>
-          <figure data-fig="m2-si-boule-photo"></figure>
-          <div class="kv">
-            <div><span>Diameter</span><b>300 mm</b></div>
-            <div><span>Weight</span><b>more than 250 kg</b></div>
-          </div>
-          <div class="note why"><p>The boule is sliced into wafers, and a 300 mm wafer carries far more chips than a small one. That is why pullers are pushed to such sizes.</p></div>
+          <div class="note why"><p>The class tells the reader which "shelf" the thing sits on. The features tell them which item on that shelf it is. Without the class they don't know what kind of thing it is; without the features they can't tell it from its neighbours.</p></div>
         ` },
-        { title: 'Side by side', html: `
-          <p class="lead">The three methods are stages of one route: <b>distillation → zone refining → Czochralski</b>. Each fixes something the previous one can't.</p>
+        { title: 'Getting the class right', html: `
+          <p class="lead">Most weak definitions fail at the class. It must be <b>specific enough</b> to be useful, but <b>broad enough</b> to be a real category.</p>
+          <div class="vs">
+            <div class="side"><h4>Too broad</h4><p>A thermometer is <b>a thing</b> that measures temperature.</p><p><small>"Thing" tells the reader nothing.</small></p></div>
+            <div class="side"><h4>Right</h4><p>A thermometer is <b>an instrument</b> that measures temperature.</p></div>
+          </div>
+          <div class="vs">
+            <div class="side"><h4>Circular</h4><p>A <b>compressor</b> is a machine that compresses.</p><p><small>Uses the term to define itself.</small></p></div>
+            <div class="side"><h4>Right</h4><p>A compressor is a machine that <b>raises the pressure of a gas</b> by reducing its volume.</p></div>
+          </div>
+          <div class="vs">
+            <div class="side"><h4>No real feature</h4><p>RAM is fast and useful.</p><p><small>No class, and "fast and useful" fits a hundred things.</small></p></div>
+            <div class="side"><h4>Right</h4><p>RAM is <b>a form of computer data storage</b> which stores frequently used program instructions.</p></div>
+          </div>
+          <div class="note heads-up"><p>Not on the slides, but standard in technical writing: avoid <b>circular</b> definitions, avoid "is when" / "is where" ("Corrosion is when metal rusts"), and never explain a term with words harder than the term.</p></div>
+          <div data-viz="def-builder"></div>
+        ` },
+        { title: 'Sentences and working definitions', html: `
+          <p class="lead">The three parts can be spread over <b>one or more complete sentences</b>. A sentence definition can also fix a <b>working definition</b> that holds for a whole document.</p>
+          <h3>Two sentences</h3>
+          <p>"<b>Diabetes</b> is a metabolic disease caused by a disorder of the pituitary gland or pancreas. This disease is characterized by excessive urination, persistent thirst, and inability to metabolize sugar."</p>
+          <h3>Working definition</h3>
+          <p>Useful when you'll use a term often and don't want to repeat what you mean:</p>
+          <div class="note example"><p>"Throughout this document, the term <b>local fauna</b> refers to all animals within the tri-county region that are native to this region and live in the wild. Animals in zoos or wildlife parks are not included in this definition."</p></div>
+          <p>Notice the second sentence: a working definition often says what is <b>left out</b>, so nobody can stretch the term later.</p>
+          <div class="note exam"><p>A good opener for a working definition: "Throughout this report, <b>X refers to</b>…". Use it in lab reports and project reports when a word has several everyday meanings (e.g. "load", "user", "failure").</p></div>
+        ` },
+        { title: 'Worked: define everyday objects', html: `
+          <p class="lead">The slides end with an exercise: define a <b>pen</b>, a <b>laptop</b>, a <b>university</b> and a <b>chair</b>. Build each one part by part.</p>
+          <div class="worked">
+            <div class="given"><p><b>Pen</b>. Class? Not "a thing": a <b>handheld writing instrument</b>. What sets it apart from a pencil or chalk? It uses ink.</p></div>
+            <div class="solve"><p>Term + class + features: pen + a handheld writing instrument + that applies ink to a surface through a nib or a rolling ball.</p></div>
+            <div class="result"><p>A <b>pen</b> is a handheld writing instrument that applies ink to paper or another surface through a nib or a rolling ball.</p></div>
+          </div>
           <table class="tbl">
-            <thead><tr><th></th><th>Distillation</th><th>Zone refining</th><th>Czochralski</th></tr></thead>
+            <thead><tr><th>Term</th><th>Class</th><th>Distinguishing features</th></tr></thead>
             <tbody>
-              <tr><td>Principle</td><td>Difference in boiling points</td><td>Impurities more soluble in melt than solid</td><td>Growth on a single-crystal seed</td></tr>
-              <tr><td>Works on</td><td>GeCl<sub>4</sub>, SiHCl<sub>3</sub></td><td>Ge, Si, Ga ingots</td><td>Zone-refined Ge or Si</td></tr>
-              <tr><td>Gives</td><td>High-purity element (via GeO<sub>2</sub> + H<sub>2</sub> for Ge)</td><td>Ultra-pure but polycrystalline ingot</td><td>Single-crystal boule</td></tr>
-              <tr><td>Key hardware</td><td>Fractionating column</td><td>Moving circular heater</td><td>Crucible, rotating seed, puller</td></tr>
+              <tr><td>Laptop</td><td><b>a portable personal computer</b></td><td>with a built-in screen, keyboard and battery in a single folding case</td></tr>
+              <tr><td>University</td><td><b>an institution of higher education</b></td><td>that teaches undergraduate and postgraduate courses, carries out research and awards degrees</td></tr>
+              <tr><td>Chair</td><td><b>a piece of furniture</b></td><td>for one person to sit on, with a seat, a back and usually four legs</td></tr>
             </tbody>
           </table>
-          <div class="note exam"><p>If a question asks why zone refining isn't the last step, the answer is that it leaves the metal <b>polycrystalline</b>. Devices need a <b>single crystal</b>, so the pure material is regrown by Czochralski pulling.</p></div>
-          <div class="note trap"><p>Zone refining purifies; Czochralski orders. Czochralski isn't mainly a purification method. It gives the atoms one regular arrangement copied from the seed.</p></div>
-        ` }
+          <div class="note trap"><p>"A chair is a piece of furniture <b>used for sitting</b>." A sofa and a bench are also for sitting. The features must separate the term from its neighbours: <b>one person</b>, <b>a back</b>.</p></div>
+        ` },
+        { title: 'Reading dictionary definitions', html: `
+          <p class="lead">The slides show short dictionary-style definitions. Read each one for its <b>class</b> and <b>features</b>: that is exactly what you're asked to produce.</p>
+          <table class="tbl">
+            <thead><tr><th>Term</th><th>Class</th><th>What sets it apart</th></tr></thead>
+            <tbody>
+              <tr><td>Apple (noun)</td><td>a rounded edible fruit</td><td>usually red, yellow or green, grows on a tree</td></tr>
+              <tr><td>Book (noun)</td><td>a set of written or printed sheets</td><td>bound together for reading</td></tr>
+              <tr><td>Mobile phone</td><td>a portable telephone</td><td>uses a radio link; not tied to one place like a landline</td></tr>
+              <tr><td>Cat</td><td>a small carnivorous mammal (family Felidae)</td><td>kept as a pet, hunts pests</td></tr>
+              <tr><td>Data science</td><td>a multidisciplinary field</td><td>uses scientific methods and algorithms to extract insight from data</td></tr>
+              <tr><td>Community</td><td>a group of people</td><td>living in the same place or sharing a characteristic</td></tr>
+            </tbody>
+          </table>
+          <p>Some slide examples go further than one sentence. "Podium" adds the word's Latin and Greek roots, "television" adds what it is used for, "zoo" adds its modern purposes. Those extra sentences are <b>expansion methods</b>, the next topic.</p>
+          <div class="note example"><p>The slides also have a matching exercise: pick the right meaning for <b>bicycle</b> (a vehicle with two wheels and handlebars, not a plane with two engines), <b>erase</b> (to remove by rubbing away), <b>natural</b> (made by nature), <b>success</b> (doing well at something), <b>net</b> (a mesh for catching insects) and <b>change</b> (to make things different).</p></div>
+        ` },
       ],
       flashcards: [
-        { front: 'Purity needed for semiconductor Si and Ge?', back: '<b>99.9999%</b> (six nines).' },
-        { front: 'Which compounds are distilled to purify Ge and Si?', back: '<b>GeCl<sub>4</sub></b> for Ge (b.p. 83.1 °C per slide) and <b>SiHCl<sub>3</sub></b> (trichlorosilane) for Si.' },
-        { front: 'What property does distillation exploit?', back: 'The <b>difference in boiling points</b> of the materials.' },
-        { front: 'How is arsenic removed from GeCl<sub>4</sub>, and how is pure GeCl<sub>4</sub> then obtained?', back: 'As is removed with the help of <b>HCl</b>; pure GeCl<sub>4</sub> comes from <b>fractional distillation in the presence of chlorine</b>.' },
-        { front: 'Two reactions that turn pure GeCl<sub>4</sub> into Ge?', back: '<b>GeCl<sub>4</sub> + 2H<sub>2</sub>O → GeO<sub>2</sub> + 4HCl</b>, then <b>GeO<sub>2</sub> + 2H<sub>2</sub> → Ge + 2H<sub>2</sub>O</b>.' },
-        { front: 'Principle of zone refining?', back: 'Impurities are <b>more soluble in the melt than in the solid</b>. On cooling only the metal crystallises, so the moving molten zone carries impurities to the end of the ingot.' },
-        { front: 'Zone refining is used to purify which elements?', back: '<b>Germanium, silicon, gallium</b>, etc.' },
-        { front: 'Why is Czochralski pulling needed after zone refining?', back: 'Zone-refined Ge/Si is <b>polycrystalline</b>. Czochralski grows a <b>single crystal</b> on a seed, copying its atomic arrangement.' },
-        { front: 'Five stages of Czochralski growth (slide figure)?', back: '<b>Melting</b>, <b>introducing the seed</b>, <b>beginning of growth</b>, <b>crystal pulling</b>, <b>boule cooling</b>.' },
-        { front: 'Size of the Si crystal shown on the slide?', back: '<b>300 mm</b> diameter, weight over <b>250 kg</b>.' }
+        { front: 'Standard pattern of a sentence definition?', back: '<b>Term</b> + <b>class</b> + <b>distinguishing features</b>.' },
+        { front: 'Carburettor: class?', back: '<b>A mixing device</b>.' },
+        { front: 'Stress: class and feature?', back: '<b>An applied force</b> that strains or deforms a body.' },
+        { front: 'Diabetes: class?', back: '<b>A metabolic disease</b>.' },
+        { front: 'Bunsen burner: class?', back: '<b>A small laboratory burner</b>.' },
+        { front: 'Electron microscope: what distinguishes it?', back: 'It uses <b>electrons</b> rather than visible light.' },
+        { front: '"A compressor is a machine that compresses." The fault?', back: 'It is <b>circular</b>: the term defines itself.' },
+        { front: '"A thermometer is a thing that measures temperature." The fault?', back: 'The class is <b>too broad</b>; use "an instrument".' },
+        { front: 'What is a working definition?', back: 'A definition fixed <b>for the whole document</b>, so the term needn\'t be redefined.' },
+        { front: 'Working definition of local fauna leaves out…', back: 'Animals in <b>zoos or wildlife parks</b>.' },
       ],
       oneLiners: [
-        'Target purity for semiconductor Si and Ge: 99.9999%.',
-        'Distillation separates by boiling point: GeCl<sub>4</sub> (b.p. 83.1 °C) for Ge, SiHCl<sub>3</sub> for Si.',
-        'GeCl<sub>4</sub> + 2H<sub>2</sub>O → GeO<sub>2</sub> + 4HCl; GeO<sub>2</sub> + 2H<sub>2</sub> → Ge + 2H<sub>2</sub>O.',
-        'Zone refining: impurities stay in the melt, so a moving molten zone sweeps them to the end of the ingot (Ge, Si, Ga).',
-        'Zone-refined Ge/Si is polycrystalline; Czochralski pulling grows a single crystal on a seed.',
-        'A Cz silicon crystal can be 300 mm across and weigh more than 250 kg.'
+        'Sentence definition = <b>term</b> + <b>class</b> + <b>distinguishing features</b>; more formal than parenthetical.',
+        'The class is the broader category; the features separate the term from others in that class.',
+        'Examples: stress, an applied force that strains or deforms a body; carburettor, a mixing device…',
+        'The parts may run over two sentences (diabetes).',
+        'A <b>working definition</b> fixes a term for a whole document ("local fauna", zoo animals excluded).',
+        'Avoid a class that is too broad ("a thing"), circular definitions and features that fit other things.',
       ],
       formulas: [
-        { name: 'Hydrolysis of GeCl₄', html: `GeCl<sub>4</sub> + 2H<sub>2</sub>O → GeO<sub>2</sub> + 4HCl`, note: 'Pure GeCl₄ treated with extra-pure water after cooling.' },
-        { name: 'Reduction of GeO₂', html: `GeO<sub>2</sub> + 2H<sub>2</sub> → Ge + 2H<sub>2</sub>O`, note: 'Pure hydrogen gives highly pure elemental Ge.' }
-      ]
-    }
+        { name: 'Sentence definition', html: `<b>Term</b> is <b>a/an [class]</b> that/which <b>[distinguishing features]</b>.`, note: 'Stress is an applied force that strains or deforms a body.' },
+        { name: 'Working definition', html: `Throughout this document, the term <b>X</b> refers to <b>…</b>. <b>Y</b> is not included.`, note: 'State what is left out as well as what is in.' },
+        { name: 'Class check', html: `Class must be a real category, <b>not "a thing"</b>; features must <b>not fit its neighbours</b>; never use the term to define itself.` },
+      ],
+    },
+
+    {
+      id: 'm3-expanded',
+      title: 'Expanded definitions and how to expand them',
+      short: 'Expanded definitions',
+      blurb: 'When a sentence is not enough: the nine methods for expanding a definition (etymology, history, negation, operating principle, parts, visuals, comparison, required conditions, examples), shown on one running example, the laser.',
+      source: 'Technical Definitions slides 19–21, 26–45',
+      tabs: [
+        { title: 'When to expand', html: `
+          <p class="lead">An <b>expanded definition</b> is the <b>most formal</b> type: a <b>paragraph or longer</b>, with a very <b>flexible structure</b>, written when the reader needs a <b>complete understanding</b>.</p>
+          <p>Brief definitions are fine when your audience needs only a general idea. A document that depends on the term needs more.</p>
+          <div class="vs">
+            <div class="side"><h4>Brief is enough</h4><p>"Leaching field (sieve-like drainage area)" in a progress report to a house owner.</p></div>
+            <div class="side"><h4>Expand</h4><p>A <b>public health report</b> on groundwater contamination from leaching fields.</p></div>
+          </div>
+          <div class="note example"><p>A health web page defines <b>allergenics</b> as two kinds of product, <b>patch tests</b> and <b>extracts</b>, then defines each in short sentences. Technical phrases are restated in plain words: <b>allergic rhinitis</b> becomes "hay fever". Because it is online, readers of any level can search for more and follow links to related definitions.</p></div>
+          <p>Every expanded definition starts from a sentence definition. The running example on the slides is:</p>
+          <p>"A <b>laser</b> is an electronic device that emits a highly concentrated beam of light."</p>
+        ` },
+        { title: 'The questions readers ask', html: `
+          <p class="lead">Each method of expanding a definition answers a <b>question your reader might ask</b>. Ask how many of these questions your audience will have.</p>
+          <figure data-fig="m3-expansion-questions"></figure>
+          <table class="tbl">
+            <thead><tr><th>The reader asks</th><th>Method</th></tr></thead>
+            <tbody>
+              <tr><td>How did its name originate?</td><td><b>Etymology</b></td></tr>
+              <tr><td>What is its history?</td><td><b>History</b></td></tr>
+              <tr><td>What does it not mean?</td><td><b>Negation</b></td></tr>
+              <tr><td>How does it work?</td><td><b>Operating principle</b></td></tr>
+              <tr><td>What are its parts?</td><td><b>Analysis of parts</b></td></tr>
+              <tr><td>What does it look like?</td><td><b>Visuals</b></td></tr>
+              <tr><td>How does it resemble or differ from something else?</td><td><b>Comparison and contrast</b></td></tr>
+              <tr><td>What is needed to make it work?</td><td><b>Required conditions</b></td></tr>
+              <tr><td>How is it used or applied?</td><td><b>Examples</b></td></tr>
+            </tbody>
+          </table>
+          <div class="mnemonic"><p>Nine methods, <b>"E-H-N, O-P-V, C-R-E"</b>: Etymology, History, Negation · Operating principle, Parts, Visuals · Comparison, Required conditions, Examples.</p></div>
+        ` },
+        { title: 'Etymology, history, negation', html: `
+          <p class="lead">Three methods about the word's <b>story</b> and its <b>limits</b>.</p>
+          <h3>Etymology: where the word comes from</h3>
+          <p>A word's <b>origin</b> and changing meanings can clarify it. <b>Biometrics</b> (the statistical analysis of biological data) comes from Greek <b>bio</b>, "life", and <b>metron</b>, "measure". A dictionary gives the origin of most words.</p>
+          <p>Some terms are <b>acronyms</b>, built from first letters: <b>laser</b> = <b>l</b>ight <b>a</b>mplification by <b>s</b>timulated <b>e</b>mission of <b>r</b>adiation.</p>
+          <div class="note example"><p>"The word laser is an acronym for light amplification by stimulated emission of radiation, and is the name for an electronic device that emits a highly concentrated beam of light."</p></div>
+          <h3>History: how it came about</h3>
+          <p>Explain how the term, concept or procedure developed. Specialised dictionaries and encyclopedias are good sources. The slides: early fibre-optic researchers lacked an intense light source and a clean transmission medium. The laser (invented <b>1960</b>) solved the first problem; the first communications-grade optical fibre of almost pure silica glass (<b>1970</b>) solved the second.</p>
+          <h3>Negation: what it is not</h3>
+          <p>Say what the term <b>does not mean</b>, to clear up misconceptions. A laser is used for many useful purposes, including eye surgery, and <b>not</b>, as science fiction suggests, as a transport to other dimensions.</p>
+        ` },
+        { title: 'How it works and what it\'s made of', html: `
+          <p class="lead">Three methods about the <b>thing itself</b>: how it operates, its parts, and what it looks like.</p>
+          <h3>Operating principle</h3>
+          <p>Anyone who uses a product needs to know <b>how it operates</b>. A laser uses electrical energy to produce <b>coherent light</b>: light in which all the waves are <b>in phase</b> with each other, making it hotter and more intense.</p>
+          <h3>Analysis of parts</h3>
+          <p>List <b>all the parts</b>, and define each part if needed. The laser's three main parts:</p>
+          <ol class="steps">
+            <li><b>Source of energy</b> electric currents, or even other lasers.</li>
+            <li><b>Resonant circuit</b> holds the lasing medium (solid, liquid or gas) between a fully reflecting end and a partially reflecting end. The medium absorbs energy and releases photons, which bounce between the ends, gaining energy (amplified), then leave through the partially reflecting end as coherent light.</li>
+            <li><b>Optical elements</b> lenses, prisms and mirrors that shape the beam and direct it to its target.</li>
+          </ol>
+          <h3>Visuals</h3>
+          <p>Any visual must be <b>well labelled</b>. <b>Introduce and explain</b> it, place it <b>near the discussion</b>, and <b>credit the source</b> if it is borrowed.</p>
+        ` },
+        { title: 'Comparison, conditions, examples', html: `
+          <p class="lead">Three methods that <b>connect</b> the term to what the reader already knows and to real use.</p>
+          <h3>Comparison and contrast</h3>
+          <p>Show <b>similarities</b> (comparison) or <b>differences</b> (contrast) with something familiar, to build a bridge from the known to the unknown. The slides explain fibre optics by comparing signal carriers: sound, radio and light waves can all carry signals, and capacity rises with frequency.</p>
+          <div class="kv">
+            <div><span>Telephone voice</span><b>1,000 Hz</b></div>
+            <div><span>Television signal</span><b>about 50 million Hz</b></div>
+            <div><span>Light waves</span><b>hundreds of trillions of Hz</b></div>
+          </div>
+          <h3>Required conditions</h3>
+          <p>Some items or processes need <b>special materials, handling or conditions</b>. To emit its beam, the laser must absorb energy through the reflecting end of the resonant circuit, amplify the photons between the two ends, and release them through lenses, prisms and mirrors.</p>
+          <h3>Examples</h3>
+          <p>Examples are powerful, as long as they suit the reader's level. Lasers in medicine: <b>ophthalmologists</b> treat cataracts and detached retinas, dermatologists treat skin problems, gynaecologists treat the reproductive system, and neurosurgeons perform brain surgery, all with lasers carried through optical fibres.</p>
+          <div data-viz="expand-methods"></div>
+        ` },
+        { title: 'Several methods together', html: `
+          <p class="lead">A complex term often needs <b>several methods at once</b>. Choose them by asking what your particular readers need.</p>
+          <figure data-fig="m3-solenoid-plan"></figure>
+          <div class="note example"><p><b>Solenoid, for semitechnical readers</b> (beginning student mechanics). Before they can repair one, they need where the word comes from, what it looks like, how it works, how its parts operate and how it is used. So the definition runs: <b>formal sentence definition</b> (an electrically energised coil that forms an electromagnet and performs mechanical functions) → <b>etymology</b> ("sole", meaning contained inside; Greek <em>solenoides</em>, "shaped like a pipe") → <b>description and parts</b> (coil, plunger, return spring) with a labelled diagram → <b>operating principle and special conditions</b> (current turns the coil into a magnet that pulls the rod in) → <b>example</b> (the starter motor of a car).</p></div>
+          <div class="note example"><p><b>Nanotechnology, for nontechnical readers</b>. They need an overview of what it is and how it developed, its potential uses, present applications, health risks and impact on jobs. The document uses <b>question-type headings</b> ("What is nanotechnology?") phrased the way readers would ask, and <b>parenthetical definitions</b> of nanometer and micrometer to give a sense of scale.</p></div>
+          <div class="note exam"><p>For "write an expanded definition of X", open with a sentence definition, then use <b>at least three</b> clearly different methods, one short paragraph each. Examiners look for a correct sentence definition and methods that suit the stated reader.</p></div>
+        ` },
+      ],
+      flashcards: [
+        { front: 'Which definition type is a paragraph or longer?', back: 'The <b>expanded</b> definition.' },
+        { front: 'Expansion method that explains a word\'s origin?', back: '<b>Etymology</b>.' },
+        { front: 'Biometrics comes from Greek bio + metron, meaning…', back: '<b>Life</b> + <b>measure</b>.' },
+        { front: 'LASER stands for…', back: '<b>Light amplification by stimulated emission of radiation</b>.' },
+        { front: 'Expansion method that says what the term does NOT mean?', back: '<b>Negation</b>.' },
+        { front: 'Method that answers "How does it work?"', back: '<b>Operating principle</b>.' },
+        { front: 'The laser\'s three main parts?', back: '<b>Energy source</b>, <b>resonant circuit</b>, <b>optical elements</b>.' },
+        { front: 'Comparing voice (1,000 Hz), TV and light frequencies illustrates…', back: '<b>Comparison and contrast</b>.' },
+        { front: 'Four rules for a visual in a definition?', back: '<b>Label</b> it, <b>introduce and explain</b> it, place it <b>near</b> the text, <b>credit</b> borrowed visuals.' },
+        { front: 'Method that answers "What is needed to make it work?"', back: '<b>Required conditions</b>.' },
+        { front: 'Coherent light is light whose waves are…', back: '<b>In phase</b> with each other.' },
+      ],
+      oneLiners: [
+        'Expanded definition: <b>most formal</b>, a paragraph or longer, flexible, for complete understanding.',
+        'Each method answers a reader\'s question; nine methods in all.',
+        '<b>Etymology</b> (bio + metron; laser acronym), <b>history</b> (laser 1960, silica fibre 1970), <b>negation</b> (not a transport to other dimensions).',
+        '<b>Operating principle</b> (coherent light), <b>analysis of parts</b> (energy source, resonant circuit, optical elements), <b>visuals</b> (labelled, explained, nearby, credited).',
+        '<b>Comparison and contrast</b> (voice 1,000 Hz, TV 50 million Hz, light hundreds of trillions of Hz), <b>required conditions</b>, <b>examples</b> (laser surgery).',
+        'Complex terms use several methods: solenoid for student mechanics, nanotechnology for nontechnical readers.',
+      ],
+      formulas: [
+        { name: 'The nine expansion methods', html: `<b>Etymology · History · Negation · Operating principle · Analysis of parts · Visuals · Comparison and contrast · Required conditions · Examples</b>`, note: 'Each answers a question the reader might ask.' },
+        { name: 'Expanded definition answer', html: `Sentence definition first → <b>3+ methods</b> chosen for the reader → one short paragraph each`, note: 'Name the reader, then pick the methods they need.' },
+      ],
+    },
+
+    {
+      id: 'm3-placing',
+      title: 'Placing definitions, glossaries and checking your definition',
+      short: 'Placing & glossaries',
+      blurb: 'Where each type of definition goes in a document, what a glossary is for, how to choose the right type for a reader, and a checklist for fixing weak definitions.',
+      source: 'Technical Definitions slides 46–52',
+      tabs: [
+        { title: 'Where definitions go', html: `
+          <p class="lead">Define an unfamiliar term <b>the first time</b> the reader meets it. Where you put the definition depends on its type.</p>
+          <table class="tbl">
+            <thead><tr><th>Type</th><th>Where it goes</th></tr></thead>
+            <tbody>
+              <tr><td><b>Brief</b> (parenthetical)</td><td>in <b>parentheses</b>, or in the document's <b>margin</b> beside the term</td></tr>
+              <tr><td><b>Sentence</b></td><td>in the <b>running text</b>; if there are many, in a <b>glossary</b></td></tr>
+              <tr><td><b>Expanded</b></td><td>near the <b>beginning</b> of a long document if it is essential to the whole; in an <b>appendix</b> if it is only for reference</td></tr>
+            </tbody>
+          </table>
+          <div class="note why"><p>An essential expanded definition goes up front because readers need it before anything else makes sense. A reference-only one goes to the appendix so it doesn't block readers who already know the term.</p></div>
+        ` },
+        { title: 'Glossaries', html: `
+          <p class="lead">A <b>glossary</b> is an <b>alphabetical list</b> of specialised terms and their definitions. It gives <b>laypersons</b> the key definitions <b>without interrupting technical readers</b>.</p>
+          <figure data-fig="m3-glossary-sample"></figure>
+          <p>The slides show a partial glossary from a document on childbirth. Each entry is the term in bold, a colon, then a short sentence-style definition (for example, <b>analgesic</b>: a medication given to relieve pain).</p>
+          <div class="note heads-up"><p>Not on the slides, but standard practice: list entries <b>alphabetically</b>, define only terms the reader may not know, keep each entry in <b>sentence-definition style</b>, and tell readers near the start that a glossary exists (e.g. an asterisk on first use plus a note).</p></div>
+          <div class="note exam"><p>Asked when to use a glossary? Many sentence definitions, a mixed audience (experts and laypeople), and a long document. Asked where it goes? Usually at the end of the report, before or after the appendices.</p></div>
+        ` },
+        { title: 'Choosing the type', html: `
+          <p class="lead">Put it all together: read the situation, decide how much the reader depends on the term, then choose <b>parenthetical</b>, <b>sentence</b> or <b>expanded</b>.</p>
+          <table class="tbl">
+            <thead><tr><th>Situation</th><th>Best choice</th></tr></thead>
+            <tbody>
+              <tr><td>A passing mention the reader just needs to follow</td><td><b>Parenthetical</b></td></tr>
+              <tr><td>A term used often in one report</td><td><b>Sentence</b> (working definition)</td></tr>
+              <tr><td>Many terms, mixed readers</td><td><b>Glossary</b> of sentence definitions</td></tr>
+              <tr><td>The whole document depends on the term</td><td><b>Expanded</b>, near the start</td></tr>
+            </tbody>
+          </table>
+          <div data-viz="def-type-sort"></div>
+        ` },
+        { title: 'Checking a definition', html: `
+          <p class="lead">Before you hand in a definition, run it through a short <b>check</b>. Most errors fall into a few patterns.</p>
+          <ol class="steps">
+            <li><b>Class</b> is it a real, specific category (not "a thing", not "something")?</li>
+            <li><b>Features</b> do they separate the term from others in the class?</li>
+            <li><b>Not circular</b> does the definition avoid the term itself ("a compressor compresses")?</li>
+            <li><b>Plain words</b> is every word easier than the term?</li>
+            <li><b>Right type</b> does it give this reader enough, and not more than enough?</li>
+          </ol>
+          <div class="note heads-up"><p>The checklist is standard technical-writing practice built on the slides' term-class-features pattern; the slides don't list it as such.</p></div>
+          <div data-viz="def-fixer"></div>
+        ` },
+      ],
+      flashcards: [
+        { front: 'When should an unfamiliar term be defined?', back: 'The <b>first time</b> the reader meets it.' },
+        { front: 'Where do brief definitions go?', back: 'In <b>parentheses</b> or in the <b>margin</b> beside the term.' },
+        { front: 'Where do numerous sentence definitions go?', back: 'In a <b>glossary</b>.' },
+        { front: 'Where does an essential expanded definition go?', back: 'Near the <b>beginning</b> of the document.' },
+        { front: 'Where does a reference-only expanded definition go?', back: 'In an <b>appendix</b>.' },
+        { front: 'What is a glossary?', back: 'An <b>alphabetical list</b> of specialised terms and their definitions.' },
+        { front: 'Main benefit of a glossary?', back: 'Laypersons get definitions <b>without interrupting technical readers</b>.' },
+        { front: 'Glossary entry: analgesic?', back: 'A <b>medication given to relieve pain</b>.' },
+      ],
+      oneLiners: [
+        'Define an unfamiliar term the <b>first time</b> it appears.',
+        'Brief definitions: <b>parentheses</b> or the <b>margin</b>.',
+        'Sentence definitions: <b>running text</b>, or a <b>glossary</b> if numerous.',
+        'Expanded definitions: near the <b>beginning</b> if essential, <b>appendix</b> if for reference.',
+        'Glossary: <b>alphabetical</b> list of specialised terms; helps laypersons without interrupting experts.',
+      ],
+      formulas: [
+        { name: 'Placing definitions', html: `Brief → <b>brackets / margin</b> · Sentence → <b>text / glossary</b> · Expanded → <b>start</b> (essential) or <b>appendix</b> (reference)` },
+        { name: 'Glossary entry', html: `<b>Term</b>: short sentence-style definition. (alphabetical order)`, note: 'Analgesic: a medication given to relieve pain.' },
+      ],
+    },
   ],
   figures: [
-    { id: 'm2-daniell-cell', src: 'm2/images/s05_714faec4.png', crop: null,
-      caption: 'Electrons leave the Zn anode (−), pass the voltmeter and reach the Cu cathode (+). The KCl salt bridge joins the ZnSO₄ and CuSO₄ half cells. Its zinc equation has the electrons on the wrong side; see the note.',
-      alt: 'Two beakers: a zinc rod in ZnSO4 labelled anode (oxidation, negative) and a copper rod in CuSO4 labelled cathode (reduction, positive), joined by a KCl salt bridge and a wire through a voltmeter, with arrows showing electrons flowing from Zn to Cu. Half reactions and the cell notation Zn(s) | ZnSO4(aq) || CuSO4(aq) | Cu(s) are written below.' },
-    { id: 'm2-band-diagrams', src: 'm2/images/s08_51c5293b.png', crop: [0, 0.1, 1, 0.9],
-      caption: 'Insulator: wide forbidden band. Semiconductor: a narrow gap with a small tail of electrons reaching the conduction band. Conductor: the bands overlap.',
-      alt: 'Three energy-band diagrams side by side for an insulator, a semiconductor and a conductor, each with a hatched valence band, a hatched conduction band and an electron distribution curve on the energy axis.' },
-    { id: 'm2-resistivity-temp', src: 'm2/images/s09_5721e27e.jpg', crop: null,
-      caption: 'A semiconductor\'s resistivity drops steeply as it warms from near 0 K toward 300 K.',
-      alt: 'Graph of resistivity (rho) against temperature in kelvin for a semiconductor: a curve falling from high values at low temperature and levelling off near 300 K.' },
-    { id: 'm2-bands-temperature', src: 'm2/slides/s09.png', crop: [0.378, 0.436, 0.59, 0.424],
-      caption: 'Temperature rises from left to right. On heating, some electrons cross the gap Eg into the conduction band (bottom edge E₀) and leave holes (white) behind in the valence band.',
-      alt: 'Two band diagrams. Left: all electrons (pink dots) sit in the blue valence band below the gap Eg. Right, at higher temperature: a few electrons are in the yellow conduction band and white holes remain at the top of the valence band.' },
-    { id: 'm2-semiconductor-types', src: 'm2/slides/s10.png', crop: [0.06, 0.12, 0.88, 0.81],
-      caption: 'Intrinsic is the pure element; extrinsic splits into n-type (pentavalent, electrons dominate) and p-type (trivalent, holes dominate). The p-type "donor" label is a slip for acceptor.',
-      alt: 'Tree chart: Semiconductor branches into intrinsic semiconductor (pure form of Ge, Si, ne = nh = ni) and extrinsic semiconductor, which branches into N-type (pentavalent impurity P, As, Sb, donor impurity ND, ne much greater than nh) and P-type (trivalent impurity Ga, B, In, Al, ne much less than nh).' },
-    { id: 'm2-intrinsic-lattice', src: 'm2/slides/s11.png', crop: [0.157, 0.252, 0.684, 0.694],
-      caption: 'Left: heat breaks a Si–Si bond, freeing an electron and leaving a hole. Right: with a field applied, electrons and holes drift in opposite directions.',
-      alt: 'Two square grids of silicon atoms sharing electron pairs. Left panel, no electric field: a broken covalent bond and a free electron with its hole. Right panel, electric field present: green arrows for electron movement and yellow arrows for hole movement pointing in opposite directions.' },
-    { id: 'm2-n-type-doping', src: 'm2/slides/s13.png', crop: [0.085, 0.41, 0.8275, 0.567],
-      caption: 'Phosphorus brings five valence electrons; four bond with silicon and the fifth becomes a free electron.',
-      alt: 'Left: a Si atom with four valence electrons and a P atom with five. An arrow reads adding phosphorus to pure silicon crystal results in a surplus electron that becomes a free electron. Right: a silicon lattice with one P atom and a free electron marked.' },
-    { id: 'm2-p-type-doping', src: 'm2/slides/s14.png', crop: [0.098, 0.415, 0.805, 0.565],
-      caption: 'Boron brings only three valence electrons, so one bond to silicon is left an electron short: a hole.',
-      alt: 'Left: a Si atom with four valence electrons and a B atom with three plus an empty circle. An arrow reads adding boron to pure silicon crystal results in lack of an electron, which becomes a hole. Right: a silicon lattice with one B atom and a hole marked.' },
-    { id: 'm2-zone-refining-fig', src: 'm2/slides/s16.png', crop: [0.18, 0.48, 0.64, 0.45],
-      caption: 'The circular heater H moves toward Z. Behind it (X) the germanium recrystallises pure; the molten zone Y carries the impurities forward.',
-      alt: 'A horizontal germanium rod with a ring-shaped circular heater around it. The part inside the heater is the molten zone containing impurities (Y). Left of it is recrystallised pure germanium (X), right of it the impure germanium rod (Z). An arrow shows the direction of travel of heater, molten zone and impurities.' },
-    { id: 'm2-czochralski-steps', src: 'm2/images/s17_df8980b2.png', crop: null,
-      caption: 'Left to right: melting, dipping the rotating seed, the start of growth, pulling, and the finished boule lifted to cool.',
-      alt: 'Five crucibles in sequence: solid charge melting, a rotating seed rod touching the melt, a small crystal starting on the seed, a cone-shaped crystal being pulled up, and a large crystal boule lifted clear of the melt to cool.' },
-    { id: 'm2-czochralski-puller', src: 'm2/slides/s18.png', crop: [0.03, 0.005, 0.515, 0.99],
-      caption: 'Inside a silicon puller: seed and neck at the top, the growing single crystal, the Si melt in an SiO₂ crucible, and the rates (pull, rotation, lift) that control growth.',
-      alt: 'Cross-section of a Czochralski puller. Labels: crystal rotation rate v1, pulling speed v, seed holder, seed, crystal neck, Si single crystal, temperature gradient, diameter, Ar flow, SiO, thermal shield, heater, crucible susceptor, SiO2 crucible, Si melt, T melt, magnetic field, Ar + SiO + CO exhaust, crucible shaft, crucible lift rate, crucible rotation rate v2.' },
-    { id: 'm2-si-boule-photo', src: 'm2/images/s18_0823e2f7.jpg', crop: [0, 0.082, 1, 0.918],
-      caption: 'A Czochralski silicon crystal 300 mm across and over 250 kg, taller than the technician beside it.',
-      alt: 'Photo of a very large dark grey cylindrical silicon single crystal hanging in a clean room next to a technician in a white suit and mask.' }
-  ]
+    { id: 'm3-definition-types', caption: 'The three types of definition, from least to most detail, shown on one term (laser). Based on BAENG101 course material, VIT.', alt: 'Three stacked boxes: parenthetical (a word in brackets), sentence (term, class, features) and expanded (a paragraph using several methods), each getting larger.' },
+    { id: 'm3-term-class-features', caption: 'A sentence definition in three parts: the term, the broader class it belongs to, and the features that set it apart in that class. Based on BAENG101 course material, VIT.', alt: 'The definition of stress split into three labelled blocks: term (stress), class (an applied force), distinguishing features (that strains or deforms a body).' },
+    { id: 'm3-expansion-questions', caption: 'Each method of expanding a definition answers one question a reader might ask about the term. Based on BAENG101 course material, VIT.', alt: 'A list of nine reader questions, each joined to its expansion method, from etymology to examples.' },
+    { id: 'm3-solenoid-plan', caption: 'How the solenoid definition for student mechanics combines several expansion methods, in order. Based on BAENG101 course material, VIT.', alt: 'Five stacked steps: sentence definition, etymology, description and parts with a diagram, operating principle, example.' },
+    { id: 'm3-glossary-sample', caption: 'The layout of a glossary: terms in alphabetical order, each followed by a short sentence-style definition. Based on BAENG101 course material, VIT.', alt: 'A glossary card with four engineering terms in alphabetical order (ampere, bandwidth, capacitor, diode), each followed by a short definition.' },
+  ],
 });
