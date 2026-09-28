@@ -11,7 +11,8 @@ async function findByEmail(email) {
   for (let page = 0; page < PAGES; page++) {
     const list = await razorpay('GET', `/payments?from=${from}&count=100&skip=${page * 100}`);
     const items = list.items || [];
-    const hit = items.find((p) => isOurs(p) && normEmail((p.notes || {}).email) === email);
+    // an authorized (not yet captured) UPI payment counts too: checkPayment captures it; left alone, Razorpay refunds it
+    const hit = items.find((p) => (isOurs(p) || isOurs({ ...p, status: 'captured' }) && p.status === 'authorized') && normEmail((p.notes || {}).email) === email);
     if (hit) return hit.id;
     if (items.length < 100) break;
   }

@@ -127,6 +127,7 @@
           </div>
           <button class="btn primary gate-pay" id="gate-pay">Pay ₹${rs} with UPI</button>
           <p class="gate-msg" id="gate-msg" role="alert">${msg ? esc(msg) : ''}</p>
+          <p class="gate-muted gate-small">Paid but still locked? Wait a minute and reload this page, or use Restore access.</p>
           <p class="gate-muted gate-small">Google Pay, PhonePe, Paytm, BHIM or any UPI ID. After paying, just sign in with the same student account on your other device.</p>
           <details class="gate-restore">
             <summary>Already paid? Restore access</summary>
@@ -152,6 +153,28 @@
     const say = (t) => { out.textContent = t; };
     funnel('paywall');
     document.getElementById('gate-out').addEventListener('click', signOut);
+    // UPI apps (BHIM especially) often send the student back with the checkout saying "cancelled", or reload this page,
+    // although the money went through. So the order is remembered and the server asks Razorpay about it directly.
+    const PENDING = 'bn_pending_order';
+    const remember = (id) => { try { localStorage.setItem(PENDING, JSON.stringify({ id, t: Date.now() })); } catch (e) { /* ignore */ } };
+    const forget = () => { try { localStorage.removeItem(PENDING); } catch (e) { /* ignore */ } };
+    let checking = false;
+    async function checkOrder(orderId, first) {
+      if (checking || !orderId) return;
+      checking = true;
+      say(first || 'Checking with Razorpay whether your payment went through… If you cancelled it yourself, just tap Pay again.');
+      const until = Date.now() + 3 * 60e3;
+      while (Date.now() < until) {
+        try {
+          const r = await api('/api/verify', { action: 'check', orderId });
+          if (r.ok) { forget(); say('Payment confirmed. Unlocked! Loading everything…'); reload(); return; }
+        } catch (e) { checking = false; say(e.message + ' If money was taken, use "Restore access" below.'); return; }
+        await new Promise((ok) => setTimeout(ok, 5000));
+      }
+      checking = false;
+      say('No completed payment found yet. If money was taken from your account, reload this page in a few minutes (it unlocks by itself) or use "Restore access" below.');
+    }
+    try { const pend = JSON.parse(localStorage.getItem(PENDING) || 'null'); if (pend && Date.now() - pend.t < 60 * 60e3) checkOrder(pend.id, 'Checking your last payment…'); else forget(); } catch (e) { /* ignore */ }
     payBtn.addEventListener('click', async () => {
       payBtn.disabled = true; say('Opening UPI checkout…');
       funnel('start');
@@ -179,12 +202,14 @@
           } },
           handler: async (resp) => {
             say('Payment received. Confirming…');
-            try { await api('/api/verify', resp); say('Unlocked. Loading everything…'); reload(); }
-            catch (e) { say(e.message + ' If money was taken, use "Restore access" (payment ID: ' + resp.razorpay_payment_id + ').'); payBtn.disabled = false; }
+            try { await api('/api/verify', resp); forget(); say('Unlocked. Loading everything…'); reload(); }
+            catch (e) { payBtn.disabled = false; checkOrder(o.orderId, 'Confirming your payment with Razorpay… (payment ID: ' + resp.razorpay_payment_id + ')'); }
           },
-          modal: { ondismiss: () => { say('Payment cancelled.'); payBtn.disabled = false; } },
+          // "cancelled" or "failed" is not always true with UPI apps: check the order before telling the student
+          modal: { ondismiss: () => { payBtn.disabled = false; checkOrder(o.orderId); } },
         });
-        rzp.on('payment.failed', (r) => { say('Payment failed: ' + ((r.error && r.error.description) || 'try again')); payBtn.disabled = false; });
+        rzp.on('payment.failed', () => { payBtn.disabled = false; checkOrder(o.orderId, 'The UPI app reported a problem. Checking with Razorpay whether the money was taken anyway… You can also tap Pay to try again.'); });
+        remember(o.orderId);
         rzp.open();
       } catch (e) { say(e.message); payBtn.disabled = false; }
     });
