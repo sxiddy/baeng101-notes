@@ -243,6 +243,7 @@ window.__startApp = function () {
           <form class="music-paste" data-m="paste"><input type="url" inputmode="url" placeholder="Paste a Spotify link" aria-label="Spotify playlist, album or song link"><button class="btn small" type="submit">Play</button></form>
           <p class="music-msg" data-mmsg></p>
           <div class="music-player"><div data-mslot></div></div>
+          <p class="music-hint">Tap <b>▶</b> in the player to start. No sound? <a data-mopen target="_blank" rel="noopener">Open in Spotify ↗</a></p>
           <p class="music-note">Spotify's own player. Signed in to Spotify in this browser: full songs. Otherwise 30-second previews.</p>
         </div>`;
     }
@@ -250,9 +251,11 @@ window.__startApp = function () {
     $('.music-body', musicDock).hidden = !st.open;
     $('.music-now', musicDock).textContent = st.label ? '· ' + st.label : '';
     $$('.music-chip', musicDock).forEach((b) => b.classList.toggle('on', b.dataset.ref === st.ref));
+    const op = $('[data-mopen]', musicDock); if (op) { op.href = 'https://open.spotify.com/' + (st.ref || 'playlist/' + MUSIC[0][0]); }
+    const hint = $('.music-hint', musicDock); if (hint) hint.hidden = !st.ref;
   }
-  function playMusic(ref, label, auto) {
-    if (auto == null) auto = true;
+  function playMusic(ref, label) {
+    const auto = false; // browsers block sound the site starts itself: the student taps ▶ in Spotify's player
     const st = mState(); st.ref = ref; st.label = label; save(); paintMusic();
     const uri = 'spotify:' + ref.replace('/', ':');
     if (music.ctrl) { music.ctrl.loadUri(uri); if (auto) music.ctrl.play(); return; }
@@ -274,7 +277,7 @@ window.__startApp = function () {
   }
   musicDock.addEventListener('click', (e) => {
     const t = e.target.closest('[data-m]'); if (!t) return;
-    if (t.dataset.m === 'toggle') { const st = mState(); st.open = !st.open; save(); paintMusic(); if (st.open && st.ref && !music.ctrl) playMusic(st.ref, st.label, false); }
+    if (t.dataset.m === 'toggle') { const st = mState(); st.open = !st.open; save(); paintMusic(); if (st.open && st.ref && !music.ctrl) playMusic(st.ref, st.label); }
     else if (t.dataset.m === 'pick') playMusic(t.dataset.ref, t.dataset.label);
   });
   musicDock.addEventListener('submit', (e) => {
