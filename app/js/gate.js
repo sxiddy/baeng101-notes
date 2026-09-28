@@ -112,6 +112,10 @@
 
   // ---------------------------------------------------------------- pay
   function paywall(msg) {
+    if (!S.user) { // sign-in is switched off, and payments are tied to a student account
+      root.innerHTML = '<div class="gate"><div class="gate-card"><h1 class="gate-title">Payments are paused</h1><p class="gate-muted">Unlocking needs a student account, and sign-in is switched off right now. The free modules are open to everyone.</p><p style="margin-top:14px"><a class="btn ghost" href="./">← Back to the notes</a></p></div></div>';
+      return;
+    }
     const rs = (price / 100).toFixed(0);
     root.innerHTML = `
       <div class="gate">
@@ -235,8 +239,8 @@
       window.PRICE_RS = Math.round(price / 100);
       window.SITE_BANNER = S.banner || null;
       window.SIGNED_IN_AS = S.user || null;
-      // open mode: no sign-in, every module free (turned on and off with OPEN_ACCESS in Vercel)
-      if (S.open && !S.user) { document.body.classList.add('open-mode'); return start(true, null); }
+      // Google sign-in switched off by the owner (/stats.html): no sign-in; paid modules stay locked unless the site is free
+      if (S.open && !S.user) { document.body.classList.add('open-mode'); return start(!!S.paid, Array.isArray(S.modules) ? S.modules : null); }
       if (!S.user && !S.owner) {
         const err = new URLSearchParams(location.search).get('login_error');
         if (err) history.replaceState(null, '', location.pathname + location.hash);

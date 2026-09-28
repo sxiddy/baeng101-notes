@@ -79,13 +79,13 @@ function isOwner(req) {
 // Who can see the paid modules: the owner, a student whose email paid (hash "paid"), or one on the owner's free
 // list (hash "free"; removing them locks them out straight away, and a temporary grant has an "until" time). A free grant can be limited to some modules;
 // then .modules lists them (null = everything).
-// Open mode: no sign-in, everything free for everyone. On when api/_mode.json has "open": true (or the Vercel env
-// OPEN_ACCESS=1). Set it to false and push to bring back Google sign-in and payments exactly as before.
+// Two owner switches on /stats.html (hash "config": signin "1"/"0", access "free"/"paid"): Google sign-in on or off, and
+// the whole site free or paid. Until the owner sets them, api/_mode.json decides ("open": true = sign-in off + free).
 const MODE = (() => { try { return require('./_mode.json'); } catch (e) { return {}; } })();
-const openAccess = () => process.env.OPEN_ACCESS === '1' || MODE.open === true;
+const signinOff = async () => !(await settings().catch(() => ({ signin: !MODE.open }))).signin;
 async function hasAccess(req) {
   if (isOwner(req)) return { owner: true, modules: null };
-  if (openAccess()) return { open: true, modules: null };
+  if ((await settings().catch(() => ({}))).freeAll) return { open: true, modules: null };
   const u = getUser(req);
   if (!u) return null;
   const store = require('./_store');
@@ -173,9 +173,12 @@ async function recordPaid(email, p) {
 // While a sale is running (until its end time) it replaces the normal price everywhere, then the normal price returns by itself.
 async function settings() {
   const store = require('./_store');
-  const out = { price: PRICE, normalPrice: PRICE, sale: null, banner: null };
+  const open = MODE.open === true || process.env.OPEN_ACCESS === '1';
+  const out = { price: PRICE, normalPrice: PRICE, sale: null, banner: null, signin: !open, freeAll: open };
   if (!store.configured()) return out;
-  const [[p, b, sl]] = await store.pipeline([['HMGET', 'config', 'price', 'banner', 'sale']]);
+  const [[p, b, sl, si, ac]] = await store.pipeline([['HMGET', 'config', 'price', 'banner', 'sale', 'signin', 'access']]);
+  if (si === '1' || si === '0') out.signin = si === '1';
+  if (ac === 'free' || ac === 'paid') out.freeAll = ac === 'free';
   const n = parseInt(p, 10); if (Number.isInteger(n) && n >= 100) out.price = out.normalPrice = n;
   try { const x = JSON.parse(b || 'null'); if (x && x.on && x.text) out.banner = { id: x.id, text: x.text }; } catch (e) {}
   try {
@@ -247,7 +250,7 @@ function handle(fn) {
   };
 }
 
-module.exports = { openAccess,
+module.exports = { signinOff,
   PRICE, DOMAIN, MAX_DEVICES, env, send, body, hmac, safeEqual,
   getUser, isOwner, hasAccess, normEmail, isStudentEmail, userCookie, ownerCookie, clearUserCookie, verifyGoogle,
   razorpay, checkPayment, isOurs, recordPaid, settings, deviceIdFrom, deviceKeys, claimDevice, deviceActive, parseLimits, limitUntil, handle,

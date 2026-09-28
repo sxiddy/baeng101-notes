@@ -219,6 +219,10 @@
         <p style="font-size:14.5px;margin-top:10px"><b>${days(s.battles, 30).reduce((a, x) => a + x[1], 0)}</b> 1v1 quiz battles started in the last 30 days.</p></section>` : ''}
 
       ${s.storage ? `<section class="sum-sec"><h2 class="h-sec">Settings</h2>
+        <div class="sale" style="margin-bottom:16px"><div class="note-label">Site switches</div>
+          <p class="row" style="align-items:center"><b style="min-width:150px">Google sign-in</b><span class="muted">${s.signin ? 'On: only VIT student accounts get in' : 'Off: anyone can open the site, no account needed'}</span> <button type="button" class="btn small${s.signin ? ' ghost' : ' primary'}" data-mode="signin" data-v="${s.signin ? 0 : 1}">${s.signin ? 'Turn sign-in off' : 'Turn sign-in on'}</button></p>
+          <p class="row" style="align-items:center;margin-top:8px"><b style="min-width:150px">Website</b><span class="muted">${s.freeAll ? 'Free: every module and paper is open to everyone' : 'Paid: paid modules and model papers need payment'}</span> <button type="button" class="btn small${s.freeAll ? ' primary' : ' ghost'}" data-mode="free" data-v="${s.freeAll ? 0 : 1}">${s.freeAll ? 'Make it paid' : 'Make it free'}</button></p>
+          <p class="muted" style="font-size:13.5px;margin-top:8px">Applies on the next page load for everyone, no redeploy needed. To take payments, sign-in must be on (payments are tied to the student account).</p><p class="msg" id="mm"></p></div>
         <form class="row" id="pf"><label class="lim">Price ₹ <input id="pr" type="number" min="1" max="5000" value="${esc(s.price)}" required style="width:90px"></label><button class="btn">Save price</button></form>
         <p class="muted" style="font-size:13.5px;margin-top:6px">For new payments only. Everyone who already paid keeps access. The site shows the new price straight away.</p><p class="msg" id="pm"></p>
         <div class="sale"><div class="note-label">Temporary offer</div>
@@ -360,6 +364,13 @@
       try { await post({ action: 'set-price', rupees: +$('#pr').value }); $('#pm').textContent = 'Saved. New payments are now ₹' + (+$('#pr').value) + '.'; }
       catch (err) { $('#pm').textContent = err.message; }
     });
+    // site switches: Google sign-in on/off, whole site free/paid
+    $$('[data-mode]').forEach((b) => b.addEventListener('click', async () => {
+      const on = b.dataset.v === '1', what = b.dataset.mode;
+      $('#mm').textContent = 'Saving…';
+      try { await post(Object.assign({ action: 'set-mode' }, what === 'signin' ? { signin: on } : { free: on })); $('#mm').textContent = 'Saved. It applies the next time a page loads.'; setTimeout(load, 900); }
+      catch (err) { $('#mm').textContent = err.message; }
+    }));
     $$('[data-ban]').forEach((b) => b.addEventListener('click', async (e) => {
       e.preventDefault(); $('#bm').textContent = 'Saving…';
       try { await post({ action: 'set-banner', text: $('#bt').value, on: b.dataset.ban === '1' }); $('#bm').textContent = b.dataset.ban === '1' ? 'Showing on the site now.' : 'Hidden.'; setTimeout(load, 1200); }

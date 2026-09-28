@@ -22,6 +22,8 @@ const store = require('./_store');
 const { paidModules = [] } = require('./_access.json');
 
 async function paidPayments(pages) {
+  // no Razorpay keys yet (or the site runs free): the rest of the admin page still works, just without payments
+  if (!process.env.RAZORPAY_KEY_ID || !process.env.RAZORPAY_KEY_SECRET) return [];
   const from = Math.floor(Date.now() / 1000) - 400 * 24 * 3600, out = [];
   for (let page = 0; page < pages; page++) {
     const list = await razorpay('GET', `/payments?from=${from}&count=100&skip=${page * 100}`);
@@ -80,6 +82,14 @@ module.exports = handle(async (req, res) => {
       const prev = parseJSON((await store.pipeline([['HGET', 'config', 'banner']]))[0], {}) || {};
       const id = text && text === prev.text ? prev.id : crypto.randomBytes(4).toString('hex'); // new text shows again to people who closed the old one
       await store.pipeline([['HSET', 'config', 'banner', JSON.stringify({ id, text, on: !!b.on })]]);
+      return send(res, 200, { ok: true });
+    }
+    if (a === 'set-mode') { // owner switches: Google sign-in on/off, whole site free/paid
+      const cmds = [];
+      if (typeof b.signin === 'boolean') cmds.push(['HSET', 'config', 'signin', b.signin ? '1' : '0']);
+      if (typeof b.free === 'boolean') cmds.push(['HSET', 'config', 'access', b.free ? 'free' : 'paid']);
+      if (!cmds.length) return send(res, 400, { error: 'Nothing to change.' });
+      await store.pipeline(cmds);
       return send(res, 200, { ok: true });
     }
     if (a === 'feedback-status') {
@@ -258,6 +268,7 @@ module.exports = handle(async (req, res) => {
     storage: store.configured(),
     maxDevices: MAX_DEVICES,
     paidModules,
+    signin: cfg.signin !== false, freeAll: !!cfg.freeAll,
     price: cfg.normalPrice / 100,
     sale: cfg.sale ? { rupees: cfg.sale.price / 100, until: new Date(cfg.sale.until).toISOString(), text: cfg.sale.text || '' } : null,
     banner,
