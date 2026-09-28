@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 878">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 10 5 0 10z" class="dfd"/></marker></defs>
+  <g>
+    <rect x="10" y="10" width="580" height="88" rx="14" class="df"/>
+    <circle cx="48" cy="54" r="23" class="dfb" fill-opacity=".28"/><text x="48" y="62" font-size="24" text-anchor="middle" class="mono dt">1</text>
+    <text x="86" y="48" font-size="25" class="dt">What are the main issues here?</text>
+    <text x="86" y="82" font-size="22" class="dt2">the incident, and what lies under it</text>
+    <path d="M300 100v16" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+    <rect x="10" y="120" width="580" height="88" rx="14" class="df"/>
+    <circle cx="48" cy="164" r="23" class="dfb" fill-opacity=".28"/><text x="48" y="172" font-size="24" text-anchor="middle" class="mono dt">2</text>
+    <text x="86" y="158" font-size="25" class="dt">Why are these issues important?</text>
+    <text x="86" y="192" font-size="22" class="dt2">who and what is at risk if ignored</text>
+    <path d="M300 210v16" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+    <rect x="10" y="230" width="580" height="88" rx="14" class="df"/>
+    <circle cx="48" cy="274" r="23" class="dfb" fill-opacity=".28"/><text x="48" y="282" font-size="24" text-anchor="middle" class="mono dt">3</text>
+    <text x="86" y="268" font-size="25" class="dt">Whose problem is this?</text>
+    <text x="86" y="302" font-size="22" class="dt2">name the decision-maker, say why</text>
+    <path d="M300 320v16" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+    <rect x="10" y="340" width="580" height="88" rx="14" class="df"/>
+    <circle cx="48" cy="384" r="23" class="dfb" fill-opacity=".28"/><text x="48" y="392" font-size="24" text-anchor="middle" class="mono dt">4</text>
+    <text x="86" y="378" font-size="25" class="dt">What precisely are his objectives?</text>
+    <text x="86" y="412" font-size="22" class="dt2">short-term and long-term outcomes</text>
+    <path d="M300 430v16" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+    <rect x="10" y="450" width="580" height="88" rx="14" class="df"/>
+    <circle cx="48" cy="494" r="23" class="dfo" fill-opacity=".28"/><text x="48" y="502" font-size="24" text-anchor="middle" class="mono dt">5</text>
+    <text x="86" y="488" font-size="25" class="dt">What courses of action are open?</text>
+    <text x="86" y="522" font-size="22" class="dt2">3 to 5 options, each tagged with a mode</text>
+    <path d="M300 540v16" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+    <rect x="10" y="560" width="580" height="88" rx="14" class="df"/>
+    <circle cx="48" cy="604" r="23" class="dfo" fill-opacity=".28"/><text x="48" y="612" font-size="24" text-anchor="middle" class="mono dt">6</text>
+    <text x="86" y="598" font-size="25" class="dt">How realistic is each option?</text>
+    <text x="86" y="632" font-size="22" class="dt2">time, power, willingness, cost</text>
+    <path d="M300 650v16" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+    <rect x="10" y="670" width="580" height="88" rx="14" class="df"/>
+    <circle cx="48" cy="714" r="23" class="dfo" fill-opacity=".28"/><text x="48" y="722" font-size="24" text-anchor="middle" class="mono dt">7</text>
+    <text x="86" y="708" font-size="25" class="dt">What are their possible effects?</text>
+    <text x="86" y="742" font-size="22" class="dt2">on people, work and relationships</text>
+    <path d="M300 760v12" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+    <rect x="11" y="781" width="578" height="86" rx="14" fill="none" class="dsg" stroke-width="2.5" stroke-dasharray="9 7"/>
+    <circle cx="48" cy="824" r="23" class="dfg" fill-opacity=".28"/><text x="48" y="833" font-size="26" text-anchor="middle" class="dt">✓</text>
+    <text x="86" y="818" font-size="25" class="dt">Then recommend and justify</text>
+    <text x="86" y="852" font-size="22" class="dt2">pick one, say why, plan the steps</text>
+  </g>
+</svg>

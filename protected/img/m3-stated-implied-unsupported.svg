@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 560">
+  <defs>
+    <marker id="ad" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" class="dfd"/></marker>
+  </defs>
+  <line x1="34" y1="24" x2="34" y2="520" class="ds2" stroke-width="3" marker-end="url(#ad)"/>
+  <text x="0" y="0" font-size="22" text-anchor="middle" class="dt3" transform="translate(22 272) rotate(-90)">further from the words</text>
+
+  <rect x="70" y="10" width="520" height="160" rx="16" class="dfb" fill-opacity=".14"/>
+  <rect x="70" y="10" width="520" height="160" rx="16" fill="none" class="dsb" stroke-width="2"/>
+  <text x="96" y="56" font-size="28" font-weight="600" class="dtb">Stated</text>
+  <text x="96" y="96" font-size="24" class="dt2">The words are in the text.</text>
+  <text x="96" y="140" font-size="22" class="dt3">Test: you can point to one line.</text>
+
+  <rect x="70" y="200" width="520" height="160" rx="16" class="dfy" fill-opacity=".14"/>
+  <rect x="70" y="200" width="520" height="160" rx="16" fill="none" class="dsy" stroke-width="2"/>
+  <text x="96" y="246" font-size="28" font-weight="600" class="dty">Can be inferred</text>
+  <text x="96" y="286" font-size="24" class="dt2">Clues + reasoning lead there.</text>
+  <text x="96" y="330" font-size="22" class="dt3">Test: you can name the clues.</text>
+
+  <rect x="70" y="390" width="520" height="160" rx="16" class="dfr" fill-opacity=".14"/>
+  <rect x="70" y="390" width="520" height="160" rx="16" fill="none" class="dsr" stroke-width="2"/>
+  <text x="96" y="436" font-size="28" font-weight="600" class="dtr">Not supported</text>
+  <text x="96" y="476" font-size="24" class="dt2">Goes past or against the text.</text>
+  <text x="96" y="520" font-size="22" class="dt3">Test: no clue, or it contradicts.</text>
+</svg>

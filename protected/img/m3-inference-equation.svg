@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 560">
+  <defs>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" class="dfg"/></marker>
+  </defs>
+  <rect x="20" y="10" width="560" height="130" rx="16" class="df2"/>
+  <rect x="20" y="10" width="10" height="130" rx="4" class="dfb"/>
+  <text x="50" y="56" font-size="28" font-weight="600" class="dtb">What the text says</text>
+  <text x="50" y="92" font-size="24" class="dt2">stated clues, facts, data</text>
+  <text x="50" y="124" font-size="22" class="dt3">"Bosses sit on the top floors"</text>
+
+  <text x="300" y="186" font-size="44" font-weight="600" text-anchor="middle" class="dt">+</text>
+
+  <rect x="20" y="210" width="560" height="130" rx="16" class="df2"/>
+  <rect x="20" y="210" width="10" height="130" rx="4" class="dfo"/>
+  <text x="50" y="256" font-size="28" font-weight="600" class="dto">What you already know</text>
+  <text x="50" y="292" font-size="24" class="dt2">knowledge and experience</text>
+  <text x="50" y="324" font-size="22" class="dt3">"Higher up usually means more senior"</text>
+
+  <line x1="300" y1="350" x2="300" y2="402" class="dsg" stroke-width="4" marker-end="url(#ag)"/>
+
+  <rect x="20" y="414" width="560" height="136" rx="16" class="dfg" fill-opacity=".16"/>
+  <rect x="20" y="414" width="560" height="136" rx="16" fill="none" class="dsg" stroke-width="2"/>
+  <text x="50" y="460" font-size="28" font-weight="600" class="dtg">Inference</text>
+  <text x="50" y="496" font-size="24" class="dt2">a conclusion the clues support</text>
+  <text x="50" y="530" font-size="22" class="dt3">"An office floor can signal rank"</text>
+</svg>
