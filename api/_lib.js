@@ -79,8 +79,13 @@ function isOwner(req) {
 // Who can see the paid modules: the owner, a student whose email paid (hash "paid"), or one on the owner's free
 // list (hash "free"; removing them locks them out straight away, and a temporary grant has an "until" time). A free grant can be limited to some modules;
 // then .modules lists them (null = everything).
+// Open mode: no sign-in, everything free for everyone. On when api/_mode.json has "open": true (or the Vercel env
+// OPEN_ACCESS=1). Set it to false and push to bring back Google sign-in and payments exactly as before.
+const MODE = (() => { try { return require('./_mode.json'); } catch (e) { return {}; } })();
+const openAccess = () => process.env.OPEN_ACCESS === '1' || MODE.open === true;
 async function hasAccess(req) {
   if (isOwner(req)) return { owner: true, modules: null };
+  if (openAccess()) return { open: true, modules: null };
   const u = getUser(req);
   if (!u) return null;
   const store = require('./_store');
@@ -242,7 +247,7 @@ function handle(fn) {
   };
 }
 
-module.exports = {
+module.exports = { openAccess,
   PRICE, DOMAIN, MAX_DEVICES, env, send, body, hmac, safeEqual,
   getUser, isOwner, hasAccess, normEmail, isStudentEmail, userCookie, ownerCookie, clearUserCookie, verifyGoogle,
   razorpay, checkPayment, isOurs, recordPaid, settings, deviceIdFrom, deviceKeys, claimDevice, deviceActive, parseLimits, limitUntil, handle,

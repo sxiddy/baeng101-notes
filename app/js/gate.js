@@ -234,6 +234,8 @@
       window.PRICE_RS = Math.round(price / 100);
       window.SITE_BANNER = S.banner || null;
       window.SIGNED_IN_AS = S.user || null;
+      // open mode: no sign-in, every module free (turned on and off with OPEN_ACCESS in Vercel)
+      if (S.open && !S.user) { document.body.classList.add('open-mode'); return start(true, null); }
       if (!S.user && !S.owner) {
         const err = new URLSearchParams(location.search).get('login_error');
         if (err) history.replaceState(null, '', location.pathname + location.hash);

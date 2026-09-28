@@ -1,0 +1,4 @@
+{
+  "open": true,
+  "note": "open: true = no sign-in and everything free for everyone. Set to false (and push) to bring back Google sign-in and payments."
+}

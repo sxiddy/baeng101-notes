@@ -1121,3 +1121,8 @@ a.syl-name:hover { text-decoration: underline; }
 .paper-rev { font-size: 14px; color: var(--text-dim); margin: 12px 0 0; }
 .cat2-asked { margin: 14px 0 4px; }
 .cat2-asked a { white-space: nowrap; }
+
+/* open mode (everything free, no sign-in): hide what needs an account */
+body.open-mode [href="#battle"], body.open-mode [data-act="help"], body.open-mode [data-act="ideas"],
+body.open-mode .sb-label:has(+ [data-act="ideas"]) { display: none !important; }
+.continue .btn { max-width: 100%; white-space: normal; text-align: left; height: auto; min-height: 44px; padding-top: 10px; padding-bottom: 10px; }
