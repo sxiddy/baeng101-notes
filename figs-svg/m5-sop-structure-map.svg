@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 770">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 10 5 0 10z" class="dfd"/></marker></defs>
+  <text x="20" y="30" font-size="22" class="dt3 mono">ONE PARAGRAPH EACH, IN THIS ORDER</text>
+
+  <rect x="10" y="48" width="580" height="96" rx="14" class="dfb" fill-opacity=".16"/>
+  <rect x="10" y="48" width="580" height="96" rx="14" fill="none" class="dsb" stroke-width="2"/>
+  <text x="34" y="88" font-size="26" class="dt">Opening</text>
+  <text x="566" y="88" font-size="22" text-anchor="end" class="dtb mono">PART 1</text>
+  <text x="34" y="124" font-size="22" class="dt2">anecdote, background, long-term goal</text>
+  <path d="M300 148v20" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <rect x="10" y="174" width="580" height="96" rx="14" class="dfo" fill-opacity=".16"/>
+  <rect x="10" y="174" width="580" height="96" rx="14" fill="none" class="dso" stroke-width="2"/>
+  <text x="34" y="214" font-size="26" class="dt">Academic background</text>
+  <text x="566" y="214" font-size="22" text-anchor="end" class="dto mono">PART 2</text>
+  <text x="34" y="250" font-size="22" class="dt2">marks, projects, research, work</text>
+  <path d="M300 274v20" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <rect x="10" y="300" width="580" height="96" rx="14" class="dfy" fill-opacity=".16"/>
+  <rect x="10" y="300" width="580" height="96" rx="14" fill="none" class="dsy" stroke-width="2"/>
+  <text x="34" y="340" font-size="26" class="dt">Recent activities</text>
+  <text x="566" y="340" font-size="22" text-anchor="end" class="dty mono">PART 3</text>
+  <text x="34" y="376" font-size="22" class="dt2">internships, jobs, what you learned</text>
+  <path d="M300 400v20" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <rect x="10" y="426" width="580" height="96" rx="14" class="dfp" fill-opacity=".16"/>
+  <rect x="10" y="426" width="580" height="96" rx="14" fill="none" class="dsp" stroke-width="2"/>
+  <text x="34" y="466" font-size="26" class="dt">Why this course and university</text>
+  <text x="34" y="502" font-size="22" class="dt2">academic interests, courses, faculty</text>
+  <text x="566" y="502" font-size="22" text-anchor="end" class="dtp mono">PART 4</text>
+  <path d="M300 526v20" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <rect x="10" y="552" width="580" height="96" rx="14" class="dfg" fill-opacity=".16"/>
+  <rect x="10" y="552" width="580" height="96" rx="14" fill="none" class="dsg" stroke-width="2"/>
+  <text x="34" y="592" font-size="26" class="dt">Career goals</text>
+  <text x="34" y="628" font-size="22" class="dt2">what you will do, how you contribute</text>
+  <path d="M300 652v20" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <rect x="10" y="678" width="580" height="86" rx="14" class="df"/>
+  <rect x="10" y="678" width="580" height="86" rx="14" fill="none" class="ds2" stroke-width="2"/>
+  <text x="34" y="714" font-size="26" class="dt">Closing</text>
+  <text x="34" y="748" font-size="22" class="dt2">readiness, a positive last line</text>
+</svg>

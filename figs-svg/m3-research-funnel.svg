@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 580">
+  <rect x="10" y="10" width="580" height="100" rx="14" class="df2"/>
+  <text x="300" y="52" font-size="26" font-weight="600" text-anchor="middle" class="dtb">1 · Google or Bing</text>
+  <text x="300" y="88" font-size="22" text-anchor="middle" class="dt2">see what is out there, then narrow</text>
+
+  <rect x="40" y="124" width="520" height="100" rx="14" class="df2"/>
+  <text x="300" y="166" font-size="26" font-weight="600" text-anchor="middle" class="dtp">2 · Wikipedia</text>
+  <text x="300" y="202" font-size="22" text-anchor="middle" class="dt2">overview + its footnotes</text>
+
+  <rect x="70" y="238" width="460" height="100" rx="14" class="df2"/>
+  <text x="300" y="280" font-size="26" font-weight="600" text-anchor="middle" class="dto">3 · Google Scholar</text>
+  <text x="300" y="316" font-size="22" text-anchor="middle" class="dt2">peer-reviewed articles</text>
+
+  <rect x="100" y="352" width="400" height="100" rx="14" class="df2"/>
+  <text x="300" y="394" font-size="26" font-weight="600" text-anchor="middle" class="dty">4 · Library</text>
+  <text x="300" y="430" font-size="22" text-anchor="middle" class="dt2">OPAC and databases</text>
+
+  <rect x="130" y="466" width="340" height="100" rx="14" class="dfg" fill-opacity=".16"/>
+  <rect x="130" y="466" width="340" height="100" rx="14" fill="none" class="dsg" stroke-width="2"/>
+  <text x="300" y="508" font-size="26" font-weight="600" text-anchor="middle" class="dtg">5 · Record it</text>
+  <text x="300" y="544" font-size="22" text-anchor="middle" class="dt2">URL, author, date, title</text>
+</svg>

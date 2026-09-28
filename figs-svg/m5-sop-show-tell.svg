@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 660">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 10 5 0 10z" class="dfd"/></marker></defs>
+  <text x="20" y="34" font-size="22" class="dtr mono">TELL</text>
+  <text x="580" y="34" font-size="22" text-anchor="end" class="dt3">a claim about yourself</text>
+  <rect x="10" y="50" width="580" height="80" rx="14" class="dfr" fill-opacity=".14"/>
+  <rect x="10" y="50" width="580" height="80" rx="14" fill="none" class="dsr" stroke-width="2"/>
+  <text x="300" y="100" font-size="26" text-anchor="middle" class="dt">"I am a very persistent person."</text>
+  <text x="20" y="170" font-size="22" class="dt3">The reader has to take your word for it.</text>
+
+  <text x="20" y="232" font-size="22" class="dtg mono">SHOW</text>
+  <text x="580" y="232" font-size="22" text-anchor="end" class="dt3">evidence the reader can see</text>
+  <rect x="10" y="248" width="580" height="150" rx="14" class="dfg" fill-opacity=".14"/>
+  <rect x="10" y="248" width="580" height="150" rx="14" fill="none" class="dsg" stroke-width="2"/>
+  <text x="34" y="292" font-size="24" class="dt">"My line-follower robot lost its</text>
+  <text x="34" y="328" font-size="24" class="dt">first two contests. I rebuilt the</text>
+  <text x="34" y="364" font-size="24" class="dt">sensor board and it won the third."</text>
+  <path d="M300 404v32" class="ds2" stroke-width="2.5" marker-end="url(#a)"/>
+
+  <rect x="10" y="444" width="580" height="80" rx="14" class="df"/>
+  <text x="300" y="494" font-size="26" text-anchor="middle" class="dt">The reader concludes: <tspan class="dtg">persistent</tspan>.</text>
+
+  <text x="20" y="580" font-size="22" class="dt3 mono">THE SWAP</text>
+  <text x="20" y="620" font-size="24" class="dt2">adjective → action + result + number</text>
+</svg>
