@@ -544,13 +544,14 @@ CHUNK({
           <div class="worked">
             <div class="given"><p><b>Report</b>: explored whether indoor plants influence productivity and workplace satisfaction (concentration, stress, perceptions) · four corporate offices, three months, two with plants and two as control groups · productivity records, questionnaires, stress surveys · lower stress, better concentration; productivity slightly up, especially in sustained-attention tasks · concluded plants can help a healthier, more productive workplace.</p></div>
             <div class="solve"><ol class="steps">
-              <li><b>Aim</b> one sentence on what was explored, one on what was examined.</li>
+              <li><b>Aim</b> one sentence: what was studied, and what it focused on.</li>
               <li><b>Method</b> who and where (four offices), when (three months), design (two with plants, two controls), how (records, questionnaires, stress surveys), in the passive.</li>
               <li><b>Findings</b> the reported effects, with the "slight" increase kept honest.</li>
               <li><b>Conclusion</b> the study's own claim, nothing added.</li>
-              <li><b>Count</b> 97 words: within "about 100".</li>
+              <li><b>Count</b> 96 words: within "about 100".</li>
+              <li><b>Own sentences</b> every fact comes from the report, but no sentence is copied from it ("explored whether… influence" becomes "examined whether… affect").</li>
             </ol></div>
-            <div class="result"><p>The study explored whether indoor plants influence employee productivity and workplace satisfaction in office environments. It examined concentration levels, stress and employee perceptions. Four corporate offices took part over three months; two introduced indoor plants, while the other two served as control groups. Employee productivity records, questionnaires and stress assessment surveys were collected and analysed. The results indicated that employees in offices with indoor plants reported lower stress levels and improved concentration. Productivity increased slightly, particularly in tasks requiring sustained attention. The study concluded that incorporating indoor plants can contribute to a healthier and more productive workplace. <b>(Words: 97)</b></p></div>
+            <div class="result"><p>This study examined whether indoor plants affect employee productivity and satisfaction at work, focusing on concentration, stress and how employees perceived their workplace. It was carried out in four corporate offices over three months: plants were placed in two offices, and the other two acted as control groups. Data came from productivity records, questionnaires and stress assessment surveys. Employees who worked among plants reported less stress and better concentration, and their productivity rose slightly, most noticeably in tasks that demanded sustained attention. The study concluded that indoor plants can help create a healthier, more productive workplace. <b>(Words: 96)</b></p></div>
           </div>
           <div class="note trap"><p>Don't pad to reach 100 with your own recommendation ("offices should buy more plants"). If you are short, add a real detail from the report (the control groups, the sustained-attention tasks) instead.</p></div>
         ` },

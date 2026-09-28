@@ -106,7 +106,7 @@ CHUNK({
           <p>It was developed by two psychologists, <b>Kenneth Thomas and Ralph Kilmann</b>, in the <b>early 1970s</b>; the source line on the slide picture dates the instrument <b>1974</b>. The two dates agree: the model grew in the early 1970s and the instrument was published in 1974.</p>
           <p>The TKI identifies <b>five primary modes</b> of dealing with conflict, placed on <b>two dimensions</b>, assertiveness and cooperativeness. The five modes are <b>competing</b>, <b>collaborating</b>, <b>compromising</b>, <b>avoiding</b> and <b>accommodating</b>. None is "the good one". Each is right for some situations and wrong for others, and everyone can use all five.</p>
           <div class="note heads-up"><p>The slides name the modes in two ways. Some use nouns (<b>competition, collaboration, compromise, avoidance, accommodation</b>); others use -ing forms (<b>competing, collaborating</b>…). They mean the same modes.</p><p>The slide picture of the grid spells one mode "Accomodating". The correct spelling is <b>accommodating</b> (double c, double m).</p></div>
-          <div class="note exam"><p>Name the two authors and the two dimensions correctly in any answer on this topic. "Thomas-Kilmann" has two l's and two n's in Kilmann.</p></div>
+          <div class="note exam"><p>Name the two authors and the two dimensions correctly in any answer on this topic. Spell it Kilmann: one l, double n.</p></div>
         ` },
         { title: 'Two dimensions', html: `
           <p class="lead">Every mode is a mix of two things: how hard you push for <b>your own concerns</b>, and how hard you work for <b>the other person's</b>.</p>

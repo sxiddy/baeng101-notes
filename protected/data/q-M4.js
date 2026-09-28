@@ -200,7 +200,7 @@ QUESTIONS({
       ],
       correct: 0,
       answer: `<p><b>Personal ideas must not be introduced</b>, and a summary is always in the third person.</p>`,
-      explain: `<p>Whether the author is "right" is your opinion. Report what the author says: "The author identifies supply shortages as the main threat to recovery."</p>`,
+      explain: `<p>Whether the author is "right" is your opinion. Report what the author says: "The author identifies supply shortages as a threat to the recovery."</p>`,
       points: ['no personal ideas', 'third person', 'report, don\'t judge'],
     },
     {
