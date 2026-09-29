@@ -982,7 +982,7 @@ window.__startApp = function () {
       moveInk();
       const completed = markVisited(t, i);
       paintDone(); paintNav(); updateSidebar(); updateOverall();
-      if (completed) toast('Topic complete. Every tab read.', 'check');
+      if (completed) { toast('Topic complete. Every tab read.', 'check'); if (autoTick([t.id])) updateSidebar(); }
       replaceHash(`#${t.id}.${i}`);
       S.last = { hash: `#${t.id}.${i}`, title: t.title }; save();
       setCrumbs([{ t: 'Home', href: '#home' }, { t: `Module ${+m.num}`, href: '#' + m.id, hideSm: true }, { t: t.short || t.title, href: `#${t.id}.0`, hideSm: true }, { t: t.tabs[i].title }]);
@@ -2049,6 +2049,13 @@ window.__startApp = function () {
     ],
   };
   const sylItems = (cat) => (SYL[cat] || []).flatMap((g) => g.lines.flatMap(([, tl]) => tl.map(([id]) => ({ id, mod: g.mod }))));
+  // a topic read to the end ticks itself on every syllabus that lists it; a tick the student removed by hand (0) stays off
+  function autoTick(ids) {
+    let changed = false;
+    Object.keys(SYL).forEach((cat) => sylItems(cat).forEach((x) => { const k = cat + ':' + x.id; if ((!ids || ids.includes(x.id)) && S.syl[k] === undefined && isDone(x.id)) { S.syl[k] = 1; changed = true; } }));
+    if (changed) save();
+    return changed;
+  }
   function viewSyllabus(r) {
     const cat = r.arg === 'cat1' ? 'cat1' : 'cat2', label = cat === 'cat1' ? 'CAT-1' : 'CAT-2';
     setCrumbs([{ t: 'Home', href: '#home' }, { t: label + ' syllabus' }]); setActive('syllabus.' + cat); document.title = `${label} syllabus · BAENG101 Notes`;
@@ -2061,23 +2068,24 @@ window.__startApp = function () {
       return { el };
     }
     function paint() {
+      autoTick(); // topics read before this feature existed tick themselves too
       const items = sylItems(cat), ticked = items.filter((x) => S.syl[cat + ':' + x.id]).length;
       const pct = items.length ? Math.round((ticked / items.length) * 100) : 0;
       el.innerHTML = `<div class="eyebrow"><span class="code">Exams</span><span>${label}</span><span class="dot">·</span><span>${items.length} topics</span></div>
         <h1 class="h-display">${label} syllabus</h1>
-        <p class="blurb">Every line of the ${label} syllabus, linked to the notes that cover it. Tick a topic when you can explain it without looking. Topics you've finished reading are marked <span class="syl-read">read</span>.</p>
+        <p class="blurb">Every line of the ${label} syllabus, linked to the notes that cover it. A topic ticks itself when you finish reading every tab of it. You can also tick or untick one yourself.</p>
         <div class="syl-top"><div class="ring" style="--p:${pct}"><span>${pct}%</span></div><div><b>${ticked} of ${items.length}</b> ticked<br><span class="muted" style="font-size:14px">Saved in this browser.</span></div>${ticked ? `<button class="btn small ghost" data-clear>${icon('rotate')}Clear ticks</button>` : ''}</div>
         ${groups.map((g) => { const M = MOD[g.mod] || { num: g.mod.slice(1) }; const locked = !!M.locked; const gi = sylItems(cat).filter((x) => x.mod === g.mod);
           return `<section class="syl-mod"><div class="mod-head"><span class="mod-num">Module ${+M.num}</span><h2 class="h-sec">${esc(g.title)}</h2><span class="count">${gi.filter((x) => S.syl[cat + ':' + x.id]).length}/${gi.length}${locked ? ` · ${icon('lock')} locked` : ''}</span></div>
             ${g.lines.map(([line, tl]) => `<div class="syl-line"><div class="syl-lt">${esc(line)}</div>${tl.map(([id, name]) => { const on = !!S.syl[cat + ':' + id], t = TOPIC[id];
               return locked || !t ? `<a class="syl-item locked" href="#unlock"><span class="syl-box">${icon('lock')}</span><span class="syl-name">${esc(name)}</span><span class="syl-tag">Unlock</span></a>`
-                : `<div class="syl-item${on ? ' on' : ''}"><button class="syl-box" role="checkbox" aria-checked="${on}" aria-label="Tick ${esc(name)}" data-tick="${id}">${on ? icon('check') : ''}</button><a class="syl-name" href="#${id}">${rt(t.title)}</a>${isDone(id) ? '<span class="syl-read">read</span>' : `<span class="syl-tag">${Math.round(frac(t) * 100)}%</span>`}</div>`; }).join('')}</div>`).join('')}
+                : `<div class="syl-item${on ? ' on' : ''}"><button class="syl-box" role="checkbox" aria-checked="${on}" aria-label="Tick ${esc(name)}" data-tick="${id}">${on ? icon('check') : ''}</button><a class="syl-name" href="#${id}">${rt(t.title)}</a>${on ? '' : `<span class="syl-tag">${Math.round(frac(t) * 100)}% read</span>`}</div>`; }).join('')}</div>`).join('')}
           </section>`; }).join('')}`;
     }
     el.addEventListener('click', (e) => {
       const b = e.target.closest('[data-tick]');
-      if (b) { const k = cat + ':' + b.dataset.tick; if (S.syl[k]) delete S.syl[k]; else S.syl[k] = 1; save(); paint(); updateSidebar(); return; }
-      if (e.target.closest('[data-clear]') && confirm(`Clear all ${label} ticks?`)) { sylItems(cat).forEach((x) => delete S.syl[cat + ':' + x.id]); save(); paint(); updateSidebar(); }
+      if (b) { const k = cat + ':' + b.dataset.tick; S.syl[k] = S.syl[k] ? 0 : 1; save(); paint(); updateSidebar(); return; }
+      if (e.target.closest('[data-clear]') && confirm(`Clear all ${label} ticks?`)) { sylItems(cat).forEach((x) => { S.syl[cat + ':' + x.id] = 0; }); save(); paint(); updateSidebar(); }
     });
     paint();
     return { el };
@@ -2505,6 +2513,7 @@ window.__startApp = function () {
   window.addEventListener('hashchange', onHistory);
 
   // ================================================================ boot
+  autoTick();
   buildSidebar();
   buildTopbar();
   let startHash = location.hash;

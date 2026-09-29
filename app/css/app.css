@@ -919,7 +919,8 @@ button.sb-link { width: 100%; border: 0; background: transparent; text-align: le
 .syl-name { color: var(--white); text-decoration: none; font-size: 15.5px; line-height: 1.4; min-width: 0; }
 a.syl-name:hover { text-decoration: underline; }
 .syl-read, .syl-tag { font-family: var(--mono); font-size: 11px; border-radius: 99px; padding: 1px 8px; border: 1px solid var(--line-2); color: var(--text-dim); white-space: nowrap; }
-.syl-read { color: var(--good); border-color: rgba(134, 212, 169, 0.5); }
+.syl-read { color: var(--good); border-color: rgba(134, 212, 169, 0.5); display: inline-grid; place-items: center; width: 20px; height: 20px; padding: 0; flex: none; }
+.syl-read svg { width: 12px; height: 12px; }
 :root[data-mode="light"] .syl-read { color: #1f7a4a; border-color: rgba(31, 122, 74, 0.45); }
 .syl-item.locked .syl-box { border-style: dashed; color: var(--text-faint); }
 .syl-item.locked .syl-name { color: var(--text-dim); }
