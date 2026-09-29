@@ -10,12 +10,12 @@ module.exports = handle(async (req, res) => {
   const f = new URL(req.url, 'http://x').searchParams.get('f') || '';
   if (!/^m\d+-[a-z0-9-]+\.(webp|svg)$/.test(f)) { res.statusCode = 404; return res.end('not found'); }
   const deny = (code) => { res.statusCode = code; res.setHeader('Cache-Control', 'no-store'); return res.end(); };
-  if (!getUser(req) && !isOwner(req) && !(await signinOff())) return deny(401);
-  const mod = f.split('-')[0], free = freeModules.includes(mod);
-  if (!free) { const t = await hasAccess(req); if (!t || (t.modules && !t.modules.includes(mod))) return deny(402); }
   const svg = f.endsWith('.svg');
   const p = path.join(DIR, f);
   if (!fs.existsSync(p) || (!svg && fs.existsSync(p.replace(/\.webp$/, '.svg')))) { res.statusCode = 404; return res.end('not found'); }
+  if (!getUser(req) && !isOwner(req) && !(await signinOff())) return deny(401);
+  const mod = f.split('-')[0], free = freeModules.includes(mod);
+  if (!free) { const t = await hasAccess(req); if (!t || (t.modules && !t.modules.includes(mod))) return deny(402); }
   res.statusCode = 200;
   res.setHeader('Content-Type', svg ? 'image/svg+xml; charset=utf-8' : 'image/webp');
   res.setHeader('X-Content-Type-Options', 'nosniff');
