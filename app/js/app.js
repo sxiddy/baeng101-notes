@@ -599,7 +599,8 @@ window.__startApp = function () {
   const svgCache = {};
   function loadSvg(id) {
     // only our own files from img/, and only the <svg> element (no scripts or event handlers survive)
-    return svgCache[id] || (svgCache[id] = fetch(`img/${id}.svg`, { credentials: 'same-origin' }).then((r) => { if (!r.ok) throw new Error(r.status); return r.text(); }).then((t) => {
+    const packed = (window.DATA.figsvg || {})[id]; // shipped inside the module's notes file
+    return svgCache[id] || (svgCache[id] = (packed ? Promise.resolve(packed) : fetch(`img/${id}.svg`, { credentials: 'same-origin' }).then((r) => { if (!r.ok) throw new Error(r.status); return r.text(); })).then((t) => {
       const doc = new DOMParser().parseFromString(t, 'image/svg+xml'), svg = doc.documentElement;
       if (!svg || svg.nodeName.toLowerCase() !== 'svg') throw new Error('not svg');
       svg.querySelectorAll('script, foreignObject').forEach((x) => x.remove());

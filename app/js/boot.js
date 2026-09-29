@@ -6,6 +6,7 @@ window.QUESTIONS = function (d) {
 };
 window.SUMMARY = function (d) { window.DATA.summaries[d.module] = d; };
 window.FIGDIMS = function (d) { Object.assign(window.DATA.figs, d); };
+window.FIGSVG = function (d) { window.DATA.figsvg = Object.assign(window.DATA.figsvg || {}, d); };
 // CAT-2 question papers: papers-free.js (actual papers, the index of every model paper, which topics were asked)
 // for everyone signed in; papers-paid.js (the other model papers) after payment.
 window.PAPERS = function (d) {

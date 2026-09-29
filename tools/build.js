@@ -39,6 +39,18 @@ for (const f of fs.readdirSync(PIMG).filter((f) => /\.svg$/.test(f))) fs.unlinkS
   }
 }
 fs.writeFileSync(path.join(PDATA, 'figs.js'), `FIGDIMS(${JSON.stringify(dims)});\n`);
+// Each module's diagrams also travel inside that module's first notes file (same sign-in and payment rules as
+// the notes), so they show even when a separate /img request fails; api/img.js stays as the fallback.
+{
+  const mods = JSON.parse(fs.readFileSync(path.join(CONTENT, 'modules.json'), 'utf8'));
+  for (const m of mods) {
+    const first = (m.chunks || [])[0], file = first && path.join(PDATA, 'chunk-' + first + '.js');
+    if (!file || !fs.existsSync(file)) continue;
+    const pack = {};
+    for (const id of Object.keys(dims).filter((id) => id.startsWith(m.id + '-'))) pack[id] = fs.readFileSync(path.join(SVGSRC, id + '.svg'), 'utf8');
+    if (Object.keys(pack).length) fs.appendFileSync(file, '\nFIGSVG(' + JSON.stringify(pack) + ');\n');
+  }
+}
 
 // paid diagram code (Modules 3 and 4) lives outside app/ and is served like the notes
 const paidViz = fs.readdirSync(path.join(ROOT, 'viz-paid')).filter((f) => /\.js$/.test(f)).sort();
