@@ -480,7 +480,7 @@ window.__startApp = function () {
     clearInterval(timerState.iv); timerState.running = run;
     if (run) timerState.iv = setInterval(() => {
       timerState.left--; paintTimer();
-      if (timerState.left <= 0) { startTimer(false); toast(`${lenLabel(focusMin())} done. Take a break.`, 'timer'); timerState.left = focusMin() * 60; }
+      if (timerState.left <= 0) { startTimer(false); toast(`${lenLabel(focusMin())} done. Take a break.`, 'timer'); timerState.left = focusMin() * 60; paintTimer(); }
     }, 1000);
   }
   function paintTimer() {
@@ -594,7 +594,7 @@ window.__startApp = function () {
   function srcLabel(src) {
     const m = String(src || '').match(/\/(?:slides|images|hi)\/s(\d+)/) || String(src || '').match(/\/(?:pages|images)\/p(\d+)/);
     if (!m) return '';
-    return 'BAENG101 course ' + (/\/p\d+/.test(src) || /m4\//.test(src) ? 'notes, VIT · Page ' : 'slides, VIT · Slide ') + parseInt(m[1], 10);
+    return 'BAENG101 course ' + (/\/p\d+/.test(src) || /m4\//.test(src) ? 'material, VIT · Page ' : 'material, VIT · No. ') + parseInt(m[1], 10);
   }
   const svgCache = {};
   function loadSvg(id) {

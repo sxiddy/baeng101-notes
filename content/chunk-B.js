@@ -7,11 +7,11 @@ CHUNK({
       title: 'What an inference is: stated, implied and everyday reasoning',
       short: 'What an inference is',
       blurb: 'An inference is a conclusion drawn from evidence and reasoning rather than first-hand observation. This topic covers stated vs implied information, the inferences you already make every day, and how to answer inference questions in the CAT.',
-      source: 'Reading comprehension: Making Inferences slides (Inferencing, everyday inference lists)',
+      source: 'Reading comprehension: Making Inferences (Inferencing, everyday inference lists)',
       tabs: [
         { title: 'What it is', html: `
           <p class="lead">An <b>inference</b> is a conclusion you reach from <b>evidence and reasoning</b>. You don't see the answer written down; you work it out by applying your own <b>knowledge and experience</b> to what is in front of you.</p>
-          <p>The slides put it as a contrast. We learn some things by <b>observing or experiencing</b> them <b>first-hand</b>. When we infer, we figure things out from clues instead.</p>
+          <p>It helps to see it as a contrast. We learn some things by <b>observing or experiencing</b> them <b>first-hand</b>. When we infer, we figure things out from clues instead.</p>
           <div class="vs">
             <div class="side"><h4>Observation</h4><p>The road is wet and people are shaking water off their umbrellas.</p><p><small>You saw it. Nothing to work out.</small></p></div>
             <div class="side"><h4>Inference</h4><p>It <b>rained a short while ago</b>.</p><p><small>You didn't see the rain. The wet road and the umbrellas, plus what you know about rain, lead you there.</small></p></div>
@@ -25,7 +25,7 @@ CHUNK({
         ` },
         { title: 'Stated and implied', html: `
           <p class="lead"><b>Stated</b> information is written in the words of the text. <b>Implied</b> information is <b>not directly stated</b>: the writer leaves it for you to work out.</p>
-          <p>The slides say that learning to notice <b>when information is implied</b> is what improves your skill in drawing conclusions. So the first habit is to ask of every idea: is this on the page, or am I building it?</p>
+          <p>Learning to notice <b>when information is implied</b> is what improves your skill in drawing conclusions. So the first habit is to ask of every idea: is this on the page, or am I building it?</p>
           <table class="tbl">
             <thead><tr><th>The text says</th><th>Stated</th><th>Implied</th></tr></thead>
             <tbody>
@@ -38,7 +38,7 @@ CHUNK({
           <div class="note trap"><p>In an "infer" question, one wrong option is usually a <b>stated fact</b> copied from the passage. It is true, but it is not an inference.</p></div>
         ` },
         { title: 'Everyday inference', html: `
-          <p class="lead">You infer all day without calling it that. The slides list two groups: reading <b>people</b>, and reading <b>situations</b>.</p>
+          <p class="lead">You infer all day without calling it that. Everyday inferences fall into two groups: reading <b>people</b>, and reading <b>situations</b>.</p>
           <h3>Reading people</h3>
           <div class="chips"><span class="chip">reading body language</span><span class="chip">interpreting tone of voice</span><span class="chip">predicting reactions</span><span class="chip">understanding underlying motives</span></div>
           <p>A friend says "Fine" in a flat voice with arms crossed: you infer it is not fine. A classmate who hates crowds is invited to a packed concert: you predict they will say no.</p>
@@ -76,7 +76,7 @@ CHUNK({
             <div class="side"><h4>Supported</h4><p>"Being shorter <b>may</b> be a disadvantage when men with equal qualifications compete for a job."</p></div>
           </div>
           <div class="mnemonic"><p>A good inference is the <b>smallest step</b> the evidence lets you take. Take one step from the text, not three.</p></div>
-          <div class="note heads-up"><p>Not on the slides: the guess / assumption / opinion / prediction split is standard reading-comprehension practice, added so you can reject wrong MCQ options quickly.</p></div>
+          <div class="note heads-up"><p>Extra: the guess / assumption / opinion / prediction split is standard reading-comprehension practice, added so you can reject wrong MCQ options quickly.</p></div>
         ` },
         { title: 'Inferring from scientific texts', html: `
           <p class="lead">Scientific and technical texts make you infer in a few typical ways: what the <b>data implies</b>, how <b>certain</b> the writer is, and what would <b>follow</b> if a finding is true.</p>
@@ -93,7 +93,7 @@ CHUNK({
           <div class="note example"><p>The BBC insect passage says "some studies suggest" populations fell "by as much as 75%". So you can infer that 75% is an <b>upper estimate from some studies</b>, not a measured figure for every insect everywhere.</p></div>
           <h3>Link is not cause</h3>
           <p>"Taller men make more money" is a <b>link</b> (correlation). It does not tell you height itself <b>causes</b> the pay rise; employers' attitudes, confidence or other factors could sit in between. An inference that says "height causes higher pay" goes past the text.</p>
-          <div class="note heads-up"><p>Not on the slides: hedging and correlation vs cause are standard skills for reading scientific writing, added because the syllabus asks for inferences from scientific texts.</p></div>
+          <div class="note heads-up"><p>Extra: hedging and correlation vs cause are standard skills for reading scientific writing, added because the syllabus asks for inferences from scientific texts.</p></div>
         ` },
         { title: 'Answering inference questions', html: `
           <p class="lead">First decide whether the question wants a <b>stated</b> fact or an <b>inference</b>. The question stem tells you.</p>
@@ -111,13 +111,13 @@ CHUNK({
       ],
       flashcards: [
         { front: `An inference is a conclusion based on…`, back: `<b>Evidence and reasoning</b>.` },
-        { front: `The slides contrast inference with learning by…`, back: `<b>First-hand</b> observation or experience.` },
+        { front: `Inference is contrasted with learning by…`, back: `<b>First-hand</b> observation or experience.` },
         { front: `Stated information is…`, back: `Written <b>directly in the words</b> of the text.` },
         { front: `Implied information is…`, back: `<b>Not directly stated</b>; the reader works it out.` },
         { front: `Inference = what the text says + …`, back: `<b>What you already know</b> (knowledge and experience).` },
-        { front: `Four "reading people" inferences on the slides?`, back: `<b>Body language</b>, <b>tone of voice</b>, <b>predicting reactions</b>, <b>underlying motives</b>.` },
-        { front: `Cooking example on the slides?`, back: `Inferring <b>readiness from the aroma</b>.` },
-        { front: `News-article example on the slides?`, back: `Inferring the <b>reasons for police presence</b>.` },
+        { front: `Four "reading people" inferences?`, back: `<b>Body language</b>, <b>tone of voice</b>, <b>predicting reactions</b>, <b>underlying motives</b>.` },
+        { front: `Everyday inference: cooking example?`, back: `Inferring <b>readiness from the aroma</b>.` },
+        { front: `Everyday inference: news-article example?`, back: `Inferring the <b>reasons for police presence</b>.` },
         { front: `"According to the passage…" asks for…`, back: `<b>Stated</b> information, not an inference.` },
         { front: `Stems that ask for an inference?`, back: `<b>Suggests</b>, <b>implies</b>, <b>can be inferred</b>, <b>most likely</b>.` },
         { front: `Inference vs opinion?`, back: `An inference is <b>supported by the text</b>; an opinion says what <b>should</b> be.` },
@@ -143,7 +143,7 @@ CHUNK({
       title: 'Inferring from a passage: method, three passages and traps',
       short: 'Inferring from a passage',
       blurb: 'How to sort statements about a passage into stated, can be inferred and not supported, a step method for inference questions, worked practice on the three course passages (height and status, insect decline, plagiarism support), and the traps examiners set.',
-      source: 'Reading comprehension: Making Inferences slides (Locker 2003; BBC News insects excerpt; Sutherland-Smith 2010)',
+      source: 'Reading comprehension: Making Inferences (Locker 2003; BBC News insects excerpt; Sutherland-Smith 2010)',
       tabs: [
         { title: 'Stated, inferred, not supported', html: `
           <p class="lead">Every statement about a passage falls into one of three boxes: <b>stated</b>, <b>can be inferred</b>, or <b>not supported</b>. Most inference questions are really asking you to sort statements into these boxes.</p>
@@ -194,10 +194,9 @@ CHUNK({
             <div class="solve"><p>Clues: tall men hired more and paid more; the very big player seen as intimidating and unintelligent. Both directions: size changes how people judge you, well or badly.</p></div>
             <div class="result"><p>The passage <b>implies</b> that people judge others by their size, <b>because</b> taller men are hired and paid more, while a very large player is assumed to lack intelligence.</p></div>
           </div>
-          <div class="note heads-up"><p>Source slip: the slide quote reads "dint have brains", a typing slip for "didn't have brains".</p></div>
         ` },
         { title: 'Passage 2: insect decline', html: `
-          <p class="lead">The second passage is a short <b>BBC News</b> report on a scientific review. Here it is retold in our own words (the slide copy is labelled 100 words).</p>
+          <p class="lead">The second passage is a short <b>BBC News</b> report on a scientific review. Here it is retold in our own words (the original is labelled 100 words).</p>
           <div class="note example"><p>Scientists warn that the world is losing insects so fast that it threatens a "collapse of nature" and could badly hurt <b>food production</b>. A landmark review in the journal <b>Biological Conservation</b> found a dramatic fall in insect numbers across the globe; <b>some studies suggest</b> falls of <b>as much as 75%</b> in recent decades. The researchers name <b>habitat loss</b>, <b>pesticide use</b> and <b>climate change</b> as the main drivers, call for urgent action, and warn that doing nothing could be catastrophic.</p></div>
           <table class="tbl">
             <thead><tr><th>Statement</th><th>Label</th><th>Why</th></tr></thead>
@@ -215,7 +214,7 @@ CHUNK({
             <div class="solve"><p>Clues: "some studies" (not all), "suggest" (moderate), "as much as" (upper limit).</p></div>
             <div class="result"><p>The figure is <b>an upper estimate</b> from some studies, not a firm global measurement, because the writer says only that some studies suggest a fall of as much as 75%.</p></div>
           </div>
-          <div class="note heads-up"><p>Not on the slides: the review behind this report (Sánchez-Bayo and Wyckhuys) was published in 2019. News articles simplify research, so for a report you would trace the original review through Google Scholar or a library database (see Secondary sources).</p></div>
+          <div class="note heads-up"><p>Extra: the review behind this report (Sánchez-Bayo and Wyckhuys) was published in 2019. News articles simplify research, so for a report you would trace the original review through Google Scholar or a library database (see Secondary sources).</p></div>
         ` },
         { title: 'Passage 3: plagiarism support', html: `
           <p class="lead">The third passage is from an academic journal article on plagiarism in universities (<b>Sutherland-Smith, 2010</b>, p. 9). Here it is retold in our own words.</p>
@@ -288,7 +287,7 @@ CHUNK({
       title: 'Secondary sources: searching, libraries, types and records',
       short: 'Secondary sources',
       blurb: 'How to find and use secondary sources for a school or workplace project: starting with Google and other search engines, Google Scholar, Wikipedia as a starting point, digital libraries, the library OPAC and databases, the types of secondary sources and reference works, keeping records, and judging reliability.',
-      source: 'Reading comprehension: Making Inferences slides (secondary sources section)',
+      source: 'Reading comprehension: Making Inferences (secondary sources section)',
       tabs: [
         { title: 'What secondary research is', html: `
           <p class="lead"><b>Secondary sources</b> are materials other people have already written or collected: articles, books, reports, websites. Before you read a scientific text closely, you have to <b>find</b> the right one and know whether to <b>trust</b> it.</p>
@@ -304,21 +303,21 @@ CHUNK({
             <div class="side"><h4>Everyday research</h4><p>Weather trends, the price of a new phone, restaurant reviews. Quick, informal, low stakes.</p></div>
             <div class="side"><h4>School or workplace research</h4><p>A project or report someone will rely on. Needs <b>credible</b>, <b>recorded</b> and <b>checkable</b> sources.</p></div>
           </div>
-          <div class="note heads-up"><p>Not on the slides: a <b>primary source</b> is first-hand material (your own lab data, a survey you ran, an original experiment report); a <b>secondary source</b> reports, reviews or interprets that material. The BBC insect article is secondary; the review it describes is closer to the original research.</p></div>
+          <div class="note heads-up"><p>Extra: a <b>primary source</b> is first-hand material (your own lab data, a survey you ran, an original experiment report); a <b>secondary source</b> reports, reviews or interprets that material. The BBC insect article is secondary; the review it describes is closer to the original research.</p></div>
         ` },
         { title: 'Start broad, keep records', html: `
           <p class="lead">Begin with <b>general searching</b> to see what's out there: what <b>themes</b> come up, and which <b>authors and organisations</b> lead the research. Record everything as you go.</p>
           <ul>
             <li>Take notes in a <b>Word file</b>, or a <b>shared document</b> if it is a team project.</li>
             <li>Keep careful records of the <b>web address (URL)</b> and all source details: <b>author</b>, <b>date</b>, <b>title</b>, and <b>page numbers</b> if applicable, so you can find specific articles again later.</li>
-            <li>Use a <b>citation manager</b> such as <b>Zotero</b> or <b>EndNote</b> to keep track. (The slides point to Appendix A of the textbook for citation apps and note-taking models.)</li>
+            <li>Use a <b>citation manager</b> such as <b>Zotero</b> or <b>EndNote</b> to keep track. (Appendix A of the textbook covers citation apps and note-taking models.)</li>
           </ul>
           <div class="vs">
             <div class="side"><h4>Weak record</h4><p>"Insect article, BBC, says 75%."</p><p><small>No URL, no date, no author: you can't cite it or find it again.</small></p></div>
             <div class="side"><h4>Useful record</h4><p>Author · title · BBC News · date · URL · "some studies suggest up to 75% decline" · date accessed</p></div>
           </div>
           <div class="note why"><p>A week later you won't remember where a number came from. Without the record you either waste an hour searching again or cite something you can't check, which is how accidental plagiarism starts.</p></div>
-          <div class="note heads-up"><p>Source slip: the slide spells it "citation manger"; the tool names are <b>Zotero</b> and <b>EndNote</b>. Not on the slides: noting the <b>date you accessed</b> a web page is also standard, because pages change.</p></div>
+          <div class="note heads-up"><p>Extra: noting the <b>date you accessed</b> a web page is also standard, because pages change.</p></div>
         ` },
         { title: 'Google, Scholar and other engines', html: `
           <p class="lead">From students to professionals, most people start with a <b>Google search</b>. That's fine for seeing what's out there, but you soon need to <b>narrow down</b> and <b>dig deeper</b>.</p>
@@ -327,11 +326,11 @@ CHUNK({
             <li>It also offers many <b>books and journal articles</b>, through <b>agreements with publishers</b> or by <b>digitising</b> works that are in the <b>public domain</b> or out of copyright.</li>
             <li>A search on "electromagnetic radiation" gives <b>thousands or even millions</b> of results. Look for sites from <b>reliable sources</b> such as <b>universities</b> and <b>government research labs</b>.</li>
             <li>Once you have the basics, search <b>Google Scholar</b> for links to <b>peer-reviewed journal articles</b>, which you may get online or through the library.</li>
-            <li>Refine a search with <b>advanced search</b> (the slides: the gear icon, upper right, then "advanced search").</li>
+            <li>Refine a search with <b>advanced search</b> (the gear icon, upper right, then "advanced search").</li>
             <li>Different engines use different <b>algorithms</b> (ways of searching) and can give different results, so try <b>Microsoft Bing</b> or another engine and <b>compare</b>.</li>
           </ul>
           <figure data-fig="m3-research-funnel"></figure>
-          <div class="note heads-up"><p>Not on the slides: search pages change their layout often, so the gear icon may have moved (advanced search is usually under Settings). Quote marks around a phrase ("electromagnetic radiation") and words like <b>site:gov</b> or <b>site:ac.in</b> narrow results quickly.</p></div>
+          <div class="note heads-up"><p>Extra: search pages change their layout often, so the gear icon may have moved (advanced search is usually under Settings). Quote marks around a phrase ("electromagnetic radiation") and words like <b>site:gov</b> or <b>site:ac.in</b> narrow results quickly.</p></div>
         ` },
         { title: 'Wikipedia', html: `
           <p class="lead">Most online searches quickly lead to <b>Wikipedia</b>, the popular online encyclopedia. Treat it as a <b>place to start</b> your research, <b>not your final destination</b>.</p>
@@ -358,10 +357,10 @@ CHUNK({
             <li>Indexes and other resources for <b>engineering</b>, the <b>humanities</b>, <b>world affairs</b> and other areas.</li>
             <li><b>LexisNexis</b>, <b>Factiva</b> and <b>Dialog</b> (from the Casamonte example): legal cases and articles, and business news.</li>
           </ul>
-          <div class="note heads-up"><p>Source slip: the slide spells it "APA PsychINFO"; the database is <b>APA PsycINFO</b>. Not on the slides: for engineering, common databases include IEEE Xplore, ScienceDirect and Scopus; check which ones your library subscribes to.</p></div>
+          <div class="note heads-up"><p>Extra: for engineering, common databases include IEEE Xplore, ScienceDirect and Scopus; check which ones your library subscribes to.</p></div>
         ` },
         { title: 'Types of secondary sources', html: `
-          <p class="lead">The slides list ten <b>types of secondary sources</b> plus <b>reference works</b>. They differ in who checks the content before you see it.</p>
+          <p class="lead">There are ten <b>types of secondary sources</b> plus <b>reference works</b>. They differ in who checks the content before you see it.</p>
           <table class="tbl">
             <thead><tr><th>Type</th><th>Good for</th><th>Watch out</th></tr></thead>
             <tbody>
@@ -383,7 +382,7 @@ CHUNK({
             <div><span>Indexes</span>lists that point you to articles by subject or author</div>
             <div><span>Encyclopedias</span>overview entries; specialised ones are good for background and history</div>
           </div>
-          <div class="note heads-up"><p>Not on the slides: the slides give only the list of types. The "good for / watch out" columns, the meaning of <b>gray literature</b> (material from governments, universities and organisations published outside commercial publishing) and the index and encyclopedia explanations are standard research practice.</p></div>
+          <div class="note heads-up"><p>Extra: the course gives only the list of types. The "good for / watch out" columns, the meaning of <b>gray literature</b> (material from governments, universities and organisations published outside commercial publishing) and the index and encyclopedia explanations are standard research practice.</p></div>
         ` },
         { title: 'Judging reliability', html: `
           <p class="lead">A source is only useful if you can <b>trust</b> it. Before you use a fact, run a quick check on <b>who</b> wrote it, <b>when</b>, <b>why</b>, and <b>what evidence</b> they give.</p>
@@ -395,7 +394,7 @@ CHUNK({
             <li><b>Checking</b> was it peer reviewed or edited? Does a second source agree (Casamonte double-checked in Dialog)?</li>
           </ol>
           <div data-viz="source-rater"></div>
-          <div class="note heads-up"><p>Not on the slides: the checklist is standard practice built on the slides' advice (reliable sources, credible outlets, double-checking). The slides also have a heading "Guidelines for Online Research, and AI apps" with no text under it. Standard guidance: an AI chatbot can help you find search terms, but it can state wrong facts and even invent references, so <b>verify every fact and citation</b> in a real source before you use it.</p></div>
+          <div class="note heads-up"><p>Extra: the checklist is standard practice built on the advice above (reliable sources, credible outlets, double-checking). The course also has a heading "Guidelines for Online Research, and AI apps" with no text under it. Standard guidance: an AI chatbot can help you find search terms, but it can state wrong facts and even invent references, so <b>verify every fact and citation</b> in a real source before you use it.</p></div>
           <div class="note exam"><p>A likely CAT question gives a research need and four sources and asks which to use or trust. Name the source and give the reason: <b>peer review</b>, <b>named author</b>, <b>official body</b>, or the right <b>specialised database</b>.</p></div>
         ` },
       ],
@@ -408,7 +407,7 @@ CHUNK({
         { front: `OPAC stands for…`, back: `<b>Online public access catalog</b>: a search of all library holdings.` },
         { front: `Three general periodical databases?`, back: `<b>EBSCOHost</b>, <b>JSTOR</b>, <b>InfoTrac</b>.` },
         { front: `Databases for psychology, business and health?`, back: `<b>APA PsycINFO</b>, <b>Business Source Premier</b>, <b>PubMed</b>.` },
-        { front: `Two citation managers on the slides?`, back: `<b>Zotero</b> and <b>EndNote</b>.` },
+        { front: `Two citation managers to know?`, back: `<b>Zotero</b> and <b>EndNote</b>.` },
         { front: `Source details to record?`, back: `<b>URL</b>, <b>author</b>, <b>date</b>, <b>title</b>, page numbers.` },
         { front: `Three kinds of reference work?`, back: `<b>Bibliographies</b>, <b>indexes</b>, <b>encyclopedias</b>.` },
         { front: `A bibliography is…`, back: `A <b>list of books, articles and other sources</b>.` },

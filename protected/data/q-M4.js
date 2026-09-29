@@ -12,7 +12,7 @@ QUESTIONS({
       ],
       correct: 2,
       answer: `<p><b>The third one.</b> It keeps Lester's sentences in the same order and structure, swaps a few words, and gives no citation.</p>`,
-      explain: `<p>The first is the slides' legitimate paraphrase (new sentences, cited), the second is the acceptable summary, and the fourth is a proper quotation: exact words in quotation marks with a citation. Only the third passes off Lester's skeleton as the writer's own.</p>`,
+      explain: `<p>The first is the course's legitimate paraphrase (new sentences, cited), the second is the acceptable summary, and the fourth is a proper quotation: exact words in quotation marks with a citation. Only the third passes off Lester's skeleton as the writer's own.</p>`,
       points: ['same structure and order as the source', 'synonyms swapped in', 'no citation', 'a quotation with marks and a citation is not plagiarism'],
     },
     {
@@ -21,7 +21,7 @@ QUESTIONS({
       options: ['About 100 words, in connected prose', 'About 150 words, half the original', 'About 300 words, rewritten in your own words', 'About 30 words, as bullet points'],
       correct: 0,
       answer: `<p><b>About 100 words.</b> A précis is normally one-third of the original, written as prose.</p>`,
-      explain: `<p>Half is too long. Same length in your own words is a paraphrase, not a précis. Bullet points are ruled out by the slides whatever the length.</p>`,
+      explain: `<p>Half is too long. Same length in your own words is a paraphrase, not a précis. Bullet points are ruled out by the course whatever the length.</p>`,
       points: ['one-third of the original', 'prose, not bullets', 'a same-length rewrite is a paraphrase'],
     },
     {
@@ -29,7 +29,7 @@ QUESTIONS({
       q: `<p>Arjun hands in his précis of a 240-word passage as five neat bullet points, 70 words in all, each a main idea in his own words. What is wrong with it?</p>`,
       options: ['A précis must be connected prose, not bullet points', 'It is too long for a 240-word passage', 'It should be written in the first person', 'Nothing: bullets are the most concise form'],
       correct: 0,
-      answer: `<p><b>The form.</b> The slides say a précis should not be in bulleted points.</p>`,
+      answer: `<p><b>The form.</b> The course says a précis should not be in bulleted points.</p>`,
       explain: `<p>70 words is under the 80-word limit (240 ÷ 3), and own words and main ideas are right. But bullets drop the links between ideas (because, so, but), which a précis must show to be coherent.</p>`,
       points: ['no bullet points', 'prose shows the links between ideas', 'length and content were fine'],
     },
@@ -49,7 +49,7 @@ QUESTIONS({
     },
     {
       id: 'm4-q-05', module: 'm4', topic: 'm4-paraphrase', type: 'interpret', level: 2,
-      q: `<p>A senior says summary writing is "just making things shorter". According to the slides, which skill does it train that shortening alone doesn't?</p>`,
+      q: `<p>A senior says summary writing is "just making things shorter". According to the notes, which skill does it train that shortening alone doesn't?</p>`,
       options: [
         'Picking out the most important ideas, ignoring irrelevant information and integrating the central ideas meaningfully',
         'Writing faster under exam conditions',
@@ -58,7 +58,7 @@ QUESTIONS({
       ],
       correct: 0,
       answer: `<p><b>Selecting and integrating.</b> Summary writing teaches you to discern the key ideas, drop the irrelevant and join the rest into a meaningful whole.</p>`,
-      explain: `<p>Speed and vocabulary are not what the slides list, and adding your own examples breaks the "no personal ideas" guideline.</p>`,
+      explain: `<p>Speed and vocabulary are not what the course lists, and adding your own examples breaks the "no personal ideas" guideline.</p>`,
       points: ['discern the most important ideas', 'ignore irrelevant information', 'integrate the central ideas'],
     },
     {
@@ -72,7 +72,7 @@ QUESTIONS({
     },
     {
       id: 'm4-q-07', module: 'm4', topic: 'm4-paraphrase', type: 'rewrite', level: 2,
-      q: `<p>Lester's passage is 51 words. The slides' "acceptable summary" is 24 words, about half. Rewrite it as a summary within one-third of the original, keeping the core advice.</p>`,
+      q: `<p>Lester's passage is 51 words. The course's "acceptable summary" is 24 words, about half. Rewrite it as a summary within one-third of the original, keeping the core advice.</p>`,
       options: null, correct: null,
       answer: `<p><b>Model (15 words + citation):</b> "Students should take few verbatim notes, so that little of their research paper is quoted (Lester 46-47)."</p>`,
       explain: `<p>51 ÷ 3 = 17 words. The core advice is cause and effect: quote little in notes, and little of the paper will be quoted. "Just", "from sources" and "to help minimize the amount of" can go; "verbatim" replaces "in direct quotation". The 10% figure is a statistic you may drop at your discretion.</p>`,
@@ -107,7 +107,7 @@ QUESTIONS({
         'It is written in the first person',
       ],
       correct: 0,
-      answer: `<p><b>Concise, but not clear.</b> The slides warn that conciseness should not be achieved at the cost of clarity.</p>`,
+      answer: `<p><b>Concise, but not clear.</b> The course warns that conciseness should not be achieved at the cost of clarity.</p>`,
       explain: `<p>The key ideas are roughly there, but the reader has to guess the links: are the dragons real? Whose cause is unknown? A précis presents the essential ideas "clearly but in brief", in sentences.</p>`,
       points: ['conciseness must not cost clarity', 'telegraphic notes are not a précis', 'write connected sentences'],
     },
@@ -116,7 +116,7 @@ QUESTIONS({
       q: `<p>"Sifting essential from unessential information, avoiding repetition and omitting ornamental phrases." Which quality do these three moves produce?</p>`,
       options: ['Conciseness', 'Coherence', 'Compactness', 'Completeness'],
       correct: 0,
-      answer: `<p><b>Conciseness.</b> These are the slides' three routes to it.</p>`,
+      answer: `<p><b>Conciseness.</b> These are the course's three routes to it.</p>`,
       explain: `<p>Coherence is about natural order; compactness about unity; completeness about keeping every main idea.</p>`,
       points: ['sift', 'no repetition', 'no ornamental phrases'],
     },
@@ -130,7 +130,7 @@ QUESTIONS({
         'Compactness: it has too many ideas',
       ],
       correct: 0,
-      answer: `<p><b>Clarity.</b> The slides say clarity comes from getting rid of circumlocutions.</p>`,
+      answer: `<p><b>Clarity.</b> The course says clarity comes from getting rid of circumlocutions.</p>`,
       explain: `<p>The idea is there (so it isn't incomplete), but it is buried in a roundabout phrase. "The writer argues that students should quote less" says the same in 8 words.</p>`,
       points: ['circumlocution', 'clarity', 'say it directly'],
     },
@@ -164,7 +164,7 @@ QUESTIONS({
     },
     {
       id: 'm4-q-15', module: 'm4', topic: 'm4-qualities', type: 'analyse', level: 2,
-      q: `<p>The slides' model summary of Exercise 1 is: "The company has driven profits from January to June of 2008, but the rest of the year is not expected to be as good." Grade it against the five qualities and suggest one improvement.</p>`,
+      q: `<p>The course's model summary of Exercise 1 is: "The company has driven profits from January to June of 2008, but the rest of the year is not expected to be as good." Grade it against the five qualities and suggest one improvement.</p>`,
       options: null, correct: null,
       answer: `<p><b>Mostly good, slightly long.</b> Completeness: both main ideas (profitable first half; doubts about the rest) are there; the cost and sales figures are dropped, which the statistics guideline allows. Compactness and coherence: one sentence, joined by "but", reads as a whole. Clarity: "driven profits" is not standard English (you make profits), and "is not expected" hides that it is the department heads who expect it. Conciseness: 24 words, a little above the 20-word limit (61 ÷ 3). Improved: "The company was profitable in the first half of 2008, but most department heads doubt this will last." (18 words)</p>`,
       explain: `<p>Take each quality in turn, give evidence from the sentence, then offer a fix that is within the limit.</p>`,
@@ -172,7 +172,7 @@ QUESTIONS({
     },
     {
       id: 'm4-q-16', module: 'm4', topic: 'm4-qualities', type: 'explain', level: 2,
-      q: `<p>The slides say "conciseness should not be achieved at the cost of clarity." Explain what this means, with a before-and-after example.</p>`,
+      q: `<p>The course says "conciseness should not be achieved at the cost of clarity." Explain what this means, with a before-and-after example.</p>`,
       options: null, correct: null,
       answer: `<p><b>Short is only good if the reader still understands.</b> Conciseness means cutting what the reader doesn't need: minor details, repetition, ornamental phrases. Cutting further, into notes or dropped links, saves words but leaves the reader guessing. Example: "Northern Lights: colours, night sky, cause unknown, dragons" is very concise but unclear. "The Northern Lights are bands of colour in the night sky. Their cause is still unknown, and ancient people took them for fiery dragons" uses more words, stays well under the limit, and says clearly how the ideas fit. The goal is all essential ideas presented clearly but in brief.</p>`,
       explain: `<p>Examiners look for the three routes to conciseness, the danger of over-cutting, and a real example.</p>`,
@@ -233,7 +233,7 @@ QUESTIONS({
     },
     {
       id: 'm4-q-21', module: 'm4', topic: 'm4-steps', type: 'spot', level: 3,
-      q: `<p>The slides' model summary of the Eurozone passage opens: "The Eurozone's economy is in a recession." What is wrong with this?</p>`,
+      q: `<p>The course's model summary of the Eurozone passage opens: "The Eurozone's economy is in a recession." What is wrong with this?</p>`,
       options: [
         'The passage says economic sentiment is declining, not that the economy is in recession, so the summary changes the source',
         'It is written in the first person',
@@ -247,7 +247,7 @@ QUESTIONS({
     },
     {
       id: 'm4-q-22', module: 'm4', topic: 'm4-steps', type: 'spot', level: 2,
-      q: `<p>The slides' Northern Lights model says: "Ancient people thought that these lights were dragon on fire, and even modern scientists are not sure what they are." Which is the best criticism?</p>`,
+      q: `<p>The course's Northern Lights model says: "Ancient people thought that these lights were dragon on fire, and even modern scientists are not sure what they are." Which is the best criticism?</p>`,
       options: [
         'It merges two beliefs (fiery dragons; the heavens on fire) and says scientists don\'t know what the lights are, when the passage says what causes them',
         'It is far over the one-third limit',
@@ -280,7 +280,7 @@ QUESTIONS({
       id: 'm4-q-25', module: 'm4', topic: 'm4-steps', type: 'explain', level: 3,
       q: `<p>Ravi underlines the first sentence of each paragraph in a passage and copies them out, one after another, as his summary. It is under one-third. Explain why this still fails as a précis.</p>`,
       options: null, correct: null,
-      answer: `<p><b>It is reproduction, not summary.</b> The slides say a summary is not the reproduction of important sentences and must be in the summary writer's own language. Topic sentences are also not always the main ideas: a paragraph's key point may come at the end (the Eurozone passage's threat to recovery is its last sentence). Copied sentences don't link to each other, so the result lacks coherence and compactness, and it may lean on context from the passage ("this", "these developments") so it doesn't stand alone. Ravi should write note-form summaries of each paragraph and draft from those.</p>`,
+      answer: `<p><b>It is reproduction, not summary.</b> The course says a summary is not the reproduction of important sentences and must be in the summary writer's own language. Topic sentences are also not always the main ideas: a paragraph's key point may come at the end (the Eurozone passage's threat to recovery is its last sentence). Copied sentences don't link to each other, so the result lacks coherence and compactness, and it may lean on context from the passage ("this", "these developments") so it doesn't stand alone. Ravi should write note-form summaries of each paragraph and draft from those.</p>`,
       explain: `<p>Name the guideline, give at least two further reasons (main idea not always first; coherence; standing alone), and state the fix.</p>`,
       points: ['not reproduction of important sentences', 'own language', 'topic sentence ≠ always the main idea', 'coherence / stands alone', 'fix: notes per paragraph'],
     },
@@ -296,7 +296,7 @@ QUESTIONS({
         'The Chairman immediately and urgently wants to meet the production employees about the crisis.',
       ],
       correct: 0,
-      answer: `<p><b>The first</b>, the slides' answer: 23 words down to 16.</p>`,
+      answer: `<p><b>The first</b>, the course's answer: 23 words down to 16.</p>`,
       explain: `<p>"Who are working in" → "of", "so that he can" → "to", and "difficult" goes because every crisis is difficult. The second loses which employees, why and when; the third keeps "difficult crisis" and drops "immediately"; the fourth adds a new redundancy ("immediately and urgently").</p>`,
       points: ['clause → "of"', '"so that he can" → "to"', '"difficult crisis" is redundant', 'meaning kept'],
     },
@@ -319,8 +319,8 @@ QUESTIONS({
         'This essay is about a haberdashery and what happened there.',
       ],
       correct: 0,
-      answer: `<p><b>The first</b>, the slides' "adequate context" example.</p>`,
-      explain: `<p>It gives title, author, source, date, genre and subject. The second is the slides' poor example; the third is self-referential and opinionated; the fourth gives no title, author or date.</p>`,
+      answer: `<p><b>The first</b>, the course's "adequate context" example.</p>`,
+      explain: `<p>It gives title, author, source, date, genre and subject. The second is the course's poor example; the third is self-referential and opinionated; the fourth gives no title, author or date.</p>`,
       points: ['title', 'author', 'source and date', 'genre and subject', 'no self-reference or opinion'],
     },
     {
@@ -339,7 +339,7 @@ QUESTIONS({
     },
     {
       id: 'm4-q-30', module: 'm4', topic: 'm4-errors', type: 'interpret', level: 2,
-      q: `<p>The slides' "gutter test" says to write so that someone who found your paper in the gutter could understand and enjoy it. What exactly does the test check?</p>`,
+      q: `<p>The course's "gutter test" says to write so that someone who found your paper in the gutter could understand and enjoy it. What exactly does the test check?</p>`,
       options: [
         'That a stranger who doesn\'t know you or your class can follow the summary without the original or the assignment',
         'That the summary is short enough to fit on one page',
@@ -362,12 +362,12 @@ QUESTIONS({
       ],
       correct: 0,
       answer: `<p><b>The first.</b> It reports what happens in the story, with no judgement.</p>`,
-      explain: `<p>The other three come from the slides' poor summary and are pure opinion. The test: someone who loved the story and someone who hated it could both write the first sentence.</p>`,
+      explain: `<p>The other three come from the course's poor summary and are pure opinion. The test: someone who loved the story and someone who hated it could both write the first sentence.</p>`,
       points: ['reports, doesn\'t judge', 'lover/hater test', 'the other options are opinion'],
     },
     {
       id: 'm4-q-32', module: 'm4', topic: 'm4-errors', type: 'rewrite', level: 2,
-      q: `<p>The slides' poor summary opens: "This week's reading was weird, but cool I guess. I liked the story because the main character is a normal guy but he's constantly fantasizing and daydreaming." Rewrite this as one context-rich, objective opening sentence for a summary of James Thurber's "The Secret Life of Walter Mitty".</p>`,
+      q: `<p>The course's poor summary opens: "This week's reading was weird, but cool I guess. I liked the story because the main character is a normal guy but he's constantly fantasizing and daydreaming." Rewrite this as one context-rich, objective opening sentence for a summary of James Thurber's "The Secret Life of Walter Mitty".</p>`,
       options: null, correct: null,
       answer: `<p><b>Model:</b> "In 'The Secret Life of Walter Mitty,' a short story by James Thurber, an ordinary husband ruled by a critical wife escapes his dull errands through daydreams in which he is a hero."</p>`,
       explain: `<p>The rewrite removes the self-reference ("this week's reading"), the opinions ("weird", "cool", "I liked"), and adds the title, genre and author. It keeps the true content of the original: an ordinary man who constantly daydreams.</p>`,
@@ -375,9 +375,9 @@ QUESTIONS({
     },
     {
       id: 'm4-q-33', module: 'm4', topic: 'm4-errors', type: 'analyse', level: 3,
-      q: `<p>The slides' revised Walter Mitty summary ends: "This story shows that fantasy is often a good alternative to reality." A classmate says this breaks the objectivity rule. Do you agree? Explain, and suggest a fix.</p>`,
+      q: `<p>The course's revised Walter Mitty summary ends: "This story shows that fantasy is often a good alternative to reality." A classmate says this breaks the objectivity rule. Do you agree? Explain, and suggest a fix.</p>`,
       options: null, correct: null,
-      answer: `<p><b>Partly yes.</b> Everything else in the revision reports the story: context (title, author), Mitty's ordinary life under an overbearing wife, Thurber's lively dialogue, the twenty-minute plot of errands, and the four daydreams. The last sentence is different: it is an <em>interpretation</em> of the story's message, and "a good alternative" is a value judgement. By the slides' test, a reader who disliked the story might not write it, so it is not fully objective. It is defensible only as the author's theme, so attribute it: "Thurber suggests that fantasy offers Mitty an escape from his dull life." That reports what the author conveys without the summary writer endorsing it.</p>`,
+      answer: `<p><b>Partly yes.</b> Everything else in the revision reports the story: context (title, author), Mitty's ordinary life under an overbearing wife, Thurber's lively dialogue, the twenty-minute plot of errands, and the four daydreams. The last sentence is different: it is an <em>interpretation</em> of the story's message, and "a good alternative" is a value judgement. By the course's test, a reader who disliked the story might not write it, so it is not fully objective. It is defensible only as the author's theme, so attribute it: "Thurber suggests that fantasy offers Mitty an escape from his dull life." That reports what the author conveys without the summary writer endorsing it.</p>`,
       explain: `<p>A good answer separates reporting from judging, applies the lover/hater test, and fixes the sentence by attribution.</p>`,
       points: ['identifies interpretation / value judgement', 'lover/hater test applied', 'rest of the revision is objective', 'attributed rewrite'],
     },

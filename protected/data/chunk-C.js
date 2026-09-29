@@ -6,8 +6,8 @@ CHUNK({
       id: 'm4-paraphrase',
       title: 'Summary, paraphrase and plagiarism',
       short: 'Paraphrase vs summary',
-      blurb: 'What a summary (précis) is, why the course teaches it, and how a summary differs from a paraphrase and from a plagiarised rewrite, shown on the slides\' Lester passage.',
-      source: 'Summarising slides 1–9',
+      blurb: 'What a summary (précis) is, why the course teaches it, and how a summary differs from a paraphrase and from a plagiarised rewrite, shown on a short passage by Lester.',
+      source: 'Summarising',
       tabs: [
         { title: 'What a summary is', html: `
           <p class="lead">A <b>summary</b> (also called a <b>précis</b>) is a short version of a text that keeps its <b>main ideas</b>, in <b>your own words</b>, at about <b>one-third</b> of the original length.</p>
@@ -24,7 +24,7 @@ CHUNK({
           <div class="note exam"><p>Expect to <b>write</b> a précis of a passage, to <b>pick</b> the best of several summaries, or to <b>spot</b> what is wrong with one (too long, opinion, copied sentences, no context). Always end a précis with its <b>word count</b>.</p></div>
         ` },
         { title: 'One passage, four versions', html: `
-          <p class="lead">The slides take one short passage by <b>James D. Lester</b> (<em>Writing Research Papers</em>, 2nd ed., 1976, pp. 46–47) and show a <b>paraphrase</b>, a <b>summary</b> and a <b>plagiarised version</b> of it. Seeing all four together makes the difference clear.</p>
+          <p class="lead">Here is one short passage by <b>James D. Lester</b> (<em>Writing Research Papers</em>, 2nd ed., 1976, pp. 46–47), with a <b>paraphrase</b>, a <b>summary</b> and a <b>plagiarised version</b> of it. Seeing all four together makes the difference clear.</p>
           <p>Lester's passage makes three points: students <b>overuse direct quotation</b> when taking notes, so their final papers overuse it too; probably only <b>about 10%</b> of the final manuscript should be quoted; so limit <b>exact transcribing</b> while taking notes.</p>
           <table class="tbl">
             <thead><tr><th>Version</th><th>Words</th><th>What it does</th></tr></thead>
@@ -36,7 +36,7 @@ CHUNK({
             </tbody>
           </table>
           <p><small>Word counts leave out the citation.</small></p>
-          <p>The slides' summary in full: "Students should take just a few notes in direct quotation from sources to help minimize the amount of quoted material in a research paper (Lester 46-47)."</p>
+          <p>The acceptable summary in full: "Students should take just a few notes in direct quotation from sources to help minimize the amount of quoted material in a research paper (Lester 46-47)."</p>
           <figure data-fig="m4-summary-vs-paraphrase"></figure>
           <div class="note why"><p>A paraphrase changes the <b>words</b> and keeps the <b>length and detail</b>. A summary changes the words and cuts to the <b>main idea</b>. Plagiarism keeps the <b>author's skeleton</b> and hides where it came from.</p></div>
         ` },
@@ -53,11 +53,11 @@ CHUNK({
           </table>
           <p>Same three sentences, same order, same logic, same statistic. Only the surface words changed.</p>
           <p>The legitimate paraphrase works differently: understand the idea, close the book, and <b>rebuild the sentences</b> your own way. It starts from a new angle ("In research papers, students often quote excessively…") and then <b>cites</b> the source.</p>
-          <div class="note heads-up"><p>Not on the slides: this synonym-swapping is often called <b>patchwriting</b>, and universities generally treat it as plagiarism. If you want the author's exact words, put them in <b>quotation marks</b> and cite them. Anything else must be truly your own sentence, and still cited.</p></div>
+          <div class="note heads-up"><p>Extra: this synonym-swapping is often called <b>patchwriting</b>, and universities generally treat it as plagiarism. If you want the author's exact words, put them in <b>quotation marks</b> and cite them. Anything else must be truly your own sentence, and still cited.</p></div>
           <div class="note exam"><p>The Lester examples carry citations because they are notes for a research paper. A <b>précis answer</b> in the CAT has no citation, but the same rule holds: <b>your own words</b>, never the author's sentences with a few words changed.</p></div>
         ` },
         { title: 'What a précis must be', html: `
-          <p class="lead">The slides set four conditions for a précis. It must <b>stand alone</b>, it is <b>more than a paraphrase</b>, it must be <b>complete, informative and easy to read</b>, and it is normally <b>one-third</b> of the original, written as <b>prose, not bullet points</b>.</p>
+          <p class="lead">A précis has four conditions. It must <b>stand alone</b>, it is <b>more than a paraphrase</b>, it must be <b>complete, informative and easy to read</b>, and it is normally <b>one-third</b> of the original, written as <b>prose, not bullet points</b>.</p>
           <h3>Stands alone and makes sense</h3>
           <div class="vs">
             <div class="side"><h4>Wrong</h4><p>"As the passage says, this causes the problem, so students should avoid it."</p><p><small>Which problem? Avoid what? Only someone holding the passage can follow.</small></p></div>
@@ -74,17 +74,17 @@ CHUNK({
         { title: 'Worked: the one-third check', html: `
           <p class="lead">Before you write, <b>count the original</b> and set your limit: one-third of the word count. After you write, <b>count again</b>.</p>
           <div class="worked">
-            <div class="given"><p>Lester's passage is <b>51 words</b>. How long may a summary be? Is the slides' 24-word summary inside the limit?</p></div>
-            <div class="solve"><p>51 ÷ 3 = 17, so the limit is about <b>17 words</b>. The slides' summary is 24 words (not counting the citation), about <b>half</b> of the original, so it is over the one-third mark. Drop "just" and "from sources to help", say "verbatim" instead of "in direct quotation", and join the two halves with "so that": "Students should take few verbatim notes, so that little of their research paper is quoted."</p></div>
+            <div class="given"><p>Lester's passage is <b>51 words</b>. How long may a summary be? Is the 24-word acceptable summary inside the limit?</p></div>
+            <div class="solve"><p>51 ÷ 3 = 17, so the limit is about <b>17 words</b>. The acceptable summary is 24 words (not counting the citation), about <b>half</b> of the original, so it is over the one-third mark. Drop "just" and "from sources to help", say "verbatim" instead of "in direct quotation", and join the two halves with "so that": "Students should take few verbatim notes, so that little of their research paper is quoted."</p></div>
             <div class="result"><p>A 15-word summary (plus the citation) that keeps the whole advice: <b>quote little in notes → quote little in the paper</b>. Words: 15.</p></div>
           </div>
-          <div class="note heads-up"><p>The slides call their 24-word version "acceptable", and for a three-sentence source that is fair: very short passages can't always shrink to a third and still make sense. In an exam passage of 150–300 words, treat one-third as a <b>hard ceiling</b>.</p></div>
+          <div class="note heads-up"><p>The course calls this 24-word version "acceptable", and for a three-sentence source that is fair: very short passages can't always shrink to a third and still make sense. In an exam passage of 150–300 words, treat one-third as a <b>hard ceiling</b>.</p></div>
           <div class="worked">
-            <div class="given"><p>Exercise 1 on the slides (the 2008 quarters) is <b>61 words</b>.</p></div>
+            <div class="given"><p>Exercise 1 (the 2008 quarters) is <b>61 words</b>.</p></div>
             <div class="solve"><p>61 ÷ 3 ≈ 20.3. Round down to stay under.</p></div>
             <div class="result"><p>Limit: <b>20 words</b>.</p></div>
           </div>
-          <div class="note heads-up"><p>Not on the slides: the usual counting convention is that every word counts, including "a", "the" and numbers; a hyphenated word ("work-life") counts as one; the title and the word-count line don't count.</p></div>
+          <div class="note heads-up"><p>Extra: the usual counting convention is that every word counts, including "a", "the" and numbers; a hyphenated word ("work-life") counts as one; the title and the word-count line don't count.</p></div>
         ` },
       ],
       flashcards: [
@@ -118,10 +118,10 @@ CHUNK({
       title: 'The five qualities of a good summary',
       short: 'Qualities of a summary',
       blurb: 'Completeness, compactness, conciseness, clarity and coherence: what each one means, how each can go wrong, and how to grade a summary against all five.',
-      source: 'Summarising slides 10–11, 24–25',
+      source: 'Summarising',
       tabs: [
         { title: 'The five Cs', html: `
-          <p class="lead">The slides list five qualities every summary needs. Each one is a question to ask of your draft.</p>
+          <p class="lead">Every summary needs five qualities. Each one is a question to ask of your draft.</p>
           <table class="tbl">
             <thead><tr><th>Quality</th><th>Meaning</th><th>Ask yourself</th></tr></thead>
             <tbody>
@@ -133,7 +133,7 @@ CHUNK({
             </tbody>
           </table>
           <p>The next three tabs take each quality in turn, with examples.</p>
-          <div class="note trap"><p>Module 1 has its own "5Cs of technical writing". Some words overlap, but when a question asks for the qualities of a <b>summary</b>, give these five, with the slides' meanings.</p></div>
+          <div class="note trap"><p>Module 1 has its own "5Cs of technical writing". Some words overlap, but when a question asks for the qualities of a <b>summary</b>, give these five, with the meanings given here.</p></div>
         ` },
         { title: 'Completeness and compactness', html: `
           <p class="lead"><b>Completeness</b> is about what is in. <b>Compactness</b> is about how it holds together.</p>
@@ -152,20 +152,20 @@ CHUNK({
           <div class="note why"><p>A reader judges your summary as a replacement for the original. If an idea is missing they are misinformed; if the pieces don't fit together they can't tell which idea matters most.</p></div>
         ` },
         { title: 'Conciseness', html: `
-          <p class="lead">The slides name three ways to be <b>concise</b>, and one limit: conciseness must <b>not cost clarity</b>.</p>
+          <p class="lead">There are three ways to be <b>concise</b>, and one limit: conciseness must <b>not cost clarity</b>.</p>
           <ol class="steps">
             <li><b>Sift essential from unessential information</b> Keep what the reader needs; drop examples, asides and minor details.</li>
             <li><b>Avoid repetition</b> Say each idea once, even if the author said it three times.</li>
             <li><b>Omit ornamental phrases</b> Cut decorative phrasing: "a great arc across the entire sky" becomes "across the sky" or disappears.</li>
           </ol>
           <div class="chips"><span class="chip">it goes without saying that</span><span class="chip">as a matter of fact</span><span class="chip">needless to say</span><span class="chip">in a manner of speaking</span><span class="chip">the fact of the matter is</span></div>
-          <p><small>Ornamental phrases like these (our examples, not the slides') add length and no meaning.</small></p>
+          <p><small>Ornamental phrases like these (extra examples, not from the course) add length and no meaning.</small></p>
           <h3>Too far: concise but unclear</h3>
           <div class="vs">
             <div class="side"><h4>Over-cut</h4><p>"Northern Lights: colours, night sky, cause unknown, dragons."</p><p><small>Short, but the reader has to guess the links.</small></p></div>
             <div class="side"><h4>Concise and clear</h4><p>"The Northern Lights are bands of colour in the night sky. Their cause is still unknown, and ancient people took them for fiery dragons."</p></div>
           </div>
-          <div class="note exam"><p>The slides put it plainly: all the original essential ideas should be presented <b>clearly but in brief</b>. Telegraphic notes lose marks even if they are under the word limit.</p></div>
+          <div class="note exam"><p>The course puts it plainly: all the original essential ideas should be presented <b>clearly but in brief</b>. Telegraphic notes lose marks even if they are under the word limit.</p></div>
         ` },
         { title: 'Clarity and coherence', html: `
           <p class="lead"><b>Clarity</b> means a reader who has never seen the original can follow you. <b>Coherence</b> means your sentences follow a natural order and link up.</p>
@@ -185,19 +185,19 @@ CHUNK({
           <div class="note why"><p>A précis must look like a <b>well-connected whole</b>, not a collection of separate sentences. The connecting words are where you show you understood how the ideas relate.</p></div>
         ` },
         { title: 'Worked: grade a summary', html: `
-          <p class="lead">Exercise 1 on the slides gives a 61-word passage and a model summary. Grade the model against the five Cs, then fix it.</p>
+          <p class="lead">Exercise 1 gives a 61-word passage and a model summary. Grade the model against the five Cs, then fix it.</p>
           <div class="kv">
             <div><span>Main idea 1</span><b>the first two quarters of 2008 were profitable</b></div>
             <div><span>Support</span>19 of 20 departments cut costs by at least 20%; sales from 15 departments rose 5% (about $5 million)</div>
             <div><span>Main idea 2</span><b>most department heads believe they can't keep this up</b> for the rest of the year</div>
           </div>
-          <p>The slides' model summary: "The company has driven profits from January to June of 2008, but the rest of the year is not expected to be as good."</p>
+          <p>The course's model summary: "The company has driven profits from January to June of 2008, but the rest of the year is not expected to be as good."</p>
           <div class="worked">
             <div class="given"><p>Check each quality. Limit: 61 ÷ 3 ≈ <b>20 words</b>.</p></div>
             <div class="solve"><p><b>Complete</b>: yes, both main ideas are there. The cost and sales figures are dropped, which is fine (statistics are at your discretion). <b>Compact, coherent</b>: yes, one sentence joined by "but". <b>Clear</b>: mostly, but "driven profits" is odd, and "is not expected" hides <b>who</b> expects it. <b>Concise</b>: 24 words, a little over the 20-word limit.</p></div>
             <div class="result"><p>"The company was profitable in the first half of 2008, but most department heads doubt this will last." <b>Words: 18.</b></p></div>
           </div>
-          <div class="note heads-up"><p>Slips in the slide model: it is slightly over one-third of the passage, and "driven profits" is not standard English (you make or earn profits). The corrected version above keeps both ideas, names the department heads, and fits the limit.</p></div>
+          <div class="note heads-up"><p>Slips in the given model: it is slightly over one-third of the passage, and "driven profits" is not standard English (you make or earn profits). The corrected version above keeps both ideas, names the department heads, and fits the limit.</p></div>
         ` },
       ],
       flashcards: [
@@ -230,11 +230,11 @@ CHUNK({
       id: 'm4-steps',
       title: 'Steps and guidelines for writing a précis',
       short: 'Steps & guidelines',
-      blurb: 'The six steps from reading to review, the guidelines on voice, statistics, balance and length, and two full worked examples from the slides (the Eurozone and Northern Lights passages).',
-      source: 'Summarising slides 12–14, 26–29',
+      blurb: 'The six steps from reading to review, the guidelines on voice, statistics, balance and length, and two full worked examples (the Eurozone and Northern Lights passages).',
+      source: 'Summarising',
       tabs: [
         { title: 'The six steps', html: `
-          <p class="lead">The slides give six steps for an effective summary. They move from <b>who is reading</b> to <b>what the text says</b> to <b>your own draft</b>.</p>
+          <p class="lead">An effective summary takes six steps. They move from <b>who is reading</b> to <b>what the text says</b> to <b>your own draft</b>.</p>
           <figure data-fig="m4-precis-steps"></figure>
           <ol class="steps">
             <li><b>Identify the reader and purpose</b> Who will read the summary, and what for? A manager wants the decision; an examiner wants every main idea.</li>
@@ -245,10 +245,10 @@ CHUNK({
             <li><b>Review and edit</b> Check against the original: every main idea there, nothing added, nothing changed, word count within the limit.</li>
           </ol>
           <div class="note why"><p>Step 4 is the trick. If you write the summary while looking at the passage, the author's sentences creep in. Writing from your own notes forces your own language.</p></div>
-          <div class="note heads-up"><p>Not on the slides: many précis exams also ask for a short <b>title</b>. If the question asks for one, give a few words that name the theme ("The Northern Lights: beauty and mystery"). The title does not count towards the word limit.</p></div>
+          <div class="note heads-up"><p>Extra: many précis exams also ask for a short <b>title</b>. If the question asks for one, give a few words that name the theme ("The Northern Lights: beauty and mystery"). The title does not count towards the word limit.</p></div>
         ` },
         { title: 'Guidelines: content and voice', html: `
-          <p class="lead">The slides give twelve guidelines. The first six are about <b>what</b> you write and <b>how it sounds</b>.</p>
+          <p class="lead">There are twelve guidelines. The first six are about <b>what</b> you write and <b>how it sounds</b>.</p>
           <ol>
             <li><b>Determine the theme very carefully.</b> Before writing, say in one sentence what the whole passage is about. Everything else hangs on it.</li>
             <li><b>A summary is not a reproduction of important sentences.</b> Stringing together the author's best lines is copying, not summarising.</li>
@@ -272,14 +272,14 @@ CHUNK({
           <div class="note exam"><p>Marks usually go for: main ideas all present, own language, within the limit with the count shown, and no additions. A précis that is excellent but 20 words over the limit still loses marks.</p></div>
         ` },
         { title: 'Worked: the Eurozone passage', html: `
-          <p class="lead">The slides' longest exercise is a two-paragraph passage on the <b>Eurozone economy</b> (about 160 words). Here it is taken through the steps.</p>
+          <p class="lead">The longest exercise is a two-paragraph passage on the <b>Eurozone economy</b> (about 160 words). Here it is taken through the steps.</p>
           <div class="worked">
             <div class="given"><p><b>Steps 1–2, the theme</b>. Paragraph 1: despite good news on private consumption and corporate investment, <b>economic sentiment is declining</b> (the Purchasing Managers' Index peaked in summer; composite index at a five-month low and manufacturing at a seven-month low in August). Paragraph 2: the main cause is <b>shortages of materials and upstream products</b>, from rising demand plus reduced production capacity during the pandemic; in German surveys over 70% of firms (over 90% in automotive, over 80% in engineering) report hampered production, a <b>historical high</b> against at most 20% in three decades; broken supply chains <b>threaten recovery</b> just as orders surge.</p></div>
             <div class="solve"><p><b>Steps 3–4, key ideas in notes</b>: sentiment falling despite consumption/investment · cause = material shortages · shortages from demand + pandemic capacity cuts · record levels · threat to recovery as orders rise. The index figures are <b>minor details</b>; the survey percentages are statistics to sum up in words. <b>Limit</b>: 160 ÷ 3 ≈ 53 words.</p></div>
             <div class="result"><p>"Economic sentiment in the Eurozone is falling, despite good news on consumption and investment. The main cause is a shortage of materials and parts, created by rising demand and pandemic cuts to production capacity. These shortages, at record levels in German industry, threaten the recovery just as orders surge." <b>(Words: 49)</b></p></div>
           </div>
-          <p>The slides' own model summary (27 words): "The Eurozone's economy is in a recession. The pandemic caused shortages in materials and upstream products, which threatens economic recovery at a time when orders have surged."</p>
-          <div class="note heads-up"><p>A slip in the slide model: the passage says <b>economic sentiment is on the decline</b>, not that the economy <b>is in a recession</b>. It even mentions positive consumption and investment and surging orders. Writing "recession" <b>changes the source</b>, which the guidelines forbid. The model also says the pandemic caused the shortages, while the passage names rising demand <b>and</b> reduced pandemic capacity together. Use the corrected version above.</p></div>
+          <p>The course's model summary (27 words): "The Eurozone's economy is in a recession. The pandemic caused shortages in materials and upstream products, which threatens economic recovery at a time when orders have surged."</p>
+          <div class="note heads-up"><p>A slip in the given model: the passage says <b>economic sentiment is on the decline</b>, not that the economy <b>is in a recession</b>. It even mentions positive consumption and investment and surging orders. Writing "recession" <b>changes the source</b>, which the guidelines forbid. The model also says the pandemic caused the shortages, while the passage names rising demand <b>and</b> reduced pandemic capacity together. Use the corrected version above.</p></div>
         ` },
         { title: 'Worked: the Northern Lights', html: `
           <p class="lead">The last exercise is a descriptive passage, "The Northern Lights" (124 words). Descriptive passages are full of <b>minor detail</b>, so they shrink a lot.</p>
@@ -297,8 +297,8 @@ CHUNK({
             <div class="solve"><p>Put the four kept ideas in the author's order: what they are → their names → the unknown cause → the ancient fear. Link them with "still" and the participle "imagining".</p></div>
             <div class="result"><p>"The Aurora Borealis, or Northern Lights, are bands of colour that glow in the night sky. Scientists still do not know exactly what causes them. Ancient people feared the lights, imagining fiery dragons or a burning sky." <b>(Words: 37)</b></p></div>
           </div>
-          <p>The slides' model (34 words): "The Aurora Borealis, or Northern Lights, are bands of color in the night sky. Ancient people thought that these lights were dragon on fire, and even modern scientists are not sure what they are."</p>
-          <div class="note heads-up"><p>Two slips in the slide model. "Dragon on fire" merges two different beliefs (people saw <b>fiery dragons</b>; some concluded the <b>heavens were on fire</b>) and drops an article. And the passage says scientists are unsure what <b>causes</b> the lights, not what they <b>are</b>. Both are small, but a précis must not change the source.</p></div>
+          <p>The course's model summary (34 words): "The Aurora Borealis, or Northern Lights, are bands of color in the night sky. Ancient people thought that these lights were dragon on fire, and even modern scientists are not sure what they are."</p>
+          <div class="note heads-up"><p>Two slips in the given model. "Dragon on fire" merges two different beliefs (people saw <b>fiery dragons</b>; some concluded the <b>heavens were on fire</b>) and drops an article. And the passage says scientists are unsure what <b>causes</b> the lights, not what they <b>are</b>. Both are small, but a précis must not change the source.</p></div>
         ` },
       ],
       flashcards: [
@@ -311,8 +311,8 @@ CHUNK({
         { front: `How should the main ideas be weighted?`, back: `<b>Almost equal treatment</b>.` },
         { front: `What must you never do to the original?`, back: `<b>Criticise</b> it or <b>change</b> it.` },
         { front: `What must be indicated at the end?`, back: `The <b>number of words</b>.` },
-        { front: `Eurozone slide model: the slip?`, back: `Says <b>"recession"</b>; the passage says <b>sentiment</b> is declining.` },
-        { front: `Northern Lights slide model: the slip?`, back: `<b>"Dragon on fire"</b> merges fiery dragons and a burning sky.` },
+        { front: `Eurozone given model: the slip?`, back: `Says <b>"recession"</b>; the passage says <b>sentiment</b> is declining.` },
+        { front: `Northern Lights given model: the slip?`, back: `<b>"Dragon on fire"</b> merges fiery dragons and a burning sky.` },
       ],
       oneLiners: [
         'Six steps: <b>reader and purpose → read → underline → note-form per paragraph → write → review</b>.',
@@ -320,7 +320,7 @@ CHUNK({
         'Guidelines: theme first; not a string of the author\'s sentences; intelligible alone; own words; <b>third person</b>; statistics at discretion.',
         'Also: equal treatment of main ideas; <b>no personal ideas</b>; never criticise or change the source.',
         'At most <b>one-third</b>, with the <b>word count</b> shown; remove minor details.',
-        'Eurozone (about 160 words, limit 53) and Northern Lights (124 words, limit 41) are the slides\' worked passages.',
+        'Eurozone (about 160 words, limit 53) and Northern Lights (124 words, limit 41) are the two worked passages.',
       ],
       formulas: [
         { name: 'Six steps', html: `<b>Reader & purpose → Read → Underline → Notes per paragraph → Write → Review & edit</b>` },
@@ -333,7 +333,7 @@ CHUNK({
       title: 'Common errors: wordiness, missing context, self-reference and opinion',
       short: 'Common errors',
       blurb: 'The mistakes that sink summaries: redundancy and wordiness (the Chairman and secretary examples), missing context, self-referential language, and opinion in place of summary (the Walter Mitty example).',
-      source: 'Summarising slides 15–23',
+      source: 'Summarising',
       tabs: [
         { title: 'Redundancy and wordiness', html: `
           <p class="lead"><b>Redundancy</b> says the same thing twice. <b>Wordiness</b> uses many words where a few would do. Here is one sentence for each.</p>
@@ -359,7 +359,7 @@ CHUNK({
         ` },
         { title: 'Wordy phrases to cut', html: `
           <p class="lead">Most wordiness comes from a few habits, and the same phrases turn up again and again. Learn the swaps below.</p>
-          <div class="note heads-up"><p>Not on the slides: these phrases are standard examples from technical-writing guides, added so you can practise spotting the slides' two errors.</p></div>
+          <div class="note heads-up"><p>Extra: these phrases are standard examples from technical-writing guides, added so you can practise spotting the two errors.</p></div>
           <table class="tbl">
             <thead><tr><th>Wordy or redundant</th><th>Concise</th></tr></thead>
             <tbody>
@@ -377,7 +377,7 @@ CHUNK({
             <div class="side"><h4>Wordy (22 words)</h4><p>Due to the fact that the pump failed, it is to be noted that the line was shut down at that point.</p></div>
             <div class="side"><h4>Concise (9 words)</h4><p>Because the pump failed, the line was shut down.</p></div>
           </div>
-          <div class="note trap"><p>Don't cut words that carry meaning. "The Chairman wants to meet employees" is shorter than the slides' answer, but it loses <b>which</b> employees, <b>why</b> and <b>when</b>. Concise means no waste, not no content.</p></div>
+          <div class="note trap"><p>Don't cut words that carry meaning. "The Chairman wants to meet employees" is shorter than the model answer, but it loses <b>which</b> employees, <b>why</b> and <b>when</b>. Concise means no waste, not no content.</p></div>
         ` },
         { title: 'Provide context', html: `
           <p class="lead">The first thing a summary needs is <b>context</b>. Write as if your reader has <b>never seen</b> the text you are summarising.</p>
@@ -395,7 +395,7 @@ CHUNK({
           <div class="chips"><span class="chip">this week's reading</span><span class="chip">the article we read in class</span><span class="chip">the movie we watched last week</span><span class="chip">the book I'm reviewing for this paper</span></div>
           <p>These refer to the <b>assignment instructions and class activities</b>, which usually don't need to be mentioned in the paper. A reader outside your class has no idea what "this week's reading" was.</p>
           <h3>The gutter test</h3>
-          <p>The slides quote a teacher's rule: write "as if someone found it in the gutter". If a stranger picked up your paper, with no idea <b>who you are</b> or <b>what class it was for</b>, they should be able to <b>understand it</b> and even <b>enjoy it</b>.</p>
+          <p>One teacher's rule: write "as if someone found it in the gutter". If a stranger picked up your paper, with no idea <b>who you are</b> or <b>what class it was for</b>, they should be able to <b>understand it</b> and even <b>enjoy it</b>.</p>
           <div class="vs">
             <div class="side"><h4>Self-referential</h4><p>"The article we read in class says students copy too much in their notes."</p></div>
             <div class="side"><h4>Passes the gutter test</h4><p>"In <em>Writing Research Papers</em> (1976), James D. Lester argues that students copy too much in their notes."</p></div>
@@ -404,9 +404,9 @@ CHUNK({
         ` },
         { title: 'Stay objective', html: `
           <p class="lead">A summary is <b>objective</b>: your opinion appears <b>nowhere</b> in it. You summarise the <b>main arguments</b> and <b>key supporting points</b>, nothing else.</p>
-          <p>The slides' test: someone who <b>loves</b> the text and someone who <b>hates</b> it should summarise it in roughly the same way. They might disagree on which key points to include, but at the summary stage their opinions are <b>irrelevant</b>.</p>
+          <p>The test: someone who <b>loves</b> the text and someone who <b>hates</b> it should summarise it in roughly the same way. They might disagree on which key points to include, but at the summary stage their opinions are <b>irrelevant</b>.</p>
           <h3>A poor summary</h3>
-          <p>The slides' poor summary of James Thurber's story opens "This week's reading was weird, but cool I guess" and goes on with the writer's likes and dislikes: the surgeon daydream was a favourite, the marksman part "dragged out", the story was too long, and it would make a great movie with Jude Law. A few plot points (he fantasises about being a surgeon, a repair technician, a marksman and a captain) are scattered in between.</p>
+          <p>The course's poor summary of James Thurber's story opens "This week's reading was weird, but cool I guess" and goes on with the writer's likes and dislikes: the surgeon daydream was a favourite, the marksman part "dragged out", the story was too long, and it would make a great movie with Jude Law. A few plot points (he fantasises about being a surgeon, a repair technician, a marksman and a captain) are scattered in between.</p>
           <h3>Why it doesn't work</h3>
           <ol class="steps">
             <li><b>No context</b> No title, no author; the writer assumes the reader has read the story.</li>
@@ -419,7 +419,7 @@ CHUNK({
           <div class="note trap"><p>Opinion sneaks in through single words too: "clearly", "sadly", "brilliantly argues", "weird". If a word judges the text rather than reporting it, cut it.</p></div>
         ` },
         { title: 'Worked: the Walter Mitty revision', html: `
-          <p class="lead">The slides then give a <b>revised summary</b> of "The Secret Life of Walter Mitty" (144 words). Here is what each part of it does.</p>
+          <p class="lead">The course then gives a <b>revised summary</b> of "The Secret Life of Walter Mitty" (144 words). Here is what each part of it does.</p>
           <div class="worked">
             <div class="given"><p>Fix the poor summary: add context, remove opinion, report the story.</p></div>
             <div class="solve"><ol class="steps">
@@ -432,7 +432,7 @@ CHUNK({
             </ol></div>
             <div class="result"><p>Context first, then the story in order, in the third person, with no likes or dislikes. The same plot points as the poor version, now arranged as a summary.</p></div>
           </div>
-          <div class="note heads-up"><p>One weak spot in the slide's revision: its last sentence claims the story "shows that fantasy is often a good alternative to reality". That is an <b>interpretation</b>, and a reader who disagrees would not write it. Attribute it or soften it: "Thurber suggests that fantasy offers Mitty an escape from his dull life."</p></div>
+          <div class="note heads-up"><p>One weak spot in the given revision: its last sentence claims the story "shows that fantasy is often a good alternative to reality". That is an <b>interpretation</b>, and a reader who disagrees would not write it. Attribute it or soften it: "Thurber suggests that fantasy offers Mitty an escape from his dull life."</p></div>
           <div class="note exam"><p>A one-sentence version of the revised opening, as a model: "In 'The Secret Life of Walter Mitty,' a short story by James Thurber, an ordinary husband ruled by a critical wife escapes his dull errands through daydreams in which he is a hero."</p></div>
         ` },
       ],
@@ -483,7 +483,7 @@ CHUNK({
               <tr><td>Opinion</td><td>none</td><td>none</td></tr>
             </tbody>
           </table>
-          <div class="note heads-up"><p>Not on the slides: abstracts sit at the top of research papers, theses and project reports, and many readers read <b>only</b> the abstract before deciding whether to read on. Journals usually allow <b>100–250 words</b>. The samples here are <b>informative</b> abstracts (they give the actual findings); a <b>descriptive</b> abstract only says what the paper covers.</p></div>
+          <div class="note heads-up"><p>Extra: abstracts sit at the top of research papers, theses and project reports, and many readers read <b>only</b> the abstract before deciding whether to read on. Journals usually allow <b>100–250 words</b>. The samples here are <b>informative</b> abstracts (they give the actual findings); a <b>descriptive</b> abstract only says what the paper covers.</p></div>
           <div class="note exam"><p>The course task: "Write an abstract in about 100 words based on the following report." The two practice reports are on <b>plastic waste on university campuses</b> and <b>indoor plants and workplace productivity</b>.</p></div>
         ` },
         { title: 'The four parts', html: `
@@ -535,7 +535,7 @@ CHUNK({
             <li><b>Often the passive for method</b>, so the doer doesn't get in the way. "Waste audits were conducted at three universities; daily plastic waste was measured", not "We went to three universities and we weighed their plastic every day."</li>
             <li><b>No citations or opinions</b>: report the results. "The findings revealed that most employees appreciated flexible working hours", not "As Kumar (2021) rightly says, hybrid work is clearly the future."</li>
           </ul>
-          <div class="note heads-up"><p>Not on the slides, but standard for abstracts: keep it to <b>one paragraph</b> when a word limit like 100 is set; spell out <b>abbreviations</b> on first use; give <b>key numbers</b> (30%, 70%, 150 students); no tables, figures or references; and use the present tense only for claims that stay true ("plants can contribute…").</p></div>
+          <div class="note heads-up"><p>Extra, but standard for abstracts: keep it to <b>one paragraph</b> when a word limit like 100 is set; spell out <b>abbreviations</b> on first use; give <b>key numbers</b> (30%, 70%, 150 students); no tables, figures or references; and use the present tense only for claims that stay true ("plants can contribute…").</p></div>
           <div class="note exam"><p>Quick self-check before you hand in: four parts present and in order, past tense, no "I/we", at least one specific number or detail in method and findings, about 100 words, count shown.</p></div>
         ` },
         { title: 'Worked: a 100-word abstract', html: `

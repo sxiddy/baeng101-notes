@@ -12,7 +12,7 @@ QUESTIONS({
       ],
       correct: 2,
       answer: `<p><b>Imprecise definitions create legal trouble.</b> A contract is a legally binding definition of the terms of an agreement, and "good condition" can be read two ways.</p>`,
-      explain: `<p>The slides say precise definition matters because you, or your organisation, are legally responsible for the document. A lease must define the lessee's and lessor's responsibilities; "good condition" leaves the water heater undecided.</p>`,
+      explain: `<p>The course says precise definition matters because you, or your organisation, are legally responsible for the document. A lease must define the lessee's and lessor's responsibilities; "good condition" leaves the water heater undecided.</p>`,
       points: ['contracts are binding definitions of terms', 'the writer or organisation is legally responsible', 'a vague term can be read two ways'],
     },
     {
@@ -26,7 +26,7 @@ QUESTIONS({
       ],
       correct: 0,
       answer: `<p><b>Management's definition was driven by bureaucratic pressure, not engineering facts.</b></p>`,
-      explain: `<p>Despite the engineers' objections, management decided the launch was a risk worth taking. The O-rings failed, and all seven crew died. The slides use this to show definitions carry ethical weight: you must give an accurate interpretation of the facts.</p>`,
+      explain: `<p>Despite the engineers' objections, management decided the launch was a risk worth taking. The O-rings failed, and all seven crew died. The course uses this to show definitions carry ethical weight: you must give an accurate interpretation of the facts.</p>`,
       points: ['acceptable risk defined by schedule pressure', 'engineering facts ignored', 'ethical duty to interpret facts accurately'],
     },
     {
@@ -40,7 +40,7 @@ QUESTIONS({
       ],
       correct: 3,
       answer: `<p><b>To establish common ground.</b> A definition puts writers and readers on the same page.</p>`,
-      explain: `<p>The slides give three reasons to define: increase reader understanding, explain technical terms, and establish common ground. Here the risk is two groups silently using different meanings. A working definition at the start fixes this.</p>`,
+      explain: `<p>The course gives three reasons to define: increase reader understanding, explain technical terms, and establish common ground. Here the risk is two groups silently using different meanings. A working definition at the start fixes this.</p>`,
       points: ['common ground / same page', 'term has two technical meanings', 'define before first use'],
     },
     {
@@ -53,7 +53,7 @@ QUESTIONS({
         `Write "firewall (FW)" in brackets`,
       ],
       correct: 1,
-      answer: `<p><b>An analogy.</b> The slides say definitions depend on audience, and analogies help nonexperts.</p>`,
+      answer: `<p><b>An analogy.</b> The course says definitions depend on audience, and analogies help nonexperts.</p>`,
       explain: `<p>Purpose and audience decide the kind of definition. A nonexpert audience needs a bridge from something familiar; a technical definition would lose them, and an acronym in brackets explains nothing.</p>`,
       points: ['audience decides the definition', 'analogies help nonexperts', 'match detail to what readers know'],
     },
@@ -68,7 +68,7 @@ QUESTIONS({
       ],
       correct: 1,
       answer: `<p><b>The key term is undefined.</b> An employee handbook should spell out what both sides must do.</p>`,
-      explain: `<p>The slides name employment contracts and handbooks as documents that define responsibilities for both employer and employee. "Reasonable" invites each reader to pick the meaning that suits them. A precise version would give a number of days and who approves them.</p>`,
+      explain: `<p>Employment contracts and handbooks are named as documents that define responsibilities for both employer and employee. "Reasonable" invites each reader to pick the meaning that suits them. A precise version would give a number of days and who approves them.</p>`,
       points: ['handbook defines both sides\' responsibilities', 'vague term read differently', 'fix: specific, checkable wording'],
     },
     {
@@ -84,7 +84,7 @@ QUESTIONS({
       q: `<p>You are building a house for a client and also writing a public health report on groundwater near leaching fields. Explain how purpose and audience change the way you define <em>leaching field</em> in the two documents.</p>`,
       options: null, correct: null,
       answer: `<p><b>Model answer.</b> In the client's progress report, the reader only needs a general idea to follow the update, so a parenthetical definition is enough: "The leaching field (sieve-like drainage area) requires crushed stone." In the public health report, the whole argument depends on the term: readers must understand how waste water filters through the field and how it can contaminate groundwater. That calls for an expanded definition, a paragraph or more, perhaps with its parts, how it works and a diagram. Same term, different purpose and audience, different type of definition.</p>`,
-      explain: `<p>This is the slides' own contrast between brief and expanded definitions.</p>`,
+      explain: `<p>This is the course's own contrast between brief and expanded definitions.</p>`,
       points: ['purpose: passing mention vs central term', 'audience: client vs health officials', 'parenthetical in progress report', 'expanded in health report'],
     },
 
@@ -133,7 +133,7 @@ QUESTIONS({
     },
     {
       id: 'm3-q-11', module: 'm3', topic: 'm3-parenthetical', type: 'decide', level: 2,
-      q: `<p>You are writing the online help pages for a campus app. Several short terms need quick explanations without cluttering the page. What do the slides suggest?</p>`,
+      q: `<p>You are writing the online help pages for a campus app. Several short terms need quick explanations without cluttering the page. What does the course suggest?</p>`,
       options: [
         `Put every definition in an appendix at the end of the site`,
         `Write an expanded definition for each term`,
@@ -156,8 +156,8 @@ QUESTIONS({
       ],
       correct: 1,
       answer: `<p><b>The "explanation" is harder than the word.</b></p>`,
-      explain: `<p>A parenthetical definition gives a more familiar synonym or phrase. "Caducous" is less familiar than "deciduous". Better: "(shedding foliage at season's end)", the slides' own wording.</p>`,
-      points: ['must be more familiar', 'use a simple phrase', 'slides: shedding foliage at season\'s end'],
+      explain: `<p>A parenthetical definition gives a more familiar synonym or phrase. "Caducous" is less familiar than "deciduous". Better: "(shedding foliage at season's end)", the course's own wording.</p>`,
+      points: ['must be more familiar', 'use a simple phrase', 'course: shedding foliage at season\'s end'],
     },
     {
       id: 'm3-q-13', module: 'm3', topic: 'm3-parenthetical', type: 'rewrite', level: 2,
@@ -172,7 +172,7 @@ QUESTIONS({
       q: `<p>Your classmate says: "RAM (random access memory) is a form of computer data storage which stores frequently used program instructions" is only a parenthetical definition. Explain why the course worksheet treats it as a sentence definition, and what part of it is parenthetical.</p>`,
       options: null, correct: null,
       answer: `<p><b>Model answer.</b> The whole sentence follows the sentence-definition pattern: term (RAM), class (a form of computer data storage) and distinguishing feature (which stores frequently used program instructions). The words in brackets, "random access memory", are a parenthetical expansion of the acronym inside it. So the sentence contains both, but as a definition of RAM it is a sentence definition. In an exam, look at what the question points at: the brackets or the whole sentence.</p>`,
-      explain: `<p>The slides list this RAM sentence among parenthetical examples, while the MCQ worksheet uses it as the well-formed sentence definition. Knowing both parts avoids losing the mark.</p>`,
+      explain: `<p>The course lists this RAM sentence among parenthetical examples, while the MCQ worksheet uses it as the well-formed sentence definition. Knowing both parts avoids losing the mark.</p>`,
       points: ['term, class, feature identified', 'brackets expand the acronym', 'both types present', 'read what the question targets'],
     },
 
@@ -258,12 +258,12 @@ QUESTIONS({
       ],
       correct: 1,
       answer: `<p><b>The working definition.</b> It fixes the term once and says what is left out.</p>`,
-      explain: `<p>The slides' local fauna example shows the pattern: "Throughout this document, the term … refers to …", followed by what is not included, so nobody can stretch the term later.</p>`,
+      explain: `<p>The course's local fauna example shows the pattern: "Throughout this document, the term … refers to …", followed by what is not included, so nobody can stretch the term later.</p>`,
       points: ['working definition for the whole document', '"refers to" pattern', 'states what is excluded'],
     },
     {
       id: 'm3-q-21', module: 'm3', topic: 'm3-sentence-def', type: 'design', level: 2,
-      q: `<p>The slides end with an exercise. Write sentence definitions of a <em>laptop</em> and a <em>university</em> for a first-year glossary, and label the term, class and features in each.</p>`,
+      q: `<p>Exercise: write sentence definitions of a <em>laptop</em> and a <em>university</em> for a first-year glossary, and label the term, class and features in each.</p>`,
       options: null, correct: null,
       answer: `<p><b>Model answer.</b> A <b>laptop</b> [term] is <b>a portable personal computer</b> [class] <b>with a built-in screen, keyboard and battery in a single folding case</b> [features]. A <b>university</b> [term] is <b>an institution of higher education</b> [class] <b>that teaches undergraduate and postgraduate courses, carries out research and awards degrees</b> [features].</p>`,
       explain: `<p>The class must be a real category; the features must separate a laptop from a desktop or tablet, and a university from a school or coaching centre.</p>`,
@@ -325,7 +325,7 @@ QUESTIONS({
         `Sentence definition, etymology, description of parts with a labelled diagram, operating principle, an example such as a car's starter`,
       ],
       correct: 3,
-      answer: `<p><b>Sentence definition, etymology, parts with a diagram, operating principle, an example.</b> It matches what the slides say these readers need.</p>`,
+      answer: `<p><b>Sentence definition, etymology, parts with a diagram, operating principle, an example.</b> It matches what the course says these readers need.</p>`,
       explain: `<p>Before they can repair a solenoid, they need where the term comes from, what it looks like, how it works, how its parts operate and how it is used, with diagrams to help them picture it.</p>`,
       points: ['choose methods by reader need', 'semitechnical readers', 'diagram supports parts and principle'],
     },
@@ -340,7 +340,7 @@ QUESTIONS({
       ],
       correct: 1,
       answer: `<p><b>It breaks all four rules.</b></p>`,
-      explain: `<p>The slides: make sure the visual is well labelled, introduce and explain it, place it near your discussion, and credit the source if borrowed.</p>`,
+      explain: `<p>Make sure the visual is well labelled, introduce and explain it, place it near your discussion, and credit the source if borrowed.</p>`,
       points: ['labelled', 'introduced and explained', 'near the text', 'credited'],
     },
     {
@@ -356,7 +356,7 @@ QUESTIONS({
       q: `<p>Two students argue about whether "operating principle" and "required conditions" are the same method. Using the laser, explain the difference.</p>`,
       options: null, correct: null,
       answer: `<p><b>Model answer.</b> Operating principle answers "How does it work?": a laser uses electrical energy to produce coherent light, whose waves are all in phase. Required conditions answer "What is needed to make it work?": the laser must absorb energy through the reflecting end of the resonant circuit, amplify the photons between the fully and partially reflecting ends, and release them through lenses, prisms and mirrors. One explains the idea behind it; the other lists what must be present or happen.</p>`,
-      explain: `<p>Each method answers a different reader question; the slides give separate passages for each.</p>`,
+      explain: `<p>Each method answers a different reader question; the course gives separate passages for each.</p>`,
       points: ['operating principle = how it works', 'required conditions = what is needed', 'laser details for each'],
     },
 
@@ -399,7 +399,7 @@ QUESTIONS({
       ],
       correct: 0,
       answer: `<p><b>In parentheses or in the margin.</b></p>`,
-      explain: `<p>The slides: in most documents, place brief definitions in parentheses or in the document's margin, aligned with the terms being defined.</p>`,
+      explain: `<p>In most documents, place brief definitions in parentheses or in the document's margin, aligned with the terms being defined.</p>`,
       points: ['brief → parentheses or margin', 'keeps the flow'],
     },
     {
@@ -421,7 +421,7 @@ QUESTIONS({
       q: `<p>You are preparing a first-aid leaflet for hostel wardens. Write a three-entry glossary for the terms <em>tourniquet</em>, <em>antiseptic</em> and <em>fracture</em>, in the correct format and order.</p>`,
       options: null, correct: null,
       answer: `<p><b>Model answer.</b></p><p><b>Antiseptic</b>: a substance applied to skin or wounds that kills germs and prevents infection.</p><p><b>Fracture</b>: a break or crack in a bone.</p><p><b>Tourniquet</b>: a tight band wrapped around a limb to stop heavy bleeding from a wound below it.</p>`,
-      explain: `<p>A glossary lists terms alphabetically, each followed by a short sentence-style definition in plain words, as in the slides' childbirth glossary (analgesic: a medication given to relieve pain).</p>`,
+      explain: `<p>A glossary lists terms alphabetically, each followed by a short sentence-style definition in plain words, as in the course's childbirth glossary (analgesic: a medication given to relieve pain).</p>`,
       points: ['alphabetical order', 'term: short sentence-style definition', 'plain words for laypersons'],
     },
     {
@@ -473,7 +473,7 @@ QUESTIONS({
       ],
       correct: 3,
       answer: `<p><b>She is probably unhappy.</b> Tone of voice and body language both point that way.</p>`,
-      explain: `<p>Reading body language and interpreting tone are on the slides' list of everyday inferences. "Leaving the team" over-reaches, and "happy" contradicts the clues.</p>`,
+      explain: `<p>Reading body language and interpreting tone are on the course's list of everyday inferences. "Leaving the team" over-reaches, and "happy" contradicts the clues.</p>`,
       points: ['tone of voice + body language', 'smallest step', 'hedge: probably'],
     },
     {
@@ -501,7 +501,7 @@ QUESTIONS({
       ],
       correct: 2,
       answer: `<p><b>An incident needed police and medical help.</b> It fits every clue and adds nothing extra.</p>`,
-      explain: `<p>Inferring the reason for police presence is one of the slides' everyday examples. "Terrorist attack" and "shut for a week" over-reach; a film shoot doesn't explain the ambulance.</p>`,
+      explain: `<p>Inferring the reason for police presence is one of the course's everyday examples. "Terrorist attack" and "shut for a week" over-reach; a film shoot doesn't explain the ambulance.</p>`,
       points: ['fits all the clues', 'no over-reaching', 'smallest step'],
     },
     {
@@ -523,15 +523,15 @@ QUESTIONS({
       q: `<p>Your younger cousin thinks "inference" is only a reading-exam word. Explain what an inference is and how it differs from first-hand observation, using two everyday examples from the course.</p>`,
       options: null, correct: null,
       answer: `<p><b>Model answer.</b> An inference is a conclusion we reach from evidence and reasoning, by applying our own knowledge and experience to the situation. First-hand observation is different: we learn something by seeing or experiencing it directly. For example, when cooking you can infer that food is ready from its aroma without tasting it, and when a news article mentions police at a scene you infer the likely reason for their presence. In both cases the answer isn't directly stated; you work it out from clues, which is exactly what inference questions test in reading.</p>`,
-      explain: `<p>Examiners want the definition (evidence + reasoning), the contrast with first-hand observation, and two slide examples explained.</p>`,
-      points: ['evidence and reasoning', 'contrast with first-hand observation', 'two examples from the slides', 'link to reading'],
+      explain: `<p>Examiners want the definition (evidence + reasoning), the contrast with first-hand observation, and two examples from the notes explained.</p>`,
+      points: ['evidence and reasoning', 'contrast with first-hand observation', 'two examples from the notes', 'link to reading'],
     },
     {
       id: 'm3-q-45', module: 'm3', topic: 'm3-inference', type: 'design', level: 2,
       q: `<p>A TV advert shows a famous cricketer drinking a brand of energy drink just before hitting a six. Write a short inference answer: what does the advert want viewers to infer, and what is the evidence?</p>`,
       options: null, correct: null,
       answer: `<p><b>Model answer.</b> The advert suggests that the energy drink improves sporting performance, because it shows a successful cricketer drinking it right before a big hit. It never states this claim; it leaves viewers to link the drink with the six. A careful viewer would note that the advert gives no evidence the drink caused the shot.</p>`,
-      explain: `<p>Understanding advertisements is one of the slides' everyday inferences. The layout "suggests… because…" earns marks for the inference, the evidence and the link.</p>`,
+      explain: `<p>Understanding advertisements is one of the course's everyday inferences. The layout "suggests… because…" earns marks for the inference, the evidence and the link.</p>`,
       points: ['inference stated with a hedge', 'evidence from the advert', 'implied, not stated', 'link is not proof'],
     },
 
@@ -663,7 +663,7 @@ QUESTIONS({
       ],
       correct: 1,
       answer: `<p><b>Narrow down to reliable sources, then go to Google Scholar.</b></p>`,
-      explain: `<p>The slides say it's fine to start with Google, but you soon need to narrow down and dig deeper: prefer universities and government labs, then search Google Scholar for peer-reviewed articles.</p>`,
+      explain: `<p>The course says it's fine to start with Google, but you soon need to narrow down and dig deeper: prefer universities and government labs, then search Google Scholar for peer-reviewed articles.</p>`,
       points: ['start broad, then narrow', 'universities and government labs', 'Google Scholar next'],
     },
     {
@@ -677,7 +677,7 @@ QUESTIONS({
       ],
       correct: 3,
       answer: `<p><b>Use it as a starting point; cite the footnoted originals.</b></p>`,
-      explain: `<p>Wikipedia is edited by countless people and may not be completely accurate. The slides say to use it for an overview and to locate other sources: a place to start, not the final destination.</p>`,
+      explain: `<p>Wikipedia is edited by countless people and may not be completely accurate. The course says to use it for an overview and to locate other sources: a place to start, not the final destination.</p>`,
       points: ['overview + footnotes', 'track sources via Scholar or library', 'not the final destination'],
     },
     {
@@ -695,7 +695,7 @@ QUESTIONS({
       options: [`Business Source Premier`, `LexisNexis`, `APA PsycINFO`, `Project Gutenberg`],
       correct: 2,
       answer: `<p><b>APA PsycINFO</b>, for articles in psychology.</p>`,
-      explain: `<p>The slides match specialised databases to fields: PsycINFO for psychology, Business Source Premier for business, PubMed for health sciences. LexisNexis is legal; Project Gutenberg holds public-domain books.</p>`,
+      explain: `<p>Specialised databases match to fields: PsycINFO for psychology, Business Source Premier for business, PubMed for health sciences. LexisNexis is legal; Project Gutenberg holds public-domain books.</p>`,
       points: ['match database to field', 'psychology → PsycINFO'],
     },
     {
@@ -723,7 +723,7 @@ QUESTIONS({
       ],
       correct: 1,
       answer: `<p><b>No source records.</b> Now you can't cite or re-find the articles.</p>`,
-      explain: `<p>The slides say to keep careful records of the URL and all source information (author, date, title, page numbers), in a Word file or shared document, and suggest a citation manager like Zotero or EndNote.</p>`,
+      explain: `<p>The course says to keep careful records of the URL and all source information (author, date, title, page numbers), in a Word file or shared document, and suggest a citation manager like Zotero or EndNote.</p>`,
       points: ['record URL, author, date, title, pages', 'shared document for teams', 'citation manager'],
     },
     {
@@ -753,7 +753,7 @@ QUESTIONS({
       q: `<p>Your friend says, "I research things online all day, so project research is easy." Explain how everyday research differs from research for a school or workplace project, and what extra steps the project needs.</p>`,
       options: null, correct: null,
       answer: `<p><b>Model answer.</b> Everyday research, such as checking weather trends, the price of a new phone or restaurant reviews, is quick and informal, and a wrong result costs little. Research for a school or workplace project is different: others will rely on it, so the sources must be credible and checkable. That means starting broad but then narrowing to reliable sources (universities, government labs, peer-reviewed articles through Google Scholar or library databases), treating Wikipedia as a starting point only, double-checking key facts in a second source, and keeping careful records of the URL, author, date, title and pages, ideally in a citation manager like Zotero or EndNote.</p>`,
-      explain: `<p>The slides name "everyday research" as different from school or workplace research; the answer should say why and list the extra steps.</p>`,
+      explain: `<p>"Everyday research" is different from school or workplace research; the answer should say why and list the extra steps.</p>`,
       points: ['everyday research examples', 'stakes and reliance', 'reliable sources and checking', 'record-keeping'],
     },
   ],

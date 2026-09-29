@@ -5,7 +5,7 @@
   const wc = (s) => String(s).split(/\s+/).filter(Boolean).length;
 
   // ---------------------------------------------------------------- summary-trimmer
-  // "The Northern Lights" (slides 28–29) split into phrases. e = essential idea (warn if cut), with the reason.
+  // "The Northern Lights" split into phrases. e = essential idea (warn if cut), with the reason.
   const NL = [
     { t: 'There are times when', m: 1 },
     { t: 'the night sky glows with bands of color.', e: 'what the lights are: glowing bands of colour in the night sky' },
@@ -43,7 +43,7 @@
       const showBtn = api.button('Show model summary', () => { model.hidden = !model.hidden; showBtn.innerHTML = model.hidden ? 'Show model summary' : 'Hide model summary'; }, btns);
       api.button('Reset', reset, btns);
       let cut;
-      model.innerHTML = `<h4>Model summary (${wc(MODEL)} words)</h4><p>${MODEL}</p><p style="margin-top:8px"><small>Cutting is only the first pass. A real précis then rewrites the kept ideas in your own words and joins them, as here. The slides' own model says the ancient people thought the lights were "dragon on fire", which merges two beliefs (fiery dragons; the heavens on fire), and that scientists don't know what the lights <em>are</em>, when the passage says what <em>causes</em> them.</small></p>`;
+      model.innerHTML = `<h4>Model summary (${wc(MODEL)} words)</h4><p>${MODEL}</p><p style="margin-top:8px"><small>Cutting is only the first pass. A real précis then rewrites the kept ideas in your own words and joins them, as here. The course's own model says the ancient people thought the lights were "dragon on fire", which merges two beliefs (fiery dragons; the heavens on fire), and that scientists don't know what the lights <em>are</em>, when the passage says what <em>causes</em> them.</small></p>`;
       function kept() { return NL.reduce((n, p, k) => n + (cut[k] ? 0 : wc(p.t)), 0); }
       function paint() {
         text.innerHTML = NL.map((p, k) => `<span class="ew-tok${cut[k] ? ' cut' : ''}" data-k="${k}" role="button" tabindex="0">${p.t}</span>`).join(' ');
@@ -93,10 +93,10 @@
       EW.rounds(body, api, {
         instr: 'Each sentence is wordy or redundant. Tap the version that is shortest <b>without losing meaning</b>.',
         items: [
-          { tag: 'From the slides', q: '"The Chairman wants to meet those employees who are working in the production department, so that he can discuss the difficult crisis immediately."',
+          { tag: 'From the course', q: '"The Chairman wants to meet those employees who are working in the production department, so that he can discuss the difficult crisis immediately."',
             options: ['The Chairman wants to meet the employees of the production department to discuss the crisis immediately.', 'The Chairman wants to meet those employees working in production, so that he can discuss the difficult crisis at once.', 'The Chairman wants to meet employees.'], correct: 0,
-            why: 'The slides\' answer, 23 → 16 words: "who are working in" → "of", "so that he can discuss" → "to discuss", and "difficult" goes because a crisis is difficult by definition. The three-word version is shorter but loses which employees, why and when.' },
-          { tag: 'From the slides', q: '"The secretary\'s proposal was adopted with the full agreement of all the members."',
+            why: 'The model answer, 23 → 16 words: "who are working in" → "of", "so that he can discuss" → "to discuss", and "difficult" goes because a crisis is difficult by definition. The three-word version is shorter but loses which employees, why and when.' },
+          { tag: 'From the course', q: '"The secretary\'s proposal was adopted with the full agreement of all the members."',
             options: ['The members unanimously adopted the secretary\'s proposal.', 'The secretary\'s proposal was adopted with the full and complete agreement of every member.', 'The proposal was adopted.'], correct: 0,
             why: '"With the full agreement of all the members" is one word, <b>unanimously</b>, and the active voice puts the doer first: 13 → 7 words. "The proposal was adopted" drops whose proposal and that everyone agreed.' },
           { q: '"Due to the fact that the pump failed, the line was shut down."',

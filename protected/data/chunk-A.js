@@ -7,7 +7,7 @@ CHUNK({
       title: 'Why define? Purpose, audience and responsibility',
       short: 'Why define?',
       blurb: 'What a definition is, why technical writers define terms at all, how purpose and audience decide the kind of definition, and the legal and ethical weight a definition can carry.',
-      source: 'Technical Definitions slides 2–13',
+      source: 'Technical Definitions',
       tabs: [
         { title: 'What a definition is', html: `
           <p class="lead">A <b>definition</b> is a statement of the <b>essential nature</b> of something, or of what a word or symbol <b>means</b>. Defining is the act of stating that meaning.</p>
@@ -20,7 +20,7 @@ CHUNK({
           <h3>Why bother defining?</h3>
           <div class="chips"><span class="chip">increase reader understanding</span><span class="chip">explain technical terms</span><span class="chip">establish common ground</span></div>
           <p>A definition puts everyone <b>on the same page</b>: writer, reader, client and examiner all mean the same thing by the same word. A term that is left <b>improperly defined</b> can mislead readers, cause wrong decisions and even create legal trouble.</p>
-          <div class="note example"><p>The slides quote the philosopher Ludwig Wittgenstein: "The limits of my language mean the limits of my world." If a reader doesn't have the word, they can't think clearly about the thing.</p></div>
+          <div class="note example"><p>The philosopher Ludwig Wittgenstein put it this way: "The limits of my language mean the limits of my world." If a reader doesn't have the word, they can't think clearly about the thing.</p></div>
           <div class="note exam"><p>CAT questions on this topic are about <b>applying</b> definitions: which type fits a reader, what is wrong with a given definition, or writing one yourself. Know the purpose first, then the three types.</p></div>
         ` },
         { title: 'Purpose and audience', html: `
@@ -35,7 +35,7 @@ CHUNK({
             <div class="side"><h4>Public health report</h4><p>A full paragraph on what a leaching field is, how waste water filters through it and how it can <b>contaminate groundwater</b>.</p><p><small>The whole report depends on the term.</small></p></div>
           </div>
           <p>Clear definitions also help us judge <b>complex technical and social issues</b>. Before anyone can debate <b>genetic engineering</b>, they need at least a basic definition: a technique through which genes are <b>isolated</b> in a laboratory, <b>manipulated</b>, and then <b>inserted stably</b> into another organism (by mechanical, chemical or biological means such as viruses).</p>
-          <div class="note example"><p>The slides also show a dictionary entry for <b>meme</b>: "an idea, behaviour, style, or usage that spreads from person to person within a culture". Notice how it names what a meme is (an idea or behaviour) and then what makes it special (it spreads within a culture).</p></div>
+          <div class="note example"><p>Here is a dictionary entry for <b>meme</b>: "an idea, behaviour, style, or usage that spreads from person to person within a culture". Notice how it names what a meme is (an idea or behaviour) and then what makes it special (it spreads within a culture).</p></div>
         ` },
         { title: 'Legal weight', html: `
           <p class="lead">A precise definition matters legally because <b>you</b>, or the organisation you write for, are <b>legally responsible</b> for the document.</p>
@@ -51,7 +51,7 @@ CHUNK({
           <div class="note why"><p>A court reads the words, not what you meant. If a term can be read two ways, the other side will pick the reading that suits them.</p></div>
         ` },
         { title: 'Ethical weight: Challenger', html: `
-          <p class="lead">Definitions have <b>ethical implications</b> too. The slides use the <b>Challenger</b> disaster to show how one badly defined phrase, <b>acceptable risk</b>, cost seven lives.</p>
+          <p class="lead">Definitions have <b>ethical implications</b> too. The <b>Challenger</b> disaster shows how one badly defined phrase, <b>acceptable risk</b>, cost seven lives.</p>
           <div class="kv">
             <div><span>Date</span><b>28 January 1986</b></div>
             <div><span>What happened</span><b>exploded 73 seconds after launch</b></div>
@@ -60,7 +60,7 @@ CHUNK({
           </div>
           <p>The failed O-rings let hot exhaust gases escape and ignite the adjacent fuel tank. Hours before launch, the engineers objected strongly. <b>Management</b> still decided the launch was "a risk worth taking".</p>
           <p>Management's definition of acceptable risk was based on <b>bureaucratic pressure</b> to launch on schedule, not on the <b>engineering facts</b>.</p>
-          <div class="note exam"><p>The lesson the slides draw: agreeing on meaning is rarely easy, but you are <b>ethically bound</b> to give an <b>accurate interpretation of the facts</b> as you understand them. If a question asks why definitions have ethical weight, Challenger is your example.</p></div>
+          <div class="note exam"><p>The lesson: agreeing on meaning is rarely easy, but you are <b>ethically bound</b> to give an <b>accurate interpretation of the facts</b> as you understand them. If a question asks why definitions have ethical weight, Challenger is your example.</p></div>
         ` },
         { title: 'Three types at a glance', html: `
           <p class="lead">Technical writing uses three types of definition. They differ in <b>how much detail</b> your audience needs to grasp your exact meaning.</p>
@@ -106,11 +106,11 @@ CHUNK({
       title: 'Parenthetical definitions',
       short: 'Parenthetical',
       blurb: 'The quickest kind of definition: a familiar synonym or a short clarifying phrase in brackets, right inside the sentence.',
-      source: 'Technical Definitions slides 14–16',
+      source: 'Technical Definitions',
       tabs: [
         { title: 'What it is', html: `
           <p class="lead">A <b>parenthetical definition</b> clarifies a word with a more familiar <b>synonym</b> or a short <b>clarifying phrase</b> placed in <b>parentheses</b>, inside the same sentence.</p>
-          <p>It is the <b>least formal</b> of the three types, used <b>in-line</b> for a quick <b>clarification</b> or brief explanation. The slides give two textbook examples:</p>
+          <p>It is the <b>least formal</b> of the three types, used <b>in-line</b> for a quick <b>clarification</b> or brief explanation. Two textbook examples:</p>
           <ul>
             <li>The <b>leaching field</b> (sieve-like drainage area) requires crushed stone.</li>
             <li>The trees on the site are mostly <b>deciduous</b> (shedding foliage at season's end).</li>
@@ -138,7 +138,7 @@ CHUNK({
             <div class="side"><h4>Wrong</h4><p>The trees are mostly <b>deciduous</b> (caducous).</p><p><small>The "explanation" is harder than the word.</small></p></div>
             <div class="side"><h4>Right</h4><p>The trees are mostly deciduous (shedding their leaves each autumn).</p></div>
           </div>
-          <div class="note heads-up"><p>Not on the slides: in normal writing the same job is often done with commas or dashes ("an impeller, a spinning rotor with vanes, pushes water up"). In a CAT answer, use brackets so the examiner sees a parenthetical definition clearly.</p></div>
+          <div class="note heads-up"><p>Extra: in normal writing the same job is often done with commas or dashes ("an impeller, a spinning rotor with vanes, pushes water up"). In a CAT answer, use brackets so the examiner sees a parenthetical definition clearly.</p></div>
           <div class="note exam"><p>If a question asks for a parenthetical definition, write the full sentence around it. The brackets on their own ("(sieve-like drainage area)") are not an answer.</p></div>
         ` },
       ],
@@ -169,7 +169,7 @@ CHUNK({
       title: 'Sentence definitions: term, class, features',
       short: 'Sentence definitions',
       blurb: 'The formal one-sentence definition: name the term, put it in its broader class, then give the features that set it apart from everything else in that class.',
-      source: 'Technical Definitions slides 17–18, 22–25, 59–68; MCQ worksheet',
+      source: 'Technical Definitions; MCQ worksheet',
       tabs: [
         { title: 'What it is', html: `
           <p class="lead">When a term needs more than a parenthetical definition can give, use a <b>sentence definition</b>: one or two formal sentences in a fixed pattern.</p>
@@ -211,7 +211,7 @@ CHUNK({
             <div class="side"><h4>No real feature</h4><p>RAM is fast and useful.</p><p><small>No class, and "fast and useful" fits a hundred things.</small></p></div>
             <div class="side"><h4>Right</h4><p>RAM is <b>a form of computer data storage</b> which stores frequently used program instructions.</p></div>
           </div>
-          <div class="note heads-up"><p>Not on the slides, but standard in technical writing: besides avoiding <b>circular</b> definitions, don't write "is when" or "is where" ("Corrosion is when metal rusts"), and never explain a term with words harder than the term.</p></div>
+          <div class="note heads-up"><p>Extra, standard in technical writing: besides avoiding <b>circular</b> definitions, don't write "is when" or "is where" ("Corrosion is when metal rusts"), and never explain a term with words harder than the term.</p></div>
           <div data-viz="def-builder"></div>
         ` },
         { title: 'Sentences and working definitions', html: `
@@ -225,7 +225,7 @@ CHUNK({
           <div class="note exam"><p>A good opener for a working definition: "Throughout this report, <b>X refers to</b>…". Use it in lab reports and project reports when a word has several everyday meanings (e.g. "load", "user", "failure").</p></div>
         ` },
         { title: 'Worked: define everyday objects', html: `
-          <p class="lead">The slides end with an exercise: define a <b>pen</b>, a <b>laptop</b>, a <b>university</b> and a <b>chair</b>. Build each one part by part.</p>
+          <p class="lead">Exercise: define a <b>pen</b>, a <b>laptop</b>, a <b>university</b> and a <b>chair</b>. Build each one part by part.</p>
           <div class="worked">
             <div class="given"><p><b>Pen</b>. Class? Not "a thing": a <b>handheld writing instrument</b>. What sets it apart from a pencil or chalk? It uses ink.</p></div>
             <div class="solve"><p>Term: pen. Class: a handheld writing instrument. Features: applies ink to a surface through a nib or a rolling ball.</p></div>
@@ -240,7 +240,7 @@ CHUNK({
           <div class="note trap"><p>"A chair is a piece of furniture <b>used for sitting</b>." A sofa and a bench are also for sitting. The features must separate the term from its neighbours: <b>one person</b>, <b>a back</b>.</p></div>
         ` },
         { title: 'Reading dictionary definitions', html: `
-          <p class="lead">The slides show short dictionary-style definitions. Read each one for its <b>class</b> (in italics below) and its <b>features</b>, because that is exactly what you're asked to produce.</p>
+          <p class="lead">Below are short dictionary-style definitions. Read each one for its <b>class</b> (in italics below) and its <b>features</b>, because that is exactly what you're asked to produce.</p>
           <ul>
             <li><b>An apple</b> (noun) is <em>a rounded edible fruit</em>, usually red, yellow or green, that grows on a tree.</li>
             <li><b>A book</b> (noun) is <em>a set of written or printed sheets</em> bound together for reading.</li>
@@ -249,8 +249,8 @@ CHUNK({
             <li><b>Data science</b> is <em>a multidisciplinary field</em> that uses scientific methods and algorithms to extract insight from data.</li>
             <li><b>A community</b> is <em>a group of people</em> living in the same place or sharing a characteristic.</li>
           </ul>
-          <p>Some slide examples go further than one sentence. "Podium" adds the word's Latin and Greek roots, "television" adds what it is used for, "zoo" adds its modern purposes. Those extra sentences are <b>expansion methods</b>, the next topic.</p>
-          <div class="note example"><p>The slides also have a matching exercise: pick the right meaning for <b>bicycle</b> (a vehicle with two wheels and handlebars, not a plane with two engines), <b>erase</b> (to remove by rubbing away), <b>natural</b> (made by nature), <b>success</b> (doing well at something), <b>net</b> (a mesh for catching insects) and <b>change</b> (to make things different).</p></div>
+          <p>Some course examples go further than one sentence. "Podium" adds the word's Latin and Greek roots, "television" adds what it is used for, "zoo" adds its modern purposes. Those extra sentences are <b>expansion methods</b>, the next topic.</p>
+          <div class="note example"><p>Matching exercise: pick the right meaning for <b>bicycle</b> (a vehicle with two wheels and handlebars, not a plane with two engines), <b>erase</b> (to remove by rubbing away), <b>natural</b> (made by nature), <b>success</b> (doing well at something), <b>net</b> (a mesh for catching insects) and <b>change</b> (to make things different).</p></div>
         ` },
       ],
       flashcards: [
@@ -285,13 +285,13 @@ CHUNK({
       title: 'Expanded definitions and how to expand them',
       short: 'Expanded definitions',
       blurb: 'When a sentence is not enough: the nine methods for expanding a definition (etymology, history, negation, operating principle, parts, visuals, comparison, required conditions, examples), shown on one running example, the laser.',
-      source: 'Technical Definitions slides 19–21, 26–45',
+      source: 'Technical Definitions',
       tabs: [
         { title: 'When to expand', html: `
           <p class="lead">An <b>expanded definition</b> is the <b>most formal</b> type: a <b>paragraph or longer</b>, with a very <b>flexible structure</b>, written when the reader needs a <b>complete understanding</b>.</p>
           <p>Brief definitions are fine when your audience needs only a general idea, as with "leaching field (sieve-like drainage area)" in a progress report to a house owner. A document that depends on the term, such as a <b>public health report</b> on groundwater contamination from leaching fields, needs more.</p>
           <div class="note example"><p>A health web page defines <b>allergenics</b> as two kinds of product, <b>patch tests</b> and <b>extracts</b>, then defines each in short sentences. Technical phrases are restated in plain words: <b>allergic rhinitis</b> becomes "hay fever". Because it is online, readers of any level can search for more and follow links to related definitions.</p></div>
-          <p>Every expanded definition starts from a sentence definition. The running example on the slides is:</p>
+          <p>Every expanded definition starts from a sentence definition. The running example in this topic is:</p>
           <p>"A <b>laser</b> is an electronic device that emits a highly concentrated beam of light."</p>
         ` },
         { title: 'The questions readers ask', html: `
@@ -317,7 +317,7 @@ CHUNK({
           <p>Some terms are <b>acronyms</b>, built from first letters: <b>laser</b> = <b>l</b>ight <b>a</b>mplification by <b>s</b>timulated <b>e</b>mission of <b>r</b>adiation.</p>
           <div class="note example"><p>"The word laser is an acronym for light amplification by stimulated emission of radiation, and is the name for an electronic device that emits a highly concentrated beam of light."</p></div>
           <h3>History: how it came about</h3>
-          <p>Explain how the term, concept or procedure developed. Specialised dictionaries and encyclopedias are good sources. The slides: early fibre-optic researchers lacked an intense light source and a clean transmission medium. The laser (invented <b>1960</b>) solved the first problem; the first communications-grade optical fibre of almost pure silica glass (<b>1970</b>) solved the second.</p>
+          <p>Explain how the term, concept or procedure developed. Specialised dictionaries and encyclopedias are good sources. Example: early fibre-optic researchers lacked an intense light source and a clean transmission medium. The laser (invented <b>1960</b>) solved the first problem; the first communications-grade optical fibre of almost pure silica glass (<b>1970</b>) solved the second.</p>
           <h3>Negation: what it is not</h3>
           <p>Say what the term <b>does not mean</b>, to clear up misconceptions. A laser is used for many useful purposes, including eye surgery, and <b>not</b>, as science fiction suggests, as a transport to other dimensions.</p>
         ` },
@@ -338,7 +338,7 @@ CHUNK({
         { title: 'Comparison, conditions, examples', html: `
           <p class="lead">Three methods that <b>connect</b> the term to what the reader already knows and to real use.</p>
           <h3>Comparison and contrast</h3>
-          <p>Show <b>similarities</b> (comparison) or <b>differences</b> (contrast) with something familiar, to build a bridge from the known to the unknown. The slides explain fibre optics by comparing signal carriers: sound, radio and light waves can all carry signals, and capacity rises with frequency.</p>
+          <p>Show <b>similarities</b> (comparison) or <b>differences</b> (contrast) with something familiar, to build a bridge from the known to the unknown. For example, fibre optics can be explained by comparing signal carriers: sound, radio and light waves can all carry signals, and capacity rises with frequency.</p>
           <div class="kv">
             <div><span>Telephone voice</span><b>1,000 Hz</b></div>
             <div><span>Television signal</span><b>about 50 million Hz</b></div>
@@ -399,7 +399,7 @@ CHUNK({
       title: 'Placing definitions, glossaries and checking your definition',
       short: 'Placing & glossaries',
       blurb: 'Where each type of definition goes in a document, what a glossary is for, how to choose the right type for a reader, and a checklist for fixing weak definitions.',
-      source: 'Technical Definitions slides 46–52',
+      source: 'Technical Definitions',
       tabs: [
         { title: 'Where definitions go', html: `
           <p class="lead">Define an unfamiliar term <b>the first time</b> the reader meets it. Where you put the definition depends on its type.</p>
@@ -413,8 +413,8 @@ CHUNK({
         { title: 'Glossaries', html: `
           <p class="lead">A <b>glossary</b> is an <b>alphabetical list</b> of specialised terms and their definitions. It gives <b>laypersons</b> the key definitions <b>without interrupting technical readers</b>.</p>
           <figure data-fig="m3-glossary-sample"></figure>
-          <p>The slides show a partial glossary from a document on childbirth. Each entry is the term in bold, a colon, then a short sentence-style definition (for example, <b>analgesic</b>: a medication given to relieve pain).</p>
-          <div class="note heads-up"><p>Not on the slides, but standard practice: list entries <b>alphabetically</b>, define only terms the reader may not know, keep each entry in <b>sentence-definition style</b>, and tell readers near the start that a glossary exists (e.g. an asterisk on first use plus a note).</p></div>
+          <p>The sample above is part of a glossary from a document on childbirth. Each entry is the term in bold, a colon, then a short sentence-style definition (for example, <b>analgesic</b>: a medication given to relieve pain).</p>
+          <div class="note heads-up"><p>Extra, standard practice: list entries <b>alphabetically</b>, define only terms the reader may not know, keep each entry in <b>sentence-definition style</b>, and tell readers near the start that a glossary exists (e.g. an asterisk on first use plus a note).</p></div>
           <div class="note exam"><p>Asked when to use a glossary? Many sentence definitions, a mixed audience (experts and laypeople), and a long document. Asked where it goes? Usually at the end of the report, before or after the appendices.</p></div>
         ` },
         { title: 'Choosing the type', html: `
@@ -436,7 +436,7 @@ CHUNK({
             <li><b>Plain words</b> is every word easier than the term?</li>
             <li><b>Right type</b> does it give this reader enough, and not more than enough?</li>
           </ol>
-          <div class="note heads-up"><p>The checklist is standard technical-writing practice built on the slides' term-class-features pattern; the slides don't list it as such.</p></div>
+          <div class="note heads-up"><p>Extra: the checklist is standard technical-writing practice built on the term-class-features pattern; the course doesn't list it as such.</p></div>
           <div data-viz="def-fixer"></div>
         ` },
       ],

@@ -7,17 +7,17 @@ CHUNK({
       title: 'Conflict and conflict management',
       short: 'Conflict basics',
       blurb: 'What conflict management is, the skills it connects to, why the way a conflict ends matters as much as the ending, and the nine best-practice steps for handling any workplace conflict.',
-      source: 'Conflict Management slides 1–4, 13, 32–34',
+      source: 'Conflict Management',
       tabs: [
         { title: 'What it is', html: `
           <p class="lead"><b>Conflict management</b> is the process by which <b>disputes are resolved</b>, where <b>negative results are minimised</b> and <b>positive results are prioritised</b>.</p>
           <p>Read the definition closely. It does not promise that conflict disappears. It says you steer a dispute so the damage is small and the gains are big. The damage is things like <b>anger, resentment</b>, lost time and broken teams. The gains are things like <b>a better solution</b>, clearer roles and people who feel heard.</p>
-          <p>The slides are blunt about why you need it: <b>conflict is an unavoidable reality</b> in the workplace. <b>Smart organisations</b> know this and prepare their managers with proper conflict management skills, so that workplace conflicts are handled and resolved <b>quickly and peacefully</b>.</p>
+          <p>The reason you need it is simple:<b>conflict is an unavoidable reality</b> in the workplace. <b>Smart organisations</b> know this and prepare their managers with proper conflict management skills, so that workplace conflicts are handled and resolved <b>quickly and peacefully</b>.</p>
           <div class="note example"><p>Two lab partners disagree on who writes the discussion section. Handled badly, it ends with one of them doing everything and never working with the other again. Handled well, they split the work sensibly and still like each other at the end of the semester. Same dispute, very different results.</p></div>
           <div class="note exam"><p>The CAT-2 heading is "Conflict Management (Interpersonal Skills) (Application level: analysing a case study)". The theory (the five Thomas-Kilmann modes) is the toolkit; the marks come from <b>applying</b> it to a case. Learn the definition word for word, then practise using it.</p></div>
         ` },
         { title: 'Connected skills', html: `
-          <p class="lead">The first slide lists six keywords and then asks whether they are connected. They are: each one is a part of handling a disagreement well.</p>
+          <p class="lead">The topic opens with six keywords and asks whether they are connected. They are: each one is a part of handling a disagreement well.</p>
           <ul>
             <li><b>Communication</b>: say clearly what you need, and listen to what the other side needs.</li>
             <li><b>Empathy</b>: see the problem from the other person's side (the "cooperativeness" half of the model).</li>
@@ -26,11 +26,11 @@ CHUNK({
             <li><b>Emotional intelligence</b>: notice and manage your own anger, and read other people's feelings.</li>
             <li><b>Conflict management skills</b>: pull the rest together and pick the right approach for this dispute.</li>
           </ul>
-          <div class="note heads-up"><p>Not on the slides: the slides only list the six words and ask "Do you think these keywords are connected?". The explanations above are ours, so use them as reasoning in an answer, not as a quotation.</p></div>
+          <div class="note heads-up"><p>Extra: the course only lists the six words and asks "Do you think these keywords are connected?". The explanations above are ours, so use them as reasoning in an answer, not as a quotation.</p></div>
           <div class="note example"><p>In the course case study, a doctor shouts "idiot" at a staff member who interrupts him. That is a failure of <b>emotional intelligence</b> and <b>communication</b> in one second, and it grows into a fight between two whole groups.</p></div>
         ` },
         { title: 'Your own pattern', html: `
-          <p class="lead">Before the model, the slides ask three questions: Have you ever got into a <b>disagreement</b>? <b>How did you handle it</b>? Do you have a <b>pattern</b> when it comes to resolving an issue?</p>
+          <p class="lead">Before the model, ask yourself three questions: Have you ever got into a <b>disagreement</b>? <b>How did you handle it</b>? Do you have a <b>pattern</b> when it comes to resolving an issue?</p>
           <p>Most people do have a pattern. Some always push until they win, some go quiet and hope it passes, some give in to keep the peace. The Thomas-Kilmann model (next topic) gives each pattern a name, so you can see your habit and decide whether it fits the situation in front of you.</p>
           <div class="vs">
             <div class="side"><h4>Habit</h4><p>"I always give in. Arguing isn't worth it."</p><p><small>Fine over something small like a poster colour, bad when your marks or safety are at stake.</small></p></div>
@@ -38,12 +38,12 @@ CHUNK({
           </div>
           <h3>Where conflicts come from</h3>
           <div class="chips"><span class="chip">different goals</span><span class="chip">scarce resources (money, time, lab slots)</span><span class="chip">unclear roles</span><span class="chip">different values</span><span class="chip">poor communication</span><span class="chip">status and respect</span></div>
-          <div class="note heads-up"><p>Not on the slides: the list of common sources is standard management knowledge. It is useful for question 1 of a case analysis ("What are the main issues here?"), because naming the source shows you have looked beneath the incident.</p></div>
+          <div class="note heads-up"><p>Extra: the list of common sources is standard management knowledge. It is useful for question 1 of a case analysis ("What are the main issues here?"), because naming the source shows you have looked beneath the incident.</p></div>
         ` },
         { title: 'How it ends matters', html: `
-          <p class="lead">In every example on the slides a solution is found, but there are <b>lasting effects</b> on <b>morale</b>, <b>productivity</b> and the <b>overall happiness</b> of employees, depending on <b>how</b> that solution was reached.</p>
-          <p>That is why the slides define skilled conflict management as <b>minimising the lasting effects</b> of conflicts by using the <b>right tactic at the right time</b>.</p>
-          <p>Take one of the slides' examples: two staff members, Cecile and Eduardo, each say a difficult client is the other's job, and their head of department settles it.</p>
+          <p class="lead">In every one of the course's examples a solution is found, but there are <b>lasting effects</b> on <b>morale</b>, <b>productivity</b> and the <b>overall happiness</b> of employees, depending on <b>how</b> that solution was reached.</p>
+          <p>That is why the course defines skilled conflict management as <b>minimising the lasting effects</b> of conflicts by using the <b>right tactic at the right time</b>.</p>
+          <p>Take one of the course's examples: two staff members, Cecile and Eduardo, each say a difficult client is the other's job, and their head of department settles it.</p>
           <div class="vs">
             <div class="side"><h4>Same outcome, bad route</h4><p>The head decides, without listening, that Cecile must handle the client.</p><p><small>Solved today. Cecile is resentful for months.</small></p></div>
             <div class="side"><h4>Same outcome, better route</h4><p>The head hears both, explains why Cecile is better placed, and gives her support or credit for taking it on.</p><p><small>Solved, and the relationship survives.</small></p></div>
@@ -52,7 +52,7 @@ CHUNK({
           <div class="note why"><p>People remember how they were treated long after they forget what the dispute was about. That memory is what shows up as low morale and slow work in the next project.</p></div>
         ` },
         { title: 'Nine best-practice steps', html: `
-          <p class="lead">The slides give nine <b>conflict management techniques and best practices</b>. They work for any style and give you a ready structure for a case-study answer.</p>
+          <p class="lead">There are nine <b>conflict management techniques and best practices</b>. They work for any style and give you a ready structure for a case-study answer.</p>
           <ol class="steps">
             <li><b>Be aware of conflict</b> notice it early, before it turns into shouting.</li>
             <li><b>Take a considered and rational approach</b> calm down first; don't react in the heat of the moment.</li>
@@ -70,11 +70,11 @@ CHUNK({
       ],
       flashcards: [
         { front: `Conflict management is the process by which…`, back: `<b>Disputes are resolved</b>, minimising negative results and prioritising positive ones.` },
-        { front: `The six connected keywords on the first slide?`, back: `<b>Communication</b>, <b>empathy</b>, <b>problem solving</b>, <b>negotiation</b>, <b>emotional intelligence</b>, <b>conflict management</b>.` },
-        { front: `The slides call workplace conflict…`, back: `An <b>unavoidable reality</b>.` },
+        { front: `The six connected keywords?`, back: `<b>Communication</b>, <b>empathy</b>, <b>problem solving</b>, <b>negotiation</b>, <b>emotional intelligence</b>, <b>conflict management</b>.` },
+        { front: `Workplace conflict is…`, back: `An <b>unavoidable reality</b>.` },
         { front: `What do smart organisations do about conflict?`, back: `<b>Train their managers</b> to resolve it quickly and peacefully.` },
         { front: `Three things a solution's route leaves lasting effects on?`, back: `<b>Morale</b>, <b>productivity</b>, <b>overall happiness</b>.` },
-        { front: `Skilled conflict management, per the slides?`, back: `Minimising lasting effects by the <b>right tactic at the right time</b>.` },
+        { front: `Skilled conflict management, per the course?`, back: `Minimising lasting effects by the <b>right tactic at the right time</b>.` },
         { front: `Best-practice step 1?`, back: `<b>Be aware</b> of conflict.` },
         { front: `Best-practice step 5?`, back: `<b>Let everyone have their say</b>.` },
         { front: `The last best-practice step?`, back: `Consider <b>preventative strategies</b> for the future.` },
@@ -99,13 +99,13 @@ CHUNK({
       title: 'The Thomas-Kilmann model',
       short: 'Thomas-Kilmann model',
       blurb: 'The Thomas-Kilmann Conflict Mode Instrument: two dimensions (assertiveness and cooperativeness), the five modes on the grid, their win/lose labels, and how conflict styles are measured.',
-      source: 'Conflict Management slides 5–11, 35 and slide pictures; Conflict management styles handout',
+      source: 'Conflict Management; Conflict management styles handout',
       tabs: [
         { title: 'What the TKI is', html: `
           <p class="lead">The <b>Thomas-Kilmann Conflict Mode Instrument (TKI)</b> is a widely recognised framework designed to <b>measure an individual's response</b> to conflict situations.</p>
-          <p>It was developed by two psychologists, <b>Kenneth Thomas and Ralph Kilmann</b>, in the <b>early 1970s</b>; the source line on the slide picture dates the instrument <b>1974</b>. The two dates agree: the model grew in the early 1970s and the instrument was published in 1974.</p>
+          <p>It was developed by two psychologists, <b>Kenneth Thomas and Ralph Kilmann</b>, in the <b>early 1970s</b>; the source line on the course's grid picture dates the instrument <b>1974</b>. The two dates agree: the model grew in the early 1970s and the instrument was published in 1974.</p>
           <p>The TKI identifies <b>five primary modes</b> of dealing with conflict, placed on <b>two dimensions</b>, assertiveness and cooperativeness. The five modes are <b>competing</b>, <b>collaborating</b>, <b>compromising</b>, <b>avoiding</b> and <b>accommodating</b>. None is "the good one". Each is right for some situations and wrong for others, and everyone can use all five.</p>
-          <div class="note heads-up"><p>The slides name the modes in two ways. Some use nouns (<b>competition, collaboration, compromise, avoidance, accommodation</b>); others use -ing forms (<b>competing, collaborating</b>…). They mean the same modes.</p><p>The slide picture of the grid spells one mode "Accomodating". The correct spelling is <b>accommodating</b> (double c, double m).</p></div>
+          <div class="note heads-up"><p>The course material names the modes in two ways. Some parts use nouns (<b>competition, collaboration, compromise, avoidance, accommodation</b>); others use -ing forms (<b>competing, collaborating</b>…). They mean the same modes.</p></div>
           <div class="note exam"><p>Name the two authors and the two dimensions correctly in any answer on this topic. Spell it Kilmann: one l, double n.</p></div>
         ` },
         { title: 'Two dimensions', html: `
@@ -119,7 +119,7 @@ CHUNK({
           <div class="note example"><p>A hostel mess committee wants to change the menu. A member who says "I want paneer on Fridays, and I also want to know what the vegans need" is high on both. A member who says "Whatever, I'll eat outside" is low on both.</p></div>
         ` },
         { title: 'The grid', html: `
-          <p class="lead">Put assertiveness on the vertical axis and cooperativeness on the horizontal one. The four corners give four modes, and <b>compromising</b> sits in the <b>centre</b>. The last column is the slides' label for who wins (see the next tab).</p>
+          <p class="lead">Put assertiveness on the vertical axis and cooperativeness on the horizontal one. The four corners give four modes, and <b>compromising</b> sits in the <b>centre</b>. The last column is the course's label for who wins (see the next tab).</p>
           <figure data-fig="m5-tki-grid"></figure>
           <table class="tbl">
             <thead><tr><th>Mode</th><th>Assertive</th><th>Cooperative</th><th>Who wins</th></tr></thead>
@@ -135,7 +135,7 @@ CHUNK({
           <div data-viz="tki-grid"></div>
         ` },
         { title: 'Win and lose', html: `
-          <p class="lead">The slides also label each mode by <b>who wins</b>: you ("I") or the other party ("you"). The labels follow from what each mode does with the two sides' concerns.</p>
+          <p class="lead">Each mode is also labelled by <b>who wins</b>: you ("I") or the other party ("you"). The labels follow from what each mode does with the two sides' concerns.</p>
           <figure data-fig="m5-style-outcomes"></figure>
           <ul>
             <li><b>Compete: I win, you lose.</b> You stand firm until you get your way; the other side's concern is set aside.</li>
@@ -144,11 +144,11 @@ CHUNK({
             <li><b>Compromise: I win some and lose some, you win some and lose some.</b> Each side gets <b>part</b> of what it wanted.</li>
             <li><b>Collaborate: I win, you win.</b> The solution meets <b>both</b> sides' needs in full, which is why it takes the longest to find.</li>
           </ul>
-          <div class="note heads-up"><p>The sources are not consistent here. The win/lose slide gives compromise as "win some, lose some", and the styles handout says "everyone loses and wins", but a later slide says compromise "is sometimes known as lose-lose", because both parties give up a few things. The same slide set calls avoidance "I lose, you lose". In an exam, use <b>win some / lose some</b> for compromise and <b>lose-lose</b> for avoiding, and if you mention the other label, explain it (both sides give something up).</p></div>
+          <div class="note heads-up"><p>The course material is not consistent here. The win/lose chart gives compromise as "win some, lose some", and the styles handout says "everyone loses and wins", but a later part of the course says compromise "is sometimes known as lose-lose", because both parties give up a few things. The same material calls avoidance "I lose, you lose". In an exam, use <b>win some / lose some</b> for compromise and <b>lose-lose</b> for avoiding, and if you mention the other label, explain it (both sides give something up).</p></div>
         ` },
         { title: 'Measuring a style', html: `
           <p class="lead">The TKI is an <b>instrument</b>: a questionnaire that measures which modes a person uses most. Organisations use similar quizzes when they hire.</p>
-          <p>From the slides:</p>
+          <p>How organisations use such a quiz:</p>
           <ul>
             <li>During the <b>interview process</b>, a conflict management quiz can highlight which prospective employees are effective at conflict management and resolution, and which <b>need some work</b>.</li>
             <li>A typical assessment asks managers to <b>rate on a scale of 1 to 5</b> how often they would do a specific action.</li>
@@ -156,7 +156,7 @@ CHUNK({
             <li>Such a quiz should have <b>between 15 and 30 questions</b> to give a <b>holistic view</b> of the person's skills.</li>
           </ul>
           <div class="note example"><p>A sample item in that format: "When a colleague disagrees with my plan, I explain my reasons and ask for theirs." 1 = never, 5 = always. Items like this, spread across all five modes, show which mode a person reaches for first.</p></div>
-          <div class="note heads-up"><p>Not on the slides: the published TKI itself has <b>30 pairs of statements</b>, and for each pair you pick the one that is more like you. Your scores show how often you use each mode compared with other people. A high score in one mode is a habit to be aware of, not a fixed personality type.</p></div>
+          <div class="note heads-up"><p>Extra: the published TKI itself has <b>30 pairs of statements</b>, and for each pair you pick the one that is more like you. Your scores show how often you use each mode compared with other people. A high score in one mode is a habit to be aware of, not a fixed personality type.</p></div>
         ` },
       ],
       flashcards: [
@@ -191,8 +191,8 @@ CHUNK({
       id: 'm5-styles',
       title: 'The five conflict management styles',
       short: 'The five styles',
-      blurb: 'Each Thomas-Kilmann style in detail: what it looks like, its typical line, where its power comes from, when to use it, its pros and cons, and the slides\' workplace example.',
-      source: 'Conflict Management slides 15–31; Conflict management styles handout',
+      blurb: 'Each Thomas-Kilmann style in detail: what it looks like, its typical line, where its power comes from, when to use it, its pros and cons, and a workplace example.',
+      source: 'Conflict Management; Conflict management styles handout',
       tabs: [
         { title: 'Accommodating', html: `
           <p class="lead"><b>Accommodating</b> means putting the other party's needs <b>before your own</b>. You allow them to "win" and get their way.</p>
@@ -247,7 +247,7 @@ CHUNK({
             <div><span>Typical line</span>"OK, I'll meet you half way!"</div>
             <div><span>Power comes from</span><b>moderation</b> and <b>reasonableness</b></div>
           </div>
-          <p>In the handout's terms it puts moderate emphasis on both the goal and the relationship. The compromiser listens to and understands both sides, brings in several issues so everyone gets a share, and <b>splits the difference</b>, so everyone loses and wins a little. One slide notes that it is sometimes called <b>lose-lose</b>, because both sides give up a few things to agree on the larger issue.</p>
+          <p>In the handout's terms it puts moderate emphasis on both the goal and the relationship. The compromiser listens to and understands both sides, brings in several issues so everyone gets a share, and <b>splits the difference</b>, so everyone loses and wins a little. The course also notes that it is sometimes called <b>lose-lose</b>, because both sides give up a few things to agree on the larger issue.</p>
           <h3>Use it when</h3>
           <ul>
             <li>there is a <b>time crunch</b></li>
@@ -363,7 +363,7 @@ CHUNK({
       title: 'Choosing the right style',
       short: 'Choosing a style',
       blurb: 'No style fits every conflict. How to read a situation, when each style fits, what overusing a style costs, how styles combine over time, and how to justify your choice in an answer.',
-      source: 'Conflict Management slides 14, 16–33; Conflict management styles handout',
+      source: 'Conflict Management; Conflict management styles handout',
       tabs: [
         { title: 'Right tactic, right time', html: `
           <p class="lead">When it comes to conflict, <b>no one solution works in all situations</b>. Each situation is different, from the <b>trigger</b> of the conflict to the <b>parties involved</b>.</p>
@@ -374,10 +374,10 @@ CHUNK({
           </div>
           <p>This is the heart of the case-study question. The examiner is not asking "which style is best?" (none is). The question is <b>which style is best here, and why</b>.</p>
           <div class="note why"><p>Every style has a cost. Competing costs goodwill, collaborating costs time, avoiding costs progress. Choosing well means paying the cost you can afford for this conflict.</p></div>
-          <div class="note exam"><p>Use the slides' phrase in your answer: skilled conflict management is using the <b>right tactic at the right time</b> to minimise the <b>lasting effects</b> on morale, productivity and happiness.</p></div>
+          <div class="note exam"><p>Use the course's phrase in your answer: skilled conflict management is using the <b>right tactic at the right time</b> to minimise the <b>lasting effects</b> on morale, productivity and happiness.</p></div>
         ` },
         { title: 'Reading the situation', html: `
-          <p class="lead">Before picking a style, answer five quick questions. Each one comes from a "use it when" on the slides or the handout.</p>
+          <p class="lead">Before picking a style, answer five quick questions. Each one comes from a "use it when" in the notes or the handout.</p>
           <ol class="steps">
             <li><b>How important is the issue?</b> Unimportant → avoid or accommodate. Significant impact → collaborate.</li>
             <li><b>How important is the relationship?</b> Vital to preserve → collaborate (or accommodate on small things).</li>
@@ -385,11 +385,11 @@ CHUNK({
             <li><b>Who cares more, and who might be right?</b> They care more, or you might be wrong → accommodate.</li>
             <li><b>Are tempers or safety a problem?</b> Risk of harm, or people need to calm down → avoid for now, then return to it.</li>
           </ol>
-          <div class="note example"><p>Your project group can't agree on the font for the slides, the presentation is tomorrow, and you honestly don't mind. Issue: unimportant. Relationship: matters. Time: short. You care less. Answer: <b>accommodate</b>. Now change one fact: the argument is about whose data goes in the results. The issue is now important and the impact significant: <b>collaborate</b>, or <b>compromise</b> if there really is no time.</p></div>
-          <div class="note heads-up"><p>Not on the slides: turning the "use it when" lines into five check questions is our study aid. The answers it gives match the slides and the handout.</p></div>
+          <div class="note example"><p>Your project group can't agree on the font for the presentation, which is tomorrow, and you honestly don't mind. Issue: unimportant. Relationship: matters. Time: short. You care less. Answer: <b>accommodate</b>. Now change one fact: the argument is about whose data goes in the results. The issue is now important and the impact significant: <b>collaborate</b>, or <b>compromise</b> if there really is no time.</p></div>
+          <div class="note heads-up"><p>Extra: turning the "use it when" lines into five check questions is our study aid. The answers it gives match the course and the handout.</p></div>
         ` },
         { title: 'When each style fits', html: `
-          <p class="lead">Each style's own tab says when it fits. Here each one is set against the situations where it is the <b>wrong</b> choice, using the slides' examples.</p>
+          <p class="lead">Each style's own tab says when it fits. Here each one is set against the situations where it is the <b>wrong</b> choice, using the course's examples.</p>
           <ul>
             <li><b>Accommodating</b> fits when you care less than the other person, prolonging the conflict isn't worth it, or you might be wrong. Gina letting Raymond pick the campaign colours is the right use. It is the wrong choice on <b>larger or more important issues</b>, where giving way settles nothing meaningful.</li>
             <li><b>Avoiding</b> fits when the issue is unimportant, there is a risk of harm, or people need time to think or calm down. Jake and Amy's day apart worked because they came back to the problem. It is the wrong choice for <b>serious issues</b>, which grow if left and go underground.</li>
@@ -398,10 +398,10 @@ CHUNK({
             <li><b>Collaborating</b> fits when the relationship is vital to preserve or the solution will have a significant impact, as with Terry and Janet's new prototype. It is the wrong choice for <b>trivial issues</b>, or when there is <b>no time at all</b>.</li>
           </ul>
           <p>The next tab covers a different mistake: using a style in the right kind of situation, but <b>too often</b>.</p>
-          <div class="note heads-up"><p>Not on the slides: Thomas and Kilmann's own guidance adds a few more uses. <b>Competing</b> also suits emergencies and safety rules, and unpopular decisions that must be made. <b>Collaborating</b> suits merging insights from people with different views and gaining their commitment. <b>Compromising</b> is a backup when collaboration fails. <b>Avoiding</b> suits cases where others can resolve the conflict better. <b>Accommodating</b> builds goodwill you can draw on later.</p></div>
+          <div class="note heads-up"><p>Extra: Thomas and Kilmann's own guidance adds a few more uses. <b>Competing</b> also suits emergencies and safety rules, and unpopular decisions that must be made. <b>Collaborating</b> suits merging insights from people with different views and gaining their commitment. <b>Compromising</b> is a backup when collaboration fails. <b>Avoiding</b> suits cases where others can resolve the conflict better. <b>Accommodating</b> builds goodwill you can draw on later.</p></div>
         ` },
         { title: 'Overuse and its costs', html: `
-          <p class="lead">Each style is useful in the right place, but some are <b>weaker than others</b> and should <b>not be relied upon too heavily</b>. The slides name the cost of leaning on each one.</p>
+          <p class="lead">Each style is useful in the right place, but some are <b>weaker than others</b> and should <b>not be relied upon too heavily</b>. Here is the cost of leaning on each one.</p>
           <p>A manager who always…</p>
           <ul>
             <li><b>Accommodates</b> → seen as <b>weak</b>; big issues never really solved.</li>
@@ -410,7 +410,7 @@ CHUNK({
             <li><b>Competes</b> → seen as <b>unreasonable and authoritarian</b>; unhappy, unproductive staff and worse solutions.</li>
             <li><b>Collaborates</b> → <b>delays</b>, missed deadlines, fatigue and losses.</li>
           </ul>
-          <div class="note trap"><p>Writing "collaborating is always the best style" is the most common mistake on this topic. The slides say it gives the <b>best long-term results</b>, but it is also the <b>most time-consuming</b>. Always weigh both.</p></div>
+          <div class="note trap"><p>Writing "collaborating is always the best style" is the most common mistake on this topic. It does give the <b>best long-term results</b>, but it is also the <b>most time-consuming</b>. Always weigh both.</p></div>
           <p>So even collaborating needs a reason every time you recommend it. Two justifications for the course case study (the CMO's office):</p>
           <div class="vs">
             <div class="side"><h4>Weak justification</h4><p>"Collaboration is the best style, so the manager should collaborate."</p><p><small>A slogan. Collaboration is not always best.</small></p></div>
@@ -418,7 +418,7 @@ CHUNK({
           </div>
         ` },
         { title: 'Styles in sequence', html: `
-          <p class="lead">Real conflicts are rarely handled with one style from start to finish. The slides' own examples show styles <b>working in sequence</b>.</p>
+          <p class="lead">Real conflicts are rarely handled with one style from start to finish. The course's own examples show styles <b>working in sequence</b>.</p>
           <ul>
             <li><b>Avoid, then collaborate</b>: Jake and Amy's deadline is pushed back and they get a day apart. They come back in a <b>collaborative mindset</b>. The pause made the collaboration possible.</li>
             <li><b>Compromise now, collaborate later</b>: compromise "can set the stage for collaboration down the road", because both sides leave having heard each other.</li>
@@ -429,7 +429,7 @@ CHUNK({
             <div class="solve"><p>Now: stop the shouting firmly (compete on behaviour). Next: send both back to their rooms until the evening (avoid, to cool off). Evening: sit both down, hear each side, agree on quiet hours together (collaborate). If they still can't agree, split the difference: quiet from 11 pm on weekdays, midnight on weekends (compromise).</p></div>
             <div class="result"><p>Four styles, each used for the part of the conflict it suits. That is the <b>bird's-eye view</b> in practice.</p></div>
           </div>
-          <div class="note heads-up"><p>Not on the slides: the third pattern (compete on behaviour, collaborate on the issue) is our addition, built from the slides' uses of competing and collaborating. It is very useful for the course case study, where physical attacks have already happened.</p></div>
+          <div class="note heads-up"><p>Extra: the third pattern (compete on behaviour, collaborate on the issue) is our addition, built from the course's uses of competing and collaborating. It is very useful for the course case study, where physical attacks have already happened.</p></div>
         ` },
         { title: 'Worked: pick and justify', html: `
           <p class="lead">For any "which style should X use?" question, answer in four moves: <b>name the style</b>, give the <b>situation facts</b> that point to it, admit its <b>cost</b>, and say why the cost is <b>acceptable</b> here.</p>
@@ -442,7 +442,7 @@ CHUNK({
         ` },
       ],
       flashcards: [
-        { front: `The slides' phrase for no style fitting everything?`, back: `<b>No one solution</b> works in all situations.` },
+        { front: `The course's phrase for no style fitting everything?`, back: `<b>No one solution</b> works in all situations.` },
         { front: `A skilled manager takes a … view of the conflict.`, back: `A <b>bird's-eye</b> view.` },
         { front: `Two things that differ between conflict situations?`, back: `The <b>trigger</b> and the <b>parties involved</b>.` },
         { front: `Style for a time crunch where any solution beats none?`, back: `<b>Compromising</b>.` },
@@ -503,7 +503,7 @@ CHUNK({
             <li><b>Demand</b> Kumar's group asks for immediate justice: a <b>written apology</b> from Kapoor. Kapoor's group, told of it, <b>refuses</b>.</li>
             <li><b>Decision</b> wondering how to hold the meeting and end the conflict, the CMO decides to arrange a <b>direct confrontation meeting</b> between the two groups.</li>
           </ol>
-          <div class="note heads-up"><p>The case calls the CMO both "Mr. Sharma" and "Dr. Sharma". Either is accepted, but pick one and stick to it (as a CMO he is a doctor, so Dr Sharma).</p><p>Not on the slides, the standard Indian health-service abbreviations: <b>CMO</b> Chief Medical Officer, <b>Dy. CMO</b> Deputy CMO, <b>MO</b> Medical Officer, <b>BMO</b> Block Medical Officer, <b>BEE</b> Block Extension Educator, <b>LHV</b> Lady Health Visitor, <b>PHC</b> Primary Health Centre, <b>CHC</b> Community Health Centre, <b>PA</b> Personal Assistant.</p></div>
+          <div class="note heads-up"><p>The case calls the CMO both "Mr. Sharma" and "Dr. Sharma". Either is accepted, but pick one and stick to it (as a CMO he is a doctor, so Dr Sharma).</p><p>Extra: the standard Indian health-service abbreviations: <b>CMO</b> Chief Medical Officer, <b>Dy. CMO</b> Deputy CMO, <b>MO</b> Medical Officer, <b>BMO</b> Block Medical Officer, <b>BEE</b> Block Extension Educator, <b>LHV</b> Lady Health Visitor, <b>PHC</b> Primary Health Centre, <b>CHC</b> Community Health Centre, <b>PA</b> Personal Assistant.</p></div>
         ` },
         { title: 'The seven questions', html: `
           <p class="lead">The seven questions move from <b>understanding</b> the case (1 to 4) to <b>weighing options</b> (5 to 7). Finish with a recommendation.</p>
@@ -518,7 +518,7 @@ CHUNK({
             <li><b>What are their possible effects?</b> Trace each option's <b>short- and long-term effects</b>, and let them lead to your choice.</li>
           </ol>
           <div class="note why"><p>Questions 3 and 4 decide the rest. Once you know whose problem it is and what exactly they want, the options and their effects are judged against those objectives, not against your personal feelings about who was rude.</p></div>
-          <div class="note heads-up"><p>Not on the slides: the "recommend and justify" step and the four realism tests (time, power, willingness, cost) are standard case-analysis practice. The seven questions stop at effects; a CAT answer should still end with a clear choice.</p></div>
+          <div class="note heads-up"><p>Extra: the "recommend and justify" step and the four realism tests (time, power, willingness, cost) are standard case-analysis practice. The seven questions stop at effects; a CAT answer should still end with a clear choice.</p></div>
         ` },
         { title: 'Model answer: Q1 to Q4', html: `
           <p class="lead">A model analysis of the CMO office case. Questions 1 to 4 build the understanding.</p>
@@ -563,7 +563,7 @@ CHUNK({
             <li><b>Q1 to Q4</b> as short headed paragraphs or bullets: issues (trigger + underlying), importance, whose problem, objectives.</li>
             <li><b>Q5 to Q7</b> as a small table (option, Thomas-Kilmann mode, realistic?, effects) or one short block per option.</li>
             <li><b>Recommendation</b>: the chosen course, in steps, with the mode named.</li>
-            <li><b>Justification</b>: why this mode fits (the slides' "use it when"), its cost, why the cost is acceptable.</li>
+            <li><b>Justification</b>: why this mode fits (its "use it when"), its cost, why the cost is acceptable.</li>
           </ol>
           <h3>What examiners reward</h3>
           <div class="chips"><span class="chip">facts from the case in every point</span><span class="chip">trigger vs underlying issue</span><span class="chip">a named decision-maker</span><span class="chip">each option tagged with a mode</span><span class="chip">pros and cons weighed</span><span class="chip">a clear, justified choice</span><span class="chip">follow-up and prevention</span></div>
@@ -572,7 +572,7 @@ CHUNK({
             <div class="side"><h4>Strong</h4><p>"The trigger was Dr Kapoor calling Mr Kumar an idiot, but the underlying issue is the paramedical staff's sense of being suppressed. Because both groups must keep working together, the CMO should collaborate through a structured meeting, after stopping the violence firmly."</p></div>
           </div>
           <div class="note trap"><p>Three frequent slips: judging the people ("Kapoor is arrogant") instead of analysing the conflict; listing all five styles as theory without applying them; and ending on options without choosing one.</p></div>
-          <div class="note heads-up"><p>Not on the slides: this layout and the list of what examiners reward are exam technique based on the seven questions, not a marking scheme from the course.</p></div>
+          <div class="note heads-up"><p>Extra: this layout and the list of what examiners reward are exam technique based on the seven questions, not a marking scheme from the course.</p></div>
         ` },
         { title: 'Practice case', html: `
           <p class="lead">Try the method on a shorter case of our own. Work through the seven questions in the widget, then compare with the model outline.</p>

@@ -122,9 +122,9 @@
         if (!filled) { checks.innerHTML = '<p class="ew-instr">Start typing, or tap "Fill with example".</p>'; score.innerHTML = `Checks passed <b>0</b>`; return; }
         let pass = 0; const add = (ok, t, w) => { if (ok) pass++; out.push(item(ok, t, w)); };
 
-        add(filled === 5, 'All five paragraphs', filled === 5 ? 'Opening, academics, reasons, goal and closing are all there.' : `${5 - filled} field(s) still empty. The slides\' structure needs every part.`);
+        add(filled === 5, 'All five paragraphs', filled === 5 ? 'Opening, academics, reasons, goal and closing are all there.' : `${5 - filled} field(s) still empty. The SoP structure needs every part.`);
         add(GOALW.test(v.goal) && words(v.goal) >= 8, 'Goal stated', GOALW.test(v.goal) && words(v.goal) >= 8 ? 'The goal paragraph names what you want to do.' : 'Say what you want to become or build ("My goal is to…", "I plan to…"), in at least one full sentence.');
-        add(GOALW.test(v.hook), 'Goal in the opening', GOALW.test(v.hook) ? 'The opening connects to a long-term goal, as the slides advise.' : 'The slides want your long-term goal in the first paragraph too. Add one line.');
+        add(GOALW.test(v.hook), 'Goal in the opening', GOALW.test(v.hook) ? 'The opening connects to a long-term goal, as the course advises.' : 'Your long-term goal belongs in the first paragraph too. Add one line.');
         add(EVID.test(v.hook + ' ' + v.acad), 'Specific example', EVID.test(v.hook + ' ' + v.acad) ? 'There is a number or a concrete action (built, won, led…).' : 'Add a number, a named project or a result. Evidence convinces; adjectives do not.');
         const vg = findAll(VAGUE, v.why);
         add(SPEC.test(v.why) && !vg.length, 'Why this programme is specific', vg.length ? `Replace vague praise (<b>${vg.map(esc).join(', ')}</b>) with a feature: a course, lab, faculty member or the credit system.` : SPEC.test(v.why) ? 'It names a feature of the programme.' : 'Name at least one course, lab, faculty member or programme feature.');
@@ -164,7 +164,7 @@
           'I am ready for the workload, and I look forward to joining your programme.',
         ],
         label: (k) => ['Opening', 'Academics', 'Recent', 'Why here', 'Goals', 'Closing'][k],
-        why: 'The order follows the slides: <b>Part 1</b> introduce yourself and what sparked the interest; <b>Part 2</b> your academic record; <b>Part 3</b> recent and current activities; <b>Part 4</b> academic interests and why this programme; then <b>career goals</b> and a <b>closing</b> that ends positively. (The first slide deck shows Part 4 before Part 3; the second deck has the right order.)',
+        why: 'The order follows the four parts: <b>Part 1</b> introduce yourself and what sparked the interest; <b>Part 2</b> your academic record; <b>Part 3</b> recent and current activities; <b>Part 4</b> academic interests and why this programme; then <b>career goals</b> and a <b>closing</b> that ends positively. (One version of the course material shows Part 4 before Part 3; the other has the right order.)',
       });
     },
   });

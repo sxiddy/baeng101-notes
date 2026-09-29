@@ -74,7 +74,7 @@ SUMMARY({
       ],
       correct: 1,
       answer: `<p><b>A specialised encyclopedia or dictionary.</b> Reference works are named for exactly this job.</p>`,
-      explain: `<p>The definitions slides say specialised dictionaries and encyclopedias are good background sources for the history method, and the secondary sources section lists encyclopedias among reference works. An anonymous blog has no author you can check.</p>`,
+      explain: `<p>Specialised dictionaries and encyclopedias are good background sources for the history method of expanding a definition, and the secondary sources section lists encyclopedias among reference works. An anonymous blog has no author you can check.</p>`,
       points: ['history method needs background sources', 'reference works: encyclopedias', 'anonymous blog unreliable'],
     },
     {
