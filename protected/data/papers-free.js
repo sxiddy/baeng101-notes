@@ -1,28 +1,34 @@
 PAPERS({
   index: [
     { id: 'cat2-b1tb1', kind: 'actual', title: 'CAT-2 · Slot B1+TB1 · 28-09-2026', sub: 'Actual paper · Fall 2026–27' },
+    { id: 'cat2-c2tc2', kind: 'actual', title: 'CAT-2 · Slot C2+TC2 · 29-09-2026', sub: 'Actual paper · Fall 2026–27' },
     { id: 'model-01', kind: 'model', title: 'Model paper 1', sub: 'Same pattern as CAT-2 · Passage: electric vehicles' },
     { id: 'model-02', kind: 'model', title: 'Model paper 2', sub: 'Same pattern as CAT-2 · Passage: microplastics' },
     { id: 'model-03', kind: 'model', title: 'Model paper 3', sub: 'Same pattern as CAT-2 · Passage: remote work' },
     { id: 'model-04', kind: 'model', title: 'Model paper 4', sub: 'Same pattern as CAT-2 · Passage: gene editing' },
-    { id: 'model-05', kind: 'model', title: 'Model paper 5', sub: 'Same pattern as CAT-2 · Passage: space debris' }
+    { id: 'model-05', kind: 'model', title: 'Model paper 5', sub: 'Same pattern as CAT-2 · Passage: space debris' },
+    { id: 'model-06', kind: 'model', title: 'Model paper 6', sub: 'Same pattern as CAT-2 · Passage: deepfakes' },
+    { id: 'model-07', kind: 'model', title: 'Model paper 7', sub: 'Same pattern as CAT-2 · Passage: gig-work ratings' },
+    { id: 'model-08', kind: 'model', title: 'Model paper 8', sub: 'Same pattern as CAT-2 · Passage: e-waste' },
+    { id: 'model-09', kind: 'model', title: 'Model paper 9', sub: 'Same pattern as CAT-2 · Passage: urban heat islands' },
+    { id: 'model-10', kind: 'model', title: 'Model paper 10', sub: 'Same pattern as CAT-2 · Passage: antibiotic resistance' }
   ],
 
   asked: {
-    'm3-sentence-def': { where: 'Q1', what: 'define five words (password, emoji, phishing, podcast, volunteer) in about 30 words each', paper: 'cat2-b1tb1' },
-    'm3-expanded': { where: 'Q1', what: 'define five words in about 30 words each, a sentence definition plus one clarifying detail', paper: 'cat2-b1tb1' },
-    'm3-inference': { where: 'Q2', what: 'four questions on a passage about AI ethics, two of them "does the author believe / suggest … justify"', paper: 'cat2-b1tb1' },
-    'm3-inference-practice': { where: 'Q2', what: 'answer four comprehension and inference questions on an AI ethics passage, citing the text', paper: 'cat2-b1tb1' },
-    'm4-abstract': { where: 'Q3', what: 'write a 100–120-word abstract of a study on social media use and attention', paper: 'cat2-b1tb1' },
-    'm4-steps': { where: 'Q3', what: 'condense a four-paragraph study into a 100–120-word abstract', paper: 'cat2-b1tb1' },
-    'm5-tki': { where: 'Q4', what: 'a Fresher Party budget case: name each member\'s Thomas-Kilmann style and advise the president', paper: 'cat2-b1tb1' },
-    'm5-styles': { where: 'Q4', what: 'identify the styles of four council members (two competing, one avoiding, one accommodating)', paper: 'cat2-b1tb1' },
-    'm5-choosing': { where: 'Q4', what: 'advise the council president which approach will settle the budget dispute before the event', paper: 'cat2-b1tb1' },
-    'm5-case-study': { where: 'Q4', what: 'analyse a Fresher Party case study in 50–80 words per part', paper: 'cat2-b1tb1' },
-    'm5-sop-what': { where: 'Q5', what: 'write a 200–250-word SoP for a semester at Monash University through VIT\'s Study Abroad Programme', paper: 'cat2-b1tb1' },
-    'm5-sop-structure': { where: 'Q5', what: 'a 200–250-word SoP to a selection committee (study abroad semester)', paper: 'cat2-b1tb1' },
-    'm5-sop-writing': { where: 'Q5', what: 'write an SoP explaining why you should be selected for a semester at Monash University', paper: 'cat2-b1tb1' },
-    'm5-sop-tips': { where: 'Q5', what: 'a 200–250-word SoP for a study abroad semester: keep to the limit, be specific', paper: 'cat2-b1tb1' },
+    'm3-sentence-def': [{ where: 'Q1', what: 'define five words (password, emoji, phishing, podcast, volunteer) in about 30 words each', paper: 'cat2-b1tb1' }, { where: 'Q1', what: 'define five words: virtual reality, podcast, projector, calculator, temperature (2 marks each)', paper: 'cat2-c2tc2' }],
+    'm3-expanded': [{ where: 'Q1', what: 'define five words in about 30 words each, a sentence definition plus one clarifying detail', paper: 'cat2-b1tb1' }, { where: 'Q1', what: 'define five words (VR, podcast, projector, calculator, temperature), a sentence definition plus one clarifying detail', paper: 'cat2-c2tc2' }],
+    'm3-inference': [{ where: 'Q2', what: 'four questions on a passage about AI ethics, two of them "does the author believe / suggest … justify"', paper: 'cat2-b1tb1' }, { where: 'Q2', what: 'four questions on a passage about algorithmic bias, including "what can be inferred" about historical data', paper: 'cat2-c2tc2' }],
+    'm3-inference-practice': [{ where: 'Q2', what: 'answer four comprehension and inference questions on an AI ethics passage, citing the text', paper: 'cat2-b1tb1' }, { where: 'Q2', what: 'answer four stated and inference questions on an algorithmic-bias passage, with evidence', paper: 'cat2-c2tc2' }],
+    'm4-abstract': [{ where: 'Q3', what: 'write a 100–120-word abstract of a study on social media use and attention', paper: 'cat2-b1tb1' }, { where: 'Q3', what: 'write an abstract of about 100 words of a study on nighttime smartphone use and sleep quality', paper: 'cat2-c2tc2' }],
+    'm4-steps': [{ where: 'Q3', what: 'condense a four-paragraph study into a 100–120-word abstract', paper: 'cat2-b1tb1' }, { where: 'Q3', what: 'condense a five-paragraph sleep study into an abstract of about 100 words', paper: 'cat2-c2tc2' }],
+    'm5-tki': [{ where: 'Q4', what: 'a Fresher Party budget case: name each member\'s Thomas-Kilmann style and advise the president', paper: 'cat2-b1tb1' }, { where: 'Q4', what: 'a group presentation case: name the approaches of Asha, Rahul, Meera and Karan', paper: 'cat2-c2tc2' }],
+    'm5-styles': [{ where: 'Q4', what: 'identify the styles of four council members (two competing, one avoiding, one accommodating)', paper: 'cat2-b1tb1' }, { where: 'Q4', what: 'identify four styles: competing (Asha), avoiding (Rahul), collaborating (Meera), compromising (Karan)', paper: 'cat2-c2tc2' }],
+    'm5-choosing': [{ where: 'Q4', what: 'advise the council president which approach will settle the budget dispute before the event', paper: 'cat2-b1tb1' }, { where: 'Q4', what: 'whose approach best finds a solution that addresses the concerns of all four, and why', paper: 'cat2-c2tc2' }],
+    'm5-case-study': [{ where: 'Q4', what: 'analyse a Fresher Party case study in 50–80 words per part', paper: 'cat2-b1tb1' }, { where: 'Q4', what: 'analyse a group-presentation conflict case in two parts', paper: 'cat2-c2tc2' }],
+    'm5-sop-what': [{ where: 'Q5', what: 'write a 200–250-word SoP for a semester at Monash University through VIT\'s Study Abroad Programme', paper: 'cat2-b1tb1' }, { where: 'Q5', what: 'write a 200–250-word SoP for an M.Tech in AI and ML after a B.Tech in CSE', paper: 'cat2-c2tc2' }],
+    'm5-sop-structure': [{ where: 'Q5', what: 'a 200–250-word SoP to a selection committee (study abroad semester)', paper: 'cat2-b1tb1' }, { where: 'Q5', what: 'a 200–250-word SoP covering background, interest, projects, goals and how the programme helps', paper: 'cat2-c2tc2' }],
+    'm5-sop-writing': [{ where: 'Q5', what: 'write an SoP explaining why you should be selected for a semester at Monash University', paper: 'cat2-b1tb1' }, { where: 'Q5', what: 'write an M.Tech (AI and ML) SoP: academic background, projects and skills, career goals', paper: 'cat2-c2tc2' }],
+    'm5-sop-tips': [{ where: 'Q5', what: 'a 200–250-word SoP for a study abroad semester: keep to the limit, be specific', paper: 'cat2-b1tb1' }, { where: 'Q5', what: 'a 200–250-word SoP for an M.Tech in AI and ML: keep to the limit, be specific', paper: 'cat2-c2tc2' }],
     'm5-sop-samples': { where: 'Q5', what: 'an SoP for a semester abroad at a partner university (Monash)', paper: 'cat2-b1tb1' }
   },
 
@@ -249,6 +255,123 @@ PAPERS({
             <p><small>235 words</small></p>
             <div class="note exam"><p>How it was built: opening (what you are applying for and why) → background with proof (a mark, a self-started project, a lesson learnt) → why this team and what you offer them → goals and a polite close. No subheadings. An internship SoP should say what you will <b>give</b> as well as what you will get.</p></div>`,
           topics: ['m5-sop-structure', 'm5-sop-writing', 'm5-sop-tips']
+        }
+      ]
+    },
+    {
+      id: 'cat2-c2tc2', kind: 'actual', title: 'CAT-2 · Slot C2+TC2 · 29-09-2026', short: 'C2+TC2 paper', sub: 'Actual paper · Fall 2026–27',
+      meta: [['Slot', 'C2+TC2'], ['Date', '29-09-2026'], ['Duration', '90 minutes'], ['Max marks', '50'], ['Programme', 'B.Tech. (SCOPE/SCORE)']],
+      instructions: `<b>General instructions:</b> Answer All Questions. M – Max mark; CO – Course Outcome; BL – Blooms Taxonomy Level (1 – Remember, 2 – Understand, 3 – Apply, 4 – Analyse, 5 – Evaluate, 6 – Create).<br><b>Course Outcomes:</b> CO1 – Enhance Writing Skills for better publication. CO4 – Demonstrate analytical reading skills in terms of deciphering research articles. CO6 – Interpret scenarios that highlight concepts related to interpersonal communication.`,
+      questions: [
+        {
+          n: '1', marks: 10, co: '4', bl: '3',
+          prompt: `<p>Write down definitions of the following words.</p><div class="chips"><span class="chip">a) Virtual Reality (VR)</span><span class="chip">b) Podcast</span><span class="chip">c) Projector</span><span class="chip">d) Calculator</span><span class="chip">e) Temperature</span></div>`,
+          answer: `
+            <p>Each answer is a sentence definition (<b>term + class + distinguishing features</b>) followed by one clarifying phrase or example to reach about 30 words.</p>
+            <p><b>a) Virtual Reality (VR)</b> Virtual reality (VR) is a computer technology that uses a headset to place the user inside a simulated three-dimensional world they can explore and interact with, as in flight-training simulators.</p>
+            <p><b>b) Podcast</b> A podcast is a series of recorded audio episodes on one theme, released online for listeners to stream or download at any time, such as a technology talk show.</p>
+            <p><b>c) Projector</b> A projector is an optical device that receives images or video from a source such as a laptop and displays them, enlarged, on a screen or wall for an audience.</p>
+            <p><b>d) Calculator</b> A calculator is a small electronic device that performs mathematical operations such as addition, subtraction, multiplication and division when numbers are keyed in, and shows the result on a screen.</p>
+            <p><b>e) Temperature</b> Temperature is a physical quantity that shows how hot or cold a substance is, reflecting the average energy of its particles, and is measured with a thermometer in degrees Celsius.</p>
+            <table class="tbl">
+              <thead><tr><th>Term</th><th>Class</th><th>Distinguishing features</th></tr></thead>
+              <tbody>
+                <tr><td>Virtual Reality (VR)</td><td>a computer technology</td><td>a headset places the user in a simulated 3D world they can explore</td></tr>
+                <tr><td>Podcast</td><td>a series of recorded audio episodes</td><td>on one theme, streamed or downloaded and played at any time</td></tr>
+                <tr><td>Projector</td><td>an optical device</td><td>takes images from a source and shows them enlarged on a screen</td></tr>
+                <tr><td>Calculator</td><td>a small electronic device</td><td>performs mathematical operations on numbers keyed in, shows the result</td></tr>
+                <tr><td>Temperature</td><td>a physical quantity</td><td>how hot or cold a substance is, measured with a thermometer</td></tr>
+              </tbody>
+            </table>
+            <div class="note trap"><p>"A calculator is a machine used for calculating" is circular: it defines the word with its own root. "Temperature is how hot something is" has no class, and "VR is when you wear a headset" uses "is when". Name the shelf first (device, technology, quantity), then the features.</p></div>
+            <div class="note exam"><p>Two marks each. A clear class and at least two real features get most of the marks; the example or clarifying phrase brings the answer to about 30 words. Do not write a paragraph: 30 words is one or two sentences.</p></div>`,
+          topics: ['m3-sentence-def', 'm3-expanded']
+        },
+        {
+          n: '2', marks: 10, co: '4', bl: '3',
+          prompt: `<p>Read the given passage and answer the questions that follow.</p>`,
+          passage: `<p>Automated decision-making systems are increasingly used to evaluate loan applications, select job candidates, and identify potential risks. Although these systems are often presented as more objective than human decision-makers, their outputs depend heavily on the data and assumptions used to construct them. If historical data reflects unequal treatment of particular groups, an algorithm trained on that data may reproduce those patterns without explicitly being programmed to discriminate.</p>
+            <p>The problem can become more difficult to detect when an algorithm uses variables that appear neutral. For example, geographical location, purchasing behaviour, or educational history may indirectly correspond with social or economic characteristics. Removing explicitly sensitive variables therefore does not necessarily eliminate bias. Addressing algorithmic bias requires examining not only the final decisions but also the data, variables, objectives, and evaluation methods underlying the system.</p>`,
+          parts: [
+            { text: 'Why does removing explicitly sensitive variables from an algorithm not necessarily make its decisions unbiased?', marks: 2 },
+            { text: 'What can be inferred about the relationship between historical data and the decisions produced by an automated system?', marks: 2 },
+            { text: 'Explain how a variable such as geographical location could contribute to biased decision-making even when the algorithm does not directly use a person\'s social or economic identity.', marks: 3 },
+            { text: 'The passage suggests that evaluating only an algorithm\'s final decisions is insufficient. Explain why a broader examination of the system is necessary.', marks: 3 }
+          ],
+          answer: `
+            <p><b>a.</b> Because other variables that "appear neutral" can stand in for the removed ones. The passage says geographical location, purchasing behaviour or educational history "may indirectly correspond with social or economic characteristics". The algorithm can therefore still reach the same unequal results through these indirect links, which is why removing sensitive variables "does not necessarily eliminate bias".</p>
+            <p><b>b.</b> An automated system's decisions are only as fair as the historical data it learns from: it tends to repeat the past. The passage says its outputs "depend heavily on the data and assumptions used to construct them", and that if the data reflects unequal treatment, the algorithm "may reproduce those patterns". So the claim that such systems are more objective than humans is doubtful; they can carry old human bias forward.</p>
+            <p><b>c.</b> Location can act as a <b>proxy</b> for identity. Neighbourhoods often differ in income and in the communities that live there, so location "may indirectly correspond with social or economic characteristics". If people from certain areas were refused loans more often in the past, the historical data links those areas with risk. The algorithm then gives a lower score to a new applicant from that area, not because of their own record but because of where they live. A group is treated unequally even though the system never uses its identity, which is why the passage says such bias is "more difficult to detect".</p>
+            <p><b>d.</b> The final decisions show only the result, not where the bias came from. The passage says bias is harder to detect when neutral-looking variables are used, so decisions can look fair on the surface while hidden links do the damage. Bias can enter at any stage: unequal treatment in the <b>data</b>, proxy <b>variables</b>, <b>objectives</b> that reward the wrong outcome, or <b>evaluation methods</b> that check overall accuracy but not fairness across groups. That is why the author says addressing bias requires examining "not only the final decisions but also the data, variables, objectives, and evaluation methods". Only a full check finds the cause, so it can be fixed.</p>
+            <div class="note trap"><p>In answer a, do not just repeat the question ("it does not remove bias"). The marks are for the reason: neutral-looking variables act as indirect stand-ins. In answer c, "location is biased" is not an explanation; show the chain from location to income or community, to past data, to a lower score.</p></div>
+            <div class="note exam"><p>For the 2-mark parts, give the point and one quoted clue. For the 3-mark parts, give the point, the evidence from the passage, and a sentence that links them, with a short example where the question says "explain how". That is the inference method from the notes: inference, evidence, link.</p></div>`,
+          topics: ['m3-inference', 'm3-inference-practice']
+        },
+        {
+          n: '3', marks: 10, co: '1', bl: '3',
+          prompt: `<p>Read the following article and write a clear and well-structured abstract in about 100 words.</p>`,
+          passage: `<p>The widespread use of smartphones has transformed the routines of university students. Smartphones provide access to resources, communication, entertainment, and social media. However, their use during late-night hours has raised concerns about sleep quality. Poor sleep can affect students' concentration, energy levels, and routines, yet students continue to use smartphones immediately before sleeping.</p>
+            <p>A study was conducted to examine the relationship between nighttime smartphone use and sleep quality among undergraduate students. It investigated whether the duration and purpose of smartphone use before bedtime were associated with differences in students' sleep patterns and daytime functioning.</p>
+            <p>The study involved 120 undergraduate students aged 18-22 from three academic departments. Data were collected through an anonymous questionnaire recording smartphone use during the hour before bedtime, purpose of use, sleeping hours, nighttime waking, and daytime tiredness. Participants also completed a standardised sleep-quality scale. The data were analysed by comparing sleep-quality scores among students with different levels of nighttime smartphone use.</p>
+            <p>The analysis indicated an association between prolonged smartphone use before bedtime and poorer sleep quality. Students who used smartphones for more than one hour before sleeping experienced shorter sleep duration and greater daytime tiredness than those whose use was limited to thirty minutes or less. Students who primarily used their phones for social media and entertainment experienced more sleep disturbances than those who used them for academic purposes. However, the study did not establish a causal relationship, as academic workload, stress, and individual sleep habits could also influence sleep quality.</p>
+            <p>The findings suggest that nighttime smartphone use may be an important behavioural factor associated with sleep difficulties among university students. Careful awareness of the timing, duration, and purpose of smartphone use may help students develop healthier routines. Further research involving longer observation periods could determine whether reducing night-time smartphone use ultimately leads to improvements in sleep quality.</p>`,
+          answer: `
+            <h4>Model abstract</h4>
+            <p>This study examined whether the duration and purpose of bedtime smartphone use were linked to undergraduates' sleep quality. Data from 120 students aged 18–22, collected by anonymous questionnaire and a standardised sleep-quality scale, were compared across levels of pre-sleep phone use. Students using phones for over an hour slept less and were more tired by day than those limited to thirty minutes or less. Social media and entertainment use was linked with more disturbed sleep than academic use. No causal link was proven, since workload and stress also affect sleep. Night-time phone habits may therefore contribute to sleep problems; longer-term research was recommended.</p>
+            <p><small>103 words</small></p>
+            <table class="tbl">
+              <thead><tr><th>Part</th><th>Taken from</th><th>In the abstract</th></tr></thead>
+              <tbody>
+                <tr><td><b>Aim</b></td><td>paragraphs 1–2</td><td>does the length and purpose of bedtime phone use link to sleep quality</td></tr>
+                <tr><td><b>Method</b></td><td>paragraph 3</td><td>who (120 students, 18–22, three departments), how (anonymous questionnaire, standardised scale), analysis (scores compared by level of use)</td></tr>
+                <tr><td><b>Findings</b></td><td>paragraph 4</td><td>over one hour vs thirty minutes or less; social media and entertainment vs academic use; no proof of cause</td></tr>
+                <tr><td><b>Conclusion</b></td><td>paragraph 5</td><td>phone habits a possible factor; awareness may help; longer-term research needed</td></tr>
+              </tbody>
+            </table>
+            <div class="note exam"><p>How it was built: aim → method → findings → conclusion, in the past tense and third person, with the key numbers kept (120, 18–22, one hour, thirty minutes) and no opinion added. The general background about what smartphones offer was dropped; the limitation stays because it changes what the findings mean.</p></div>
+            <div class="note trap"><p>Do not write "smartphones cause poor sleep": the study found an association, not a cause, and the abstract must say so. Do not copy whole sentences from the article either; rewrite each idea in your own shorter words. "About 100 words" means roughly 90–110, not 150.</p></div>`,
+          topics: ['m4-abstract', 'm4-steps']
+        },
+        {
+          n: '4', marks: 10, co: '6', bl: '3',
+          prompt: `<p>Read the given case-study of a conflict situation and answer the questions that follow:</p>`,
+          passage: `<p>During a group presentation, Asha insists that her idea is the only one that will work and refuses to consider her teammates' suggestions. Rahul, however, chooses not to argue and remains silent, hoping the disagreement will disappear. Meera suggests that the group combine the strongest parts of everyone's ideas and work together on a solution. Meanwhile, Karan proposes that each member give up something so that the group can reach an acceptable decision quickly.</p>`,
+          parts: [
+            { text: 'Identify the different approaches to handling conflict demonstrated by Asha, Rahul, Meera, and Karan.' },
+            { text: 'If the group wants to find a solution that addresses everyone\'s concerns, whose approach would be most appropriate? Explain why.' }
+          ],
+          answer: `
+            <h4>1. Approaches</h4>
+            <p>Using the Thomas-Kilmann model, each person's style depends on how <b>assertive</b> (pushing their own concerns) and how <b>cooperative</b> (meeting others' concerns) they are.</p>
+            <table class="tbl">
+              <thead><tr><th>Person</th><th>Style</th><th>Assertive / cooperative</th><th>Evidence from the case</th></tr></thead>
+              <tbody>
+                <tr><td>Asha</td><td><b>Competing</b></td><td>high / low</td><td>insists her idea is "the only one that will work" and refuses to consider suggestions: she wants to win</td></tr>
+                <tr><td>Rahul</td><td><b>Avoiding</b></td><td>low / low</td><td>"chooses not to argue", stays silent and hopes the disagreement "will disappear": he sidesteps the conflict</td></tr>
+                <tr><td>Meera</td><td><b>Collaborating</b></td><td>high / high</td><td>wants to "combine the strongest parts of everyone's ideas" and work together: a win-win</td></tr>
+                <tr><td>Karan</td><td><b>Compromising</b></td><td>moderate / moderate</td><td>each member should "give up something" to reach an acceptable decision "quickly": everyone gains a little and loses a little</td></tr>
+              </tbody>
+            </table>
+            <h4>2. Most appropriate approach</h4>
+            <p><b>Meera's collaborating approach</b> is the best choice, because the group's aim, a solution that addresses everyone's concerns, is exactly what collaborating is for. It is both assertive and cooperative: instead of choosing one idea, the group looks for a solution that keeps the best of each.</p>
+            <p>It fits this case for four reasons. First, Asha's idea is kept, not rejected, so she has less reason to resist. Second, it draws out Rahul's silent views, so no concern stays hidden until presentation day. Third, combining the strongest parts of several ideas is likely to give a better presentation than any single idea. Fourth, members who helped build the plan feel committed to it, which keeps the team working well together.</p>
+            <p>The other approaches fall short. Competing (Asha) creates a winner and losers. Avoiding (Rahul) leaves the conflict unsolved, so it may come back later. Compromising (Karan) is quick, but everyone gives something up, so the result is only "acceptable" and satisfies no one fully. In practice, the group could list each idea's strengths, agree what the presentation must achieve, and build one plan with a role for each member. If the deadline is very close and talks stall, Karan's compromise is the sensible fallback.</p>
+            <div class="note why"><p>Karan and Meera sound similar, but they are not the same. Compromising means everyone <em>gives up</em> part of what they want to reach a quick middle point. Collaborating means the group works longer to find a solution in which everyone's concerns are <em>fully met</em>. The question asks for a solution that "addresses everyone's concerns", so the answer is Meera.</p></div>
+            <div class="note exam"><p>In part 1, name the Thomas-Kilmann style for each person and quote the words from the case that prove it; one line of evidence per person is enough. In part 2, name the person and the style, link it to the goal in the question, give two or three reasons, and say briefly why the other styles do not fit.</p></div>`,
+          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study']
+        },
+        {
+          n: '5', marks: 10, co: '1', bl: '3',
+          prompt: `<p>You have completed your B.Tech. in Computer Science and Engineering and are applying for an M.Tech. in Artificial Intelligence and Machine Learning at a leading university. Write a Statement of Purpose (200-250 words) explaining your academic background, interest in AI and ML, relevant project experience and skills, career goals, and how the postgraduate programme will help you achieve these goals.</p>`,
+          answer: `
+            <h4>Model SoP</h4>
+            <p>My interest in artificial intelligence began in my second year of B.Tech. in Computer Science and Engineering, when a simple model I wrote predicted my hostel mess's daily food waste more accurately than the staff's estimates. I have since completed my degree with a CGPA of 8.7, and I am applying for the M.Tech. in Artificial Intelligence and Machine Learning to deepen it.</p>
+            <p>Courses in linear algebra, probability and data structures gave me the base for machine learning, and I chose final-year electives in data mining and deep learning. For my final-year project, two teammates and I trained a convolutional neural network to detect early leaf disease in tomato plants from phone photographs. We collected 3,000 images from farms near our campus and raised accuracy from 78% to 91% through data augmentation and transfer learning. I work mainly in Python with PyTorch, scikit-learn and pandas. In a two-month internship at a software start-up, I built a model to flag likely order cancellations, which the team still uses.</p>
+            <p>My goal is to become a machine learning engineer who builds reliable tools for agriculture, where a correct prediction can save a farmer's crop. My projects also showed me what I still lack: methods for small, uneven datasets and for explaining a model's decisions. The programme's advanced coursework and research thesis would give me that depth and train me to test ideas rigorously. I intend to extend my leaf-disease work into an offline model for farmers' low-cost phones.</p>
+            <p><small>245 words</small></p>
+            <div class="note exam"><p>How it was built: an opening that shows where the interest began and states what you are applying for → academic background (CGPA, relevant courses and electives) → project experience with numbers (dataset size, accuracy before and after) and skills (tools named) → career goal and what is missing from your knowledge now → how the programme fills that gap and what you will do with it. Every item the question lists has its own place. No subheadings, and the first sentence of each paragraph does the heading's job.</p></div>
+            <div class="note trap"><p>"I am passionate about AI" tells; the food-waste model and the leaf-disease project show. Do not invent course names, professors or labs at the university; "advanced coursework and research thesis" is safe for any M.Tech. Keep to 200–250 words and write in the active voice ("I trained", "we collected").</p></div>`,
+          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips', 'm5-sop-samples']
         }
       ]
     }

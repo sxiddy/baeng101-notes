@@ -2092,9 +2092,12 @@ window.__startApp = function () {
   const ASKED = D.asked || {};
   const CAT2_UNTIL = Date.parse('2026-10-04T23:59:59+05:30'); // the "asked in CAT-2" note shows until CAT-2 ends
   function askedBadge(id) {
-    const a = ASKED[id];
-    if (!a || Date.now() > CAT2_UNTIL) return '';
-    return `<div class="note exam cat2-asked"><p><b>This topic was asked in CAT-2</b> (${esc(a.where)}): ${esc(a.what)}. <a href="#papers.${esc(a.paper)}">See the question paper ${icon('right')}</a></p></div>`;
+    // one entry, or a list when the topic came up in more than one slot's paper
+    const list = [].concat(ASKED[id] || []);
+    if (!list.length || Date.now() > CAT2_UNTIL) return '';
+    const slot = (x) => { const p = PAPER[x.paper] || (D.paperIndex || []).find((y) => y.id === x.paper); return p ? (p.short || p.title).replace(/ paper$/, '') : ''; };
+    const lines = list.map((x) => `${list.length > 1 ? `<b>${esc(slot(x))}</b> ` : ''}(${esc(x.where)}): ${esc(x.what)}. <a href="#papers.${esc(x.paper)}">See the question paper ${icon('right')}</a>`);
+    return `<div class="note exam cat2-asked"><p><b>This topic was asked in CAT-2</b>${list.length > 1 ? ` in ${list.length} slots` : ''}${list.length > 1 ? ':</p><p>' + lines.join('</p><p>') : ' ' + lines[0]}</p></div>`;
   }
   function viewPapers(r) {
     const p = r.arg && PAPER[r.arg];
