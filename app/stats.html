@@ -143,16 +143,25 @@
   // Permanent / Temporary switch for device limits and free access: Temporary shows an end date-time (this computer's time, IST in India)
   const whenPick = (id) => `<label class="lim">For <select id="${id}m" class="sel"><option value="p">Permanent</option><option value="t">Temporary</option></select></label><label class="lim" id="${id}w" style="display:none">until <input id="${id}u" type="datetime-local" class="sel dtp"></label>`;
   const limUntil = (l) => (l.until ? 'until ' + whenInline(l.until) : 'permanent');
-  const accessLabel = (s, x) => (x.paid ? `Paid ₹${x.paid.amount}` : x.free ? `Free · ${modsLabel(s, x.free.modules)}` : 'Module 2 only');
+  const accessLabel = (s, x) => (x.paid ? `Paid ₹${x.paid.amount}` : x.free ? `Free · ${modsLabel(s, x.free.modules)}` : 'Free module only');
   // study numbers from the student's synced progress (api/sync.js); null = never synced (older app or never studied)
   const dur = (sec) => { const m = Math.floor((+sec || 0) / 60); return m < 60 ? m + ' min' : Math.floor(m / 60) + ' h ' + (m % 60) + ' min'; };
   const studyCell = (p) => (p ? `<span class="dt"><b>${esc(dur(p.total))}</b><small>${esc(dur(p.today))} today · ${p.streak} day${p.streak === 1 ? '' : 's'} in a row · ${p.topics} topic${p.topics === 1 ? '' : 's'} done</small></span>` : '<span class="muted">not synced yet</span>');
   let shown = 5; // students list starts with 5 rows; "Show more" adds 10 at a time
+  const SF = { acc: 'all', act: 'all', sort: 'last' }; // student list filters
   function studentsHTML(s, q) {
-    const list = (s.students || []).filter((x) => !q || x.email.includes(q.toLowerCase()));
+    // search matches the email, a free-access name or note, or a payment id; the dropdowns narrow and sort the list
+    const t = q.trim().toLowerCase(), now = Date.now(), DAY = 864e5;
+    const names = Object.fromEntries((s.free || []).map((g) => [g.email, String(g.name || '').toLowerCase()])), ts = (v) => Date.parse(v) || 0;
+    const hit = (x) => !t || x.email.includes(t) || (names[x.email] || '').includes(t) || (x.paid && x.paid.id && String(x.paid.id).toLowerCase().includes(t));
+    const accOk = (x) => ({ all: true, paid: !!x.paid, free: !x.paid && !!x.free, none: !x.paid && !x.free, full: !!(x.paid || x.free) })[SF.acc];
+    const ago = (x) => (ts(x.lastSeen) ? now - ts(x.lastSeen) : Infinity);
+    const actOk = (x) => ({ all: true, today: ago(x) < DAY, week: ago(x) < 7 * DAY, idle: ago(x) >= 30 * DAY, never: !ts(x.lastSeen) && !(x.progress && x.progress.total) })[SF.act];
+    const key = { last: (x) => -ts(x.lastSeen), first: (x) => -ts(x.first), study: (x) => -((x.progress && x.progress.total) || 0), visits: (x) => -(x.visits || 0), email: (x) => x.email }[SF.sort];
+    const list = (s.students || []).filter((x) => hit(x) && accOk(x) && actOk(x)).sort((a, b) => { const ka = key(a), kb = key(b); return ka < kb ? -1 : ka > kb ? 1 : 0; });
     if (!list.length) {
       const e = q.trim().toLowerCase();
-      return /^[a-z0-9._%+-]+@vitstudent.ac.in$/.test(e) ? `<p class="muted">${esc(e)} isn't in the list (never signed in, paid or given free access). <button class="btn small" data-look-email="${esc(e)}">Look up anyway</button></p>` : `<p class="muted">${q ? 'No student matches that.' : 'Nobody has signed in yet.'}</p>`;
+      return /^[a-z0-9._%+-]+@vitstudent.ac.in$/.test(e) ? `<p class="muted">${esc(e)} isn't in the list (never signed in, paid or given free access). <button class="btn small" data-look-email="${esc(e)}">Look up anyway</button></p>` : `<p class="muted">${q || SF.acc !== 'all' || SF.act !== 'all' ? 'No student matches that. Try clearing the search or setting the filters back to Everyone / Any activity.' : 'Nobody has signed in yet.'}</p>`;
     }
     const rows = list.slice(0, shown).map((x) => `<tr><td><button class="linkish" data-look-email="${esc(x.email)}">${esc(x.email)}</button></td><td>${esc(accessLabel(s, x))}</td><td>${x.first ? when(x.first) : x.early ? '<span class="muted">before tracking started</span>' : '<span class="muted">not yet</span>'}</td><td>${x.lastSeen ? when(x.lastSeen) : '—'}</td><td>${studyCell(x.progress)}</td><td>${x.visits}</td><td>${x.logins}</td><td style="white-space:nowrap">${x.phones} phone${x.phones === 1 ? '' : 's'} · ${x.pcs} PC${x.pcs === 1 ? '' : 's'}</td></tr>`);
     return '<p class="muted" style="margin:-4px 0 10px;font-size:13.5px">Click a student to see their payments and devices, and to change their access.</p>' + tbl(['Student email', 'Access', 'First sign-in (IST)', 'Last used (IST)', 'Study', 'Visits', 'Sign-ins', 'Devices'], rows) + `<p class="srow-more">${list.length > shown ? `<button class="btn small" data-more>Show more</button>` : ''}${shown > 5 ? `<button class="btn small ghost" data-less>Show less</button>` : ''}<span class="muted">Showing ${Math.min(shown, list.length)} of ${list.length}</span></p>`;
@@ -199,7 +208,11 @@
       </div>
 
       ${s.storage ? `<section class="sum-sec"><h2 class="h-sec">Students <small>${(s.students || []).length} students · ${(s.students || []).filter((x) => x.logins || x.lastSeen || x.early).length} signed in · ${(s.students || []).filter((x) => x.paid).length} paid · ${(s.students || []).filter((x) => x.free).length} free access</small></h2>
-        <p class="row srow" style="margin:0 0 12px"><input id="sq" type="search" placeholder="Search by email" style="min-width:260px"><button class="btn" id="scsv">Download CSV</button></p>
+        <p class="row srow" style="margin:0 0 12px"><input id="sq" type="search" placeholder="Search email, name or payment id" style="min-width:260px">
+          <select id="sfa" class="sel" aria-label="Access"><option value="all">Everyone</option><option value="paid">Paid</option><option value="free">Free access</option><option value="full">Paid or free access</option><option value="none">No access yet</option></select>
+          <select id="sfb" class="sel" aria-label="Activity"><option value="all">Any activity</option><option value="today">Active today</option><option value="week">Active this week</option><option value="idle">Not seen for 30+ days</option><option value="never">Never used</option></select>
+          <select id="sfs" class="sel" aria-label="Sort"><option value="last">Sort: last used</option><option value="first">Sort: newest sign-in</option><option value="study">Sort: most study time</option><option value="visits">Sort: most visits</option><option value="email">Sort: email A–Z</option></select>
+          <button class="btn" id="scsv">Download CSV</button></p>
         <div id="slist">${studentsHTML(s, '')}</div>
       </section>` : ''}
 
@@ -323,6 +336,7 @@
     if ($('#slist')) {
       wireStudents();
       $('#sq').addEventListener('input', () => { shown = 5; redrawStudents(); });
+      [['#sfa', 'acc'], ['#sfb', 'act'], ['#sfs', 'sort']].forEach(([sel, k]) => { $(sel).value = SF[k]; $(sel).addEventListener('change', (e) => { SF[k] = e.target.value; shown = 5; redrawStudents(); }); });
       $('#scsv').addEventListener('click', () => studentsCSV(s));
     }
 
