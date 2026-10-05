@@ -10,6 +10,8 @@
 //     set-price { rupees }               normal price for new payments
 //     set-sale { rupees, hours, text? } / end-sale   temporary price that ends by itself, with an optional message
 //     set-banner { text, on }            announcement shown at the top of the site
+//     set-paused { on, text? }           pause payments: the paywall shows a notice instead of the Pay button
+//     set-business { name }              the business name shown on the terms, refund and contact pages
 //     feedback-status { id, status }     mark a Help? request or an idea open / fixed / ignored
 //     reply { id, text }                 answer a Help? request or an idea: saved in hash replies and sent to the
 //                                        student's inbox (list inbox:<email>, read with GET /api/feedback)
@@ -17,7 +19,7 @@
 //     bulk-limits { emails: [...], phones, pcs, until? }        the same device limit for many students
 //     approve-reset { email } / decline-reset { email }   a student's device reset request (hash "devreq")
 const crypto = require('crypto');
-const { send, body, env, safeEqual, razorpay, isOurs, settings, MAX_DEVICES, deviceKeys, normEmail, isStudentEmail, DOMAIN, ownerCookie, parseLimits, limitUntil, handle } = require('./_lib');
+const { send, body, env, safeEqual, razorpay, isOurs, settings, MAX_DEVICES, deviceKeys, normEmail, isStudentEmail, DOMAIN, ownerCookie, parseLimits, limitUntil, reviewOn, handle } = require('./_lib');
 const store = require('./_store');
 const { paidModules = [] } = require('./_access.json');
 
@@ -90,6 +92,16 @@ module.exports = handle(async (req, res) => {
       if (typeof b.free === 'boolean') cmds.push(['HSET', 'config', 'access', b.free ? 'free' : 'paid']);
       if (!cmds.length) return send(res, 400, { error: 'Nothing to change.' });
       await store.pipeline(cmds);
+      return send(res, 200, { ok: true });
+    }
+    if (a === 'set-paused') {
+      const text = String(b.text || '').split('').filter((ch) => ch.charCodeAt(0) >= 32).join('').trim().slice(0, 240);
+      await store.pipeline([b.on ? ['HSET', 'config', 'paused', JSON.stringify({ on: true, text })] : ['HDEL', 'config', 'paused']]);
+      return send(res, 200, { ok: true });
+    }
+    if (a === 'set-business') {
+      const name = String(b.name || '').split('').filter((ch) => ch.charCodeAt(0) >= 32).join('').trim().slice(0, 120);
+      await store.pipeline([name ? ['HSET', 'config', 'business', name] : ['HDEL', 'config', 'business']]);
       return send(res, 200, { ok: true });
     }
     if (a === 'feedback-status') {
@@ -249,7 +261,7 @@ module.exports = handle(async (req, res) => {
     const freeBy = Object.fromEntries(free.map((f) => [f.email, f]));
     // students who signed in before this list existed only left a device record ("devices:<email>:<kind>")
     const early = (dk || []).map((k) => k.slice(k.indexOf(':') + 1, k.lastIndexOf(':'))).filter(isStudentEmail);
-    const emails = [...new Set([...Object.keys(first), ...Object.keys(paidBy), ...Object.keys(freeBy), ...early])].slice(0, 2000);
+    const emails = [...new Set([...Object.keys(first), ...Object.keys(paidBy), ...Object.keys(freeBy), ...early])].filter(isStudentEmail).slice(0, 2000); // not the Razorpay reviewer account
     const dc = emails.length ? await store.pipeline(emails.flatMap((e) => deviceKeys(e).map((k) => ['ZCARD', k]))) : [];
     students = emails.map((e, i) => {
       const p = paidBy[e] != null ? parseJSON(paidBy[e], {}) : null;
@@ -271,7 +283,7 @@ module.exports = handle(async (req, res) => {
     signin: cfg.signin !== false, freeAll: !!cfg.freeAll,
     price: cfg.normalPrice / 100,
     sale: cfg.sale ? { rupees: cfg.sale.price / 100, until: new Date(cfg.sale.until).toISOString(), text: cfg.sale.text || '' } : null,
-    banner,
+    banner, paused: cfg.paused, business: cfg.business || '', reviewOn: reviewOn(),
     payments: {
       count: pays.length,
       revenue: pays.reduce((a, p) => a + p.amount, 0) / 100,

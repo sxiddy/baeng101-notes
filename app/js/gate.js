@@ -31,6 +31,7 @@
   }
   // e.g. 28-09-2026 11:30 PM, in Indian time
   const offerEnds = (ms) => { const d = new Date(ms + 5.5 * 3600e3), h = d.getUTCHours(); return String(d.getUTCDate()).padStart(2, '0') + '-' + String(d.getUTCMonth() + 1).padStart(2, '0') + '-' + d.getUTCFullYear() + ' ' + String(h % 12 || 12).padStart(2, '0') + ':' + String(d.getUTCMinutes()).padStart(2, '0') + (h < 12 ? ' AM' : ' PM'); };
+  const legal = '<a href="terms.html" style="color:inherit">Terms</a> · <a href="refund.html" style="color:inherit">Refunds</a> · <a href="contact.html" style="color:inherit">Contact</a> · <a href="privacy.html" style="color:inherit">Privacy</a>';
   const reload = () => { history.replaceState(null, '', location.pathname); location.reload(); };
   async function signOut() { try { await api('/api/login', { logout: true }); } catch (e) { /* ignore */ } reload(); }
   window.__signOut = signOut;
@@ -55,7 +56,8 @@
           <div id="gsi" class="gate-gsi"></div>
           ${S.devLogin ? `<form id="dev-login" class="gate-dev"><label>Local test only: sign in as<input id="dev-email" value="test@${esc(domain)}"></label><button class="btn" type="submit">Sign in (dev)</button></form>` : ''}
           <p class="gate-msg" id="gate-msg" role="alert">${msg ? esc(msg) : ''}</p>
-          <p class="gate-muted gate-small">Only …@${esc(domain)} accounts are accepted. Staff and personal Gmail accounts can't sign in. Your account works on 1 phone + 1 laptop/PC. <a href="privacy.html" style="color:inherit">Privacy</a></p>
+          <p class="gate-muted gate-small">Only …@${esc(domain)} accounts are accepted. Staff and personal Gmail accounts can't sign in. Your account works on 1 phone + 1 laptop/PC.</p>
+          <p class="gate-muted gate-small gate-legal">${legal}</p>
         </div>
       </div>`;
     const out = document.getElementById('gate-msg');
@@ -130,7 +132,8 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.6"/><path d="M1.5 20h21"/></svg>
             <p><b>Works on 1 phone + 1 laptop/PC only.</b> Your payment is tied to <b>${esc(S.user || '')}</b>. Sign in with it on one phone and one computer. A second phone or a second PC won't open.</p>
           </div>
-          <button class="btn primary gate-pay" id="gate-pay">Pay ₹${rs} with UPI</button>
+          ${S.reviewer ? '<div class="gate-offer-note" role="note"><b>Reviewer account.</b> You can see the payment page and open the UPI checkout. The paid modules stay locked for this account, even after a test payment.</div>' : ''}
+          ${S.paused ? `<div class="gate-offer-note" role="note"><b>Payments are paused for now.</b> ${esc(S.paused.text || 'Please check back soon. The free modules still work.')}</div>` : `<button class="btn primary gate-pay" id="gate-pay">Pay ₹${rs} with UPI</button>`}
           <p class="gate-msg" id="gate-msg" role="alert">${msg ? esc(msg) : ''}</p>
           <p class="gate-muted gate-small">Paid but still locked? Wait a minute and reload this page, or use Restore access.</p>
           <p class="gate-muted gate-small">Google Pay, PhonePe, Paytm, BHIM or any UPI ID. After paying, just sign in with the same student account on your other device.</p>
@@ -152,6 +155,7 @@
           </details>
           <p class="gate-signed">Signed in as ${esc(S.user || '')} · <button type="button" class="linkish" id="gate-out">Sign out</button></p>
           <p style="margin-top:14px"><a class="btn ghost" href="./" id="gate-back">← Back to the free ${freeNames()}</a></p>
+          <p class="gate-muted gate-small gate-legal">One-time payment for access to these notes. ${legal}</p>
         </div>
       </div>`;
     const payBtn = document.getElementById('gate-pay'), out = document.getElementById('gate-msg');
@@ -179,6 +183,7 @@
       checking = false;
       say('No completed payment found yet. If money was taken from your account, reload this page in a few minutes (it unlocks by itself) or use "Restore access" below.');
     }
+    if (!payBtn) return wireForms(); // payments paused
     try { const pend = JSON.parse(localStorage.getItem(PENDING) || 'null'); if (pend && Date.now() - pend.t < 60 * 60e3) checkOrder(pend.id, 'Checking your last payment…'); else forget(); } catch (e) { /* ignore */ }
     payBtn.addEventListener('click', async () => {
       payBtn.disabled = true; say('Opening UPI checkout…');
@@ -218,6 +223,8 @@
         rzp.open();
       } catch (e) { say(e.message); payBtn.disabled = false; }
     });
+    wireForms();
+    function wireForms() {
     document.getElementById('gate-reset').addEventListener('submit', async (e) => {
       e.preventDefault();
       say('Sending your request…');
@@ -230,6 +237,7 @@
       try { await api('/api/restore', { paymentId: document.getElementById('gate-pid').value.trim() }); say('Access restored.'); reload(); }
       catch (err) { say(err.message); }
     });
+    }
   }
 
   (async () => {

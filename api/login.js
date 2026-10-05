@@ -4,8 +4,10 @@
 //   Full-page flow (default): Google POSTs a form { credential, g_csrf_token } here; we answer with a redirect to
 //   the site (or back to the sign-in screen with ?login_error=...). The device id comes from the bn_dev cookie.
 //   JSON flow: POST { credential | devEmail, deviceId } -> { ok, email } (devEmail only with DEV_LOGIN=1, never on Vercel).
+//   Reviewer: POST { reviewUser, reviewCode } from /review.html -> the Razorpay website reviewer's account (see _lib.js);
+//   only when REVIEW_CODE is set in Vercel, and at most 10 tries an hour per address (30 an hour in total).
 //   Sign out: POST { logout: true } (also /api/logout) -> clears this browser's sign-in (their device slot stays theirs).
-const { send, handle, verifyGoogle, isStudentEmail, normEmail, deviceIdFrom, claimDevice, userCookie, clearUserCookie, safeEqual, DOMAIN } = require('./_lib');
+const { send, handle, verifyGoogle, safeEqual: same, REVIEW_EMAIL, reviewerCookie, isStudentEmail, normEmail, deviceIdFrom, claimDevice, userCookie, clearUserCookie, safeEqual, DOMAIN } = require('./_lib');
 
 const cookies = (req) => Object.fromEntries((req.headers.cookie || '').split(/;\s*/).filter(Boolean).map((c) => { const i = c.indexOf('='); return [c.slice(0, i), decodeURIComponent(c.slice(i + 1))]; }));
 
@@ -36,11 +38,30 @@ async function signIn(req, b, deviceId) {
   return { email, cookie: userCookie(email, dev) };
 }
 
+async function reviewSignIn(req, b) {
+  const code = process.env.REVIEW_CODE;
+  if (!code) return { status: 403, error: 'Reviewer sign-in is switched off.' };
+  const store = require('./_store');
+  if (store.configured()) {
+    const ip = String(req.headers['x-forwarded-for'] || (req.socket && req.socket.remoteAddress) || '').split(',')[0].trim().slice(0, 64);
+    const [mine, , all] = await store.pipeline([['INCR', 'revtry:' + ip], ['EXPIRE', 'revtry:' + ip, 3600], ['INCR', 'revtry'], ['EXPIRE', 'revtry', 3600]]);
+    if (mine > 10 || all > 30) return { status: 429, error: 'Too many tries. Please wait an hour and try again.' };
+  }
+  const user = String(b.reviewUser || '').trim().toLowerCase();
+  if (user !== REVIEW_EMAIL || !same(String(b.reviewCode || ''), code)) return { status: 401, error: 'Wrong username or access code.' };
+  return { status: 200, cookie: reviewerCookie() };
+}
+
 module.exports = handle(async (req, res) => {
   if (req.method !== 'POST') return send(res, 405, { error: 'POST only' });
   const b = await readBody(req);
   const c = cookies(req);
   if (b.logout || /[?&]out=1/.test(req.url || '')) return send(res, 200, { ok: true }, { 'Set-Cookie': clearUserCookie() });
+
+  if (b.reviewCode !== undefined) {
+    const r = await reviewSignIn(req, b);
+    return r.cookie ? send(res, 200, { ok: true, email: REVIEW_EMAIL }, { 'Set-Cookie': r.cookie }) : send(res, r.status, { error: r.error });
+  }
 
   if (b.g_csrf_token !== undefined) { // Google's full-page redirect
     const back = (err, cookie) => {

@@ -248,6 +248,14 @@
           <textarea id="bt" maxlength="240" placeholder="e.g. CAT-2 revision notes for Module 4 are up!" class="ann">${esc(B.text || '')}</textarea>
           <p class="row" style="margin-top:8px"><button class="btn primary" data-ban="1">${B.on ? 'Update announcement' : 'Show announcement'}</button>${B.on ? '<button class="btn ghost" data-ban="0">Hide it</button>' : ''} <span class="muted" style="font-size:13.5px;align-self:center">${B.on ? 'Showing now' : 'Not showing'}</span></p>
           <p class="msg" id="bm"></p></form>
+        <div class="sale"><div class="note-label">Payments</div>
+          ${s.paused ? `<p><b>Payments are paused.</b> Students see a notice instead of the Pay button${s.paused.text ? ': "' + esc(s.paused.text) + '"' : ''}. Free modules and everyone who already paid work as usual.</p>` : `<p class="muted">Payments are on. Pause them (for example while Razorpay reviews the website) and the payment page shows a notice instead of the Pay button.</p>`}
+          <label class="muted" for="pzt" style="font-size:13.5px;display:block">Notice on the payment page (optional)</label><input id="pzt" class="ann-line" maxlength="240" placeholder="e.g. Payments are paused for a few hours while we update the site." value="${esc(s.paused ? s.paused.text : '')}">
+          <p class="row" style="margin-top:8px"><button class="btn ${s.paused ? '' : 'primary'}" data-pz="1">${s.paused ? 'Update notice' : 'Pause payments'}</button>${s.paused ? '<button class="btn primary" data-pz="0">Turn payments back on</button>' : ''}</p><p class="msg" id="pzm"></p></div>
+        <div class="sale"><div class="note-label">Legal pages</div>
+          <p class="muted">The business name shown on the <a href="terms.html" target="_blank" style="color:inherit">terms</a>, <a href="refund.html" target="_blank" style="color:inherit">refund</a> and <a href="contact.html" target="_blank" style="color:inherit">contact</a> pages. Use exactly the name on your Razorpay account.</p>
+          <form class="row" id="bzf"><input id="bzn" class="ann-line" maxlength="120" placeholder="Name on the Razorpay account" value="${esc(s.business || '')}" style="flex:1;min-width:0"><button class="btn">Save name</button></form><p class="msg" id="bzm"></p>
+          <p class="muted" style="font-size:13.5px;margin-top:8px">Razorpay reviewer sign-in (<a href="review.html" target="_blank" style="color:inherit">review.html</a>, username review@baeng101): <b>${s.reviewOn ? 'on' : 'off'}</b>. ${s.reviewOn ? 'It uses the REVIEW_CODE you set in Vercel. Delete that variable (and redeploy) to switch it off.' : 'To switch it on, add an environment variable REVIEW_CODE (the access code you give Razorpay) in Vercel and redeploy.'}</p></div>
       </section>` : ''}
 
       <section class="sum-sec"><h2 class="h-sec">Payments per day <small>last 30 days</small></h2>${bars(p30)}</section>
@@ -390,6 +398,17 @@
       try { await post({ action: 'set-banner', text: $('#bt').value, on: b.dataset.ban === '1' }); $('#bm').textContent = b.dataset.ban === '1' ? 'Showing on the site now.' : 'Hidden.'; setTimeout(load, 1200); }
       catch (err) { $('#bm').textContent = err.message; }
     }));
+
+    $$('[data-pz]').forEach((b) => b.addEventListener('click', async (e) => {
+      e.preventDefault(); $('#pzm').textContent = 'Saving…';
+      try { await post({ action: 'set-paused', on: b.dataset.pz === '1', text: $('#pzt').value }); $('#pzm').textContent = b.dataset.pz === '1' ? 'Payments paused.' : 'Payments are on again.'; setTimeout(load, 1200); }
+      catch (err) { $('#pzm').textContent = err.message; }
+    }));
+    if ($('#bzf')) $('#bzf').addEventListener('submit', async (e) => {
+      e.preventDefault(); $('#bzm').textContent = 'Saving…';
+      try { await post({ action: 'set-business', name: $('#bzn').value }); $('#bzm').textContent = 'Saved. The legal pages show it now.'; }
+      catch (err) { $('#bzm').textContent = err.message; }
+    });
 
     // mistake reports
     const repaintFeedback = () => { ['help', 'idea'].forEach((x) => { if ($('#fbl-' + x)) $('#fbl-' + x).innerHTML = feedbackHTML(s, x); }); wireFeedback(); };
