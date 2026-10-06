@@ -3,7 +3,7 @@
 const { send, razorpay, settings, env, getUser, handle } = require('./_lib');
 module.exports = handle(async (req, res) => {
   if (req.method !== 'POST') return send(res, 405, { error: 'POST only' });
-  if (process.env.STORE_URL) return send(res, 403, { error: 'Pro is bought on Notix: ' + process.env.STORE_URL });
+  if (process.env.STORE_URL) return send(res, 403, { error: 'Pro is bought on Notes Pro: ' + process.env.STORE_URL });
   const u = getUser(req);
   if (!u) return send(res, 401, { error: 'Please sign in with your VIT student account first.' });
   const { price, paused } = await settings();
