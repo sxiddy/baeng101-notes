@@ -83,6 +83,24 @@ function isOwner(req) {
   return !!(t && t.p === 'owner');
 }
 
+// Pro bought on the Notes Pro store (STORE_URL): asked server-to-server with STORE_SECRET. A yes is remembered for a
+// minute, a no for 5 seconds, so a student who just paid is unlocked almost at once and the store is not hit on every request.
+const STORE_CODE = 'BAENG101';
+const STORE_CACHE = new Map();
+async function storePaid(email) {
+  const url = process.env.STORE_URL, secret = process.env.STORE_SECRET;
+  if (!url || !secret || !email) return false;
+  const hit = STORE_CACHE.get(email);
+  if (hit && hit.until > Date.now()) return hit.paid;
+  let paid = false;
+  try {
+    const r = await fetch(url.replace(/\/$/, '') + '/api/entitlement?product=' + STORE_CODE + '&email=' + encodeURIComponent(email), { headers: { Authorization: 'Bearer ' + secret }, signal: AbortSignal.timeout(3000) });
+    if (r.ok) paid = !!(await r.json()).paid; else return false;
+  } catch (e) { return false; } // store unreachable: do not lock or unlock anyone because of it
+  STORE_CACHE.set(email, { paid, until: Date.now() + (paid ? 60e3 : 5e3) });
+  return paid;
+}
+
 // Who can see the paid modules: the owner, a student whose email paid (hash "paid"), or one on the owner's free
 // list (hash "free"; removing them locks them out straight away, and a temporary grant has an "until" time). A free grant can be limited to some modules;
 // then .modules lists them (null = everything).
@@ -100,6 +118,7 @@ async function hasAccess(req) {
   if (!(await deviceActive(u, req))) return null;
   const [paid, free] = await store.pipeline([['HGET', 'paid', u.e], ['HGET', 'free', u.e]]);
   if (paid != null) return { email: u.e, paid: true, modules: null };
+  if (await storePaid(u.e)) return { email: u.e, paid: true, modules: null, store: true };
   if (free == null) return null;
   let x = {}; try { x = JSON.parse(free) || {}; } catch (e) {}
   if (x.until && x.until <= Date.now()) { await store.pipeline([['HDEL', 'free', u.e]]); return null; } // temporary grant ended

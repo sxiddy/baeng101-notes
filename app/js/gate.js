@@ -112,8 +112,31 @@
     }
   }
 
+  // Pro is bought on the Notes Pro store: send the student there (signed in, with this subject highlighted)
+  function storeGate() {
+    const go = S.storeUrl + '/?subject=' + encodeURIComponent(S.storeCode);
+    root.innerHTML = `
+      <div class="gate">
+        <div class="gate-card">
+          <div class="gate-eyebrow">${esc(S.storeCode)} · ${esc(S.storeName)}</div>
+          <h1 class="gate-title">${esc(S.storeCode)} Pro</h1>
+          <p class="gate-lead">The notes stay free. Pro adds the study tools: interactive models, the question bank, quizzes, flashcards, formula sheets and more. Pro is bought on <b>Notes Pro</b>, one payment per subject with UPI, and it opens here as soon as you are back.</p>
+          <p><a class="btn primary gate-pay" id="gate-store" href="${esc(go)}">Get Pro on Notes Pro</a></p>
+          <p class="gate-muted gate-small">Sign in there with the same student account (<b>${esc(S.user || '')}</b>). After paying, come back to this page and reload it.</p>
+          <p><button class="btn" type="button" id="gate-reload">I have paid, reload</button></p>
+          <p class="gate-signed">Signed in as ${esc(S.user || '')} · <button type="button" class="linkish" id="gate-out">Sign out</button></p>
+          <p style="margin-top:14px"><a class="btn ghost" href="./" id="gate-back">← Back to the notes</a></p>
+          <p class="gate-muted gate-small gate-legal">${legal}</p>
+        </div>
+      </div>`;
+    funnel('paywall');
+    document.getElementById('gate-out').addEventListener('click', signOut);
+    document.getElementById('gate-reload').addEventListener('click', () => reload());
+  }
+
   // ---------------------------------------------------------------- pay
   function paywall(msg) {
+    if (S.storeUrl && S.user) return storeGate();
     if (!S.user) { // sign-in is switched off, and payments are tied to a student account
       root.innerHTML = '<div class="gate"><div class="gate-card"><h1 class="gate-title">Payments are paused</h1><p class="gate-muted">Unlocking needs a student account, and sign-in is switched off right now. The free modules are open to everyone.</p><p style="margin-top:14px"><a class="btn ghost" href="./">← Back to the notes</a></p></div></div>';
       return;
