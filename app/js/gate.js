@@ -112,7 +112,7 @@
     }
   }
 
-  // Pro is bought on the Notes Pro store: send the student there (signed in, with this subject highlighted)
+  // Pro is bought on the Notix store: send the student there (signed in, with this subject highlighted)
   function storeGate() {
     const go = S.storeUrl + '/?subject=' + encodeURIComponent(S.storeCode);
     root.innerHTML = `
@@ -120,8 +120,8 @@
         <div class="gate-card">
           <div class="gate-eyebrow">${esc(S.storeCode)} · ${esc(S.storeName)}</div>
           <h1 class="gate-title">${esc(S.storeCode)} Pro</h1>
-          <p class="gate-lead">The notes stay free. Pro adds the study tools: interactive models, the question bank, quizzes, flashcards, formula sheets and more. Pro is bought on <b>Notes Pro</b>, one payment per subject with UPI, and it opens here as soon as you are back.</p>
-          <p><a class="btn primary gate-pay" id="gate-store" href="${esc(go)}">Get Pro on Notes Pro</a></p>
+          <p class="gate-lead">The notes stay free. Pro adds the study tools: interactive models, the question bank, quizzes, flashcards, formula sheets and more. Pro is bought on <b>Notix</b>, one payment per subject with UPI, and it opens here as soon as you are back.</p>
+          <p><a class="btn primary gate-pay" id="gate-store" href="${esc(go)}">Get Pro on Notix</a></p>
           <p class="gate-muted gate-small">Sign in there with the same student account (<b>${esc(S.user || '')}</b>). After paying, come back to this page and reload it.</p>
           <p><button class="btn" type="button" id="gate-reload">I have paid, reload</button></p>
           <p class="gate-signed">Signed in as ${esc(S.user || '')} · <button type="button" class="linkish" id="gate-out">Sign out</button></p>

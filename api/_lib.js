@@ -83,7 +83,7 @@ function isOwner(req) {
   return !!(t && t.p === 'owner');
 }
 
-// Pro bought on the Notes Pro store (STORE_URL): asked server-to-server with STORE_SECRET. A yes is remembered for a
+// Pro bought on the Notix store (STORE_URL): asked server-to-server with STORE_SECRET. A yes is remembered for a
 // minute, a no for 5 seconds, so a student who just paid is unlocked almost at once and the store is not hit on every request.
 const STORE_CODE = 'BAENG101';
 const STORE_CACHE = new Map();
