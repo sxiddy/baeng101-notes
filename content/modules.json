@@ -15,7 +15,7 @@
     "id": "m4",
     "num": "04",
     "title": "Writing",
-    "free": false,
+    "free": true,
     "chunks": [
       "C"
     ],
@@ -26,7 +26,7 @@
     "id": "m5",
     "num": "05",
     "title": "Interpersonal Communication",
-    "free": false,
+    "free": true,
     "chunks": [
       "D",
       "E"

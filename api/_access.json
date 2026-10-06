@@ -4,24 +4,27 @@
   "chunk-B.js",
   "q-M3.js",
   "summary-m3.js",
+  "chunk-C.js",
+  "q-M4.js",
+  "summary-m4.js",
+  "chunk-D.js",
+  "chunk-E.js",
+  "q-M5.js",
+  "q-M5b.js",
+  "summary-m5.js",
   "papers-free.js",
+  "viz-m4.js",
+  "viz-m5a.js",
+  "viz-m5b.js",
+  "papers-paid.js",
   "figs.js"
  ],
  "freeModules": [
-  "m3"
+  "m3",
+  "m4",
+  "m5"
  ],
- "paidModules": [
-  {
-   "id": "m4",
-   "num": "04",
-   "title": "Writing"
-  },
-  {
-   "id": "m5",
-   "num": "05",
-   "title": "Interpersonal Communication"
-  }
- ],
+ "paidModules": [],
  "fileModule": {
   "chunk-A.js": "m3",
   "chunk-B.js": "m3",
