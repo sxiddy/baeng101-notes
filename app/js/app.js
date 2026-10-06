@@ -783,6 +783,23 @@ window.__startApp = function () {
   }
 
   // ---------------------------------------------------------------- home
+  // Subjects (owner, 30-09-2026): one card per subject site, searchable; this subject opens here, the others link out.
+  // Thumbnails are small line drawings in the theme colours, so they work in dark and light mode.
+  const SUBJECTS = [
+    { code: 'BACHY105', name: 'Applied Chemistry', href: 'https://bachy105.vercel.app', words: 'chemistry batteries fuel cells solar semiconductors nanomaterials quantum dots coolants spectroscopy uv vis xrd',
+      art: '<path d="M44 14v18L28 62h48L60 32V14" class="dsg"/><path d="M40 14h24" class="dsg"/><path d="M34 50h36" class="dsb"/><circle cx="48" cy="56" r="3" class="dsb"/><circle cx="58" cy="54" r="2" class="dsb"/>' },
+    { code: 'BAEEE101', name: 'Basic Engineering', href: 'https://baeee101.vercel.app', words: 'electrical circuits machines electronics communication graphics cad manufacturing energy mechanical',
+      art: '<path d="M10 40h14l5-10 8 20 8-20 8 20 5-10h12" class="dsb"/><circle cx="96" cy="40" r="14" class="dso"/><path d="M88 40h16M96 32v16" class="dso"/>' },
+    { code: 'BAENG101', name: 'Technical English', href: '#home', here: true, words: 'english communication writing grammar reading',
+      art: '<path d="M20 18h30q8 0 8 8v40q0-8-8-8H20z" class="dsp"/><path d="M96 18H66q-8 0-8 8v40q0-8 8-8h30z" class="dsp"/><path d="M28 30h20M28 40h20M68 30h20M68 40h14" class="dsy"/>' },
+  ];
+  function subjectCard(x) {
+    const mods = MODULES.filter((m) => m.topics.length).length;
+    return `<a class="subj" href="${x.href}"${x.here ? '' : ' rel="noopener"'} data-words="${esc((x.code + ' ' + x.name + ' ' + x.words).toLowerCase())}">
+      <svg viewBox="0 0 116 76" class="subj-art" aria-hidden="true" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">${x.art}</svg>
+      <span class="subj-txt"><small>${x.code}</small><strong>${esc(x.name)}</strong><span>${x.here ? `${mods} module${mods === 1 ? '' : 's'} · you are here` : 'Opens its own site'}</span></span>
+      <span class="subj-tags"><span class="tag-free">Free notes</span><span class="pro-tag">Pro</span></span></a>`;
+  }
   function viewHome() {
     setCrumbs([{ t: 'Home' }]); setActive('home'); document.title = 'BAENG101 Notes';
     const d = doneIn(TOPICS), n = TOPICS.length;
@@ -800,6 +817,11 @@ window.__startApp = function () {
         <div class="stat-line"><span class="stat-big">${d}/${n}</span><span class="muted">topics done</span><div class="bar"><i style="width:${n ? (d / n) * 100 : 0}%"></i></div><button class="btn small" data-act="share">${icon('share')}Share progress</button></div>
         <div class="study-line">${icon('fire')}<span><b>${streakDays()}</b> day${streakDays() === 1 ? '' : 's'} in a row</span><span class="dot">·</span><span><b>${fmtDur(todaySecs())}</b> today</span><span class="dot">·</span><span><b>${fmtDur(totalSecs())}</b> in total</span></div>
         ${last ? `<div class="continue"><a class="btn primary" href="${last.hash}">Continue: ${rt(last.title)} ${icon('right')}</a></div>` : (TOPICS[0] ? `<div class="continue"><a class="btn primary" href="#${TOPICS[0].id}">Start with ${rt(TOPICS[0].title)} ${icon('right')}</a></div>` : '')}
+      </section>
+      <section class="subjects">
+        <div class="subj-head"><h2 class="h-sub">Subjects</h2><input class="subj-search" type="search" placeholder="Search subjects" aria-label="Search subjects" data-subjq></div>
+        <div class="subj-list">${SUBJECTS.map(subjectCard).join('')}</div>
+        <p class="muted subj-none" hidden>No subject matches. Notes for more subjects are on the way.</p>
       </section>
       <div class="how">
         <div><h3>Read tab by tab</h3><p>Each topic is split into small tabs. Arrow keys move between them, and a topic ticks itself once every tab has been opened.</p></div>
@@ -838,6 +860,12 @@ window.__startApp = function () {
         <p class="muted">Progress, tags, highlights and notes follow your student account, so they show up on your phone and your laptop. A backup makes a copy you can keep.</p>
         <div class="btn-row"><button class="btn" data-act="backup">${icon('db')}Back up or restore</button></div>
       </section>`;
+    const q = $('[data-subjq]', el);
+    q.addEventListener('input', () => {
+      const v = q.value.trim().toLowerCase(); let shown = 0;
+      $$('.subj', el).forEach((c) => { const ok = !v || v.split(/s+/).every((w) => c.dataset.words.includes(w)); c.hidden = !ok; shown += ok; });
+      $('.subj-none', el).hidden = !!shown;
+    });
     return { el };
   }
 

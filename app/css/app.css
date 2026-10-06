@@ -1174,3 +1174,21 @@ body.open-mode .sb-label:has(+ [data-act="ideas"]) { display: none !important; }
 .music-hint a { color: var(--text-2); }
 .music-ctl .m-stop { display: inline-block; width: 9px; height: 9px; border-radius: 1.5px; background: currentColor; vertical-align: middle; }
 @media (max-width: 420px) { .focus-bar { gap: 6px; padding-left: 10px; } .focus-bar > svg { display: none; } .focus-len { padding: 0 5px; } }
+
+.subjects { margin: 8px 0 34px; }
+.subj-head { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+.subj-head .h-sub { margin: 0; }
+.subj-search { flex: 1 1 180px; min-width: 0; padding: 9px 12px; border-radius: 10px; border: 1px solid var(--line-2); background: var(--bg-2); color: var(--text); font: inherit; font-size: 15px; }
+.subj-list { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.subj { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 4px 14px; align-items: center; padding: 12px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--bg-2); text-decoration: none; color: var(--text); }
+.subj[hidden] { display: none; }
+.subj:hover { border-color: var(--line-2); background: var(--surface); }
+.subj-art { width: 76px; height: 50px; grid-row: span 2; }
+.subj-art .dsb { stroke: var(--dg-b); } .subj-art .dso { stroke: var(--dg-o); } .subj-art .dsg { stroke: var(--dg-g); } .subj-art .dsp { stroke: var(--dg-p); } .subj-art .dsy { stroke: var(--dg-y); }
+.subj-txt small { display: block; font: 500 12px var(--mono); color: var(--text-dim); }
+.subj-txt strong { display: block; color: var(--white); font-size: 16px; }
+.subj-txt > span { display: block; font-size: 13px; color: var(--text-dim); }
+.subj-tags { display: flex; gap: 6px; }
+.subj-tags .pro-tag { margin-left: 0; }
+.tag-free { font: 600 11px/1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 7px; border-radius: 6px; background: var(--surface-2); color: var(--text); }
+.subj-pro { margin: 10px 0 0; font-size: 15px; } .subj-pro a { color: var(--text); }
