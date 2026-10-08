@@ -53,7 +53,7 @@ module.exports = handle(async (req, res) => {
   const key = req.headers['x-admin-key'] || '';
   // the store reads these numbers server-to-server with the shared STORE_SECRET (read-only: GET only)
   const viaStore = req.method === 'GET' && !!process.env.STORE_SECRET && safeEqual(String(req.headers.authorization || ''), 'Bearer ' + process.env.STORE_SECRET);
-  if (!viaStore && (!key || !safeEqual(key, env('ADMIN_KEY')))) return send(res, 401, { error: 'Wrong admin key.', dbg: { ss: String(process.env.STORE_SECRET || '').length } });
+  if (!viaStore && (!key || !safeEqual(key, env('ADMIN_KEY')))) return send(res, 401, { error: 'Wrong admin key.' });
 
   if (req.method === 'POST') {
     const b = await body(req);
