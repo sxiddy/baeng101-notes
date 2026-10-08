@@ -51,7 +51,7 @@ function progress(p) {
 
 module.exports = handle(async (req, res) => {
   const key = req.headers['x-admin-key'] || '';
-  if (!key || !safeEqual(key, env('ADMIN_KEY'))) return send(res, 401, { error: 'Wrong admin key.', dbg: { want: String(process.env.ADMIN_KEY || '').length, got: String(key).length } });
+  if (!key || !safeEqual(key, env('ADMIN_KEY'))) return send(res, 401, { error: 'Wrong admin key.' });
 
   if (req.method === 'POST') {
     const b = await body(req);
