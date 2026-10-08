@@ -194,7 +194,7 @@ module.exports = handle(async (req, res) => {
     }
 
     // lookup
-    const mine = (await paidPayments(20)).filter((p) => normEmail((p.notes || {}).email) === email);
+    const mine = (await paidPayments(20).catch(() => [])).filter((p) => normEmail((p.notes || {}).email) === email);
     const [paidRaw, freeRaw, limRaw, ...counts] = await store.pipeline([['HGET', 'paid', email], ['HGET', 'free', email], ['HGET', 'limits', email], ...deviceKeys(email).map((k) => ['ZCARD', k])]);
     const pd = paidRaw != null ? parseJSON(paidRaw, {}) : null;
     let fr = freeRaw != null ? parseJSON(freeRaw, {}) : null;
@@ -212,7 +212,7 @@ module.exports = handle(async (req, res) => {
     });
   }
 
-  const [pays, cfg] = await Promise.all([paidPayments(10), settings()]);
+  const [pays, cfg] = await Promise.all([paidPayments(10).catch(() => []), settings()]);
   const byDay = {};
   pays.forEach((p) => { const d = istDay(p.created_at * 1000); byDay[d] = (byDay[d] || 0) + 1; });
   let visits = null, views = null, feedback = null, free = [], limits = [], quiz = [], confusing = [], funnel = null, banner = null, students = [], resetRequests = [], battles = null;
