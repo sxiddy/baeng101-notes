@@ -88,7 +88,7 @@ window.__startApp = function () {
 
   // ================================================================ store
   const KEY = 'baeng101-notes:v1';
-  function blank() { return { visited: {}, done: {}, tags: {}, notes: {}, hl: {}, q: {}, cards: {}, confusing: {}, study: {}, syl: {}, last: null, ui: { closed: {}, lastTab: {} } }; }
+  function blank() { return { visited: {}, done: {}, tags: {}, notes: {}, hl: {}, q: {}, cards: {}, confusing: {}, study: {}, syl: {}, resets: {}, last: null, ui: { closed: {}, lastTab: {} } }; }
   function normalize(s) {
     const b = blank();
     if (!s || typeof s !== 'object') return b;
@@ -175,6 +175,21 @@ window.__startApp = function () {
     if (!isDone(t.id) && v.length >= t.tabs.length) { S.done[t.id] = true; completed = true; }
     save();
     return completed;
+  }
+  // Clears one module's progress in a saved copy X: topic and summary ticks, question and quiz results, known flashcards,
+  // "confusing" flags. Notes, highlights, tags, study time and syllabus ticks are the student's own and stay.
+  function wipeModule(X, mid) {
+    const m = MOD[mid]; if (!m) return;
+    const keys = m.topics.map((t) => t.id).concat(mid + '-summary');
+    keys.forEach((k) => { delete X.visited[k]; delete X.done[k]; delete X.confusing[k]; if (X.ui && X.ui.lastTab) delete X.ui.lastTab[k]; });
+    QS.forEach((q) => { if (q.module === mid) delete X.q[q.id]; });
+    CARDS.forEach((c) => { if (c.module === mid) delete X.cards[c.key]; });
+    if (X.last && X.last.hash && keys.some((k) => X.last.hash === '#' + k || String(X.last.hash).indexOf('#' + k + '.') === 0)) X.last = null;
+  }
+  function resetModule(mid) {
+    wipeModule(S, mid);
+    S.resets[mid] = Date.now(); // lets the other devices and the saved copy follow the reset instead of undoing it
+    save();
   }
 
   // ================================================================ shell
@@ -892,9 +907,17 @@ window.__startApp = function () {
           <a class="btn" href="#questions.${m.id}">${icon('q')}Questions <span class="n">${nq}</span></a>
           <a class="btn" href="#cards.${m.id}">${icon('cards')}Flashcards <span class="n">${nc}</span></a>
           <a class="btn" href="#quiz.${m.id}">${icon('quiz')}Quiz</a>
+          <button class="btn ghost" type="button" data-reset-mod title="Start this module again from zero">${icon('trash')}Reset progress</button>
         </div>
       </div>
       <div>${m.topics.map(topicRow).join('')}${summaryRow(m)}</div>`;
+    $('[data-reset-mod]', el).addEventListener('click', () => {
+      if (!confirm(`Reset your progress in Module ${+m.num}?\n\nThis clears its topic ticks, question and quiz results, known flashcards and "confusing" flags, so you can start the module again. Your notes, highlights, tags and study time stay.`)) return;
+      resetModule(m.id);
+      if (window.SIGNED_IN_AS && syncOn) { syncDirty = true; syncPush(); }
+      refreshAll();
+      toast(`Module ${+m.num} progress reset`, 'trash');
+    });
     return { el };
   }
 
@@ -1916,6 +1939,11 @@ window.__startApp = function () {
   const uniq = (a, b) => Array.from(new Set([].concat(Array.isArray(a) ? a : [], Array.isArray(b) ? b : [])));
   function mergeProgress(L, R) {
     R = normalize(R);
+    // a module reset wins over older progress on the other side: the newer reset is applied here, or the other side's old progress is ignored
+    new Set(Object.keys(obj(L.resets)).concat(Object.keys(obj(R.resets)))).forEach((mid) => {
+      const lr = +L.resets[mid] || 0, rr = +R.resets[mid] || 0;
+      if (rr > lr) { wipeModule(L, mid); L.resets[mid] = rr; } else if (lr > rr) wipeModule(R, mid);
+    });
     for (const k in R.visited) L.visited[k] = uniq(L.visited[k], R.visited[k]);
     for (const k in R.done) if (R.done[k]) L.done[k] = true;
     for (const k in R.study) L.study[k] = Math.max(+L.study[k] || 0, +R.study[k] || 0);
