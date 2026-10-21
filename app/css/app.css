@@ -1203,3 +1203,7 @@ body.open-mode .sb-label:has(+ [data-act="ideas"]) { display: none !important; }
   .music-dock:not(.open) { max-height: none; overflow: visible; }
   .music-player iframe { max-width: 100%; }
 }
+
+/* "Reset progress" on each module heading of the home page: pushed to the right edge, quiet until hovered */
+.mod-head .mod-reset { margin-left: auto; align-self: center; color: var(--text-faint); }
+.mod-head .mod-reset:hover { color: var(--text); }

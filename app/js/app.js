@@ -191,6 +191,16 @@ window.__startApp = function () {
     S.resets[mid] = Date.now(); // lets the other devices and the saved copy follow the reset instead of undoing it
     save();
   }
+  // every "Reset progress" button (home page, module page) carries its module id in data-reset-mod
+  document.addEventListener('click', (e) => {
+    const b = e.target.closest && e.target.closest('[data-reset-mod]'); const m = b && MOD[b.getAttribute('data-reset-mod')];
+    if (!m) return;
+    if (!confirm(`Reset your progress in Module ${+m.num}?\n\nThis clears its topic ticks, question and quiz results, known flashcards and "confusing" flags, so you can start the module again. Your notes, highlights, tags and study time stay.`)) return;
+    resetModule(m.id);
+    if (window.SIGNED_IN_AS && syncOn) { syncDirty = true; syncPush(); }
+    refreshAll();
+    toast(`Module ${+m.num} progress reset`, 'trash');
+  });
 
   // ================================================================ shell
   const app = h('div', { class: 'app' + (S.ui.sbCollapsed ? ' sb-collapsed' : '') });
@@ -845,7 +855,7 @@ window.__startApp = function () {
       </div>
       ${MODULES.filter((m) => m.topics.length).map((m) => `
         <section class="mod-sec">
-          <div class="mod-head"><span class="mod-num">Module ${m.num}</span><h2 class="h-sec"><a href="#${m.id}" style="text-decoration:none">${esc(m.title)}</a></h2><span class="count">${doneIn(m.topics)}/${m.topics.length} done</span></div>
+          <div class="mod-head"><span class="mod-num">Module ${m.num}</span><h2 class="h-sec"><a href="#${m.id}" style="text-decoration:none">${esc(m.title)}</a></h2><span class="count">${doneIn(m.topics)}/${m.topics.length} done</span><button class="btn small ghost mod-reset" type="button" data-reset-mod="${m.id}" title="Start this module again from zero">${icon('trash')}Reset progress</button></div>
           <p class="mod-syl">${esc(m.syllabus)}</p>
           <div>${m.topics.map(topicRow).join('')}${summaryRow(m)}</div>
         </section>`).join('')}
@@ -907,17 +917,10 @@ window.__startApp = function () {
           <a class="btn" href="#questions.${m.id}">${icon('q')}Questions <span class="n">${nq}</span></a>
           <a class="btn" href="#cards.${m.id}">${icon('cards')}Flashcards <span class="n">${nc}</span></a>
           <a class="btn" href="#quiz.${m.id}">${icon('quiz')}Quiz</a>
-          <button class="btn ghost" type="button" data-reset-mod title="Start this module again from zero">${icon('trash')}Reset progress</button>
+          <button class="btn ghost" type="button" data-reset-mod="${m.id}" title="Start this module again from zero">${icon('trash')}Reset progress</button>
         </div>
       </div>
       <div>${m.topics.map(topicRow).join('')}${summaryRow(m)}</div>`;
-    $('[data-reset-mod]', el).addEventListener('click', () => {
-      if (!confirm(`Reset your progress in Module ${+m.num}?\n\nThis clears its topic ticks, question and quiz results, known flashcards and "confusing" flags, so you can start the module again. Your notes, highlights, tags and study time stay.`)) return;
-      resetModule(m.id);
-      if (window.SIGNED_IN_AS && syncOn) { syncDirty = true; syncPush(); }
-      refreshAll();
-      toast(`Module ${+m.num} progress reset`, 'trash');
-    });
     return { el };
   }
 
