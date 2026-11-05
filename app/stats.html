@@ -176,7 +176,7 @@
   function lookupHTML(s, r) {
     const d = r.devices, l = r.limits, st = (s.students || []).find((x) => x.email === r.email), p = st && st.progress;
     return `<div class="look">
-      <div class="look-row"><span>Payments</span><div>${r.payments.length ? r.payments.map((p) => `₹${p.amount} on ${whenInline(p.at)} <code>${esc(p.id)}</code>`).join('<br>') : '<span class="muted">No payment from this student</span>'}</div></div>
+      <div class="look-row"><span>Payments</span><div>${r.notixError ? '<span class="muted">Could not ask Notix: ' + esc(r.notixError) + '</span><br>' : ''}${r.payments.length ? r.payments.map((p) => `₹${p.amount} on ${whenInline(p.at)} <code>${esc(p.id)}</code>${p.via ? ' · on ' + esc(p.via) : ''}${p.status && p.status !== 'paid' ? ' · ' + esc(p.status) : ''}`).join('<br>') : '<span class="muted">No payment from this student</span>'}</div></div>
       <div class="look-row"><span>Free access</span><div>${r.free ? `Yes${r.free.name ? ', ' + esc(r.free.name) : ''} · ${esc(modsLabel(s, r.free.modules))} · since ${whenInline(r.free.at)} · ${limUntil(r.free)}` : '<span class="muted">No</span>'}</div></div>
       <div class="look-row"><span>Study</span><div>${p ? `${esc(dur(p.total))} in total · ${esc(dur(p.today))} today · ${p.streak} day${p.streak === 1 ? '' : 's'} in a row · ${p.topics} topic${p.topics === 1 ? '' : 's'} and ${p.mods} module${p.mods === 1 ? '' : 's'} done <span class="muted">(synced ${whenInline(p.at)})</span>` : '<span class="muted">Not synced yet</span>'}</div></div>
       <div class="look-row"><span>Devices in use</span><div>${d.phones} of ${l.phones} phone${l.phones === 1 ? '' : 's'} · ${d.pcs} of ${l.pcs} laptop${l.pcs === 1 ? '' : 's'}/PC${l.pcs === 1 ? '' : 's'} ${l.custom ? '<span class="pill-tag">custom limit, ' + limUntil(l) + '</span>' : '<span class="muted">(default)</span>'}</div></div>
@@ -185,6 +185,23 @@
         <button class="btn small ghost" data-look="limits">Change device limits…</button>
         <button class="btn small ghost" data-look="reset">Reset devices</button>
       </div></div>`;
+  }
+
+  // where the sales numbers come from (Notix sells Pro for every subject), and anything paid here before Notix
+  function salesNote(s) {
+    const P = s.payments || {};
+    if (P.source !== 'notix') return '';
+    if (P.notixError) return `<div class="note heads-up"><div class="note-label">Could not read sales from Notix: ${esc(P.notixError)}</div><p>Sales numbers are blank until it answers. Check that <code>STORE_URL</code> and <code>STORE_SECRET</code> in Vercel → Settings → Environment Variables match the Notix project, then reload.</p></div>`;
+    const B = P.before || { count: 0, revenue: 0 };
+    return `<p class="muted" style="margin:-4px 0 14px;font-size:13.5px">Sales are read live from Notix, so they match the Notix admin page for this subject${P.manual ? ` (plus ${P.manual} given Pro by hand there, not counted as sales)` : ''}.${B.count ? ` Before Notix, this site took ${B.count} payment${B.count === 1 ? '' : 's'} directly (₹${B.revenue.toLocaleString('en-IN')}); those are listed under Recent payments as "this site".` : ''}</p>`;
+  }
+  // modules and question papers on the site, from api/_content.json (rebuilt by every build), with how they are used
+  function contentHTML(s) {
+    const C = s.content || { modules: [], papers: [] };
+    const mods = C.modules.length ? tbl(['Module', 'Topics opened', 'Topic views', 'Questions', 'Quiz answers', 'Right'], C.modules.map((m) => `<tr><td><b>Module ${+m.num}</b> · ${esc(m.title)}</td><td>${m.opened} of ${m.topics}</td><td>${m.views.toLocaleString('en-IN')}</td><td>${m.questions}</td><td>${m.answered.toLocaleString('en-IN')}</td><td>${m.answered ? Math.round(100 * m.right / m.answered) + '%' : '—'}</td></tr>`)) : '<p class="muted">No modules yet.</p>';
+    const kind = (k) => (k === 'actual' ? 'Actual paper' : k === 'model' ? 'Model paper' : esc(k || 'Paper'));
+    const papers = C.papers.length ? tbl(['Paper', 'Type', 'Questions', 'Open to'], C.papers.map((p) => `<tr><td>${esc(p.title)}${p.sub ? '<br><span class="muted" style="font-size:13px">' + esc(p.sub) + '</span>' : ''}</td><td>${kind(p.kind)}</td><td>${p.questions || '—'}</td><td>${p.access === 'free' ? 'Everyone' : 'Pro'}</td></tr>`)) : '<p class="muted">No question papers on the site yet.</p>';
+    return `<section class="sum-sec"><h2 class="h-sec">Content <small>${C.modules.length} module${C.modules.length === 1 ? '' : 's'} · ${C.papers.length} paper${C.papers.length === 1 ? '' : 's'}</small></h2><p class="muted" style="font-size:13.5px">Follows content/modules.json and content/papers-*.js: a module or paper you add shows up here after the next build.</p>${mods}<h3 style="margin:18px 0 8px;font-size:15px">Question papers</h3>${papers}</section>`;
   }
 
   function render(s) {
@@ -201,11 +218,12 @@
 
 
       <div class="kpis">
-        <div><div class="v">${s.payments.count}</div><div class="l">paid users</div></div>
-        <div><div class="v">₹${s.payments.revenue.toLocaleString('en-IN')}</div><div class="l">collected</div></div>
-        <div><div class="v">₹${s.payments.fees.toLocaleString('en-IN')}</div><div class="l">Razorpay fees</div></div>
+        <div><div class="v">${s.payments.count == null ? '—' : s.payments.count}</div><div class="l">paid users</div></div>
+        <div><div class="v">${s.payments.revenue == null ? '—' : '₹' + s.payments.revenue.toLocaleString('en-IN')}</div><div class="l">collected</div></div>
+        ${s.payments.source === 'notix' ? `<div><div class="v">${s.payments.refunded == null ? '—' : '₹' + s.payments.refunded.toLocaleString('en-IN')}</div><div class="l">refunded${s.payments.refunds ? ' · ' + s.payments.refunds : ''}</div></div>` : `<div><div class="v">₹${s.payments.fees.toLocaleString('en-IN')}</div><div class="l">Razorpay fees</div></div>`}
         <div><div class="v">${s.storage ? visitors : '—'}</div><div class="l">visitors, last 30 days</div></div>
       </div>
+      ${salesNote(s)}
 
       ${s.storage ? `<section class="sum-sec"><h2 class="h-sec">Students <small>${(s.students || []).length} students · ${(s.students || []).filter((x) => x.logins || x.lastSeen || x.early).length} signed in · ${(s.students || []).filter((x) => x.paid).length} paid · ${(s.students || []).filter((x) => x.free).length} free access</small></h2>
         <p class="row srow" style="margin:0 0 12px"><input id="sq" type="search" placeholder="Search email, name or payment id" style="min-width:260px">
@@ -274,7 +292,9 @@
       ${s.storage ? `<section class="sum-sec"><h2 class="h-sec">Help? requests <small>mistakes, suggestions, problems</small></h2><div id="fbl-help">${feedbackHTML(s, 'help')}</div></section>` : ''}
       ${s.storage ? `<section class="sum-sec"><h2 class="h-sec">Ideas from students</h2><div id="fbl-idea">${feedbackHTML(s, 'idea')}</div></section>` : ''}
 
-      <section class="sum-sec"><h2 class="h-sec">Recent payments</h2>${s.payments.recent.length ? tbl(['When (IST)', 'Student', 'Amount', 'Payment ID'], s.payments.recent.map((p) => `<tr><td>${when(p.at)}</td><td>${esc(p.email)}</td><td>₹${esc(p.amount)}</td><td><code>${esc(p.id)}</code></td></tr>`)) : '<p class="muted">No payments yet.</p>'}</section>
+      <section class="sum-sec"><h2 class="h-sec">Recent payments</h2>${s.payments.recent.length ? tbl(['When (IST)', 'Student', 'Amount', 'Payment ID'].concat(s.payments.source === 'notix' ? ['Paid on'] : []), s.payments.recent.map((p) => `<tr><td>${when(p.at)}</td><td>${esc(p.email)}</td><td>₹${esc(p.amount)}${p.bundle ? ' <span class="muted">(share of a cart)</span>' : ''}${p.status === 'refunded' ? ' <span class="muted">refunded</span>' : ''}</td><td><code>${esc(p.id)}</code></td>${s.payments.source === 'notix' ? `<td>${esc(p.via || '')}</td>` : ''}</tr>`)) : '<p class="muted">No payments yet.</p>'}</section>
+
+      ${contentHTML(s)}
 
       <section class="sum-sec"><h2 class="h-sec">Free access <small>${(s.free || []).length}</small></h2>
         <p class="muted">Add a VIT student email and that student gets the ticked modules free. Nothing for them to do: it unlocks as soon as they sign in with that account. Same device limit as payers (1 phone + 1 laptop/PC unless you change it below). Remove them and access stops right away.</p>

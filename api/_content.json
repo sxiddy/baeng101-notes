@@ -1,0 +1,126 @@
+{
+ "modules": [
+  {
+   "id": "m3",
+   "num": "03",
+   "title": "Reading",
+   "free": true,
+   "topics": 8,
+   "questions": 63
+  },
+  {
+   "id": "m4",
+   "num": "04",
+   "title": "Writing",
+   "free": true,
+   "topics": 5,
+   "questions": 41
+  },
+  {
+   "id": "m5",
+   "num": "05",
+   "title": "Interpersonal Communication",
+   "free": true,
+   "topics": 10,
+   "questions": 87
+  }
+ ],
+ "papers": [
+  {
+   "id": "cat2-b1tb1",
+   "kind": "actual",
+   "title": "CAT-2 · Slot B1+TB1 · 28-09-2026",
+   "sub": "Actual paper · Fall 2026–27",
+   "questions": 5,
+   "access": "free"
+  },
+  {
+   "id": "cat2-c2tc2",
+   "kind": "actual",
+   "title": "CAT-2 · Slot C2+TC2 · 29-09-2026",
+   "sub": "Actual paper · Fall 2026–27",
+   "questions": 5,
+   "access": "free"
+  },
+  {
+   "id": "model-01",
+   "kind": "model",
+   "title": "Model paper 1",
+   "sub": "Same pattern as CAT-2 · Passage: electric vehicles",
+   "questions": 5,
+   "access": "free"
+  },
+  {
+   "id": "model-02",
+   "kind": "model",
+   "title": "Model paper 2",
+   "sub": "Same pattern as CAT-2 · Passage: microplastics",
+   "questions": 5,
+   "access": "pro"
+  },
+  {
+   "id": "model-03",
+   "kind": "model",
+   "title": "Model paper 3",
+   "sub": "Same pattern as CAT-2 · Passage: remote work",
+   "questions": 5,
+   "access": "pro"
+  },
+  {
+   "id": "model-04",
+   "kind": "model",
+   "title": "Model paper 4",
+   "sub": "Same pattern as CAT-2 · Passage: gene editing",
+   "questions": 5,
+   "access": "pro"
+  },
+  {
+   "id": "model-05",
+   "kind": "model",
+   "title": "Model paper 5",
+   "sub": "Same pattern as CAT-2 · Passage: space debris",
+   "questions": 5,
+   "access": "pro"
+  },
+  {
+   "id": "model-06",
+   "kind": "model",
+   "title": "Model paper 6",
+   "sub": "Same pattern as CAT-2 · Passage: deepfakes",
+   "questions": 5,
+   "access": "pro"
+  },
+  {
+   "id": "model-07",
+   "kind": "model",
+   "title": "Model paper 7",
+   "sub": "Same pattern as CAT-2 · Passage: gig-work ratings",
+   "questions": 5,
+   "access": "pro"
+  },
+  {
+   "id": "model-08",
+   "kind": "model",
+   "title": "Model paper 8",
+   "sub": "Same pattern as CAT-2 · Passage: e-waste",
+   "questions": 5,
+   "access": "pro"
+  },
+  {
+   "id": "model-09",
+   "kind": "model",
+   "title": "Model paper 9",
+   "sub": "Same pattern as CAT-2 · Passage: urban heat islands",
+   "questions": 5,
+   "access": "pro"
+  },
+  {
+   "id": "model-10",
+   "kind": "model",
+   "title": "Model paper 10",
+   "sub": "Same pattern as CAT-2 · Passage: antibiotic resistance",
+   "questions": 5,
+   "access": "pro"
+  }
+ ]
+}

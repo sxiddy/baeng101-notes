@@ -21,6 +21,7 @@
 const crypto = require('crypto');
 const { send, body, env, safeEqual, razorpay, isOurs, settings, MAX_DEVICES, deviceKeys, normEmail, isStudentEmail, DOMAIN, ownerCookie, parseLimits, limitUntil, reviewOn, handle } = require('./_lib');
 const store = require('./_store');
+const { notixSales, contentStats } = require('./_notix');
 const { paidModules = [] } = require('./_access.json');
 
 async function paidPayments(pages) {
@@ -36,6 +37,25 @@ async function paidPayments(pages) {
   return out;
 }
 const iso = (sec) => new Date(sec * 1000).toISOString();
+
+// Sales for the admin page. When this subject sells on Notix (STORE_URL set), the numbers are Notix's, exactly as the
+// Notix admin page shows them for this subject; payments made on this site directly (before Notix) are listed apart
+// in "before". If Notix cannot be asked, the totals are null and the page says why, rather than showing wrong numbers.
+function salesSummary(pays, nx, byDay) {
+  const direct = { count: pays.length, revenue: pays.reduce((a, p) => a + p.amount, 0) / 100, fees: pays.reduce((a, p) => a + (p.fee || 0), 0) / 100 };
+  const directRecent = pays.map((p) => ({ at: iso(p.created_at), email: normEmail((p.notes || {}).email) || '(before sign-in)', id: p.id, amount: p.amount / 100, via: nx.on ? 'this site' : '' }));
+  if (!nx.on) return { source: 'site', ...direct, byDay, recent: directRecent.slice(0, 15) };
+  const ok = !nx.error, t = nx.totals || {};
+  const nxRecent = (nx.payments || []).filter((p) => p.status === 'paid' || p.status === 'refunded')
+    .map((p) => ({ at: p.at, email: p.email, id: p.id, amount: (p.amount || 0) / 100, via: 'Notix', status: p.status, bundle: !!p.bundle }));
+  return {
+    source: 'notix', notixError: nx.error || null,
+    count: ok ? t.count : null, revenue: ok ? t.revenue / 100 : null, manual: ok ? t.manual : null,
+    refunds: ok ? t.refunds : null, refunded: ok ? t.refunded / 100 : null,
+    fees: direct.fees, before: direct, byDay,
+    recent: [...nxRecent, ...directRecent].sort((a, b) => String(b.at).localeCompare(String(a.at))).slice(0, 30),
+  };
+}
 const feedbackId = (x) => x.id || crypto.createHash('sha1').update(String(x.at) + '|' + String(x.text)).digest('hex').slice(0, 12);
 const parseJSON = (s, d) => { try { return JSON.parse(s) ?? d; } catch (e) { return d; } };
 const IST = 5.5 * 3600e3; // days in Indian time
@@ -202,9 +222,12 @@ module.exports = handle(async (req, res) => {
     const lim = parseLimits(limRaw);
     const payments = mine.map((p) => ({ id: p.id, at: iso(p.created_at), amount: p.amount / 100 }));
     if (pd && pd.id && !payments.some((p) => p.id === pd.id)) payments.push({ id: pd.id, at: pd.at, amount: (pd.amount || 0) / 100 }); // e.g. an older payment claimed by ID
+    const nx = await notixSales(email);
+    (nx.payments || []).forEach((p) => payments.push({ id: p.id || (p.manual ? 'given by hand on Notix' : ''), at: p.at, amount: (p.amount || 0) / 100, via: 'Notix', status: p.status }));
     return send(res, 200, {
       email,
-      paid: !!pd,
+      paid: !!pd || (nx.payments || []).some((p) => p.status === 'paid' || p.status === 'manual'),
+      notixError: nx.error || null,
       payments,
       free: fr ? { name: fr.name || '', at: fr.at || '', modules: fr.modules || null, until: fr.until ? new Date(fr.until).toISOString() : null } : null,
       limits: { phones: lim.phone, pcs: lim.pc, custom: limRaw != null && !lim.expired, until: lim.until ? new Date(lim.until).toISOString() : null },
@@ -212,9 +235,14 @@ module.exports = handle(async (req, res) => {
     });
   }
 
+  // the Notix admin reads this endpoint too (with the Bearer secret); it has its own sales, so do not ask it back
+  const nxAsk = /^Bearer /i.test(String(req.headers.authorization || '')) ? Promise.resolve({ on: false }) : notixSales();
   const [pays, cfg] = await Promise.all([paidPayments(10).catch(() => []), settings()]);
+  const nx = await nxAsk;
   const byDay = {};
   pays.forEach((p) => { const d = istDay(p.created_at * 1000); byDay[d] = (byDay[d] || 0) + 1; });
+  (nx.payments || []).forEach((p) => { if (p.status !== 'paid' || !p.at) return; const d = istDay(Date.parse(p.at)); byDay[d] = (byDay[d] || 0) + 1; });
+  let quizRaw = {};
   let visits = null, views = null, feedback = null, free = [], limits = [], quiz = [], confusing = [], funnel = null, banner = null, students = [], resetRequests = [], battles = null;
   if (store.configured()) {
     const [v, w, f, fr, lm, qz, ql, cf, cl, fn, fs, bn, dr, bt, rp] = await store.pipeline([
@@ -243,6 +271,7 @@ module.exports = handle(async (req, res) => {
 
     // quiz: most-missed questions (at least 3 answers)
     const qc = store.pairs(qz), qlab = store.pairs(ql), qs = {};
+    quizRaw = qc;
     for (const k in qc) { const [id, rw] = k.split(':'); (qs[id] = qs[id] || { id, right: 0, wrong: 0 })[rw === 'r' ? 'right' : 'wrong'] += +qc[k] || 0; }
     quiz = Object.values(qs).map((q) => ({ ...q, total: q.right + q.wrong, label: qlab[q.id] || q.id }))
       .filter((q) => q.total >= 3).sort((a, b) => b.wrong / b.total - a.wrong / a.total || b.total - a.total).slice(0, 20);
@@ -255,22 +284,24 @@ module.exports = handle(async (req, res) => {
     const fnl = store.pairs(fn), days = lastDays(30);
     funnel = { visitors: 0, paywall: 0, start: 0, paid: 0 };
     days.forEach((d) => { funnel.visitors += +(visits[d] || 0); ['paywall', 'start', 'paid'].forEach((s) => { funnel[s] += +(fnl[d + ':' + s] || 0); }); });
+    if (nx.payments) { const dd = new Set(days); funnel.paid += nx.payments.filter((p) => p.status === 'paid' && p.at && dd.has(istDay(Date.parse(p.at)))).length; }
     banner = parseJSON(bn, null);
 
     // every student who has signed in (plus anyone paid or on the free list), newest activity first
     const [uf, ul, us, un, pd, dk, uv, ps] = await store.pipeline([['HGETALL', 'userFirst'], ['HGETALL', 'userLogin'], ['HGETALL', 'userSeen'], ['HGETALL', 'userLogins'], ['HGETALL', 'paid'], ['KEYS', 'dev*:*@*'], ['HGETALL', 'userVisits'], ['HGETALL', 'progSum']]);
     const first = store.pairs(uf), login = store.pairs(ul), seen = store.pairs(us), logins = store.pairs(un), paidBy = store.pairs(pd), visitsBy = store.pairs(uv), progBy = store.pairs(ps);
     const freeBy = Object.fromEntries(free.map((f) => [f.email, f]));
+    const nxBy = {}; (nx.payments || []).forEach((p) => { if (p.status === 'paid' || p.status === 'manual') nxBy[p.email] = p; });
     // students who signed in before this list existed only left a device record ("devices:<email>:<kind>")
     const early = (dk || []).map((k) => k.slice(k.indexOf(':') + 1, k.lastIndexOf(':'))).filter(isStudentEmail);
-    const emails = [...new Set([...Object.keys(first), ...Object.keys(paidBy), ...Object.keys(freeBy), ...early])].filter(isStudentEmail).slice(0, 2000); // not the Razorpay reviewer account
+    const emails = [...new Set([...Object.keys(first), ...Object.keys(paidBy), ...Object.keys(freeBy), ...early, ...Object.keys(nxBy)])].filter(isStudentEmail).slice(0, 2000); // not the Razorpay reviewer account
     const dc = emails.length ? await store.pipeline(emails.flatMap((e) => deviceKeys(e).map((k) => ['ZCARD', k]))) : [];
     students = emails.map((e, i) => {
       const p = paidBy[e] != null ? parseJSON(paidBy[e], {}) : null;
       return {
         email: e,
-        paid: p ? { amount: (p.amount || 0) / 100, at: p.at || '', id: p.id || '' } : null,
-        free: freeBy[e] ? { modules: freeBy[e].modules || null } : null,
+        paid: p ? { amount: (p.amount || 0) / 100, at: p.at || '', id: p.id || '' } : nxBy[e] && nxBy[e].status === 'paid' ? { amount: (nxBy[e].amount || 0) / 100, at: nxBy[e].at || '', id: nxBy[e].id || '', via: 'Notix' } : null,
+        free: freeBy[e] ? { modules: freeBy[e].modules || null } : nxBy[e] && nxBy[e].status === 'manual' ? { modules: null, via: 'Notix' } : null,
         first: first[e] || '', lastLogin: login[e] || '', lastSeen: seen[e] || login[e] || first[e] || '',
         logins: +logins[e] || 0, visits: +visitsBy[e] || 0, phones: dc[i * MAX_DEVICES] || 0, pcs: dc[i * MAX_DEVICES + 1] || 0,
         early: !first[e] && early.includes(e), // signed in before tracking started
@@ -286,13 +317,8 @@ module.exports = handle(async (req, res) => {
     price: cfg.normalPrice / 100,
     sale: cfg.sale ? { rupees: cfg.sale.price / 100, until: new Date(cfg.sale.until).toISOString(), text: cfg.sale.text || '' } : null,
     banner, paused: cfg.paused, business: cfg.business || '', reviewOn: reviewOn(),
-    payments: {
-      count: pays.length,
-      revenue: pays.reduce((a, p) => a + p.amount, 0) / 100,
-      fees: pays.reduce((a, p) => a + (p.fee || 0), 0) / 100,
-      byDay,
-      recent: pays.slice(0, 15).map((p) => ({ at: iso(p.created_at), email: normEmail((p.notes || {}).email) || '(before sign-in)', id: p.id, amount: p.amount / 100 })),
-    },
+    payments: salesSummary(pays, nx, byDay),
+    content: contentStats(views, quizRaw),
     visits, views, feedback, free, limits, quiz, confusing, funnel, students, resetRequests, battles,
   });
 });
