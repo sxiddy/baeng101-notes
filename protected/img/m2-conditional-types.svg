@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 620">
+  <g>
+    <rect x="10" y="10" width="580" height="136" rx="14" class="df"/>
+    <rect x="10" y="10" width="10" height="136" rx="5" class="dfg"/>
+    <text x="36" y="46" font-size="26" class="dtg">Zero</text><text x="576" y="46" font-size="22" text-anchor="end" class="dt3">always true</text>
+    <text x="36" y="80" font-size="23" class="dt">if: present simple</text>
+    <text x="36" y="108" font-size="23" class="dt">then: present simple</text>
+    <text x="36" y="136" font-size="22" class="dt2">If you heat ice, it melts.</text>
+
+    <rect x="10" y="158" width="580" height="136" rx="14" class="df"/>
+    <rect x="10" y="158" width="10" height="136" rx="5" class="dfb"/>
+    <text x="36" y="194" font-size="26" class="dtb">First</text><text x="576" y="194" font-size="22" text-anchor="end" class="dt3">likely future</text>
+    <text x="36" y="228" font-size="23" class="dt">if: present simple</text>
+    <text x="36" y="256" font-size="23" class="dt">then: will + verb</text>
+    <text x="36" y="284" font-size="22" class="dt2">If it rains, we will stay in.</text>
+
+    <rect x="10" y="306" width="580" height="136" rx="14" class="df"/>
+    <rect x="10" y="306" width="10" height="136" rx="5" class="dfo"/>
+    <text x="36" y="342" font-size="26" class="dto">Second</text><text x="576" y="342" font-size="22" text-anchor="end" class="dt3">unlikely or unreal now</text>
+    <text x="36" y="376" font-size="23" class="dt">if: past simple</text>
+    <text x="36" y="404" font-size="23" class="dt">then: would + verb</text>
+    <text x="36" y="432" font-size="22" class="dt2">If it rained, we would stay in.</text>
+
+    <rect x="10" y="454" width="580" height="136" rx="14" class="df"/>
+    <rect x="10" y="454" width="10" height="136" rx="5" class="dfr"/>
+    <text x="36" y="490" font-size="26" class="dtr">Third</text><text x="576" y="490" font-size="22" text-anchor="end" class="dt3">impossible: the past</text>
+    <text x="36" y="524" font-size="23" class="dt">if: past perfect</text>
+    <text x="36" y="552" font-size="23" class="dt">then: would have + V3</text>
+    <text x="36" y="580" font-size="22" class="dt2">If it had rained, we would have stayed in.</text>
+  </g>
+</svg>

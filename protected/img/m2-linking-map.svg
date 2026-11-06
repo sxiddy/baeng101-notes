@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 580">
+  <g>
+    <rect x="10" y="10" width="580" height="80" rx="12" class="df"/>
+    <rect x="10" y="10" width="10" height="80" rx="5" class="dfb"/>
+    <text x="38" y="44" font-size="26" class="dtb">Add</text>
+    <text x="38" y="74" font-size="23" class="dt">and, also, in addition, besides</text>
+
+    <rect x="10" y="104" width="580" height="80" rx="12" class="df"/>
+    <rect x="10" y="104" width="10" height="80" rx="5" class="dfp"/>
+    <text x="38" y="138" font-size="26" class="dtp">Example</text>
+    <text x="38" y="168" font-size="23" class="dt">for example, such as, namely</text>
+
+    <rect x="10" y="198" width="580" height="80" rx="12" class="df"/>
+    <rect x="10" y="198" width="10" height="80" rx="5" class="dfo"/>
+    <text x="38" y="232" font-size="26" class="dto">Contrast</text>
+    <text x="38" y="262" font-size="23" class="dt">but, however, although, whereas</text>
+
+    <rect x="10" y="292" width="580" height="80" rx="12" class="df"/>
+    <rect x="10" y="292" width="10" height="80" rx="5" class="dfy"/>
+    <text x="38" y="326" font-size="26" class="dty">Cause</text>
+    <text x="38" y="356" font-size="23" class="dt">because, since, due to</text>
+
+    <rect x="10" y="386" width="580" height="80" rx="12" class="df"/>
+    <rect x="10" y="386" width="10" height="80" rx="5" class="dfg"/>
+    <text x="38" y="420" font-size="26" class="dtg">Result</text>
+    <text x="38" y="450" font-size="23" class="dt">so, therefore, thus, as a result</text>
+
+    <rect x="10" y="480" width="580" height="80" rx="12" class="df"/>
+    <rect x="10" y="480" width="10" height="80" rx="5" class="dfr"/>
+    <text x="38" y="514" font-size="26" class="dtr">Sequence</text>
+    <text x="38" y="544" font-size="23" class="dt">first, next, then, finally</text>
+  </g>
+</svg>

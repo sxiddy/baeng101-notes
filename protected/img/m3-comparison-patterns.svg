@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450">
+  <g>
+    <text x="10" y="36" font-size="28" class="dt">Point to point</text>
+    <rect x="10" y="52" width="580" height="56" rx="12" class="df"/>
+    <text x="28" y="89" font-size="25" class="dt">Criterion 1: A, then B</text>
+    <rect x="10" y="118" width="580" height="56" rx="12" class="df"/>
+    <text x="28" y="155" font-size="25" class="dt">Criterion 2: A, then B</text>
+    <rect x="10" y="184" width="580" height="56" rx="12" class="df"/>
+    <text x="28" y="221" font-size="25" class="dt">Criterion 3: A, then B</text>
+    <text x="10" y="294" font-size="28" class="dt">Whole to whole</text>
+    <rect x="10" y="310" width="580" height="56" rx="12" class="df"/>
+    <text x="28" y="347" font-size="25" class="dt">All of A: criteria 1, 2, 3</text>
+    <rect x="10" y="376" width="580" height="56" rx="12" class="df"/>
+    <text x="28" y="413" font-size="25" class="dt">All of B: same criteria, same order</text>
+  </g>
+</svg>

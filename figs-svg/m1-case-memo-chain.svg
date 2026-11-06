@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 606">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 10 5 0 10z" class="dfd"/></marker></defs>
+  <g>
+    <rect x="20" y="10" width="560" height="84" rx="14" class="df"/>
+    <rect x="20" y="10" width="560" height="84" rx="14" class="ds2" fill="none" stroke-width="2"/>
+    <text x="300" y="46" font-size="26" text-anchor="middle" class="dto">Memo to all staff</text>
+    <text x="300" y="78" font-size="22" text-anchor="middle" class="dt2">wrong medium (organisational)</text>
+    <path d="M300 98V126" class="ds2" stroke-width="3" fill="none" marker-end="url(#a)"/>
+    <rect x="20" y="130" width="560" height="84" rx="14" class="df"/>
+    <rect x="20" y="130" width="560" height="84" rx="14" class="ds2" fill="none" stroke-width="2"/>
+    <text x="300" y="166" font-size="26" text-anchor="middle" class="dtr">Ultimatum: seek work elsewhere</text>
+    <text x="300" y="198" font-size="22" text-anchor="middle" class="dt2">emotional outburst (interpersonal)</text>
+    <path d="M300 218V246" class="ds2" stroke-width="3" fill="none" marker-end="url(#a)"/>
+    <rect x="20" y="250" width="560" height="84" rx="14" class="df"/>
+    <rect x="20" y="250" width="560" height="84" rx="14" class="ds2" fill="none" stroke-width="2"/>
+    <text x="300" y="286" font-size="26" text-anchor="middle" class="dt">Leaked to the press</text>
+    <text x="300" y="318" font-size="22" text-anchor="middle" class="dt2">the problem goes public</text>
+    <path d="M300 338V366" class="ds2" stroke-width="3" fill="none" marker-end="url(#a)"/>
+    <rect x="20" y="370" width="560" height="84" rx="14" class="df"/>
+    <rect x="20" y="370" width="560" height="84" rx="14" class="ds2" fill="none" stroke-width="2"/>
+    <text x="300" y="406" font-size="26" text-anchor="middle" class="dtb">Internal losses</text>
+    <text x="300" y="438" font-size="22" text-anchor="middle" class="dt2">trust, morale, retention</text>
+    <path d="M300 458V486" class="ds2" stroke-width="3" fill="none" marker-end="url(#a)"/>
+    <rect x="20" y="490" width="560" height="84" rx="14" class="df"/>
+    <rect x="20" y="490" width="560" height="84" rx="14" class="ds2" fill="none" stroke-width="2"/>
+    <text x="300" y="526" font-size="26" text-anchor="middle" class="dtb">External losses</text>
+    <text x="300" y="558" font-size="22" text-anchor="middle" class="dt2">public image, doubts about the app</text>
+  </g>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 620">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 10 5 0 10z" class="dfg"/></marker></defs>
+  <g>
+    <text x="140" y="40" font-size="26" text-anchor="middle" class="dt">IEEE 830 (eight)</text>
+    <text x="460" y="40" font-size="26" text-anchor="middle" class="dtg">The 5 Cs</text>
+    <rect x="10" y="64" width="260" height="52" rx="12" class="dfg" fill-opacity=".2"/>
+    <rect x="10" y="64" width="260" height="52" rx="12" class="dsg" fill="none" stroke-width="2"/>
+    <text x="30" y="99" font-size="26" class="dt">1. Correct</text>
+    <path d="M274 90H326" class="dsg" stroke-width="3" fill="none" marker-end="url(#a)"/>
+    <rect x="330" y="64" width="260" height="52" rx="12" class="dfg" fill-opacity=".2"/>
+    <rect x="330" y="64" width="260" height="52" rx="12" class="dsg" fill="none" stroke-width="2.5"/>
+    <text x="460" y="99" font-size="26" text-anchor="middle" class="dtg">Correct</text>
+    <rect x="10" y="128" width="260" height="52" rx="12" class="dfg" fill-opacity=".2"/>
+    <rect x="10" y="128" width="260" height="52" rx="12" class="dsg" fill="none" stroke-width="2"/>
+    <text x="30" y="163" font-size="26" class="dt">2. Unambiguous</text>
+    <path d="M274 154H326" class="dsg" stroke-width="3" fill="none" marker-end="url(#a)"/>
+    <rect x="330" y="128" width="260" height="52" rx="12" class="dfg" fill-opacity=".2"/>
+    <rect x="330" y="128" width="260" height="52" rx="12" class="dsg" fill="none" stroke-width="2.5"/>
+    <text x="460" y="163" font-size="26" text-anchor="middle" class="dtg">Clear</text>
+    <rect x="10" y="192" width="260" height="52" rx="12" class="dfg" fill-opacity=".2"/>
+    <rect x="10" y="192" width="260" height="52" rx="12" class="dsg" fill="none" stroke-width="2"/>
+    <text x="30" y="227" font-size="26" class="dt">3. Complete</text>
+    <path d="M274 218H326" class="dsg" stroke-width="3" fill="none" marker-end="url(#a)"/>
+    <rect x="330" y="192" width="260" height="52" rx="12" class="dfg" fill-opacity=".2"/>
+    <rect x="330" y="192" width="260" height="52" rx="12" class="dsg" fill="none" stroke-width="2.5"/>
+    <text x="460" y="227" font-size="26" text-anchor="middle" class="dtg">Complete</text>
+    <rect x="10" y="256" width="260" height="52" rx="12" class="dfg" fill-opacity=".2"/>
+    <rect x="10" y="256" width="260" height="52" rx="12" class="dsg" fill="none" stroke-width="2"/>
+    <text x="30" y="291" font-size="26" class="dt">4. Consistent</text>
+    <path d="M274 282H326" class="dsg" stroke-width="3" fill="none" marker-end="url(#a)"/>
+    <rect x="330" y="256" width="260" height="52" rx="12" class="dfg" fill-opacity=".2"/>
+    <rect x="330" y="256" width="260" height="52" rx="12" class="dsg" fill="none" stroke-width="2.5"/>
+    <text x="460" y="291" font-size="26" text-anchor="middle" class="dtg">Consistent</text>
+    <rect x="10" y="320" width="260" height="52" rx="12" class="df"/>
+    <rect x="10" y="320" width="260" height="52" rx="12" class="ds3" fill="none" stroke-width="2" stroke-dasharray="8 6"/>
+    <text x="30" y="355" font-size="26" class="dt3">5. Ranked</text>
+    <rect x="10" y="384" width="260" height="52" rx="12" class="df"/>
+    <rect x="10" y="384" width="260" height="52" rx="12" class="ds3" fill="none" stroke-width="2" stroke-dasharray="8 6"/>
+    <text x="30" y="419" font-size="26" class="dt3">6. Verifiable</text>
+    <rect x="10" y="448" width="260" height="52" rx="12" class="dfg" fill-opacity=".2"/>
+    <rect x="10" y="448" width="260" height="52" rx="12" class="dsg" fill="none" stroke-width="2"/>
+    <text x="30" y="483" font-size="26" class="dt">7. Modifiable</text>
+    <path d="M274 474H326" class="dsg" stroke-width="3" fill="none" marker-end="url(#a)"/>
+    <rect x="330" y="448" width="260" height="52" rx="12" class="dfg" fill-opacity=".2"/>
+    <rect x="330" y="448" width="260" height="52" rx="12" class="dsg" fill="none" stroke-width="2.5"/>
+    <text x="460" y="483" font-size="26" text-anchor="middle" class="dtg">Changeable</text>
+    <rect x="10" y="512" width="260" height="52" rx="12" class="df"/>
+    <rect x="10" y="512" width="260" height="52" rx="12" class="ds3" fill="none" stroke-width="2" stroke-dasharray="8 6"/>
+    <text x="30" y="547" font-size="26" class="dt3">8. Traceable</text>
+    <text x="300" y="600" font-size="22" text-anchor="middle" class="dt3">dropped: not needed for all technical writing</text>
+  </g>
+</svg>

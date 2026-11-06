@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 668">
+  <g>
+    <rect x="170" y="10" width="260" height="64" rx="14" class="df2 ds" stroke-width="2"/>
+    <text x="300" y="52" font-size="28" text-anchor="middle" class="dt">Technical writing</text>
+
+    <path d="M300 74V110M100 110H500M100 110V140M300 110V140M500 110V140" class="ds2" stroke-width="2.5" fill="none"/>
+
+    <rect x="10" y="140" width="180" height="84" rx="14" class="df"/>
+    <rect x="10" y="140" width="180" height="84" rx="14" class="dsb" fill="none" stroke-width="2"/>
+    <text x="100" y="178" font-size="26" text-anchor="middle" class="dtb">Pedagogical</text>
+    <text x="100" y="208" font-size="22" text-anchor="middle" class="dt2">orientation</text>
+    <text x="100" y="254" font-size="22" text-anchor="middle" class="dt3">teaches</text>
+
+    <rect x="210" y="140" width="180" height="84" rx="14" class="df"/>
+    <rect x="210" y="140" width="180" height="84" rx="14" class="dso" fill="none" stroke-width="2"/>
+    <text x="300" y="178" font-size="26" text-anchor="middle" class="dto">Theoretical</text>
+    <text x="300" y="208" font-size="22" text-anchor="middle" class="dt2">orientation</text>
+    <text x="300" y="254" font-size="22" text-anchor="middle" class="dt3">researches</text>
+
+    <rect x="410" y="140" width="180" height="84" rx="14" class="dfg" fill-opacity=".2"/>
+    <rect x="410" y="140" width="180" height="84" rx="14" class="dsg" fill="none" stroke-width="2.5"/>
+    <text x="500" y="178" font-size="26" text-anchor="middle" class="dtg">Professional</text>
+    <text x="500" y="208" font-size="22" text-anchor="middle" class="dt2">orientation</text>
+
+    <path d="M500 224V262H110V574M110 324H140M110 410H140M110 496H140M110 582H140" class="ds2" stroke-width="2.5" fill="none"/>
+
+    <rect x="140" y="288" width="450" height="72" rx="14" class="df"/>
+    <text x="162" y="320" font-size="26" class="dt">Scientific writing</text>
+    <text x="162" y="348" font-size="22" class="dt2">papers, journals, conferences</text>
+
+    <rect x="140" y="374" width="450" height="72" rx="14" class="df"/>
+    <text x="162" y="406" font-size="26" class="dt">Technical reporting</text>
+    <text x="162" y="434" font-size="22" class="dt2">archival documents for clients</text>
+
+    <rect x="140" y="460" width="450" height="72" rx="14" class="df"/>
+    <text x="162" y="492" font-size="26" class="dt">Business communications</text>
+    <text x="162" y="520" font-size="22" class="dt2">letters, résumés, memos</text>
+
+    <rect x="140" y="546" width="450" height="72" rx="14" class="df3" stroke-dasharray="8 6"/>
+    <rect x="140" y="546" width="450" height="72" rx="14" class="ds2" fill="none" stroke-width="2" stroke-dasharray="8 6"/>
+    <text x="162" y="578" font-size="26" class="dt">Electronic media</text>
+    <text x="162" y="606" font-size="22" class="dt2">added in the second slide</text>
+
+    <text x="300" y="652" font-size="22" text-anchor="middle" class="dt3">after Montgomery and Plung, 1988</text>
+  </g>
+</svg>

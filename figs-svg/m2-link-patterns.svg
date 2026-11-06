@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440">
+  <g>
+    <rect x="10" y="10" width="580" height="124" rx="14" class="df"/>
+    <text x="30" y="46" font-size="26" class="dtb">Coordinating (and, but, so)</text>
+    <text x="30" y="82" font-size="25" class="mono dt">clause, but clause</text>
+    <text x="30" y="116" font-size="23" class="dt2">It rained, but we played.</text>
+
+    <rect x="10" y="150" width="580" height="124" rx="14" class="df"/>
+    <text x="30" y="186" font-size="26" class="dto">Subordinating (although, because)</text>
+    <text x="30" y="222" font-size="25" class="mono dt">Although clause, clause</text>
+    <text x="30" y="256" font-size="23" class="dt2">Although it rained, we played.</text>
+
+    <rect x="10" y="290" width="580" height="140" rx="14" class="df"/>
+    <text x="30" y="326" font-size="26" class="dtg">Adverb (however, therefore)</text>
+    <text x="30" y="362" font-size="25" class="mono dt">clause; however, clause</text>
+    <text x="30" y="396" font-size="23" class="dt2">It rained; however, we played.</text>
+    <text x="30" y="420" font-size="22" class="dt3">or a full stop before However</text>
+  </g>
+</svg>

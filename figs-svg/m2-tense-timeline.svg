@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 704">
+  <g>
+    <rect x="10" y="10" width="580" height="162" rx="14" class="df"/>
+    <text x="28" y="46" font-size="26" class="dt">Simple</text>
+    <text x="28" y="74" font-size="22" class="dt3">every day, yesterday, tomorrow</text>
+    <text x="28" y="108" font-size="23" class="dto">Past</text>
+    <text x="140" y="108" font-size="23" class="dt mono">V2</text>
+    <text x="28" y="138" font-size="23" class="dtb">Present</text>
+    <text x="140" y="138" font-size="23" class="dt mono">V1 (+s)</text>
+    <text x="28" y="168" font-size="23" class="dtg">Future</text>
+    <text x="140" y="168" font-size="23" class="dt mono">will + V1</text>
+    <rect x="10" y="184" width="580" height="162" rx="14" class="df"/>
+    <text x="28" y="220" font-size="26" class="dt">Continuous</text>
+    <text x="28" y="248" font-size="22" class="dt3">now, while, this time tomorrow</text>
+    <text x="28" y="282" font-size="23" class="dto">Past</text>
+    <text x="140" y="282" font-size="23" class="dt mono">was/were + V-ing</text>
+    <text x="28" y="312" font-size="23" class="dtb">Present</text>
+    <text x="140" y="312" font-size="23" class="dt mono">am/is/are + V-ing</text>
+    <text x="28" y="342" font-size="23" class="dtg">Future</text>
+    <text x="140" y="342" font-size="23" class="dt mono">will be + V-ing</text>
+    <rect x="10" y="358" width="580" height="162" rx="14" class="df"/>
+    <text x="28" y="394" font-size="26" class="dt">Perfect</text>
+    <text x="28" y="422" font-size="22" class="dt3">already, since, by noon</text>
+    <text x="28" y="456" font-size="23" class="dto">Past</text>
+    <text x="140" y="456" font-size="23" class="dt mono">had + V3</text>
+    <text x="28" y="486" font-size="23" class="dtb">Present</text>
+    <text x="140" y="486" font-size="23" class="dt mono">has/have + V3</text>
+    <text x="28" y="516" font-size="23" class="dtg">Future</text>
+    <text x="140" y="516" font-size="23" class="dt mono">will have + V3</text>
+    <rect x="10" y="532" width="580" height="162" rx="14" class="df"/>
+    <text x="28" y="568" font-size="26" class="dt">Perfect continuous</text>
+    <text x="28" y="596" font-size="22" class="dt3">for, since, by the time</text>
+    <text x="28" y="630" font-size="23" class="dto">Past</text>
+    <text x="140" y="630" font-size="23" class="dt mono">had been + V-ing</text>
+    <text x="28" y="660" font-size="23" class="dtb">Present</text>
+    <text x="140" y="660" font-size="23" class="dt mono">has/have been + V-ing</text>
+    <text x="28" y="690" font-size="23" class="dtg">Future</text>
+    <text x="140" y="690" font-size="23" class="dt mono">will have been + V-ing</text>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 470">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 10 5 0 10z" class="dfd"/></marker></defs>
+  <g>
+    <rect x="10" y="10" width="580" height="104" rx="14" class="df"/>
+    <text x="30" y="46" font-size="26" class="dt3">Active</text>
+    <text x="300" y="92" font-size="25" text-anchor="middle"><tspan class="dtb">The researcher</tspan><tspan class="dtg"> conducted</tspan><tspan class="dto"> the experiment</tspan></text>
+
+    <path d="M300 122v50" class="ds2" stroke-width="3" marker-end="url(#a)"/>
+    <text x="320" y="152" font-size="23" class="dt2">swap, be + V3, add by</text>
+
+    <rect x="10" y="182" width="580" height="148" rx="14" class="df"/>
+    <text x="30" y="218" font-size="26" class="dt3">Passive</text>
+    <text x="300" y="266" font-size="25" text-anchor="middle"><tspan class="dto">The experiment</tspan><tspan class="dtg"> was conducted</tspan></text>
+    <text x="300" y="304" font-size="25" text-anchor="middle" class="dtb">by the researcher</text>
+
+    <circle cx="36" cy="368" r="9" class="dfb"/><text x="58" y="376" font-size="23" class="dt">subject (the doer) becomes the by-phrase</text>
+    <circle cx="36" cy="408" r="9" class="dfo"/><text x="58" y="416" font-size="23" class="dt">object (the receiver) becomes the subject</text>
+    <circle cx="36" cy="448" r="9" class="dfg"/><text x="58" y="456" font-size="23" class="dt">verb keeps its tense: conducted, was conducted</text>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 372">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 10 5 0 10z" class="dfb"/></marker></defs>
+  <g>
+    <rect x="10" y="10" width="580" height="150" rx="14" class="df"/>
+    <text x="300" y="52" font-size="26" text-anchor="middle" class="dt">Neither the shoes nor the <tspan class="dtb">bag</tspan></text>
+    <path d="M455 62v32" class="dsb" fill="none" stroke-width="3" marker-end="url(#a)"/>
+    <text x="440" y="86" font-size="22" text-anchor="end" class="dt2">nearest noun</text>
+    <rect x="360" y="100" width="190" height="46" rx="23" class="dfb" fill-opacity=".22"/>
+    <text x="455" y="133" font-size="26" text-anchor="middle" class="dt">matches</text>
+
+    <rect x="10" y="176" width="580" height="150" rx="14" class="df"/>
+    <text x="300" y="218" font-size="26" text-anchor="middle" class="dt">Neither the bag nor the <tspan class="dtb">shoes</tspan></text>
+    <path d="M455 228v32" class="dsb" fill="none" stroke-width="3" marker-end="url(#a)"/>
+    <text x="440" y="252" font-size="22" text-anchor="end" class="dt2">nearest noun</text>
+    <rect x="360" y="266" width="190" height="46" rx="23" class="dfb" fill-opacity=".22"/>
+    <text x="455" y="299" font-size="26" text-anchor="middle" class="dt">match</text>
+
+    <text x="300" y="358" font-size="24" text-anchor="middle" class="dt2">The verb follows the noun closest to it</text>
+  </g>
+</svg>

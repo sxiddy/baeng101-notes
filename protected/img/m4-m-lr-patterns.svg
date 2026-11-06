@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 494">
+  <g>
+  <rect x="10" y="10" width="580" height="84" rx="14" class="dfb" fill-opacity=".16"/>
+  <rect x="10" y="10" width="10" height="84" rx="4" class="dfb"/>
+  <text x="42" y="46" font-size="26" class="dtb">Topical</text>
+  <text x="42" y="78" font-size="22" class="dt2">Subtopics, each taken in turn</text>
+  <rect x="10" y="106" width="580" height="84" rx="14" class="dfg" fill-opacity=".16"/>
+  <rect x="10" y="106" width="10" height="84" rx="4" class="dfg"/>
+  <text x="42" y="142" font-size="26" class="dtg">Distant to close</text>
+  <text x="42" y="174" font-size="22" class="dt2">Loosely related first, closest work last</text>
+  <rect x="10" y="202" width="580" height="84" rx="14" class="dfr" fill-opacity=".16"/>
+  <rect x="10" y="202" width="10" height="84" rx="4" class="dfr"/>
+  <text x="42" y="238" font-size="26" class="dtr">Debate</text>
+  <text x="42" y="270" font-size="22" class="dt2">Camps argue; show each side</text>
+  <rect x="10" y="298" width="580" height="84" rx="14" class="dfo" fill-opacity=".16"/>
+  <rect x="10" y="298" width="10" height="84" rx="4" class="dfo"/>
+  <text x="42" y="334" font-size="26" class="dto">Chronological</text>
+  <text x="42" y="366" font-size="22" class="dt2">The field changed over time</text>
+  <rect x="10" y="394" width="580" height="84" rx="14" class="dfp" fill-opacity=".16"/>
+  <rect x="10" y="394" width="10" height="84" rx="4" class="dfp"/>
+  <text x="42" y="430" font-size="26" class="dtp">Seminal study</text>
+  <text x="42" y="462" font-size="22" class="dt2">One key study first, then the rest</text>
+  </g>
+</svg>

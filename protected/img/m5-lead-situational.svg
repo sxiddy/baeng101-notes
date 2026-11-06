@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 560">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 10 5 0 10z" class="dfd"/></marker></defs>
+  <g>
+    <text x="125" y="34" font-size="26" text-anchor="middle" class="dt">Follower readiness</text>
+    <text x="445" y="34" font-size="26" text-anchor="middle" class="dt">Leader style</text>
+
+    <rect x="10" y="56" width="230" height="96" rx="14" class="dfr" fill-opacity=".2"/>
+    <text x="125" y="96" font-size="26" text-anchor="middle" class="dtr">R1</text>
+    <text x="125" y="132" font-size="22" text-anchor="middle" class="dt2">unable, unwilling</text>
+    <path d="M246 104H286" class="ds2" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+    <rect x="292" y="56" width="298" height="96" rx="14" class="df2 dsr" stroke-width="2.5"/>
+    <text x="441" y="96" font-size="26" text-anchor="middle" class="dtr">S1 Telling</text>
+    <text x="441" y="132" font-size="22" text-anchor="middle" class="dt2">task high, people low</text>
+
+    <rect x="10" y="168" width="230" height="96" rx="14" class="dfo" fill-opacity=".2"/>
+    <text x="125" y="208" font-size="26" text-anchor="middle" class="dto">R2</text>
+    <text x="125" y="244" font-size="22" text-anchor="middle" class="dt2">unable, willing</text>
+    <path d="M246 216H286" class="ds2" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+    <rect x="292" y="168" width="298" height="96" rx="14" class="df2 dso" stroke-width="2.5"/>
+    <text x="441" y="208" font-size="26" text-anchor="middle" class="dto">S2 Selling</text>
+    <text x="441" y="244" font-size="22" text-anchor="middle" class="dt2">task high, people high</text>
+
+    <rect x="10" y="280" width="230" height="96" rx="14" class="dfb" fill-opacity=".2"/>
+    <text x="125" y="320" font-size="26" text-anchor="middle" class="dtb">R3</text>
+    <text x="125" y="356" font-size="22" text-anchor="middle" class="dt2">able, unwilling</text>
+    <path d="M246 328H286" class="ds2" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+    <rect x="292" y="280" width="298" height="96" rx="14" class="df2 dsb" stroke-width="2.5"/>
+    <text x="441" y="320" font-size="26" text-anchor="middle" class="dtb">S3 Participating</text>
+    <text x="441" y="356" font-size="22" text-anchor="middle" class="dt2">task low, people high</text>
+
+    <rect x="10" y="392" width="230" height="96" rx="14" class="dfg" fill-opacity=".2"/>
+    <text x="125" y="432" font-size="26" text-anchor="middle" class="dtg">R4</text>
+    <text x="125" y="468" font-size="22" text-anchor="middle" class="dt2">able, willing</text>
+    <path d="M246 440H286" class="ds2" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+    <rect x="292" y="392" width="298" height="96" rx="14" class="df2 dsg" stroke-width="2.5"/>
+    <text x="441" y="432" font-size="26" text-anchor="middle" class="dtg">S4 Delegating</text>
+    <text x="441" y="468" font-size="22" text-anchor="middle" class="dt2">task low, people low</text>
+
+    <text x="300" y="530" font-size="22" text-anchor="middle" class="dt3">readiness rises from R1 down to R4</text>
+  </g>
+</svg>

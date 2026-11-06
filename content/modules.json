@@ -1,15 +1,40 @@
 [
   {
+    "id": "m1",
+    "num": "01",
+    "title": "Introduction to Technical Communication",
+    "free": true,
+    "chunks": [
+      "F",
+      "G"
+    ],
+    "syllabus": "The nature of technical communication. Taxonomy of technical writing: scientific writing and technical reporting. Business communication. The 5Cs of technical writing, applied to conceptual questions."
+  },
+  {
+    "id": "m2",
+    "num": "02",
+    "title": "Grammar",
+    "free": true,
+    "chunks": [
+      "H",
+      "I",
+      "J"
+    ],
+    "syllabus": "Concord (subject-verb agreement), tense, conditionals, voice, and transitions and linking words. Activity: error detection."
+  },
+  {
     "id": "m3",
     "num": "03",
     "title": "Reading",
     "free": true,
     "chunks": [
       "A",
-      "B"
+      "B",
+      "K",
+      "L"
     ],
     "questions": "q-M3.js",
-    "syllabus": "Analysing definitions: types of definitions and methods for expanding definitions. Reading comprehension: drawing inferences from scientific texts."
+    "syllabus": "Analysing definitions: types of definitions and methods for expanding definitions. Reading comprehension: drawing inferences from scientific texts. Structure of a research article and analysing a research article."
   },
   {
     "id": "m4",
@@ -17,10 +42,13 @@
     "title": "Writing",
     "free": true,
     "chunks": [
-      "C"
+      "C",
+      "M",
+      "N",
+      "O"
     ],
     "questions": "q-M4.js",
-    "syllabus": "Summary (précis) writing and abstract writing: condensing a text in your own words, and summing up a study's aim, method, findings and conclusion."
+    "syllabus": "Summary (précis) writing and abstract writing. Research writing: structure of a review paper, types of reviews, literature review, and referencing styles (IEEE, APA)."
   },
   {
     "id": "m5",
@@ -29,12 +57,15 @@
     "free": true,
     "chunks": [
       "D",
-      "E"
+      "E",
+      "P",
+      "Q",
+      "R"
     ],
     "questions": [
       "q-M5.js",
       "q-M5b.js"
     ],
-    "syllabus": "Thomas-Kilmann modes of conflict management, with case study analysis. Writing a statement of purpose."
+    "syllabus": "Cross-cultural and interpersonal communication, leadership styles, Belbin's team roles, negotiation skills, Thomas-Kilmann modes of conflict management with case study analysis, and writing a statement of purpose."
   }
 ]

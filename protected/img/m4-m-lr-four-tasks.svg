@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 522">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 10 5 0 10z" class="dfd"/></marker></defs>
+  <g>
+  <rect x="10" y="10" width="580" height="84" rx="14" class="dfb" fill-opacity=".16"/>
+  <rect x="10" y="10" width="10" height="84" rx="4" class="dfb"/>
+  <text x="42" y="46" font-size="26" class="dtb">Summarize</text>
+  <text x="42" y="78" font-size="22" class="dt2">Say what each source found</text>
+  <rect x="10" y="106" width="580" height="84" rx="14" class="dfg" fill-opacity=".16"/>
+  <rect x="10" y="106" width="10" height="84" rx="4" class="dfg"/>
+  <text x="42" y="142" font-size="26" class="dtg">Synthesize</text>
+  <text x="42" y="174" font-size="22" class="dt2">Join sources into one picture</text>
+  <rect x="10" y="202" width="580" height="84" rx="14" class="dfo" fill-opacity=".16"/>
+  <rect x="10" y="202" width="10" height="84" rx="4" class="dfo"/>
+  <text x="42" y="238" font-size="26" class="dto">Compare</text>
+  <text x="42" y="270" font-size="22" class="dt2">Where sources agree and differ</text>
+  <rect x="10" y="298" width="580" height="84" rx="14" class="dfr" fill-opacity=".16"/>
+  <rect x="10" y="298" width="10" height="84" rx="4" class="dfr"/>
+  <text x="42" y="334" font-size="26" class="dtr">Critique</text>
+  <text x="42" y="366" font-size="22" class="dt2">Judge strengths and weaknesses</text>
+  <path d="M300 390v26" class="ds2" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <rect x="10" y="428" width="580" height="84" rx="14" class="df2 dsy" stroke-width="2.5"/>
+  <text x="300" y="464" font-size="26" text-anchor="middle" class="dty">An argument about the research</text>
+  <text x="300" y="496" font-size="22" text-anchor="middle" class="dt2">never just a list of studies</text>
+  </g>
+</svg>

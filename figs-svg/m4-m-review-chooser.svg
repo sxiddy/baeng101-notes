@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 782">
+  <g>
+  <text x="300" y="34" font-size="24" text-anchor="middle" class="dt3">Your question points to the review type</text>
+  <rect x="10" y="52" width="580" height="92" rx="14" class="df dsb" stroke-width="2"/>
+  <text x="30" y="86" font-size="22" class="dt2">Does X cause Y? (narrow, specific)</text>
+  <text x="30" y="124" font-size="26" class="dtb">→ Systematic review</text>
+  <rect x="10" y="156" width="580" height="92" rx="14" class="df dsg" stroke-width="2"/>
+  <text x="30" y="190" font-size="22" class="dt2">What is known about a broad topic?</text>
+  <text x="30" y="228" font-size="26" class="dtg">→ Scoping or literature review</text>
+  <rect x="10" y="260" width="580" height="92" rx="14" class="df dso" stroke-width="2"/>
+  <text x="30" y="294" font-size="22" class="dt2">Combine numbers from similar studies</text>
+  <text x="30" y="332" font-size="26" class="dto">→ Meta-analysis</text>
+  <rect x="10" y="364" width="580" height="92" rx="14" class="df dsr" stroke-width="2"/>
+  <text x="30" y="398" font-size="22" class="dt2">A decision is needed quickly</text>
+  <text x="30" y="436" font-size="26" class="dtr">→ Rapid review</text>
+  <rect x="10" y="468" width="580" height="92" rx="14" class="df dsp" stroke-width="2"/>
+  <text x="30" y="502" font-size="22" class="dt2">Many reviews already exist</text>
+  <text x="30" y="540" font-size="26" class="dtp">→ Umbrella review</text>
+  <rect x="10" y="572" width="580" height="92" rx="14" class="df dsy" stroke-width="2"/>
+  <text x="30" y="606" font-size="22" class="dt2">Make sense of qualitative studies</text>
+  <text x="30" y="644" font-size="26" class="dty">→ Meta-synthesis</text>
+  <rect x="10" y="676" width="580" height="92" rx="14" class="df ds" stroke-width="2"/>
+  <text x="30" y="710" font-size="22" class="dt2">Judge the literature, build a theory</text>
+  <text x="30" y="748" font-size="26" class="dt">→ Critical review</text>
+  </g>
+</svg>

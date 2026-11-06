@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 560">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 10 5 0 10z" class="dfd"/></marker></defs>
+  <g>
+    <path d="M24 28V532" class="ds2" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+
+    <rect x="52" y="14" width="190" height="86" rx="12" class="dfr" fill-opacity=".22"/>
+    <text x="68" y="64" font-size="26" class="dtr">Forming</text>
+    <text x="256" y="50" font-size="24" class="dt">Polite and unsure</text>
+    <text x="256" y="82" font-size="22" class="dt2">Leader directs</text>
+
+    <rect x="52" y="116" width="190" height="86" rx="12" class="dfo" fill-opacity=".22"/>
+    <text x="68" y="166" font-size="26" class="dto">Storming</text>
+    <text x="256" y="152" font-size="24" class="dt">Conflict, power struggles</text>
+    <text x="256" y="184" font-size="22" class="dt2">Leader helps resolve it</text>
+
+    <rect x="52" y="218" width="190" height="86" rx="12" class="dfy" fill-opacity=".22"/>
+    <text x="68" y="268" font-size="26" class="dty">Norming</text>
+    <text x="256" y="254" font-size="24" class="dt">Trust, agreed ways</text>
+    <text x="256" y="286" font-size="22" class="dt2">Leadership is shared</text>
+
+    <rect x="52" y="320" width="190" height="86" rx="12" class="dfg" fill-opacity=".22"/>
+    <text x="68" y="370" font-size="26" class="dtg">Performing</text>
+    <text x="256" y="356" font-size="24" class="dt">Interdependent, productive</text>
+    <text x="256" y="388" font-size="22" class="dt2">Minimal direction</text>
+
+    <rect x="52" y="422" width="190" height="86" rx="12" class="dfb" fill-opacity=".22"/>
+    <text x="68" y="472" font-size="26" class="dtb">Adjourning</text>
+    <text x="256" y="458" font-size="24" class="dt">Closure, mixed feelings</text>
+    <text x="256" y="490" font-size="22" class="dt2">Leader recognises, listens</text>
+
+    <text x="24" y="550" font-size="22" text-anchor="start" class="dt3">time</text>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 584">
+  <g>
+    <rect x="10" y="10" width="580" height="72" rx="12" class="df"/>
+    <rect x="10" y="10" width="236" height="72" rx="12" class="dfb" fill-opacity=".22"/>
+    <text x="28" y="55" font-size="25" class="dt">Title, abstract</text>
+    <text x="262" y="55" font-size="24" class="dt2">What is it about, in brief?</text>
+    <rect x="10" y="92" width="580" height="72" rx="12" class="df"/>
+    <rect x="10" y="92" width="236" height="72" rx="12" class="dfb" fill-opacity=".22"/>
+    <text x="28" y="137" font-size="25" class="dt">Introduction</text>
+    <text x="262" y="137" font-size="24" class="dt2">Why was it done?</text>
+    <rect x="10" y="174" width="580" height="72" rx="12" class="df"/>
+    <rect x="10" y="174" width="236" height="72" rx="12" class="dfb" fill-opacity=".22"/>
+    <text x="28" y="219" font-size="25" class="dt">Methods</text>
+    <text x="262" y="219" font-size="24" class="dt2">How was it done?</text>
+    <rect x="10" y="256" width="580" height="72" rx="12" class="df"/>
+    <rect x="10" y="256" width="236" height="72" rx="12" class="dfb" fill-opacity=".22"/>
+    <text x="28" y="301" font-size="25" class="dt">Results</text>
+    <text x="262" y="301" font-size="24" class="dt2">What was found?</text>
+    <rect x="10" y="338" width="580" height="72" rx="12" class="df"/>
+    <rect x="10" y="338" width="236" height="72" rx="12" class="dfb" fill-opacity=".22"/>
+    <text x="28" y="383" font-size="25" class="dt">Discussion</text>
+    <text x="262" y="383" font-size="24" class="dt2">What does it mean?</text>
+    <rect x="10" y="420" width="580" height="72" rx="12" class="df"/>
+    <rect x="10" y="420" width="236" height="72" rx="12" class="dfb" fill-opacity=".22"/>
+    <text x="28" y="465" font-size="25" class="dt">Conclusion</text>
+    <text x="262" y="465" font-size="24" class="dt2">So what, and what next?</text>
+    <rect x="10" y="502" width="580" height="72" rx="12" class="df"/>
+    <rect x="10" y="502" width="236" height="72" rx="12" class="dfb" fill-opacity=".22"/>
+    <text x="28" y="547" font-size="25" class="dt">References</text>
+    <text x="262" y="547" font-size="24" class="dt2">Whose work was used?</text>
+  </g>
+</svg>

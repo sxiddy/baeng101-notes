@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 630">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 10 5 0 10z" class="dfd"/></marker></defs>
+  <g>
+    <rect x="84" y="56" width="250" height="228" rx="14" class="dfy" fill-opacity=".16"/>
+    <rect x="340" y="56" width="250" height="228" rx="14" class="dfg" fill-opacity=".16"/>
+    <rect x="84" y="290" width="250" height="228" rx="14" class="dfb" fill-opacity=".16"/>
+    <rect x="340" y="290" width="250" height="228" rx="14" class="dfr" fill-opacity=".16"/>
+
+    <text x="209" y="100" font-size="26" text-anchor="middle" class="dty">Country club</text>
+    <text x="209" y="134" font-size="22" text-anchor="middle" class="dt2">people high</text>
+    <text x="209" y="162" font-size="22" text-anchor="middle" class="dt2">production low</text>
+
+    <text x="465" y="100" font-size="26" text-anchor="middle" class="dtg">Team</text>
+    <text x="465" y="134" font-size="22" text-anchor="middle" class="dt2">people high</text>
+    <text x="465" y="162" font-size="22" text-anchor="middle" class="dt2">production high</text>
+
+    <text x="209" y="436" font-size="26" text-anchor="middle" class="dtb">Impoverished</text>
+    <text x="209" y="470" font-size="22" text-anchor="middle" class="dt2">people low</text>
+    <text x="209" y="498" font-size="22" text-anchor="middle" class="dt2">production low</text>
+
+    <text x="465" y="436" font-size="24" text-anchor="middle" class="dtr">Produce or perish</text>
+    <text x="465" y="470" font-size="22" text-anchor="middle" class="dt2">people low</text>
+    <text x="465" y="498" font-size="22" text-anchor="middle" class="dt2">production high</text>
+
+    <rect x="202" y="232" width="270" height="110" rx="14" class="df2 dso" stroke-width="2.5"/>
+    <text x="337" y="278" font-size="24" text-anchor="middle" class="dto">Middle of the road</text>
+    <text x="337" y="314" font-size="22" text-anchor="middle" class="dt2">both medium</text>
+
+    <path d="M50 518V66" class="ds2" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+    <text x="50" y="44" font-size="22" text-anchor="middle" class="dt3">high</text>
+    <text transform="translate(28 287) rotate(-90)" font-size="24" text-anchor="middle" class="dt">Concern for people</text>
+
+    <text x="50" y="556" font-size="22" text-anchor="middle" class="dt3">low</text>
+    <path d="M84 549H576" class="ds2" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+    <text x="590" y="586" font-size="22" text-anchor="end" class="dt3">high</text>
+    <text x="337" y="586" font-size="26" text-anchor="middle" class="dt">Concern for production</text>
+  </g>
+</svg>

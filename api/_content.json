@@ -1,11 +1,27 @@
 {
  "modules": [
   {
+   "id": "m1",
+   "num": "01",
+   "title": "Introduction to Technical Communication",
+   "free": true,
+   "topics": 13,
+   "questions": 0
+  },
+  {
+   "id": "m2",
+   "num": "02",
+   "title": "Grammar",
+   "free": true,
+   "topics": 23,
+   "questions": 0
+  },
+  {
    "id": "m3",
    "num": "03",
    "title": "Reading",
    "free": true,
-   "topics": 8,
+   "topics": 19,
    "questions": 63
   },
   {
@@ -13,7 +29,7 @@
    "num": "04",
    "title": "Writing",
    "free": true,
-   "topics": 5,
+   "topics": 26,
    "questions": 41
   },
   {
@@ -21,7 +37,7 @@
    "num": "05",
    "title": "Interpersonal Communication",
    "free": true,
-   "topics": 10,
+   "topics": 33,
    "questions": 87
   }
  ],
