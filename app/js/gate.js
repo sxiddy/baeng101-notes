@@ -99,6 +99,7 @@
       // all at once: every file only registers data (the app sorts chunks, questions and papers itself)
       await Promise.all(files.map((f) => loadScript('data/' + f)));
       const allPaid = CFG.filter((m) => !m.free).every((m) => !modules || modules.includes(m.id));
+      window.PRO = !!paid;
       window.APP_LOCKED = !paid || !allPaid;
       window.__showPaywall = paywall;
       try {

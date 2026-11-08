@@ -680,7 +680,7 @@ window.__startApp = function () {
         const el = en.target; vizIO.unobserve(el);
         if (window.VIZ) vizHandles.push(window.VIZ.mount(el, el.getAttribute('data-viz')));
       }), { root: main, rootMargin: '500px 0px' });
-      vz.forEach((el) => { if (hasViz(el.getAttribute('data-viz'))) vizIO.observe(el); else el.remove(); });
+      vz.forEach((el) => { if (hasViz(el.getAttribute('data-viz'))) vizIO.observe(el); else if (!window.PRO) el.outerHTML = `<a class="lock-card" href="#unlock"><span class="lock-ico">${icon('lock')}</span><div><strong>Try it: interactive model</strong><p>Play with this idea step by step and see the result. Part of Pro.</p></div><span class="arrow">${icon('right')}</span></a>`; else el.remove(); });
     }
   }
 
