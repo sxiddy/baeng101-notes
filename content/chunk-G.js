@@ -224,7 +224,7 @@ CHUNK({
       id: 'm1-5cs-example',
       title: 'Applying the 5 Cs: the TV recording specification',
       short: 'The 5 Cs applied',
-      blurb: 'The textbook\'s worked evaluation of a requirements excerpt for a smart home entertainment system: the 18 numbered lines, the verdict on each C, the ambiguous phrases the author picks out, and the author's question "How do I test this?".',
+      blurb: 'The textbook\'s worked evaluation of a requirements excerpt for a smart home entertainment system: the 18 numbered lines, the verdict on each C, the ambiguous phrases the author picks out, and the question "How do I test this?".',
       source: 'Module 1 Introduction to Technical Communication / 5 C\'s of TW.pdf (textbook pages 39-41, section 2.7.7)',
       tabs: [
         { title: 'The excerpt', html: `
