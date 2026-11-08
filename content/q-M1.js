@@ -1,0 +1,91 @@
+QUESTIONS({
+  questions: [
+    // ------------------------------------------------------------------ m1-nature (drafted by Gemini, checked by Claude)
+    {
+      id: 'm1-a-01', module: 'm1', topic: 'm1-nature', type: 'decide', level: 1,
+      q: `<p>An engineer submits an equipment maintenance report filled with poetic metaphors and subjective impressions rather than calibrated sensor readings and specific component states. Which core attribute of technical communication does this drafting style compromise most directly?</p>`,
+      options: [
+        `Objective factual accuracy and clarity`,
+        `Visual formatting hierarchy`,
+        `Grammatical tense consistency`,
+        `Lexical variety and aesthetic expression`,
+      ],
+      correct: 0,
+      answer: `<p><b>Objective factual accuracy and clarity.</b> Metaphor and impression replace the measurable facts the reader needs.</p>`,
+      explain: `<p>Technical communication prioritises clear, factual, objective information so the reader can make practical decisions. Poetic language adds ambiguity and lowers usefulness.</p>`,
+      points: ['facts and measurements over impressions', 'clarity for decisions'],
+    },
+    {
+      id: 'm1-a-02', module: 'm1', topic: 'm1-nature', type: 'interpret', level: 1,
+      q: `<p>A field technician preparing an installation guide replaces dense paragraphs of continuous text with sequential numbered steps, callout boxes for safety warnings, and labelled wiring diagrams. Which primary objective of technical communication does this design change serve?</p>`,
+      options: [
+        `Extending reading time to ensure thoroughness`,
+        `Maximising document usability and quick information retrieval`,
+        `Displaying advanced graphic illustration techniques`,
+        `Removing the need for specialised technical terms`,
+      ],
+      correct: 1,
+      answer: `<p><b>Usability and quick retrieval.</b> Steps, callouts and labelled diagrams let the reader find and do the task fast and safely.</p>`,
+      explain: `<p>Technical documents are action-oriented and structured so readers can scan, locate and carry out tasks efficiently.</p>`,
+      points: ['action-oriented', 'scannable structure', 'safety visible'],
+    },
+    {
+      id: 'm1-a-03', module: 'm1', topic: 'm1-nature', type: 'decide', level: 2,
+      q: `<p>A software developer prepares two summaries of a critical security breach: one contains packet captures and memory offsets for the network engineering crew, while the second summarises financial risk and operational downtime for the board of directors. Which defining principle of technical communication governs this distinction?</p>`,
+      options: [
+        `Ethical non-disclosure compliance`,
+        `Redundancy reduction through summarisation`,
+        `Audience analysis and purpose adaptation`,
+        `Standard operating procedure compliance`,
+      ],
+      correct: 2,
+      answer: `<p><b>Audience analysis and purpose adaptation.</b> Each reader gets the depth and vocabulary their decisions need.</p>`,
+      explain: `<p>Experts need granular diagnostic data; executives need strategic and operational impact. The same event is written twice for two audiences.</p>`,
+      points: ['audience drives content', 'purpose drives depth'],
+    },
+    {
+      id: 'm1-a-04', module: 'm1', topic: 'm1-nature', type: 'decide', level: 2,
+      q: `<p>While writing a feasibility study for an industrial client, an author discovers that a recommended motor assembly shows an intermittent failure rate of 4% under sustained peak load. Which professional obligation in technical communication dictates how the author must handle this finding?</p>`,
+      options: [
+        `Omit the test statistic to maintain client confidence in the proposal`,
+        `Relegate the statistic to an unreferenced appendix without analysis`,
+        `Report the failure rate transparently alongside operating limits and mitigations`,
+        `Average the metric with low-stress tests to present a failure rate under 1%`,
+      ],
+      correct: 2,
+      answer: `<p><b>Report it transparently</b> with the operating limits and mitigations.</p>`,
+      explain: `<p>Ethical integrity is a foundation of technical communication. Hiding or diluting a known flaw harms client safety, legal compliance and informed judgement.</p>`,
+      points: ['honesty about known flaws', 'give limits and mitigations'],
+    },
+    {
+      id: 'm1-a-05', module: 'm1', topic: 'm1-nature', type: 'decide', level: 1,
+      q: `<p>A chemical plant issues a standard operating procedure (SOP) for international operators whose first language is not English. To prevent hazardous handling errors, which stylistic approach fits technical communication best?</p>`,
+      options: [
+        `Localised idioms and culturally specific humour to relax the operator`,
+        `Controlled English with direct verbs, short sentences and standard terms`,
+        `Sophisticated vocabulary to stress regulatory seriousness`,
+        `Long uninterrupted prose to capture every mechanical detail`,
+      ],
+      correct: 1,
+      answer: `<p><b>Controlled English</b> with direct verbs, short sentences and standard terms.</p>`,
+      explain: `<p>Clarity and conciseness prevent dangerous misreadings across diverse operator groups. Plain, direct sentences remove ambiguity in high-stakes tasks.</p>`,
+      points: ['plain direct language', 'standard terminology'],
+    },
+    {
+      id: 'm1-a-06', module: 'm1', topic: 'm1-nature', type: 'explain', level: 2,
+      q: `<p>A friend says technical writing is "just creative writing with numbers". Contrast the author's primary goal in technical communication with that in literary writing, and explain how the difference affects word choice, sentence structure and page layout.</p>`,
+      options: null, correct: null,
+      answer: `<p><b>Model answer.</b> In technical communication the goal is functional: to give precise, usable information so the audience can solve a problem or act. In literary writing the goal is expressive: to evoke emotion, provoke thought or entertain. So technical writing uses unambiguous, literal word choices instead of figurative language, short active-voice sentences instead of elaborate rhythms, and scannable layout (headings, bullets, white space) instead of continuous prose blocks.</p>`,
+      explain: `<p>Technical communication centres on user efficiency and clarity of action; literary writing centres on emotional and artistic effect.</p>`,
+      points: ['goal: functional vs expressive', 'word choice: literal, unambiguous', 'sentences: short, active', 'layout: headings, bullets, white space'],
+    },
+    {
+      id: 'm1-a-07', module: 'm1', topic: 'm1-nature', type: 'analyse', level: 3,
+      q: `<p>A biomedical firm developed a portable dialysis device and asks its engineers to write two documents: an internal design specification for certified quality-assurance testers and a quick-start guide for home patients. Explain two critical differences in register, terminology and visual aids between the two documents.</p>`,
+      options: null, correct: null,
+      answer: `<p><b>Model answer.</b> First, register and vocabulary differ: the specification uses rigorous technical terms, fluidic tolerances, component IDs and standards (for example ISO), while the patient guide uses everyday language and active commands such as "Press the green button". Second, the visual aids differ: the specification needs schematics, circuit diagrams and tolerance tables for verification, while the patient guide needs step-by-step pictures, colour-coded icons and prominent danger banners for safe self-use.</p>`,
+      explain: `<p>Effective audience adaptation matches language and visuals to the reader's background and context. Misjudging the audience causes test failures in one case and safety hazards in the other.</p>`,
+      points: ['register and vocabulary match the reader', 'specification: precise terms, standards, tolerances', 'patient guide: plain language, commands', 'visuals: schematics vs pictorial steps and warnings'],
+    },
+  ]
+});
