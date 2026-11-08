@@ -2,6 +2,7 @@
  "freeFiles": [
   "chunk-F.js",
   "chunk-G.js",
+  "q-M1.js",
   "summary-m1.js",
   "chunk-H.js",
   "chunk-I.js",
@@ -45,6 +46,7 @@
  "fileModule": {
   "chunk-F.js": "m1",
   "chunk-G.js": "m1",
+  "q-M1.js": "m1",
   "summary-m1.js": "m1",
   "chunk-H.js": "m2",
   "chunk-I.js": "m2",
