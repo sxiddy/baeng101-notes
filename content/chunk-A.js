@@ -11,44 +11,38 @@ CHUNK({
       tabs: [
         { title: 'What a definition is', html: `
           <p class="lead">A <b>definition</b> is a statement of the <b>essential nature</b> of something, or of what a word or symbol <b>means</b>. Defining is the act of stating that meaning.</p>
-          <p>The dictionary gives three senses, and all three show up in technical writing:</p>
+          <p>The deck quotes a dictionary definition of "definition":</p>
           <ul>
-            <li>a statement of the <b>essential nature</b> of a thing (what a transformer really is)</li>
-            <li>a statement of the <b>meaning of a word</b>, phrase, sign or symbol (what "Ω" stands for)</li>
-            <li>the <b>action</b> of stating that meaning (you, defining a term in your report)</li>
+            <li>a statement of the <b>essential nature</b> of something</li>
+            <li>a statement of the <b>meaning of a word</b> or word group, or a sign or symbol</li>
+            <li>the <b>action</b> or process of stating that meaning</li>
           </ul>
           <h3>Why bother defining?</h3>
           <div class="chips"><span class="chip">increase reader understanding</span><span class="chip">explain technical terms</span><span class="chip">establish common ground</span></div>
-          <p>A definition puts everyone <b>on the same page</b>: writer, reader, client and examiner all mean the same thing by the same word. A term that is left <b>improperly defined</b> can mislead readers, cause wrong decisions and even create legal trouble.</p>
-          <div class="note example"><p>The philosopher Ludwig Wittgenstein put it this way: "The limits of my language mean the limits of my world." If a reader doesn't have the word, they can't think clearly about the thing.</p></div>
-          <div class="note exam"><p>CAT questions on this topic are about <b>applying</b> definitions: which type fits a reader, what is wrong with a given definition, or writing one yourself. Know the purpose first, then the three types.</p></div>
+          <p>A definition lets people <b>establish a common ground</b> and ensures they are all <b>on the same page</b> when discussing a concept. <b>Improperly defined</b> terms can have a negative impact.</p>
+          <div class="note example"><p>The deck quotes Ludwig Wittgenstein: "The limits of my language means the limits of my world."</p></div>
         ` },
         { title: 'Purpose and audience', html: `
           <p class="lead">No single type of definition works everywhere. Two things decide what you write: your <b>purpose</b> and your <b>audience</b>.</p>
           <ul>
-            <li><b>Purpose</b>: why does the reader need the term? A quick mention in passing needs a few words; a term the whole report depends on needs a full paragraph.</li>
-            <li><b>Audience</b>: what does the reader already know? An engineer and a house owner need different definitions of the same word.</li>
-            <li><b>Analogies</b> help nonexperts: "a firewall works like a security guard at a building entrance".</li>
+            <li>Consider your <b>purpose</b>.</li>
+            <li>Definitions will depend on your <b>audience</b>.</li>
+            <li><b>Analogies</b> can be helpful: "The PAUSE button is the brake pedal of the cassette deck".</li>
           </ul>
           <div class="vs">
-            <div class="side"><h4>Client's progress report</h4><p>The <b>leaching field</b> (sieve-like drainage area) needs crushed stone.</p><p><small>A general idea is enough.</small></p></div>
-            <div class="side"><h4>Public health report</h4><p>A full paragraph on what a leaching field is, how waste water filters through it and how it can <b>contaminate groundwater</b>.</p><p><small>The whole report depends on the term.</small></p></div>
+            <div class="side"><h4>Client's progress report</h4><p>The <b>leaching field</b> (sieve-like drainage area) needs crushed stone.</p><p><small>A brief definition is fine when the reader needs only a general understanding.</small></p></div>
+            <div class="side"><h4>Public health report</h4><p>A report on <b>groundwater contamination</b> from leaching fields needs more detail: an <b>expanded definition</b>.</p></div>
           </div>
-          <p>Clear definitions also help us judge <b>complex technical and social issues</b>. Before anyone can debate <b>genetic engineering</b>, they need at least a basic definition: a technique through which genes are <b>isolated</b> in a laboratory, <b>manipulated</b>, and then <b>inserted stably</b> into another organism (by mechanical, chemical or biological means such as viruses).</p>
-          <div class="note example"><p>Here is a dictionary entry for <b>meme</b>: "an idea, behaviour, style, or usage that spreads from person to person within a culture". Notice how it names what a meme is (an idea or behaviour) and then what makes it special (it spreads within a culture).</p></div>
+          <p>Clear definitions also help us judge <b>complex technical and social issues</b>. Before anyone can debate <b>genetic engineering</b>, they need at least a basic definition: an experimental technique through which genes are <b>isolated</b> in a laboratory, <b>manipulated</b>, and then <b>inserted stably</b> into another organism (by mechanical, chemical or biological means such as viruses).</p>
+          <div class="note example"><p>Here is a dictionary entry for <b>meme</b>: "an idea, behaviour, style, or usage that spreads from person to person within a culture".</p></div>
         ` },
         { title: 'Legal weight', html: `
           <p class="lead">A precise definition matters legally because <b>you</b>, or the organisation you write for, are <b>legally responsible</b> for the document.</p>
           <ul>
             <li><b>Contracts</b> are detailed, legally binding definitions of the specific terms of an agreement.</li>
-            <li>A <b>lease</b> for an apartment or a car defines the responsibilities of the <b>lessee</b> (the person renting) and the <b>lessor</b> (the owner).</li>
+            <li>A <b>lease</b> for an apartment or a car defines the responsibilities of the <b>lessee</b> and the <b>lessor</b>.</li>
             <li>An <b>employment contract</b> or <b>employee handbook</b> spells out what both employer and employee must do.</li>
           </ul>
-          <div class="vs">
-            <div class="side"><h4>Vague</h4><p>"The tenant must keep the flat in good condition."</p><p><small>What counts as good? Who pays for a broken geyser?</small></p></div>
-            <div class="side"><h4>Precise</h4><p>"The tenant pays for damage caused by misuse. The owner pays for repairs caused by normal wear, including the water heater and wiring."</p></div>
-          </div>
-          <div class="note why"><p>A court reads the words, not what you meant. If a term can be read two ways, the other side will pick the reading that suits them.</p></div>
         ` },
         { title: 'Ethical weight: Challenger', html: `
           <p class="lead">Definitions have <b>ethical implications</b> too. The <b>Challenger</b> disaster shows how one badly defined phrase, <b>acceptable risk</b>, cost seven lives.</p>
@@ -60,20 +54,18 @@ CHUNK({
           </div>
           <p>The failed O-rings let hot exhaust gases escape and ignite the adjacent fuel tank. Hours before launch, the engineers objected strongly. <b>Management</b> still decided the launch was "a risk worth taking".</p>
           <p>Management's definition of acceptable risk was based on <b>bureaucratic pressure</b> to launch on schedule, not on the <b>engineering facts</b>.</p>
-          <div class="note exam"><p>The lesson: agreeing on meaning is rarely easy, but you are <b>ethically bound</b> to give an <b>accurate interpretation of the facts</b> as you understand them. If a question asks why definitions have ethical weight, Challenger is your example.</p></div>
+          <p>Agreeing on meaning in such cases is rarely easy, but you are <b>ethically bound</b> to convey an <b>accurate interpretation of the facts</b> as you understand them.</p>
         ` },
         { title: 'Three types at a glance', html: `
           <p class="lead">Technical writing uses three types of definition. They differ in <b>how much detail</b> your audience needs to grasp your exact meaning.</p>
-          <figure data-fig="m3-definition-types"></figure>
           <table class="tbl">
             <thead><tr><th>Type</th><th>Length</th><th>Formality</th><th>Use it when</th></tr></thead>
             <tbody>
-              <tr><td><b>Parenthetical</b></td><td>a word or phrase in brackets</td><td>least formal</td><td>the reader needs only a quick clarification</td></tr>
-              <tr><td><b>Sentence</b></td><td>one or two sentences</td><td>more formal</td><td>the reader needs more than a synonym, or you want a working definition</td></tr>
-              <tr><td><b>Expanded</b></td><td>a paragraph or more</td><td>most formal</td><td>the reader needs a complete understanding</td></tr>
+              <tr><td><b>Parenthetical</b></td><td>a synonym or phrase in brackets, in-line</td><td>least formal</td><td>clarification or brief explanation</td></tr>
+              <tr><td><b>Sentence</b></td><td>one or more sentences</td><td>more formal</td><td>more information than a parenthetical can offer, or a working definition</td></tr>
+              <tr><td><b>Expanded</b></td><td>a long, paragraph definition</td><td>most formal</td><td>a more complete understanding</td></tr>
             </tbody>
           </table>
-          <div class="mnemonic"><p><b>P-S-E</b>: brackets, a sentence, an essay. The more the reader depends on the term, the further down the list you go.</p></div>
         ` },
       ],
       flashcards: [
@@ -81,7 +73,6 @@ CHUNK({
         { front: 'What does a definition establish between writer and reader?', back: '<b>Common ground</b>: everyone means the same thing by the term.' },
         { front: 'Why is precise definition a legal matter?', back: 'You or your organisation are <b>legally responsible</b> for the document.' },
         { front: 'A contract is a detailed, legally binding…', back: '<b>Definition</b> of the terms of an agreement.' },
-        { front: 'In a lease, who is the lessee?', back: 'The person <b>renting</b> the flat or car.' },
         { front: 'Which phrase was badly defined before the Challenger launch?', back: '<b>Acceptable risk</b>.' },
         { front: 'Challenger: what failed?', back: 'Two rubber <b>O-ring seals</b> in a booster rocket.' },
         { front: 'Challenger: management defined the risk based on…', back: '<b>Bureaucratic pressure</b> to launch on schedule, not engineering facts.' },
@@ -97,7 +88,7 @@ CHUNK({
         'Three types by detail: <b>parenthetical</b> → <b>sentence</b> → <b>expanded</b>.',
       ],
       formulas: [
-        { name: 'Choosing a definition', html: `How much the reader depends on the term → <b>parenthetical</b> (a little) · <b>sentence</b> (more) · <b>expanded</b> (a lot)`, note: 'Decide by purpose and audience, never by habit.' },
+        { name: 'Choosing a definition', html: `How much detail the audience requires → <b>parenthetical</b> · <b>sentence</b> · <b>expanded</b>`, note: 'Consider purpose and audience.' },
       ],
     },
 
@@ -115,7 +106,6 @@ CHUNK({
             <li>The <b>leaching field</b> (sieve-like drainage area) requires crushed stone.</li>
             <li>The trees on the site are mostly <b>deciduous</b> (shedding foliage at season's end).</li>
           </ul>
-          <div class="note why"><p>The reader never leaves the sentence. They get just enough to keep reading, and an expert can skip the brackets in a second.</p></div>
         ` },
         { title: 'More examples', html: `
           <p class="lead">Anything short can go in the brackets: an <b>acronym's full form</b>, a <b>simpler word</b>, or an <b>example</b>.</p>
@@ -126,20 +116,6 @@ CHUNK({
           </ul>
           <h3>Online</h3>
           <p>On a <b>web page</b>, social media post or online help system, a short definition can be <b>linked</b> to the word. A reader who taps "leaching field" gets a small window with the brief definition.</p>
-          <div class="note trap"><p>"RAM (random access memory) <b>is a form of computer data storage which stores frequently used program instructions</b>" contains both types. The brackets are parenthetical, but the whole sentence (term, class, features) is a <b>sentence definition</b>. The course MCQ worksheet treats it as a sentence definition. Read what the question points at.</p></div>
-        ` },
-        { title: 'Writing a good one', html: `
-          <p class="lead">A parenthetical definition must be <b>shorter and simpler</b> than the term it explains. If it needs a full sentence, you need a sentence definition instead.</p>
-          <div class="vs">
-            <div class="side"><h4>Wrong</h4><p>The pump uses an <b>impeller</b> (a rotor used to increase the pressure and flow of a fluid by transferring mechanical energy from the motor through vanes arranged around a central hub).</p><p><small>Too long: the reader loses the main sentence.</small></p></div>
-            <div class="side"><h4>Right</h4><p>The pump uses an <b>impeller</b> (a spinning rotor with vanes) to push water up.</p></div>
-          </div>
-          <div class="vs">
-            <div class="side"><h4>Wrong</h4><p>The trees are mostly <b>deciduous</b> (caducous).</p><p><small>The "explanation" is harder than the word.</small></p></div>
-            <div class="side"><h4>Right</h4><p>The trees are mostly deciduous (shedding their leaves each autumn).</p></div>
-          </div>
-          <div class="note heads-up"><p>Extra: in normal writing the same job is often done with commas or dashes ("an impeller, a spinning rotor with vanes, pushes water up"). In a CAT answer, use brackets so the examiner sees a parenthetical definition clearly.</p></div>
-          <div class="note exam"><p>If a question asks for a parenthetical definition, write the full sentence around it. The brackets on their own ("(sieve-like drainage area)") are not an answer.</p></div>
         ` },
       ],
       flashcards: [
@@ -149,7 +125,6 @@ CHUNK({
         { front: 'Deciduous (…)', back: '(<b>shedding foliage at season\'s end</b>)' },
         { front: 'Voltaire was imprisoned in the Bastille (…)', back: '(<b>French fortress</b>)' },
         { front: 'How does a web page often show a parenthetical definition?', back: 'As a <b>link</b> that opens a small window with the definition.' },
-        { front: 'The rule for what goes inside the brackets?', back: 'It must be <b>shorter and simpler</b> than the term.' },
         { front: 'When is a parenthetical definition enough?', back: 'When the reader needs only a <b>general idea</b> of the term.' },
       ],
       oneLiners: [
@@ -157,7 +132,6 @@ CHUNK({
         'It is the <b>least formal</b> type, used for quick clarification.',
         'Examples: leaching field (sieve-like drainage area); deciduous (shedding foliage at season\'s end); Bastille (French fortress).',
         'Online, short definitions can be <b>linked</b> to the term in a pop-up window.',
-        'What goes in the brackets must be <b>simpler and shorter</b> than the term.',
       ],
       formulas: [
         { name: 'Parenthetical definition', html: `…<b>term</b> (<b>simpler synonym or short phrase</b>)…`, note: 'e.g. The leaching field (sieve-like drainage area) requires crushed stone.' },
@@ -180,7 +154,6 @@ CHUNK({
             <li>Follows a <b>standard pattern</b>: <b>term</b>, <b>class</b>, <b>distinguishing features</b></li>
           </ul>
           <div class="note example"><p>"An <b>electron microscope</b> is a microscope that uses electrons rather than visible light to produce magnified images." Term: electron microscope. Class: a microscope. Feature: uses electrons, not light.</p></div>
-          <div class="note exam"><p>This is the CAT-2 heading "Technical definitions (sentence definitions)". Expect to write several sentence definitions of everyday or technical objects, and to spot what is wrong with weak ones.</p></div>
         ` },
         { title: 'Term, class, features', html: `
           <p class="lead">Begin by stating the <b>term</b>. Then name the broader <b>class</b> it belongs to. Then give the <b>distinguishing features</b> that separate it from the other members of that class.</p>
@@ -188,31 +161,21 @@ CHUNK({
           <table class="tbl">
             <thead><tr><th>Term</th><th>Class</th><th>Distinguishing features</th></tr></thead>
             <tbody>
-              <tr><td>Carburettor</td><td><b>a mixing device</b></td><td>in petrol engines that blends air and fuel into a vapour for combustion in the cylinders</td></tr>
-              <tr><td>Diabetes</td><td><b>a metabolic disease</b></td><td>caused by a disorder of the pituitary gland or pancreas, with excessive urination, persistent thirst and inability to metabolise sugar</td></tr>
+              <tr><td>Carburettor</td><td><b>a mixing device</b></td><td>in gasoline engines that blends air and fuel into a vapour for combustion within the cylinders</td></tr>
+              <tr><td>Diabetes</td><td><b>a metabolic disease</b></td><td>caused by a disorder of the pituitary gland or pancreas and characterised by excessive urination, persistent thirst and inability to metabolise sugar</td></tr>
               <tr><td>Stress</td><td><b>an applied force</b></td><td>that strains or deforms a body</td></tr>
               <tr><td>Bunsen burner</td><td><b>a small laboratory burner</b></td><td>consisting of a vertical metal tube connected to a gas source</td></tr>
               <tr><td>Neodymium magnet</td><td><b>a permanent magnet</b></td><td>made of a neodymium, boron and iron alloy</td></tr>
             </tbody>
           </table>
-          <div class="note why"><p>The class tells the reader which "shelf" the thing sits on. The features tell them which item on that shelf it is. Without the class they don't know what kind of thing it is; without the features they can't tell it from its neighbours.</p></div>
         ` },
         { title: 'Getting the class right', html: `
-          <p class="lead">Most weak definitions fail at the class. It must be <b>specific enough</b> to be useful, but <b>broad enough</b> to be a real category.</p>
-          <div class="vs">
-            <div class="side"><h4>Too broad</h4><p>A thermometer is <b>a thing</b> that measures temperature.</p><p><small>"Thing" tells the reader nothing.</small></p></div>
-            <div class="side"><h4>Right</h4><p>A thermometer is <b>an instrument</b> that measures temperature.</p></div>
-          </div>
-          <div class="vs">
-            <div class="side"><h4>Circular</h4><p>A <b>compressor</b> is a machine that compresses.</p><p><small>Uses the term to define itself.</small></p></div>
-            <div class="side"><h4>Right</h4><p>A compressor is a machine that <b>raises the pressure of a gas</b> by reducing its volume.</p></div>
-          </div>
-          <div class="vs">
-            <div class="side"><h4>No real feature</h4><p>RAM is fast and useful.</p><p><small>No class, and "fast and useful" fits a hundred things.</small></p></div>
-            <div class="side"><h4>Right</h4><p>RAM is <b>a form of computer data storage</b> which stores frequently used program instructions.</p></div>
-          </div>
-          <div class="note heads-up"><p>Extra, standard in technical writing: besides avoiding <b>circular</b> definitions, don't write "is when" or "is where" ("Corrosion is when metal rusts"), and never explain a term with words harder than the term.</p></div>
-          <div data-viz="def-builder"></div>
+          <p class="lead">The deck's guidelines for definitions include three about the class and features.</p>
+          <ul>
+            <li><b>Classify the item precisely.</b> The narrower your class, the clearer your meaning. Stress is classified as an applied force; to say that stress "is what..." or "takes place when..." fails to denote a specific classification. Diabetes is precisely classified as <b>a metabolic disease</b>, not as a medical term.</li>
+            <li><b>Differentiate the item accurately.</b> If the distinguishing features are too broad, they apply to more than the item you are defining. Defining <em>brief</em> as "a legal document used in court" fails to separate it from other legal documents (wills, affidavits and the like).</li>
+            <li><b>Avoid circular definitions.</b> Do not repeat the word you are defining as part of the distinguishing feature. "Stress is an applied force that places stress on a body" is circular.</li>
+          </ul>
         ` },
         { title: 'Sentences and working definitions', html: `
           <p class="lead">The three parts can be spread over <b>one or more complete sentences</b>. A sentence definition can also fix a <b>working definition</b> that holds for a whole document.</p>
@@ -221,36 +184,25 @@ CHUNK({
           <h3>Working definition</h3>
           <p>Useful when you'll use a term often and don't want to repeat what you mean:</p>
           <div class="note example"><p>"Throughout this document, the term <b>local fauna</b> refers to all animals within the tri-county region that are native to this region and live in the wild. Animals in zoos or wildlife parks are not included in this definition."</p></div>
-          <p>Notice the second sentence: a working definition often says what is <b>left out</b>, so nobody can stretch the term later.</p>
-          <div class="note exam"><p>A good opener for a working definition: "Throughout this report, <b>X refers to</b>…". Use it in lab reports and project reports when a word has several everyday meanings (e.g. "load", "user", "failure").</p></div>
+          <p>The second sentence states what is <b>not included</b> in the definition.</p>
         ` },
-        { title: 'Worked: define everyday objects', html: `
-          <p class="lead">Exercise: define a <b>pen</b>, a <b>laptop</b>, a <b>university</b> and a <b>chair</b>. Build each one part by part.</p>
-          <div class="worked">
-            <div class="given"><p><b>Pen</b>. Class? Not "a thing": a <b>handheld writing instrument</b>. What sets it apart from a pencil or chalk? It uses ink.</p></div>
-            <div class="solve"><p>Term: pen. Class: a handheld writing instrument. Features: applies ink to a surface through a nib or a rolling ball.</p></div>
-            <div class="result"><p>A <b>pen</b> is a handheld writing instrument that applies ink to paper or another surface through a nib or a rolling ball.</p></div>
-          </div>
-          <p>The other three, built the same way (the class is in italics):</p>
-          <ul>
-            <li><b>A laptop</b> is <em>a portable personal computer</em> with a built-in screen, keyboard and battery in a single folding case.</li>
-            <li><b>A university</b> is <em>an institution of higher education</em> that teaches undergraduate and postgraduate courses, carries out research and awards degrees.</li>
-            <li><b>A chair</b> is <em>a piece of furniture</em> for one person to sit on, with a seat, a back and usually four legs.</li>
-          </ul>
-          <div class="note trap"><p>"A chair is a piece of furniture <b>used for sitting</b>." A sofa and a bench are also for sitting. The features must separate the term from its neighbours: <b>one person</b>, <b>a back</b>.</p></div>
+        { title: 'Exercise: define everyday objects', html: `
+          <p class="lead">The deck ends with an exercise: define the following items.</p>
+          <ul><li>Pen</li><li>Laptop</li><li>University</li><li>Chair</li></ul>
+          <p>The deck gives no answer key.</p>
         ` },
         { title: 'Reading dictionary definitions', html: `
-          <p class="lead">Below are short dictionary-style definitions. Read each one for its <b>class</b> (in italics below) and its <b>features</b>, because that is exactly what you're asked to produce.</p>
+          <p class="lead">The deck gives these example definitions (class in italics below).</p>
           <ul>
             <li><b>An apple</b> (noun) is <em>a rounded edible fruit</em>, usually red, yellow or green, that grows on a tree.</li>
             <li><b>A book</b> (noun) is <em>a set of written or printed sheets</em> bound together for reading.</li>
             <li><b>A mobile phone</b> is <em>a portable telephone</em> that uses a radio link and, unlike a landline, is not tied to one place.</li>
-            <li><b>A cat</b> is <em>a small carnivorous mammal</em> (family Felidae) that is kept as a pet and hunts pests.</li>
+            <li><b>A cat</b> is <em>a small carnivorous mammal</em> (family Felidae) , one of the most popular pets, valued for companionship and its ability to hunt pests.</li>
             <li><b>Data science</b> is <em>a multidisciplinary field</em> that uses scientific methods and algorithms to extract insight from data.</li>
             <li><b>A community</b> is <em>a group of people</em> living in the same place or sharing a characteristic.</li>
           </ul>
-          <p>Some course examples go further than one sentence. "Podium" adds the word's Latin and Greek roots, "television" adds what it is used for, "zoo" adds its modern purposes. Those extra sentences are <b>expansion methods</b>, the next topic.</p>
-          <div class="note example"><p>Matching exercise: pick the right meaning for <b>bicycle</b> (a vehicle with two wheels and handlebars, not a plane with two engines), <b>erase</b> (to remove by rubbing away), <b>natural</b> (made by nature), <b>success</b> (doing well at something), <b>net</b> (a mesh for catching insects) and <b>change</b> (to make things different).</p></div>
+          <p>Some examples go further than one sentence: "podium" adds the word's Latin and Greek roots, "television" adds that it is a powerful mass medium for entertainment, news and advertising, and "zoo" adds that modern zoos have a multi-faceted purpose.</p>
+          <div class="note example"><p>The deck also has matching exercises: pick the right meaning of each word from two options (for example <b>bicycle</b>: a vehicle with two wheels and handlebars / a plane with two engines; <b>erase</b>: to decorate / to remove by rubbing away). The deck gives no answer key.</p></div>
         ` },
       ],
       flashcards: [
@@ -260,8 +212,8 @@ CHUNK({
         { front: 'Diabetes: class?', back: '<b>A metabolic disease</b>.' },
         { front: 'Bunsen burner: class?', back: '<b>A small laboratory burner</b>.' },
         { front: 'Electron microscope: what distinguishes it?', back: 'It uses <b>electrons</b> rather than visible light.' },
-        { front: '"A compressor is a machine that compresses." The fault?', back: 'It is <b>circular</b>: the term defines itself.' },
-        { front: '"A thermometer is a thing that measures temperature." The fault?', back: 'The class is <b>too broad</b>; use "an instrument".' },
+        { front: '"Stress is an applied force that places stress on a body." The fault?', back: 'It is <b>circular</b>: the term is repeated in the distinguishing feature.' },
+        { front: '"A brief is a legal document used in court." The fault?', back: 'The features are <b>too broad</b>: they fit wills and affidavits too.' },
         { front: 'What is a working definition?', back: 'A definition fixed <b>for the whole document</b>, so the term needn\'t be redefined.' },
         { front: 'Working definition of local fauna leaves out…', back: 'Animals in <b>zoos or wildlife parks</b>.' },
       ],
@@ -271,12 +223,12 @@ CHUNK({
         'Examples: stress, an applied force that strains or deforms a body; carburettor, a mixing device…',
         'The parts may run over two sentences (diabetes).',
         'A <b>working definition</b> fixes a term for a whole document ("local fauna", zoo animals excluded).',
-        'Avoid a class that is too broad ("a thing"), circular definitions and features that fit other things.',
+        'Classify precisely, differentiate accurately and avoid circular definitions.',
       ],
       formulas: [
         { name: 'Sentence definition', html: `<b>Term</b> is <b>a/an [class]</b> that/which <b>[distinguishing features]</b>.`, note: 'Stress is an applied force that strains or deforms a body.' },
-        { name: 'Working definition', html: `Throughout this document, the term <b>X</b> refers to <b>…</b>. <b>Y</b> is not included.`, note: 'State what is left out as well as what is in.' },
-        { name: 'Class check', html: `Class must be a real category, <b>not "a thing"</b>; features must <b>not fit its neighbours</b>; never use the term to define itself.` },
+        { name: 'Working definition', html: `Throughout this document, the term <b>X</b> refers to <b>…</b>. <b>Y</b> is not included.`, note: 'Local fauna example: animals in zoos or wildlife parks are not included.' },
+        { name: 'Class check', html: `<b>Classify precisely</b> (narrower class, clearer meaning); <b>differentiate accurately</b> (features must not fit other items); <b>avoid circular</b> definitions.` },
       ],
     },
 
@@ -305,10 +257,9 @@ CHUNK({
             <li><b>Analysis of parts</b>: what are its parts?</li>
             <li><b>Visuals</b>: what does it look like?</li>
             <li><b>Comparison and contrast</b>: how does it resemble or differ from something else?</li>
-            <li><b>Required conditions</b>: what is needed to make it work?</li>
+            <li><b>Required conditions</b>: what is needed to make it work or occur?</li>
             <li><b>Examples</b>: how is it used or applied?</li>
           </ul>
-          <div class="mnemonic"><p>Nine methods, <b>"E-H-N, O-P-V, C-R-E"</b>: Etymology, History, Negation · Operating principle, Parts, Visuals · Comparison, Required conditions, Examples.</p></div>
         ` },
         { title: 'Etymology, history, negation', html: `
           <p class="lead">Three methods about the word's <b>story</b> and its <b>limits</b>.</p>
@@ -317,7 +268,7 @@ CHUNK({
           <p>Some terms are <b>acronyms</b>, built from first letters: <b>laser</b> = <b>l</b>ight <b>a</b>mplification by <b>s</b>timulated <b>e</b>mission of <b>r</b>adiation.</p>
           <div class="note example"><p>"The word laser is an acronym for light amplification by stimulated emission of radiation, and is the name for an electronic device that emits a highly concentrated beam of light."</p></div>
           <h3>History: how it came about</h3>
-          <p>Explain how the term, concept or procedure developed. Specialised dictionaries and encyclopedias are good sources. Example: early fibre-optic researchers lacked an intense light source and a clean transmission medium. The laser (invented <b>1960</b>) solved the first problem; the first communications-grade optical fibre of almost pure silica glass (<b>1970</b>) solved the second.</p>
+          <p>Explain how the term, concept or procedure developed. Specialised dictionaries and encyclopedias are good sources. Example: early fibre-optic researchers lacked an intense light source and a clean transmission medium. The invention of the laser (<b>1960</b>) solved the first problem; the first communications-grade optical fibre of almost pure silica glass (<b>1970</b>) solved the second.</p>
           <h3>Negation: what it is not</h3>
           <p>Say what the term <b>does not mean</b>, to clear up misconceptions. A laser is used for many useful purposes, including eye surgery, and <b>not</b>, as science fiction suggests, as a transport to other dimensions.</p>
         ` },
@@ -364,7 +315,6 @@ CHUNK({
           </ol>
           <h3>Nanotechnology, for nontechnical readers</h3>
           <p>These readers need an overview: what nanotechnology is and how it developed, its potential uses, present applications, health risks and impact on jobs. The document uses <b>question-type headings</b> phrased the way readers would ask ("What is nanotechnology?"), and <b>parenthetical definitions</b> of nanometer and micrometer to give a sense of scale.</p>
-          <div class="note exam"><p>For "write an expanded definition of X", open with a sentence definition, then use <b>at least three</b> clearly different methods, one short paragraph each. Examiners look for a correct sentence definition and methods that suit the stated reader.</p></div>
         ` },
       ],
       flashcards: [
@@ -390,7 +340,6 @@ CHUNK({
       ],
       formulas: [
         { name: 'The nine expansion methods', html: `<b>Etymology · History · Negation · Operating principle · Analysis of parts · Visuals · Comparison and contrast · Required conditions · Examples</b>`, note: 'Each answers a question the reader might ask.' },
-        { name: 'Expanded definition answer', html: `Sentence definition first → <b>3+ methods</b> chosen for the reader → one short paragraph each`, note: 'Name the reader, then pick the methods they need.' },
       ],
     },
 
@@ -398,7 +347,7 @@ CHUNK({
       id: 'm3-placing',
       title: 'Placing definitions, glossaries and checking your definition',
       short: 'Placing & glossaries',
-      blurb: 'Where each type of definition goes in a document, what a glossary is for, how to choose the right type for a reader, and a checklist for fixing weak definitions.',
+      blurb: 'Where each type of definition goes in a document, what a glossary is for, how to choose the right type for a reader, and the deck\'s guidelines for definitions.',
       source: 'Technical Definitions',
       tabs: [
         { title: 'Where definitions go', html: `
@@ -408,14 +357,10 @@ CHUNK({
             <li><b>Sentence</b> definitions go in the <b>running text</b>; if there are many, put them in a <b>glossary</b>.</li>
             <li><b>Expanded</b> definitions go near the <b>beginning</b> of a long document if they are essential to the whole, or in an <b>appendix</b> if they are only for reference.</li>
           </ul>
-          <div class="note why"><p>An essential expanded definition goes up front because readers need it before anything else makes sense. A reference-only one goes to the appendix so it doesn't block readers who already know the term.</p></div>
         ` },
         { title: 'Glossaries', html: `
           <p class="lead">A <b>glossary</b> is an <b>alphabetical list</b> of specialised terms and their definitions. It gives <b>laypersons</b> the key definitions <b>without interrupting technical readers</b>.</p>
-          <figure data-fig="m3-glossary-sample"></figure>
-          <p>The sample above is part of a glossary from a document on childbirth. Each entry is the term in bold, a colon, then a short sentence-style definition (for example, <b>analgesic</b>: a medication given to relieve pain).</p>
-          <div class="note heads-up"><p>Extra, standard practice: list entries <b>alphabetically</b>, define only terms the reader may not know, keep each entry in <b>sentence-definition style</b>, and tell readers near the start that a glossary exists (e.g. an asterisk on first use plus a note).</p></div>
-          <div class="note exam"><p>Asked when to use a glossary? Many sentence definitions, a mixed audience (experts and laypeople), and a long document. Asked where it goes? Usually at the end of the report, before or after the appendices.</p></div>
+          <p>The deck shows a partial glossary from a document on childbirth. Each entry is the term in bold, a colon, then a short sentence-style definition (for example, <b>analgesic</b>: a medication given to relieve pain during the first stage of labor).</p>
         ` },
         { title: 'Choosing the type', html: `
           <p class="lead">Put it all together: read the situation, decide how much the reader depends on the term, then choose <b>parenthetical</b>, <b>sentence</b> or <b>expanded</b>.</p>
@@ -427,17 +372,21 @@ CHUNK({
           </ul>
           <div data-viz="def-type-sort"></div>
         ` },
-        { title: 'Checking a definition', html: `
-          <p class="lead">Before you hand in a definition, run it through a short <b>check</b>. Most errors fall into a few patterns.</p>
+        { title: 'Guidelines for definitions', html: `
+          <p class="lead">The deck lists these <b>guidelines for definitions</b>.</p>
           <ol class="steps">
-            <li><b>Class</b> is it a real, specific category (not "a thing", not "something")?</li>
-            <li><b>Features</b> do they separate the term from others in the class?</li>
-            <li><b>Not circular</b> does the definition avoid the term itself ("a compressor compresses")?</li>
-            <li><b>Plain words</b> is every word easier than the term?</li>
-            <li><b>Right type</b> does it give this reader enough, and not more than enough?</li>
+            <li><b>Decide on the level of detail you need.</b> How much does this audience need to follow your point?</li>
+            <li><b>Classify the item precisely.</b> The narrower the class, the clearer the meaning.</li>
+            <li><b>Differentiate the item accurately.</b> Features that are too broad apply to more than the item.</li>
+            <li><b>Avoid circular definitions.</b> Do not repeat the word you are defining.</li>
+            <li><b>Expand your definition selectively.</b> Begin with a sentence definition; choose the expansion strategies for your audience and purpose.</li>
+            <li><b>Use visuals to clarify your meaning.</b></li>
+            <li><b>Know "how much is enough".</b> Don't give needless details or spell out the obvious.</li>
+            <li><b>Consider the legal implications</b> (e.g. what "unsatisfactory job performance" means in an evaluation).</li>
+            <li><b>Consider the ethical implications</b> of fuzzy terms such as "safe levels of exposure" or "acceptable risk".</li>
+            <li><b>Place your definition in an appropriate location</b>, with as little disruption as possible; on a Web site, have it appear in a new tab or window.</li>
+            <li><b>Cite your sources as needed.</b></li>
           </ol>
-          <div class="note heads-up"><p>Extra: the checklist is standard technical-writing practice built on the term-class-features pattern; the course doesn't list it as such.</p></div>
-          <div data-viz="def-fixer"></div>
         ` },
       ],
       flashcards: [
@@ -464,10 +413,8 @@ CHUNK({
     },
   ],
   figures: [
-    { id: 'm3-definition-types', caption: 'The three types of definition, from least to most detail, shown on one term (laser). Based on BAENG101 course material, VIT.', alt: 'Three stacked boxes: parenthetical (a word in brackets), sentence (term, class, features) and expanded (a paragraph using several methods), each getting larger.' },
     { id: 'm3-term-class-features', caption: 'A sentence definition in three parts: the term, the broader class it belongs to, and the features that set it apart in that class. Based on BAENG101 course material, VIT.', alt: 'The definition of stress split into three labelled blocks: term (stress), class (an applied force), distinguishing features (that strains or deforms a body).' },
     { id: 'm3-expansion-questions', caption: 'Each method of expanding a definition answers one question a reader might ask about the term. Based on BAENG101 course material, VIT.', alt: 'A list of nine reader questions, each joined to its expansion method, from etymology to examples.' },
     { id: 'm3-solenoid-plan', caption: 'How the solenoid definition for student mechanics combines several expansion methods, in order. Based on BAENG101 course material, VIT.', alt: 'Five stacked steps: sentence definition, etymology, description and parts with a diagram, operating principle, example.' },
-    { id: 'm3-glossary-sample', caption: 'The layout of a glossary: terms in alphabetical order, each followed by a short sentence-style definition. Based on BAENG101 course material, VIT.', alt: 'A glossary card with four engineering terms in alphabetical order (ampere, bandwidth, capacitor, diode), each followed by a short definition.' },
   ],
 });
