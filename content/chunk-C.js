@@ -247,7 +247,7 @@ CHUNK({
       title: 'Writing an abstract',
       short: 'Writing an abstract',
       blurb: 'The three sample abstracts (online learning, rainwater harvesting, hybrid work) and the task: write about 100 words on the plastic waste and indoor plants reports.',
-      source: 'Sample Abstracts (5 samples and the 100-word task)',
+      source: 'Sample Abstracts (3 sample abstracts, 2 task reports and the 100-word task)',
       tabs: [
         { title: 'The sample abstracts', html: `
           <p class="lead">The file (MAENG101, Technical Report Writing) gives three <b>sample abstracts</b>, each in three short paragraphs.</p>
