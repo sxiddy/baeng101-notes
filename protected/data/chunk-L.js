@@ -24,7 +24,7 @@ CHUNK({
             </tbody>
           </table>
           <p>The sheet also gives a <b>word bank</b> for Parts D to F: solenoid, vaccine, drone, algorithm, 3D printer, or a term of your own. The answer key uses solenoid (Part D), vaccine (Part E) and drone (Part F).</p>
-          <div class="note exam"><p>The key's marking rule: grade for <b>correct use of the pattern or method requested</b>, with an accurate, sensible definition. Exact wording will vary. In an exam, label your method or type so the examiner can see you chose it on purpose.</p></div>
+          <div class="note exam"><p>The key's marking rule: grade for <b>correct use of the pattern or method requested</b>, with an accurate, sensible definition. Exact wording will vary.</p></div>
           <div class="note heads-up"><p>The theory behind each part is in the topics on parenthetical, sentence and expanded definitions, and on purpose and audience. This topic is the practice.</p></div>
         ` },
         { title: `Part A: identify the type`, html: `
@@ -39,8 +39,7 @@ CHUNK({
           </table>
           <p><small>Examples from the course activity sheet.</small></p>
           <div class="note example"><p>The sheet also models how to read a sentence definition: <b>"An electron microscope is a microscope [class] that uses electrons rather than visible light to produce magnified images [distinguishing feature]."</b></p></div>
-          <div class="note trap"><p>Examples 1 and 2 are short, so students often call them parenthetical. A <b>parenthetical</b> definition is a synonym or an aside <b>inside a larger sentence</b>. It does not have the term + class + feature pattern. Example 1 only looks parenthetical because "(random access memory)" is in brackets; that bracket is the expansion of an acronym, and the sentence after "is" does the defining.</p></div>
-          <div class="note why"><p>Quick test: can you take the definition out of the sentence and have it stand alone as a complete statement? If yes, it is a sentence definition. If it only works as a bracket or aside, it is parenthetical. If it runs to a paragraph with extra material (negation, history, uses), it is expanded.</p></div>
+          <div class="note trap"><p>Examples 1 and 2 are short, so students often call them parenthetical. A <b>parenthetical</b> definition is a synonym or an aside <b>inside a larger sentence</b>. It does not have the term + class + feature pattern.</p></div>
         ` },
         { title: `Part B: parenthetical definitions`, html: `
           <p class="lead">A <b>parenthetical definition</b> is the least formal type: a familiar synonym or short clarifying phrase dropped into a sentence, often in brackets. The sheet's own example is <b>leaching field (sievelike drainage area)</b>.</p>
@@ -54,11 +53,6 @@ CHUNK({
               <tr><td><b>Your own term</b></td><td>Student's choice. Check that it is a brief in-sentence aside, not a full sentence definition.</td></tr>
             </tbody>
           </table>
-          <div class="vs">
-            <div class="side"><h4>Wrong</h4><p>An antibiotic is a medicine that kills or slows the growth of bacteria.</p><p><small>This is a sentence definition, not a parenthetical one.</small></p></div>
-            <div class="side"><h4>Right</h4><p>The doctor prescribed an antibiotic (a medicine that kills or slows the growth of bacteria).</p></div>
-          </div>
-          <div class="note exam"><p>For item 4, pick a term your reader plausibly does not know, keep the aside to a few words, and keep the sentence moving. If the bracket is longer than the main clause, you have drifted into a sentence definition.</p></div>
         ` },
         { title: `Part C: sentence definitions`, html: `
           <p class="lead">A <b>sentence definition</b> is more formal and follows one pattern: <b>term = class + distinguishing features or purpose</b>. First say the broader category, then what sets the term apart from other members of it.</p>
@@ -79,11 +73,7 @@ CHUNK({
             <li>A <b>university</b> is an institution of higher education that grants undergraduate and graduate degrees.</li>
             <li>A <b>chair</b> is a piece of furniture with a back and four legs, designed for one person to sit on.</li>
           </ul>
-          <div class="note exam"><p>The key accepts <b>any accurate class and feature pair</b> and any combined sentence that follows the pattern. So a different true feature for a pen (a refillable ink cartridge, say) earns the marks too.</p></div>
-          <div class="vs">
-            <div class="side"><h4>Wrong</h4><p>A chair is something you sit on.</p><p><small>"Something" is not a class, and a stool or sofa fits too.</small></p></div>
-            <div class="side"><h4>Right</h4><p>A chair is a piece of furniture with a back and four legs, designed for one person to sit on.</p></div>
-          </div>
+          <div class="note exam"><p>The key accepts <b>any accurate class and feature pair</b> and any combined sentence that follows the pattern.</p></div>
         ` },
         { title: `Part D: expanding a definition`, html: `
           <p class="lead">An <b>expanded definition</b> is the most formal type: a paragraph-length definition for a reader who needs a complete understanding. The sheet asks for <b>3 to 5 sentences</b> using at least <b>one method</b> from its table, with the method named.</p>
@@ -102,8 +92,7 @@ CHUNK({
           </table>
           <div class="worked">
             <div class="given"><p>Key sample, term <b>solenoid</b> (from the word bank): expand it using operating principle and required conditions.</p></div>
-            <div class="solve"><p><b>Base definition:</b> a solenoid is a coil of wire that becomes an electromagnet when current passes through it.</p><p><b>Operating principle:</b> current makes a magnetic field along the coil, which can pull a metal plunger into the coil and so create motion.</p><p><b>Required conditions:</b> it needs a continuous electric current and a movable metal core inside the coil.</p><p><b>Example:</b> door locks, valves and starter motors, wherever an electrical signal must give a mechanical push or pull.</p></div>
-            <div class="result"><p>Four sentences, a base definition, two labelled methods, and a closing example. This meets all three checks.</p></div>
+            <div class="solve"><p><b>Base definition:</b> a solenoid is a coil of wire that becomes an electromagnet when current passes through it.</p><p><b>Operating principle:</b> current makes a magnetic field along the coil, which can pull a metal plunger into the coil and so create motion.</p><p><b>Required conditions:</b> it needs a continuous electric current and a movable metal core inside the coil.</p><p>Solenoids are used in door locks, valves and starter motors, wherever an electrical signal must give a mechanical push or pull.</p></div>
           </div>
           <div class="note exam"><p>The key checks for (1) a <b>base definition</b> of the term, (2) at least one <b>clearly identifiable, correctly labelled method</b>, and (3) a length of <b>roughly 3 to 5 sentences</b>.</p></div>
         ` },
@@ -116,17 +105,7 @@ CHUNK({
               <tr><td><b>Nontechnical</b></td><td>A shot that trains your body to fight off a specific germ before you ever get sick from it.</td></tr>
             </tbody>
           </table>
-          <h3>What actually changed</h3>
-          <ul>
-            <li><b>Class:</b> "biological preparation" became "a shot".</li>
-            <li><b>Vocabulary:</b> "adaptive immunity", "pathogen", "antigen" became "trains your body" and "germ".</li>
-            <li><b>Register:</b> formal and compact became friendly and direct, using "you".</li>
-          </ul>
           <div class="note exam"><p>The key says to look for <b>genuine differences in register and vocabulary</b>, not just a change in length. A shorter copy of the technical version does not earn the marks.</p></div>
-          <div class="vs">
-            <div class="side"><h4>Wrong (same words, shorter)</h4><p>A vaccine stimulates adaptive immunity to a pathogen.</p><p><small>Still unreadable for a family member.</small></p></div>
-            <div class="side"><h4>Right</h4><p>A vaccine is a shot that trains your body to fight off a specific germ.</p></div>
-          </div>
         ` },
         { title: `Part F: all three types`, html: `
           <p class="lead">The challenge: pick a term <b>not used earlier</b> on the sheet and write the parenthetical, the sentence and the expanded definition. The key's model is <b>drone</b>.</p>
@@ -140,24 +119,6 @@ CHUNK({
             <div class="result"><p>Parenthetical = brief aside in a sentence. Sentence = term, class (aircraft), feature (unmanned, remotely piloted or pre-programmed). Expanded = paragraph with three named methods.</p></div>
           </div>
           <div class="note exam"><p>Grading follows Parts B to D. <b>Parenthetical:</b> brief in-sentence aside. <b>Sentence:</b> term + class + feature in one sentence. <b>Expanded:</b> paragraph length with at least one named method. Full credit for correct use of the pattern with an accurate definition.</p></div>
-          <div class="note heads-up"><p>Notice how the expanded definition repeats the sentence definition as its first sentence. That is the normal way to build one: sentence definition first, then add methods.</p></div>
-        ` },
-        { title: `Try it: 3D printer and algorithm`, html: `
-          <div class="note heads-up"><p>Not on the sheet: the word bank also lists <b>3D printer</b> and <b>algorithm</b>, but the key does not work them. These samples are ours, built with the same pattern, so check them against your own attempt.</p></div>
-          <div class="worked">
-            <div class="given"><p>Term: <b>3D printer</b>. All three types.</p></div>
-            <div class="solve">
-              <p><b>Parenthetical:</b> The team printed the casing on a 3D printer (a machine that builds objects layer by layer from a digital design).</p>
-              <p><b>Sentence:</b> A 3D printer is a machine that builds a solid object by depositing material layer by layer from a digital model.</p>
-              <p><b>Expanded:</b> the sentence above, then: the name comes from the three dimensions of the finished object <b>[etymology]</b>. A nozzle melts plastic filament and lays it down along a path set by the design file, and the platform lowers by one layer each pass <b>[operating principle]</b>. It needs a digital model, a supply of filament and a flat heated platform <b>[required conditions]</b>.</p>
-            </div>
-            <div class="result"><p>Class = machine. Features = layer by layer, from a digital model. Methods named in brackets.</p></div>
-          </div>
-          <div class="worked">
-            <div class="given"><p>Term: <b>algorithm</b>. Parenthetical and sentence.</p></div>
-            <div class="solve"><p><b>Parenthetical:</b> The app sorts your photos with an algorithm (a fixed set of steps for solving a problem).</p><p><b>Sentence:</b> An algorithm is a finite sequence of well-defined steps that solves a problem or completes a task.</p></div>
-            <div class="result"><p>Class = a finite sequence of steps. Feature = well-defined, solves a problem.</p></div>
-          </div>
         ` },
       ],
       flashcards: [
@@ -187,7 +148,7 @@ CHUNK({
       formulas: [
         { name: `Three definition checks`, html: `<b>Parenthetical</b>: aside inside a sentence · <b>Sentence</b>: term + class + features · <b>Expanded</b>: paragraph + named method`, note: `Use it for Part A and the first test of any answer.` },
         { name: `Expanded definition build`, html: `<b>Sentence definition</b> first, then <b>2 to 4 sentences</b> each using one named method`, note: `3 to 5 sentences in all, with the method labelled.` },
-        { name: `Write for the audience`, html: `Change the <b>class word</b>, the <b>vocabulary</b> and the <b>register</b>, and keep length secondary`, note: `Technical: "biological preparation". Nontechnical: "a shot".` },
+        { name: `Write for the audience`, html: `Differ in <b>register</b> and <b>vocabulary</b>, not just length`, note: `Technical: "biological preparation". Nontechnical: "a shot".` },
       ],
     },
 
@@ -243,10 +204,8 @@ CHUNK({
           </table>
           <div class="worked">
             <div class="given"><p>In-text activity 2: rewrite the definition of chemistry with the term at the end.</p></div>
-            <div class="solve"><p>Start from the class and differentia, then close with "is called" and the term.</p></div>
             <div class="result"><p>The <b>branch of science which deals with the composition and behaviour of substances is called chemistry</b>.</p></div>
           </div>
-          <div class="note exam"><p>Questions that ask you to "rewrite" a definition are asking you to move the same three parts into a different pattern: add or drop the wh-word, use "is defined as", or put the term last. The content stays the same.</p></div>
         ` },
         { title: `Formal and non-formal`, html: `
           <p class="lead">Definitions divide into <b>formal</b> and <b>non-formal</b> by how much information they give and how precise they are. EST mostly uses formal ones.</p>
@@ -269,15 +228,14 @@ CHUNK({
           </div>
           <h3>In-text activity 4: formal (F) or non-formal (NF)?</h3>
           <table class="tbl">
-            <thead><tr><th>Statement</th><th>Key</th><th>Reason</th></tr></thead>
+            <thead><tr><th>Statement</th><th>Key</th></tr></thead>
             <tbody>
-              <tr><td>Chloroplasts are plastids which contain chlorophyll.</td><td><b>F</b></td><td>class (plastids) + feature</td></tr>
-              <tr><td>Man is an animal.</td><td><b>NF</b></td><td>only a very broad class</td></tr>
-              <tr><td>An anemometer is a meteorological instrument that is used to measure the speed of the wind.</td><td><b>F</b></td><td>class + feature</td></tr>
-              <tr><td>A car is a four-wheeled vehicle.</td><td><b>NF</b></td><td>"four-wheeled" does not separate a car from other four-wheeled vehicles</td></tr>
+              <tr><td>Chloroplasts are plastids which contain chlorophyll.</td><td><b>F</b></td></tr>
+              <tr><td>Man is an animal.</td><td><b>NF</b></td></tr>
+              <tr><td>An anemometer is a meteorological instrument that is used to measure the speed of the wind.</td><td><b>F</b></td></tr>
+              <tr><td>A car is a four-wheeled vehicle.</td><td><b>NF</b></td></tr>
             </tbody>
           </table>
-          <p><small>The key gives only the letters; the reasons are ours.</small></p>
         ` },
         { title: `Extended definitions`, html: `
           <p class="lead">Some terms cannot be defined in one sentence, so the definition is <b>expanded</b> (extended). This unit names the methods <b>comparison and contrast, analogy, example</b> and <b>derivation</b>.</p>
@@ -287,7 +245,6 @@ CHUNK({
           <p>Method: <b>analogy</b>. It is also a comparison, but the term is explained through a familiar machine.</p>
           <div class="worked">
             <div class="given"><p>Self-check III: what method expands this definition of inertia? "We often meet inertia. A running man cannot stop suddenly; he keeps running for some time. If you switch off a car engine without braking, the car does not stop at once but rolls on for a while."</p></div>
-            <div class="solve"><p>The paragraph gives no class or comparison. It explains the term by showing it in two everyday situations: the runner and the car.</p></div>
             <div class="result"><p>The method is <b>expansion through examples</b> (the key's answer).</p></div>
           </div>
           <div class="note heads-up"><p>The course slides list more expansion methods (etymology, history, negation, operating principle, analysis of parts and so on). See Expanded definitions. The four in this unit are a subset.</p></div>
@@ -314,7 +271,6 @@ CHUNK({
               <tr><td>An electron microscope uses electrons.</td><td>use "is defined as"</td><td>An electron microscope <b>is defined as</b> a microscope which uses electrons rather than visible light to produce magnified images.</td></tr>
             </tbody>
           </table>
-          <div class="note trap"><p>The distractor in the box is option b: "a psychoanalytical technique in which hypnosis is used to elicit unconscious information". It matches none of the three terms, so it is simply not used.</p></div>
         ` },
       ],
       flashcards: [
@@ -377,7 +333,6 @@ CHUNK({
             <li>It describes the <b>cross section of the human eye</b> in a neutral way.</li>
             <li>It starts with the <b>outermost layer</b>, which forms the cornea at the front. Most important parts are at the front, so it goes <b>outer to inner</b>, describing the other two layers and key parts of the innermost one.</li>
           </ul>
-          <div class="note exam"><p>If asked why a literary description fails as a scientific one, point to <b>subjective impressions, changing details and ambiguous words</b>, and say the writer cares about effect, not facts.</p></div>
         ` },
         { title: `Physical description`, html: `
           <p class="lead">A <b>physical description</b> gives an object's physical characteristics, its <b>parts</b>, and how the parts <b>relate</b> to one another.</p>
@@ -397,7 +352,6 @@ CHUNK({
               <tr><td><b>Yellow spot</b></td><td>a depression</td><td>opposite the lens, at the centre of the retina</td></tr>
             </tbody>
           </table>
-          <div class="note why"><p>A reader can only picture an object if each part comes with <b>what it looks like</b> and <b>where it is</b>. Missing either one leaves the reader guessing.</p></div>
         ` },
         { title: `General and specific`, html: `
           <p class="lead">Physical descriptions run from <b>general</b> to <b>specific</b>. The difference lies in the <b>spatial terms</b>: general ones are loose, specific ones carry measurements.</p>
@@ -421,7 +375,6 @@ CHUNK({
             <li><b>Where the paragraph sits.</b> An introductory paragraph uses general terms; later paragraphs give the detail in specific terms.</li>
             <li><b>The nature of the subject.</b> Physical sciences demand great precision, so specific descriptions. Other sciences may not need rigorous specifications.</li>
           </ol>
-          <div class="note trap"><p>Specific is not automatically better. A paragraph for general readers that opens with tolerances in millimetres loses them; a specialist paragraph that says "quite close" is useless.</p></div>
         ` },
         { title: `Describing functions`, html: `
           <p class="lead">Scientific writing usually pairs a <b>physical description</b> with a <b>description of function</b>. Many definitions already stress function: "A generator is a machine which converts mechanical energy into electrical energy" tells you what a generator does.</p>
@@ -464,7 +417,6 @@ CHUNK({
           <p><small>Condensed from the unit's text. Extra detail there: visual purple needs vitamin A; nocturnal animals have only rods; more rods lie towards the edge of the retina.</small></p>
           <div class="worked">
             <div class="given"><p>In-text activity 8: match each part with its function. Parts: 1 sclerotic layer, 2 choroid layer, 3 iris, 4 cones. Functions: (a) stops the light reflecting, (b) regulates the light entering the eye, (c) responsible for colour perception, (d) responsible for hearing, (e) helps give the eye its shape and protects it.</p></div>
-            <div class="solve"><p>Sclerotic: shape and protection. Choroid: stops reflection. Iris: regulates light. Cones: colour. Option (d) belongs to the ear, so it is the distractor.</p></div>
             <div class="result"><p><b>1 = e, 2 = a, 3 = b, 4 = c.</b></p></div>
           </div>
         ` },
@@ -480,13 +432,11 @@ CHUNK({
           </ul>
           <div class="worked">
             <div class="given"><p>Write the physical description, using the diagram for size and shape.</p></div>
-            <div class="solve"><p>Order the paragraph: size, then the bulb and capillary (material), then the stem markings, then the constriction, then the bulb's filling, then the prismatic front.</p></div>
             <div class="result"><p>Key model (retold): A clinical thermometer is about 4 long (the unit is lost in the key). It has a bulb of very thin glass attached to a capillary of very fine bore. The bulb is long and thin, not spherical. The stem is marked from 95 F to 110 F, and the normal temperature, 98.4 F, is shown by a red arrow. There is a constriction in the stem just above the bulb. The bulb is filled with mercury. The front of the thermometer is prismatic.</p></div>
           </div>
-          <div class="note heads-up"><p>Not on the key: because the unit stresses that physical description is usually mixed with function, you could earn extra credit by adding why each feature exists (thin bulb: faster heating; constriction: reading after removal; prismatic front: easier reading). Do this only if the question asks for functions too.</p></div>
         ` },
         { title: `Worked: washing machine`, html: `
-          <p class="lead">Self-check V gives information on a washing machine under three headings (<b>specifications, machine layout, control panel</b>) and asks for a description for the <b>general public</b> in <b>three paragraphs</b>. The unit gives <b>no model answer</b>, only a plan.</p>
+          <p class="lead">Self-check V gives information on a washing machine under three headings (<b>specifications, machine layout, control panel</b>) and asks for a description for the <b>general public</b> in <b>three paragraphs</b>. The unit gives <b>no model answer</b> ("since suggestions are already given, no answer is given for this question"), only a plan.</p>
           <table class="tbl">
             <thead><tr><th>Paragraph</th><th>Content</th><th>Source heading</th></tr></thead>
             <tbody>
@@ -498,11 +448,6 @@ CHUNK({
           <h3>Data to use</h3>
           <div class="kv"><div><span>Type</span><b>fully automatic, top loading, agitator, stainless steel basket</b></div><div><span>Capacity</span><b>5 kg dry clothes</b></div><div><span>Size</span><b>585 mm wide, 975 mm high, 565 mm deep</b></div><div><span>Weight</span><b>about 42 kg</b></div><div><span>Water</span><b>50 litres (low), 130 litres (high)</b></div><div><span>Spin</span><b>740 rpm</b></div><div><span>Agitation</span><b>65 strokes/min (normal), 45 (gentle)</b></div><div><span>Supply</span><b>grounded AC, 240 V, 5 A, 50 Hz; works 170 V to 250 V</b></div></div>
           <p>Control panel: <b>programme select knob</b> (washing programme by fabric and dirt), <b>load select knob</b> (saves water by load), <b>water inlet select knob</b> (hot, tap, or mix for warm), <b>water saver knob</b> (Save keeps detergent water for a second wash; Normal drains it), <b>wash action knob</b> (Gentle for delicate fabrics), and the <b>machine on indicator</b> (glows red until the programme select knob is pushed in).</p>
-          <div class="worked">
-            <div class="given"><p>Paragraph 1 and 2, our model for general readers.</p></div>
-            <div class="solve"><p><b>1.</b> This washing machine is a fully automatic top-loading machine with an agitator and a stainless steel basket, which washes up to 5 kg of dry clothes. It has a sheet metal body on castors, measures 585 mm wide, 975 mm high and 565 mm deep, and weighs about 42 kg.</p><p><b>2.</b> On the control panel, the programme select knob chooses a wash for the fabric and dirt, the load select knob saves water on small loads, and the water inlet knob picks hot, tap or warm water. The water saver knob keeps detergent water for a second wash, and the wash action knob sets a gentle wash for delicate fabrics.</p></div>
-            <div class="result"><p>Paragraph 3 uses the remaining specifications (water use, spin speed, agitation rate, motor, voltage). Written by us from the unit's data, not from a key.</p></div>
-          </div>
         ` },
       ],
       flashcards: [
@@ -557,7 +502,6 @@ CHUNK({
             <li><b>A step-by-step description</b> of the process.</li>
             <li><b>A conclusion</b> that summarises the process.</li>
           </ol>
-          <div class="note exam"><p>If a question gives you a list of steps and asks for a paragraph, check that your answer has these three parts, even if the conclusion is a single sentence.</p></div>
         ` },
         { title: `Chronological order`, html: `
           <p class="lead">Steps must come in the <b>order they happen</b>. Each step is described after the one before it, and usually <b>depends on it</b>: you cannot mark the pointer before the pointer is fixed.</p>
@@ -575,7 +519,7 @@ CHUNK({
           </ol>
           <p>Marks for tenths of a newton (0.1, 0.2, 0.3 N) come from dividing each gap between whole-number marks into <b>10 equal parts</b>. To graduate a device means to <b>calibrate it with a scale</b>. The <b>last paragraph</b> is a short conclusion: the graduated spring is the simplest spring balance.</p>
           <p>This answers <b>self-check 1</b>: the seven steps above (step 1 is given in the question).</p>
-          <div class="note heads-up"><p>The scan gives the third mass as 206 g, but 3 N needs about 306 g (three times 102 g). Treat 206 g as a typing slip.</p></div>
+          <div class="note heads-up"><p>The scan gives the third mass as 206 g.</p></div>
         ` },
         { title: `Passive voice and tense`, html: `
           <p class="lead">Process writing uses the <b>passive</b>, because the <b>action matters more than who does it</b>. The doer is usually left out. Passive verbs in the spring balance paragraph: <b>is attached, is fixed, is marked, is suspended</b>.</p>
@@ -627,7 +571,6 @@ CHUNK({
             <li>The argon step has <b>no marker</b>, but "bubbled through the melt" tells you it follows melting.</li>
             <li>The last sentence joins two <b>simultaneous</b> steps (removing impurities and pouring the steel) and is flagged by "finally".</li>
           </ul>
-          <div class="note trap"><p>Markers help, but they are not compulsory for every step. Repeating "then" at the start of every sentence is as dull as one-step-per-sentence writing.</p></div>
         ` },
         { title: `Worked: hydrogen report`, html: `
           <p class="lead">Self-check 4 turns an <b>instruction</b> sheet (imperative verbs: set up, add, allow) into a <b>report</b> in the <b>past passive</b>. Write as if the experiment is already done, and do not tell it as "I did".</p>
@@ -645,9 +588,8 @@ CHUNK({
           <div class="worked">
             <div class="given"><p>Write the report. The key's sample:</p></div>
             <div class="solve"><p>The apparatus was set up as shown above, and a little copper sulphate solution was added to form a catalyst. A few bubbles were allowed to escape from the end of the delivery tube, and then some gas in the test tube was collected and it was burned. When the gas in the test tube burned with a faint pop and a blue flame travelled down the tube, the hydrogen was collected.</p></div>
-            <div class="result"><p>Past passive throughout, no "I" or "you", and steps combined with "and then" and "when".</p></div>
           </div>
-          <div class="note exam"><p>The key also asks you to <b>draw the diagram</b> and says the answer can explain how the apparatus was set up. A labelled sketch earns the diagram mark.</p></div>
+          <div class="note exam"><p>The key also says <b>(Draw the diagram)</b>.</p></div>
         ` },
         { title: `Worked: biocontrol and combining steps`, html: `
           <p class="lead">Self-check 5 gives seven separate steps for <b>biocontrol of plant disease</b> and asks for <b>one paragraph</b> with sequence markers, combining more than one step in a sentence wherever you can.</p>
@@ -662,11 +604,9 @@ CHUNK({
           </ol>
           <div class="worked">
             <div class="given"><p>Join the steps into a short paragraph with markers.</p></div>
-            <div class="solve"><p>Merge the small steps 1 and 2, then 4 and 5 and 6. Keep the key step 3 (the dose) alone. Add a marker at each stage: Firstly, Next, After, now.</p></div>
             <div class="result"><p>The key's sample: <b>Firstly</b>, dry neem cakes and cowdung are pounded and mixed to get a coarse texture, then moistened by sprinkling water. <b>Next</b>, the commercial preparation of Trichoderma is added at 1 kg per 100 kg of the mixture. <b>After</b> mixing it thoroughly, it is covered with paper and kept for four days to allow multiplication of Trichoderma. It is <b>now</b> ready to be mixed in the soil.</p></div>
           </div>
           <div class="note why"><p>One sentence per step gives boring, monotonous paragraphs. So <b>important or complicated steps get one or two sentences</b>, while <b>two or three minor steps share one sentence</b>.</p></div>
-          <div class="note heads-up"><p>The sample adds "moistened by sprinkling water", which the step list does not contain. In your own answer, stay with the steps you are given unless the question invites extra detail.</p></div>
         ` },
       ],
       flashcards: [
@@ -704,189 +644,68 @@ CHUNK({
       id: 'm3-inference-worksheets',
       title: `Inferencing worksheets: grammar vs vocabulary, fingerprints and a letter`,
       short: `Inferencing worksheets`,
-      blurb: `Worked answers for the two extra inferencing worksheets: Grammar vs Vocabulary (3 questions) and the Reading Comprehension worksheet on fingerprints and a letter from Pride and Prejudice (8 questions). It adds EXCEPT, roman-numeral, vocabulary-in-context and purpose questions to the method already in Inferring from a passage.`,
+      blurb: `The two extra inferencing worksheets: Grammar vs Vocabulary (3 questions) and the Reading Comprehension worksheet on fingerprints and a letter from Pride and Prejudice (8 questions). The passages and questions are given here; neither file gives an answer key.`,
       source: `Module 3 Reading / Inferencing - Worksheet - 1.docx and Reading Comprehension - Inferencing Worksheet.docx`,
       tabs: [
-        { title: `Two worksheets, one method`, html: `
-          <p class="lead">These two worksheets are <b>multiple-choice practice</b> on passages. Neither file has an answer key, so the answers in this topic are <b>worked out by us</b> from the passages. Each is supported by the evidence shown.</p>
+        { title: `Grammar vs vocabulary`, html: `
+          <p class="lead">Inferencing Worksheet 1: a short passage on <b>how English should be taught</b>, with three multiple-choice questions. <b>The file gives no answer key.</b></p>
+          <div class="note example"><p>Retold from the worksheet. Traditionally many linguists stressed mastering <b>grammar structures first</b>. In recent years <b>the majority of educators</b> have become aware of the <b>fallacy</b> of this approach, and approaches promoting <b>vocabulary</b> have gained popularity. Without vocabulary to put on top of the grammar system, learners can say very little, even if they can manipulate complex structures in drills. Native speakers have a vocabulary of about <b>20,000 words</b>, but foreign learners need only about <b>5,000</b> to be quite competent in speaking and listening, because of the nature of words and how <b>frequently</b> they appear. Frequent words should be among the first learned, since they will be met most often.</p></div>
+          <h3>Questions</h3>
+          <ol class="steps">
+            <li>According to the passage, while learning English, one ----. A) cannot achieve competency just through mastering grammar structures; B) needs at least 20,000 words to communicate with foreigners easily; C) must learn grammar structures right away; D) must practise as many grammar structures as possible according to contemporary approaches; E) should first develop understanding of written texts.</li>
+            <li>When approaches to English teaching are considered, ----. A) the best method develops speaking and listening first; B) each method has strong and weak points; C) vocabulary-first approaches have become outdated; D) recent approaches have not proved effective; E) most educators no longer favour the traditional approach that once dominated.</li>
+            <li>It is stated in the passage that ----. A) many educators today think grammar matters more than words; B) grammar drills teach the most frequent words; C) a grammar-first approach is unlikely to find supporters today; D) learners must learn all grammar perfectly to be understood; E) the words needed to communicate with a foreigner exceed 20,000.</li>
+          </ol>
+        ` },
+        { title: `Fingerprints`, html: `
+          <p class="lead">Reading Passage 1 of the Reading Comprehension worksheet: an encyclopedia text on <b>fingerprint identification</b> (source given as Wikipedia, 2010). <b>The file gives no answer key.</b></p>
           <table class="tbl">
-            <thead><tr><th>Worksheet</th><th>Passages</th><th>Questions</th></tr></thead>
+            <thead><tr><th>Part</th><th>What the passage says</th></tr></thead>
             <tbody>
-              <tr><td><b>Inferencing Worksheet 1</b></td><td>Grammar vs Vocabulary (language teaching)</td><td>1 to 3: "according to the passage", "it is stated"</td></tr>
-              <tr><td><b>Reading Comprehension</b></td><td>Fingerprint identification (encyclopedia text); a letter from Pride and Prejudice</td><td>1 to 8: best title, origin, EXCEPT, meaning of a word, purpose</td></tr>
+              <tr><td><b>Use</b></td><td>since the late nineteenth century, police worldwide use fingerprints to identify suspects and victims</td></tr>
+              <tr><td><b>Uniqueness</b></td><td>papillary ridges form patterns unique to each person that do not change; even identical twins differ</td></tr>
+              <tr><td><b>Making them visible</b></td><td>latent prints are made visible to be photographed, usually with a developer (powder or chemical reagent); the method may depend on the surface</td></tr>
+              <tr><td><b>Origin</b></td><td>watery secretions of the <b>eccrine</b> glands of fingers and palms, plus material from <b>sebaceous</b> glands, mainly the forehead, from touching the face and hair</td></tr>
+              <tr><td><b>Composition</b></td><td>mostly water with traces of <b>amino acids and chlorides</b>, mixed with a fatty sebaceous part (fatty acids, triglycerides)</td></tr>
+              <tr><td><b>Detection</b></td><td>simple powders or chemicals in situ at the scene; complex techniques in specialist laboratories; by 2010 some services reported <b>50% or more</b> of recovered prints identified by lab techniques</td></tr>
             </tbody>
           </table>
-          <h3>What each question type wants</h3>
-          <ul>
-            <li><b>"According to the passage":</b> the option must match a line, perhaps reworded, or follow from the lines in one small step.</li>
-            <li><b>Best title:</b> the idea that covers the <b>whole</b> passage, not one detail.</li>
-            <li><b>EXCEPT:</b> three or four options are true; find the one that is <b>false or unsupported</b>.</li>
-            <li><b>Roman numerals (I, II, III):</b> judge each statement by itself first, then pick the combination.</li>
-            <li><b>Word in context:</b> read the phrase around the word and choose the sense that fits it, not the sense you know best.</li>
-            <li><b>Purpose:</b> why the writer wrote it, judged from what the passage mainly does.</li>
-          </ul>
-          <div class="note exam"><p>Sort each option into <b>stated, inferred, not supported</b> (see Inferring from a passage). Most wrong options on these worksheets <b>contradict</b> the passage or add a claim it never makes.</p></div>
-          <div class="note heads-up"><p>The files do not label which answers are right. Where the options lost their letters in the file, we number them A to E in the order given.</p></div>
+          <h3>Questions</h3>
+          <ol class="steps">
+            <li>Best title: In Situ Powder Use in Crime Scene Investigations; How to Identify a Criminal; Amino Acids in Fingerprint Detection; Fingerprint Composition and Detection; Uses of Papillary Ridge Secretions.</li>
+            <li>Amino acids and chlorides originate from: I sebaceous glands, II eccrine glands, III papillary ridges. Choices: I only; II only; III only; I and II only; none of the above.</li>
+            <li>Powders are most likely used: instead of reactive organic substances; at the crime scene; in laboratories; to detect triglycerides; as one of the more sophisticated techniques.</li>
+            <li>All are true EXCEPT: fingerprints identify victims of crime; patterns may become distorted by sebaceous contamination; identical twins have different fingerprints; investigators make prints visible to photograph them; touching the face and hair contaminates eccrine secretions.</li>
+          </ol>
         ` },
-        { title: `Grammar vs vocabulary: passage`, html: `
-          <p class="lead">A short passage on <b>how English should be taught</b>. Read it for the writer's stance: grammar first, or vocabulary?</p>
-          <div class="note example"><p>Retold from the worksheet. For a long time many linguists said learners should master <b>grammar structures first</b>. In recent years <b>most educators</b> have seen the <b>fallacy</b> in that, and approaches that build <b>vocabulary</b> have become popular. Without vocabulary to put on top of the grammar, learners can say very little, even if they can handle complex structures in drills. To learn English you need many words. Native speakers know about <b>20,000 words</b>, but foreign learners need far fewer: about <b>5,000</b> make them quite competent in speaking and listening. The reason is the nature of words and how <b>frequently</b> they appear, so frequent words should be learned first.</p></div>
-          <table class="tbl">
-            <thead><tr><th>Fact</th><th>Where it comes from</th></tr></thead>
-            <tbody>
-              <tr><td>Old approach: grammar first</td><td>"Traditionally, many linguists stressed..."</td></tr>
-              <tr><td>New view: the old approach is a fallacy</td><td>"the majority of educators"</td></tr>
-              <tr><td>Drills alone give little speech</td><td>learners "can actually say very little"</td></tr>
-              <tr><td>20,000 against about 5,000</td><td>native speakers against foreign learners</td></tr>
-              <tr><td>Learn frequent words first</td><td>they are met and needed most often</td></tr>
-            </tbody>
-          </table>
-          <div class="note trap"><p>The number 20,000 is the <b>native speaker's</b> vocabulary. An option that says a learner needs 20,000 words uses a real number from the passage with the wrong person.</p></div>
-        ` },
-        { title: `Grammar vs vocabulary: answers`, html: `
-          <p class="lead">Worked answers for the three questions. Answers: <b>1 = A</b>, <b>2 = E</b>, <b>3 = C</b>.</p>
-          <h3>Question 1: "while learning English, one ...."</h3>
-          <table class="tbl">
-            <thead><tr><th>Option</th><th>Label</th><th>Why</th></tr></thead>
-            <tbody>
-              <tr><td><b>A.</b> cannot reach competency just by mastering grammar structures</td><td><b>Supported</b></td><td>learners with grammar but no vocabulary "can say very little"</td></tr>
-              <tr><td>B. needs at least 20,000 words to talk with foreigners</td><td>Contradicts</td><td>foreign learners need only about 5,000</td></tr>
-              <tr><td>C. must learn grammar structures right away</td><td>Contradicts</td><td>the old grammar-first view is the fallacy</td></tr>
-              <tr><td>D. must practise as many structures as possible</td><td>Contradicts</td><td>recent teaching moved away from this</td></tr>
-              <tr><td>E. should first understand written texts</td><td>Not supported</td><td>the passage speaks of speaking and listening</td></tr>
-            </tbody>
-          </table>
-          <h3>Question 2: "when approaches to teaching are considered ...."</h3>
-          <ul>
-            <li><b>E (answer):</b> most educators no longer favour the traditional approach that once dominated. The passage says the majority have recognised its fallacy.</li>
-            <li>A (best method is speaking and listening first) and B (each method has strengths and weaknesses) are <b>not supported</b>: the passage ranks no method this way.</li>
-            <li>C (vocabulary-first approaches are outdated) and D (recent approaches have not worked) <b>reverse</b> the passage.</li>
-          </ul>
-          <h3>Question 3: "It is stated that ...."</h3>
-          <ul>
-            <li><b>C (answer):</b> a grammar-first approach is unlikely to find many supporters today. Best fit with "the majority of educators".</li>
-            <li>A reverses the passage; E (over 20,000 words needed) contradicts the 5,000 figure.</li>
-            <li>B (grammar drills teach frequent words) and D (all grammar must be perfect to be understood) bring in claims the passage never makes.</li>
-          </ul>
-          <div class="note heads-up"><p>Option C stretches "the majority" into "hardly any supporters", so it is a <b>best-of-five</b> answer. Every other option is clearly worse, which is how you decide.</p></div>
-        ` },
-        { title: `Fingerprints: passage`, html: `
-          <p class="lead">Reading Passage 1 is an encyclopedia-style text on <b>fingerprint identification</b>. Dense with detail, so split it into three jobs: <b>what a print is</b>, <b>what it is made of</b>, and <b>where it is detected</b>.</p>
-          <div class="note example"><p>Retold from the worksheet (the source is Wikipedia, 2010). Since the late nineteenth century police worldwide have used fingerprints to identify suspects and victims. The skin of the palms and soles forms <b>papillary ridges</b> in patterns <b>unique to each person and unchanging</b>; even identical twins differ. A hidden (<b>latent</b>) print must be made visible so it can be photographed. The best way can be complex and may depend on the <b>surface</b>, and usually needs a <b>developer</b> (a powder or chemical reagent) to give contrast between the ridges and the surface.</p></div>
-          <table class="tbl">
-            <thead><tr><th>Part</th><th>Key facts</th></tr></thead>
-            <tbody>
-              <tr><td><b>Uniqueness</b></td><td>ridge patterns unique and unchanging; twins differ</td></tr>
-              <tr><td><b>Making them visible</b></td><td>developer (powder or reagent); depends on organic materials or inorganic salts; water may help</td></tr>
-              <tr><td><b>Origin</b></td><td>mostly watery secretions of the <b>eccrine</b> glands (fingers, palms), plus some oily material from <b>sebaceous</b> glands, mainly the forehead, which arrives by touching the face and hair</td></tr>
-              <tr><td><b>Composition</b></td><td>a lot of water, traces of <b>amino acids and chlorides</b>, mixed with a fatty part (fatty acids, triglycerides)</td></tr>
-              <tr><td><b>Detection</b></td><td>simple powders, or chemicals used on the spot; complex chemical methods in specialist laboratories; by 2010 some services reported <b>50% or more</b> of recovered prints identified by lab methods</td></tr>
-            </tbody>
-          </table>
-          <p>Hard to detect: small amounts of reactive organic substances such as urea and amino acids.</p>
-        ` },
-        { title: `Fingerprints: questions 1 to 4`, html: `
-          <p class="lead">Answers: <b>1 = D</b>, <b>2 = II only</b>, <b>3 = at the crime scene</b>, <b>4 = B</b>.</p>
-          <div class="worked">
-            <div class="given"><p><b>Q1. Best title.</b> Options: In Situ Powder Use in Crime Scene Investigations; How to Identify a Criminal; Amino Acids in Fingerprint Detection; Fingerprint Composition and Detection; Uses of Papillary Ridge Secretions.</p></div>
-            <div class="solve"><p>The passage covers uniqueness, composition and detection. The powder and amino-acid titles each cover one detail; "How to Identify a Criminal" ignores composition and also victims.</p></div>
-            <div class="result"><p><b>Fingerprint Composition and Detection.</b></p></div>
-          </div>
-          <div class="worked">
-            <div class="given"><p><b>Q2. Amino acids and chlorides come from:</b> I sebaceous glands, II eccrine glands, III papillary ridges. Choices: I only, II only, III only, I and II only, none.</p></div>
-            <div class="solve"><p>The watery base of a print, which holds the amino acids and chlorides, comes from the eccrine secretions. The sebaceous part is the fatty part with fatty acids and triglycerides. The ridges shape the pattern; they are not a secretion.</p></div>
-            <div class="result"><p><b>II only.</b> (The worksheet text lost the roman numerals, so we assume the order sebaceous, eccrine, ridges.)</p></div>
-          </div>
-          <div class="worked">
-            <div class="given"><p><b>Q3. Powders are most likely used</b> instead of reactive organic substances; at the crime scene; in laboratories; to detect triglycerides; as a more sophisticated technique.</p></div>
-            <div class="solve"><p>Simple powders or chemicals are used on site; complex techniques belong in laboratories. "More sophisticated" contradicts "simple".</p></div>
-            <div class="result"><p><b>At the crime scene.</b></p></div>
-          </div>
-          <div class="worked">
-            <div class="given"><p><b>Q4. All are true EXCEPT:</b> A fingerprints identify victims; B patterns may be distorted by sebaceous contamination; C identical twins have different prints; D investigators make prints visible to photograph them; E touching face and hair contaminates eccrine secretions.</p></div>
-            <div class="solve"><p>A, C, D and E each match a line. Contamination from the face changes what the print is made of, not its ridge pattern, which is unchanging. The passage never says patterns become distorted.</p></div>
-            <div class="result"><p><b>B.</b></p></div>
-          </div>
-          <div class="note trap"><p>With EXCEPT, every option except one is true. Tick off the true ones using the text; do not hunt for the best sentence.</p></div>
-        ` },
-        { title: `Pride and Prejudice letter: passage`, html: `
-          <p class="lead">Reading Passage 2 is an extract of a <b>letter from one fictional character to another</b>, in nineteenth-century English. The long sentences hide a simple structure: <b>two accusations</b>, one <b>comparison</b>, one <b>hope</b>.</p>
-          <div class="note example"><p>Retold from the worksheet (Jane Austen, Pride and Prejudice). The writer says that last night the reader laid two offences to his charge, of very different nature and "by no means of equal magnitude". <b>First</b>, that he had separated Mr Bingley from the reader's sister, ignoring the feelings of both. <b>Second</b>, that he had ruined Mr Wickham's prospects against honour and humanity. To have <b>wilfully and wantonly</b> thrown off the companion of his youth, his father's favourite, a young man who depended on the family's support, would be a <b>depravity</b> that the parting of two young people, whose affection had grown over only a few weeks, could not be compared to. He hopes the account that follows will <b>protect him in future</b> from the severity of such blame. If explaining it means relating feelings that may offend her, he can only say he is sorry. The necessity must be obeyed, and further apology would be absurd.</p></div>
-          <ul>
-            <li><b>Offence 1:</b> separating Bingley from the reader's sister (a short-lived attachment).</li>
-            <li><b>Offence 2:</b> ruining Wickham (the long-standing companion and dependant).</li>
-            <li>The writer says the second would be far worse. He is saying that if it were true, it would be much worse than the first.</li>
-          </ul>
-          <div class="note heads-up"><p>Not on the worksheet: in the novel the writer is Mr Darcy and the reader is Elizabeth Bennet. You do not need the novel to answer.</p></div>
-        ` },
-        { title: `Pride and Prejudice letter: questions 5 to 8`, html: `
-          <p class="lead">Answers: <b>5 = E</b>, <b>6 = E</b>, <b>7 = B</b>, <b>8 = I only</b>.</p>
-          <table class="tbl">
-            <thead><tr><th>Question</th><th>Answer</th><th>Evidence</th></tr></thead>
-            <tbody>
-              <tr><td><b>5.</b> Which offence would the writer consider the worst? (options: obeying necessity; separating Bingley from the reader's sister; continuing dependency through patronage; relating offensive feelings; ruining Wickham's prospects wantonly)</td><td><b>E</b>, ruining Wickham's prospects wantonly</td><td>he calls it a "depravity" that the separation of Bingley and the sister "could bear no comparison" to</td></tr>
-              <tr><td><b>6.</b> Who are the "young persons"?</td><td><b>E</b>, the reader's sister and Mr Bingley</td><td>the phrase sits in the clause about the separation, whose affection grew in a few weeks</td></tr>
-              <tr><td><b>7.</b> "Secured" near the end means:</td><td><b>B</b>, safe from being charged</td><td>"secured from the severity of that blame" means protected from it</td></tr>
-              <tr><td><b>8.</b> The writer's purpose:</td><td><b>I only</b></td><td>he answers the charges: the account is to protect him from blame</td></tr>
-            </tbody>
-          </table>
-          <h3>Why not the other options?</h3>
-          <ul>
-            <li><b>Q6:</b> Wickham is mentioned in the second offence, but the "young persons" are the pair whose <b>affection</b> was separated. The writer and reader are the speakers, not the pair.</li>
-            <li><b>Q7:</b> "tightly fastened", "captured" and "accomplished" are other meanings of secure. "Guaranteed" is tempting; "secured from" signals protection from something.</li>
-            <li><b>Q8:</b> Statement II (apologising) is only conditional: "if" he must relate offensive feelings. It is a courtesy, not the purpose. Statement III (satisfying himself) has no support in the text.</li>
-          </ul>
-          <div class="note heads-up"><p>These answers are ours. Q8 is the least certain, because "the explanation due to myself" could be read as self-justification. Even so, defending himself against the accusations (I) is the main purpose, and II and III are not shown.</p></div>
-        ` },
-        { title: `New traps in these worksheets`, html: `
-          <p class="lead">The extra worksheets show a few <b>question formats</b> and traps that the three practice passages in Inferring from a passage do not cover.</p>
-          <table class="tbl">
-            <thead><tr><th>Trap</th><th>Example here</th><th>Defence</th></tr></thead>
-            <tbody>
-              <tr><td><b>Right number, wrong person</b></td><td>"20,000 words" given for foreign learners</td><td>Check <b>who</b> the figure belongs to</td></tr>
-              <tr><td><b>Real fact, wrong question</b></td><td>Q4 options are all true facts, except one</td><td>Read the stem for EXCEPT, NOT or LEAST</td></tr>
-              <tr><td><b>Split sources</b></td><td>Q2: sebaceous versus eccrine</td><td>Match each substance to its source line</td></tr>
-              <tr><td><b>Familiar meaning of a word</b></td><td>"secured" as guaranteed</td><td>Read the phrase around it ("secured from")</td></tr>
-              <tr><td><b>Weak purpose statements</b></td><td>Q8 II and III</td><td>Ask whether the passage <b>mainly</b> does it</td></tr>
-              <tr><td><b>Over-wide title</b></td><td>"How to Identify a Criminal"</td><td>The title must fit the passage's actual content</td></tr>
-            </tbody>
-          </table>
-          <div class="vs">
-            <div class="side"><h4>Wrong</h4><p>The writer wants to apologise, because the letter says "I am sorry".</p><p><small>One conditional phrase is not the purpose of the whole letter.</small></p></div>
-            <div class="side"><h4>Right</h4><p>The writer wants to defend his conduct against two accusations, with a courteous regret for any offence the explanation causes.</p></div>
-          </div>
-          <div class="note exam"><p>Roman-numeral questions: judge each numeral <b>alone</b> against the text, write true or false beside it, then find the combination. Do not start from the combinations.</p></div>
+        { title: `Pride and Prejudice letter`, html: `
+          <p class="lead">Reading Passage 2: an excerpt of a <b>letter written by one fictional character to another</b> (Jane Austen, Pride and Prejudice). <b>The file gives no answer key.</b></p>
+          <div class="note example"><p>Retold from the worksheet. The writer says the reader laid two offences to his charge, of very different nature and "by no means of equal magnitude": <b>first</b>, that he had detached Mr Bingley from the reader's sister; <b>second</b>, that he had ruined the prospects of Mr Wickham. To have <b>wilfully and wantonly</b> thrown off the companion of his youth, his father's favourite, who depended on the family's patronage, would be a <b>depravity</b> to which the separation of two young persons, whose affection grew over only a few weeks, could bear no comparison. He hopes to be <b>secured</b> in future from the severity of that blame once his account is read. If the explanation means relating feelings that may offend her, he can only say he is sorry.</p></div>
+          <h3>Questions</h3>
+          <ol class="steps">
+            <li>(Q5) Which offence would the writer consider the worst? obeying necessity; separating Mr Bingley from the reader's sister; continuing dependency through patronage; relating feelings that may offend the reader; ruining Mr Wickham's prospects wantonly.</li>
+            <li>Who are the "young persons"? Mr Wickham and the reader's sister; the writer and the reader; Mr Bingley and the reader; the father's favourite and the reader; the reader's sister and Mr Bingley.</li>
+            <li>"Secured" near the end means: tightly fastened; safe from being charged; captured or confined; accomplished; guaranteed.</li>
+            <li>The writer's purpose: I to defend his actions against the reader's accusations; II to apologise for offending the reader's feelings; III to satisfy himself that his actions were appropriate. Choices: I only; II only; III only; I and II only; I, II and III.</li>
+          </ol>
         ` },
       ],
       flashcards: [
         { front: `Grammar vs vocabulary: how many words do native speakers know and how many do foreign learners need?`, back: `About <b>20,000</b> against about <b>5,000</b> for competence in speaking and listening.` },
-        { front: `Why learn frequent words first?`, back: `They are <b>met most often</b> and needed in speech and writing.` },
-        { front: `Grammar vs vocabulary Q1 answer and why?`, back: `A: grammar alone cannot give competency, since learners without words "can say very little".` },
-        { front: `Grammar vs vocabulary Q2 answer?`, back: `E: most educators no longer favour the old grammar-first approach.` },
-        { front: `Which phrase in the vocabulary passage signals most educators' view?`, back: `"the majority of educators" see the grammar-first approach as a <b>fallacy</b>.` },
-        { front: `Fingerprints: what makes ridge patterns useful for identification?`, back: `Unique to each person and <b>unchanging</b>; even identical twins differ.` },
+        { front: `Why learn frequent words first (per the passage)?`, back: `They will be <b>met most often</b> and needed in speech or writing.` },
+        { front: `What do "the majority of educators" now see in the grammar-first approach?`, back: `Its <b>fallacy</b>.` },
+        { front: `Fingerprints: why are ridge patterns useful for identification?`, back: `Unique to each person and <b>unchanging</b>; even identical twins differ.` },
         { front: `Which glands give the watery part of a print, and which the fatty part?`, back: `Watery: <b>eccrine</b>. Fatty: <b>sebaceous</b> (forehead, via touching face and hair).` },
-        { front: `Where are simple powders used, and complex methods?`, back: `Powders and quick chemicals at the <b>crime scene</b>; complex techniques in <b>specialist laboratories</b>.` },
-        { front: `Fingerprint Q4 EXCEPT answer?`, back: `B: the passage never says sebaceous contamination distorts patterns.` },
-        { front: `Letter: which offence is far worse and why?`, back: `Ruining Wickham: wilful and wanton, against a lifelong companion and dependant.` },
-        { front: `"Secured" in "secured from the severity of that blame"?`, back: `<b>Safe from</b> being charged.` },
-        { front: `Letter purpose: which statement holds?`, back: `<b>I only</b>: to defend his actions against the accusations.` },
+        { front: `Where are simple powders used, and complex methods?`, back: `Powders and chemicals in situ at the <b>crime scene</b>; complex techniques in <b>specialist laboratories</b>.` },
+        { front: `Letter: what are the two offences?`, back: `Detaching Mr Bingley from the reader's sister; ruining Mr Wickham's prospects.` },
       ],
       oneLiners: [
-        `Grammar vs vocabulary: the passage says grammar alone is not enough, and about 5,000 frequent words give a learner competence.`,
-        `Check who a number belongs to: 20,000 is native speakers, about 5,000 is foreign learners.`,
-        `In an EXCEPT question, find the three or four true options and the odd one is the answer.`,
+        `Grammar vs vocabulary: without vocabulary, learners can say very little; about 5,000 frequent words give competence.`,
         `Fingerprints: unique unchanging ridge patterns; eccrine water with amino acids and chlorides; sebaceous fat from the face.`,
-        `Powders and chemicals work at the scene; complex techniques are done in specialist laboratories.`,
-        `Letter: two accusations of unequal weight; ruining Wickham is the worse; the aim is to defend himself.`,
-        `For a word in context, use the phrase around it ("secured from" means safe from).`,
-        `The source files have no key, so these answers are our own reading, supported line by line.`,
+        `Powders and chemicals are used at the scene; complex techniques in specialist laboratories.`,
+        `Neither inferencing worksheet gives an answer key.`,
       ],
-      formulas: [
-        { name: `EXCEPT questions`, html: `Mark each option <b>true</b> or <b>not true</b> by the text; the <b>odd one out</b> is the answer`, note: `Do not look for the best sentence.` },
-        { name: `Roman numerals`, html: `Judge each numeral <b>alone</b>, then pick the <b>combination</b>`, note: `Never start from the combinations.` },
-        { name: `Word in context`, html: `Read the <b>phrase</b> around the word, then choose the sense that fits it`, note: `"Secured from" = protected from.` },
-      ],
+      formulas: [],
     },
   ],
   figures: [],

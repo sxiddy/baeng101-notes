@@ -9,7 +9,7 @@ CHUNK({
       id: 'm4-plagiarism-forms',
       title: 'Plagiarism: what it is and its forms',
       short: 'Plagiarism and its forms',
-      blurb: 'The definition of plagiarism, the eight forms a university lists (from quotation without credit to auto-plagiarism), a five-version test on one passage, what happens to students who plagiarise, and the usual questions about citing.',
+      blurb: 'The definition of plagiarism, the eight forms a university lists (from quotation without credit to auto-plagiarism), seven versions of one passage, what happens to students who plagiarise, and the usual questions about citing.',
       source: 'Module 4 Writing / Research Writing / m4-research-writing-Plagiarism.pdf (a university student-guidance page on plagiarism)',
       tabs: [
         { title: 'What plagiarism is', html: `
@@ -22,8 +22,7 @@ CHUNK({
           </div>
           <p>Under the examination regulations quoted in the page, <b>intentional or reckless</b> plagiarism is a disciplinary offence.</p>
           <div class="note why"><p>The page says avoiding plagiarism is <b>not</b> just getting every reference right, or changing enough words that the examiner won't notice a paraphrase. It is about using your academic skills so that the work is as good as it can be: reading, taking proper notes, forming your own view and showing clearly whose idea is whose.</p></div>
-          <div class="note exam"><p>You will meet this as a <b>spot-the-problem</b> question: a paragraph of "your" writing next to a source, and you say whether it is plagiarised and why. The reasons are always one of the forms in the next tab.</p></div>
-        ` },
+                  ` },
         { title: 'The forms of plagiarism', html: `
           <p class="lead">The page lists <b>eight forms</b>. Only the first two are the copy-paste kind; most of the others are quiet mistakes that still count.</p>
           <table class="tbl">
@@ -70,8 +69,7 @@ CHUNK({
           <h3>What can happen</h3>
           <p>Penalties on the page range from <b>lost marks to expulsion</b>, depending on how serious the case is. Even <b>inadvertent</b> plagiarism can be penalised. Intentional or reckless plagiarism can mean <b>failing the degree or expulsion</b>. The same rules cover theses, dissertations and coursework that count towards a degree, and not just exams.</p>
           <p>At that university a suspected case goes to the Proctors, who investigate and interview the student, and a serious breach is passed to a Student Disciplinary Panel. The student is supported through the process by a college officer and a tutor.</p>
-          <div class="note heads-up"><p>Not on the slides: the Proctors and the Student Disciplinary Panel belong to that one university. Your own institution has its own committee and penalties, but the <b>forms of plagiarism and the logic of citing</b> are the same everywhere. Check your own code of conduct.</p></div>
-          <div class="note trap"><p>"I forgot to write the source down" and "I didn't know the rules" do <b>not</b> protect you. The page says it is your responsibility to learn your discipline's referencing conventions, take proper notes and avoid close paraphrase.</p></div>
+                    <div class="note trap"><p>"I forgot to write the source down" and "I didn't know the rules" do <b>not</b> protect you. The page says it is your responsibility to learn your discipline's referencing conventions, take proper notes and avoid close paraphrase.</p></div>
         ` },
         { title: 'Questions students ask', html: `
           <p class="lead">The page ends with answers to the doubts that lead students to plagiarise by accident.</p>
@@ -85,8 +83,7 @@ CHUNK({
             <li><b>Borrowing essays.</b> Adapting another student's essay is plagiarism, and lending yours does that student no favours.</li>
             <li><b>The bigger picture.</b> Reading academic writing is like learning a new language. The skills (judge evidence, think critically, write clearly) are the ones employers value, whether or not you become an academic.</li>
           </ul>
-          <div class="note exam"><p>If a question asks <b>when a citation is needed</b>, answer: for another person's words (in quotation marks), for their ideas and interpretations even when reworded, and for their data; not for common knowledge or your own results.</p></div>
-        ` },
+                  ` },
       ],
       flashcards: [
         { front: `Plagiarism in one sentence?`, back: `Presenting <b>someone else's work or ideas as your own</b> without full acknowledgement.` },
@@ -109,8 +106,8 @@ CHUNK({
         'Common knowledge needs no citation; <b>interpretations and unfamiliar facts</b> do. If unsure, cite.',
       ],
       formulas: [
-        { name: 'The credit test', html: `Mark <b>exact words</b> with quotation marks · credit <b>every idea</b>, even reworded · rebuild sentences in <b>your own structure</b> · cite <b>your own earlier work</b> too`, note: 'If a reader could think it is yours when it is not, it is plagiarism.' },
-        { name: 'Close-paraphrase check', html: `Same <b>order of points</b> + same <b>logic</b> + only <b>synonyms</b> changed = plagiarised paraphrase`, note: 'Fix: close the source, explain it from memory, then cite.' },
+        { name: 'The credit test', html: `Mark <b>exact words</b> with quotation marks · credit <b>every idea</b>, even reworded · rebuild sentences in <b>your own structure</b> · cite <b>your own earlier work</b> too` },
+        { name: 'Close-paraphrase check', html: `Same <b>order of points</b> + same <b>logic</b> + only <b>synonyms</b> changed = plagiarised paraphrase` },
       ],
     },
 
@@ -118,7 +115,7 @@ CHUNK({
       id: 'm4-avoid-plagiarism',
       title: 'Avoiding plagiarism in your own paper',
       short: 'Avoiding plagiarism',
-      blurb: 'Five practical guidelines, the five forms editors look for, real figures on rejections, how plagiarism checkers report, and a cite-or-not decision table.',
+      blurb: 'Five practical guidelines, the five forms editors look for, real figures on rejections, how plagiarism checkers report, and what to cite.',
       source: 'Module 4 Writing / Research Writing / How Can You Avoid Plagiarism in a Research Paper.docx and How Can Researchers Avoid Plagiarism while Ensuring the Originality of their Manuscript.pdf (Enago Academy, guest post by iThenticate)',
       tabs: [
         { title: 'Five guidelines', html: `
@@ -146,12 +143,7 @@ CHUNK({
             </tbody>
           </table>
           <p>The Enago article makes the same point: cite <b>concepts, ideas and findings that are not yours</b> (so the reader knows who developed them and where to read more), and cite anything you <b>quote or paraphrase</b>. Rewording does not remove the duty: if it is not an idea you came up with on your own, it needs attributing. Exact quotes must be in quotation marks, or the use could be treated as plagiarism.</p>
-          <div class="worked">
-            <div class="given"><p>Your project report has these sentences. Which need a citation?<br>(a) "Water boils at 100 °C at sea level." (b) "Our five trials gave a mean of 21.4 s." (c) "A 2019 survey found that most users prefer dark mode." (d) A paragraph you wrote for last semester's lab report, reused here.</p></div>
-            <div class="solve"><p>(a) common knowledge, no. (b) your own evidence, no. (c) someone else's finding, yes. (d) your own published or submitted material, yes: cite it (and check whether your course allows reuse at all).</p></div>
-            <div class="result"><p><b>Cite (c) and (d).</b></p></div>
-          </div>
-        ` },
+                  ` },
         { title: 'Five forms editors look for', html: `
           <p class="lead">Plagiarism in a manuscript is more than copying. The Enago article names <b>five forms</b>. All lead to rejection <b>even when the research is sound</b>.</p>
           <ul>
@@ -161,11 +153,7 @@ CHUNK({
             <li><b>Repetition of research</b>: publishing a new study that repeats data or text from a similar published study without crediting it.</li>
             <li><b>Blatant, deliberate plagiarism</b>: copying another researcher's work, or even submitting their manuscript under your name.</li>
           </ul>
-          <div class="vs">
-            <div class="side"><h4>Improper citing</h4><p>You read a 2020 review that describes a 2012 experiment, but your reference list shows only the 2012 paper.</p></div>
-            <div class="side"><h4>Honest citing</h4><p>You cite the 2012 paper <b>as described in</b> the 2020 review, or you read the 2012 paper itself and cite it.</p></div>
-          </div>
-          <div class="note why"><p>Citations give credit to the people who developed the field, and they make your own work more trustworthy by tracing how the ideas evolved and supporting your claims. Citing is in your interest as well as theirs.</p></div>
+                    <div class="note why"><p>Citations give credit to the people who developed the field, and they make your own work more trustworthy by tracing how the ideas evolved and supporting your claims. Citing is in your interest as well as theirs.</p></div>
         ` },
         { title: 'Why editors check', html: `
           <p class="lead">Journals now run checkers as a routine step, so the safest plan is to run one yourself first.</p>
@@ -185,8 +173,7 @@ CHUNK({
             <li><b>Similarity is not always plagiarism.</b> Its exclusion options let you leave out <b>quoted material</b>, <b>bibliographic material</b>, <b>small matches</b> below a word count, and whole sections such as the abstract or methods and materials.</li>
             <li>You can also exclude a single source after scanning; the report is recalculated, still lists the excluded sources, and any can be put back with a tick box.</li>
           </ul>
-          <div class="note heads-up"><p>Not on the slides: treat the <b>percentage</b> as a prompt, not a verdict. Open each highlighted match and ask: is it a quotation I marked, a reference entry, a standard method phrase, or my own writing sitting too close to a source? A low number does not clear a paper that took <b>ideas</b> without credit, and a checker cannot see unattributed ideas, only matching text.</p></div>
-        ` },
+                  ` },
       ],
       flashcards: [
         { front: `The five avoid-plagiarism habits?`, back: `<b>Paraphrase, quote, cite, keep records, use a checker.</b>` },
@@ -210,8 +197,7 @@ CHUNK({
       ],
       formulas: [
         { name: 'Cite or not', html: `<b>Cite</b>: others' words, ideas, findings, your earlier papers · <b>No cite</b>: your own new evidence, common knowledge`, note: 'Unsure? Add the reference.' },
-        { name: 'Before you submit', html: `Records complete → every quote marked → every idea credited → <b>checker run</b> → matches reviewed one by one` },
-      ],
+              ],
     },
 
     {
@@ -236,8 +222,7 @@ CHUNK({
             <div class="side"><h4>A summary inside your paper</h4><p>Focus on how the article relates <b>specifically to your paper</b>. Sometimes the <b>results alone</b>, with enough context to make sense, are enough.</p></div>
           </div>
           <p>Whatever the use, the goal is to give the reader a <b>clear understanding of the original</b>.</p>
-          <div class="note exam"><p>A question may fix the purpose for you ("for your literature review", "as notes"). Let that set the length and what you keep.</p></div>
-        ` },
+                  ` },
         { title: 'Reading the article', html: `
           <p class="lead">You cannot write about research you do not understand. The test: can you <b>explain the study in your own words to someone who has not read it</b>? Allow more time than you think.</p>
           <ol class="steps">
@@ -293,12 +278,7 @@ CHUNK({
             <li><b>Implications</b> the key ones, without overstating the findings.</li>
           </ol>
           <p>Results and their interpretation must relate directly to the hypothesis. In the first draft focus on <b>content, not length</b>; it will probably be too long. A good order of work: hypotheses, methods and results first, introduction and discussion last. If a section is stuck, leave it and try another.</p>
-          <div class="worked">
-            <div class="given"><p>You are summarising an article for your <b>own paper</b>, where only the result matters.</p></div>
-            <div class="solve"><p>Give the reader enough context to understand the result: who was compared and what outcome was measured.</p></div>
-            <div class="result"><p>"Smith (2004) found that participants in the motivation group scored higher than those in the control group, confirming that motivational factors play a role in impression formation." (from the Drive notes)</p></div>
-          </div>
-          <p>That one sentence names the study, the groups, the outcome and the conclusion, so it makes sense inside a larger discussion.</p>
+          <p>Example from the guide, for a summary inside your own paper: "Smith (2004) found that participants in the motivation group scored higher than those in the control group, confirming that motivational factors play a role in impression formation."</p>
         ` },
         { title: 'Edit, check, avoid plagiarism', html: `
           <p class="lead">After the draft, edit for <b>completeness and accuracy</b>, then for <b>style</b>, then check against the article.</p>
@@ -371,8 +351,7 @@ CHUNK({
               <tr><td><b>Concluding paragraph</b></td><td>The main idea and the <b>underlying meaning</b> again.</td></tr>
             </tbody>
           </table>
-          <div class="note heads-up"><p>The guide says leave out numbers and statistics; the course précis says handle statistics <b>at your discretion</b>; an abstract keeps the key numbers. They agree on the principle: keep a figure only if the reader needs it to understand the point.</p></div>
-        ` },
+                  ` },
         { title: 'Model: one study, full summary', html: `
           <p class="lead">The course slides summarise a real study, Davis et al. (2015), which tested the saying <b>"an apple a day keeps the doctor away"</b>. The full summary has <b>four paragraphs</b>, each with a job.</p>
           <table class="tbl">
@@ -384,24 +363,16 @@ CHUNK({
               <tr><td>4</td><td><b>Limitations and next step</b></td><td>Apple eaters may differ in other ways (more health-conscious), which could confound results. To show cause, the authors recommend experimental research.</td></tr>
             </tbody>
           </table>
-          <p>Notice the order is the article's own, every claim is hedged the way the authors hedge it ("slightly", "not significant"), and the summary ends with limits, not with the writer's opinion.</p>
-          <div class="note exam"><p>When asked to summarise an article, <b>cover the four jobs</b>: why they did it, how, what they found, what it is worth. A summary that gives only the finding is incomplete.</p></div>
-        ` },
+                  ` },
         { title: 'Full versus concise', html: `
           <p class="lead">The same study can be summarised at two sizes. Use the <b>full</b> one for a stand-alone summary assignment, the <b>concise</b> one when the study is only one source in a bigger discussion, as in a literature review or research paper.</p>
-          <div class="vs">
-            <div class="side"><h4>Concise summary (the slides' model)</h4><p>"Using national survey data, Davis et al. (2015) tested the assertion that 'an apple a day keeps the doctor away' and did not find statistically significant evidence in support of this hypothesis. While people who consumed apples were slightly less likely to use prescription medications, the study was unable to demonstrate a causal relationship between these variables." (from the course slides)</p></div>
-            <div class="side"><h4>What it keeps</h4><ul><li>The data used and the author-year citation</li><li>The claim tested and the main result</li><li>The one notable finding</li><li>The limit on what the study shows</li></ul></div>
-          </div>
-          <p>It drops the rationale, the full method, the null results and the recommendations. The slides add that, when a summary is part of a larger text, you must <b>cite the source</b>: usually an in-text citation plus a full reference at the end (the format depends on your style; see the referencing topic).</p>
-          <div class="worked">
-            <div class="given"><p>Cut the full summary's paragraph 3 to one sentence for a literature review.</p></div>
-            <div class="solve"><p>Keep the claim tested, the data type, the result and the limit. Drop the three null outcomes.</p></div>
-            <div class="result"><p>Davis et al. (2015) found no significant link between eating apples and doctor visits in survey data, only a slight link with fewer prescription drugs, and could not show cause.</p></div>
-          </div>
-        ` },
+          <div class="note example">
+            <div><h4>Concise summary (the slides' model)</h4><p>"Using national survey data, Davis et al. (2015) tested the assertion that 'an apple a day keeps the doctor away' and did not find statistically significant evidence in support of this hypothesis. While people who consumed apples were slightly less likely to use prescription medications, the study was unable to demonstrate a causal relationship between these variables." (from the course slides)</p></div>
+            </div>
+          <p>The slides say that, when a summary is part of a larger text, you must <b>cite the source</b>: usually an in-text citation plus a full reference at the end (the format depends on your style; see the referencing topic).</p>
+                  ` },
         { title: 'A course format: the research summary', html: `
-          <p class="lead">One course gave students a boxed template for a <b>research summary</b> of a <b>peer-reviewed</b> article, with a sample on a study of how <b>gesture helps children learn addition</b>. It is a useful format to copy.</p>
+          <p class="lead">One course gave students a boxed template for a <b>research summary</b> of a <b>peer-reviewed</b> article, with a sample on a study of how <b>gesture helps children learn addition</b>.</p>
           <h3>The requirements</h3>
           <ul>
             <li>A separate <b>title page</b>: instructor's name, section and meeting time, your name, student ID.</li>
@@ -418,9 +389,7 @@ CHUNK({
               <tr><td><b>Your opinion of the study</b></td><td>The writer questions the design because the lesson had almost no speech, so it depended heavily on gesture, and asks whether results hold with more spoken instruction, or with older or younger children.</td></tr>
             </tbody>
           </table>
-          <div class="note trap"><p>The "your opinion" box is allowed here <b>only because the assignment asks for it</b>. A précis or an abstract must never contain your view. Keep the opinion in its own labelled section and keep the first two boxes objective.</p></div>
-          <div class="note heads-up"><p>The sample's reference is a useful APA template, with small slips worth fixing: APA puts an <b>ampersand before the last author</b> and a full stop after each initial (see the referencing topic).</p></div>
-        ` },
+                            ` },
       ],
       flashcards: [
         { front: `Parts of a summary, per the library guide?`, back: `<b>Introduction</b> (author, title, thesis), <b>body</b> (topic sentences), <b>concluding paragraph</b>.` },
@@ -431,8 +400,7 @@ CHUNK({
         { front: `Independent variable in the gesture sample?`, back: `<b>Gesture</b>, in three conditions.` },
         { front: `Dependent variable in the gesture sample?`, back: `The <b>difference between pre-test and post-test</b> scores.` },
         { front: `Examples named as not peer reviewed?`, back: `<b>TIME, Forbes, Scientific American.</b>` },
-        { front: `Is an "opinion" box allowed in a précis?`, back: `<b>No.</b> Only where an assignment explicitly asks for it.` },
-      ],
+              ],
       oneLiners: [
         'A summary is a <b>clear, objective</b> picture of the original, in your own words.',
         'Layout: <b>introduction</b> (author, title, thesis), <b>body</b> (topic sentences), <b>conclusion</b>.',
@@ -440,12 +408,10 @@ CHUNK({
         'Concise version for a larger text: data, claim tested, main result, limit, <b>with citation</b>.',
         'Hedge as the authors hedge: "slightly", "not significant", "unable to show cause".',
         'The research-summary template: what it was about, what it found, then (only if asked) your opinion.',
-        'Keep opinion in its <b>own labelled section</b>; never in a précis or abstract.',
-      ],
+              ],
       formulas: [
         { name: 'Article summary paragraphs', html: `<b>1 Aim and reason</b> · <b>2 Method</b> · <b>3 Results and conclusion</b> · <b>4 Limitations and recommendation</b>` },
-        { name: 'Concise summary sentence', html: `<b>Using [data], [Author] ([year])</b> tested <b>[claim]</b> and found <b>[result]</b>, but could not show <b>[limit]</b>.` },
-      ],
+              ],
     },
 
     {
@@ -467,8 +433,7 @@ CHUNK({
             <li>It gives the effort <b>permanent value</b>.</li>
           </ul>
           <p>Reputable journals use a strict <b>refereeing system</b> to check the originality and quality of what they publish.</p>
-          <div class="note exam"><p>"Why is a research paper published?" gets three marks: <b>avoid duplication, claim priority, permanent value</b>.</p></div>
-        ` },
+                  ` },
         { title: 'Paper versus formal report', html: `
           <p class="lead">A research paper looks like a <b>formal report</b> in style, structure and approach. What differs is why it exists.</p>
           <table class="tbl">
@@ -479,9 +444,7 @@ CHUNK({
               <tr><td><b>Why it is written</b></td><td>often for <b>professional advancement</b></td><td>always from a <b>specific need</b></td></tr>
             </tbody>
           </table>
-          <div class="note why"><p>This explains the writing choices. A paper must <b>earn</b> its readers, so it states what is new and gives evidence. A report has a reader waiting, so it leads with what that reader must decide.</p></div>
-          <div class="note exam"><p>This 3-row table is a standard CAT comparison. Pair it with the report topics in Module 1.</p></div>
-        ` },
+                            ` },
         { title: 'Characteristics', html: `
           <p class="lead">Seven things mark a research paper.</p>
           <ol>
@@ -493,11 +456,7 @@ CHUNK({
             <li>It is a <b>unified composition</b> from the study of one subject: relevant data gathered, organised and analysed.</li>
             <li>It is a <b>documented</b> prose work: every important analysis is backed by evidence, so documentation is essential.</li>
           </ol>
-          <div class="vs">
-            <div class="side"><h4>Not objective</h4><p>"The shocking results prove our method is far better."</p></div>
-            <div class="side"><h4>Objective and precise</h4><p>"The new method reduced error by 12% compared with the baseline (Table 2)."</p></div>
-          </div>
-        ` },
+                  ` },
         { title: 'Components in order', html: `
           <p class="lead">A paper is highly structured, with <b>eleven components</b>. Here is each one with its job; the paper-parts topic gives the detailed rules.</p>
           <figure data-fig="m4-m-paper-parts"></figure>
@@ -526,12 +485,7 @@ CHUNK({
             <li>Present each set of data in <b>only one form</b> (text, table or illustration), never two.</li>
           </ol>
           <p>And when citing, make sure <b>all bibliographic details are complete</b>.</p>
-          <div class="worked">
-            <div class="given"><p>A draft shows the same readings in a table, then again in a bar chart, then lists every value in a paragraph. What should the writer do?</p></div>
-            <div class="solve"><p>Guideline 6: pick the one form that serves the reader. Ten readings across three conditions suit a table; a trend suits a chart. The text then only <b>points to it and states the main finding</b>.</p></div>
-            <div class="result"><p>Keep the table, delete the chart and the full list, write: "Table 2 shows that the mean yield rose with temperature."</p></div>
-          </div>
-        ` },
+                  ` },
       ],
       flashcards: [
         { front: `A research paper in one line?`, back: `An organised, documented analysis written to <b>record and spread new knowledge</b>.` },

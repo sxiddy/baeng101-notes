@@ -69,10 +69,10 @@
   "q-M5.js": "m5",
   "q-M5b.js": "m5",
   "summary-m5.js": "m5",
+  "viz-m3a.js": "m3",
+  "viz-m3b.js": "m3",
   "viz-m4.js": "m4",
   "viz-m5a.js": "m5",
-  "viz-m5b.js": "m5",
-  "viz-m3a.js": "m3",
-  "viz-m3b.js": "m3"
+  "viz-m5b.js": "m5"
  }
 }
