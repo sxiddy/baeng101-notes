@@ -163,7 +163,7 @@ CHUNK({
       id: 'm4-lr-sources',
       title: 'Finding papers and judging how many',
       short: 'Finding papers',
-      blurb: 'The databases and repositories the slides list for finding research papers, what each is for, how many sources a review needs, the questions a review should answer, and a worked search plan.',
+      blurb: 'The databases and repositories the slides list for finding research papers, what each is for, how many sources a review needs, the questions a review should answer, and the slides\' two search examples.',
       source: 'Module 4 Writing / Reviews / What does Review of Literature mean.pptx (slides 15, 16, 26 to 32) and Review of Literature and where to find the research papers.docx',
       tabs: [
         { title: 'Where papers live', html: `
@@ -218,7 +218,6 @@ CHUNK({
           <div class="note exam"><p>For this course the slides narrow it: the assessment uses <b>two papers</b>. First identify a broad area you want to review and pick two relevant papers; then summarise them. The next topic gives the format.</p></div>
           <h3>Page limits</h3>
           <p>An <b>assignment</b> review is <b>3 to 4 pages</b>. A <b>thesis</b> review is a full chapter, <b>at least 20 pages</b>.</p>
-          <div class="note heads-up"><p>Not on the slides: for the two-paper task, do not hunt for more. Pick two papers that <b>address the same question</b> from different angles, so that the comparison has something to say.</p></div>
         ` },
         { title: 'Questions a review should answer', html: `
           <p class="lead">Ask these while you read. They help you sort your sources and shape the review around what <b>you</b> are planning to do.</p>
@@ -233,23 +232,19 @@ CHUNK({
           <div class="note why"><p>The review organises earlier research <b>in the light of your own project</b>. Question 6 is the one that links the two, and it is the last paragraph of a good review.</p></div>
         ` },
         { title: 'Worked: plan a search', html: `
-          <p class="lead">Turn a topic into a search plan the way the slides do, and add the evaluation step.</p>
+          <p class="lead">The slides' two search examples.</p>
           <div class="worked">
             <div class="given"><p>You are reviewing <b>sorting algorithm efficiency</b>. List what you search for and how you will judge what you find.</p></div>
             <div class="solve"><ol class="steps">
               <li><b>Keywords</b> (from the slides): "Sorting Algorithm Efficiency", "Bubble Sort Analysis", "Merge Sort Performance", "Quick Sort Optimization", "Time Complexity of Sorting Algorithms".</li>
-              <li><b>Place</b>: IEEE Xplore and ACM Digital Library for computing; Google Scholar for breadth.</li>
               <li><b>Keep</b> articles that analyse time and space complexity; <b>prefer</b> those tested on real data.</li>
               <li><b>Check</b> the journal or site is a reputable computer science source.</li>
             </ol></div>
-            <div class="result"><p>A short, dated list of searches and criteria. It is also the content of the <b>Methodology</b> section in the longer format of the next topic.</p></div>
           </div>
           <div class="worked">
             <div class="given"><p>The slides' second search, for a study of COVID-19 school closures, used one database and a date range with a search string. How is it built?</p></div>
             <div class="solve"><p>Database: <b>Web of Science</b>. Dates: <b>1 March 2020 to 30 April 2021</b>. Terms combined with OR and AND: Covid OR Corona OR "SARS-CoV-2" AND school AND learn* OR "test score" OR performance OR competenc* OR achievement OR grades.</p></div>
-            <div class="result"><p>Quote marks keep a phrase together; the star finds word endings (learn, learning, learned); OR widens, AND narrows.</p></div>
           </div>
-          <div class="note heads-up"><p>The meaning of OR, AND, quote marks and the star is general search knowledge, not on the slides.</p></div>
         ` },
       ],
       flashcards: [
@@ -274,7 +269,7 @@ CHUNK({
         'Check each source is reputable and, if possible, tested on <b>real data</b>.',
       ],
       formulas: [
-        { name: 'Search plan', html: `<b>Keywords</b> → <b>database matched to subject</b> → <b>inclusion criteria</b> (type, date, tested on real data) → <b>reputable source check</b>` },
+        { name: 'Search plan', html: `<b>Keywords</b> → <b>papers on time and space complexity</b> → <b>tested with real data</b> → <b>reputable source check</b>` },
       ],
     },
 
@@ -282,7 +277,7 @@ CHUNK({
       id: 'm4-lr-strategies',
       title: 'Strategies for writing a literature review',
       short: 'LR writing strategies',
-      blurb: 'What a review is for, the four analysis tasks (summarise, synthesise, compare, critique) with sample sentence frames, the thesis statement, the five ways to organise the body, time against theme, the conclusion, citing and a revision checklist.',
+      blurb: 'What a review is for, the four analysis tasks (summarise, synthesise, compare, critique) with sample sentence frames, the thesis statement, the five ways to organise the body and the deck\'s sentence templates, time against theme, the conclusion, citing and a revision checklist.',
       source: 'Module 4 Writing / Reviews / Strategies for writing Literature Review.ppt, and Writing a Literature Review.pptx (slides 18 to 21)',
       tabs: [
         { title: 'Purpose and reading questions', html: `
@@ -339,11 +334,7 @@ CHUNK({
             <li>"These general results... are <b>similar to those reported by</b> Rosenblatt and Roll."</li>
             <li>Contrast with "Some critics have complained that... Others, in contrast, have applauded...", with page numbers: the verse called insecure (Collins 1975, 78), imitative (Richmond 1974, 54 to 66) and incapacitated (Burke 1991, 33, 38).</li>
           </ul>
-          <div class="vs">
-            <div class="side"><h4>Summary only</h4><p>"Jones and Wang studied delivery times in 2019."</p></div>
-            <div class="side"><h4>Summary plus critique</h4><p>"In this ambitious but flawed study, Jones and Wang tested delivery times, yet their sample of eight vans is too small to support a general claim."</p></div>
-          </div>
-          <div class="note heads-up"><p>The slide lists "evaluative words" to articulate critique but the list did not survive in the file. Not on the slides: useful ones are <b>limited, inconclusive, promising, well-designed, small sample, overlooked, convincing, contradicts, extends</b>.</p></div>
+          <div class="note heads-up"><p>The slide says to use "evaluative words" to articulate critique, but its list of words did not survive in the file.</p></div>
         ` },
         { title: 'Thesis, focus, type and scope', html: `
           <p class="lead">Before the body, settle four questions: what the review is <b>about</b>, what <b>type</b> it is, how <b>far</b> it goes and which <b>discipline</b> it serves. Then state a thesis.</p>
@@ -383,32 +374,18 @@ CHUNK({
               <tr><td><b>Seminal study</b></td><td>Open with a detailed description of one extremely important study; organise later work another way.</td><td>one study <b>laid the groundwork</b> for later research</td></tr>
             </tbody>
           </table>
-          <div class="note heads-up"><p>The deck calls the second pattern "a type of topical organisation" and the debate pattern "another type of topical approach, with a chronological component". The short names in the figure are ours.</p></div>
+          <div class="note heads-up"><p>The deck calls the second pattern "a type of topical organisation" and the debate pattern "another type of topical approach, with a chronological component".</p></div>
           <div class="note exam"><p>A common short question: "name and describe two ways of organising a literature review". Chronological and thematic (topical) are the two the other deck also gives.</p></div>
         ` },
-        { title: 'Worked: name the pattern', html: `
-          <p class="lead">The deck pairs each pattern with a template. Match the frame to the pattern, then write one of your own.</p>
-          <div class="note heads-up"><p>The matching below is ours, from the frames the deck gives; the deck's own labels did not survive in the file.</p></div>
-          <table class="tbl">
-            <thead><tr><th>Frame</th><th>Pattern</th></tr></thead>
-            <tbody>
-              <tr><td>"Three important areas of this field have received attention: A, B, C. A has been approached from two perspectives, F and G. The most important developments in terms of B have been... C has also been an important area."</td><td><b>Topical</b></td></tr>
-              <tr><td>"Method or model M (slightly similar to current research) addresses... Drawing on N (more similar) can help... This study applies the procedure used in O (most similar) to..."</td><td><b>Distant to close</b></td></tr>
-              <tr><td>"There have been two (three, four) distinct approaches to this problem. The first model posits... The second argues the first is wrong for three reasons."</td><td><b>Debate</b></td></tr>
-              <tr><td>"This subject was first studied by X, who found... In (date), Y modified, extended or contradicted X. Today, research by Z represents the current state of the field."</td><td><b>Chronological</b></td></tr>
-              <tr><td>"The most important research on this topic was the study by X in (date)." Then: after X's study, research fell into two camps.</td><td><b>Seminal study</b>, then a debate</td></tr>
-            </tbody>
-          </table>
-          <div class="worked">
-            <div class="given"><p>Primate research: "There is much controversy over how nonhuman primates understand others. On the one hand, they may attend to and recall specific actions... On the other hand, they might understand goals or intentions... few studies directly address the question." Which pattern?</p></div>
-            <div class="solve"><p>The paragraph sets two <b>opposing camps</b> against each other (Tomasello and Call against others who cite evidence of understanding intentions) and says the question is still open.</p></div>
-            <div class="result"><p><b>Debate</b> pattern. The gap, "few studies directly address the question", sets up the study that follows.</p></div>
-          </div>
-          <div class="worked">
-            <div class="given"><p>Your topic is solar-panel controllers: three older papers on simple controllers, two on predictive ones, and one 2015 paper everyone cites. Which pattern, and why?</p></div>
-            <div class="solve"><p>One paper is cited by all the rest, so it is a clear <b>seminal study</b>. Describe it in detail first, then group the later work by controller type (topical).</p></div>
-            <div class="result"><p>Seminal study, then topical (our own example).</p></div>
-          </div>
+        { title: 'Templates in the deck', html: `
+          <p class="lead">The deck gives these sentence frames alongside the patterns. Its labels for each frame did not survive in the file.</p>
+          <ul>
+            <li>"Three important areas of this field have received attention: A, B, C. A has been approached from two perspectives F and G. The most important developments in terms of B have been... C has also been an important area of study in this field."</li>
+            <li>"Method/Model M (slightly similar to current research) addresses... Drawing upon method/model N (more similar to current research) can help... This study applies the procedure used in method/model O (most similar to current research) to..."</li>
+            <li>"There have been two (three, four, etc.) distinct approaches to this problem. The first model posits... The second model argues that the first model is wrong for three reasons."</li>
+            <li>"This subject was first studied by X, who argued/found... In (date), Y modified/extended/contradicted X. Today, research by Z represents the current state of the field."</li>
+            <li>"The most important research on this topic was the study by X in (date)." After X's study, research fell into two camps.</li>
+          </ul>
         ` },
         { title: 'Time or theme, and the conclusion', html: `
           <p class="lead">The other deck gives the two simplest choices, <b>chronological</b> or <b>thematic</b>, and the review ends with a three-part conclusion.</p>
@@ -484,7 +461,7 @@ CHUNK({
       id: 'm4-lr-assignment',
       title: 'The two-paper literature review: formats for the assessment',
       short: 'Two-paper review format',
-      blurb: 'What the assessment asks (a mini review of two papers), the essay structure from the slides, the seven-section format, the paragraph-by-paragraph COVID-19 template with its line counts, the tone and citation notes, and a worked outline.',
+      blurb: 'What the assessment asks (a mini review of two papers), the essay structure from the slides, the seven-section format, the paragraph-by-paragraph COVID-19 template with its line counts, and the tone and citation notes.',
       source: 'Module 4 Writing / Reviews / What does Review of Literature mean.pptx (slides 31 to 37), Writing a Literature Review.pptx (slides 10 to 18) and Review of Literature and where to find the research papers.docx',
       tabs: [
         { title: 'What is set', html: `
@@ -574,23 +551,6 @@ CHUNK({
             <div class="side"><h4>Objective, passive</h4><p>"Two papers were selected for review. The first uses a larger sample and its findings are therefore more reliable (Holmes, 2020, p. 32)."</p></div>
           </div>
           <div class="note heads-up"><p>The slide writes the second example as "Geraghti et.al.". The usual form is <b>et al.</b>, with a full stop only after "al". Check author names and spellings against the paper itself.</p></div>
-        ` },
-        { title: 'Worked: build the outline', html: `
-          <p class="lead">Take a topic and fill the template so you know what each paragraph holds before you write.</p>
-          <div class="worked">
-            <div class="given"><p>Broad area: <b>sorting algorithm performance</b>. Two papers: Paper A compares Quick and Merge Sort on random data; Paper B tests them on nearly sorted data. Build the outline.</p></div>
-            <div class="solve"><ol class="steps">
-              <li><b>Title</b>: "Quick Sort and Merge Sort: A Critical Review of the Literature."</li>
-              <li><b>Introduction</b>: why sorting speed matters; narrow to two algorithms; name Paper A and Paper B and the shared question; purpose statement.</li>
-              <li><b>Body 1, method</b>: database (IEEE Xplore), keywords, dates, why these two papers.</li>
-              <li><b>Body 2, Paper A</b>: aim (2 lines), findings (3 to 4), conclusion (2).</li>
-              <li><b>Body 3, Paper B</b>: the same plan.</li>
-              <li><b>Comparison</b>: data types tested, sample sizes, strengths and limits of each (optional paragraph if your instructor allows).</li>
-              <li><b>Conclusion</b>: what the two together show; the gap (very large data sets); one direction for further study.</li>
-              <li><b>References</b>: both papers in one style.</li>
-            </ol></div>
-            <div class="result"><p>Six to seven paragraphs, about 3 to 4 pages. The outline is ours, built from the three formats; the topic follows the sorting example in the slides.</p></div>
-          </div>
         ` },
       ],
       flashcards: [
@@ -755,7 +715,7 @@ CHUNK({
       id: 'm4-abstract-more',
       title: 'Abstracts: purposes, contents, types and tenses',
       short: 'Abstracts in more depth',
-      blurb: 'What "abstract" means, why journals and databases need one, when to write it, the five sections and seven kinds of information it can hold, informative, descriptive and structured types, the tense rules by discipline, and keywords with a final checklist.',
+      blurb: 'What "abstract" means, why journals and databases need one, when to write it, the five sections and seven kinds of information it can hold, informative, descriptive and structured types, the tense rules by discipline, and keywords.',
       source: 'Module 4 Writing / Research Writing / Lesson plan for writing abstracts.docx, Writing an Abstract for Your Research Paper.pdf (UW-Madison Writing Center) and Writing_an_Abstract_Update_051112.docx (University of Melbourne)',
       tabs: [
         { title: 'Meaning and warm-up', html: `
@@ -862,11 +822,6 @@ CHUNK({
             </tbody>
           </table>
           <p>So the difference between the course samples (past tense for what was done and found) and the UW social science sample (present tense) is <b>real</b>: both are used. Check the convention of your field.</p>
-          <div class="vs">
-            <div class="side"><h4>Science</h4><p>"Fibroblasts were reprogrammed using defined factors. This approach provides a scalable cell source."</p></div>
-            <div class="side"><h4>Social science</h4><p>"The authors find that homogamy rises. Earlier studies treated it as a matter of choice."</p></div>
-          </div>
-          <div class="note heads-up"><p>Not on the slides: the second pair above is our own illustration of the rule. For a short project report in the course, follow the course samples (past tense for what was done and found).</p></div>
         ` },
         { title: 'Reading sample abstracts', html: `
           <p class="lead">The Melbourne handout gives two full abstracts and the UW page four more. Read them for the plan, not the subject.</p>
@@ -908,33 +863,9 @@ CHUNK({
               <tr><td>Withdrew</td><td>6 (21%)</td><td>none listed</td></tr>
             </tbody>
           </table>
-          <div class="note why"><p>Structured abstracts make the four parts <b>impossible to miss</b>. They suit clinical and engineering journals, where readers scan for a design and a number.</p></div>
         ` },
-        { title: 'Keywords and a checklist', html: `
-          <p class="lead">Because search tools use the abstract and the title, choose its words as a reader would type them. Then check the draft.</p>
-          <div class="note heads-up"><p>Not on the slides: the checklist below combines the sources above with standard advice; the keyword tips are general knowledge.</p></div>
-          <h3>Keywords</h3>
-          <ul>
-            <li>Put the <b>key terms a researcher would search for</b> in the abstract itself (Melbourne).</li>
-            <li>Many journals ask for <b>3 to 6 keywords</b> after the abstract. Choose the main method, the subject and the setting.</li>
-            <li>Do not repeat the title word for word; add the <b>other terms</b> a searcher might use.</li>
-          </ul>
-          <div class="worked">
-            <div class="given"><p>Abstract topic: plants in offices, three-month study. Pick keywords.</p></div>
-            <div class="solve"><p>Subject: <b>indoor plants</b>, <b>workplace productivity</b>. Outcome: <b>stress</b>, <b>concentration</b>. Design: <b>control group</b>.</p></div>
-            <div class="result"><p>Keywords: indoor plants; workplace productivity; employee stress; concentration; control group.</p></div>
-          </div>
-          <h3>Checklist before you submit</h3>
-          <ol>
-            <li>Written <b>last</b>, after the paper.</li>
-            <li><b>One paragraph</b> within the word limit.</li>
-            <li>Aim, method, findings, conclusion (or the five sections) all there, in order.</li>
-            <li><b>Self-contained</b>: no need to read the paper to follow it.</li>
-            <li>No <b>citations, figures, tables, acronyms</b> or jargon.</li>
-            <li>Tenses suit the field; no incomplete sentences.</li>
-            <li>Key search terms present.</li>
-            <li>Revised in <b>several drafts</b>: precise, concise, clear, complete.</li>
-          </ol>
+        { title: 'Keywords', html: `
+          <p>Put the <b>key terms a researcher would search for</b> in the abstract itself, because library databases let users search abstracts (Melbourne).</p>
         ` },
       ],
       flashcards: [
@@ -972,116 +903,54 @@ CHUNK({
       id: 'm4-citing-basics',
       title: 'Citing sources: what a citation is and which style to use',
       short: 'Citing sources',
-      blurb: 'What a citation does and holds, the in-text citation plus reference list pair, which style belongs to which field (APA, MLA, Chicago, IEEE), the source types a reference guide covers, and the same source cited three ways.',
+      blurb: 'What a citation does and can include, which style belongs to which field (APA, MLA, Chicago), the source types the citation guides cover, and the in-text citation examples in the literature review decks.',
       source: 'Module 4 Writing / Research Writing / Module 6 Academic Writing & Editing.pdf (citation formats slides), with the in-text examples from Writing a Literature Review.pptx and Strategies for writing Literature Review.ppt',
       tabs: [
         { title: 'What a citation does', html: `
-          <p class="lead">A <b>citation</b> is a way of giving credit to the people whose creative and intellectual work you used to support your research. In every report and paper you write, it is also the proof that you did not copy.</p>
+          <p class="lead">A <b>citation</b> is a way of giving credit to individuals for their creative and intellectual works that you used to support your research.</p>
           <p>The Module 6 slide gives three jobs:</p>
           <ol>
             <li><b>Give credit</b> to the individuals whose work you used.</li>
-            <li><b>Help readers locate</b> a particular source.</li>
+            <li><b>Locate</b> particular sources.</li>
             <li><b>Combat plagiarism.</b></li>
           </ol>
           <p>A citation can include the <b>author's name</b>, the <b>date</b>, the <b>location of the publishing company</b>, the <b>journal title</b> or the <b>DOI</b> (Digital Object Identifier).</p>
-          <h3>Two parts, always together</h3>
-          <div class="vs">
-            <div class="side"><h4>In the text</h4><p>A short pointer right after the idea or quotation: <b>(Holmes, 2020, p. 32)</b> or <b>[1]</b>.</p></div>
-            <div class="side"><h4>At the end</h4><p>A <b>reference list</b> with the full details of every source you cited, so the reader can find it.</p></div>
-          </div>
-          <div class="note why"><p>The two parts depend on each other. Every pointer in the text must lead to one entry in the list, and every entry in the list must have been cited in the text.</p></div>
-          <div class="note heads-up"><p>Not on the slides: the pointer-plus-list pair is general practice for all four styles on the next tab. The earlier plagiarism topics in this module explain what happens when credit is missing.</p></div>
         ` },
         { title: 'Styles and who uses them', html: `
-          <p class="lead">A <b>style</b> is a fixed set of rules for how a citation looks. Your discipline, journal or lecturer picks it. The slide says to <b>consult your professor</b> to find what your course requires.</p>
+          <p>The citation style sometimes depends on the academic discipline involved:</p>
           <table class="tbl">
-            <thead><tr><th>Style</th><th>Used by</th><th>In the text</th><th>List</th></tr></thead>
+            <thead><tr><th>Style</th><th>Used by</th></tr></thead>
             <tbody>
-              <tr><td><b>APA</b> (American Psychological Association)</td><td>education, psychology, sciences (slide)</td><td>author and year: (Holmes, 2020)</td><td>"References", alphabetical</td></tr>
-              <tr><td><b>MLA</b> (Modern Language Association)</td><td>the humanities (slide)</td><td>author and page: (Bloom 12)</td><td>"Works Cited", alphabetical</td></tr>
-              <tr><td><b>Chicago or Turabian</b></td><td>business, history, fine arts (slide)</td><td>footnotes or author-date</td><td>"Bibliography"</td></tr>
-              <tr><td><b>IEEE</b></td><td>engineering, electronics, computer science</td><td>number in brackets: [1]</td><td>numbered in order of citation</td></tr>
+              <tr><td><b>APA</b> (American Psychological Association)</td><td>Education, Psychology and Sciences</td></tr>
+              <tr><td><b>MLA</b> (Modern Language Association)</td><td>Humanities</td></tr>
+              <tr><td><b>Chicago/Turabian</b></td><td>Business, History and the Fine Arts</td></tr>
             </tbody>
           </table>
-          <div class="note heads-up"><p>Not on the slides: the slides name APA, MLA and Chicago only. The syllabus for this module names <b>IEEE and APA</b>, so the next two topics give both in full. IEEE is the usual style for engineering and computing papers.</p></div>
-          <div class="note heads-up"><p>The slides call APA "now in its sixth edition". The current edition is the <b>seventh</b> (2019), and the APA topic here uses it.</p></div>
-          <div class="note exam"><p>A frequent short answer: "which citation style does your field use and why?" Name the style, the way it points to a source in the text (author and year, or number), and the list it sits above.</p></div>
+          <p>The slide adds: consult your professor to find out what your course requires.</p>
+          <h3>What the citation guides cover</h3>
+          <p>The slide "Citation materials: MLA, APA, Chicago" lists: author/editor/publisher formats; audio/visual materials; books, ebooks and chapters; encyclopedias; magazines; journals; newspapers; personal communications; websites; parenthetical citations.</p>
         ` },
-        { title: 'What the guides cover', html: `
-          <p class="lead">The Module 6 slide lists the kinds of material a citation guide for MLA, APA and Chicago handles. Each type has its own set of details.</p>
-          <div class="chips"><span class="chip">Author, editor, publisher formats</span><span class="chip">Audio and visual materials</span><span class="chip">Books, ebooks and chapters</span><span class="chip">Encyclopedias</span><span class="chip">Magazines</span><span class="chip">Journals</span><span class="chip">Newspapers</span><span class="chip">Personal communications</span><span class="chip">Websites</span><span class="chip">Parenthetical citations</span></div>
-          <p>The last item matters most in a short review: a <b>parenthetical citation</b> is the bracketed pointer inside a sentence.</p>
-          <div class="note heads-up"><p>Not on the slides: what each type needs, in the usual order.</p></div>
-          <table class="tbl">
-            <thead><tr><th>Source</th><th>Details a citation needs</th></tr></thead>
-            <tbody>
-              <tr><td><b>Journal article</b></td><td>authors, year, article title, journal title, volume, issue, pages, DOI</td></tr>
-              <tr><td><b>Book</b></td><td>authors or editors, year, title, edition, publisher</td></tr>
-              <tr><td><b>Chapter in an edited book</b></td><td>chapter author, year, chapter title, then the book's editors, title, pages, publisher</td></tr>
-              <tr><td><b>Conference paper</b></td><td>authors, year, paper title, conference name, pages, place or publisher</td></tr>
-              <tr><td><b>Website</b></td><td>author or organisation, date (or "n.d."), page title, web address, sometimes the date you accessed it</td></tr>
-              <tr><td><b>Personal communication</b></td><td>an interview, email or message: cited in the text only, since a reader cannot retrieve it</td></tr>
-            </tbody>
-          </table>
-        ` },
-        { title: 'In-text pointers', html: `
-          <p class="lead">Whenever you paraphrase or quote, you point to the source straight away. The form depends on the style.</p>
-          <table class="tbl">
-            <thead><tr><th>Style</th><th>Example</th></tr></thead>
-            <tbody>
-              <tr><td><b>APA</b></td><td>"Social media use has been found to be linked to addictive behaviour (Holmes, 2020, p. 32)." Three or more authors: "(Geraghty et al., 2017, p. 344)."</td></tr>
-              <tr><td><b>MLA</b></td><td>"...it is also comparatively easy to evaluate mastery of these skills (Bloom 12)." (the Reece sample)</td></tr>
-              <tr><td><b>IEEE</b></td><td>"Deep networks learn layered features [1]."</td></tr>
-            </tbody>
-          </table>
-          <p>The slides add a page number whenever you <b>quote</b> a line or paraphrase a specific passage: the Dixon example in the review strategies deck ends "(1995, p. 136)".</p>
-          <div class="vs">
-            <div class="side"><h4>No pointer</h4><p>"Critical thinking transfers poorly between subjects."</p></div>
-            <div class="side"><h4>Pointer</h4><p>"Critical thinking transfers poorly between subjects (Hendricks, 2001)."</p></div>
-          </div>
-          <div class="note trap"><p>Putting a pointer only at the end of a long paragraph hides which sentences are borrowed. Put it after <b>each</b> idea that came from a source.</p></div>
-        ` },
-        { title: 'Worked: one source, three styles', html: `
-          <p class="lead">Take one well-known journal article and cite it in APA, IEEE and MLA.</p>
-          <div class="worked">
-            <div class="given"><p>Yann LeCun, Yoshua Bengio and Geoffrey Hinton, "Deep learning", <em>Nature</em>, volume 521, issue 7553, pages 436 to 444, 28 May 2015, DOI 10.1038/nature14539.</p></div>
-            <div class="solve"><ul>
-              <li><b>APA 7</b>: author-date, surname first, "&amp;" before the last author, year in brackets, article title in sentence case, journal in italics, volume in italics, DOI as a link.</li>
-              <li><b>IEEE</b>: number first, initials before the surname, article title in quotes, abbreviated journal name, "vol.", "no.", "pp.", month and year, "doi:".</li>
-              <li><b>MLA 9</b>: first author surname first, others in normal order, title in quotes, journal in italics, volume and number, year, pages.</li>
-            </ul></div>
-            <div class="result">
-              <p><b>APA</b>: LeCun, Y., Bengio, Y., &amp; Hinton, G. (2015). Deep learning. <em>Nature</em>, <em>521</em>(7553), 436&ndash;444. https://doi.org/10.1038/nature14539</p>
-              <p><b>IEEE</b>: [1] Y. LeCun, Y. Bengio, and G. Hinton, "Deep learning," <em>Nature</em>, vol. 521, no. 7553, pp. 436&ndash;444, May 2015, doi: 10.1038/nature14539.</p>
-              <p><b>MLA 9</b>: LeCun, Yann, et al. "Deep Learning." <em>Nature</em>, vol. 521, no. 7553, 2015, pp. 436-44.</p>
-            </div>
-          </div>
-          <div class="note heads-up"><p>Not on the slides: the three results are standard forms of these styles, used here to show what changes. In IEEE and MLA the details are the same; the order, punctuation and capital letters differ.</p></div>
+        { title: 'In-text citations in the decks', html: `
+          <p><b>Writing a Literature Review</b> (two-paper task): list the two papers as "References" at the end of your review, and use in-text citations when paraphrasing or quoting. Its example:</p>
+          <p class="example">Social Media use has been found to be linked to addictive behaviour. (Holmes, 2020, p. 32)/ (Geraghti et.al., 2017, p. 344)</p>
+          <p><b>Strategies for writing Literature Review</b>: use proper in-text citation to document the source of ideas, and be meticulous about citations. Its sample paragraph cites critics this way: (Collins 1975, 78), (Richmond 1974, 54-66), (Burke 1991, 33, 38).</p>
         ` },
       ],
       flashcards: [
-        { front: `What does a citation do?`, back: `<b>Credits</b> the source, lets readers <b>find</b> it, helps <b>combat plagiarism</b>.` },
-        { front: `What can a citation include?`, back: `<b>Author, date, publisher location, journal title, DOI</b>.` },
-        { front: `Two parts of citing a source?`, back: `An <b>in-text pointer</b> and a <b>reference list</b> entry.` },
-        { front: `Which style do education, psychology and sciences use?`, back: `<b>APA</b>.` },
-        { front: `Which style do the humanities use?`, back: `<b>MLA</b>.` },
-        { front: `Which fields use Chicago?`, back: `<b>Business, history, fine arts</b>.` },
-        { front: `Which style numbers its citations in brackets?`, back: `<b>IEEE</b>.` },
-        { front: `Which edition of APA is current?`, back: `The <b>seventh</b> (2019); the slides say sixth.` },
-        { front: `Who decides the style for a course?`, back: `Your <b>professor</b> (consult them).` },
-        { front: `Personal communication: where is it cited?`, back: `<b>In the text only</b>, not the list (general rule).` },
+        { front: `What is a citation?`, back: `A way of <b>giving credit</b> to individuals for the creative and intellectual works you used.` },
+        { front: `Three jobs of a citation?`, back: `Give credit, <b>locate sources</b>, <b>combat plagiarism</b>.` },
+        { front: `What can a citation include?`, back: `Author's name, date, location of the publishing company, journal title or <b>DOI</b>.` },
+        { front: `Which fields use APA?`, back: `<b>Education, Psychology and Sciences.</b>` },
+        { front: `Which field uses MLA?`, back: `The <b>Humanities</b>.` },
+        { front: `Which fields use Chicago/Turabian?`, back: `<b>Business, History and the Fine Arts.</b>` },
       ],
       oneLiners: [
-        'A citation gives credit, helps readers <b>locate</b> the source and helps <b>combat plagiarism</b>.',
-        'Every in-text pointer leads to one list entry, and every entry was cited.',
-        'APA: education, psychology, sciences; MLA: humanities; Chicago: business, history, fine arts; <b>IEEE</b>: engineering.',
-        'Author-date styles (APA) and numbered styles (IEEE) point to the source differently.',
-        'APA is now in its <b>seventh edition</b>, not the sixth in the slides.',
-        'Each source type (book, journal, website) has its own required details.',
+        'A citation gives credit, helps locate sources and <b>combats plagiarism</b>.',
+        'APA: education, psychology, sciences. MLA: humanities. Chicago/Turabian: business, history, fine arts.',
+        'Consult your professor for the style your course requires.',
       ],
       formulas: [
-        { name: 'Citation pair', html: `<b>In-text pointer</b> after each borrowed idea + <b>reference list</b> entry with the full details` },
-        { name: 'Style by field', html: `<b>APA</b> education, psychology, sciences · <b>MLA</b> humanities · <b>Chicago</b> business, history, fine arts · <b>IEEE</b> engineering and computing` },
+        { name: 'In-text example (deck)', html: `(<b>Holmes, 2020, p. 32</b>) · (<b>Geraghti et.al., 2017, p. 344</b>)` },
       ],
     },
 
@@ -1089,284 +958,67 @@ CHUNK({
       id: 'm4-ieee',
       title: 'IEEE style: numbered citations and the reference list',
       short: 'IEEE referencing',
-      blurb: 'How the numbered IEEE system works, the in-text forms, reference list formats for a journal article, a book, a conference paper and a website, a worked list built from a paragraph, and the errors to avoid.',
-      source: 'Not on the Drive slides beyond the syllabus mention. Written from the IEEE Reference Guide and standard usage; the Module 6 deck only names citation formats in general.',
+      blurb: 'The course files do not cover IEEE style; the Module 6 citation slides name only APA, MLA and Chicago.',
+      source: 'Module 4 Writing / Research Writing / Module 6 Academic Writing & Editing.pdf (citation formats slides). The Drive files give no IEEE rules.',
       tabs: [
-        { title: 'How IEEE works', html: `
-          <p class="lead"><b>IEEE style</b> numbers each source in the order you first cite it. The text carries a number in square brackets and the reference list carries the matching number. It is the standard for engineering, electronics and computer science papers.</p>
-          <div class="note heads-up"><p>Not on the slides: the whole topic. The syllabus names IEEE and APA as the two styles for this module, but the Drive deck only lists citation formats in general, so this topic is written from the IEEE Reference Guide and standard usage.</p></div>
-          <div class="kv">
-            <div><span>In the text</span><b>a number in square brackets, placed before punctuation</b></div>
-            <div><span>The list</span><b>called "References", numbered [1], [2], [3]...</b></div>
-            <div><span>Order</span><b>the order of first citation, not alphabetical</b></div>
-            <div><span>Reuse</span><b>the same source always keeps the same number</b></div>
-          </div>
-          <h3>Why numbers</h3>
-          <p>In a technical paper, sentences are full of equations and data. A small number such as [3] does not interrupt the reading the way (Holmes, 2020, p. 32) does, and it keeps the page tidy when a sentence cites five sources.</p>
-          <ol class="steps">
-            <li><b>First citation</b> gets [1], the next new source [2], and so on.</li>
-            <li><b>Cite again</b> and you reuse the same number.</li>
-            <li><b>Build the list</b> in number order, with the full details.</li>
-          </ol>
-          <div class="note exam"><p>If asked how IEEE differs from APA, say: numbers in order of appearance against author and year, and a numbered list against an alphabetical one.</p></div>
+        { title: 'What the files say', html: `
+          <p class="lead">The Module 4 Drive files give <b>no IEEE rules</b>. The Module 6 citation slides name only <b>APA, MLA and Chicago/Turabian</b>, and tell you to consult your professor about the style your course requires.</p>
         ` },
-        { title: 'In-text citations', html: `
-          <p class="lead">Each reference gets <b>its own bracket</b>. Put the bracket where the idea or fact ends, before the full stop.</p>
+        { title: 'Styles the slides name', html: `
           <table class="tbl">
-            <thead><tr><th>You want to say</th><th>Write</th></tr></thead>
+            <thead><tr><th>Style</th><th>Used by</th></tr></thead>
             <tbody>
-              <tr><td>one source</td><td>"The cache hit rate rose by 12 per cent [1]."</td></tr>
-              <tr><td>naming the author</td><td>"Brown [4] showed that..." or "Smith et al. [5] reported..."</td></tr>
-              <tr><td>two or more separate sources</td><td>"[1], [3]" (each number in its own bracket)</td></tr>
-              <tr><td>a run of sources</td><td>"[2]&ndash;[5]"</td></tr>
-              <tr><td>a mix</td><td>"[1], [3], [5]&ndash;[7]"</td></tr>
-              <tr><td>a page, figure or equation in the source</td><td>"[3, p. 12]", "[3, Fig. 2]", "[3, eq. (5)]"</td></tr>
-              <tr><td>the source is the subject of the sentence</td><td>"As shown in [2], ..." or "Reference [2] shows..." (the word "reference" is for the start of a sentence)</td></tr>
+              <tr><td><b>APA</b></td><td>Education, Psychology and Sciences</td></tr>
+              <tr><td><b>MLA</b></td><td>Humanities</td></tr>
+              <tr><td><b>Chicago/Turabian</b></td><td>Business, History and the Fine Arts</td></tr>
             </tbody>
           </table>
-          <div class="vs">
-            <div class="side"><h4>Wrong</h4><p>"Several controllers were tested [1,2,3]."</p><p>"Several controllers were tested. [1]"</p></div>
-            <div class="side"><h4>Right</h4><p>"Several controllers were tested [1]&ndash;[3]."</p><p>"Several controllers were tested [1]."</p></div>
-          </div>
-          <div class="note why"><p>The number is part of the sentence. That is why the full stop comes <b>after</b> the bracket.</p></div>
-          <div class="note trap"><p>Do not put a quotation without its bracket: direct quotes need quotation marks and a bracket, with a page number where possible ([3, p. 12]).</p></div>
-        ` },
-        { title: 'Reference list formats', html: `
-          <p class="lead">In IEEE the author's <b>initials come before the surname</b>, and the details follow in a fixed order separated by commas. Here is one example of each type.</p>
-          <div class="note heads-up"><p>Not on the slides. The works named are real papers and books used as examples; replace the details with those of your own sources.</p></div>
-          <h3>Journal article</h3>
-          <p>[1] Y. LeCun, Y. Bengio, and G. Hinton, "Deep learning," <em>Nature</em>, vol. 521, no. 7553, pp. 436&ndash;444, May 2015, doi: 10.1038/nature14539.</p>
-          <p><small>Authors, "Article title," <em>Journal</em>, vol., no., pp., month year, doi.</small></p>
-          <h3>Book</h3>
-          <p>[2] A. S. Tanenbaum and D. J. Wetherall, <em>Computer Networks</em>, 5th ed. Boston, MA, USA: Pearson, 2011.</p>
-          <p><small>Authors, <em>Title</em>, edition. City, State, Country: Publisher, year.</small></p>
-          <h3>Conference paper</h3>
-          <p>[3] K. He, X. Zhang, S. Ren, and J. Sun, "Deep residual learning for image recognition," in <em>Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR)</em>, Las Vegas, NV, USA, Jun. 2016, pp. 770&ndash;778.</p>
-          <p><small>Authors, "Paper title," in <em>Proc. Conference Name</em>, City, Country, month year, pp.</small></p>
-          <h3>Website</h3>
-          <p>[4] Python Software Foundation, "Python documentation." Accessed: Mar. 3, 2025. [Online]. Available: https://docs.python.org/3/</p>
-          <p><small>Author or organisation, "Page title." Accessed: date. [Online]. Available: address.</small></p>
-          <h3>Rules that apply to every entry</h3>
-          <ul>
-            <li>Write <b>initials then surname</b> (Y. LeCun, not LeCun, Yann).</li>
-            <li>Article and paper titles go in <b>quotation marks</b>, with only the first word and proper nouns capitalised; the comma sits inside the quotes.</li>
-            <li>Book titles and journal names are in <b>italics</b>; journal names are <b>abbreviated</b> in the standard way (for example <em>IEEE Trans. Pattern Anal. Mach. Intell.</em>).</li>
-            <li>Name up to six authors; for more than six, give the first author followed by <b>et al.</b></li>
-          </ul>
-        ` },
-        { title: 'Worked: build a list', html: `
-          <p class="lead">Number the sources as they appear and then write the list in the same order.</p>
-          <div class="worked">
-            <div class="given"><p>A report paragraph reads: "Deep residual networks reduced the error on image recognition benchmarks (He et al.). The idea of learning layered features is reviewed by LeCun et al. A third source, the Python documentation, explains the library used." Add IEEE citations and the list.</p></div>
-            <div class="solve"><ol class="steps">
-              <li><b>First source cited</b>: He et al. so it becomes [1].</li>
-              <li><b>Second</b>: LeCun et al. becomes [2].</li>
-              <li><b>Third</b>: the Python documentation becomes [3].</li>
-              <li><b>List in that order</b>, with initials first.</li>
-            </ol></div>
-            <div class="result">
-              <p>"Deep residual networks reduced the error on image recognition benchmarks [1]. The idea of learning layered features is reviewed in [2]. The Python documentation explains the library used [3]."</p>
-              <p><b>References</b><br>[1] K. He, X. Zhang, S. Ren, and J. Sun, "Deep residual learning for image recognition," in <em>Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR)</em>, Las Vegas, NV, USA, Jun. 2016, pp. 770&ndash;778.<br>[2] Y. LeCun, Y. Bengio, and G. Hinton, "Deep learning," <em>Nature</em>, vol. 521, no. 7553, pp. 436&ndash;444, May 2015, doi: 10.1038/nature14539.<br>[3] Python Software Foundation, "Python documentation." Accessed: Mar. 3, 2025. [Online]. Available: https://docs.python.org/3/</p>
-            </div>
-          </div>
-          <div class="worked">
-            <div class="given"><p>Later, the paper cites He et al. again. What number and why?</p></div>
-            <div class="solve"><p>The number belongs to the <b>source</b>, not the sentence.</p></div>
-            <div class="result"><p>Use [1] again. Never add a second entry for the same source.</p></div>
-          </div>
-        ` },
-        { title: 'Common IEEE errors', html: `
-          <p class="lead">Marks are lost on the same handful of slips. Check these before you hand in.</p>
-          <table class="tbl">
-            <thead><tr><th>Slip</th><th>Fix</th></tr></thead>
-            <tbody>
-              <tr><td>Alphabetical list</td><td>Number in order of <b>first citation</b>.</td></tr>
-              <tr><td>"[1,2]" or "[1-3]" with a hyphen</td><td>"[1], [2]" and "[1]&ndash;[3]" with an en dash.</td></tr>
-              <tr><td>Full first names in the list</td><td><b>Initials</b> first, then surname.</td></tr>
-              <tr><td>Bracket after the full stop</td><td>Bracket <b>before</b> the punctuation.</td></tr>
-              <tr><td>A new number for a source cited twice</td><td>Reuse the <b>original</b> number.</td></tr>
-              <tr><td>A list entry never cited in the text</td><td>Cite it, or <b>delete</b> the entry.</td></tr>
-              <tr><td>Mixing IEEE with APA details</td><td>Pick one style and apply it to <b>every entry</b>.</td></tr>
-              <tr><td>No access date on a website</td><td>Add "Accessed: date." before the address.</td></tr>
-            </tbody>
-          </table>
-          <div class="note exam"><p>A common marking task: given a short list, "identify the mistakes in this IEEE reference list". Read each entry against the format line above it.</p></div>
         ` },
       ],
       flashcards: [
-        { front: `How does IEEE point to a source in the text?`, back: `A <b>number in square brackets</b>, e.g. [1].` },
-        { front: `In what order is an IEEE list arranged?`, back: `The order of <b>first citation</b>, not alphabetical.` },
-        { front: `A source is cited twice. Which number?`, back: `The <b>same number</b> both times.` },
-        { front: `How do you cite sources 2, 3, 4 and 5 together?`, back: `<b>[2]&ndash;[5]</b>.` },
-        { front: `Where does the bracket go in the sentence?`, back: `<b>Before</b> the full stop or comma.` },
-        { front: `Name order in an IEEE entry?`, back: `<b>Initials, then surname</b>.` },
-        { front: `Article titles in IEEE?`, back: `In <b>quotation marks</b>; the journal name in italics.` },
-        { front: `More than six authors?`, back: `First author followed by <b>et al.</b>` },
-        { front: `What does a website entry add?`, back: `<b>Accessed: date</b>, [Online], and the web address.` },
-        { front: `Which fields use IEEE?`, back: `<b>Engineering, electronics, computer science.</b>` },
+        { front: `Which citation styles do the Module 6 slides name?`, back: `<b>APA, MLA and Chicago/Turabian.</b>` },
+        { front: `Does the Drive give IEEE rules?`, back: `<b>No.</b>` },
+        { front: `Which fields use APA?`, back: `<b>Education, Psychology and Sciences.</b>` },
+        { front: `Who decides the style for your course?`, back: `Consult your <b>professor</b>.` },
       ],
       oneLiners: [
-        'IEEE cites with <b>numbers in square brackets</b>, in order of first appearance.',
-        'The list is <b>numbered</b>, not alphabetical, and a source keeps its number.',
-        'Write [1], [3], [5]&ndash;[7]; put the bracket <b>before</b> the full stop.',
-        'In the list: <b>initials, surname</b>, "article title," <em>journal</em>, vol., no., pp., year.',
-        'Book: authors, <em>title</em>, edition. City: Publisher, year.',
-        'Website: organisation, "title." <b>Accessed: date.</b> [Online]. Available: address.',
+        'The course files give no IEEE rules; the slides name APA, MLA and Chicago only.',
+        'MLA is used by the Humanities.',
+        'Chicago/Turabian is used by Business, History and the Fine Arts.',
       ],
-      formulas: [
-        { name: 'IEEE journal article', html: `[n] <b>A. B. Surname</b>, "<b>Title</b>," <b>Journal</b>, vol. <b>x</b>, no. <b>y</b>, pp. <b>a&ndash;b</b>, <b>Mon. year</b>, doi: <b>xx</b>.` },
-        { name: 'IEEE in-text', html: `<b>[1]</b> one source · <b>[1], [3]</b> separate · <b>[2]&ndash;[5]</b> a range · <b>[3, p. 12]</b> a page` },
-      ],
+      formulas: [],
     },
 
     {
       id: 'm4-apa',
-      title: 'APA style: author-date citations and the reference list (7th edition)',
+      title: 'APA style: what the course files say',
       short: 'APA referencing',
-      blurb: 'How APA 7 works: in-text author-date forms for one, two, three or more authors and group authors; reference list formats for a journal article, a book, a website and a conference paper; the changes from the sixth edition the slides mention; and a worked fix.',
-      source: 'Module 4 Writing / Research Writing / Module 6 Academic Writing & Editing.pdf (APA named as the style for education, psychology and sciences); formats from the APA Publication Manual, 7th edition (standard usage, not on the slides).',
+      blurb: 'What the course files say about APA: the fields it is used in, the author-year-page in-text example in the literature review deck, and the source types the citation guides cover.',
+      source: 'Module 4 Writing / Research Writing / Module 6 Academic Writing & Editing.pdf (citation formats slides) and Writing a Literature Review.pptx (slide 17)',
       tabs: [
-        { title: 'How APA works', html: `
-          <p class="lead"><b>APA style</b> points to a source by <b>author and year</b> in the text and lists every source, alphabetically by surname, at the end. The slides say it is used by education, psychology and the sciences.</p>
-          <div class="note heads-up"><p>The Module 6 slide calls APA "now in its sixth edition". The current edition is the <b>seventh</b>, published in 2019, and everything on these tabs follows it. Check with your lecturer which edition they require.</p></div>
-          <div class="kv">
-            <div><span>In the text</span><b>author and year: (Holmes, 2020)</b></div>
-            <div><span>The list</span><b>"References", alphabetical by first author's surname</b></div>
-            <div><span>Layout</span><b>hanging indent: first line at the margin, later lines indented</b></div>
-            <div><span>Every entry</span><b>must be cited in the text, and the reverse</b></div>
-          </div>
-          <h3>The slide's own examples</h3>
-          <p>The slides give <b>(Holmes, 2020, p. 32)</b> and <b>(Geraghty et al., 2017, p. 344)</b> as the shape of an APA pointer. The page number goes in when you <b>quote</b> or paraphrase a specific passage.</p>
-          <h3>Why author-date</h3>
-          <p>A reader who knows the field sees at a glance <b>who</b> said it and <b>how recent</b> it is. That suits psychology and the sciences, where recency matters.</p>
-          <div class="note exam"><p>The slide's summary of what a citation holds (author, date, publisher location, journal title, DOI) is the content of an APA entry. APA 7 drops the publisher location and shows the DOI as a link.</p></div>
+        { title: 'How APA appears in the files', html: `
+          <p class="lead"><b>APA</b> (American Psychological Association) style is used by <b>Education, Psychology and Sciences</b> (Module 6 slides). The APA slides refer to the <b>6th edition</b>.</p>
+          <p>The citation guides cover these source types: author/editor/publisher formats, audio/visual materials, books, ebooks and chapters, encyclopedias, magazines, journals, newspapers, personal communications, websites, and parenthetical citations.</p>
         ` },
-        { title: 'In-text citations', html: `
-          <p class="lead">Two forms cover most sentences: <b>parenthetical</b> (author and year in brackets) and <b>narrative</b> (author in the sentence, year in brackets).</p>
-          <table class="tbl">
-            <thead><tr><th>Case</th><th>Parenthetical</th><th>Narrative</th></tr></thead>
-            <tbody>
-              <tr><td>One author</td><td>(Holmes, 2020)</td><td>Holmes (2020)</td></tr>
-              <tr><td>Two authors</td><td>(Brown &amp; Lee, 2019)</td><td>Brown and Lee (2019)</td></tr>
-              <tr><td>Three or more</td><td>(Geraghty et al., 2017)</td><td>Geraghty et al. (2017)</td></tr>
-              <tr><td>Group author</td><td>(World Health Organization [WHO], 2020), then (WHO, 2020)</td><td>The World Health Organization (WHO, 2020)</td></tr>
-              <tr><td>Direct quote</td><td>(Holmes, 2020, p. 32)</td><td>Holmes (2020) wrote that "..." (p. 32)</td></tr>
-              <tr><td>No date</td><td>(Brown, n.d.)</td><td>Brown (n.d.)</td></tr>
-              <tr><td>Several sources</td><td>(Brown, 2018; Lee, 2020), alphabetical order</td><td></td></tr>
-            </tbody>
-          </table>
-          <ul>
-            <li>Use "<b>&amp;</b>" inside brackets and "<b>and</b>" in running text.</li>
-            <li>"<b>et al.</b>" is used from the <b>first</b> citation when there are three or more authors (a seventh edition change).</li>
-            <li>Two works by the same author in the same year become <b>2020a</b> and <b>2020b</b>.</li>
-          </ul>
-          <div class="vs">
-            <div class="side"><h4>Wrong</h4><p>"Holmes, 2020 found that social media is addictive."</p></div>
-            <div class="side"><h4>Right</h4><p>"Holmes (2020) found that social media use is linked to addictive behaviour."</p></div>
-          </div>
-          <div class="note heads-up"><p>Not on the slides: these forms are from the APA manual. The slides show only the parenthetical and page-number examples.</p></div>
-        ` },
-        { title: 'Journal article and book', html: `
-          <p class="lead">An APA entry gives <b>author, date, title, source</b>, in that order, with a full stop after each group.</p>
-          <div class="note heads-up"><p>Not on the slides. The works named are real; use your own sources' details in an exam answer.</p></div>
-          <h3>Journal article</h3>
-          <p>LeCun, Y., Bengio, Y., &amp; Hinton, G. (2015). Deep learning. <em>Nature</em>, <em>521</em>(7553), 436&ndash;444. https://doi.org/10.1038/nature14539</p>
-          <p><small>Surname, I., Surname, I., &amp; Surname, I. (Year). Article title in sentence case. <em>Journal Title in Title Case</em>, <em>volume</em>(issue), pages. DOI link.</small></p>
-          <h3>Book</h3>
-          <p>Tanenbaum, A. S., &amp; Wetherall, D. J. (2011). <em>Computer networks</em> (5th ed.). Pearson.</p>
-          <p><small>Surname, I., &amp; Surname, I. (Year). <em>Book title in sentence case</em> (edition). Publisher.</small></p>
-          <h3>Chapter in an edited book</h3>
-          <p><small>Surname, I. (Year). Chapter title. In I. Surname (Ed.), <em>Book title</em> (pp. x&ndash;y). Publisher.</small></p>
-          <h3>Rules for every entry</h3>
-          <ul>
-            <li><b>Surname first, then initials</b>, for every author; an ampersand before the last author.</li>
-            <li><b>Sentence case</b> for article and book titles (capitals for the first word and proper nouns); <b>Title Case</b> for the journal name.</li>
-            <li><b>Italics</b> for the journal name and volume, and for the book title.</li>
-            <li>Up to <b>20 authors</b> are listed in the reference list.</li>
-            <li>The list is <b>alphabetical</b> with a hanging indent.</li>
-          </ul>
-        ` },
-        { title: 'Website and conference paper', html: `
-          <p class="lead">Online and conference sources use the same four parts, with a web address or the proceedings in place of a journal.</p>
-          <div class="note heads-up"><p>Not on the slides.</p></div>
-          <h3>Web page</h3>
-          <p>Python Software Foundation. (n.d.). <em>Python documentation</em>. https://docs.python.org/3/</p>
-          <p><small>Author or group. (Year, Month Day). <em>Page title in sentence case</em>. Site name (when different from the author). Web address.</small></p>
-          <ul>
-            <li>When the page has <b>no date</b>, write <b>(n.d.)</b>.</li>
-            <li>When the author is an organisation, use it as the author; when the site and the author are the same, leave out the site name.</li>
-            <li>APA 7 no longer says "Retrieved from" before the address, except for a page that is built to change over time (then add "Retrieved Month Day, Year, from").</li>
-          </ul>
-          <h3>Paper in conference proceedings</h3>
-          <p>He, K., Zhang, X., Ren, S., &amp; Sun, J. (2016). Deep residual learning for image recognition. In <em>2016 IEEE conference on computer vision and pattern recognition (CVPR)</em> (pp. 770&ndash;778). IEEE. https://doi.org/10.1109/CVPR.2016.90</p>
-          <p><small>Authors. (Year). Paper title. In <em>Proceedings title</em> (pp. x&ndash;y). Publisher. DOI link.</small></p>
-          <div class="note trap"><p>A DOI is written as a link: https://doi.org/... Do not put "doi:" in front of it, as the IEEE style does.</p></div>
-        ` },
-        { title: 'Sixth to seventh edition', html: `
-          <p class="lead">The slides say APA is "now in its sixth edition". If a lecturer, a course sample or an older paper uses the sixth, these are the differences.</p>
-          <div class="note heads-up"><p>Not on the slides: all rows are the changes made by the 2019 seventh edition.</p></div>
-          <table class="tbl">
-            <thead><tr><th>Feature</th><th>6th edition</th><th>7th edition</th></tr></thead>
-            <tbody>
-              <tr><td>Publisher location</td><td>City and state before the publisher</td><td><b>Dropped</b></td></tr>
-              <tr><td>DOI</td><td>"doi:10.xxxx"</td><td><b>https://doi.org/10.xxxx</b>, a link</td></tr>
-              <tr><td>"Retrieved from"</td><td>Before every web address</td><td>Only for pages that change over time</td></tr>
-              <tr><td>Three or more authors, in text</td><td>For 3 to 5 authors, list all on the first citation, then "et al."</td><td><b>"et al." from the first citation</b></td></tr>
-              <tr><td>Authors listed in the reference list</td><td>Up to 7; for 8 or more, the first six, then an ellipsis and the last author</td><td><b>Up to 20</b></td></tr>
-              <tr><td>Spaces after a full stop</td><td>Two</td><td><b>One</b></td></tr>
-              <tr><td>Running head in a student paper</td><td>Required</td><td>Not required</td></tr>
-            </tbody>
-          </table>
-          <div class="note exam"><p>If a marking task or question does not name the edition, use the <b>seventh</b> and say so. If the question quotes the slide's "sixth edition", point out that it has been replaced.</p></div>
-        ` },
-        { title: 'Worked: fix the entry', html: `
-          <p class="lead">Correct the entry, then write the in-text citation for it.</p>
-          <div class="worked">
-            <div class="given"><p>A student lists this: <b>LeCun Yann, Bengio Yoshua and Hinton Geoffrey. 2015. "Deep Learning". Nature 521: 436-444.</b></p></div>
-            <div class="solve"><ol class="steps">
-              <li><b>Authors</b>: surname first, initials only, ampersand before the last author.</li>
-              <li><b>Year</b> in brackets after the authors, with a full stop.</li>
-              <li><b>Article title</b> in sentence case, <b>no quotation marks</b>, no italics.</li>
-              <li><b>Journal name</b> in italics, then the italic volume, the issue in brackets, and the page range with an en dash.</li>
-              <li><b>DOI</b> as a link.</li>
-            </ol></div>
-            <div class="result"><p>LeCun, Y., Bengio, Y., &amp; Hinton, G. (2015). Deep learning. <em>Nature</em>, <em>521</em>(7553), 436&ndash;444. https://doi.org/10.1038/nature14539</p></div>
-          </div>
-          <div class="worked">
-            <div class="given"><p>Cite that article in a sentence about layered feature learning, and give the in-text form when you quote a line on page 439.</p></div>
-            <div class="solve"><p>Three authors means "et al." from the first time. A quotation needs a page number.</p></div>
-            <div class="result"><p>Paraphrase: "Deep networks learn layered representations (LeCun et al., 2015)." Quote: "..." (LeCun et al., 2015, p. 439).</p></div>
-          </div>
-          <div class="vs">
-            <div class="side"><h4>Wrong</h4><p>(LeCun, Bengio, and Hinton 2015)</p></div>
-            <div class="side"><h4>Right (APA 7)</h4><p>(LeCun et al., 2015)</p></div>
-          </div>
+        { title: 'The in-text example', html: `
+          <p>Writing a Literature Review: use in-text citations when paraphrasing or quoting, and list the papers as "References" at the end.</p>
+          <p class="example">Social Media use has been found to be linked to addictive behaviour. (Holmes, 2020, p. 32)/ (Geraghti et.al., 2017, p. 344)</p>
+          <p>The pointer gives the <b>author</b>, the <b>year</b> and the <b>page</b>.</p>
         ` },
       ],
       flashcards: [
-        { front: `How does APA point to a source in the text?`, back: `<b>Author and year</b>, e.g. (Holmes, 2020).` },
-        { front: `Order of the APA reference list?`, back: `<b>Alphabetical</b> by the first author's surname.` },
-        { front: `Which APA edition is current?`, back: `The <b>seventh</b> (2019).` },
-        { front: `Three or more authors in text?`, back: `<b>First author et al.</b>, from the first citation.` },
-        { front: `Two authors in brackets vs in running text?`, back: `<b>&amp;</b> in brackets, <b>and</b> in running text.` },
-        { front: `Quoted line: what does the pointer add?`, back: `A <b>page number</b>: (Holmes, 2020, p. 32).` },
-        { front: `Case for article and book titles?`, back: `<b>Sentence case</b>; the journal name in Title Case and italics.` },
-        { front: `How is a DOI written in APA 7?`, back: `As a link: <b>https://doi.org/...</b>, with no "doi:".` },
-        { front: `What replaces a missing date?`, back: `<b>(n.d.)</b>.` },
-        { front: `Which publisher detail did APA 7 drop?`, back: `The <b>location</b> (city and state).` },
+        { front: `What does APA stand for?`, back: `<b>American Psychological Association.</b>` },
+        { front: `Which fields use APA?`, back: `<b>Education, Psychology and Sciences.</b>` },
+        { front: `What does the deck's in-text example give?`, back: `Author, year and page: <b>(Holmes, 2020, p. 32)</b>.` },
+        { front: `What heading do the two papers go under?`, back: `<b>References</b>, at the end of the review.` },
       ],
       oneLiners: [
-        'APA points by <b>author and year</b> in the text and lists alphabetically at the end.',
-        'The slides say sixth edition; the current one is the <b>seventh</b> (2019).',
-        'Three or more authors: <b>et al.</b> from the very first citation.',
-        'Entry order: <b>author, (date), title, source</b>; surname first, initials only, ampersand before the last author.',
-        'Sentence case for article and book titles; journal and volume in italics.',
-        'DOI as <b>https://doi.org/...</b>; no publisher location; "n.d." when undated.',
+        'APA: Education, Psychology and Sciences; the slides refer to the 6th edition.',
+        'In-text: author, year, page, e.g. (Holmes, 2020, p. 32).',
+        'List the papers as <b>References</b> at the end of the review.',
       ],
       formulas: [
-        { name: 'APA 7 journal article', html: `<b>Surname, I., &amp; Surname, I.</b> (<b>Year</b>). Article title in sentence case. <em>Journal Title</em>, <em>vol</em>(<b>issue</b>), <b>pages</b>. https://doi.org/<b>xx</b>` },
-        { name: 'APA 7 book', html: `<b>Surname, I.</b> (<b>Year</b>). <em>Title in sentence case</em> (<b>edition</b>). <b>Publisher</b>.` },
-        { name: 'APA in-text', html: `<b>(Author, year)</b> · two: <b>(A &amp; B, year)</b> · three or more: <b>(A et al., year)</b> · quote: <b>(A, year, p. n)</b>` },
+        { name: 'APA in-text (deck example)', html: `(<b>Author, year, p. n</b>), e.g. (Holmes, 2020, p. 32)` },
       ],
     },
 
