@@ -10,8 +10,7 @@ CHUNK({
       source: 'Module 5 / Leadership: LS - Add.ppt (slides 1-12, 45), Leadership - Additional Material.ppt (slides 2-6), Leadership Styles A.pptx (slides 2-6)',
       tabs: [
         { title: 'Leadership defined', html: `
-          <p class="lead"><b>Leadership</b> is the process of getting other people to work hard, and willingly, towards a shared goal. Every team project you will ever be in has someone doing this, whether or not they have the title.</p>
-          <p>The decks give several definitions. Learn two or three and use them in your own words.</p>
+          <p class="lead"><b>Leadership</b> is the process of getting other people to work hard, and willingly, towards a shared goal.</p>
           <ul>
             <li>The <b>ability to develop a vision</b> that motivates others to move with passion towards a common goal. It is a process by which a person <b>influences others to accomplish an objective</b> and directs the organisation so that it is more cohesive and coherent.</li>
             <li>M Chemers: leadership is a <b>process of social influence</b> in which one person can <b>enlist the aid and support of others</b> in the accomplishment of a common task.</li>
@@ -19,8 +18,8 @@ CHUNK({
             <li>From the management deck: <b>leading</b> builds the <b>commitment and enthusiasm</b> people need to apply their talents fully to help accomplish plans, and <b>leadership</b> is the process of inspiring others to work hard to accomplish important tasks.</li>
           </ul>
           <h3>Skills a leader-manager needs</h3>
-          <p>To succeed as a leader, a manager must be good at <b>motivation</b>, <b>communication</b>, <b>interpersonal relations</b>, <b>teamwork</b> and <b>group dynamics</b>. That list is why leadership sits beside communication, conflict and teams in this module.</p>
-          <div class="note heads-up"><p>The deck states its own aims: a solid understanding of leadership and its importance to management, the role of power as a leadership resource, and a review of the main approaches to studying leadership. The next topics follow that order.</p></div>
+          <p>To succeed as a leader, a manager must be good at <b>motivation</b>, <b>communication</b>, <b>interpersonal relations</b>, <b>teamwork</b> and <b>group dynamics</b>.</p>
+          <div class="note heads-up"><p>The deck states its own aims: a solid understanding of leadership and its importance to management, the role of power as a leadership resource, and a review of the main approaches to studying leadership.</p></div>
         ` },
         { title: 'Leader versus manager', html: `
           <p class="lead">Leadership and management are <b>not the same thing</b>. The deck gives the one-line version: <b>managers do things right, leaders do the right things</b>.</p>
@@ -31,14 +30,9 @@ CHUNK({
             <li><b>Communicate</b> that vision to everyone concerned.</li>
             <li><b>Motivate and inspire</b> people to pursue the vision in their daily work.</li>
           </ol>
-          <div class="vs">
-            <div class="side"><h4>Manager only</h4><p>"Everyone submits the report by Friday, in the template."</p></div>
-            <div class="side"><h4>Leader as well</h4><p>"We want the client to trust our data, so Friday's report is our proof. Tell me what you need."</p></div>
-          </div>
-          <div class="note exam"><p>A common short question is "differentiate leader and manager". Give the quote, then two contrasts (focus and source of influence), then one example. The point is that a good manager also needs leadership, as the first tab says.</p></div>
         ` },
         { title: 'Five principles of visionary leadership', html: `
-          <p class="lead">The management deck lists <b>five principles of visionary leadership</b>. Each is a verb phrase aimed at the people you lead.</p>
+          <p class="lead">The management deck lists <b>five principles of visionary leadership</b>.</p>
           <ol class="steps">
             <li><b>Challenge the process</b> be a pioneer; encourage innovation and support people who have ideas.</li>
             <li><b>Be enthusiastic</b> inspire others through personal enthusiasm to share in a common vision.</li>
@@ -46,8 +40,6 @@ CHUNK({
             <li><b>Set the example</b> give a consistent role model of how others can and should act.</li>
             <li><b>Celebrate achievements</b> bring emotion into the workplace and rally "hearts" as well as "minds".</li>
           </ol>
-          <div class="mnemonic"><p>Try new things, show energy, back your people, model it yourself, celebrate wins. Five short actions in that order.</p></div>
-          <div class="note example"><p>A final-year project lead who (1) lets a junior try a different sensor, (2) shows real excitement about the demo, (3) shares her own lab slot, (4) turns up early every day, and (5) buys the team chai after the review is using all five.</p></div>
         ` },
         { title: 'Power and empowerment', html: `
           <p class="lead"><b>Power</b> is the ability to get someone else to do something you want done. <b>Good managers</b> use power in ways that influence others to work hard and <b>willingly</b> apply their efforts to organisational objectives.</p>
@@ -74,8 +66,6 @@ CHUNK({
               <tr><td><b>Situation</b></td><td>Use your judgment to decide the best action and the style the situation needs. What works in one situation <b>will not always work</b> in another.</td></tr>
             </tbody>
           </table>
-          <div class="note why"><p>The fourth factor is the seed of the later theories. Contingency and situational leadership are just a long answer to "what works in one situation will not always work in another".</p></div>
-          <div class="note trap"><p>Students write "the leader" as the only factor and forget the follower. The leader has to earn the followers' trust, and the follower's needs shape the style.</p></div>
         ` },
         { title: 'Conceptions, methods, style', html: `
           <p class="lead">Before the named styles, the Styles A deck asks what a leader thinks leadership is, and how they go about it. A <b>leadership style</b> covers how leaders relate to people inside and outside the organisation, how they view themselves and their position, and largely whether they succeed.</p>
@@ -86,8 +76,6 @@ CHUNK({
             <div class="side"><h4>Methods of leadership (how it is done)</h4>
               <ul><li>Pure exercise of power</li><li>Political scheming</li><li>Using relationships</li><li>Setting an example</li><li>Persuasion</li><li>Sharing power</li><li>Charisma</li><li>Involving followers in the goal</li><li>Various combinations of these and other methods</li></ul></div>
           </div>
-          <div class="note example"><p>Two heads of department. One sees the job as "being the boss" and uses pure exercise of power. The other sees it as "taking care of people" and uses relationships and example. Same title, two styles, and very different corridors.</p></div>
-          <div class="note exam"><p>You can use these lists as a quick way to <b>describe</b> the leader in a case: say which conception and which method the person shows, then name the style.</p></div>
         ` },
       ],
       flashcards: [
@@ -104,7 +92,7 @@ CHUNK({
         { front: `Whom must a leader convince they are worth following?`, back: `Their <b>followers</b>, not their superiors.` },
       ],
       oneLiners: [
-        'Leadership = <b>social influence</b> towards a common goal, not force.',
+        'Leadership = <b>social influence</b> towards a common goal.',
         'Managers do things right; leaders do the <b>right things</b>.',
         'Visionary leadership: challenge the process, be enthusiastic, help others to act, set the example, celebrate achievements.',
         'Position power: <b>rewards, coercion, legitimacy</b>. Personal power: <b>expert, reference</b>.',
@@ -123,11 +111,11 @@ CHUNK({
       id: 'm5-lead-eight-styles',
       title: 'The eight leadership styles',
       short: 'Eight leadership styles',
-      blurb: 'Autocratic, bureaucratic, coaching, democratic, laissez-faire, pacesetter, servant and visionary leadership: focus, characteristics, when to use each, pros and cons, a side-by-side table, famous examples and the matching exercise.',
+      blurb: 'Autocratic, bureaucratic, coaching, democratic, laissez-faire, pacesetter, servant and visionary leadership: focus, characteristics, when to use each, pros and cons, famous examples and the matching exercise.',
       source: 'Module 5 / Leadership: Leadership Styles.pptx (slides 1-22), Leadership Styles 2.pdf (same text as a PDF)',
       tabs: [
         { title: 'Eight styles at a glance', html: `
-          <p class="lead"><b>Leadership styles</b> are the different ways leaders guide and manage, adapting to situations. The course lists eight, and you are expected to recognise each in a case.</p>
+          <p class="lead"><b>Leadership styles</b> are the different ways leaders guide and manage, adapting to situations. The deck lists eight.</p>
           <div class="chips"><span class="chip">Autocratic</span><span class="chip">Bureaucratic</span><span class="chip">Coaching</span><span class="chip">Democratic</span><span class="chip">Laissez-faire</span><span class="chip">Pacesetter</span><span class="chip">Servant</span><span class="chip">Visionary</span></div>
           <p>Three ideas from the opening slides hold for all of them:</p>
           <ul>
@@ -136,14 +124,13 @@ CHUNK({
             <li>Many styles share <b>overlapping qualities</b>, so leaders can <b>adapt and combine</b> elements of several approaches to suit their teams and organisational goals.</li>
           </ul>
           <h3>How each style is described</h3>
-          <p>Every style is given the same four headings in the slides. Use them as your own answer layout:</p>
+          <p>Every style is given the same four headings in the slides.:</p>
           <ol class="steps">
             <li><b>Focus</b> what the style is mainly about.</li>
             <li><b>Characteristics</b> how the leader behaves, and the traits they show.</li>
             <li><b>When to use</b> the settings where it fits.</li>
             <li><b>Pros and cons</b> what you gain and what you pay.</li>
           </ol>
-          <div class="note exam"><p>A case question usually gives you a leader's behaviour and asks "identify the style and justify". Match the behaviour to a <b>focus</b> or a <b>characteristic</b>, then say why it fits (or does not fit) the situation using "when to use".</p></div>
         ` },
         { title: 'Autocratic and bureaucratic', html: `
           <p class="lead">Both styles centre on <b>control</b>. Autocratic control sits in one person. Bureaucratic control sits in the hierarchy and the rules.</p>
@@ -169,7 +156,6 @@ CHUNK({
             <div class="side"><h4>Pros</h4><ul><li>Clear roles, rules and regulations</li><li>Removes confusion and ambiguity in daily work</li><li>Fair treatment of employees</li><li>Transparent processes</li></ul></div>
             <div class="side"><h4>Cons</h4><ul><li>Discourages creativity and innovation</li><li>Inflexible, hard to change</li><li>"Traffic jams", as decisions follow a set pathway</li><li>Siloed teams, limited communication</li></ul></div>
           </div>
-          <div class="note trap"><p>Do not mix them up. Ask "who decides?" If it is one person's will, it is autocratic. If it is the rulebook and the chain of command, it is bureaucratic.</p></div>
         ` },
         { title: 'Coaching and democratic', html: `
           <p class="lead">Both styles invest in people. Coaching invests in each person one to one. Democratic invests in the whole team's voice.</p>
@@ -194,7 +180,6 @@ CHUNK({
             <div class="side"><h4>Pros</h4><ul><li>Members feel valued, with higher job satisfaction and commitment</li><li>Positive environment</li><li>Higher engagement</li><li>Built-in inclusivity</li></ul></div>
             <div class="side"><h4>Cons</h4><ul><li>Slower decisions</li><li>Lack of decisive action from leadership</li><li>Inefficiency and confusion if not managed</li><li>Inequality of outcome, as not every option can be chosen</li></ul></div>
           </div>
-          <div class="note example"><p>A coaching leader notices Asha is strong at analysis but nervous in presentations, and sets up two practice talks for her. A democratic leader asks the whole team to vote on the demo format.</p></div>
         ` },
         { title: 'Laissez-faire and pacesetter', html: `
           <p class="lead">These two sit at opposite ends of involvement. The laissez-faire leader steps back. The pacesetter steps in and sets the speed.</p>
@@ -218,7 +203,6 @@ CHUNK({
             <div class="side"><h4>Pros</h4><ul><li>Addresses issues quickly</li><li>Achieves goals rapidly</li><li>Values competency</li><li>Leader is highly involved and takes on tasks alongside employees</li></ul></div>
             <div class="side"><h4>Cons</h4><ul><li>Reduced trust, which can become micromanagement</li><li>Employee stress</li><li>Less engagement, because employees give little input</li><li>Misalignment between leader and employees</li></ul></div>
           </div>
-          <div class="note trap"><p>Pacesetter is not the same as autocratic. The pacesetter works alongside the team and leads by their own performance. The autocratic leader commands from above.</p></div>
         ` },
         { title: 'Servant and visionary', html: `
           <p class="lead">One style looks after the team's well-being. The other looks far ahead at a long-term goal.</p>
@@ -243,26 +227,8 @@ CHUNK({
           </div>
           <div class="note heads-up"><p>The slides give no "when to use" line for servant leadership.</p></div>
         ` },
-        { title: 'Side by side', html: `
-          <p class="lead">One row per style: the focus word to remember, where it fits, and its biggest gain and cost.</p>
-          <table class="tbl">
-            <thead><tr><th>Style</th><th>Focus word</th><th>Best used</th><th>Big plus</th><th>Big minus</th></tr></thead>
-            <tbody>
-              <tr><td><b>Autocratic</b></td><td>Leader decides</td><td>Crisis, military, high stakes</td><td>Speed</td><td>Resentment, no creativity</td></tr>
-              <tr><td><b>Bureaucratic</b></td><td>Hierarchy, rules</td><td>Hospitals, government, construction, security</td><td>Clear roles, fairness</td><td>Inflexible, silos</td></tr>
-              <tr><td><b>Coaching</b></td><td>Individual growth</td><td>Close-knit teams, personal attention</td><td>Open communication</td><td>Time and energy</td></tr>
-              <tr><td><b>Democratic</b></td><td>Team decides</td><td>Creative, flexible settings</td><td>Engagement</td><td>Slow decisions</td></tr>
-              <tr><td><b>Laissez-faire</b></td><td>Hands-off</td><td>Expert, trusted teams</td><td>Independence</td><td>Confusion, isolation</td></tr>
-              <tr><td><b>Pacesetter</b></td><td>Example, speed</td><td>In moderation</td><td>Rapid goals</td><td>Burnout, micromanagement</td></tr>
-              <tr><td><b>Servant</b></td><td>Well-being</td><td>Shared-vision teams</td><td>Respect, support</td><td>Slow, over-commitment</td></tr>
-              <tr><td><b>Visionary</b></td><td>Long-term goal</td><td>Start-ups, large corporations</td><td>Inspires</td><td>Details lost</td></tr>
-            </tbody>
-          </table>
-          <div class="note heads-up"><p>The "focus word" and "big plus/minus" columns compress the slides' wording for revision; the full lists are in the style tabs above. The servant row's "best used" is our wording (the slides give none).</p></div>
-          <div class="note why"><p>Notice that most cons are the other side of the pros. Speed in autocratic leadership is bought with discussion. Autonomy in laissez-faire is bought with clarity. So "justify" answers should name the cost as well as the gain.</p></div>
-        ` },
         { title: 'Examples and practice', html: `
-          <p class="lead">The deck ends with a matching exercise and a table of well-known leaders for each style. Do the exercise first, then read the table.</p>
+          <p class="lead">The deck ends with a matching exercise and a table of well-known leaders for each style.</p>
           <div class="worked">
             <div class="given"><p><b>Match</b> the style to its description (from the course slides).</p><table class="tbl"><thead><tr><th>Style</th><th>Description</th></tr></thead><tbody>
               <tr><td>A. Autocratic</td><td>1. Hands-off, allowing autonomy</td></tr>
@@ -270,8 +236,7 @@ CHUNK({
               <tr><td>C. Coaching</td><td>3. Strong input from the leader in decision-making</td></tr>
               <tr><td>D. Democratic</td><td>4. Hierarchy with defined rules and chain of command</td></tr>
               <tr><td>E. Laissez-faire</td><td>5. Collaborative decision-making with team input</td></tr></tbody></table></div>
-            <div class="solve"><p>Use the focus word of each style: autocratic = the leader's input; bureaucratic = hierarchy; coaching = personalised; democratic = collaborative; laissez-faire = hands-off.</p></div>
-            <div class="result"><p><b>A-3, B-4, C-2, D-5, E-1.</b></p></div>
+            <div class="solve"><p>The deck gives no answer key for this exercise. Use the focus line of each style in the tabs above.</p></div>
           </div>
           <h3>Leaders and their styles (as the slides label them)</h3>
           <table class="tbl">
@@ -301,7 +266,7 @@ CHUNK({
         { front: `Pacesetter: why use it in moderation?`, back: `Overuse leads to <b>burnout and disengagement</b>.` },
         { front: `Servant leadership: focus?`, back: `The <b>well-being and harmony</b> of the team; listening, empathy, foresight.` },
         { front: `Visionary: when to use?`, back: `<b>Start-ups</b> or large corporations with specific business outcomes.` },
-        { front: `The match: laissez-faire is…`, back: `<b>Hands-off, allowing autonomy</b> (E-1).` },
+        { front: `Laissez-faire in one line (matching slide)?`, back: `<b>Hands-off, allowing autonomy</b>.` },
       ],
       oneLiners: [
         'Eight styles: autocratic, bureaucratic, coaching, democratic, laissez-faire, pacesetter, servant, visionary.',
@@ -314,7 +279,6 @@ CHUNK({
       ],
       formulas: [
         { name: 'Describing a style', html: `<b>Focus</b> → <b>characteristics</b> → <b>when to use</b> → <b>pros</b> and <b>cons</b>`, note: 'The same four headings the slides use for every style.' },
-        { name: 'Matching exercise key', html: `Autocratic-<b>3</b> · Bureaucratic-<b>4</b> · Coaching-<b>2</b> · Democratic-<b>5</b> · Laissez-faire-<b>1</b>` },
       ],
     },
 
@@ -335,8 +299,7 @@ CHUNK({
               <tr><td><b>Laissez-faire</b></td><td>The leader gives <b>power to subordinates</b> to decide.</td><td>The leader is <b>still responsible</b> for what is decided. Used when employees can analyse the situation themselves.</td></tr>
             </tbody>
           </table>
-          <div class="note heads-up"><p>The deck adds that the delegative style "is generally not useful". The eight-styles deck says laissez-faire works with an expert, trustworthy team. Both fit together: it is not a general style, only a style for the right team. In an answer, say that.</p></div>
-          <div class="note trap"><p>Laissez-faire does not mean the leader stops being responsible. The slide says the leader still answers for the decisions, even when subordinates make them.</p></div>
+          <div class="note heads-up"><p>The deck adds that the delegative style "is generally not useful".</p></div>
         ` },
         { title: 'Four styles', html: `
           <p class="lead">The Styles A deck gives another four-way sort. It starts from how the leader sees the job.</p>
@@ -348,11 +311,10 @@ CHUNK({
           </ol>
           <h3>Another way to look at it</h3>
           <div class="vs">
-            <div class="side"><h4>Transactional</h4><p>Leadership based on <b>transactions</b> between leader and followers.</p><p><small>Work done in exchange for what the leader can give.</small></p></div>
-            <div class="side"><h4>Transformational</h4><p>A true leader <b>distils the values, hopes and needs</b> of followers into a <b>vision</b>.</p><p><small>Followers are changed, not just paid.</small></p></div>
+            <div class="side"><h4>Transactional</h4><p>Leadership based on <b>transactions</b> between leader and followers.</p></div>
+            <div class="side"><h4>Transformational</h4><p>A true leader <b>distils the values, hopes and needs</b> of followers into a <b>vision</b>.</p></div>
           </div>
-          <div class="note heads-up"><p>These two terms come back in the topic "Charismatic and transformational leadership", where the slides explain them in more detail. The small italic lines here are our plain-English reading.</p></div>
-          <div class="note exam"><p>If a question names "the four styles of leadership" without a list, give these four (autocratic, managerial, democratic, collaborative) and say they are one of several ways to sort leaders.</p></div>
+          <div class="note heads-up"><p>These two terms come back in the topic "Charismatic and transformational leadership", where the slides explain them in more detail.</p></div>
         ` },
         { title: 'Task and people', html: `
           <p class="lead">The behaviour deck says <b>leadership style</b> is a <b>recurring pattern of behaviours</b> shown by a leader. Research finds two basic underlying dimensions (the Blake and Mouton grid): <b>concern for the task</b> and <b>concern for people</b>.</p>
@@ -390,8 +352,6 @@ CHUNK({
               <tr><td><b>Team</b></td><td>High</td><td>High</td></tr>
             </tbody>
           </table>
-          <div class="note example"><p>A supervisor who lets deadlines slip because nobody should be upset is country club. One who counts output and never asks about a worker's illness is produce or perish. One who does the minimum for everyone is impoverished.</p></div>
-          <div class="note heads-up"><p>The deck calls the high-high style "Team leadership" on the grid slide, and the other deck calls the same corner "Participative or Democratic". They are one corner with two sets of labels.</p></div>
         ` },
         { title: 'Likert\'s four systems', html: `
           <p class="lead">Dr Rensis Likert (1903-1981), a management theorist, held that the efficiency of an organisation or department depends on its <b>system of management</b>. He described four systems. They run from top-heavy to widely shared responsibility.</p>
@@ -403,12 +363,11 @@ CHUNK({
           </ol>
           <div class="note heads-up"><p>The slide that explains each system repeats "Benevolent authoritative" for the third entry and gives it no separate explanation for "Consultative". The earlier slide names the four systems clearly as exploitative authoritative, benevolent authoritative, consultative and participative (group).</p></div>
           <h3>The Likert scale table at the end</h3>
-          <p>The deck ends this part with a table of advantages and disadvantages. It describes the <b>Likert scale</b> (the 1 to 5 agree-disagree rating used in questionnaires), not the four systems.</p>
+          <p>The deck ends this part with a table of advantages and disadvantages. It describes the <b>Likert scale</b>, not the four systems.</p>
           <div class="vs">
             <div class="side"><h4>Advantages</h4><ul><li>Simple to construct</li><li>Each item has equal value, so respondents are scored rather than items</li><li>Likely to produce a highly reliable scale</li><li>Easy to read and complete</li></ul></div>
             <div class="side"><h4>Disadvantages</h4><ul><li>Lack of reproducibility</li><li>Absence of one-dimensionality or homogeneity</li><li>Validity may be difficult to demonstrate</li></ul></div>
           </div>
-          <div class="note trap"><p>Do not copy the scale table into an answer about Likert's management systems. They are two different things with one name behind them.</p></div>
         ` },
         { title: 'Choosing and developing a style', html: `
           <p class="lead">Good leaders usually have a style they use <b>most of the time</b> and use <b>consciously</b>, but they are not rigid. They change as needed to deal with whatever comes up.</p>
@@ -419,15 +378,13 @@ CHUNK({
           </ul>
           <h3>How to choose and develop a style</h3>
           <ol class="steps">
-            <li><b>Start with yourself</b> know your own habits and strengths.</li>
+            <li><b>Start with yourself.</b></li>
             <li><b>Think about the needs</b> of the organisation or initiative.</li>
             <li><b>Observe and learn</b> from other leaders.</li>
             <li><b>Use the research</b> on leadership.</li>
             <li><b>Believe</b> in what you are doing.</li>
             <li><b>Be prepared to change.</b></li>
           </ol>
-          <div class="note example"><p>A new class representative is naturally democratic. When the college inspection is two days away and the stage is not ready, she gives direct instructions for two days (more autocratic), then goes back to asking for ideas. She started with herself, read the situation, and was prepared to change.</p></div>
-          <div class="note exam"><p>For "which style would suit this leader?" questions, use these steps as your reasoning: who the leader is, what the situation needs, and what the organisation expects. That is exactly what the contingency theories in the next topic formalise.</p></div>
         ` },
       ],
       flashcards: [
@@ -468,19 +425,8 @@ CHUNK({
       source: 'Module 5 / Leadership: LS - Add.ppt (slides 13-15, 21-41), Leadership - Additional Material.ppt (slides 11-26)',
       tabs: [
         { title: 'Four directions of study', html: `
-          <p class="lead">The decks organise the study of leadership into <b>four directions</b>: <b>traits</b>, <b>behavioural</b>, <b>contingency</b> and <b>charismatic</b>. Each one asks a different question.</p>
-          <table class="tbl">
-            <thead><tr><th>Direction</th><th>Question it asks</th><th>Leaders are...</th></tr></thead>
-            <tbody>
-              <tr><td><b>Trait</b></td><td>What qualities do leaders have?</td><td>Born with the right traits</td></tr>
-              <tr><td><b>Behavioural</b></td><td>What do effective leaders do?</td><td>Made, through learned behaviour</td></tr>
-              <tr><td><b>Contingency</b></td><td>Which style works where?</td><td>Effective when style fits the situation</td></tr>
-              <tr><td><b>Charismatic</b></td><td>How do leaders inspire people?</td><td>Special, inspiring figures (see the transformational topic)</td></tr>
-            </tbody>
-          </table>
+          <p class="lead">The decks organise the study of leadership into <b>four directions</b>: <b>traits</b>, <b>behavioural</b>, <b>contingency</b> and <b>charismatic</b>.</p>
           <p>The additional-material deck lists four theories differently: <b>trait</b>, <b>behavioural</b>, <b>contingency</b> and <b>situational</b>. Situational leadership is one of the contingency theories, so the two lists agree.</p>
-          <div class="note heads-up"><p>The third column of the table is our summary of how each direction treats the leader, written from the slides' descriptions below. It is there to help you remember the logic, not to quote.</p></div>
-          <div class="mnemonic"><p>Who the leader <b>is</b> (traits), what the leader <b>does</b> (behaviour), where the leader <b>works</b> (contingency), how the leader <b>inspires</b> (charismatic).</p></div>
         ` },
         { title: 'Trait theory', html: `
           <p class="lead">The <b>trait approach</b> grew out of the <b>"Great Man" theory</b> as a way of identifying the key characteristics of successful leaders. The belief was that critical traits could be isolated, and people who had them could be <b>recruited, selected and installed</b> in leadership positions.</p>
@@ -495,7 +441,6 @@ CHUNK({
             <div class="side"><h4>Limitations</h4><ul><li>Some <b>subjective judgment</b> in deciding who counts as a good or successful leader</li><li>Disagreement over <b>which traits matter most</b></li></ul></div>
           </div>
           <div class="note example"><p>The deck says the theory was common in the <b>military</b> and is still used as a set of criteria for selecting candidates for commissions.</p></div>
-          <div class="note trap"><p>Do not say traits are "proven". The slides say the opposite: no definitive profile, and physical traits do not matter.</p></div>
         ` },
         { title: 'Behavioural theory', html: `
           <p class="lead">The <b>behavioural approach</b> believes <b>great leaders are made, not born</b>. It is rooted in <b>behaviourism</b> and looks at what leaders <b>do</b>, not at mental qualities or internal states.</p>
@@ -509,7 +454,6 @@ CHUNK({
           <div class="chips"><span class="chip">Ohio State leadership studies</span><span class="chip">University of Michigan studies</span><span class="chip">Blake and Mouton's Managerial Grid</span></div>
           <p>The two dimensions behind the research, <b>concern for people</b> and <b>concern for the task</b>, and the grid, are in "Classic styles, the grid and Likert".</p>
           <div class="note heads-up"><p>The slides name the Ohio State and Michigan studies but give no detail.</p></div>
-          <div class="note why"><p>If leaders can be made, then training matters. That is why companies run leadership programmes, and why a student can build leadership from a team project.</p></div>
         ` },
         { title: 'Fiedler\'s contingency model', html: `
           <p class="lead"><b>Contingency theory</b> says a leader's success depends on <b>subordinate, task and group variables</b>. A leader who is very effective in one place may fail when moved, or when the situation changes. The deck's phrase is that this explains the leader who loses their "Midas touch".</p>
@@ -546,9 +490,6 @@ CHUNK({
           </table>
           <p>Follower readiness on the slide's chart runs from <b>R1</b> (unable and unwilling, low readiness) through <b>R2</b> (unable but willing) and <b>R3</b> (able but unwilling) to <b>R4</b> (able and willing, high readiness).</p>
           <div class="worked">
-            <div class="given"><p>A first-year volunteer joins the fest team. She has never booked a venue and is nervous.</p></div>
-            <div class="solve"><p>She is unable and unwilling (R1 on the chart, often called a beginner). Best match: <b>Telling</b>, with specific directions and close supervision. As she learns, move to selling, then participating, then delegating.</p></div>
-            <div class="result"><p>Style follows readiness: <b>S1 to S4 as R1 to R4</b>.</p></div>
           </div>
           <div class="note heads-up"><p>The chart on the slide is a bell curve of "relationship behaviour" against "task behaviour". Telling is high task and low relationship, selling high on both, participating high relationship and low task, delegating low on both. The figure above shows the same thing as a table of pairs.</p></div>
         ` },
@@ -572,7 +513,6 @@ CHUNK({
             <li>Performance incentives are <b>poor</b>: provide <b>participative</b> leadership.</li>
             <li>Task challenge is <b>insufficient</b>: provide <b>achievement-oriented</b> leadership.</li>
           </ul>
-          <div class="note exam"><p>The four pairs are the usual exam material: a case describes a symptom (confused team, low confidence, no motivation, boredom) and you name the style that fills the gap.</p></div>
         ` },
         { title: 'Vroom-Jago and substitutes', html: `
           <p class="lead"><b>Vroom-Jago leader-participation theory</b> helps a leader choose among <b>three decision methods</b>. A related idea, <b>substitutes for leadership</b>, says some settings reduce the need for a leader to step in.</p>
@@ -647,25 +587,6 @@ CHUNK({
           </div>
           <p>The Styles A deck puts the same idea in a sentence: a true leader is one who <b>distils the values, hopes and needs</b> of followers into a vision.</p>
           <div class="note heads-up"><p>The slide lists the six words without explanations.</p></div>
-          <div class="mnemonic"><p>Vision, charisma, symbolism, empowerment, intellect, integrity: <b>V-C-S-E-I-I</b>. Three about the leader's pull (vision, charisma, symbolism), then empowerment for others, then the two inner qualities (intellect, integrity).</p></div>
-        ` },
-        { title: 'Transactional versus transformational', html: `
-          <p class="lead">The two are best remembered as a pair. One runs the exchange. The other changes the people in it.</p>
-          <table class="tbl">
-            <thead><tr><th></th><th>Transactional</th><th>Transformational</th></tr></thead>
-            <tbody>
-              <tr><td>Core idea</td><td>Transactions between leader and followers</td><td>Turns followers' values and hopes into a vision</td></tr>
-              <tr><td>Follows from</td><td>Behaviour and contingency theories, path-goal</td><td>Vision, charisma, symbolism, empowerment, intellect, integrity</td></tr>
-              <tr><td>Result aimed at</td><td>Expected performance</td><td>Performance <b>above and beyond expectations</b></td></tr>
-            </tbody>
-          </table>
-          <div class="note heads-up"><p>The last row's "expected performance" for transactional leadership is our wording, set against the slide's "above and beyond expectations" for transformational leadership.</p></div>
-          <div class="worked">
-            <div class="given"><p>A student club president offers a certificate to each member who brings five new sign-ups. Another president tells members what the club could become in three years, asks each person what they want from it, and lets juniors run events. Which is transactional and which transformational?</p></div>
-            <div class="solve"><p>The first is an exchange (work for a reward): <b>transactional</b>. The second gives a vision, asks for people's hopes, and empowers juniors: <b>transformational</b>.</p></div>
-            <div class="result"><p>Transactional = exchange; transformational = vision and empowerment.</p></div>
-          </div>
-          <div class="note exam"><p>For a "justify" question, quote the signs: "rewards for sign-ups" shows a transaction; "vision of three years", "asks what they want" and "juniors run events" show vision, hopes and empowerment.</p></div>
         ` },
         { title: 'Old-fashioned leadership', html: `
           <p class="lead">The deck closes on a plain note. <b>Peter Drucker</b> views leadership as <b>much more than charisma</b>. To him it is three things:</p>
@@ -720,10 +641,9 @@ CHUNK({
             <li><b>Standards</b></li>
             <li><b>Develop people</b></li>
           </ol>
-          <div class="mnemonic"><p>Four, three, three: who you are (purpose, values, humility, drive), how you act (example, consistency, clarity), what you do for people (know them, set standards, develop them).</p></div>
         ` },
         { title: 'Principles 1 to 5', html: `
-          <p class="lead">The first five are mostly about the leader as a person.</p>
+          <p class="lead">Principles 1 to 5 as the slide explains them.</p>
           <table class="tbl">
             <thead><tr><th>Principle</th><th>What it means</th><th>What to do</th></tr></thead>
             <tbody>
@@ -734,11 +654,9 @@ CHUNK({
               <tr><td><b>Drive</b></td><td>A constant desire to improve; <b>dissatisfied with the status quo</b>, while celebrating achievements.</td><td>Set ambitious goals and strive to make a difference.</td></tr>
             </tbody>
           </table>
-          <div class="note example"><p>A team lead whose team has an 8 a.m. lab call and who is always there first is leading by example. One who says "I do not know how to do this part, can someone show me?" is showing humility.</p></div>
-          <div class="note trap"><p>Humility is not low confidence. The slide pairs it with taking responsibility for failures and focusing on the people's success, which only a confident leader does.</p></div>
         ` },
         { title: 'Principles 6 to 10', html: `
-          <p class="lead">The last five are mostly about what the leader does with and for other people.</p>
+          <p class="lead">Principles 6 to 10 as the slide explains them.</p>
           <table class="tbl">
             <thead><tr><th>Principle</th><th>What it means</th><th>What to do</th></tr></thead>
             <tbody>
@@ -749,11 +667,6 @@ CHUNK({
               <tr><td><b>Develop people</b></td><td>Leaders create a <b>safe environment for growth</b>, allowing for failure and learning.</td><td>Use standards to measure performance and enable continuous improvement.</td></tr>
             </tbody>
           </table>
-          <div class="vs">
-            <div class="side"><h4>A say-do gap</h4><p>"Anyone can ask me for help," then snapping at the first person who does.</p></div>
-            <div class="side"><h4>Consistent</h4><p>The leader says "ask me", and when someone does, makes time and helps.</p></div>
-          </div>
-          <div class="note why"><p>Clarity tells people <b>what</b>, and leaves them the <b>how</b>. That is why it sits close to empowerment, and why a leader who over-explains every step is acting as a manager, not a leader.</p></div>
         ` },
         { title: 'Hill\'s team leadership model', html: `
           <p class="lead">Slide 4 is a picture: <b>Hill's Team Leadership Model</b>. It starts from the leader's <b>decisions</b> and ends at <b>team effectiveness</b>. Read it from top to bottom.</p>
@@ -788,12 +701,7 @@ CHUNK({
               <tr><td><b>Sustaining</b> team performance</td><td><b>Synergising</b></td><td><b>Alignment</b></td></tr>
             </tbody>
           </table>
-          <div class="note why"><p>The curve rises, so performance grows as the team develops, and the leader changes style as the team does. This is the same logic as Hersey-Blanchard: the style follows the readiness of the people.</p></div>
-          <div class="note heads-up"><p>The stage names are the slide's own. They echo, but do not copy, Tuckman's stages, which are taught in the team-development topic of this module.</p></div>
           <div class="worked">
-            <div class="given"><p>A new project team has just been formed and no one knows their roles. What style and focus does the slide suggest?</p></div>
-            <div class="solve"><p>The team is in the <b>creating</b> stage, so the leader <b>steers</b> and focuses on <b>results</b>.</p></div>
-            <div class="result"><p>Steering, results. Later: supporting and teamwork, stimulating and strengths, synergising and alignment.</p></div>
           </div>
         ` },
       ],
@@ -843,7 +751,6 @@ CHUNK({
             <li><b>The strategy seminar.</b> The president sent Weaver and 16 other executives to a week-long seminar on strategic planning. Weaver concluded the consultants were off base. In breaks, most executives privately agreed. When the consultants heard of the dissent, they asked everyone, dramatically, whether they were "in" or "out"; "out" meant leaving at once. Every executive who had grumbled said "In". Weaver, fourth from last, said "Out" and left.</li>
           </ol>
           <div class="note why"><p>The worksheet's lesson: all leaders spend time on <b>reflection and self-examination</b> to know what they truly believe and value. Beliefs are tested and fine-tuned over time. True leaders can say what they believe and why, <b>without a prompt</b>, and find the <b>courage to speak up</b> even when others will disagree.</p></div>
-          <div class="note example"><p>Notice the difference between the two events. In the first, Weaver was <b>right and persuaded</b> the president. In the second, he was <b>right and left alone</b>. Courage shows in both.</p></div>
         ` },
         { title: 'The four questions', html: `
           <p class="lead">The worksheet asks four things. The answer key gives short bullets and a longer paragraph for each.</p>
@@ -853,9 +760,7 @@ CHUNK({
             <li><b>Where does courage come from?</b></li>
             <li><b>List your three most important values.</b></li>
           </ol>
-          <div class="note exam"><p>The key's layout is worth copying: a heading, a bullet list of four or five items, then one paragraph that expands each bullet with a fact from the case. Bullets earn quick marks, and the paragraph shows that you used the case.</p></div>
           <div class="note heads-up"><p>The key says for question 1: "You can list other values and justify them too". So the four traits in the next tab are a model, not the only right answer. Any trait you can tie to something Weaver did is acceptable.</p></div>
-          <div class="note trap"><p>Question 4 is about <b>you</b>. There is no wrong answer, but a bare list of three words earns little. Give the value and one line on what it means in your behaviour, as the key does.</p></div>
         ` },
         { title: 'Q1: Weaver\'s traits', html: `
           <p class="lead">Four traits the key gives, each tied to a fact in the case.</p>
@@ -893,7 +798,6 @@ CHUNK({
             </ul></div>
             <div class="result"><p>Courage has internal sources (values, duty, confidence, risk-taking) and external ones (support).</p></div>
           </div>
-          <div class="note why"><p>The last source links to the ten principles: a leader who "develops people in a safe environment" is building the support that makes other people brave. Weaver's supervisor had no such safety, which is why he stayed silent.</p></div>
         ` },
         { title: 'Q4: your three values', html: `
           <p class="lead">The key's model answer names three values and says what each means in action.</p>
@@ -928,8 +832,6 @@ CHUNK({
         'True leaders reflect on what they believe and speak up even when others disagree.',
       ],
       formulas: [
-        { name: 'Trait answer layout', html: `<b>Trait</b> + <b>evidence from the case</b> + <b>effect</b>, four or five times, then one paragraph` },
-        { name: 'Value answer layout', html: `<b>Value</b> → <b>what it looks like in behaviour</b> → <b>result for others</b>` },
       ],
     },
 
