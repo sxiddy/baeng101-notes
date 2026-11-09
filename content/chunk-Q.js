@@ -18,22 +18,12 @@ CHUNK({
             <li>Alan Keith: leadership is ultimately about <b>creating a way for people to contribute</b> to making something extraordinary happen.</li>
             <li>From the management deck: <b>leading</b> builds the <b>commitment and enthusiasm</b> people need to apply their talents fully to help accomplish plans, and <b>leadership</b> is the process of inspiring others to work hard to accomplish important tasks.</li>
           </ul>
-          <div class="note why"><p>All four definitions share three ideas: a <b>goal</b>, other <b>people</b>, and <b>influence</b> instead of force. If a definition in an exam answer has those three, it is safe.</p></div>
           <h3>Skills a leader-manager needs</h3>
           <p>To succeed as a leader, a manager must be good at <b>motivation</b>, <b>communication</b>, <b>interpersonal relations</b>, <b>teamwork</b> and <b>group dynamics</b>. That list is why leadership sits beside communication, conflict and teams in this module.</p>
           <div class="note heads-up"><p>The deck states its own aims: a solid understanding of leadership and its importance to management, the role of power as a leadership resource, and a review of the main approaches to studying leadership. The next topics follow that order.</p></div>
         ` },
         { title: 'Leader versus manager', html: `
           <p class="lead">Leadership and management are <b>not the same thing</b>. The deck gives the one-line version: <b>managers do things right, leaders do the right things</b>.</p>
-          <table class="tbl">
-            <thead><tr><th></th><th>Manager</th><th>Leader</th></tr></thead>
-            <tbody>
-              <tr><td>Asks</td><td>How do we do this correctly?</td><td>Is this the right thing to do?</td></tr>
-              <tr><td>Attention on</td><td>Running the work, rules, plans</td><td>Direction, people, the future</td></tr>
-              <tr><td>Source of effect</td><td>Position</td><td>Influence and trust</td></tr>
-            </tbody>
-          </table>
-          <div class="note heads-up"><p>Not on the slides: the table is our own reading of the one-line quote, to help you write a paragraph. The slides give only the quote.</p></div>
           <h3>Leadership and vision</h3>
           <p>A <b>vision</b> is a clear sense of the future and of the actions needed to get there successfully. <b>Leadership with vision</b> has three parts:</p>
           <ol class="steps">
@@ -58,7 +48,6 @@ CHUNK({
           </ol>
           <div class="mnemonic"><p>Try new things, show energy, back your people, model it yourself, celebrate wins. Five short actions in that order.</p></div>
           <div class="note example"><p>A final-year project lead who (1) lets a junior try a different sensor, (2) shows real excitement about the demo, (3) shares her own lab slot, (4) turns up early every day, and (5) buys the team chai after the review is using all five.</p></div>
-          <div class="note heads-up"><p>Not on the slides: this list matches the "five practices of exemplary leadership" from Kouzes and Posner (model the way, inspire a shared vision, challenge the process, enable others to act, encourage the heart). If an examiner uses those names, they mean the same things.</p></div>
         ` },
         { title: 'Power and empowerment', html: `
           <p class="lead"><b>Power</b> is the ability to get someone else to do something you want done. <b>Good managers</b> use power in ways that influence others to work hard and <b>willingly</b> apply their efforts to organisational objectives.</p>
@@ -67,15 +56,12 @@ CHUNK({
             <div class="side"><h4>Position power</h4><p>Based on things the manager can <b>offer</b> to others.</p><ul><li><b>Rewards</b></li><li><b>Coercion</b> (punishment)</li><li><b>Legitimacy</b> (formal authority)</li></ul></div>
             <div class="side"><h4>Personal power</h4><p>Based on the way others <b>view</b> the manager.</p><ul><li><b>Expert</b> power (expertise)</li><li><b>Reference</b> power (charisma or personal reputation)</li></ul></div>
           </div>
-          <div class="note why"><p>Position power comes with the job and goes when you leave it. Personal power belongs to you. That is why a new graduate who knows the subject (expert power) can lead a senior colleague on one task.</p></div>
           <h3>Empowerment</h3>
           <p><b>Empowerment</b> means giving people at all levels of responsibility the <b>opportunity to act and make relevant decisions on their own</b>. Two kinds of leadership go with it:</p>
           <ul>
             <li><b>Lateral leadership</b>: essential for coordinating the many diverse elements of today's complex organisations.</li>
             <li><b>Bottom-up leadership</b>: needed for organisational flexibility and responsiveness in empowerment cultures.</li>
           </ul>
-          <div class="note example"><p>Lateral: a design student coordinates with the electronics and coding groups, none of whom report to her. Bottom-up: a first-year member spots a fault in the test setup and is allowed to stop the test.</p></div>
-          <div class="note heads-up"><p>Not on the slides: the examples above are ours. The slides define the terms in one line each.</p></div>
         ` },
         { title: 'Four factors of leadership', html: `
           <p class="lead">The additional-material deck says leadership always involves four factors: the <b>leader</b>, the <b>follower</b>, <b>communication</b> and the <b>situation</b>. The slide shows a leader and a follower facing each other, communication between them and the situation around them.</p>
@@ -255,7 +241,7 @@ CHUNK({
             <div class="side"><h4>Pros</h4><ul><li>Accomplishes target goals</li><li>Inspires employees and shareholders</li><li>Offers clear pathways to outcomes</li><li>Strong communication</li></ul></div>
             <div class="side"><h4>Cons</h4><ul><li>Details may get lost</li><li>Passion for the goal can outweigh others' input</li><li>Current issues may be overlooked</li><li>Motivation may fade if the leader moves on</li></ul></div>
           </div>
-          <div class="note heads-up"><p>The slides give no "when to use" line for servant leadership. Not on the slides: it suits teams that value care and trust and are not under crisis time pressure, which is consistent with its own cons (slow in high-stakes situations).</p></div>
+          <div class="note heads-up"><p>The slides give no "when to use" line for servant leadership.</p></div>
         ` },
         { title: 'Side by side', html: `
           <p class="lead">One row per style: the focus word to remember, where it fits, and its biggest gain and cost.</p>
@@ -301,7 +287,6 @@ CHUNK({
               <tr><td>Visionary</td><td>Steve Jobs</td><td>Envisioned revolutionary technology like the iPhone</td></tr>
             </tbody>
           </table>
-          <div class="note heads-up"><p>Not on the slides: leaders rarely fit one box. Churchill, for one, is often also called autocratic or visionary. Use the slide's label in the exam, and say in a line that leaders mix styles.</p></div>
         ` },
       ],
       flashcards: [
@@ -387,7 +372,6 @@ CHUNK({
           </table>
           <h3>The decision continuum</h3>
           <p>When a manager's decisions are <b>highly participative</b>, the style is more <b>subordinate-centred</b>. When decisions are more authoritarian, it is more <b>boss-centred</b>. A good leader moves back and forth along this continuum as circumstances change.</p>
-          <div class="note heads-up"><p>Not on the slides: the boss-centred to subordinate-centred line is the Tannenbaum and Schmidt continuum. The slides show it only as a sentence, so you can describe it the same way.</p></div>
         ` },
         { title: 'The Managerial Grid', html: `
           <p class="lead">Blake and Mouton's <b>Managerial Grid</b> describes the relationship between a leader's <b>concern for task</b> and <b>concern for people</b>. It plots one against the other and defines <b>five styles</b>.</p>
@@ -407,7 +391,7 @@ CHUNK({
             </tbody>
           </table>
           <div class="note example"><p>A supervisor who lets deadlines slip because nobody should be upset is country club. One who counts output and never asks about a worker's illness is produce or perish. One who does the minimum for everyone is impoverished.</p></div>
-          <div class="note heads-up"><p>The deck calls the high-high style "Team leadership" on the grid slide, and the other deck calls the same corner "Participative or Democratic". They are one corner with two sets of labels. Not on the slides: the grid is generally taught with "Team leadership" (9,9) as the style to aim for, so your recommendation in a case would normally move the leader towards that corner.</p></div>
+          <div class="note heads-up"><p>The deck calls the high-high style "Team leadership" on the grid slide, and the other deck calls the same corner "Participative or Democratic". They are one corner with two sets of labels.</p></div>
         ` },
         { title: 'Likert\'s four systems', html: `
           <p class="lead">Dr Rensis Likert (1903-1981), a management theorist, held that the efficiency of an organisation or department depends on its <b>system of management</b>. He described four systems. They run from top-heavy to widely shared responsibility.</p>
@@ -417,7 +401,7 @@ CHUNK({
             <li><b>Consultative</b> the third system in the list of names.</li>
             <li><b>Participative (group)</b> responsibility for achieving the organisation's goals is <b>widespread</b> throughout the hierarchy.</li>
           </ol>
-          <div class="note heads-up"><p>The slide that explains each system repeats "Benevolent authoritative" for the third entry and gives it no separate explanation for "Consultative". The earlier slide names the four systems clearly as exploitative authoritative, benevolent authoritative, consultative and participative (group). Not on the slides: in the consultative system managers ask subordinates for views but still make the decision, so responsibility is shared more widely than in system 2 and less than in system 4.</p></div>
+          <div class="note heads-up"><p>The slide that explains each system repeats "Benevolent authoritative" for the third entry and gives it no separate explanation for "Consultative". The earlier slide names the four systems clearly as exploitative authoritative, benevolent authoritative, consultative and participative (group).</p></div>
           <h3>The Likert scale table at the end</h3>
           <p>The deck ends this part with a table of advantages and disadvantages. It describes the <b>Likert scale</b> (the 1 to 5 agree-disagree rating used in questionnaires), not the four systems.</p>
           <div class="vs">
@@ -524,7 +508,7 @@ CHUNK({
           <h3>Three well-known studies</h3>
           <div class="chips"><span class="chip">Ohio State leadership studies</span><span class="chip">University of Michigan studies</span><span class="chip">Blake and Mouton's Managerial Grid</span></div>
           <p>The two dimensions behind the research, <b>concern for people</b> and <b>concern for the task</b>, and the grid, are in "Classic styles, the grid and Likert".</p>
-          <div class="note heads-up"><p>The slides name the Ohio State and Michigan studies but give no detail. Not on the slides: the Ohio State studies found two behaviour sets, "consideration" (people) and "initiating structure" (task). The Michigan studies found "employee-centred" and "job-centred" leaders. Both are the same two-way split as the grid.</p></div>
+          <div class="note heads-up"><p>The slides name the Ohio State and Michigan studies but give no detail.</p></div>
           <div class="note why"><p>If leaders can be made, then training matters. That is why companies run leadership programmes, and why a student can build leadership from a team project.</p></div>
         ` },
         { title: 'Fiedler\'s contingency model', html: `
@@ -546,7 +530,7 @@ CHUNK({
             <li><b>Match</b> the style to the situation.</li>
           </ol>
           <p>Neither the task-oriented nor the relationship-oriented style is effective all the time. Each is best in the <b>right situation</b>. Where there is a mismatch, prospective leaders should seek a fitting situation, or engage in <b>situational engineering</b> (change the situation), or <b>change their style</b>.</p>
-          <div class="note heads-up"><p>The deck's "findings" chart has eight situations (I to VIII) from favourable on the left (good relations, high task structure, strong power) to unfavourable on the right (poor, low, weak). Not on the slides: the standard result is that task-oriented leaders do better at the two ends (very favourable and very unfavourable) and relationship-oriented leaders in the moderate middle. Another chart in the deck is blurred; the same pattern is that with good leader-member relations the relationship-oriented leader's group scores higher, and with poor relations the task-oriented leader's group does.</p></div>
+          <div class="note heads-up"><p>The deck's "findings" chart has eight situations (I to VIII) from favourable on the left (good relations, high task structure, strong power) to unfavourable on the right (poor, low, weak).</p></div>
         ` },
         { title: 'Hersey-Blanchard situational theory', html: `
           <p class="lead">Created by Dr Paul Hersey and Ken Blanchard. Instead of one style, a successful leader <b>changes style</b> according to the <b>readiness</b> (maturity) of followers and the details of the task. Readiness means how <b>able, willing and confident</b> followers are to perform the task.</p>
@@ -604,8 +588,6 @@ CHUNK({
           </div>
           <h3>Substitutes for leadership</h3>
           <p>These are aspects of the work setting and the people that can <b>reduce the need for a leader's personal involvement</b>. They come from three places: <b>subordinate characteristics</b>, <b>task characteristics</b> and <b>organisational characteristics</b>.</p>
-          <div class="note example"><p>Not on the slides: a team of experienced engineers (subordinates), a routine and well-defined task (task), and clear written procedures (organisation) need little day-to-day directing. These examples are ours.</p></div>
-          <div class="note why"><p>Vroom-Jago is the same idea as the democratic versus autocratic styles, made practical: choose the method from the situation, not from habit.</p></div>
         ` },
       ],
       flashcards: [
@@ -651,8 +633,6 @@ CHUNK({
             <div class="side"><h4>Transactional leadership</h4><p>Views leadership as based on <b>transactions</b> between leader and followers. It describes managers who apply the insights of the <b>leader-behaviour</b> and <b>contingency</b> theories, particularly the <b>path-goal</b> theory.</p></div>
             <div class="side"><h4>Charismatic leaders</h4><p>Those who develop <b>special leader-follower relationships</b> and inspire followers in <b>extraordinary ways</b>.</p></div>
           </div>
-          <div class="note example"><p>Transactional: "Finish the report by Friday and you get the Saturday off." The leader clarifies the goal, the path and the reward, as path-goal says. Charismatic: the leader whose talk makes people want to stay late for the cause, even without a reward.</p></div>
-          <div class="note heads-up"><p>The example above is ours. The slides give only the two definitions. Not on the slides: in standard teaching, transactional leaders work with rewards and corrections, and charismatic leaders are one form of the leaders who transform people.</p></div>
         ` },
         { title: 'Transformational leadership', html: `
           <p class="lead"><b>Transformational leadership</b> is <b>inspirational leadership</b> that influences the <b>beliefs, values and goals</b> of followers and gets them to perform <b>above and beyond expectations</b>.</p>
@@ -666,7 +646,7 @@ CHUNK({
             <div><span>6</span><b>Integrity</b></div>
           </div>
           <p>The Styles A deck puts the same idea in a sentence: a true leader is one who <b>distils the values, hopes and needs</b> of followers into a vision.</p>
-          <div class="note heads-up"><p>The slide lists the six words without explanations. Not on the slides: <b>symbolism</b> means using symbols, stories and ceremonies to carry the vision; <b>intellect</b> means challenging people to think in new ways. The other four are explained in earlier decks (vision and empowerment in "What leadership is"; integrity is one of the personal traits in "Trait, behaviour and contingency theories").</p></div>
+          <div class="note heads-up"><p>The slide lists the six words without explanations.</p></div>
           <div class="mnemonic"><p>Vision, charisma, symbolism, empowerment, intellect, integrity: <b>V-C-S-E-I-I</b>. Three about the leader's pull (vision, charisma, symbolism), then empowerment for others, then the two inner qualities (intellect, integrity).</p></div>
         ` },
         { title: 'Transactional versus transformational', html: `
@@ -694,12 +674,6 @@ CHUNK({
             <li><b>Accepting leadership as a responsibility rather than a rank.</b></li>
             <li><b>Earning and keeping the trust of workers.</b></li>
           </ol>
-          <div class="vs">
-            <div class="side"><h4>Rank</h4><p>"I am the team lead, so you do what I say."</p></div>
-            <div class="side"><h4>Responsibility</h4><p>"I am the team lead, so if the demo fails, that is mine to answer for."</p></div>
-          </div>
-          <div class="note why"><p>This is the answer to "can a leader succeed on charisma alone?" Charm attracts attention. Mission gives people a reason to stay, and trust keeps them. That is also why integrity is on the transformational list.</p></div>
-          <div class="note heads-up"><p>The wrong-and-right pair above is ours. The slides give only the three points.</p></div>
         ` },
       ],
       flashcards: [
@@ -746,7 +720,6 @@ CHUNK({
             <li><b>Standards</b></li>
             <li><b>Develop people</b></li>
           </ol>
-          <div class="note heads-up"><p>Not on the slides: it helps to group them. <b>Who you are</b>: purpose, values, humility, drive. <b>How you act</b>: lead by example, consistency, clarity. <b>What you do for people</b>: know your people, standards, develop people. The grouping is ours, to make ten items easier to hold in the head.</p></div>
           <div class="mnemonic"><p>Four, three, three: who you are (purpose, values, humility, drive), how you act (example, consistency, clarity), what you do for people (know them, set standards, develop them).</p></div>
         ` },
         { title: 'Principles 1 to 5', html: `
@@ -802,7 +775,7 @@ CHUNK({
             </tbody>
           </table>
           <p>An arrow from team effectiveness returns to the leadership decisions: the leader looks at how the team is doing and decides again.</p>
-          <div class="note heads-up"><p>The picture has no text explanation. Not on the slides: this is Susan Hill's functional model of team leadership. "Buffering" means shielding the team from outside pressure, and "advocating" means speaking for the team to the wider organisation. Task and relational actions are the same two concerns as the Managerial Grid.</p></div>
+          <div class="note heads-up"><p>The picture has no text explanation.</p></div>
         ` },
         { title: 'Style and focus by team stage', html: `
           <p class="lead">Slide 5 is a picture too: a rising curve of <b>team performance</b> against <b>team development</b>, in four stages. Beside each stage are the <b>leader's style</b> and the <b>leader's focus</b>.</p>
@@ -816,7 +789,7 @@ CHUNK({
             </tbody>
           </table>
           <div class="note why"><p>The curve rises, so performance grows as the team develops, and the leader changes style as the team does. This is the same logic as Hersey-Blanchard: the style follows the readiness of the people.</p></div>
-          <div class="note heads-up"><p>The stage names are the slide's own. They echo, but do not copy, Tuckman's stages, which are taught in the team-development topic of this module. Not on the slides: steering is directive, supporting is more relational, stimulating pushes people towards their strengths, and synergising aligns everyone so the team's total is more than its parts.</p></div>
+          <div class="note heads-up"><p>The stage names are the slide's own. They echo, but do not copy, Tuckman's stages, which are taught in the team-development topic of this module.</p></div>
           <div class="worked">
             <div class="given"><p>A new project team has just been formed and no one knows their roles. What style and focus does the slide suggest?</p></div>
             <div class="solve"><p>The team is in the <b>creating</b> stage, so the leader <b>steers</b> and focuses on <b>results</b>.</p></div>
@@ -896,8 +869,6 @@ CHUNK({
             </ul></div>
             <div class="result"><p>Courage, authenticity, critical thinking, effective communication, each with the evidence from the spaghetti-sauce meeting.</p></div>
           </div>
-          <div class="note example"><p>Add one more from the seminar to show range: <b>independence</b>. Alone among the 17, he did not follow the crowd, and he said "Out" aloud rather than grumble in private. The key allows other traits that you justify.</p></div>
-          <div class="note heads-up"><p>The "independence" example is ours, taken from the case itself.</p></div>
         ` },
         { title: 'Q2 and Q3: action and courage', html: `
           <p class="lead">Question 2 asks for your own response. Question 3 asks where courage comes from. Both have a model answer in the key.</p>
@@ -935,17 +906,6 @@ CHUNK({
             </ol></div>
             <div class="result"><p>The key's closing idea: these values guide decisions, build trust and open communication, and create a positive, supportive environment.</p></div>
           </div>
-          <h3>A template for your own</h3>
-          <ol class="steps">
-            <li><b>Name</b> the value in one word.</li>
-            <li><b>Say what it looks like</b> in your behaviour.</li>
-            <li><b>Add the result</b> it creates for others.</li>
-          </ol>
-          <div class="vs">
-            <div class="side"><h4>Thin</h4><p>"Honesty, respect, hard work."</p></div>
-            <div class="side"><h4>Developed</h4><p>"Honesty: I tell my team about a mistake early, which keeps trust."</p></div>
-          </div>
-          <div class="note heads-up"><p>Not on the slides: the answer key is a model, not a fixed key. Your own three values can be different, so long as you explain them as the key does. The link to Module 5's statement-of-purpose topics is direct: your values are the material for the "why I want this" part of an SoP.</p></div>
         ` },
       ],
       flashcards: [
@@ -977,32 +937,14 @@ CHUNK({
       id: 'm5-lead-cases',
       title: 'Analysing leadership case studies',
       short: 'Leadership cases',
-      blurb: 'How to answer "identify the leadership style" questions, with model answers for the Innovatech case, the Dhoni and Kohli pair, and the Radiant Learning team, and a map of which case-study questions belong to which topic.',
+      blurb: 'The leadership case-study questions from the practice worksheets: the Innovatech case, the Dhoni and Kohli pair, and the Radiant Learning team, given as questions only.',
       source: 'Module 5 / Leadership: Module 5 - Case study Analysis.docx (Q1 a, Q3 part 2), Casestudy analysing Practice - 1.docx (Q1)',
       tabs: [
-        { title: 'The method', html: `
-          <p class="lead">A leadership case gives you behaviour. You name the <b>style</b>, prove it from the case, and say whether it <b>fits</b>. Use the same five moves every time.</p>
-          <ol class="steps">
-            <li><b>Find the behaviour</b> underline what the leader does and says.</li>
-            <li><b>Name the style</b> from the eight (autocratic, bureaucratic, coaching, democratic, laissez-faire, pacesetter, servant, visionary).</li>
-            <li><b>Justify</b> with the style's focus or characteristics and a fact from the case.</li>
-            <li><b>Judge the fit</b> using the style's "when to use", its pros and its cons, and the situation (team readiness, stakes, time).</li>
-            <li><b>Conclude</b> with the best style or blend, and why.</li>
-          </ol>
-          <div class="chips"><span class="chip">make all decisions: autocratic</span><span class="chip">rules, chain of command: bureaucratic</span><span class="chip">mentors, develops people: coaching</span><span class="chip">asks the team: democratic</span><span class="chip">hands-off, delegates: laissez-faire</span><span class="chip">sets standards, leads by own example: pacesetter</span><span class="chip">well-being, listens: servant</span><span class="chip">long-term goal: visionary</span></div>
-          <div class="note exam"><p>Two questions in the worksheets ask "which style is effective" or "predict which works best". Do not answer "democratic is the best style". Say what the team needs, then which style gives it. The contingency theories are your authority: style follows the situation.</p></div>
-          <div class="note trap"><p>A leader can show more than one style in one case. Innovatech has a CEO who changes style and a project lead who mixes three. Say so, and tie each style to a quote.</p></div>
-          <div class="note heads-up"><p>The course files give these cases as questions only. The model answers in the next tabs are ours, written to the method above.</p></div>
-        ` },
         { title: 'Innovatech', html: `
           <p class="lead">Case summary: a six-month-old AI-software start-up grew from 5 to 25 people with a strict six-month deadline. CEO Michael Zhang first decided everything himself, then set high standards and expected everyone to copy his late hours. People disengaged and productivity fell. The Board brought in Elena Rodriguez as Project Lead, who found unresolved conflicts and unclear roles. She developed individuals' strengths, involved the team in technical decisions, and gave juniors structure through architects, lead architects, team leads, documentation and processes. In two months the team was cohesive and productive.</p>
           <div class="worked">
             <div class="given"><p><b>a) Identify and discuss the leadership styles applied.</b> (about 150 words)</p></div>
-            <div class="solve">
-              <p><b>Michael Zhang</b> began as <b>autocratic</b>: he made every decision and gave detailed instructions, which suits a crisis but left the team no say. Under deadline pressure he became a <b>pacesetter</b>, setting high standards and working late to show the way. Pacesetting should be used in moderation, and here it caused burnout and disengagement.</p>
-              <p><b>Elena Rodriguez</b> used a blend. Her empathy and focus on each person's strengths is <b>coaching</b>. Involving the team in technical decisions is <b>democratic</b>. Giving junior members documentation, processes and a chain of architects and team leads is <b>bureaucratic</b>, since it defines roles and hierarchy. Choosing a different style for different people, juniors versus technical staff, is a situational approach.</p>
-            </div>
-            <div class="result"><p>Zhang: autocratic, then pacesetter (poor fit). Rodriguez: coaching, democratic and bureaucratic, fitted to the team's needs, and the results improved.</p></div>
+            <div class="solve"><p>The file gives no answer key for this question.</p></div>
           </div>
           <div class="note heads-up"><p>Part b) of the same question asks you to illustrate Tuckman's stages with this case. That belongs with the team-development material, not leadership. The Innovatech conflicts are also a conflict-management topic; see "Choosing the right style" and "Analysing a conflict case study".</p></div>
         ` },
@@ -1010,78 +952,31 @@ CHUNK({
           <p class="lead">Two Indian cricket captains, two very different approaches, both successful. The case from the practice sheet: Dhoni (limited-overs captain 2007-2017) was calm, composed and cool-headed, hid his emotions, gave players responsibility and backed them after failures, and led "from the shadows" with team over personal glory. India won the 2007 T20 World Cup, the 2011 World Cup and the 2013 Champions Trophy. Kohli (captain 2017-2022 in most formats) was aggressive, passionate and expressive, used energy and intensity, pushed fitness and discipline, set high standards for himself and expected the same. India became one of the fittest sides and won historic overseas Tests, including the 2018-19 series in Australia.</p>
           <div class="worked">
             <div class="given"><p><b>a) Identify the leadership styles of both captains and justify.</b></p></div>
-            <div class="solve">
-              <p><b>Dhoni</b> is mainly <b>laissez-faire</b> (delegating): he gave players responsibility, trusted them and stayed in the background, which suits an expert, trustworthy team. Backing players after failures adds <b>coaching</b> and <b>servant</b> qualities (supportive, builds loyalty).</p>
-              <p><b>Kohli</b> is a <b>pacesetter</b>: he led by his own performance, set high standards, and expected the same from teammates. His intensity and fitness push also give him <b>visionary</b> and <b>autocratic</b> traits.</p>
-            </div>
+            <div class="solve"><p>The file gives no answer key for this question.</p></div>
           </div>
           <div class="worked">
             <div class="given"><p><b>b) Which style is effective?</b></p></div>
-            <div class="solve">
-              <p>Neither alone. Both won major titles. Dhoni's delegating style works with skilled players who can manage themselves, and builds trust, but needs the players to be ready (Hersey-Blanchard R4). Kohli's pacesetting raised fitness and standards fast, but if overused it leads to stress and disengagement.</p>
-              <p>The fit depends on the team and the moment: trust and calm for a team of match-winners, drive when the team needs a higher standard. The most effective leader blends them.</p>
-            </div>
-            <div class="result"><p>Situation decides: Dhoni's laissez-faire for ready teams, Kohli's pacesetting in moderation for raising standards.</p></div>
+            <div class="solve"><p>The file gives no answer key for this question.</p></div>
           </div>
         ` },
         { title: 'Radiant Learning', html: `
           <p class="lead">Radiant Learning makes educational technology for children aged 3 to 8. It has won a large grant for an interactive curriculum on emotions. Three designers and four programmers form a new team. They have worked together before and have an easy start; their first outline and sample activities received positive feedback, and management expects the team might finish ahead of the deadline.</p>
           <div class="worked">
             <div class="given"><p><b>2. Predict the leadership style that works best in this team scenario. Describe the reasons.</b></p></div>
-            <div class="solve">
-              <p><b>Laissez-faire (delegating), with a democratic tilt.</b></p>
-              <ul>
-                <li>The team is <b>expert and trustworthy</b> and has strong results already: laissez-faire is most effective with such a team (also Hersey-Blanchard R4, able and willing, matches delegating).</li>
-                <li>The work is <b>creative</b> (a curriculum on emotions), which fits democratic leadership: collaborative, flexible and idea-driven.</li>
-                <li>They have worked together before, so <b>roles and trust</b> are in place; heavy control would waste time.</li>
-                <li>An autocratic or bureaucratic style would limit creativity and slow a team that is ahead.</li>
-              </ul>
-              <p>The leader should still check in on progress and roles, because laissez-faire without any oversight can cause confusion later.</p>
-            </div>
-            <div class="result"><p>Delegating with a democratic tilt, because the team is able, willing and creative.</p></div>
+            <div class="solve"><p>The file gives no answer key for this question.</p></div>
           </div>
           <div class="note heads-up"><p>Question 1 of the Radiant case asks you to apply the five stages of team formation. That belongs to the team-development material, not this topic.</p></div>
         ` },
-        { title: 'What belongs where', html: `
-          <p class="lead">The two case-study worksheets in this folder mix leadership, team and conflict questions. Use this map to find the right notes for each question.</p>
-          <table class="tbl">
-            <thead><tr><th>Case and question</th><th>Skill needed</th><th>Where to study it</th></tr></thead>
-            <tbody>
-              <tr><td>Innovatech a) styles</td><td>Leadership styles</td><td>This topic and "The eight leadership styles"</td></tr>
-              <tr><td>Innovatech b) Tuckman</td><td>Team stages</td><td>The team-development topics</td></tr>
-              <tr><td>MediaTech a), b)</td><td>Conflict styles; why choosing matters</td><td>"The five conflict management styles", "Choosing the right style"</td></tr>
-              <tr><td>Radiant 1. five stages</td><td>Team stages</td><td>The team-development topics</td></tr>
-              <tr><td>Radiant 2. style</td><td>Leadership style</td><td>This topic</td></tr>
-              <tr><td>Guna 1., 2.</td><td>Impact of conflict; conflict style</td><td>"Analysing a conflict case study", "The five conflict management styles"</td></tr>
-              <tr><td>Dhoni and Kohli a), b)</td><td>Leadership style, effectiveness</td><td>This topic</td></tr>
-              <tr><td>Roommate a), b)</td><td>Conflict style; wrong style worsens the conflict</td><td>"Choosing the right style" (overuse and its costs)</td></tr>
-              <tr><td>Weaver 1 to 4</td><td>Leadership traits, values</td><td>"Case study: Peter Weaver and courage"</td></tr>
-            </tbody>
-          </table>
-          <div class="note exam"><p>Case questions in this module often say "in about 150 words". Aim for one short paragraph per style or stage, each with a fact from the case. The method tab above gives the order.</p></div>
-        ` },
       ],
       flashcards: [
-        { front: `The five moves of a style answer?`, back: `<b>Behaviour</b>, <b>name</b>, <b>justify</b>, <b>fit</b>, <b>conclude</b>.` },
-        { front: `Innovatech: Zhang's two styles?`, back: `<b>Autocratic</b>, then <b>pacesetter</b>.` },
-        { front: `Innovatech: Rodriguez's styles?`, back: `<b>Coaching</b>, <b>democratic</b>, <b>bureaucratic</b> (structure for juniors).` },
-        { front: `Why did Zhang's pacesetting fail?`, back: `It caused <b>burnout and disengagement</b>; productivity fell.` },
-        { front: `Dhoni's main style?`, back: `<b>Laissez-faire</b> (delegating), with coaching and servant touches.` },
-        { front: `Kohli's main style?`, back: `<b>Pacesetter</b>: high standards, leads by his own performance.` },
-        { front: `Radiant Learning: best style?`, back: `<b>Laissez-faire/delegating</b> with a <b>democratic</b> tilt: expert, willing, creative team.` },
-        { front: `Why not autocratic for Radiant?`, back: `It would <b>limit creativity</b> in an able team that is already ahead.` },
+        { front: `Innovatech: what does question a) ask?`, back: `Identify and discuss the leadership styles applied (about 150 words). The file gives no answer key.` },
+        { front: `Dhoni and Kohli: what do the questions ask?`, back: `a) Identify both captains' styles and justify; b) which style is effective. The file gives no answer key.` },
+        { front: `Radiant Learning question 2?`, back: `Predict the leadership style that works best in the team scenario, with reasons. The file gives no answer key.` },
       ],
       oneLiners: [
-        'Style answer: find behaviour, name the style, justify, judge the fit, conclude.',
-        'Innovatech: Zhang autocratic then pacesetter (burnout); Rodriguez coaching, democratic, bureaucratic.',
-        'Dhoni: laissez-faire with coaching and servant traits. Kohli: pacesetter.',
-        'The most effective style depends on the team and the situation; blends are normal.',
-        'Radiant Learning: expert, willing, creative team, so delegating with a democratic tilt.',
-        'Tuckman and conflict questions in these worksheets are studied in their own topics.',
+        'The course files give the Innovatech, Dhoni and Kohli, and Radiant Learning cases as questions only, with no answer key.',
       ],
-      formulas: [
-        { name: 'Style answer in five moves', html: `<b>Behaviour</b> → <b>style name</b> → <b>justify with a fact</b> → <b>fit to the situation</b> → <b>conclude</b>` },
-      ],
+      formulas: [],
     },
   ],
   figures: [
