@@ -35,7 +35,10 @@
       "K",
       "L"
     ],
-    "questions": "q-M3.js",
+    "questions": [
+      "q-M3.js",
+      "q-M3b.js"
+    ],
     "syllabus": "Analysing definitions: types of definitions and methods for expanding definitions. Reading comprehension: drawing inferences from scientific texts. Structure of a research article and analysing a research article."
   },
   {
@@ -49,7 +52,10 @@
       "N",
       "O"
     ],
-    "questions": "q-M4.js",
+    "questions": [
+      "q-M4.js",
+      "q-M4b.js"
+    ],
     "syllabus": "Summary (précis) writing and abstract writing. Research writing: structure of a review paper, types of reviews, literature review, and referencing styles (IEEE, APA)."
   },
   {
@@ -66,7 +72,8 @@
     ],
     "questions": [
       "q-M5.js",
-      "q-M5b.js"
+      "q-M5b.js",
+      "q-M5c.js"
     ],
     "syllabus": "Cross-cultural and interpersonal communication, leadership styles, Belbin's team roles, negotiation skills, Thomas-Kilmann modes of conflict management with case study analysis, and writing a statement of purpose."
   }
