@@ -197,7 +197,26 @@ async function recordPaid(email, p) {
 
 // Owner settings kept in the store (hash "config"): price in paise, a temporary sale price, and the announcement banner.
 // While a sale is running (until its end time) it replaces the normal price everywhere, then the normal price returns by itself.
-async function settings() {
+// Pro is sold on the Notix store, so the price shown here comes from the store (what the student pays now, and the MRP
+// struck through while a store sale runs). Cached for 5 minutes; if the store can't be reached the site's own price stays.
+let STORE_PRICE = null;
+async function withStorePrice(out) {
+  const url = process.env.STORE_URL;
+  if (!url) return out;
+  try {
+    if (!STORE_PRICE || STORE_PRICE.until < Date.now()) {
+      const r = await fetch(url.replace(/\/$/, '') + '/api/session', { signal: AbortSignal.timeout(3000) });
+      const j = r.ok ? await r.json() : null;
+      const p = j && (j.products || []).find((x) => x.code === STORE_CODE);
+      STORE_PRICE = { p: p && Number.isInteger(p.price) ? p : null, until: Date.now() + (p ? 300e3 : 30e3) };
+    }
+    const p = STORE_PRICE.p;
+    if (p) { out.price = p.price; out.normalPrice = Number.isInteger(p.list) && p.list > p.price ? p.list : p.price; }
+  } catch (e) {} // store unreachable: keep the site's own price
+  return out;
+}
+async function settings() { return withStorePrice(await siteSettings()); }
+async function siteSettings() {
   const store = require('./_store');
   const open = MODE.open === true || process.env.OPEN_ACCESS === '1';
   const out = { price: PRICE, normalPrice: PRICE, sale: null, banner: null, signin: !open, freeAll: open, paused: null, business: '' };
