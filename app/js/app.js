@@ -386,7 +386,7 @@ window.__startApp = function () {
         <div class="sb-label">Exams</div>
         <a class="sb-link" href="#syllabus.cat1" data-key="syllabus.cat1">${icon('list')}<span>CAT-1 syllabus</span></a>
         <a class="sb-link" href="#syllabus.cat2" data-key="syllabus.cat2">${icon('list')}<span>CAT-2 syllabus</span><span class="count" data-sylcount></span></a>
-        <a class="sb-link" href="#papers" data-key="papers">${icon('exam')}<span>CAT-2 question papers</span></a>
+        <a class="sb-link" href="#papers" data-key="papers">${icon('exam')}<span>Question papers</span></a>
         <div class="sb-label">Talk to us</div>
         <button class="sb-link" data-act="ideas">${icon('bulb')}<span>Any ideas?</span></button>
         <button class="sb-link" data-act="help">${icon('help')}<span>Help?</span></button>
@@ -883,7 +883,7 @@ window.__startApp = function () {
           <a class="tile" href="#lab"><span class="tt">${icon('puzzle')}Practice lab</span>${nViz ? `<span class="big">${nViz}</span>` : ''}<p>Every interactive exercise in one place: definition builder, summary trimmer, conflict-style grid, SoP builder and more.</p></a>
           <a class="tile" href="#mine"><span class="tt">${icon('pen')}Highlights & notes</span><p>Your highlighted lines, personal notes, tagged topics and questions to revisit.</p></a>
           <a class="tile" href="#battle"><span class="tt">${icon('swords')}1v1 Quiz battle</span><p>Challenge a friend with a link: 10 questions, 10 seconds each, live scores.</p></a>
-          <a class="tile" href="#papers"><span class="tt">${icon('exam')}CAT-2 question papers</span><p>The real CAT-2 paper and model papers in the same pattern, with model answers.</p></a>
+          <a class="tile" href="#papers"><span class="tt">${icon('exam')}Question papers</span><p>Real CAT papers and model papers in the same pattern, with model answers. CAT-1 and FAT papers coming soon.</p></a>
           <a class="tile" href="#syllabus.cat2"><span class="tt">${icon('list')}CAT syllabus</span><p>The CAT-2 syllabus as a checklist, each line linked to its notes.</p></a>
         </div>
       </section>
@@ -2157,7 +2157,7 @@ window.__startApp = function () {
     return { el };
   }
 
-  // ================================================================ CAT-2 question papers
+  // ================================================================ question papers
   // papers-free.js: the actual CAT-2 papers, one model paper, the index of all papers and which topics were asked.
   // papers-paid.js: the other model papers (loaded only with full access). Locked ones are listed from the index.
   const PAPERS = (D.papers || []).slice(), PAPER = {};
@@ -2177,20 +2177,21 @@ window.__startApp = function () {
     const p = r.arg && PAPER[r.arg];
     const el = h('div', { class: 'view papers' });
     if (!p) {
-      setCrumbs([{ t: 'Home', href: '#home' }, { t: 'CAT-2 question papers' }]); setActive('papers'); document.title = 'CAT-2 question papers · BAENG101 Notes';
+      setCrumbs([{ t: 'Home', href: '#home' }, { t: 'Question papers' }]); setActive('papers'); document.title = 'Question papers · BAENG101 Notes';
       const row = (x) => { const open = !!PAPER[x.id];
         return open ? `<a class="next-topic" href="#papers.${x.id}"><div><small>${esc(x.sub || '')}</small><strong>${esc(x.title)}</strong></div><span class="arrow">${icon('right')}</span></a>`
           : `<a class="lock-card" href="#unlock"><span class="lock-ico">${icon('lock')}</span><div><strong>${esc(x.title)}</strong><p>${esc(x.sub || '')} · unlock with full access for ₹${PRICE_RS}</p></div><span class="arrow">${icon('right')}</span></a>`; };
       const actual = PINDEX.filter((x) => x.kind === 'actual'), model = PINDEX.filter((x) => x.kind === 'model');
-      el.innerHTML = `<div class="eyebrow"><span class="code">Exams</span><span>CAT-2</span><span class="dot">·</span><span>${actual.length} actual · ${model.length} model</span></div>
-        <h1 class="h-display">CAT-2 question papers</h1>
-        <p class="blurb">The real CAT-2 paper, typed out cleanly, and model papers in the same pattern (5 questions, 10 marks each, 90 minutes). Try each question on paper first, then open the model answer.</p>
-        <section class="sum-sec"><h2 class="h-sec">Actual papers <small>${actual.length}</small></h2><div class="paper-list">${actual.map(row).join('')}</div></section>
-        <section class="sum-sec"><h2 class="h-sec">Model papers <small>${model.length}</small></h2><div class="paper-list">${model.map(row).join('')}</div></section>`;
+      el.innerHTML = `<div class="eyebrow"><span class="code">Exams</span><span>${actual.length} actual · ${model.length} model</span></div>
+        <h1 class="h-display">Question papers</h1>
+        <p class="blurb">Real papers, typed out cleanly, and model papers in the same pattern. Try each question on paper first, then open the model answer.</p>
+        <section class="sum-sec"><h2 class="h-sec">CAT-2 papers <small>${actual.length + model.length}</small></h2><p class="blurb">5 questions, 10 marks each, 90 minutes.</p><div class="paper-list">${actual.map(row).join('')}${model.map(row).join('')}</div></section>
+        <section class="sum-sec"><h2 class="h-sec">CAT-1 papers</h2><div class="empty">Coming soon</div></section>
+        <section class="sum-sec"><h2 class="h-sec">FAT papers</h2><div class="empty">Coming soon</div></section>`;
       stagger(el);
       return { el };
     }
-    setCrumbs([{ t: 'Home', href: '#home' }, { t: 'CAT-2 papers', href: '#papers', hideSm: true }, { t: p.short || p.title }]); setActive('papers');
+    setCrumbs([{ t: 'Home', href: '#home' }, { t: 'Question papers', href: '#papers', hideSm: true }, { t: p.short || p.title }]); setActive('papers');
     document.title = `${p.title} · BAENG101 Notes`;
     const topicLinks = (ids) => (ids || []).filter((id) => TOPIC[id]).map((id) => `<a href="#${id}">${rt(TOPIC[id].short || TOPIC[id].title)}</a>`).join(' · ');
     el.innerHTML = `<div class="eyebrow"><span class="code">${p.kind === 'actual' ? 'Actual paper' : 'Model paper'}</span><span>${esc(p.sub || '')}</span></div>
@@ -2205,7 +2206,7 @@ window.__startApp = function () {
         ${q.answer ? `<details class="more paper-ans"><summary>Model answer</summary>${q.answer}</details>` : ''}
         ${q.topics && q.topics.length ? `<p class="paper-rev">Revise: ${topicLinks(q.topics)}</p>` : ''}
       </section>`).join('')}
-      <p style="margin-top:32px"><a class="btn" href="#papers">${icon('left')}All CAT-2 papers</a></p>`;
+      <p style="margin-top:32px"><a class="btn" href="#papers">${icon('left')}All question papers</a></p>`;
     return { el };
   }
 
