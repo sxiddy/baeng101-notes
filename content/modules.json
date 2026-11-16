@@ -133,7 +133,8 @@
       "A",
       "B",
       "K",
-      "L"
+      "L",
+      "S"
     ],
     "questions": [
       "q-M3.js",
@@ -153,7 +154,8 @@
           "m3-defs-activity",
           "m3-unit11-defs",
           "m3-unit11-descriptions",
-          "m3-process-explanation"
+          "m3-process-explanation",
+          "m3-word-bank"
         ]
       },
       {
