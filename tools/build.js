@@ -60,7 +60,7 @@ for (const f of paidViz) fs.copyFileSync(path.join(ROOT, 'viz-paid', f), path.jo
 const MODULES = JSON.parse(fs.readFileSync(path.join(CONTENT, 'modules.json'), 'utf8'));
 const filesOf = (m) => [...m.chunks.map((c) => `chunk-${c}.js`), ...[].concat(m.questions || []), `summary-${m.id}.js`].filter(Boolean);
 const FREE = [...MODULES.filter((m) => m.free).flatMap(filesOf), 'papers-free.js']; // the CAT-2 papers file is free for everyone signed in
-fs.writeFileSync(path.join(APP, 'js', 'modules.js'), `window.MODULES_CONFIG = ${JSON.stringify(MODULES.map(({ id, num, title, free, chunks, syllabus }) => ({ id, num, title, free, chunks, syllabus })))};\n`);
+fs.writeFileSync(path.join(APP, 'js', 'modules.js'), `window.MODULES_CONFIG = ${JSON.stringify(MODULES.map(({ id, num, title, free, chunks, syllabus, syllabusRows }) => ({ id, num, title, free, chunks, syllabus, syllabusRows: syllabusRows || [] })))};\n`);
 // which module each paid file belongs to, so the owner can unlock a single module for someone
 const fileModule = {};
 for (const m of MODULES) for (const f of filesOf(m)) fileModule[f] = m.id;
