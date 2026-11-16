@@ -843,7 +843,7 @@ window.__startApp = function () {
       <section class="hero">
         <div class="eyebrow"><span class="code">BAENG101</span><span>Technical English</span><span class="dot">·</span><span>Fall semester 2026–27</span></div>
         <h1 class="h-display">${words.map((w, i) => `<span class="w" style="--i:${i}">${w}</span>`).join(' ')}</h1>
-        <p class="blurb">The CAT-2 portion, rebuilt as short tabbed notes with clear diagrams${nViz ? `, ${nViz} interactive exercises` : ''} and ${QS.length} questions that make you use what you read. White text is what you must remember. Everything else is there so it makes sense.</p>
+        <p class="blurb">All five modules, set out in the order of the VTOP syllabus, as short tabbed notes with clear diagrams${nViz ? `, ${nViz} interactive exercises` : ''} and ${QS.length} questions that make you use what you read. White text is what you must remember. Everything else is there so it makes sense.</p>
         <p class="credit">Based on the BAENG101 Technical English Communication course material taught at VIT (textbook: Lannon &amp; Gurak, <em>Technical Communication</em>). The notes, diagrams, questions and interactive exercises are written and drawn for this site; short quoted examples are credited to their sources. <a href="privacy.html">Privacy</a></p>
         ${offerLine()}
         <div class="stat-line"><span class="stat-big">${d}/${n}</span><span class="muted">topics done</span><div class="bar"><i style="width:${n ? (d / n) * 100 : 0}%"></i></div><button class="btn small" data-act="share">${icon('share')}Share progress</button></div>
