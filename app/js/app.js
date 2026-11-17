@@ -883,7 +883,7 @@ window.__startApp = function () {
           <a class="tile" href="#lab"><span class="tt">${icon('puzzle')}Practice lab</span>${nViz ? `<span class="big">${nViz}</span>` : ''}<p>Every interactive exercise in one place: definition builder, summary trimmer, conflict-style grid, SoP builder and more.</p></a>
           <a class="tile" href="#mine"><span class="tt">${icon('pen')}Highlights & notes</span><p>Your highlighted lines, personal notes, tagged topics and questions to revisit.</p></a>
           <a class="tile" href="#battle"><span class="tt">${icon('swords')}1v1 Quiz battle</span><p>Challenge a friend with a link: 10 questions, 10 seconds each, live scores.</p></a>
-          <a class="tile" href="#papers"><span class="tt">${icon('exam')}Question papers</span><p>Real CAT papers and model papers in the same pattern, with model answers. CAT-1 and FAT papers coming soon.</p></a>
+          <a class="tile" href="#papers"><span class="tt">${icon('exam')}Question papers</span><p>Real CAT-1, CAT-2 and FAT papers, plus model papers in the same pattern, all with model answers.</p></a>
           <a class="tile" href="#syllabus.cat2"><span class="tt">${icon('list')}CAT syllabus</span><p>The CAT-2 syllabus as a checklist, each line linked to its notes.</p></a>
         </div>
       </section>
@@ -2182,12 +2182,16 @@ window.__startApp = function () {
         return open ? `<a class="next-topic" href="#papers.${x.id}"><div><small>${esc(x.sub || '')}</small><strong>${esc(x.title)}</strong></div><span class="arrow">${icon('right')}</span></a>`
           : `<a class="lock-card" href="#unlock"><span class="lock-ico">${icon('lock')}</span><div><strong>${esc(x.title)}</strong><p>${esc(x.sub || '')} · unlock with full access for ₹${PRICE_RS}</p></div><span class="arrow">${icon('right')}</span></a>`; };
       const actual = PINDEX.filter((x) => x.kind === 'actual'), model = PINDEX.filter((x) => x.kind === 'model');
+      // each index entry names its exam; older entries without one are CAT-2. Actual papers first, then model papers.
+      const exam = (x) => x.exam || 'CAT-2';
+      const group = (name, blurb) => { const xs = PINDEX.filter((x) => exam(x) === name).sort((a, b) => (a.kind === b.kind ? 0 : a.kind === 'actual' ? -1 : 1));
+        return `<section class="sum-sec"><h2 class="h-sec">${name} papers${xs.length ? ` <small>${xs.length}</small>` : ''}</h2>${xs.length ? `<p class="blurb">${blurb}</p><div class="paper-list">${xs.map(row).join('')}</div>` : '<div class="empty">Coming soon</div>'}</section>`; };
       el.innerHTML = `<div class="eyebrow"><span class="code">Exams</span><span>${actual.length} actual · ${model.length} model</span></div>
         <h1 class="h-display">Question papers</h1>
         <p class="blurb">Real papers, typed out cleanly, and model papers in the same pattern. Try each question on paper first, then open the model answer.</p>
-        <section class="sum-sec"><h2 class="h-sec">CAT-2 papers <small>${actual.length + model.length}</small></h2><p class="blurb">5 questions, 10 marks each, 90 minutes.</p><div class="paper-list">${actual.map(row).join('')}${model.map(row).join('')}</div></section>
-        <section class="sum-sec"><h2 class="h-sec">CAT-1 papers</h2><div class="empty">Coming soon</div></section>
-        <section class="sum-sec"><h2 class="h-sec">FAT papers</h2><div class="empty">Coming soon</div></section>`;
+        ${group('CAT-1', 'Modules 1 and 2: technical writing, the 5 Cs, business communication and grammar. 50 marks, 90 minutes.')}
+        ${group('CAT-2', '5 questions, 10 marks each, 90 minutes.')}
+        ${group('FAT', 'All five modules. 100 marks, 3 hours.')}`;
       stagger(el);
       return { el };
     }

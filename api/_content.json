@@ -43,6 +43,30 @@
  ],
  "papers": [
   {
+   "id": "cat1-b1tb1",
+   "kind": "actual",
+   "title": "CAT-1 · Slot B1+TB1 · 10-08-2026",
+   "sub": "Actual paper · Fall 2026–27",
+   "questions": 5,
+   "access": "free"
+  },
+  {
+   "id": "cat1-b2tb2",
+   "kind": "actual",
+   "title": "CAT-1 · Slot B2+TB2 · August 2026",
+   "sub": "Actual paper · Fall 2026–27 · Chennai campus",
+   "questions": 5,
+   "access": "free"
+  },
+  {
+   "id": "cat1-f2tf2",
+   "kind": "actual",
+   "title": "CAT-1 · Slot F2+TF2 · 14-08-2026",
+   "sub": "Actual paper · Fall 2026–27",
+   "questions": 5,
+   "access": "free"
+  },
+  {
    "id": "cat2-b1tb1",
    "kind": "actual",
    "title": "CAT-2 · Slot B1+TB1 · 28-09-2026",
@@ -56,6 +80,30 @@
    "title": "CAT-2 · Slot C2+TC2 · 29-09-2026",
    "sub": "Actual paper · Fall 2026–27",
    "questions": 5,
+   "access": "free"
+  },
+  {
+   "id": "cat2-b2tb2",
+   "kind": "actual",
+   "title": "CAT-2 · Slot B2+TB2 · 28-09-2026",
+   "sub": "Actual paper · Fall 2026–27",
+   "questions": 5,
+   "access": "free"
+  },
+  {
+   "id": "fat-b1tb1-2026",
+   "kind": "actual",
+   "title": "FAT · Slot B1+TB1 · November 2026",
+   "sub": "Actual paper · Fall 2026–27",
+   "questions": 10,
+   "access": "free"
+  },
+  {
+   "id": "fat-b2tb2-2026",
+   "kind": "actual",
+   "title": "FAT · Slot B2+TB2 · November 2026",
+   "sub": "Actual paper · Fall 2026–27",
+   "questions": 10,
    "access": "free"
   },
   {
