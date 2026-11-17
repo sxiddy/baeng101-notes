@@ -66,7 +66,8 @@ PAPERS({
             </table>
             <div class="note trap"><p>"Phishing is when hackers steal your data" has no class and uses "is when". "A podcast is a thing you listen to" has a class ("a thing") that tells the reader nothing. Name the shelf first, then the features.</p></div>
             <div class="note exam"><p>Two marks each. A clear class and at least two real features get most of the marks; the example or clarifying phrase brings the answer to about 30 words. Do not write a paragraph: 30 words is one or two sentences.</p></div>`,
-          topics: ['m3-sentence-def', 'm3-expanded']
+          topics: ['m3-sentence-def', 'm3-expanded'],
+          notes: ['m3-sentence-def.1', 'm3-sentence-def.2', 'm3-expanded.0']
         },
         {
           n: '2', marks: 10, co: '4', bl: '3',
@@ -90,7 +91,8 @@ PAPERS({
             <p><b>4.</b> <b>No.</b> The author says governments and international bodies have only "begun responding" with rules on transparency, bias audits and human supervision. The same paragraph points to two gaps: enforcement "remains inconsistent across countries", and the technology changes faster than laws can keep up. The last sentence calls the question of global standards one that "remains very much open". The author sees regulation as a start, not a solution.</p>
             <div class="note trap"><p>Paragraph 4 (the supporters' view) is a counter-argument, not a fourth concern. List only bias, accountability and transparency in answer 2.</p></div>
             <div class="note exam"><p>For the 3-mark "does the author…" questions, give the verdict (yes or no), quote or point to two clues, and link them to the verdict in one sentence. That is the inference method from the notes: inference, evidence, link.</p></div>`,
-          topics: ['m3-inference', 'm3-inference-practice']
+          topics: ['m3-inference', 'm3-inference-practice'],
+          notes: ['m3-inference.0', 'm3-inference.1']
         },
         {
           n: '3', marks: 10, co: '1', bl: '3',
@@ -114,7 +116,8 @@ PAPERS({
             </table>
             <div class="note exam"><p>How it was built: aim → method → findings → conclusion, in the past tense and third person, with the key numbers kept and no opinion added. The theory about "constant novelty" was dropped because it explains the result rather than reporting it; the limitation stays because it changes what the findings mean.</p></div>
             <div class="note trap"><p>Do not write "This passage talks about…" or "In my view parents should…". An abstract reports the study, not the passage and not you. Count your words: 100–120 means going to 135 loses marks.</p></div>`,
-          topics: ['m4-abstract', 'm4-steps']
+          topics: ['m4-abstract', 'm4-steps'],
+          notes: ['m4-steps.0', 'm4-steps.1', 'm4-abstract.1']
         },
         {
           n: '4', marks: 10, co: '6', bl: '3',
@@ -138,7 +141,8 @@ PAPERS({
             <p><small>71 words</small></p>
             <div class="note why"><p>Zara is firm for her own position and uncooperative with Arjun's, which is competing even though her cause (the budget) is sensible. The style is about how you behave, not whether you are right. Collaborating fits because both concerns matter (quality and budget) and there is still time; compromise is the fallback when time runs short.</p></div>
             <div class="note exam"><p>Name the style, then give the evidence from the case for each person. In part b, name the style you recommend, say why it fits this case, and give concrete steps. Keep each part inside 50–80 words.</p></div>`,
-          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study']
+          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study'],
+          notes: ['m5-styles.3', 'm5-choosing.1', 'm5-tki.2']
         },
         {
           n: '5', marks: 10, co: '1', bl: '3',
@@ -154,7 +158,8 @@ PAPERS({
             <p><small>245 words</small></p>
             <div class="note exam"><p>How it was built: opening (who you are, what you are applying for, why) → academic background with proof (marks, a project with a number, a club role) → why this programme and this university (one accurate, general fact) → goals and what you will give back → a polite close. No subheadings, as the CAT format asks, and the first sentence of each paragraph does the heading's job.</p></div>
             <div class="note trap"><p>Do not invent course codes, professors or labs at Monash; a wrong detail looks copied. "Known for research in data science" is safe; a made-up unit name is not. Keep "I am passionate about technology" out: the website and the laundry app show it.</p></div>`,
-          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips', 'm5-sop-samples']
+          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips', 'm5-sop-samples'],
+          notes: ['m5-sop-structure.0', 'm5-sop-writing.5', 'm5-sop-tips.5', 'm5-sop-samples.0']
         }
       ]
     },
@@ -185,7 +190,8 @@ PAPERS({
               </tbody>
             </table>
             <div class="note trap"><p>"A drone is a flying thing" (class too broad) and "Recycling is when you recycle waste" (circular, "is when") both lose marks.</p></div>`,
-          topics: ['m3-sentence-def', 'm3-expanded']
+          topics: ['m3-sentence-def', 'm3-expanded'],
+          notes: ['m3-sentence-def.1', 'm3-sentence-def.2', 'm3-expanded.0']
         },
         {
           n: '2', marks: 10, co: '4', bl: '3',
@@ -208,7 +214,8 @@ PAPERS({
             <p><b>3.</b> <b>No.</b> The author says directly, "None of this means electric vehicles are a mistake", and praises their clean air at the kerb, efficiency and low running cost. The author also notes that each vehicle gets cleaner as solar and wind power grow. The worry is about treating them as a "finished solution"; the author wants the switch planned with cleaner power, battery recycling and fair charging access.</p>
             <p><b>4.</b> It is likely to be <b>much harder</b> for them. The passage says smaller towns "often have very few" public chargers, and a family in a rented flat without private parking may find home charging "simply not possible, however keen they are to switch". So owning an electric vehicle depends on where you live and whether you own parking, which is why the author asks for "fair access to charging".</p>
             <div class="note exam"><p>In answer 3, the verdict alone (no) is one mark. The two clues (the direct statement and the "finished solution" warning) and the link to the author's balanced view bring it to three.</p></div>`,
-          topics: ['m3-inference', 'm3-inference-practice']
+          topics: ['m3-inference', 'm3-inference-practice'],
+          notes: ['m3-inference.0', 'm3-inference.1']
         },
         {
           n: '3', marks: 10, co: '1', bl: '3',
@@ -222,7 +229,8 @@ PAPERS({
             <p>This study investigated whether a short activity break in the middle of a lecture improves students' recall. It involved 480 first-year students taking introductory physics at four engineering colleges in Karnataka during the August–November 2025 semester. Half the sections had a four-minute break after twenty-five minutes, of standing, stretching and discussion; the others had regular lectures. Weekly recall quizzes and fortnightly alertness surveys were compared. Students with breaks averaged 7.4 out of 10 on quizzes against 6.1, with the largest gain for second-half material, and reported greater alertness. The effect on final examination marks was small, and some teachers struggled to complete the syllabus. The study concluded that brief breaks improve short-term recall at little cost.</p>
             <p><small>116 words</small></p>
             <div class="note exam"><p>How it was built: aim (sentence 1) → method (who, where, when, how: sentences 2–4) → findings with the numbers (sentences 5–6) → conclusion (sentence 7). Past tense, third person, no opinion. The recommendation for year-long studies was dropped to stay inside 120 words; the limitation (small effect on final marks) was kept because it qualifies the finding.</p></div>`,
-          topics: ['m4-abstract', 'm4-steps']
+          topics: ['m4-abstract', 'm4-steps'],
+          notes: ['m4-steps.0', 'm4-steps.1', 'm4-abstract.1']
         },
         {
           n: '4', marks: 10, co: '6', bl: '3',
@@ -245,7 +253,8 @@ PAPERS({
             <p>Nisha should <b>collaborate</b>, building on Priya's approach. She should hold one short meeting, ask Divya for her view directly, and agree on criteria: buildable in 36 hours, fits the theme, uses the team's skills. The team can then test a simple app with one AR feature against these criteria. Because time is short, Nisha should set a deadline for the decision and, if needed, make the final call as leader.</p>
             <p><small>70 words</small></p>
             <div class="note why"><p>Karthik's offer is a real compromise, not collaboration: he trades half of Rohan's features for his framework instead of looking for what both actually need. Priya's questions about the reasons behind each position are the mark of collaborating.</p></div>`,
-          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study']
+          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study'],
+          notes: ['m5-styles.3', 'm5-choosing.1', 'm5-tki.2']
         },
         {
           n: '5', marks: 10, co: '1', bl: '3',
@@ -260,7 +269,8 @@ PAPERS({
             <p>Yours sincerely,<br>[Your name]</p>
             <p><small>235 words</small></p>
             <div class="note exam"><p>How it was built: opening (what you are applying for and why) → background with proof (a mark, a self-started project, a lesson learnt) → why this team and what you offer them → goals and a polite close. No subheadings. An internship SoP should say what you will <b>give</b> as well as what you will get.</p></div>`,
-          topics: ['m5-sop-structure', 'm5-sop-writing', 'm5-sop-tips']
+          topics: ['m5-sop-structure', 'm5-sop-writing', 'm5-sop-tips'],
+          notes: ['m5-sop-structure.0', 'm5-sop-writing.5', 'm5-sop-tips.5']
         }
       ]
     },
@@ -291,7 +301,8 @@ PAPERS({
             </table>
             <div class="note trap"><p>"A calculator is a machine used for calculating" is circular: it defines the word with its own root. "Temperature is how hot something is" has no class, and "VR is when you wear a headset" uses "is when". Name the shelf first (device, technology, quantity), then the features.</p></div>
             <div class="note exam"><p>Two marks each. A clear class and at least two real features get most of the marks; the example or clarifying phrase brings the answer to about 30 words. Do not write a paragraph: 30 words is one or two sentences.</p></div>`,
-          topics: ['m3-sentence-def', 'm3-expanded']
+          topics: ['m3-sentence-def', 'm3-expanded'],
+          notes: ['m3-sentence-def.1', 'm3-sentence-def.2', 'm3-expanded.0']
         },
         {
           n: '2', marks: 10, co: '4', bl: '3',
@@ -311,7 +322,8 @@ PAPERS({
             <p><b>d.</b> The final decisions show only the result, not where the bias came from. The passage says bias is harder to detect when neutral-looking variables are used, so decisions can look fair on the surface while hidden links do the damage. Bias can enter at any stage: unequal treatment in the <b>data</b>, proxy <b>variables</b>, <b>objectives</b> that reward the wrong outcome, or <b>evaluation methods</b> that check overall accuracy but not fairness across groups. That is why the author says addressing bias requires examining "not only the final decisions but also the data, variables, objectives, and evaluation methods". Only a full check finds the cause, so it can be fixed.</p>
             <div class="note trap"><p>In answer a, do not just repeat the question ("it does not remove bias"). The marks are for the reason: neutral-looking variables act as indirect stand-ins. In answer c, "location is biased" is not an explanation; show the chain from location to income or community, to past data, to a lower score.</p></div>
             <div class="note exam"><p>For the 2-mark parts, give the point and one quoted clue. For the 3-mark parts, give the point, the evidence from the passage, and a sentence that links them, with a short example where the question says "explain how". That is the inference method from the notes: inference, evidence, link.</p></div>`,
-          topics: ['m3-inference', 'm3-inference-practice']
+          topics: ['m3-inference', 'm3-inference-practice'],
+          notes: ['m3-inference.0', 'm3-inference.1']
         },
         {
           n: '3', marks: 10, co: '1', bl: '3',
@@ -336,7 +348,8 @@ PAPERS({
             </table>
             <div class="note exam"><p>How it was built: aim → method → findings → conclusion, in the past tense and third person, with the key numbers kept (120, 18–22, one hour, thirty minutes) and no opinion added. The general background about what smartphones offer was dropped; the limitation stays because it changes what the findings mean.</p></div>
             <div class="note trap"><p>Do not write "smartphones cause poor sleep": the study found an association, not a cause, and the abstract must say so. Do not copy whole sentences from the article either; rewrite each idea in your own shorter words. "About 100 words" means roughly 90–110, not 150.</p></div>`,
-          topics: ['m4-abstract', 'm4-steps']
+          topics: ['m4-abstract', 'm4-steps'],
+          notes: ['m4-steps.0', 'm4-steps.1', 'm4-abstract.1']
         },
         {
           n: '4', marks: 10, co: '6', bl: '3',
@@ -364,7 +377,8 @@ PAPERS({
             <p>The other approaches fall short. Competing (Asha) creates a winner and losers. Avoiding (Rahul) leaves the conflict unsolved, so it may come back later. Compromising (Karan) is quick, but everyone gives something up, so the result is only "acceptable" and satisfies no one fully. In practice, the group could list each idea's strengths, agree what the presentation must achieve, and build one plan with a role for each member. If the deadline is very close and talks stall, Karan's compromise is the sensible fallback.</p>
             <div class="note why"><p>Karan and Meera sound similar, but they are not the same. Compromising means everyone <em>gives up</em> part of what they want to reach a quick middle point. Collaborating means the group works longer to find a solution in which everyone's concerns are <em>fully met</em>. The question asks for a solution that "addresses everyone's concerns", so the answer is Meera.</p></div>
             <div class="note exam"><p>In part 1, name the Thomas-Kilmann style for each person and quote the words from the case that prove it; one line of evidence per person is enough. In part 2, name the person and the style, link it to the goal in the question, give two or three reasons, and say briefly why the other styles do not fit.</p></div>`,
-          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study']
+          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study'],
+          notes: ['m5-styles.3', 'm5-styles.4', 'm5-choosing.1', 'm5-tki.2']
         },
         {
           n: '5', marks: 10, co: '1', bl: '3',
@@ -377,7 +391,8 @@ PAPERS({
             <p><small>245 words</small></p>
             <div class="note exam"><p>How it was built: an opening that shows where the interest began and states what you are applying for → academic background (CGPA, relevant courses and electives) → project experience with numbers (dataset size, accuracy before and after) and skills (tools named) → career goal and what is missing from your knowledge now → how the programme fills that gap and what you will do with it. Every item the question lists has its own place. No subheadings, and the first sentence of each paragraph does the heading's job.</p></div>
             <div class="note trap"><p>"I am passionate about AI" tells; the food-waste model and the leaf-disease project show. Do not invent course names, professors or labs at the university; "advanced coursework and research thesis" is safe for any M.Tech. Keep to 200–250 words and write in the active voice ("I trained", "we collected").</p></div>`,
-          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips', 'm5-sop-samples']
+          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips', 'm5-sop-samples'],
+          notes: ['m5-sop-structure.0', 'm5-sop-writing.5', 'm5-sop-tips.5', 'm5-sop-samples.0']
         }
       ]
     },
@@ -410,7 +425,8 @@ PAPERS({
             </table>
             <div class="note exam"><p>Marks come from three things: a definition of technical writing (the course wording), the two differences the module stresses by name (precision and intent), and at least two concrete examples. The Mariner 1 hyphen and a "same topic, two styles" pair (novel line vs leaflet line) cover the examples. A comparison table is a good way to finish if time allows.</p></div>
             <div class="note trap"><p>Do not say technical writing "must contain equations and jargon". The course says equations and terms often appear but do not define the field: step-by-step procedures with no equation are still technical writing. And "not emotional" does not mean "never persuasive": the characteristics slide lists professional, not emotional, but persuasive.</p></div>`,
-          topics: ['m1-nature', 'm1-features']
+          topics: ['m1-nature', 'm1-features'],
+          notes: ['m1-nature.2', 'm1-features.2']
         },
         {
           n: '2', marks: 10, co: '2', bl: '2',
@@ -440,7 +456,8 @@ PAPERS({
             </table>
             <div class="note exam"><p>Draw the tree if you can: three boxes for the orientations, then three (or four) boxes under professional. Each box needs one example; the slides give none for theoretical, so any research document you name is fine if you say it is research. Name Montgomery and Plung for an easy extra mark.</p></div>
             <div class="note trap"><p>Do not answer with the three <em>types</em> (consumer-directed, expert-to-expert, technical marketing). Those sort documents by audience, not orientation. You may add them in one line, but the taxonomy is the tree of orientations.</p></div>`,
-          topics: ['m1-taxonomy', 'm1-scientific-reporting', 'm1-business']
+          topics: ['m1-taxonomy', 'm1-scientific-reporting', 'm1-business'],
+          notes: ['m1-taxonomy.0', 'm1-taxonomy.1', 'm1-scientific-reporting.3', 'm1-business.0']
         },
         {
           n: '3', marks: 10, co: '2', bl: '3',
@@ -476,7 +493,8 @@ PAPERS({
             <p>Yours sincerely,<br>Rohan<br>Project Coordinator, [Company name]</p>
             <div class="note exam"><p>Split the 10 marks in your head: about 5 for the three principles (name, quote, explain) and 5 for the rewrite. The rewrite must fix every fault you named: a subject line with the order and new date, the cause in one sentence, the exact delay, dated next steps, a clear request to the client, and a proper sign-off. Details such as the product and dates are invented for the model; any specific, consistent details earn the marks.</p></div>
             <div class="note trap"><p>Do not just make the email polite and longer. "We sincerely regret the unforeseen circumstances" is still vague. Every sentence in the rewrite should give the client a fact, a date or an action, the same way the course's rewrites turn "Submit the form soon" into "by 5 p.m. on Friday to HR".</p></div>`,
-          topics: ['m1-business', 'm1-email-review', 'm1-5cs-exercises']
+          topics: ['m1-business', 'm1-email-review', 'm1-5cs-exercises'],
+          notes: ['m1-5cs-qualities.1', 'm1-5cs-qualities.2', 'm1-5cs-overview.3', 'm1-email-review.0']
         },
         {
           n: '4', marks: 10, co: '3', bl: '2',
@@ -513,7 +531,8 @@ PAPERS({
             </table>
             <div class="note exam"><p>Half a mark for spotting the error, half for the correct form, in each of the ten items. For part a, write the whole corrected sentence and underline the changed verb. For part b, the clause you add must match the tense pattern of the given half; the content can be anything sensible.</p></div>
             <div class="note trap"><p>In b2 do not write "If she left earlier" (second conditional): "would not have missed" fixes it as a third conditional. In b1 keep "were", not "was", for the unreal condition.</p></div>`,
-          topics: ['m2-concord-rules', 'm2-cond-basics', 'm2-cond-unreal']
+          topics: ['m2-concord-rules', 'm2-cond-basics', 'm2-cond-unreal'],
+          notes: ['m2-concord-rules.0', 'm2-concord-rules.3', 'm2-cond-basics.0', 'm2-cond-unreal.3']
         },
         {
           n: '5', marks: 10, co: '3', bl: '2',
@@ -536,7 +555,8 @@ PAPERS({
             </table>
             <div class="note exam"><p>One mark each: rewrite the full sentence with the corrected verb and give the time clue that decides it ("every day", "ago", "since", "by the time", "right now"). These ten sentences come straight from the course's tense-error worksheet, so the clue-to-tense pairs in the notes are exactly what is marked.</p></div>
             <div class="note trap"><p>In sentence 3 change only the verb; the course key accepts "next week" as well as "the following week". In sentence 9 do not write "before the inspector will have arrived": the time clause stays in the present simple.</p></div>`,
-          topics: ['m2-tenses-errors', 'm2-tenses-forms']
+          topics: ['m2-tenses-errors', 'm2-tenses-forms'],
+          notes: ['m2-tenses-errors.1', 'm2-tenses-forms.1']
         }
       ]
     },
@@ -558,7 +578,8 @@ PAPERS({
             <p><small>166 words</small></p>
             <div class="note exam"><p>BL5 (evaluate) needs a verdict in the first line, reasons tied to named Cs, two workplace statements with the C each breaks, and a short fix that proves the point. Adding the limit (correctness still matters) shows evaluation rather than simple agreement and lifts the answer to full marks.</p></div>
             <div class="note trap"><p>Do not list the 5 Cs with definitions and stop. The question asks you to judge a claim. Also keep the examples workplace-like (notices, manuals, emails), not textbook sentences.</p></div>`,
-          topics: ['m1-5cs-overview', 'm1-5cs-qualities', 'm1-5cs-example']
+          topics: ['m1-5cs-overview', 'm1-5cs-qualities', 'm1-5cs-example'],
+          notes: ['m1-5cs-overview.2', 'm1-5cs-overview.3', 'm1-5cs-qualities.0', 'm1-5cs-example.1']
         },
         {
           n: '2', marks: 10, co: '2', bl: '4',
@@ -582,7 +603,8 @@ PAPERS({
             </table>
             <div class="note exam"><p>Four things are asked, so give each a sentence or more: a verdict on the strategy, why objective/language/structure must vary, a named form for each audience placed in the course's types (consumer-directed, expert-to-expert, technical marketing), and why two documents beat one. The table is a fast way to show all of it.</p></div>
             <div class="note trap"><p>"Send a simpler report to both" misses the point. The two audiences have different <em>purposes</em>, not just different reading levels, so they need different document types.</p></div>`,
-          topics: ['m1-kinds', 'm1-nature', 'm1-taxonomy']
+          topics: ['m1-kinds', 'm1-nature', 'm1-taxonomy'],
+          notes: ['m1-kinds.1', 'm1-kinds.2', 'm1-kinds.4']
         },
         {
           n: '3', marks: 10, co: '2', bl: '6',
@@ -600,7 +622,8 @@ PAPERS({
             <p><small>149 words</small></p>
             <div class="note exam"><p>The "accepted format" earns most of the marks: heading (body and title), date, time and venue, chair, present and absent, then one numbered item per agenda point with the <b>decision</b> and <b>who acts by when</b>, closing time, and the recorder's and chair's sign-off. Write in the past tense and third person ("It was resolved…", "The Committee noted…"). The decisions and dates here are invented for the model, since the question gives only the agenda; any reasonable, specific decision is accepted.</p></div>
             <div class="note trap"><p>Minutes record what was decided, not every remark ("The Dean said that he felt…"). Do not write them as a letter or a report with "Dear Sir". Use designations, not invented names, and keep each item to one or two lines so you stay near 150 words.</p></div>`,
-          topics: ['m1-business', 'm1-kinds']
+          topics: ['m1-business', 'm1-kinds'],
+          notes: ['m1-business.0', 'm1-kinds.2']
         },
         {
           n: '4', marks: 10, co: '3', bl: '4',
@@ -626,7 +649,8 @@ PAPERS({
             <p>The computer laboratory <b>has</b> twenty-five desktop systems. Each of the computers <b>was</b> inspected before the semester began. The technician <b>checks</b> all the network cables every morning. Yesterday, the laboratory assistant <b>replaced</b> a faulty keyboard. Since last week, several computers <b>have shown</b> slower performance. While the technician <b>was repairing</b> one system, another computer suddenly stopped working. If the students <b>follow</b> the safety instructions, the equipment will last longer. If the antivirus software had been updated earlier, the virus <b>would not have spread</b> through the network. A maintenance schedule <b>is prepared</b> by the laboratory supervisor every month. The final report <b>was</b> submitted to the Head of the Department.</p>
             <div class="note exam"><p>One mark per error: half for highlighting it, half for the correct form. The ten errors are one per sentence, which is a useful check: if a sentence seems to have none, look at its verb again. Writing the error type (concord, tense, conditional, voice) beside each correction shows the BL4 analysis the question asks for.</p></div>
             <div class="note trap"><p>Sentence 9 looks complete but has no main verb: "prepared by" is only a participle. In sentence 6, changing "stopped" to "stops" is also grammatical, but the report describes a past event ("suddenly"), so fix "repairs" instead.</p></div>`,
-          topics: ['m2-error-method', 'm2-concord-rules', 'm2-voice-tenses']
+          topics: ['m2-error-method', 'm2-concord-rules', 'm2-voice-tenses'],
+          notes: ['m2-error-method.0', 'm2-concord-rules.0', 'm2-voice-tenses.0']
         },
         {
           n: '5', marks: 10, co: '3', bl: '3',
@@ -658,7 +682,8 @@ PAPERS({
             </ol>
             <div class="note exam"><p>One mark each, no part marks. Answer every item: there is no negative marking. For each, find the subject and the time clue first, then check the options against the pattern.</p></div>
             <div class="note trap"><p>Item 9 is the trap: most students pick "are" because of "and". Look for the second article. Item 4: "Seventy percent" looks plural, but the noun after "of" decides (Rule 8).</p></div>`,
-          topics: ['m2-concord-special', 'm2-cond-unreal', 'm2-voice-tenses']
+          topics: ['m2-concord-special', 'm2-cond-unreal', 'm2-voice-tenses'],
+          notes: ['m2-concord-special.0', 'm2-concord-special.1', 'm2-cond-unreal.3', 'm2-cond-unreal.0']
         }
       ]
     },
@@ -688,7 +713,8 @@ PAPERS({
             </table>
             <div class="note exam"><p>The question names the two concepts, so give each its own paragraph with a definition and an example from the course (Mariner 1, the decimal point, the "2000 kilograms" line, the accident account). A short opening definition and a comparison table complete a 10-mark answer.</p></div>
             <div class="note trap"><p>"Technical writing uses technical words" is not a difference the course accepts: equations and terms often appear but do not define the field. And do not say technical writing is never persuasive; it is "professional, not emotional, but persuasive".</p></div>`,
-          topics: ['m1-nature', 'm1-features']
+          topics: ['m1-nature', 'm1-features'],
+          notes: ['m1-nature.2', 'm1-features.2']
         },
         {
           n: '2', marks: 10, co: '2', bl: '2',
@@ -716,7 +742,8 @@ PAPERS({
             </table>
             <div class="note exam"><p>Name the authors and the three orientations in the first two lines, then give each a definition and an example. The professional branches carry the most marks because they need their own examples. A small tree diagram (three boxes, then three under professional) is quick to draw and earns credit.</p></div>
             <div class="note trap"><p>Keep the orientations apart by focus: teaching, research, serving practitioners. A textbook is pedagogical even if it is about research; a feasibility study is professional (technical reporting) even if it contains data.</p></div>`,
-          topics: ['m1-taxonomy', 'm1-scientific-reporting', 'm1-business']
+          topics: ['m1-taxonomy', 'm1-scientific-reporting', 'm1-business'],
+          notes: ['m1-taxonomy.0', 'm1-taxonomy.1', 'm1-scientific-reporting.3', 'm1-scientific-reporting.0']
         },
         {
           n: '3', marks: 10, co: '2', bl: '3',
@@ -750,7 +777,8 @@ PAPERS({
             <p>Office Manager<br>[Date]</p>
             <div class="note exam"><p>Part a: name each violated C, quote the line that breaks it, and say how it confused staff. Clear and Consistent are the two the examiner expects first; Complete and Correct add marks. Part b: a plain heading, an effective date, short numbered rules in plain words, <b>one</b> clean-out time, exactly what "details" means, and a full contact. Say which C each change fixes if you have time.</p></div>
             <div class="note trap"><p>Do not keep both the Thursday and the Friday times in your rewrite. Choose one and state it once; the model keeps Friday 4:00 p.m. because it is given as the regular rule. Do not swap the jargon for different jargon ("ensure appropriate identification of consumables").</p></div>`,
-          topics: ['m1-5cs-qualities', 'm1-5cs-overview', 'm1-5cs-exercises']
+          topics: ['m1-5cs-qualities', 'm1-5cs-overview', 'm1-5cs-exercises'],
+          notes: ['m1-5cs-qualities.1', 'm1-5cs-overview.3', 'm1-5cs-exercises.1', 'm1-5cs-exercises.3']
         },
         {
           n: '4', marks: 10, co: '3', bl: '2',
@@ -778,7 +806,8 @@ PAPERS({
             </ol>
             <div class="note exam"><p>Half a mark for the error, half for the correction in A; in B, the clause must use the right tense pattern for the half that is given. Read the given verb first ("heat", "wins", "won", "had set", "had") and the conditional type follows from it.</p></div>
             <div class="note trap"><p>A2: "The number of" is singular but "a number of students have…" is plural. A5: do not change "was" because of "bookshelf"; find who or what was hidden.</p></div>`,
-          topics: ['m2-concord-rules', 'm2-concord-special', 'm2-cond-basics']
+          topics: ['m2-concord-rules', 'm2-concord-special', 'm2-cond-basics'],
+          notes: ['m2-concord-rules.3', 'm2-concord-rules.0', 'm2-concord-special.1', 'm2-concord-special.0']
         },
         {
           n: '5', marks: 10, co: '3', bl: '2',
@@ -801,7 +830,8 @@ PAPERS({
             </table>
             <div class="note exam"><p>One mark per sentence: the full corrected sentence plus the time clue that decides the tense ("by the time", "since", "yesterday", "right now", a general truth, "by next December", "when", "last night", "for three months before", "Look"). Change only the verb phrase unless the sentence cannot work otherwise.</p></div>
             <div class="note trap"><p>In (i) do not change "ran out" to "runs out" and keep "will": the past "ran out" fixes the whole sentence in the past. In (f) "will graduate by next December" is heard in speech, but the exam expects the future perfect with "by".</p></div>`,
-          topics: ['m2-tenses-errors', 'm2-tenses-forms']
+          topics: ['m2-tenses-errors', 'm2-tenses-forms'],
+          notes: ['m2-tenses-errors.1', 'm2-tenses-forms.1', 'm2-tenses-forms.2']
         }
       ]
     },
@@ -833,7 +863,8 @@ PAPERS({
             </table>
             <div class="note exam"><p>Two marks each: one for a precise class, one for features that separate the term from other members of that class. The question says so directly ("class/category and the distinguishing feature or function"), so make both parts easy to find. One sentence per term is enough; the example is a bonus, not a requirement.</p></div>
             <div class="note trap"><p>Avoid "is when" and "is something that": "Innovation is when you make something new" has no class. Avoid circular definitions such as "Recycling is the act of recycling waste" and features that are too broad, such as "A sensor is a device used in electronics".</p></div>`,
-          topics: ['m3-sentence-def', 'm3-expanded']
+          topics: ['m3-sentence-def', 'm3-expanded'],
+          notes: ['m3-sentence-def.1', 'm3-sentence-def.2', 'm3-expanded.0']
         },
         {
           n: '2', marks: 10, co: '4', bl: '3',
@@ -853,7 +884,8 @@ PAPERS({
             <p><b>d)</b> On sunny days, with clear afternoons. The reduction was less pronounced during cloudy periods.</p>
             <div class="note exam"><p>Parts c and d are stated facts: give the passage's words in one sentence for 2 marks each. Parts a and b carry 3 marks: give the inference, quote at least one piece of evidence, and link the two in your own words (inference, evidence, link).</p></div>
             <div class="note trap"><p>In a, do not write "indoor temperature falls by the same amount as the roof temperature" or "cool roofs do not affect indoor temperature". Both go against the passage. The answer is in between: linked, but weaker indoors.</p></div>`,
-          topics: ['m3-inference', 'm3-inference-practice']
+          topics: ['m3-inference', 'm3-inference-practice'],
+          notes: ['m3-inference.0', 'm3-inference.1']
         },
         {
           n: '3', marks: 10, co: '1', bl: '3',
@@ -874,7 +906,8 @@ PAPERS({
             </table>
             <div class="note exam"><p>The question names the four parts (purpose, method, findings, conclusion), so the marker checks for each one. Write in the past tense and third person, keep the numbers (six, four weeks, 15–25 minutes), and use the course's sample openers: "This study examined…", "The findings showed…", "The study concluded…". Count your words and stay within 100–120.</p></div>
             <div class="note trap"><p>Do not drop the limitation (calibration, not a replacement for professional assessment): it is part of the conclusion. Do not add advice the study did not give, such as "schools must buy sensors".</p></div>`,
-          topics: ['m4-abstract', 'm4-abstract-more']
+          topics: ['m4-abstract', 'm4-abstract-more'],
+          notes: ['m4-steps.0', 'm4-steps.1', 'm4-abstract.1', 'm4-abstract-more.2']
         },
         {
           n: '4', marks: 10, co: '6', bl: '3',
@@ -897,7 +930,8 @@ PAPERS({
             <p>Collaboration protects <b>teamwork</b> because both teams are heard and solve the problem together, so the blame stops and the relationship survives for future releases. Daily updates remove guessing and keep communication open. It protects the <b>project goals</b> because the app is released in a working state, which is what actually keeps customer trust: an app that launches on time but runs slowly would damage trust more than a short, explained delay. Following the course's steps (investigate, let everyone have their say, agree a way forward, implement, evaluate, and prevent future clashes by confirming dates with development before announcing them) turns the conflict into a better launch process.</p>
             <div class="note exam"><p>Part a: list three or four causes, each tied to a phrase in the case ("already announced", "blaming each other", "regular updates stop"). Then name a TKI style, say why it fits, and give concrete steps. Part b: two separate justifications, one for teamwork and one for project goals. Using the course's style names and its nine best-practice steps shows the theory the marker looks for.</p></div>
             <div class="note trap"><p>Do not simply take one side ("marketing should wait" or "developers should ship"). That is competing, and it fails the "protect teamwork" part of the question.</p></div>`,
-          topics: ['m5-conflict-basics', 'm5-styles', 'm5-choosing']
+          topics: ['m5-conflict-basics', 'm5-styles', 'm5-choosing'],
+          notes: ['m5-styles.1', 'm5-styles.3', 'm5-choosing.1', 'm5-tki.2', 'm5-conflict-basics.4']
         },
         {
           n: '5', marks: 10, co: '1', bl: '3',
@@ -911,7 +945,8 @@ PAPERS({
             <p><small>228 words</small></p>
             <div class="note exam"><p>The question lists four parts, so give each its own paragraph: motivation (a specific moment, not "I have always been passionate"), preparation (the four subjects, the mini project, the internship, each with what it taught), programme fit (the gap you have and how this programme fills it), and realistic goals (a job title and a longer-term aim). Stay within 200–250 words and write in the first person and active voice.</p></div>
             <div class="note trap"><p>Do not invent a university name, professors or course codes; the question names only the programme. Keep goals realistic: "energy-automation engineer" fits the profile, "solve the world's energy crisis" does not. The compressor detail is an example of how to make the internship concrete; use any honest detail of your own.</p></div>`,
-          topics: ['m5-sop-structure', 'm5-sop-writing', 'm5-sop-samples']
+          topics: ['m5-sop-structure', 'm5-sop-writing', 'm5-sop-samples'],
+          notes: ['m5-sop-structure.0', 'm5-sop-writing.5', 'm5-sop-tips.5', 'm5-sop-samples.1']
         }
       ]
     },
@@ -944,7 +979,8 @@ PAPERS({
             </tbody></table>
             <div class="note trap"><p>Some textbooks list seven Cs (adding concreteness and coherence). With "five principles" asked, give five clearly, each with its own example; you may mention the others in one line. Do not confuse these with the 5 Cs of technical writing (correct, clear, complete, consistent, changeable).</p></div>
             <div class="note exam"><p>About 1 mark for a definition of business communication, then about 2 marks per principle split between the explanation and a concrete business example (ideally a weak and an improved version).</p></div>`,
-          topics: ['m1-business', 'm1-5cs-qualities']
+          topics: ['m1-business', 'm1-5cs-qualities'],
+          notes: ['m1-business.0', 'm1-business.1', 'm1-5cs-overview.2']
         },
         {
           n: '2', marks: 10, co: '2', bl: '2',
@@ -967,7 +1003,8 @@ PAPERS({
             <p>Most of the Cs are best checked by someone other than the author, through reviews and inspections, because writers read what they meant rather than what they wrote.</p>
             <div class="note trap"><p>Do not list the business-communication Cs (concise, courteous) here. The textbook's five are correct, clear, complete, consistent and changeable.</p></div>
             <div class="note exam"><p>About 1 mark for the origin (IEEE 830, no standard for technical writing), then about 2 marks per C: meaning plus a technical example. A summary table adds presentation marks.</p></div>`,
-          topics: ['m1-5cs-overview', 'm1-5cs-qualities', 'm1-5cs-example']
+          topics: ['m1-5cs-overview', 'm1-5cs-qualities', 'm1-5cs-example'],
+          notes: ['m1-5cs-overview.1', 'm1-5cs-overview.2', 'm1-5cs-qualities.0', 'm1-5cs-qualities.1']
         },
         {
           n: '3', marks: 10, co: '3', bl: '3',
@@ -991,7 +1028,8 @@ PAPERS({
             </ul>
             <div class="note trap"><p>In 1, 3 and 5 the noun nearest the verb is a trap: find the true head noun ("list", "report") or, with "some/all/most of", follow the noun after "of". In 9, "will" never goes in the "when" clause.</p></div>
             <div class="note exam"><p>One mark each: the corrected verb earns the mark. Writing the full corrected sentence with the change marked and a one-line rule protects it.</p></div>`,
-          topics: ['m2-concord-rules', 'm2-concord-special', 'm2-tenses-errors']
+          topics: ['m2-concord-rules', 'm2-concord-special', 'm2-tenses-errors'],
+          notes: ['m2-concord-rules.3', 'm2-concord-special.0', 'm2-concord-special.3', 'm2-tenses-errors.1']
         },
         {
           n: '4', marks: 10, co: '3', bl: '',
@@ -1021,7 +1059,8 @@ PAPERS({
             </tbody></table>
             <div class="note trap"><p>In B, decide voice first: a "by ..." agent means passive (6, 8, 9); an object after the blank means active (7, 10). Then match the time word (last week, every Monday, tomorrow, just).</p></div>
             <div class="note exam"><p>One mark per blank. Writing the full sentence with the verb in bold and naming the conditional type or voice shows the rule.</p></div>`,
-          topics: ['m2-cond-basics', 'm2-cond-unreal', 'm2-voice-tenses']
+          topics: ['m2-cond-basics', 'm2-cond-unreal', 'm2-voice-tenses'],
+          notes: ['m2-cond-basics.2', 'm2-cond-basics.0', 'm2-cond-unreal.3', 'm2-cond-unreal.0']
         },
         {
           n: '5', marks: 10, co: '4', bl: '3',
@@ -1042,7 +1081,8 @@ PAPERS({
             </ol>
             <div class="note trap"><p>Do not define with examples alone ("a smartphone is like an iPhone") or with the word itself ("recycling is to recycle"). Start with the class word (device, document, process, system, person) and then add what makes it different.</p></div>
             <div class="note exam"><p>One mark per word: a correct class word plus at least one distinguishing feature, within 1-2 sentences.</p></div>`,
-          topics: ['m3-sentence-def', 'm3-expanded', 'm1-business']
+          topics: ['m3-sentence-def', 'm3-expanded', 'm1-business'],
+          notes: ['m3-sentence-def.1', 'm3-sentence-def.2', 'm3-expanded.0']
         },
         {
           n: '6', marks: 10, co: '4', bl: '1',
@@ -1063,7 +1103,8 @@ PAPERS({
             <p><em>Other sections that may be chosen:</em> Results (findings presented objectively, with tables and figures, without interpretation); Discussion (interprets the results, compares them with earlier studies, states limitations and implications); Conclusion (main takeaways and future work); References (full details of every source cited).</p>
             <div class="note trap"><p>In (a), answer from the passage and quote it; do not bring in outside opinions about free speech. Q3 needs a position (yes, partly) and a reason. In (b), do not just list section names: explain the purpose and content of each.</p></div>
             <div class="note exam"><p>(a) Marks follow the split 2+2+3+3; the 3-mark questions need both parts (reason and inference). (b) About 3 marks per section for purpose, content and a writing convention, plus 1 for naming the overall IMRaD structure.</p></div>`,
-          topics: ['m3-inference', 'm3-inference-practice', 'm4-paper-parts']
+          topics: ['m3-inference', 'm3-inference-practice', 'm4-paper-parts'],
+          notes: ['m3-inference.0', 'm3-inference.1', 'm4-paper-parts.1', 'm4-paper-parts.2']
         },
         {
           n: '7', marks: 10, co: '1', bl: '3',
@@ -1091,7 +1132,8 @@ PAPERS({
             </tbody></table>
             <div class="note trap"><p>In (b), do not summarise Abstract 1 and then Abstract 2 separately: organise by point (agreement, difference, limitation) and cite both studies in each. Use (Author, Year) or "Author et al. (Year)" every time you use a finding.</p></div>
             <div class="note exam"><p>(a) About 3 marks per type: purpose, features and outcome or example; 1 for a comparison. (b) About 2 marks each for the agreement, difference and limitation, 2 for correct citations, and 2 for synthesis, flow and length close to 200 words.</p></div>`,
-          topics: ['m4-review-types', 'm4-review-practice']
+          topics: ['m4-review-types', 'm4-review-practice'],
+          notes: ['m4-review-types.1', 'm4-review-types.4', 'm4-review-practice.0']
         },
         {
           n: '8', marks: 10, co: '6', bl: '3',
@@ -1112,7 +1154,8 @@ PAPERS({
             <p><em>Alternative pair:</em> interpersonal communication can also be classified as <b>verbal</b> (spoken or written words, depending on language) and <b>nonverbal</b> (all elements other than words: body movements, facial expressions, eye contact, gestures, proxemics or personal space, paralanguage such as tone and pace). Either pair, well explained with examples, answers the question.</p>
             <div class="note trap"><p>Define the term first, in the slide's words, before the types. Do not just list types: each needs a description, an advantage or limit, and a workplace example.</p></div>
             <div class="note exam"><p>About 3 marks for the definition with the basic model terms (communicator, message, receiver, perceptual screen, feedback), about 3 marks per type, and 1 for a comparison table.</p></div>`,
-          topics: ['m5-ipc-basics', 'm5-ipc-nonverbal']
+          topics: ['m5-ipc-basics', 'm5-ipc-nonverbal'],
+          notes: ['m5-ipc-basics.4', 'm5-ipc-basics.0', 'm5-ipc-nonverbal.0']
         },
         {
           n: '9', marks: 10, co: '6', bl: '',
@@ -1139,7 +1182,8 @@ PAPERS({
             <p>This blend reflects the contingency view: no single style is best everywhere; the leader adapts to the task (creative, deadline-bound client work) and to the followers (a mix of experts and newcomers).</p>
             <div class="note trap"><p>Do not choose autocratic just because "deadlines were met": the case shows its cost (resignations). Whichever style you choose, support it with quoted evidence and show how you would avoid its weakness.</p></div>
             <div class="note exam"><p>A: about 1.5 marks per manager (style name plus quoted evidence), with the rest for linking the outcomes to the style. B: about 1 mark for the choice and 4 for justification drawn from all three managers' results, including a fix for the chosen style's weakness.</p></div>`,
-          topics: ['m5-lead-eight-styles', 'm5-lead-contingency', 'm5-lead-style-models']
+          topics: ['m5-lead-eight-styles', 'm5-lead-contingency', 'm5-lead-style-models'],
+          notes: ['m5-lead-eight-styles.2', 'm5-lead-eight-styles.0', 'm5-lead-contingency.3', 'm5-lead-style-models.2']
         },
         {
           n: '10', marks: 10, co: '6', bl: '3',
@@ -1167,7 +1211,8 @@ PAPERS({
             </tbody></table>
             <div class="note trap"><p>BATNA is not her target salary; it is her best fallback (the other offer). ZOPA is a range, not a single figure.</p></div>
             <div class="note exam"><p>A: about 2 marks per strategy (definition plus application to Shahana) and 1 for choosing and justifying one. B: about 1.5 marks each for BATNA, WATNA and ZOPA defined and applied with the case figures, plus 0.5 for linking them to preparation.</p></div>`,
-          topics: ['m5-negotiation', 'm5-negotiation-skills']
+          topics: ['m5-negotiation', 'm5-negotiation-skills'],
+          notes: ['m5-negotiation.4', 'm5-negotiation.2', 'm5-negotiation-skills.3', 'm5-negotiation-skills.2']
         }
       ]
     },
@@ -1201,7 +1246,8 @@ PAPERS({
             </tbody></table>
             <div class="note trap"><p>Do not write only a list of letter parts. The question asks for dos and don'ts under each of the four headings.</p></div>
             <div class="note exam"><p>About 2 marks for each of the four aspects (a do and a don't with a reason) and about 2 for the definition and a clean structure or table.</p></div>`,
-          topics: ['m1-business', 'm1-5cs-qualities']
+          topics: ['m1-business', 'm1-5cs-qualities'],
+          notes: ['m1-business.0', 'm1-business.1', 'm1-email-review.5']
         },
         {
           n: '2', marks: 10, co: '2', bl: '2',
@@ -1224,7 +1270,8 @@ PAPERS({
             <p>The rewrite is clear (named task, exact deadline), concise (no repetition), coherent (status, action, reason, help), correct (active voice, specific facts) and complete (who, what, when, why). The module name and dates are examples; any specific details earn the mark.</p>
             <div class="note trap"><p>A rewrite that only shortens the sentence ("Please complete testing ASAP") loses completeness: it still has no deadline or owner.</p></div>
             <div class="note exam"><p>About 1 mark per C for the analysis (5), and about 5 for a rewrite that visibly applies all five, with a subject line and a specific deadline.</p></div>`,
-          topics: ['m1-5cs-overview', 'm1-5cs-qualities', 'm1-5cs-example']
+          topics: ['m1-5cs-overview', 'm1-5cs-qualities', 'm1-5cs-example'],
+          notes: ['m1-5cs-overview.2', 'm1-5cs-overview.3', 'm1-5cs-qualities.0', 'm1-5cs-example.1']
         },
         {
           n: '3', marks: 10, co: '3', bl: '',
@@ -1248,7 +1295,8 @@ PAPERS({
             </ul>
             <div class="note trap"><p>Sentences 1 and 4 hide the true subject behind an "of" phrase; match the verb to the first noun. In 2 the nearer subject decides.</p></div>
             <div class="note exam"><p>One mark each: the corrected verb is the mark. Writing the full corrected sentence with the change marked, and a one-line rule, protects the mark.</p></div>`,
-          topics: ['m2-concord-rules', 'm2-concord-special', 'm2-tenses-errors']
+          topics: ['m2-concord-rules', 'm2-concord-special', 'm2-tenses-errors'],
+          notes: ['m2-concord-rules.0', 'm2-concord-rules.3', 'm2-concord-special.3', 'm2-concord-special.0']
         },
         {
           n: '4', marks: 10, co: '3', bl: '2',
@@ -1272,7 +1320,8 @@ PAPERS({
             </ul>
             <div class="note trap"><p>Q3 is a zero conditional, not first: a machine's built-in behaviour is a general truth. "will shut down" may still get credit, but "shuts down" is the best answer. In voice, ask first whether the subject does the action or receives it.</p></div>
             <div class="note exam"><p>One mark per blank. Spell the verb form fully (had followed, would have been, had been calibrated); a missing auxiliary loses the mark.</p></div>`,
-          topics: ['m2-cond-basics', 'm2-cond-unreal', 'm2-voice-tenses']
+          topics: ['m2-cond-basics', 'm2-cond-unreal', 'm2-voice-tenses'],
+          notes: ['m2-cond-basics.0', 'm2-cond-basics.2', 'm2-cond-unreal.3', 'm2-cond-unreal.0']
         },
         {
           n: '5', marks: 10, co: '4', bl: '3',
@@ -1293,7 +1342,8 @@ PAPERS({
             </tbody></table>
             <div class="note trap"><p>Do not define a term with itself ("cloud computing is computing in the cloud") or start with "is when". Name the class first.</p></div>
             <div class="note exam"><p>Two marks each: a precise class and at least two distinguishing features. An example helps but cannot replace the class.</p></div>`,
-          topics: ['m3-sentence-def', 'm3-expanded']
+          topics: ['m3-sentence-def', 'm3-expanded'],
+          notes: ['m3-sentence-def.1', 'm3-sentence-def.2', 'm3-expanded.2']
         },
         {
           n: '6', marks: 10, co: '4', bl: '3',
@@ -1322,7 +1372,8 @@ PAPERS({
             <p>Together the sections answer: what was studied and why (title, abstract, introduction, review), how (methods), what was found (results), what it means (discussion, conclusion) and on whose work it builds (references).</p>
             <div class="note trap"><p>Do not mix results and discussion: results report, discussion interprets.</p></div>
             <div class="note exam"><p>About 1 mark per section (nine) plus 1 for naming the IMRaD structure. A table is the fastest way to cover all nine.</p></div>`,
-          topics: ['m3-inference', 'm3-inference-practice', 'm4-paper-parts']
+          topics: ['m3-inference', 'm3-inference-practice', 'm4-paper-parts'],
+          notes: ['m3-inference.0', 'm3-inference.1', 'm4-paper-parts.1', 'm4-paper-parts.2']
         },
         {
           n: '7', marks: 10, co: '1', bl: '3',
@@ -1350,7 +1401,8 @@ PAPERS({
             </tbody></table>
             <div class="note trap"><p>Three paragraphs that each summarise one abstract ("Abstract 1 says ... Abstract 2 says ...") is a summary, not a synthesis, and loses most marks. Organise by theme and cite abstracts inside each theme.</p></div>
             <div class="note exam"><p>Marks go to synthesis by theme, coverage of findings, differences, concerns and trend, and staying near 200 words.</p></div>`,
-          topics: ['m4-review-types', 'm4-review-practice']
+          topics: ['m4-review-types', 'm4-review-practice'],
+          notes: ['m4-review-types.1', 'm4-review-types.4', 'm4-review-practice.0']
         },
         {
           n: '8', marks: 10, co: '6', bl: '3',
@@ -1370,7 +1422,8 @@ PAPERS({
             <p>Together these skills turn disagreement into collaboration: listening finds the issue, empathy keeps the relationship, and non-verbal cues keep the tone respectful.</p>
             <div class="note trap"><p>Discuss exactly three skills, each linked to both teamwork and conflict resolution, with an example. A list of definitions alone loses the application marks.</p></div>
             <div class="note exam"><p>About 2 marks for the importance, about 2–3 marks per skill: definition, how it helps teamwork and conflict, and a workplace example.</p></div>`,
-          topics: ['m5-ipc-basics', 'm5-ipc-listening', 'm5-ipc-nonverbal']
+          topics: ['m5-ipc-basics', 'm5-ipc-listening', 'm5-ipc-nonverbal'],
+          notes: ['m5-ipc-basics.1', 'm5-ipc-basics.5', 'm5-ipc-listening.1', 'm5-ipc-nonverbal.3']
         },
         {
           n: '9', marks: 10, co: '6', bl: '3',
@@ -1390,7 +1443,8 @@ PAPERS({
             <p><b>(e)</b> Members "feel valued and involved", which the course lists as the main benefit: higher job satisfaction, commitment and engagement. A sense of ownership over the project makes people work harder for its success.</p>
             <div class="note trap"><p>Do not answer "laissez-faire": the leader still guides the discussion and makes the decision with the team; a laissez-faire leader hands decisions over entirely.</p></div>
             <div class="note exam"><p>Two marks per part: one for the point, one for the evidence from the case or a reason. Name the style exactly ("democratic") in (a).</p></div>`,
-          topics: ['m5-lead-eight-styles', 'm5-lead-style-models']
+          topics: ['m5-lead-eight-styles', 'm5-lead-style-models'],
+          notes: ['m5-lead-eight-styles.2', 'm5-lead-style-models.0']
         },
         {
           n: '10', marks: 10, co: '6', bl: '3',
@@ -1411,7 +1465,8 @@ PAPERS({
             <div class="note trap"><p>Do not split the difference at Rs 27,50,000 and call it win-win: that is a compromise in which both lose something. Win-win expands the package with components that cost the company little or depend on performance.</p></div>
             <div class="note trap"><p>The candidate should also know their BATNA (best alternative to a negotiated agreement), such as another offer, and not reveal it; it sets the point at which they would walk away.</p></div>
             <div class="note exam"><p>Two marks per part: name the concept (interest, position, integrative solution, skill) and tie it to the facts of the case.</p></div>`,
-          topics: ['m5-negotiation', 'm5-negotiation-skills']
+          topics: ['m5-negotiation', 'm5-negotiation-skills'],
+          notes: ['m5-negotiation.3', 'm5-negotiation.2', 'm5-negotiation-skills.4']
         }
       ]
     }

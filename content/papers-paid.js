@@ -26,7 +26,8 @@ PAPERS({
               </tbody>
             </table>
             <div class="note trap"><p>"A meme is when a picture goes viral" uses "is when" and has no class. "Malware is bad software" has a class but no features, so it could describe a buggy app. Give the class, then what makes this item different from others in the class.</p></div>`,
-          topics: ['m3-sentence-def', 'm3-expanded']
+          topics: ['m3-sentence-def', 'm3-expanded'],
+          notes: ['m3-sentence-def.1', 'm3-sentence-def.2', 'm3-expanded.5']
         },
         {
           n: '2', marks: 10, co: '4', bl: '3',
@@ -49,7 +50,8 @@ PAPERS({
             <p><b>3.</b> <b>No.</b> The author notes that "Some governments have not waited for certainty" and describes their microbead bans without criticism. The last paragraph warns that "Waiting for perfect evidence before acting may mean acting too late", because plastic already in the environment cannot be collected again. The author wants action on the sources we can control now, alongside research, not research first and action later.</p>
             <p><b>4.</b> They <b>help, but only partly</b>. Filters catch "many" clothing fibres, not all, and "most machines in use have none". Treatment plants remove most particles from sewage, but the sludge is "often spread on farmland", "returning the plastic to the soil". So much of the plastic is moved from water to land rather than removed, which is why the author calls these sources "harder to tackle".</p>
             <div class="note trap"><p>The author is balanced, not alarmist: paragraph 6 also says headlines about "plastic in our blood" run ahead of the science. Answer 3 is still "no", because the author asks for action and research together. Do not read the call for research as a call to wait.</p></div>`,
-          topics: ['m3-inference', 'm3-inference-practice']
+          topics: ['m3-inference', 'm3-inference-practice'],
+          notes: ['m3-inference.0', 'm3-inference.1']
         },
         {
           n: '3', marks: 10, co: '1', bl: '3',
@@ -63,7 +65,8 @@ PAPERS({
             <p>This study investigated whether self-service in hostel messes reduces food waste compared with fixed portions. It covered three hostels of about 600 students each at a university in Tamil Nadu from January to March 2026. One hostel kept fixed portions, one moved to self-service and one offered flexible portions. Plate waste after lunch and dinner was weighed daily for eight weeks, and 450 students were surveyed on satisfaction. Plate waste averaged 58 grams per student per meal with self-service, against 96 with fixed and 71 with flexible portions. Satisfaction was highest with self-service, but food cooked rose by about 6 per cent. Serving-pot leftovers were not measured. The researchers recommended self-service or flexible portions.</p>
             <p><small>114 words</small></p>
             <div class="note exam"><p>How it was built: aim (sentence 1) → method: where, when, the three set-ups and how waste was measured (sentences 2–4) → findings with the key numbers, including the rise in cooking (sentences 5–6) → limitation and recommendation (sentences 7–8). Past tense, third person, no opinion. The detail about rice and the longer queues was dropped to stay under 120 words; the unmeasured serving-pot waste stays because it limits what the finding shows.</p></div>`,
-          topics: ['m4-abstract', 'm4-steps']
+          topics: ['m4-abstract', 'm4-steps'],
+          notes: ['m4-steps.0', 'm4-steps.1', 'm4-abstract.1']
         },
         {
           n: '4', marks: 10, co: '6', bl: '3',
@@ -86,7 +89,8 @@ PAPERS({
             <p>Varun should use <b>compromise</b>, as Faisal suggests. The stakes are low, the bill is due soon, and the four must keep living together, so a quick, fair middle ground fits. He should meet all four, hear Joel and Manoj too, and write a rule: AC at 24°C from 10 p.m. to 4 a.m., the basic bill shared equally, the AC share by use. All four sign it and review it after a month.</p>
             <p><small>73 words</small></p>
             <div class="note why"><p>Joel and Manoj both stay quiet, but for different reasons. Joel gives up his own comfort and pays to keep harmony, which is accommodating. Manoj pulls out of the issue altogether and puts it off, which is avoiding. Collaboration is not needed here: the issue is small and repeats every month, so a clear written rule that feels fair matters more than a long search for a perfect answer.</p></div>`,
-          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study']
+          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study'],
+          notes: ['m5-styles.2', 'm5-styles.3', 'm5-choosing.1', 'm5-tki.2']
         },
         {
           n: '5', marks: 10, co: '1', bl: '3',
@@ -102,7 +106,8 @@ PAPERS({
             <p><small>243 words</small></p>
             <div class="note exam"><p>How it was built: opening (who you are, the exact programme, why) → academic background with proof (a CGPA, a project with an accuracy figure, an internship with a number) → why this country's universities and what you bring (one safe, general fact; tutoring and a German level as evidence) → career goal and a polite close. No subheadings. A master's SoP should point forward to research or a career, as well as back to past marks.</p></div>
             <div class="note trap"><p>Do not name a professor, lab or module you have not checked; a wrong detail suggests the SoP was copied. "Known for linking research with industry" is safe. Leave out "I have always been fascinated by AI": the leaf-disease project shows it.</p></div>`,
-          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips', 'm5-sop-samples']
+          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips', 'm5-sop-samples'],
+          notes: ['m5-sop-structure.0', 'm5-sop-writing.5', 'm5-sop-tips.5', 'm5-sop-samples.0']
         }
       ]
     },
@@ -133,7 +138,8 @@ PAPERS({
               </tbody>
             </table>
             <div class="note trap"><p>"A cookie is a file on the internet" is too broad: a photo is also a file on the internet. "Compost is when kitchen waste rots" uses "is when". A scholarship without "not repaid" could be a loan, so that feature earns its place.</p></div>`,
-          topics: ['m3-sentence-def', 'm3-expanded']
+          topics: ['m3-sentence-def', 'm3-expanded'],
+          notes: ['m3-sentence-def.1', 'm3-sentence-def.2', 'm3-expanded.5']
         },
         {
           n: '2', marks: 10, co: '4', bl: '3',
@@ -156,7 +162,8 @@ PAPERS({
             <p><b>3.</b> <b>No.</b> The author says hybrid work can keep flexibility and bring people together, "but only if the office days are planned". Without planning, employees "commute only to spend the day on video calls" with colleagues at home. The last sentence says "How work is organised, not simply where it happens, may matter most." So hybrid work helps only when it is organised well; it is not an automatic fix.</p>
             <p><b>4.</b> Junior staff learn much of their job <b>informally, from being near experienced colleagues</b>, and remote work removes those chances. The passage says a new graduate "learns a great deal without being taught", for example by overhearing a senior with an angry client, and that on video calls "these small chances mostly disappear". Managers saw young staff take longer "to gain confidence, even when their technical skills were strong", so what they miss is judgement learnt by watching, not technical knowledge.</p>
             <div class="note exam"><p>In answer 4, "they learn less because they are at home" only repeats the question. The marks come from naming what is lost (informal learning by watching and asking), two clues from paragraph 4, and the link: their technical skills were fine, so the gap is in confidence.</p></div>`,
-          topics: ['m3-inference', 'm3-inference-practice']
+          topics: ['m3-inference', 'm3-inference-practice'],
+          notes: ['m3-inference.0', 'm3-inference.1']
         },
         {
           n: '3', marks: 10, co: '1', bl: '3',
@@ -171,7 +178,8 @@ PAPERS({
             <p><small>116 words</small></p>
             <div class="note exam"><p>How it was built: aim (sentence 1) → method: who, where, when, the two groups and what was measured (sentences 2–4) → findings with the numbers (sentences 5–6) → limitation and conclusion (sentences 7–8). Past tense, third person, no opinion. The recommendations were dropped to keep within 120 words; the uncontrolled home revision stays because it weakens the comparison.</p></div>
             <div class="note trap"><p>Keep the contrast the study found: typing produced <b>more</b> notes but <b>weaker</b> conceptual scores. An abstract that says only "handwriting is better" loses the finding that factual scores were the same.</p></div>`,
-          topics: ['m4-abstract', 'm4-steps']
+          topics: ['m4-abstract', 'm4-steps'],
+          notes: ['m4-steps.0', 'm4-steps.1', 'm4-abstract.1']
         },
         {
           n: '4', marks: 10, co: '6', bl: '3',
@@ -194,7 +202,8 @@ PAPERS({
             <p>Lakshmi should <b>collaborate</b>, as Meghna suggests. The stakes are high, three weeks allows one proper discussion, and every sponsor relationship matters. She should call the company with Kavin and Meghna and ask what it wants most. The committee can then offer a named hackathon track, a stall in the main foyer, and logos on banners and T-shirts, keeping certificates plain. If there is no deal within a week, Irfan's compromise is the fallback.</p>
             <p><small>73 words</small></p>
             <div class="note why"><p>Irfan and Meghna both look for a middle way, but Irfan splits the existing demands in half, while Meghna asks why the company wants them and invents new options. Asking about the reasons behind a demand is what marks collaborating. It fits here because the money, the fest's image and the other sponsors all matter, and there is time to talk.</p></div>`,
-          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study']
+          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study'],
+          notes: ['m5-styles.2', 'm5-styles.3', 'm5-choosing.1', 'm5-tki.2']
         },
         {
           n: '5', marks: 10, co: '1', bl: '3',
@@ -209,7 +218,8 @@ PAPERS({
             <p>Yours sincerely,<br>[Your name]</p>
             <p><small>244 words</small></p>
             <div class="note exam"><p>How it was built: opening (who you are, the programme, why) → academic background with proof (marks, a project with a measured result, a club role with a number) → why Singapore and what you offer (one well-known, general fact) → goals, what you will bring back, and a polite close. No subheadings; the first sentence of each paragraph tells the panel what the paragraph is about.</p></div>`,
-          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips', 'm5-sop-samples']
+          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips', 'm5-sop-samples'],
+          notes: ['m5-sop-structure.0', 'm5-sop-writing.5', 'm5-sop-tips.5', 'm5-sop-samples.1']
         }
       ]
     },
@@ -240,7 +250,8 @@ PAPERS({
               </tbody>
             </table>
             <div class="note trap"><p>"A blog is a website" stops at the class: a railway booking site is also a website. The features (regular informal posts, newest first) do the real work. "Spam is when you get junk mail" uses "is when" and misses "bulk" and "unwanted".</p></div>`,
-          topics: ['m3-sentence-def', 'm3-expanded']
+          topics: ['m3-sentence-def', 'm3-expanded'],
+          notes: ['m3-sentence-def.1', 'm3-sentence-def.2', 'm3-expanded.0']
         },
         {
           n: '2', marks: 10, co: '4', bl: '3',
@@ -263,7 +274,8 @@ PAPERS({
             <p><b>3.</b> <b>No.</b> The author stresses that embryo edits "would pass to all of that person's descendants", unlike edits to an adult. The 2018 case is described as "widely condemned", ending in prison, and the author reports without disagreement the view that heritable editing "should stay forbidden until its safety and purpose are far better understood". With off-target risks still unresolved (paragraph 4), the author clearly favours caution over permission.</p>
             <p><b>4.</b> Most likely <b>wealthier patients in rich countries</b>. The treatment was first approved in the United Kingdom and the United States and costs "well over a million US dollars per patient", yet most people with sickle cell disease "live in low- and middle-income countries". The author warns that those "who need gene editing most may be the last to benefit", so access will depend on money and place, not on need.</p>
             <div class="note exam"><p>Answer 3 asks what the author believes, and the author never says "I think". The belief shows in word choice ("sharpest debate", "widely condemned") and in which views are reported without challenge. Point to those clues, then give the link in one sentence.</p></div>`,
-          topics: ['m3-inference', 'm3-inference-practice']
+          topics: ['m3-inference', 'm3-inference-practice'],
+          notes: ['m3-inference.0', 'm3-inference.1']
         },
         {
           n: '3', marks: 10, co: '1', bl: '3',
@@ -277,7 +289,8 @@ PAPERS({
             <p>This study investigated whether short daily breaks in a campus green space reduce student stress more than indoor breaks. It was conducted at an engineering university in Hyderabad in the four weeks before the November 2025 end-semester examinations. Of 240 second-year volunteers, 120 spent a phone-free 20-minute afternoon break in the campus garden and 120 in an indoor common room. Stress was measured by questionnaire, and cortisol in 60 students. Garden stress scores fell from 24 to 18, against 24 to 22 indoors, and cortisol dropped by 15 per cent against 4 per cent. Because participants volunteered and knew their group, bias was possible. The researchers recommended protecting campus green spaces and timetabling outdoor breaks.</p>
             <p><small>115 words</small></p>
             <div class="note exam"><p>How it was built: aim (sentence 1) → method: where, when, who, the two conditions and the measures (sentences 2–4) → findings with the numbers (sentence 5) → limitation and recommendation (sentences 6–7). Past tense, third person, no opinion. The better sleep and the rainy week were dropped as minor; the volunteer bias stays because it limits how far the result can be trusted.</p></div>`,
-          topics: ['m4-abstract', 'm4-steps']
+          topics: ['m4-abstract', 'm4-steps'],
+          notes: ['m4-steps.0', 'm4-steps.1', 'm4-abstract.1']
         },
         {
           n: '4', marks: 10, co: '6', bl: '3',
@@ -300,7 +313,8 @@ PAPERS({
             <p>Ananya should <b>collaborate</b>, as Shreya suggests. The grade matters to all four, two weeks leaves time for one honest talk, and the group must keep working together. She should first meet Tarun privately and ask what is wrong. The group can then list the remaining tasks, give each an owner and a deadline, pair Tarun with Shreya on the circuit, and check progress every two days. Gayathri should stop covering for him.</p>
             <p><small>72 words</small></p>
             <div class="note why"><p>Nikhil's plan ends the argument but leaves the unfairness in place, and Gayathri's silence hides the problem until she burns out. Collaborating deals with the cause. If Tarun still does nothing after a few days, Ananya should tell the faculty guide, with a record of the tasks and dates agreed. The guide is the fallback, not the first step.</p></div>`,
-          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study']
+          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study'],
+          notes: ['m5-styles.2', 'm5-styles.0', 'm5-choosing.1', 'm5-tki.2']
         },
         {
           n: '5', marks: 10, co: '1', bl: '3',
@@ -316,7 +330,8 @@ PAPERS({
             <p><small>240 words</small></p>
             <div class="note exam"><p>How it was built: opening (who you are, which scholarship, why) → need and merit, both with proof (family income and the loan; the Class 12 score and the prize-winning dryer) → what you are doing now and how the money will be used (an SGPA, the free tutoring) → goals and giving back, then a polite close. No subheadings. A merit-cum-need SoP must show both halves: facts about need, and evidence of merit.</p></div>
             <div class="note trap"><p>State the need plainly and briefly; do not plead or dramatise. "My family is very poor and I am a hard worker" tells. An income figure, a loan and an SGPA show.</p></div>`,
-          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips', 'm5-sop-samples']
+          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips', 'm5-sop-samples'],
+          notes: ['m5-sop-structure.0', 'm5-sop-writing.5', 'm5-sop-tips.5', 'm5-sop-samples.2']
         }
       ]
     },
@@ -347,7 +362,8 @@ PAPERS({
               </tbody>
             </table>
             <div class="note trap"><p>"A livestream is when you stream live" is circular and uses "is when". "Ransomware is a virus" names a class but gives no features. Say what shelf it sits on, then what makes it different from everything else on that shelf.</p></div>`,
-          topics: ['m3-sentence-def', 'm3-expanded']
+          topics: ['m3-sentence-def', 'm3-expanded'],
+          notes: ['m3-sentence-def.1', 'm3-sentence-def.2', 'm3-expanded.0']
         },
         {
           n: '2', marks: 10, co: '4', bl: '3',
@@ -370,7 +386,8 @@ PAPERS({
             <p><b>3.</b> <b>No.</b> The author gives both sides fairly: the networks "can bring connectivity to remote villages and ships at sea", and operators say the satellites will burn up after retirement. The worry about numbers is reported as what "critics reply", not as the author's own demand. The closing paragraph asks for launches planned "with the end of each satellite's life in mind" and for binding rules, which means managing constellations, not banning them.</p>
             <p><b>4.</b> It can be inferred that <b>each country has a reason to leave the job to someone else</b>. Older launching nations "may see little reason" to pay for removing old junk, while newer nations say "they did not create the mess". There is also "no global body with the power to fine" anyone, and orbit is something "no single country owns". With no owner and no enforcer, responsibility is easy to pass on.</p>
             <div class="note exam"><p>In answer 4, the quoted phrases are the evidence, but the marks come from the link: say in your own words what the clues add up to (no owner, no enforcer, so no one acts).</p></div>`,
-          topics: ['m3-inference', 'm3-inference-practice']
+          topics: ['m3-inference', 'm3-inference-practice'],
+          notes: ['m3-inference.0', 'm3-inference.1']
         },
         {
           n: '3', marks: 10, co: '1', bl: '3',
@@ -384,7 +401,8 @@ PAPERS({
             <p>This study examined whether free drinking-water refill stations reduce sales of single-use plastic water bottles on a university campus in Tamil Nadu. It ran from July 2024 to April 2025. Bottled-water sales at six campus shops were recorded for one semester; the university then installed 24 filtered refill stations and gave first-year students steel bottles. Sales were compared across semesters, and 850 students were surveyed. Monthly sales of one-litre bottles fell by 37 per cent, from about 41,000 to 26,000, most sharply near hostels with a station on every floor. Sixty-eight per cent of students refilled daily. Sales were not adjusted for a festival break. It concluded that well-placed stations can substantially reduce bottle sales.</p>
             <p><small>115 words</small></p>
             <div class="note exam"><p>How it was built: aim (sentence 1) → method (where, when, how, who: sentences 2–4) → findings with the numbers (sentences 5–6) → limitation (sentence 7) → conclusion (sentence 8). Past tense, third person, no opinion. The reasons students still bought bottles and the recommendations were dropped to stay inside 120 words; the festival break stays because it limits what the 37 per cent fall can prove.</p></div>`,
-          topics: ['m4-abstract', 'm4-steps']
+          topics: ['m4-abstract', 'm4-steps'],
+          notes: ['m4-steps.0', 'm4-steps.1', 'm4-abstract.1']
         },
         {
           n: '4', marks: 10, co: '6', bl: '3',
@@ -407,7 +425,8 @@ PAPERS({
             <p>Meenakshi should <b>collaborate</b>, building on Lavanya's approach. The contest is weekly, so there is time to get it right, and she needs the whole team behind it. She should hold one meeting, ask Tanvi for the lab costs directly, and list the needs: reach, fair play, meeting people and cost. The team could then trial alternate online and offline weeks for a month, track attendance, and review the results together.</p>
             <p><small>70 words</small></p>
             <div class="note why"><p>Collaborating fits because the stakes are moderate, there is no hard deadline and the team works together every week, so the relationship matters. A trial with an agreed review date also gives Harsh a fair hearing without letting him decide alone.</p></div>`,
-          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study']
+          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study'],
+          notes: ['m5-styles.3', 'm5-styles.4', 'm5-choosing.1', 'm5-tki.2']
         },
         {
           n: '5', marks: 10, co: '1', bl: '3',
@@ -423,7 +442,8 @@ PAPERS({
             <p><small>235 words</small></p>
             <div class="note exam"><p>How it was built: opening (who you are, what you are applying for, why) → background with proof (a mark, a CGPA, a project with 30 trials and a 20% result) → why this kind of place and what you offer → goals and a polite close. No subheadings. The institute is not named, so the SoP uses only facts true of any national research institute.</p></div>
             <div class="note trap"><p>A research SoP is judged on evidence that you can do patient, careful work. "I have always loved science" proves nothing; "I ran 30 trials over six weeks" does.</p></div>`,
-          topics: ['m5-sop-structure', 'm5-sop-writing', 'm5-sop-tips']
+          topics: ['m5-sop-structure', 'm5-sop-writing', 'm5-sop-tips'],
+          notes: ['m5-sop-structure.0', 'm5-sop-writing.5', 'm5-sop-tips.5']
         }
       ]
     },
@@ -453,7 +473,8 @@ PAPERS({
               </tbody>
             </table>
             <div class="note trap"><p>"A refrigerator is a fridge" only gives a synonym. "A smartwatch is a watch that is smart" repeats the term. "Humidity is when the air is wet" uses "is when" and has no class. For an everyday object, the marks come from the features: say what it does that other appliances or devices in the same class do not.</p></div>`,
-          topics: ['m3-sentence-def', 'm3-expanded']
+          topics: ['m3-sentence-def', 'm3-expanded'],
+          notes: ['m3-sentence-def.1', 'm3-sentence-def.2', 'm3-expanded.0']
         },
         {
           n: '2', marks: 10, co: '4', bl: '3',
@@ -473,7 +494,8 @@ PAPERS({
             <p><b>4.</b> Technology alone always lags behind, because each better detector is met by "more sophisticated methods of generation". The deeper problem is also human, not technical: it is "the doubt that fakes create". So the passage calls for three further steps: "verifying sources", "clearly labelling AI-generated content", and teaching users "to check where a clip came from before sharing it". These steps act before and around the fake: they tell viewers what is real, and they stop false clips from spreading even when software fails to catch them.</p>
             <div class="note exam"><p>Parts 1 and 3 can be answered from what the passage states; parts 2 and 4 need you to join clues. In every part, quote the words that prove your point, then explain the link in your own sentence. The quotation alone does not earn the full marks.</p></div>
             <div class="note trap"><p>The author does not say deepfakes are always harmful: paragraph 1 lists "legitimate uses" such as dubbing films. If a question asks for the author's view, keep that balance in your answer.</p></div>`,
-          topics: ['m3-inference', 'm3-inference-practice']
+          topics: ['m3-inference', 'm3-inference-practice'],
+          notes: ['m3-inference.0', 'm3-inference.1']
         },
         {
           n: '3', marks: 10, co: '1', bl: '3',
@@ -489,7 +511,8 @@ PAPERS({
             <p><small>103 words</small></p>
             <div class="note exam"><p>How it was built: aim (sentence 1) → method: who, where and how data were collected (sentence 2) → findings with the key numbers (sentences 3–4) → limitation and conclusion (sentence 5). Past tense, third person, no opinion. The article's wording was rephrased ("did not establish a causal relationship" became "causation was not established"). The list of common jobs, the group sizes and the call for further research were dropped to stay near 100 words; the missing causal link stays because it limits what the findings prove.</p></div>
             <div class="note trap"><p>Do not open with the background ("Many students in India take up part-time jobs"). An abstract starts with what the study did. Do not add advice of your own, such as "students should work less"; report only what the study found.</p></div>`,
-          topics: ['m4-abstract', 'm4-steps']
+          topics: ['m4-abstract', 'm4-steps'],
+          notes: ['m4-steps.0', 'm4-steps.1', 'm4-abstract.1']
         },
         {
           n: '4', marks: 10, co: '6', bl: '3',
@@ -519,7 +542,8 @@ PAPERS({
             <p><b>Kabir's collaborating approach</b> is the most appropriate. The goal is a lasting fix that everyone accepts, and collaborating is the only style that aims to meet all parties' concerns instead of splitting them. Kabir has uncovered the real interests: Rohan's mornings are full, Aditya wants fairness, and Vikram wants a quick end. A schedule built around each person's free time answers all three, so no one has a reason to stop following it.</p>
             <p>The other approaches would not last. Rohan's competing would leave the others resentful. Aditya's accommodating is unfair and would break down once he tires of doing everything. Vikram's compromise may settle things before the inspection, but since it "will not fully suit anyone", someone is likely to drop out of it. Collaborating also fits this case well: the four live together for the whole year, so their relationship matters, and there is time to plan properly. The monthly review lets them adjust the plan instead of reopening the quarrel.</p>
             <div class="note why"><p>The key words in the question decide the answer. "Lasting" and "everyone accepts" point to collaborating (win-win). If the question had asked for the quickest way to pass the next inspection, Vikram's compromise would be a fair answer.</p></div>`,
-          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study']
+          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study'],
+          notes: ['m5-styles.3', 'm5-styles.2', 'm5-choosing.1', 'm5-tki.2']
         },
         {
           n: '5', marks: 10, co: '1', bl: '3',
@@ -535,7 +559,8 @@ PAPERS({
             <p><small>241 words</small></p>
             <div class="note exam"><p>How it was built: opening (who you are, the exact programme, what you want to learn) → academic background with proof (a CGPA, three relevant subjects) → how the interest began (one real incident) → project, internship and contest, each with a number → what the programme offers → career goal and a polite close. No subheadings, active voice throughout, and every claim backed by a fact.</p></div>
             <div class="note trap"><p>Leave out "I have always been passionate about hacking": it proves nothing and "hacking" sounds careless in a security application. The defaced website and the scanning tool show the interest. Do not name a professor or course at the university unless you have checked it.</p></div>`,
-          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips']
+          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips'],
+          notes: ['m5-sop-structure.0', 'm5-sop-writing.5', 'm5-sop-tips.5']
         }
       ]
     },
@@ -566,7 +591,8 @@ PAPERS({
             </table>
             <div class="note trap"><p>"Pressure is when something pushes hard" uses "is when" and has no class. "A stethoscope is used by doctors" starts with a use, not a class, so it could describe a thermometer. Give the class first, then the features that separate this item from others in the class.</p></div>
             <div class="note exam"><p>Some words have an everyday sense and a technical sense. "Pressure" can also mean stress, as in exam pressure, but in a technical English paper give the scientific meaning. If you have time, add the everyday sense in one short phrase at the end.</p></div>`,
-          topics: ['m3-sentence-def', 'm3-expanded']
+          topics: ['m3-sentence-def', 'm3-expanded'],
+          notes: ['m3-sentence-def.1', 'm3-sentence-def.2', 'm3-expanded.0']
         },
         {
           n: '2', marks: 10, co: '4', bl: '3',
@@ -586,7 +612,8 @@ PAPERS({
             <p><b>4.</b> The same rules are applied to <b>unequal situations</b>. A rider delayed by a slow restaurant or traffic is judged like one who was careless, so the rule is uniform but the result is unfair. Each proposal answers one problem in the passage: <b>transparent rules</b> let workers see "how the score is calculated"; a <b>human review before removal</b> gives a blocked worker someone "to appeal to"; and <b>excluding ratings for delays outside the worker's control</b> stops the score from punishing things the worker "cannot control".</p>
             <div class="note trap"><p>In answer 4, do not stop at "the system is biased". Link each proposal to the exact problem it fixes: hidden formula, no appeal, unfair ratings. That link is where the 3 marks are.</p></div>
             <div class="note exam"><p>Answers 1 and 3 mix stated facts and inference. Answer 1 is stated, so quote and list. Answer 2 is inference, so give your conclusion first ("little control"), then the clues that lead to it.</p></div>`,
-          topics: ['m3-inference', 'm3-inference-practice']
+          topics: ['m3-inference', 'm3-inference-practice'],
+          notes: ['m3-inference.0', 'm3-inference.1']
         },
         {
           n: '3', marks: 10, co: '1', bl: '3',
@@ -602,7 +629,8 @@ PAPERS({
             <p><small>103 words</small></p>
             <div class="note exam"><p>How it was built: aim (sentence 1) → method: who, where, when and how data were collected (sentence 2) → findings with the key numbers (sentence 3) → limitation (sentence 4) → conclusion (sentence 5). Past tense, third person, no opinion. The background paragraph, the moderate-user figure, the racing heartbeat and the recommendations were dropped to stay near 100 words. The sleep gap is given as "1.5 hours less" (6.6 minus 5.1) so that one figure replaces two.</p></div>
             <div class="note trap"><p>Do not copy sentences such as "A study was conducted to examine..." from the article. Rewrite each point in your own sentence. Also avoid "energy drinks cause stress": the article says the study "did not establish cause", so write "linked with" or "associated with".</p></div>`,
-          topics: ['m4-abstract', 'm4-steps']
+          topics: ['m4-abstract', 'm4-steps'],
+          notes: ['m4-steps.0', 'm4-steps.1', 'm4-abstract.1']
         },
         {
           n: '4', marks: 10, co: '6', bl: '3',
@@ -625,7 +653,8 @@ PAPERS({
             <p><small>74 words</small></p>
             <div class="note why"><p>Collaborating usually gives the best result, because it looks for a solution that meets everyone's needs in full. But it is slow: it needs time to explore every concern. The question sets two conditions, a fast decision and no need for a perfect answer, and those are exactly the conditions for compromising. Each member gives up a little, the team starts coding at once, and the demo is more likely to be finished.</p></div>
             <div class="note trap"><p>Do not choose Sneha because she ends the argument fastest. Accommodating is quick, but it hands the whole decision to Nikhil and ignores the other members' concerns, and his risky feature may not be ready by 10 a.m. Speed alone is not the goal; a quick decision that the whole team accepts is.</p></div>`,
-          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study']
+          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study'],
+          notes: ['m5-styles.3', 'm5-styles.2', 'm5-choosing.1', 'm5-tki.2']
         },
         {
           n: '5', marks: 10, co: '1', bl: '3',
@@ -641,7 +670,8 @@ PAPERS({
             <p><small>239 words</small></p>
             <div class="note exam"><p>How it was built: opening (degree, CGPA, the exact programme, a one-line goal) → how the interest began, shown by a small FPGA project → proof of skill (electives, a processor project with 120 test programs and an 18 per cent power saving, an internship task) → what the programme adds (the gaps you name yourself) → career goal and a polite close. No subheadings, active voice ("I designed", "I wrote"), and every point in the question is covered.</p></div>
             <div class="note trap"><p>"I have always been passionate about electronics" proves nothing; "I cut its power use by 18 per cent through clock gating" does. Do not name a professor, lab or chip tool you are not sure the university has. "Industry-standard design tools" is safe.</p></div>`,
-          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips']
+          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips'],
+          notes: ['m5-sop-structure.0', 'm5-sop-writing.5', 'm5-sop-tips.5']
         }
       ]
     },
@@ -672,7 +702,8 @@ PAPERS({
             </table>
             <div class="note trap"><p>"A thermometer is used to measure temperature" starts with "is used to" and has no class. "Voltage is the current in a wire" confuses two different quantities: voltage pushes, current is the flow. "A vlog is when someone films their life" uses "is when". Give the class first, then what makes this item different from others in the class.</p></div>
             <div class="note why"><p>"Vlog" is short for <em>video blog</em>; you can add this in brackets for a fuller answer. Do not define "microwave oven" as "an oven that uses microwaves": the term is repeated, so the definition is circular. Say what the waves do to the food instead.</p></div>`,
-          topics: ['m3-sentence-def', 'm3-expanded']
+          topics: ['m3-sentence-def', 'm3-expanded'],
+          notes: ['m3-sentence-def.1', 'm3-sentence-def.2', 'm3-expanded.3']
         },
         {
           n: '2', marks: 10, co: '4', bl: '3',
@@ -691,7 +722,8 @@ PAPERS({
             <p><b>3.</b> Devices sent abroad as "used goods" have already been "collected", so they are likely counted in the exporting country's recycling rate. The figure records that the waste left the country, not what happened to it. In fact, they "end up in the same informal workshops", where cables are burnt and boards are soaked in acid. The harm is moved to another place, not removed, which is why a rising rate "can therefore hide as much as it reveals".</p>
             <p><b>4.</b> Collection is only the first step; the harm depends on what happens next. <b>Tracking</b> is needed because collected devices can leak out as exports and reach informal workshops, and only tracking "where waste finally goes" shows whether they were recovered safely. <b>Better design</b> is needed because formal plants lose metals present in small amounts when separating them "costs more than they are worth". Devices that are "easier to repair" create less waste, and devices that are easier to "take apart" make recovery cheaper and safer.</p>
             <div class="note trap"><p>Do not answer 1 with "recycling rates are false". The author says a rising rate "can hide as much as it reveals": it does show something (collection), just not safe recovery. In 2 and 3, write "it can be inferred" or "they are likely counted", because the passage gives clues rather than stating the answer.</p></div>`,
-          topics: ['m3-inference', 'm3-inference-practice']
+          topics: ['m3-inference', 'm3-inference-practice'],
+          notes: ['m3-inference.0', 'm3-inference.1']
         },
         {
           n: '3', marks: 10, co: '1', bl: '3',
@@ -707,7 +739,8 @@ PAPERS({
             <p><small>101 words</small></p>
             <div class="note exam"><p>How it was built: aim, including the second question about purpose (sentence 1) → method: who, where, how long, and the three data sources (sentence 2) → findings with the key numbers and the self-study detail (sentences 3–4) → the no-causation limit and the recommendation (sentences 5–6). Past tense, third person, no opinion. The background about e-books and reading-hall costs was dropped, and the three groups are defined through the numbers instead of a separate sentence, to stay near 100 words.</p></div>
             <div class="note trap"><p>Do not write "Using the library improves grades." The article says the study "did not show that library use causes better grades", so the abstract must keep that limit. Also avoid copying whole sentences from the article: "were tracked through entry-gate records" is a fresh sentence carrying the same fact.</p></div>`,
-          topics: ['m4-abstract', 'm4-steps']
+          topics: ['m4-abstract', 'm4-steps'],
+          notes: ['m4-steps.0', 'm4-steps.1', 'm4-abstract.1']
         },
         {
           n: '4', marks: 10, co: '6', bl: '3',
@@ -727,7 +760,8 @@ PAPERS({
             <p><small>73 words</small></p>
             <div class="note why"><p>Accommodating is right here because of three facts in the case: the issue is small, the other person cares far more, and there is no time for a long discussion. Collaborating would take too long for a point this minor, and Kavya's compromise sounds fair but splits one section between two writers for no real gain. If the argument were about something important, such as whose data goes in the results, accommodating would be the wrong choice.</p></div>
             <div class="note trap"><p>Do not confuse Imran and Aditi. Both give way in a sense, but Aditi settles the issue (Kavya's way), which is accommodating. Imran leaves it unsettled and withdraws, which is avoiding. Also note who should accommodate: the member who cares less (Aditi), not Kavya.</p></div>`,
-          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study']
+          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study'],
+          notes: ['m5-styles.0', 'm5-styles.3', 'm5-choosing.1', 'm5-tki.2']
         },
         {
           n: '5', marks: 10, co: '1', bl: '3',
@@ -744,7 +778,8 @@ PAPERS({
             <p><small>234 words</small></p>
             <div class="note exam"><p>How it was built: opening (the exact programme, your degree and your current job) → academic background with proof (a CGPA and a data-based project) → work experience with a measurable result (the dashboard and the 18% cut), which also explains why you want this MBA → why this programme and what you bring → career goal and a polite close. No subheadings, and almost every sentence starts with "I", "my" or a clear actor, so the voice stays active.</p></div>
             <div class="note trap"><p>A change of field needs a bridge. Do not just say "I am passionate about analytics": the downtime dashboard shows how a mechanical engineer came to want this degree. Do not name a professor or course you have not checked; "analytics courses with core management subjects" is safe and true of most such programmes.</p></div>`,
-          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips']
+          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips'],
+          notes: ['m5-sop-structure.0', 'm5-sop-writing.5', 'm5-sop-tips.5']
         }
       ]
     },
@@ -775,7 +810,8 @@ PAPERS({
             </table>
             <div class="note trap"><p>"Friction is when two things rub" uses "is when" and has no class. "A smart TV is a TV that is smart" is circular: it repeats the term instead of explaining it. "A barometer is a device that measures pressure" is too broad, because a tyre gauge also measures pressure; the word <em>atmospheric</em> is the feature that separates it.</p></div>
             <div class="note exam"><p>Choose the nearest class, not the widest one. "A smart TV is a television" tells the examiner more than "a smart TV is a device", and it leaves you only the internet and apps to explain.</p></div>`,
-          topics: ['m3-sentence-def', 'm3-expanded']
+          topics: ['m3-sentence-def', 'm3-expanded'],
+          notes: ['m3-sentence-def.1', 'm3-sentence-def.2', 'm3-expanded.4']
         },
         {
           n: '2', marks: 10, co: '4', bl: '3',
@@ -794,7 +830,8 @@ PAPERS({
             <p><b>3.</b> It can be inferred that <b>poorer neighbourhoods tend to be hotter</b>. The hotter area in the example has "tin-roofed houses and narrow lanes", while the cooler one has "tree-lined roads and a lake". The passage then says the hottest areas are "frequently home to the people least able to cope", including families "who cannot afford fans or air conditioning". So the residents with the least money often face the most heat and have the fewest ways to escape it.</p>
             <p><b>4.</b> An average mixes cool and hot areas into one figure, so it hides the fact that one neighbourhood may be "several degrees cooler" than another "only a few kilometres away". The hottest areas also hold the most vulnerable people. If planners use only "citywide figures", they may send "shade, cooling centres and heat warnings to the wrong places". Neighbourhood data shows exactly where heat is worst and who is at risk, so help reaches the people who need it most.</p>
             <div class="note trap"><p>Answers 1 and 2 are stated in the passage; answers 3 and 4 need inference. The passage never says "poor areas are hotter" in one sentence. You reach that conclusion by joining two details: the tin-roofed houses in the hot area and the families who "cannot afford" cooling. Quote both, then state the link in your own words.</p></div>`,
-          topics: ['m3-inference', 'm3-inference-practice']
+          topics: ['m3-inference', 'm3-inference-practice'],
+          notes: ['m3-inference.0', 'm3-inference.1']
         },
         {
           n: '3', marks: 10, co: '1', bl: '3',
@@ -810,7 +847,8 @@ PAPERS({
             <p><small>103 words</small></p>
             <div class="note exam"><p>How it was built: aim (sentence 1) → method: who, how the groups were formed, what each group did and how memory was tested (sentences 2–3) → findings with the key numbers, including the test that showed no change (sentences 4–5) → limitations and conclusion (sentences 6–7). Past tense, third person, no opinion. The background on children and older adults and the advice about walking paths were dropped: an abstract reports the study, not its setting or its suggestions for others.</p></div>
             <div class="note trap"><p>Do not write "exercise improves memory". The article says exercise "may be" a way to support memory and lists reasons for caution, so the abstract must keep that caution. Leaving out the limitations turns a careful finding into an overclaim, and examiners look for it.</p></div>`,
-          topics: ['m4-abstract', 'm4-steps']
+          topics: ['m4-abstract', 'm4-steps'],
+          notes: ['m4-steps.0', 'm4-steps.1', 'm4-abstract.1']
         },
         {
           n: '4', marks: 10, co: '6', bl: '3',
@@ -842,7 +880,8 @@ PAPERS({
             <p><b>Kavya's collaborating</b> approach fits best. It is both assertive and cooperative, so it looks for a solution that fully satisfies everyone rather than a trade-off. Cans or branded dispensers give the company the same visibility, keep the ₹1.5 lakh Arjun wants, and honour the pledge Priya cares about. Sameer's compromise would still break the pledge at the food court, and Arjun's and Priya's approaches leave one side losing, which could damage the relationship.</p>
             <p><small>73 words</small></p>
             <div class="note why"><p>Sameer and Kavya both look for a middle way, but Sameer divides the existing demand in half, so everyone gives something up. Kavya asks <em>why</em> the company wants bottles at every venue (visibility and reaching students) and meets that need in a new way. Asking about the interest behind a demand is what marks collaborating. It suits this case because the sponsor, the money and the pledge all matter, and the team has time to talk.</p></div>`,
-          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study']
+          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study'],
+          notes: ['m5-styles.3', 'm5-styles.4', 'm5-choosing.1', 'm5-tki.2']
         },
         {
           n: '5', marks: 10, co: '1', bl: '3',
@@ -858,7 +897,8 @@ PAPERS({
             <p><small>236 words</small></p>
             <div class="note exam"><p>How it was built: opening (who you are, the exact programme, the aim) → academic background with proof (a CGPA, three relevant subjects, a project with a load and an error figure, an internship with a task) → the gap the programme fills (what an EEE degree does not cover) → career goal and a polite close. No subheadings, active voice ("I led", "I programmed"), first person throughout. A master's SoP should point forward to research or a career, as well as back to past marks.</p></div>
             <div class="note trap"><p>Do not name a professor, lab or course at the university unless you have checked it; a wrong detail suggests the SoP was copied. "Kinematics, computer vision and motion planning" is safe, because every robotics master's covers them. Leave out "I have been passionate about robots since childhood": the warehouse robot shows the interest far better.</p></div>`,
-          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips']
+          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips'],
+          notes: ['m5-sop-structure.0', 'm5-sop-writing.5', 'm5-sop-tips.5']
         }
       ]
     },
@@ -889,7 +929,8 @@ PAPERS({
             </table>
             <div class="note trap"><p>"Streaming is watching videos online" has no class and misses the feature that separates it from downloading. "Speed is how fast something goes" uses "is how" in place of a class. "An air conditioner is a machine" gives a class but no features, so it could just as well describe a fan or a fridge.</p></div>
             <div class="note why"><p>Speed has size but no direction. If you add "in a stated direction", you have defined velocity, a different quantity. Keep the formula (distance ÷ time) and one unit: they are the features that make the definition exact.</p></div>`,
-          topics: ['m3-sentence-def', 'm3-expanded']
+          topics: ['m3-sentence-def', 'm3-expanded'],
+          notes: ['m3-sentence-def.1', 'm3-sentence-def.2', 'm3-expanded.3']
         },
         {
           n: '2', marks: 10, co: '4', bl: '3',
@@ -909,7 +950,8 @@ PAPERS({
             <p><b>4.</b> Resistant bacteria do not stay with the patient who created them: they spread through "touch, food, water and shared spaces such as hospital wards" and pass their genes to other bacteria. Because "Few new antibiotics have been developed", a drug that stops working may have no replacement, so the loss affects everyone. The passage names the people most at risk: patients having "surgery, cancer treatment or a caesarean delivery", who "rely on antibiotics to prevent infection". One person's misuse can therefore make routine treatment unsafe for strangers.</p>
             <div class="note exam"><p>Parts 1 and 2 are worth 2 marks: one clear point with a short quotation is enough. Parts 3 and 4 are worth 3 marks: give the chain of reasoning in steps (what happens, how it spreads, who is harmed) and quote at least two phrases. Question 3 is an inference: the passage never says "farm bacteria reach people", so you must join two stated facts yourself.</p></div>
             <div class="note trap"><p>Do not write that "the patient becomes resistant". It is the <em>bacteria</em> that become resistant, not the person's body. Examiners mark this error down because it shows the passage was misread.</p></div>`,
-          topics: ['m3-inference', 'm3-inference-practice']
+          topics: ['m3-inference', 'm3-inference-practice'],
+          notes: ['m3-inference.0', 'm3-inference.1']
         },
         {
           n: '3', marks: 10, co: '1', bl: '3',
@@ -925,7 +967,8 @@ PAPERS({
             <p><small>104 words</small></p>
             <div class="note exam"><p>How it was built: aim (sentence 1) → method: who, where, how long and what was recorded and compared (sentence 2) → findings with the key numbers (sentence 3) → caveat and conclusion (sentences 4–5). Past tense, third person, no opinion, and the sentences are rewritten, not lifted from the article. The group sizes (82, 94, 64) and the recommendations were dropped to stay near 100 words; the caveat stays because it limits what the finding can claim.</p></div>
             <div class="note trap"><p>Do not write "AI chatbots lower test scores". The article shows an association, not a cause: weaker students may simply have copied more. An abstract that overstates the finding loses marks even if every number is correct.</p></div>`,
-          topics: ['m4-abstract', 'm4-steps']
+          topics: ['m4-abstract', 'm4-steps'],
+          notes: ['m4-steps.0', 'm4-steps.1', 'm4-abstract.1']
         },
         {
           n: '4', marks: 10, co: '6', bl: '3',
@@ -948,7 +991,8 @@ PAPERS({
             <p><small>72 words</small></p>
             <div class="note why"><p>Kavya and Arjun both stop arguing, but for different reasons. Kavya drops her own concern so that Nisha is satisfied, which is accommodating. Arjun drops the whole issue and carries on as before, which is avoiding. Avoiding can suit a trivial issue or a cooling-off pause, but a shared code style affects everyone's work every day, so postponing it only makes it costlier.</p></div>
             <div class="note exam"><p>Question b asks for a judgement, so name one person and one style in your first sentence, then argue it. Marks come from the reason: what happens to the team if this style is used again and again, compared briefly with at least one other style.</p></div>`,
-          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study']
+          topics: ['m5-tki', 'm5-styles', 'm5-choosing', 'm5-case-study'],
+          notes: ['m5-styles.3', 'm5-choosing.1', 'm5-tki.2']
         },
         {
           n: '5', marks: 10, co: '1', bl: '3',
@@ -964,7 +1008,8 @@ PAPERS({
             <p><small>229 words</small></p>
             <div class="note exam"><p>How it was built: opening (who you are, the exact internship, why) → academic background with proof (a CGPA, named courses) → the spark and a project with a real result (20% glycerol, tensile tests) → what you want to learn at IISc and what you bring → long-term goal and a polite close. No subheadings, first person, active voice. A second-year student is not expected to have publications; one small project described precisely is stronger than a list of vague interests.</p></div>
             <div class="note trap"><p>Do not name a professor or a specific laboratory you have not checked; a wrong name suggests the SoP was copied. X-ray diffraction and electron microscopy are standard methods in any materials laboratory, so they are safe to mention. Leave out "Since childhood I have been passionate about science": the starch-film project shows the interest better.</p></div>`,
-          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips']
+          topics: ['m5-sop-what', 'm5-sop-structure', 'm5-sop-writing', 'm5-sop-tips'],
+          notes: ['m5-sop-structure.0', 'm5-sop-writing.5', 'm5-sop-tips.5']
         }
       ]
     }
