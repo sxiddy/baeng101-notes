@@ -266,7 +266,7 @@
 
   (async () => {
     try {
-      S = await api('/api/session?d=' + deviceId());
+      S = await api('/api/session?v=1&d=' + deviceId());
       price = S.price || price;
       window.PRICE_RS = Math.round(price / 100);
       window.SITE_BANNER = S.banner || null;
