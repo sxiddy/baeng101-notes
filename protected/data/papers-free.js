@@ -8,6 +8,7 @@ PAPERS({
     { id: 'cat2-b2tb2', kind: 'actual', exam: 'CAT-2', title: 'CAT-2 · Slot B2+TB2 · 28-09-2026', sub: 'Actual paper · Fall 2026–27' },
     { id: 'fat-b1tb1-2026', kind: 'actual', exam: 'FAT', title: 'FAT · Slot B1+TB1 · November 2026', sub: 'Actual paper · Fall 2026–27' },
     { id: 'fat-b2tb2-2026', kind: 'actual', exam: 'FAT', title: 'FAT · Slot B2+TB2 · November 2026', sub: 'Actual paper · Fall 2026–27' },
+    { id: 'fat-c1tc1-2026', kind: 'actual', exam: 'FAT', title: 'FAT · Slot C1+TC1 · November 2026', sub: 'Actual paper · Fall 2026–27' },
     { id: 'model-01', kind: 'model', title: 'Model paper 1', sub: 'Same pattern as CAT-2 · Passage: electric vehicles' },
     { id: 'model-02', kind: 'model', title: 'Model paper 2', sub: 'Same pattern as CAT-2 · Passage: microplastics' },
     { id: 'model-03', kind: 'model', title: 'Model paper 3', sub: 'Same pattern as CAT-2 · Passage: remote work' },
@@ -1467,6 +1468,253 @@ PAPERS({
             <div class="note exam"><p>Two marks per part: name the concept (interest, position, integrative solution, skill) and tie it to the facts of the case.</p></div>`,
           topics: ['m5-negotiation', 'm5-negotiation-skills'],
           notes: ['m5-negotiation.3', 'm5-negotiation.2', 'm5-negotiation-skills.4']
+        }
+      ]
+    },
+    {
+      id: 'fat-c1tc1-2026', kind: 'actual', title: 'FAT · Slot C1+TC1 · November 2026', short: 'FAT C1+TC1 paper', sub: 'Actual paper · Fall 2026–27',
+      meta: [['Slot', 'C1+TC1'], ['Month', 'November 2026'], ['Duration', '3 hours'], ['Max marks', '100']],
+      instructions: `<b>General instructions:</b> PART-A (10 × 10 = 100 marks). Answer all questions. Q6 and Q7 each give two alternatives joined by (OR): answer one of them (model answers are given for both). M – Max mark; CO – Course Outcome; BL – Blooms Taxonomy Level.`,
+      questions: [
+        {
+          n: '1', marks: 10, co: '2', bl: '2',
+          prompt: `<p>Explain the basic features of business communication as an effective mode of dialogue.</p>`,
+          answer: `
+            <p><b>Business communication</b> is the correspondence and talk carried on in the daily course of business: letters, emails, memos, reports, meetings, cover and transmittal letters, customer-relations and administrative messages. It is a <b>dialogue</b> because it is two-way: a message goes out, the reader responds, and the feedback shapes the next message. Unlike a neutral technical report, business writing usually aims at a <b>call to action</b>.</p>
+            <h4>Basic features</h4>
+            <ol>
+            <li><b>Clear purpose and call to action.</b> Every message has a goal (inform, request, persuade, confirm) and tells the reader what to do next. <em>Example:</em> "Please approve the purchase order by Friday."</li>
+            <li><b>Two-way flow with feedback.</b> Questions, replies and acknowledgements complete the loop, so misunderstandings are caught early. This is what makes it a dialogue and not an announcement.</li>
+            <li><b>Audience (you-) orientation.</b> The message is shaped for the reader's needs, knowledge and position: a client gets benefits, an engineer gets specifications.</li>
+            <li><b>Clarity and conciseness.</b> Plain words, short sentences, specific facts (dates, amounts, reference numbers), no padding.</li>
+            <li><b>Correctness and precision.</b> Accurate facts and figures and correct grammar; errors cost money and credibility, and documents may have legal weight.</li>
+            <li><b>Courtesy and appropriate tone.</b> Polite, positive and professional even when refusing or complaining; this keeps the relationship going.</li>
+            <li><b>Completeness.</b> Answers who, what, when, where and how, so the reader need not write back for missing details.</li>
+            <li><b>Standard formats and a suitable channel.</b> Letters, memos, emails and minutes follow set layouts; the channel (meeting, call, email, letter) is chosen to suit urgency and formality.</li>
+            <li><b>Written record.</b> Written business messages serve as evidence of what was agreed and can be referred to later.</li>
+            </ol>
+            <p>Together these features let both sides understand each other, respond and reach decisions, which is why business communication works as an effective mode of dialogue.</p>
+            <div class="note trap"><p>Do not just list the 5 Cs. Link each feature to the idea of dialogue: purpose, feedback and response.</p></div>
+            <div class="note exam"><p>About 2 marks for a definition with the dialogue idea (two-way, call to action), and about 1 mark per feature explained with an example, up to 8.</p></div>`,
+          topics: ['m1-business', 'm5-ipc-basics'],
+          notes: ['m1-business.0', 'm1-business.1', 'm5-ipc-basics.4', 'm5-ipc-basics.1']
+        },
+        {
+          n: '2', marks: 10, co: '2', bl: '2',
+          prompt: `<p>What are the 5Cs of technical writing? Explain the significance of applying these 5Cs in academic writing.</p>`,
+          answer: `
+            <p>The course (after Laplante) reduces eight qualities of good technical writing to <b>five Cs</b>: the writing must be <b>Correct, Clear, Complete, Consistent and Changeable</b>.</p>
+            <h4>The five Cs and why each matters in academic writing</h4>
+            <ol>
+            <li><b>Correct.</b> Facts, data, formulas, citations and grammar are accurate. <em>In academic writing:</em> one wrong figure or misquoted source undermines the whole paper and can amount to misconduct; correct citation also avoids plagiarism.</li>
+            <li><b>Clear.</b> Each sentence has one meaning; terms are defined; no vague words ("some", "many", "soon"). <em>In academic writing:</em> examiners and reviewers must follow the argument without guessing; a clear thesis statement and defined terms make the work assessable.</li>
+            <li><b>Complete.</b> Everything the reader needs is present: aims, method, results, limitations, references. <em>In academic writing:</em> a method section with missing details cannot be replicated, and an answer that skips part of a question loses marks.</li>
+            <li><b>Consistent.</b> The same term, unit, tense, notation and citation style is used throughout, and no statement contradicts another. <em>In academic writing:</em> switching between "learners" and "students" or between APA and IEEE looks careless and confuses the reader.</li>
+            <li><b>Changeable.</b> The document is organised (headings, numbered sections, tables) so it can be revised easily. <em>In academic writing:</em> drafts go through supervisor and peer-review revisions; a well-structured paper can be updated without rewriting everything.</li>
+            </ol>
+            <h4>Overall significance</h4>
+            <p>Applying the 5 Cs makes academic writing credible (correct), readable (clear), replicable (complete), professional (consistent) and easy to revise (changeable). Checking a draft against each C before submission is a quick self-edit.</p>
+            <p><em>Also accepted:</em> the business-writing set Clarity, Conciseness, Completeness, Correctness and Courtesy (or Coherence), if each is explained with its use in academic writing.</p>
+            <div class="note exam"><p>About 1 mark for naming the five, 1 mark each for explaining them (5), and about 4 for their significance in academic writing with examples.</p></div>`,
+          topics: ['m1-5cs-overview', 'm1-5cs-qualities'],
+          notes: ['m1-5cs-overview.1', 'm1-5cs-overview.2', 'm1-5cs-qualities.0', 'm1-5cs-qualities.1', 'm1-5cs-overview.3']
+        },
+        {
+          n: '3', marks: 10, co: '3', bl: '3',
+          prompt: `<p>Identify the errors in concord/tense in the following sentences.</p><ol><li>Either the teacher or the students has attended the conference.</li><li>Twenty yards are a long way to cover.</li><li>One of the presenters have not yet submitted.</li><li>There is five pairs of spectacles on the table.</li><li>Not only Amit but his friends is also travelling.</li><li>My father has been lived in Chennai since 2010.</li><li>I wish I was a blue bird.</li><li>No sooner has the match started than it began to rain.</li><li>The metro had started before he reaches the station.</li><li>Did you chosen this course yourself?</li></ol>`,
+          answer: `
+            <ol>
+            <li>Either the teacher or the students <b>have</b> attended the conference. <em>With either ... or, the verb agrees with the nearer subject, "students" (plural).</em></li>
+            <li>Twenty yards <b>is</b> a long way to cover. <em>A distance, amount or sum taken as one unit takes a singular verb.</em></li>
+            <li>One of the presenters <b>has</b> not yet submitted. <em>The subject is "one" (singular), not "presenters".</em></li>
+            <li>There <b>are</b> five pairs of spectacles on the table. <em>After "there", the verb agrees with the real subject, "five pairs" (plural).</em></li>
+            <li>Amit and also his friends: the corrected sentence keeps the paper's wording and changes the verb to <b>are</b> ("... but his friends <b>are</b> also travelling"). <em>With this paired connective, the verb agrees with the nearer subject, "friends".</em></li>
+            <li>My father <b>has lived</b> (or <b>has been living</b>) in Chennai since 2010. <em>"Has been lived" is a passive form and is wrong here; "since 2010" needs the present perfect or present perfect continuous, active.</em></li>
+            <li>I wish I <b>were</b> a blue bird. <em>Unreal wishes take "were" for all persons (subjunctive).</em></li>
+            <li>No sooner <b>had</b> the match started than it began to rain. <em>"No sooner ... than" in the past takes the past perfect after inversion, matching "began".</em></li>
+            <li>The metro had started before he <b>reached</b> the station. <em>Sequence of tenses: a past perfect main clause pairs with a simple past, not a present.</em></li>
+            <li>Did you <b>choose</b> this course yourself? <em>After "did", use the base form of the verb.</em></li>
+            </ol>
+            <div class="note trap"><p>In ii, do not "correct" the noun: "twenty yards" stays, only the verb changes. In vi, "has been living" is also correct; "has been lived" is not.</p></div>
+            <div class="note exam"><p>One mark each. Write the corrected sentence with the changed word marked and a one-line reason.</p></div>`,
+          topics: ['m2-concord-rules', 'm2-concord-special', 'm2-tenses-errors'],
+          notes: ['m2-concord-rules.3', 'm2-concord-rules.4', 'm2-concord-special.4', 'm2-tenses-errors.2', 'm2-tenses-errors.1']
+        },
+        {
+          n: '4', marks: 10, co: '3', bl: '2',
+          prompt: `<p>Fill in the blanks with conditionals and voices.</p><ol><li>If you study regularly, you ________ (pass) the examination.</li><li>If I had known about the meeting, I ________ (attend) it.</li><li>If she were more careful, she ________ (not/make) so many mistakes.</li><li>If it rains tomorrow, we ________ (cancel) the trip.</li><li>The letter ________ (write) by the manager yesterday.</li><li>The students ________ (teach) English by the professor.</li><li>My wallet was ________ (steal).</li><li>The annual function ________ (conduct) by the college every year.</li><li>The invitation cards ________ (send) to all the guests yesterday.</li><li>The project ________ (complete) before the deadline.</li></ol>`,
+          answer: `
+            <h4>Conditionals (1–4)</h4>
+            <ol>
+            <li>If you study regularly, you <b>will pass</b> the examination. <em>First conditional: if + present, will + base verb (a real, likely result).</em></li>
+            <li>If I had known about the meeting, I <b>would have attended</b> it. <em>Third conditional: if + past perfect, would have + past participle (unreal past).</em></li>
+            <li>If she were more careful, she <b>would not make</b> so many mistakes. <em>Second conditional: if + past ("were"), would + base verb (unreal present).</em></li>
+            <li>If it rains tomorrow, we <b>will cancel</b> the trip. <em>First conditional: a possible future event.</em></li>
+            </ol>
+            <h4>Passive voice (5–10)</h4>
+            <ul>
+            <li>5. The letter <b>was written</b> by the manager yesterday. <em>"Yesterday": simple past passive, was + past participle.</em></li>
+            <li>6. The students <b>are taught</b> English by the professor. <em>A general fact: simple present passive ("were taught" if the context is past).</em></li>
+            <li>7. My wallet was <b>stolen</b>. <em>"Was" is given; add the past participle.</em></li>
+            <li>8. The annual function <b>is conducted</b> by the college every year. <em>"Every year" marks a routine: simple present passive, singular subject.</em></li>
+            <li>9. The invitation cards <b>were sent</b> to all the guests yesterday. <em>Plural subject, past time: were + past participle.</em></li>
+            <li>10. The project <b>was completed</b> (or <b>had been completed</b>) before the deadline. <em>A finished past action; the past perfect stresses that it was done before the deadline.</em></li>
+            </ul>
+            <div class="note trap"><p>In 3, "were" signals the second conditional, so the answer is "would not make", not "will not make". In 8, "every year" rules out the past tense.</p></div>
+            <div class="note exam"><p>One mark each; the verb form is the mark. Match the time clue (yesterday, every year) and the number of the subject (letter, cards).</p></div>`,
+          topics: ['m2-cond-basics', 'm2-cond-unreal', 'm2-voice-tenses'],
+          notes: ['m2-cond-basics.2', 'm2-cond-unreal.0', 'm2-cond-unreal.3', 'm2-voice-tenses.1', 'm2-voice-tenses.2']
+        },
+        {
+          n: '5', marks: 10, co: '4', bl: '3',
+          prompt: `<p>Define the following words/terms.</p><ol><li>Data</li><li>Cloud computing</li><li>Emoticon</li><li>Debugging</li><li>Optimist</li></ol>`,
+          answer: `
+            <p>Each sentence definition gives the <b>term</b>, the <b>class</b> (group it belongs to) and the <b>distinguishing features</b> that separate it from others in that class.</p>
+            <ol>
+            <li><b>Data</b> are raw, unprocessed facts, figures or observations that have not yet been interpreted or analysed; once organised and given meaning, they become information. <em>Example: a list of exam marks.</em></li>
+            <li><b>Cloud computing</b> is a method of delivering computing services, such as storage, servers, databases and software, over the internet on demand, so that users pay for what they use instead of owning and maintaining the hardware. <em>Example: Google Drive, AWS.</em></li>
+            <li>An <b>emoticon</b> is a typographic symbol made from keyboard characters, such as :-) or :-(, used in digital messages to show the writer's feeling or facial expression. The word blends "emotion" and "icon"; it differs from an emoji, which is a ready-made picture.</li>
+            <li><b>Debugging</b> is the process in software development of finding, analysing and removing errors (bugs) in a program so that it runs as intended, usually with tools such as breakpoints and test cases.</li>
+            <li>An <b>optimist</b> is a person who tends to expect a favourable outcome and to see the positive side of situations, even in difficulty. The opposite is a pessimist.</li>
+            </ol>
+            <div class="note trap"><p>Avoid circular definitions ("Debugging is the act of debugging a program") and a missing class ("Data is when ..."). Start with the class noun: "a method", "a symbol", "a process", "a person".</p></div>
+            <div class="note exam"><p>Two marks each: one for the correct class, one for the distinguishing features (an example helps).</p></div>`,
+          topics: ['m3-sentence-def', 'm3-expanded'],
+          notes: ['m3-sentence-def.1', 'm3-sentence-def.2', 'm3-expanded.2', 'm5-ipc-basics.2']
+        },
+        {
+          n: '6', marks: 10, co: '4', bl: '3',
+          prompt: `<p><b>a)</b> Explain on the structure of a research article by clearly defining all the sections.</p><p><b>(OR)</b></p><p><b>b)</b> Read the passage and answer the following questions.</p><p>As more of our daily lives move online, cybersecurity has become a concern for everyone, not just computer experts. Students use the internet to attend classes, submit assignments, make payments, store photographs, and communicate with friends. At the same time, cybercriminals are becoming more creative. A message that appears to come from a bank, a university, or even a friend may contain a link designed to steal passwords or personal information. Many attackers succeed not because the technology is weak, but because people are in a hurry and fail to check what they are clicking.</p><p>Proper cybersecurity therefore begins with some simple habits. Students should use different passwords for important accounts, activate two-factor authentication, and avoid downloading files from unknown sources. They should also think carefully before sharing personal information on social media. Once something is posted online, it can be difficult to completely remove it. However, being cautious does not mean avoiding technology; rather, it means using technology responsibly. In a cyber-world, protecting digital information is much like locking the door of a house: it is a basic precaution that can prevent serious problems later.</p><p>Questions:</p><ol><li>Why has cybersecurity become a concern for everyone?</li><li>How do cybercriminals try to obtain people's personal information?</li><li>Why do some cyberattacks succeed even when technology is secure?</li><li>Mention two cybersecurity habits recommended in the passage.</li><li>Refer to the analogy mentioned in the passage.</li></ol>`,
+          answer: `
+            <h4>a) Structure of a research article</h4>
+            <ol>
+            <li><b>Title.</b> A short, specific label of the study (about 10–15 words) with the key variables, so readers and search engines can find it. Followed by the authors and their affiliations.</li>
+            <li><b>Abstract.</b> A one-paragraph summary (usually 150–250 words) of the purpose, method, main results and conclusion; no citations. Readers use it to decide whether to read the paper.</li>
+            <li><b>Keywords.</b> Four to six terms used for indexing.</li>
+            <li><b>Introduction.</b> Gives the background, the problem, the gap in earlier work and the aim or research question; it moves from general to specific.</li>
+            <li><b>Literature review</b> (sometimes inside the introduction). Summarises and compares earlier studies to show what is known and where the gap is.</li>
+            <li><b>Methodology (materials and methods).</b> Describes the design, participants or materials, tools and procedure in enough detail for another researcher to repeat the study; usually written in the past tense.</li>
+            <li><b>Results.</b> Reports the findings objectively, often in tables and figures, without interpreting them.</li>
+            <li><b>Discussion.</b> Interprets the results: what they mean, how they compare with earlier studies, and the limitations.</li>
+            <li><b>Conclusion.</b> States the main contribution briefly and suggests applications and future research.</li>
+            <li><b>Acknowledgements</b> (funding and help), <b>References</b> (every cited source in one style such as APA or IEEE) and <b>Appendices</b> (raw data, questionnaires).</li>
+            </ol>
+            <p>Order: Title → Abstract → Keywords → Introduction → (Literature review) → Methods → Results → Discussion → Conclusion → References. The core is called <b>IMRaD</b>.</p>
+            <div class="note exam"><p>For (a): about 1 mark per section clearly defined, with the order and IMRaD named for full marks.</p></div>
+            <h4>b) Comprehension</h4>
+            <ol>
+            <li>Because so much of daily life has moved online: students attend classes, submit work, make payments, store photos and talk to friends on the internet, so everyone, and not just computer experts, has information that can be attacked.</li>
+            <li>They send messages that pretend to come from a bank, a university or a friend; these contain links designed to steal passwords or personal information (phishing).</li>
+            <li>Because of human carelessness: people are in a hurry and do not check what they are clicking, so the attacker succeeds through the user, not through weak technology.</li>
+            <li>Any two: use different passwords for important accounts; activate two-factor authentication; avoid downloading files from unknown sources; think carefully before sharing personal information on social media.</li>
+            <li>The passage compares protecting digital information to <b>locking the door of a house</b>: a simple, everyday precaution that prevents serious problems later. It implies that cybersecurity is a basic habit, not a technical specialty, and that skipping it invites trouble.</li>
+            </ol>
+            <div class="note exam"><p>For (b): two marks each. Answer in your own words with a detail from the passage; for 5, name the analogy and explain what it shows.</p></div>`,
+          topics: ['m4-paper-parts', 'm4-research-paper-notes', 'm3-inference'],
+          notes: ['m4-paper-parts.0', 'm4-paper-parts.3', 'm4-paper-parts.4', 'm4-research-paper-notes.3', 'm3-inference.0']
+        },
+        {
+          n: '7', marks: 10, co: '1', bl: '3',
+          prompt: `<p><b>a)</b> Explain the different types of Literature Reviews and the characteristics of each of the types.</p><p><b>(OR)</b></p><p><b>b)</b> Read the following three abstracts on the topic "Artificial Intelligence in Higher Education" and write a concise literature review of approximately 200 words.</p><p><b>Abstract 1:</b> Artificial Intelligence (AI) is profusely being used in higher education to personalise learning and provide students with immediate academic support. AI-based learning platforms can analyse students' performance and recommend learning materials according to their individual needs. Chatbots and virtual assistants can also answer routine academic questions and provide support outside classroom hours. However, excessive dependence on AI may reduce students' independent learning and problem-solving abilities. The study suggests that AI can improve learning outcomes, when it is used as a supportive tool rather than as a replacement for teachers.</p><p><b>Abstract 2:</b> The growing use of generative AI tools such as ChatGPT has changed the way university students approach academic writing and research. These tools can help students generate ideas, improve writing skills, summarise information, and organise their writing. At the same time, concerns have emerged regarding plagiarism, inaccurate information, and students' overdependence on AI-generated content. The study argues that universities should develop clear guidelines for responsible AI use and teach students how to utilise AI-generated information critically.</p><p><b>Abstract 3:</b> AI has the potential to transform teaching by assisting educators with assessment, feedback, and course design. Automated systems can evaluate certain types of student's assignments and provide rapid feedback, allowing teachers to devote more time to complex classroom activities. Nevertheless, issues related to data privacy, algorithmic bias, and unequal access to technology remain significant concerns. The study recommends that institutions adopt AI gradually while ensuring transparency, teacher involvement, and equal access to digital resources.</p>`,
+          answer: `
+            <h4>a) Types of literature reviews</h4>
+            <p>A literature review surveys, compares and evaluates published work on a topic to show what is known and where the gaps are. The main types:</p>
+            <table class="tbl"><thead><tr><th>Type</th><th>Characteristics</th></tr></thead><tbody>
+            <tr><td><b>Narrative (traditional)</b></td><td>Summarises and interprets literature on a broad topic; flexible structure; no systematic search; may include expert opinion; prone to selection bias. The usual thesis chapter.</td></tr>
+            <tr><td><b>Systematic</b></td><td>Answers one focused question; comprehensive, explicit, reproducible search; inclusion and exclusion criteria; quality appraisal of each study; evidence-based conclusions.</td></tr>
+            <tr><td><b>Scoping</b></td><td>Maps a broad or emerging field: key concepts, types of evidence and gaps; wide search; usually no quality appraisal; often a first step before a systematic review.</td></tr>
+            <tr><td><b>Meta-analysis</b></td><td>Statistically pools results of comparable quantitative studies to give an overall effect size; usually part of a systematic review.</td></tr>
+            <tr><td><b>Rapid</b></td><td>A shortened systematic review done quickly for an urgent decision (for example, policy); limits the search or appraisal and says so.</td></tr>
+            <tr><td><b>Critical</b></td><td>Goes beyond description to evaluate the quality and contribution of studies; may propose a new model or theory.</td></tr>
+            <tr><td><b>Umbrella</b></td><td>A review of existing reviews on a wide topic; compares their findings.</td></tr>
+            </tbody></table>
+            <p>The types differ in scope (broad or narrow), search (systematic or not) and appraisal (formal or not).</p>
+            <div class="note exam"><p>For (a): explain at least five types, about 2 marks each (purpose plus a distinguishing feature).</p></div>
+            <h4>b) Literature review (about 200 words)</h4>
+            <p><b>Artificial Intelligence in Higher Education: A Review</b></p>
+            <p>Recent studies agree that artificial intelligence (AI) can strengthen higher education when it supports, rather than replaces, human effort. Abstract 1 shows that AI platforms personalise learning by analysing student performance and recommending materials, while chatbots offer help outside class hours. Abstract 2 finds that generative tools such as ChatGPT help students generate ideas, summarise information and organise their writing. Abstract 3 extends these benefits to teachers, reporting that automated assessment and rapid feedback free time for complex classroom activities.</p>
+            <p>The studies differ in focus. Abstracts 1 and 2 examine the learner, whereas Abstract 3 examines the teacher and the institution. Their concerns also differ: Abstract 1 warns that overdependence may weaken independent problem-solving, Abstract 2 highlights plagiarism and inaccurate content, and Abstract 3 raises data privacy, algorithmic bias and unequal access.</p>
+            <p>All three recommend controlled adoption: AI as a supportive tool (Abstract 1), clear guidelines and critical use (Abstract 2), and gradual, transparent introduction with teacher involvement (Abstract 3). However, none of the abstracts reports measured learning outcomes or long-term effects, which remains a gap for future research. Overall, the evidence suggests that AI benefits higher education most when institutions combine it with human guidance and fair access.</p>
+            <p><em>(About 200 words.)</em></p>
+            <div class="note trap"><p>Do not summarise the three abstracts one after another. A literature review groups them by theme: agreement, differences, recommendations, gap.</p></div>
+            <div class="note exam"><p>For (b): about 2 for a title and opening sentence, 4 for synthesis (similarities and differences across all three), 2 for the gap or limitation, 2 for word limit, cohesion and attributing each point to its abstract.</p></div>`,
+          topics: ['m4-review-types', 'm4-review-typologies', 'm4-lr-strategies', 'm4-lr-assignment'],
+          notes: ['m4-review-types.4', 'm4-review-types.0', 'm4-review-types.1', 'm4-lr-strategies.1', 'm4-lr-assignment.3']
+        },
+        {
+          n: '8', marks: 10, co: '6', bl: '3',
+          prompt: `<p>Discuss the different types of barriers in interpersonal communication.</p>`,
+          answer: `
+            <p><b>Interpersonal communication</b> is communication between two or more people in an organisation. A <b>barrier</b> is anything that blocks or distorts the shared meaning between communicator and receiver. The course lists five barriers; other commonly accepted types are added below.</p>
+            <h4>The five barriers from the course</h4>
+            <ol>
+            <li><b>Physical separation.</b> Distance between people (different buildings, cities, time zones) reduces face-to-face contact and feedback. <em>Remedy:</em> regular meetings, video calls, rich channels.</li>
+            <li><b>Status differences.</b> Differences in rank make juniors hesitate to speak up or report bad news, and seniors may not listen. <em>Remedy:</em> open-door policies, encouraging questions.</li>
+            <li><b>Gender differences.</b> Men and women may differ in conversational style (for example, report talk versus rapport talk), which can cause misreading. <em>Remedy:</em> awareness and checking understanding.</li>
+            <li><b>Cultural diversity.</b> Different values, gestures, ideas of time and directness lead to misinterpretation. <em>Remedy:</em> cultural sensitivity and learning the other's norms.</li>
+            <li><b>Language.</b> Different languages, jargon, accents and words with several meanings confuse the receiver. <em>Remedy:</em> plain, simple words; avoid jargon; confirm meaning.</li>
+            </ol>
+            <h4>Other types often discussed</h4>
+            <ul>
+            <li><b>Perceptual barriers:</b> each person's perceptual screen (background, beliefs, assumptions) filters the message.</li>
+            <li><b>Emotional or psychological barriers:</b> anger, fear, stress or defensiveness distort sending and receiving.</li>
+            <li><b>Poor listening and lack of feedback:</b> one-way communication leaves errors uncorrected.</li>
+            <li><b>Nonverbal mismatch:</b> body language that contradicts the words.</li>
+            </ul>
+            <p>Removing barriers needs two-way communication, empathetic (reflective) listening, a suitable channel and nondefensive language.</p>
+            <div class="note exam"><p>About 1 mark for the definition, about 1.5 marks per barrier explained with an example (five or six barriers), and 1 for remedies.</p></div>`,
+          topics: ['m5-ipc-basics', 'm5-ipc-defensive', 'm5-ipc-listening'],
+          notes: ['m5-ipc-basics.5', 'm5-ipc-basics.0', 'm5-ipc-defensive.0', 'm5-ipc-listening.0']
+        },
+        {
+          n: '9', marks: 10, co: '6', bl: '3',
+          prompt: `<p>Read the case study and answer the following questions.</p><p>A software company is developing a mobile banking application that must be delivered to a client within a week. During the final testing phase, the team discovers several technical errors that need immediate attention. The team leader, Arjun, assigns specific tasks to each developer, sets individual deadlines, and expects everyone to follow his instructions without questioning his decisions. While planning improvements to the application's user interface, however, he organises a meeting where developers and testers are encouraged to share their suggestions before he makes the final decision. Arjun also notices that one developer is struggling with a complex programming task and arranges additional technical training while regularly checking whether team members need support with their workloads. Meanwhile, he assigns a routine software module to two experienced developers and allows them to choose their own working methods, divide responsibilities, and complete the task independently, intervening only when necessary.</p><p>Questions:</p>`,
+          parts: [
+            { text: '1. Identify and explain the four leadership styles demonstrated by Arjun. Support each answer with a specific example from the case.', marks: 6 },
+            { text: '2. Which leadership style would be most effective when the team discovers technical errors that threaten the five-day deadline? Justify your answer with two reasons.', marks: 4 }
+          ],
+          answer: `
+            <h4>1. Four leadership styles</h4>
+            <table class="tbl"><thead><tr><th>Style</th><th>What it is</th><th>Example from the case</th></tr></thead><tbody>
+            <tr><td><b>Autocratic (authoritarian)</b></td><td>The leader decides alone, gives orders and expects obedience.</td><td>He "assigns specific tasks to each developer, sets individual deadlines, and expects everyone to follow his instructions without questioning".</td></tr>
+            <tr><td><b>Democratic (participative)</b></td><td>The leader invites the team's ideas before deciding, but keeps the final decision.</td><td>For the user interface he holds a meeting where developers and testers share suggestions "before he makes the final decision".</td></tr>
+            <tr><td><b>Coaching (supportive)</b></td><td>The leader develops people's skills and supports their needs.</td><td>He arranges technical training for the struggling developer and regularly checks whether members need support with workloads.</td></tr>
+            <tr><td><b>Laissez-faire (delegative)</b></td><td>The leader hands over the task and lets skilled members decide how to do it, stepping in only when needed.</td><td>The two experienced developers choose their own methods and divide responsibilities, with Arjun "intervening only when necessary".</td></tr>
+            </tbody></table>
+            <p>Using different styles for different situations is itself situational leadership: Arjun matches his style to the task and to each member's skill.</p>
+            <h4>2. Most effective style for the deadline crisis: autocratic</h4>
+            <ol>
+            <li><b>Speed of decision.</b> With errors threatening a five-day deadline there is no time for long discussion; one person deciding and assigning fixes immediately saves time.</li>
+            <li><b>Clear accountability and coordination.</b> Each developer knows exactly which error they own and by when, so there is no duplication or confusion, and progress can be tracked daily.</li>
+            </ol>
+            <p>(It should be short-term: once the crisis is over, Arjun can return to democratic and coaching styles to keep morale up.)</p>
+            <div class="note trap"><p>Do not choose laissez-faire for the crisis; leaving people to choose their own way under a tight deadline risks delay. Democratic suits the UI design, not urgent bug-fixing.</p></div>
+            <div class="note exam"><p>Q1: 1.5 marks per style (name plus example). Q2: 1 for the style, 1.5 per reason.</p></div>`,
+          topics: ['m5-lead-eight-styles', 'm5-lead-style-models', 'm5-lead-contingency'],
+          notes: ['m5-lead-eight-styles.0', 'm5-lead-eight-styles.1', 'm5-lead-eight-styles.2', 'm5-lead-eight-styles.3', 'm5-lead-contingency.4']
+        },
+        {
+          n: '10', marks: 10, co: '6', bl: '3',
+          prompt: `<p>Read the case study and answer the following questions.</p><p>A retail company plans to expand its online business by introducing a customised mobile application and approaches a software development firm for the project. During the contract negotiation, the client requests that the application be delivered within two months and asks for a 15% reduction in the proposed budget, explaining that the application is essential for its upcoming annual sales campaign but that its available funds are limited. The project manager explains that developing all the requested features within the proposed deadline would require additional staff and increase costs. The client listens to the explanation and asks whether the most essential features can be delivered first, with the remaining features added later. The project manager considers this suggestion and proposes a phased delivery plan, prioritising product browsing and online payment in the first phase. However, the client expresses concern about the additional expenses of the second phase and requests a discount on its development cost. After reviewing the resource requirements, the project manager offers a revised package with a reduced overall cost, provided the client accepts the phased delivery plan and agrees to milestone-based payments. The client evaluates the revised proposal, discusses the payment conditions, and agrees to the arrangement after both parties clarify their expectations and responsibilities. They finally settle on the project scope, delivery schedule, budget, and payment milestones.</p><p>Questions:</p>`,
+          parts: [
+            { text: '1. Identify and explain any three negotiation skills demonstrated by the project manager and the client in the case. Support your answer with relevant examples.', marks: 6 },
+            { text: '2. Explain how the project manager and the client reached a mutually beneficial agreement.', marks: 4 }
+          ],
+          answer: `
+            <h4>1. Negotiation skills (any three)</h4>
+            <ol>
+            <li><b>Clear communication (explaining interests).</b> Each side states its position and the reason behind it. <em>Example:</em> the client explains the app is needed for the annual sales campaign but funds are limited; the manager explains that the full scope in two months needs more staff and money.</li>
+            <li><b>Active listening.</b> Hearing the other side fully before replying. <em>Example:</em> "The client listens to the explanation" and responds with a workable idea; the manager "considers this suggestion" instead of rejecting it.</li>
+            <li><b>Problem-solving and creativity (creating value).</b> Finding new options instead of fighting over one number. <em>Example:</em> the phased delivery plan, with browsing and payment first, meets the campaign deadline without overloading the team.</li>
+            <li><b>Making trade-offs (conditional concessions).</b> Giving something only in return for something. <em>Example:</em> the manager reduces the overall cost "provided the client accepts the phased delivery plan and agrees to milestone-based payments".</li>
+            <li><b>Planning and clarifying expectations.</b> <em>Example:</em> both sides review resources and clarify responsibilities, scope, schedule and payment milestones before agreeing.</li>
+            </ol>
+            <h4>2. How they reached a mutually beneficial (win-win) agreement</h4>
+            <p>They used <b>integrative negotiation</b>. Instead of arguing over the 15% cut and the two-month deadline as fixed positions, both looked at the underlying interests: the client needs the essential features before the sales campaign within a tight budget; the firm needs a fair price, a manageable workload and secure payment. The phased plan met the client's deadline for the features that matter most; the reduced package met the budget concern; milestone payments protected the firm's cash flow and reduced its risk. By listening, proposing options, exchanging conditional concessions, and finally confirming scope, schedule, budget and milestones, both sides gained more than either would have by holding to its first demand.</p>
+            <div class="note trap"><p>This is not a compromise where both just "meet halfway"; it is win-win because the package was redesigned (phases, milestones) to meet both sides' interests.</p></div>
+            <div class="note exam"><p>Q1: 2 marks per skill (name, explanation, example from the case). Q2: about 4 marks for naming integrative (win-win) negotiation and showing what each side gained.</p></div>`,
+          topics: ['m5-negotiation', 'm5-negotiation-skills'],
+          notes: ['m5-negotiation-skills.0', 'm5-negotiation-skills.1', 'm5-negotiation-skills.3', 'm5-negotiation.4', 'm5-negotiation.3']
         }
       ]
     }
