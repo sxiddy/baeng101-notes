@@ -221,7 +221,9 @@ async function siteSettings() {
   const open = MODE.open === true || process.env.OPEN_ACCESS === '1';
   const out = { price: PRICE, normalPrice: PRICE, sale: null, banner: null, signin: !open, freeAll: open, paused: null, business: '' };
   if (!store.configured()) return out;
-  const [[p, b, sl, si, ac, pz, bz]] = await store.pipeline([['HMGET', 'config', 'price', 'banner', 'sale', 'signin', 'access', 'paused', 'business']]);
+  const cfgRow = await store.pipeline([['HMGET', 'config', 'price', 'banner', 'sale', 'signin', 'access', 'paused', 'business']]).catch((e) => { console.error('settings store error:', e.message); return null; });
+  if (!cfgRow || !Array.isArray(cfgRow[0])) console.error('settings: config read failed', JSON.stringify(cfgRow));
+  const [p, b, sl, si, ac, pz, bz] = cfgRow && Array.isArray(cfgRow[0]) ? cfgRow[0] : [];
   try { const x = JSON.parse(pz || 'null'); if (x && x.on) out.paused = { text: typeof x.text === 'string' ? x.text.slice(0, 240) : '' }; } catch (e) {}
   if (typeof bz === 'string') out.business = bz.slice(0, 120);
   if (si === '1' || si === '0') out.signin = si === '1';
