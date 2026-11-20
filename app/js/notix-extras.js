@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   // One place to change when the store domain moves.
-  var NOTIX_STORE = 'https://notix-notes.vercel.app';
+  var NOTIX_STORE = 'https://notix.in';
   var SUBJECT_CODE = 'BAENG101';
   var FREE_TOOL = 'wordiness-fixer'; // the one free interactive tool; all other tools are Pro
   var STORE_PAGE = NOTIX_STORE + '/' + SUBJECT_CODE.toLowerCase();

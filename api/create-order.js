@@ -9,6 +9,12 @@ module.exports = handle(async (req, res) => {
   const { price, paused } = await settings();
   if (paused) return send(res, 503, { error: 'Payments are paused for now. Please check back soon.' });
   if (!Number.isInteger(price) || price < 100) return send(res, 500, { error: 'The price must be at least ₹1.' });
+  const paylink = require('./_paylink');
+  if (paylink.on()) { // hosted Razorpay page (see _paylink.js); the browser goes there instead of opening checkout
+    const host = req.headers['x-forwarded-host'] || req.headers.host;
+    const l = await paylink.createLink(u.e, price, 'https://' + host);
+    return send(res, 200, { linkUrl: l.linkUrl, linkId: l.linkId, orderId: l.linkId, amount: l.amount, currency: 'INR', email: u.e });
+  }
   const order = await razorpay('POST', '/orders', {
     amount: price, currency: 'INR', receipt: 'bn_' + Date.now().toString(36),
     notes: { product: 'baeng101-notes', email: u.e },

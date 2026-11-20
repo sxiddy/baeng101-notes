@@ -95,7 +95,10 @@
     try {
       const FM = window.FILE_MODULE || {};
       const paidFiles = !paid ? [] : (window.PAID_FILES || []).filter((f) => !modules || modules.includes(FM[f]));
-      const files = (window.FREE_FILES || []).concat(paidFiles);
+      let files = (window.FREE_FILES || []).concat(paidFiles);
+      // Cloudflare build: the same files joined into a few bundles (tools/cf-build.js), far fewer requests
+      const B = window.BUNDLES;
+      if (B) files = B.free.concat(!paid ? [] : Object.keys(B.pro).filter((m) => !modules || modules.includes(m)).map((m) => B.pro[m]));
       // all at once: every file only registers data (the app sorts chunks, questions and papers itself)
       await Promise.all(files.map((f) => loadScript('data/' + f)));
       const allPaid = CFG.filter((m) => !m.free).every((m) => !modules || modules.includes(m.id));
@@ -213,7 +216,6 @@
       payBtn.disabled = true; say('Opening UPI checkout…');
       funnel('start');
       try {
-        await loadScript('https://checkout.razorpay.com/v1/checkout.js');
         const o = await api('/api/create-order', {});
         if (o.amount !== price) {
           // the price changed while this page was open (usually an offer ended): show the new price before charging it
@@ -223,6 +225,11 @@
           paywall(price > was ? `The offer has ended. The price is now ₹${window.PRICE_RS}. Tap Pay to continue.` : `The price is now ₹${window.PRICE_RS}. Tap Pay to continue.`);
           return;
         }
+        if (o.linkUrl) { // hosted Razorpay payment page: go there; coming back here checks the link and unlocks
+          remember(o.linkId); say('Opening the Razorpay payment page…');
+          location.href = o.linkUrl; return;
+        }
+        await loadScript('https://checkout.razorpay.com/v1/checkout.js');
         const rzp = new window.Razorpay({
           key: o.keyId, order_id: o.orderId, amount: o.amount, currency: o.currency,
           name: 'BAENG101 Notes', description: 'Full access to the notes',
