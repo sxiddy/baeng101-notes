@@ -50,7 +50,7 @@
     root.innerHTML = `
       <div class="gate">
         <div class="gate-card">
-          <div class="gate-eyebrow">BAENG101 · Technical English</div>
+          <div class="gate-eyebrow">BAENG101</div>
           <h1 class="gate-title">Technical English</h1>
           <p class="gate-lead">Study notes for VIT students. Sign in with your <b>VIT student Google account</b> (…@${esc(domain)}) to continue.</p>
           <div id="gsi" class="gate-gsi"></div>
@@ -149,7 +149,7 @@
     root.innerHTML = `
       <div class="gate">
         <div class="gate-card">
-          <div class="gate-eyebrow">BAENG101 · Technical English</div>
+          <div class="gate-eyebrow">BAENG101</div>
           <h1 class="gate-title">Technical English</h1>
           <p class="gate-lead">${freeNames()} ${freeCount() === 1 ? 'is' : 'are'} free. Unlock ${paidNames()}: their notes, diagrams, interactive exercises, questions, quiz, flashcards and summaries.</p>
           ${S.sale && S.sale.text && S.normalPrice > price ? `<div class="gate-offer-note" role="note">${esc(S.sale.text)}</div>` : ''}
