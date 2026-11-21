@@ -22,6 +22,8 @@ fs.rmSync(path.join(APP, 'data'), { recursive: true, force: true }); // never sh
 const order = (f) => (f.startsWith('chunk-') ? 0 : f.startsWith('q-') ? 1 : f.startsWith('summary-') ? 2 : f.startsWith('papers-') ? 3 : 4);
 const contentFiles = fs.readdirSync(CONTENT).filter((f) => /^(chunk|q|summary|papers)-[A-Za-z0-9]+\.js$/.test(f)).sort((a, b) => order(a) - order(b) || a.localeCompare(b));
 for (const f of contentFiles) fs.copyFileSync(path.join(CONTENT, f), path.join(PDATA, f));
+// why each wrong MCQ option is wrong: content/why-M1.js -> WHY({ 'm1-q-01': ['reason A', '', 'reason C', 'reason D'] }), shipped inside its q file
+for (const f of contentFiles.filter((f) => f.startsWith('q-'))) { const w = path.join(CONTENT, f.replace(/^q-/, 'why-')); if (fs.existsSync(w)) fs.appendFileSync(path.join(PDATA, f), '\n' + fs.readFileSync(w, 'utf8')); }
 
 // Every figure is the site's own drawing (figs-svg/<id>.svg, no slide images), copied to protected/img and
 // served by api/img.js; the app inlines each SVG so it follows dark and light mode.

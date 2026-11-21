@@ -5,6 +5,7 @@ window.QUESTIONS = function (d) {
   (d.questions || []).forEach(function (q) { q.chunk = d.chunk; window.DATA.questions.push(q); });
 };
 window.SUMMARY = function (d) { window.DATA.summaries[d.module] = d; };
+window.WHY = function (d) { window.DATA.why = Object.assign(window.DATA.why || {}, d); };
 window.FIGDIMS = function (d) { Object.assign(window.DATA.figs, d); };
 window.FIGSVG = function (d) { window.DATA.figsvg = Object.assign(window.DATA.figsvg || {}, d); };
 // CAT-2 question papers: papers-free.js (actual papers, the index of every model paper, which topics were asked)
