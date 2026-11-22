@@ -1,7 +1,11 @@
 {
- "free.4d77ab9cb1.js": {
+ "free.c79f260e45.js": {
   "free": true,
   "module": null
+ },
+ "pro-m2.c68f9e6b8c.js": {
+  "free": false,
+  "module": "m2"
  },
  "pro-m3.bcdae332d4.js": {
   "free": false,
