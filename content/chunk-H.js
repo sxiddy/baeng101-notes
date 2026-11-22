@@ -50,6 +50,7 @@ CHUNK({
             <li>One of the glasses <b>is</b> empty. Since the subject is <em>one</em>, the verb should be <em>is</em>.</li>
             <li>The bouquet of red roses <b>smells</b> so sweet. Since <em>bouquet</em> is the subject and not <em>roses</em>, the verb should be <em>smells</em> and not <em>smell</em>.</li>
           </ul>
+          <div data-viz="ea-concord"></div>
         ` },
         { title: 'Rules 3 to 5: and, or, nor, as well as', html: `
           <p class="lead">Subjects joined by <b>and</b> take a plural verb. With <b>or, either/or, neither/nor</b> the verb agrees with the nearest noun. <b>As well as</b> and similar words are ignored.</p>

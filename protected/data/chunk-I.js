@@ -510,6 +510,7 @@ CHUNK({
               <tr><td>The operator (checks / is checking) the gauges every hour.</td><td>The operator <b>checks</b> the gauges every hour.</td></tr>
             </tbody>
           </table>
+          <div data-viz="ea-tense-fix"></div>
         ` },
         { title: 'Error B: perfect with a finished time', html: `
           <p class="lead">Error B: <b>present perfect with a finished time</b>.</p>
